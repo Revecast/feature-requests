@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "generatedAt": "2026-04-25T11:29:53.751Z",
+    "total": 1,
+    "byProduct": {
+      "reporting": 1
+    },
+    "byStatus": {
+      "under-review": 1
+    }
+  },
+  "items": [
+    {
+      "number": 1,
+      "title": "[Reporting] - this is a test feature request",
+      "body": "### Area\n\nReport templates\n\n### What problem are you trying to solve?\n\nI want it to do something awesome... \n\n### What's your idea?\n\nIt's the best idea that there is... \n\n### Organization (optional)\n\n_No response_\n\n### Anything else?\n\nMy organization",
+      "state": "OPEN",
+      "stateReason": null,
+      "product": "reporting",
+      "status": "under-review",
+      "labels": [
+        "product:reporting",
+        "status:under-review"
+      ],
+      "votes": 0,
+      "hearts": 0,
+      "hooray": 0,
+      "comments": 0,
+      "author": "markcoburnJax",
+      "authorAvatar": "https://github.com/markcoburnJax.png?size=40",
+      "createdAt": "2026-04-25T11:23:33Z",
+      "updatedAt": "2026-04-25T11:23:33Z",
+      "closedAt": null,
+      "url": "https://github.com/Revecast/feature-requests/issues/1"
+    }
+  ]
+}
