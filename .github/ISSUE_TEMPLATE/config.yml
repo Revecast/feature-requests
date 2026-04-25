@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse existing requests
+    url: https://revecast.github.io/feedback/
+    about: Vote 👍 on existing requests instead of opening a duplicate.
+  - name: Email Revecast
+    url: mailto:feedback@revecast.io
+    about: No GitHub account? Email us your idea and we'll log it for you.

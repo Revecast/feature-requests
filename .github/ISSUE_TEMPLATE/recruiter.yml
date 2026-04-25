@@ -1,0 +1,57 @@
+name: Revecast Recruiter — Feature Request
+description: Suggest an improvement for Revecast Recruiter
+title: "[Recruiter] "
+labels: ["product:recruiter", "status:under-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! Please check the [feedback site](https://revecast.github.io/feedback/?product=recruiter) first to see if someone has already requested this — if so, vote 👍 on the existing one.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Recruiter does this affect?
+      options:
+        - Job postings / Job board
+        - Candidate pipeline
+        - AI resume processing (Agentforce)
+        - Maya AI chat assistant
+        - Interviews
+        - Offers
+        - Reporting
+        - Setup / Admin
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: "When I'm doing X, I run into Y because…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+      description: How would you like it to work? Sketches, screenshots, and examples welcome.
+    validations:
+      required: true
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization (optional)
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+    validations:
+      required: false

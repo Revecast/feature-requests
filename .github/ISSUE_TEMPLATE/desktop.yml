@@ -1,0 +1,65 @@
+name: PSACore Desktop — Feature Request
+description: Suggest an improvement for the PSACore Desktop timer app
+title: "[Desktop] "
+labels: ["product:desktop", "status:under-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! Please check the [feedback site](https://revecast.github.io/feedback/?product=desktop) first to see if someone has already requested this — if so, vote 👍 on the existing one.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the desktop app does this affect?
+      options:
+        - Timer UI
+        - Idle detection / alerts
+        - Tray / menu bar
+        - Sync with Salesforce
+        - Login / Auth
+        - Notifications
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Both
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: "When I'm doing X, I run into Y because…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+    validations:
+      required: true
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization (optional)
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+    validations:
+      required: false

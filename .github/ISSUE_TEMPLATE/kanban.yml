@@ -1,0 +1,55 @@
+name: Revecast Kanban — Feature Request
+description: Suggest an improvement for Revecast Kanban
+title: "[Kanban] "
+labels: ["product:kanban", "status:under-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! Please check the [feedback site](https://revecast.github.io/feedback/?product=kanban) first to see if someone has already requested this — if so, vote 👍 on the existing one.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Kanban does this affect?
+      options:
+        - Board configuration wizard
+        - Card layout
+        - Drag and drop / column updates
+        - Filters
+        - Grandchild drill-downs
+        - Performance
+        - Setup / Admin
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: "When I'm doing X, I run into Y because…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+    validations:
+      required: true
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization (optional)
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+    validations:
+      required: false

@@ -1,0 +1,61 @@
+name: Revecast PSA — Feature Request
+description: Suggest an improvement for Revecast PSA (PSACore)
+title: "[PSA] "
+labels: ["product:psacore", "status:under-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! Please check the [feedback site](https://revecast.github.io/feedback/?product=psacore) first to see if someone has already requested this — if so, vote 👍 on the existing one.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of PSA does this affect?
+      options:
+        - Time tracking
+        - Forecasting
+        - Capacity planning
+        - Project management
+        - Workstreams / Schedule
+        - Invoicing
+        - Reporting
+        - Setup / Admin
+        - Mobile / Desktop timer
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation and the friction you hit. The more specific, the better.
+      placeholder: "When I'm doing X, I run into Y because…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+      description: How would you like it to work? Sketches, screenshots, and examples welcome.
+    validations:
+      required: true
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization (optional)
+      description: Helps us understand who's asking. Leave blank if you'd rather not share.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Related tools, who else this would help, or workarounds you're using today.
+    validations:
+      required: false

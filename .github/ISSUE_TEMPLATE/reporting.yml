@@ -1,0 +1,53 @@
+name: Revecast Reporting Engine — Feature Request
+description: Suggest an improvement for Revecast Reporting Engine
+title: "[Reporting] "
+labels: ["product:reporting", "status:under-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your idea! Please check the [feedback site](https://revecast.github.io/feedback/?product=reporting) first to see if someone has already requested this — if so, vote 👍 on the existing one.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Reporting Engine does this affect?
+      options:
+        - Report templates
+        - Filters
+        - Record-context reports
+        - Output formats / Export
+        - Setup / Admin
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: "When I'm doing X, I run into Y because…"
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+    validations:
+      required: true
+
+  - type: input
+    id: org
+    attributes:
+      label: Organization (optional)
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+    validations:
+      required: false
