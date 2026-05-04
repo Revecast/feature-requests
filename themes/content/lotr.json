@@ -27,5 +27,115 @@
     { "name": "Council Scribe of Rivendell",      "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the elvish craft of design." },
     { "name": "Healer of the Houses",             "canonical": "Quality Assurance (QA) Engineer",         "description": "Tends the wounded and the weary — finds the maladies in the build before they reach the King." },
     { "name": "Weaver of the Mithril Threads",    "canonical": "Node Backend Dev - India",                "description": "Spins the fine, strong fabric of services, jobs, and the Node enchantments behind the Salesforce facade." }
-  ]
+  ],
+
+  "realms": [
+    {
+      "key": "gondor",
+      "projectName": "Gondor — Stewardship CRM Rollout",
+      "shortName": "Gondor SCR",
+      "subAccountName": "Kingdom of Gondor",
+      "subAccountNumber": "PSA-TEST-LOTR-GONDOR",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Citadel Default",          "isDefault": true,  "billable": false },
+        { "name": "Discovery & Council",      "isDefault": false, "billable": true  },
+        { "name": "Build the Beacons",        "isDefault": false, "billable": true  },
+        { "name": "Migrate the Archives",     "isDefault": false, "billable": true  },
+        { "name": "Testing at Pelennor",      "isDefault": false, "billable": true  },
+        { "name": "Training the Guard",       "isDefault": false, "billable": true  }
+      ]
+    },
+    {
+      "key": "rohan",
+      "projectName": "Rohan — Cavalry Logistics Platform",
+      "shortName": "Rohan CLP",
+      "subAccountName": "Kingdom of Rohan",
+      "subAccountNumber": "PSA-TEST-LOTR-ROHAN",
+      "windowOffsetWeeks": -8,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Edoras Default",           "isDefault": true,  "billable": false },
+        { "name": "Discovery & Muster",       "isDefault": false, "billable": true  },
+        { "name": "Build the Cavalry",        "isDefault": false, "billable": true  },
+        { "name": "Migrate the Hosts",        "isDefault": false, "billable": true  },
+        { "name": "Testing at Helm's Deep",   "isDefault": false, "billable": true  },
+        { "name": "Training the Riders",      "isDefault": false, "billable": true  }
+      ]
+    },
+    {
+      "key": "mordor",
+      "projectName": "Mordor — Dark Tower Surveillance Build",
+      "shortName": "Mordor DTS",
+      "subAccountName": "Realm of Mordor",
+      "subAccountNumber": "PSA-TEST-LOTR-MORDOR",
+      "windowOffsetWeeks": 0,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Barad-dûr Default",        "isDefault": true,  "billable": false },
+        { "name": "Discovery & Spies",        "isDefault": false, "billable": true  },
+        { "name": "Build the Watchful Eye",   "isDefault": false, "billable": true  },
+        { "name": "Migrate the Forces",       "isDefault": false, "billable": true  },
+        { "name": "Testing the Wraiths",      "isDefault": false, "billable": true  },
+        { "name": "Training the Orcs",        "isDefault": false, "billable": true  }
+      ]
+    },
+    {
+      "key": "lothlorien",
+      "projectName": "Lothlórien — Mirror Analytics Implementation",
+      "shortName": "Lórien MAI",
+      "subAccountName": "Lothlórien",
+      "subAccountNumber": "PSA-TEST-LOTR-LOTHLORIEN",
+      "windowOffsetWeeks": 9,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Caras Galadhon Default",   "isDefault": true,  "billable": false },
+        { "name": "Discovery & Mirror Gazing","isDefault": false, "billable": true  },
+        { "name": "Build the Talan",          "isDefault": false, "billable": true  },
+        { "name": "Migrate the Lore",         "isDefault": false, "billable": true  },
+        { "name": "Testing the Hithlain",     "isDefault": false, "billable": true  },
+        { "name": "Training the Galadhrim",   "isDefault": false, "billable": true  }
+      ]
+    }
+  ],
+
+  "casting": {
+    "gondor": [
+      { "fullName": "Aragorn",        "themedRole": "Loremaster" },
+      { "fullName": "Boromir",        "themedRole": "Steward of the West" },
+      { "fullName": "Faramir",        "themedRole": "Captain of the Guard" },
+      { "fullName": "Denethor",       "themedRole": "Council Scribe of Rivendell" },
+      { "fullName": "Beregond",       "themedRole": "Ranger of Ithilien" },
+      { "fullName": "Peregrin Took",  "themedRole": "Healer of the Houses" },
+      { "fullName": "Gandalf the Grey","themedRole": "Loremaster" },
+      { "fullName": "Mark Coburn",    "themedRole": "Loremaster" }
+    ],
+    "rohan": [
+      { "fullName": "Théoden",        "themedRole": "Loremaster" },
+      { "fullName": "Éomer",          "themedRole": "Captain of the Guard" },
+      { "fullName": "Éowyn",          "themedRole": "Herald of the King" },
+      { "fullName": "Gríma Wormtongue","themedRole": "Council Scribe of Rivendell" },
+      { "fullName": "Meriadoc Brandybuck","themedRole": "Healer of the Houses" },
+      { "fullName": "Treebeard",      "themedRole": "Trumpeter of the Citadel" },
+      { "fullName": "Frodo Baggins",  "themedRole": "Captain of the Guard" }
+    ],
+    "mordor": [
+      { "fullName": "Sauron",         "themedRole": "Loremaster" },
+      { "fullName": "Saruman the White","themedRole": "Steward of the West" },
+      { "fullName": "Sméagol Gollum", "themedRole": "Scout of the Northern Marches" },
+      { "fullName": "Gríma Wormtongue","themedRole": "Council Scribe of Rivendell" },
+      { "fullName": "Radagast",       "themedRole": "Healer of the Houses" },
+      { "fullName": "Samwise Gamgee", "themedRole": "Captain of the Guard" }
+    ],
+    "lothlorien": [
+      { "fullName": "Galadriel",      "themedRole": "Loremaster" },
+      { "fullName": "Celeborn",       "themedRole": "Steward of the West" },
+      { "fullName": "Elrond",         "themedRole": "Captain of the Guard" },
+      { "fullName": "Arwen",          "themedRole": "Ranger of Ithilien" },
+      { "fullName": "Legolas",        "themedRole": "Scout of the Northern Marches" },
+      { "fullName": "Glorfindel",     "themedRole": "Bridge-Master of Khazad-dûm" },
+      { "fullName": "Bilbo Baggins",  "themedRole": "Council Scribe of Rivendell" }
+    ]
+  }
 }
