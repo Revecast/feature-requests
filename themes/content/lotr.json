@@ -207,5 +207,57 @@
       { "fullName": "Glorfindel",     "themedRole": "Bridge-Master of Khazad-dûm" },
       { "fullName": "Bilbo Baggins",  "themedRole": "Council Scribe of Rivendell" }
     ]
+  },
+
+  "milestones": {
+    "gondor": [
+      { "name": "Light the Beacons",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — beacons lit from Amon Dîn to Edoras." },
+      { "name": "Reforging Andúril",        "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the king's blade reforged for the road south." },
+      { "name": "Audience at Minas Tirith", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review with Denethor's council." },
+      { "name": "Black Gate Diversion",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feint at the Morannon to draw the eye." },
+      { "name": "Coronation of the King",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the crown returns to Minas Tirith." },
+      { "name": "Steward's Hand-off",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Faramir." }
+    ],
+    "rohan": [
+      { "name": "Muster at Edoras",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the éored ride out from the Golden Hall." },
+      { "name": "Ride to Helm's Deep",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: cavalry deployed to the deep." },
+      { "name": "Hornburg Defended",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the deep holds." },
+      { "name": "Charge of the Rohirrim",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the riders break the siege of Pelennor." },
+      { "name": "Return to Meduseld",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the king returns home." },
+      { "name": "Funeral of Théoden",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the burial of the Horse-Lord." }
+    ],
+    "mordor": [
+      { "name": "The Eye Awakens",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: surveillance plane online." },
+      { "name": "Forge the Watchful Stones","type": "Operational", "offsetPct": 35,  "description": "Build: the Palantíri network deployed." },
+      { "name": "Sauron's Audit",           "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Dark Lord himself." },
+      { "name": "Tower Activation",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Barad-dûr fully operational." },
+      { "name": "Eye Goes Dark",            "type": "Operational", "offsetPct": 100, "description": "Project close: surveillance suspended." },
+      { "name": "Final Reckoning",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Dark Tower." }
+    ],
+    "lothlorien": [
+      { "name": "Council of Galadriel",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in Caras Galadhon." },
+      { "name": "Gaze into the Mirror",     "type": "Operational", "offsetPct": 30,  "description": "Discovery: reports modelled from the Mirror's visions." },
+      { "name": "Weave the Hithlain Reports","type": "Operational","offsetPct": 55,  "description": "Build: dashboards woven of elven-cloak." },
+      { "name": "Gift-Giving at Caras Galadhon","type": "Gate",    "offsetPct": 80,  "description": "UAT acceptance: gifts of the Lady to each member." },
+      { "name": "Sailing into the West",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the elves depart for the Grey Havens." },
+      { "name": "Final Recompense",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Lord and Lady." }
+    ]
+  },
+
+  "daysOff": {
+    "Frodo Baggins":      [ { "realm": "rohan",      "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery at Rivendell — Morgul-blade convalescence." } ],
+    "Samwise Gamgee":     [ { "realm": "mordor",     "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Shire furlough — Rosie's birthday." } ],
+    "Aragorn":            [ { "realm": "gondor",     "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Northern Rangers patrol — pre-arranged." } ],
+    "Boromir":            [ { "realm": "gondor",     "offsetWeeks": 12, "numberOfDays": 2, "notes": "Visiting Faramir at Osgiliath." } ],
+    "Faramir":            [ { "realm": "gondor",     "offsetWeeks": 18, "numberOfDays": 3, "notes": "Watch on the river — week of vigil." } ],
+    "Galadriel":          [ { "realm": "lothlorien", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Mirror maintenance — quarterly." } ],
+    "Saruman the White":  [ { "realm": "mordor",     "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Orthanc strategy retreat." } ],
+    "Gandalf the Grey":   [ { "realm": "gondor",     "offsetWeeks": 14, "numberOfDays": 5, "notes": "Errand to Isengard." } ],
+    "Éomer":              [ { "realm": "rohan",      "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Edoras muster ceremony." } ],
+    "Éowyn":              [ { "realm": "rohan",      "offsetWeeks": 16, "numberOfDays": 1, "notes": "Fencing tournament." } ],
+    "Treebeard":          [ { "realm": "rohan",      "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Entmoot — quarterly forest assembly." } ],
+    "Legolas":            [ { "realm": "lothlorien", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Mirkwood family visit." } ],
+    "Elrond":             [ { "realm": "lothlorien", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Council of Imladris — semi-annual." } ],
+    "Bilbo Baggins":      [ { "realm": "lothlorien", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Birthday party preparations." } ]
   }
 }
