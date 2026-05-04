@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "key": "LOTR",
+  "displayName": "Lord of the Rings",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "middle-earth.test",
+  "account": {
+    "name": "Fellowship of the Ring (Test Data)",
+    "accountNumber": "PSA-TEST-LOTR"
+  },
+
+  "roles": [
+    { "name": "Loremaster",                       "canonical": "Solution Architect",                      "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
+    { "name": "Captain of the Guard",             "canonical": "Project Manager",                         "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
+    { "name": "Keeper of the Books",              "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets." },
+    { "name": "Master Smith of Erebor",           "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features at the deep delvings." },
+    { "name": "Steward of the West",              "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Numenorean Salesforce craft — sets standards and guides the senior smiths." },
+    { "name": "Ranger of Ithilien",               "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced craft." },
+    { "name": "Scout of the Northern Marches",    "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the Ranger's eye." },
+    { "name": "Bridge-Master of Khazad-dûm",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond." },
+    { "name": "Bridge-builder of Khazad-dûm",     "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Bridge-Master's plan." },
+    { "name": "Apprentice Bridge-builder",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the dwarvish patterns of error handling." },
+    { "name": "Watcher of the Palantíri",         "canonical": "Principal Integration Engineer - India",  "description": "Master of the seeing-stones — observability, queueing, and the most senior integration challenges." },
+    { "name": "Herald of the King",               "canonical": "Marketing Practice Lead - India",         "description": "Lifts the banner and the trumpet for product and message — leads all marketing craft." },
+    { "name": "Trumpeter of the Citadel",         "canonical": "Marketing Senior Consultant - India",     "description": "Strategist of campaigns — sounds the call to gather and convert." },
+    { "name": "Banner-Bearer of Rohan",           "canonical": "Marketing Consultant - India",            "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Council Scribe of Rivendell",      "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the elvish craft of design." },
+    { "name": "Healer of the Houses",             "canonical": "Quality Assurance (QA) Engineer",         "description": "Tends the wounded and the weary — finds the maladies in the build before they reach the King." },
+    { "name": "Weaver of the Mithril Threads",    "canonical": "Node Backend Dev - India",                "description": "Spins the fine, strong fabric of services, jobs, and the Node enchantments behind the Salesforce facade." }
+  ]
+}
