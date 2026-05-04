@@ -29,6 +29,8 @@
     { "name": "Weaver of the Mithril Threads",    "canonical": "Node Backend Dev - India",                "description": "Spins the fine, strong fabric of services, jobs, and the Node enchantments behind the Salesforce facade." }
   ],
 
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
   "realms": [
     {
       "key": "gondor",
@@ -39,12 +41,29 @@
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
-        { "name": "Citadel Default",          "isDefault": true,  "billable": false },
-        { "name": "Discovery & Council",      "isDefault": false, "billable": true  },
-        { "name": "Build the Beacons",        "isDefault": false, "billable": true  },
-        { "name": "Migrate the Archives",     "isDefault": false, "billable": true  },
-        { "name": "Testing at Pelennor",      "isDefault": false, "billable": true  },
-        { "name": "Training the Guard",       "isDefault": false, "billable": true  }
+        { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Stewards", "billable": true },
+          { "name": "Field Reconnaissance — Pelargir", "billable": true },
+          { "name": "Strategy Drafting", "billable": true }
+        ]},
+        { "name": "Build the Beacons", "isDefault": false, "billable": true, "children": [
+          { "name": "Beacon Foundation Stones", "billable": true },
+          { "name": "Signal Fire Tooling", "billable": true },
+          { "name": "Watchtower Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Scroll Inventory", "billable": true },
+          { "name": "Manuscript Translation", "billable": true }
+        ]},
+        { "name": "Testing at Pelennor", "isDefault": false, "billable": true, "children": [
+          { "name": "Battle Drill (UAT)", "billable": true },
+          { "name": "Siege Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Onboarding", "billable": true },
+          { "name": "Captain's Workshop", "billable": true }
+        ]}
       ]
     },
     {
@@ -53,15 +72,32 @@
       "shortName": "Rohan CLP",
       "subAccountName": "Kingdom of Rohan",
       "subAccountNumber": "PSA-TEST-LOTR-ROHAN",
-      "windowOffsetWeeks": -8,
+      "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
-        { "name": "Edoras Default",           "isDefault": true,  "billable": false },
-        { "name": "Discovery & Muster",       "isDefault": false, "billable": true  },
-        { "name": "Build the Cavalry",        "isDefault": false, "billable": true  },
-        { "name": "Migrate the Hosts",        "isDefault": false, "billable": true  },
-        { "name": "Testing at Helm's Deep",   "isDefault": false, "billable": true  },
-        { "name": "Training the Riders",      "isDefault": false, "billable": true  }
+        { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Muster", "isDefault": false, "billable": true, "children": [
+          { "name": "Riddermark Survey", "billable": true },
+          { "name": "Cavalry Headcount", "billable": true },
+          { "name": "Strategy with the King", "billable": true }
+        ]},
+        { "name": "Build the Cavalry", "isDefault": false, "billable": true, "children": [
+          { "name": "Stable Construction", "billable": true },
+          { "name": "Saddle & Tack Forging", "billable": true },
+          { "name": "Banner Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Hosts", "isDefault": false, "billable": true, "children": [
+          { "name": "Eored Roll Call", "billable": true },
+          { "name": "Provisioning Carts", "billable": true }
+        ]},
+        { "name": "Testing at Helm's Deep", "isDefault": false, "billable": true, "children": [
+          { "name": "Wall Defense Drill", "billable": true },
+          { "name": "Cavalry Charge Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Riders", "isDefault": false, "billable": true, "children": [
+          { "name": "Eored Foundations", "billable": true },
+          { "name": "Marshall's Manual", "billable": true }
+        ]}
       ]
     },
     {
@@ -70,15 +106,32 @@
       "shortName": "Mordor DTS",
       "subAccountName": "Realm of Mordor",
       "subAccountNumber": "PSA-TEST-LOTR-MORDOR",
-      "windowOffsetWeeks": 0,
+      "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
-        { "name": "Barad-dûr Default",        "isDefault": true,  "billable": false },
-        { "name": "Discovery & Spies",        "isDefault": false, "billable": true  },
-        { "name": "Build the Watchful Eye",   "isDefault": false, "billable": true  },
-        { "name": "Migrate the Forces",       "isDefault": false, "billable": true  },
-        { "name": "Testing the Wraiths",      "isDefault": false, "billable": true  },
-        { "name": "Training the Orcs",        "isDefault": false, "billable": true  }
+        { "name": "Barad-dûr Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Spies", "isDefault": false, "billable": true, "children": [
+          { "name": "Nazgûl Reconnaissance", "billable": true },
+          { "name": "Palantír Polling", "billable": true },
+          { "name": "Dark Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Watchful Eye", "isDefault": false, "billable": true, "children": [
+          { "name": "Tower Foundation Forging", "billable": true },
+          { "name": "Eye Lens Calibration", "billable": true },
+          { "name": "Beacon Signal Network", "billable": true }
+        ]},
+        { "name": "Migrate the Forces", "isDefault": false, "billable": true, "children": [
+          { "name": "Orc Legion Roll", "billable": true },
+          { "name": "Siege Engine Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Wraiths", "isDefault": false, "billable": true, "children": [
+          { "name": "Black Gate Pen-test", "billable": true },
+          { "name": "Mount Doom Stress", "billable": true }
+        ]},
+        { "name": "Training the Orcs", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Conscription", "billable": true },
+          { "name": "Captain's Battle Manual", "billable": true }
+        ]}
       ]
     },
     {
@@ -87,15 +140,32 @@
       "shortName": "Lórien MAI",
       "subAccountName": "Lothlórien",
       "subAccountNumber": "PSA-TEST-LOTR-LOTHLORIEN",
-      "windowOffsetWeeks": 9,
+      "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
-        { "name": "Caras Galadhon Default",   "isDefault": true,  "billable": false },
-        { "name": "Discovery & Mirror Gazing","isDefault": false, "billable": true  },
-        { "name": "Build the Talan",          "isDefault": false, "billable": true  },
-        { "name": "Migrate the Lore",         "isDefault": false, "billable": true  },
-        { "name": "Testing the Hithlain",     "isDefault": false, "billable": true  },
-        { "name": "Training the Galadhrim",   "isDefault": false, "billable": true  }
+        { "name": "Caras Galadhon Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Mirror Gazing", "isDefault": false, "billable": true, "children": [
+          { "name": "Mirror Calibration", "billable": true },
+          { "name": "Future-state Vision", "billable": true },
+          { "name": "Lady's Council", "billable": true }
+        ]},
+        { "name": "Build the Talan", "isDefault": false, "billable": true, "children": [
+          { "name": "Mallorn Branch Selection", "billable": true },
+          { "name": "Platform Construction", "billable": true },
+          { "name": "Rope Bridge Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Elvish Manuscript Catalog", "billable": true },
+          { "name": "Song Recording", "billable": true }
+        ]},
+        { "name": "Testing the Hithlain", "isDefault": false, "billable": true, "children": [
+          { "name": "Tensile Strength Trial", "billable": true },
+          { "name": "Weave Pattern Verification", "billable": true }
+        ]},
+        { "name": "Training the Galadhrim", "isDefault": false, "billable": true, "children": [
+          { "name": "Bow & Arrow Refresh", "billable": true },
+          { "name": "Cloak Weaving Workshop", "billable": true }
+        ]}
       ]
     }
   ],
