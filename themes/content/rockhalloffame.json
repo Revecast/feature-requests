@@ -6,7 +6,7 @@
   "emailDomain": "rockhall.test",
   "account": {
     "name": "Rock & Roll Hall of Fame (Test Data)",
-    "accountNumber": "PSA-TEST-ROCKHALL"
+    "accountNumber": "PSA-TEST-ROCKHALLOFFAME"
   },
 
   "roles": [
@@ -37,7 +37,7 @@
       "projectName": "Classic Rock — Stadium Tour Logistics",
       "shortName": "Classic STL",
       "subAccountName": "Classic Rock Wing",
-      "subAccountNumber": "PSA-TEST-ROCKHALL-CLASSIC-ROCK",
+      "subAccountNumber": "PSA-TEST-ROCKHALLOFFAME-CLASSIC-ROCK",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -71,7 +71,7 @@
       "projectName": "Punk & New Wave — CBGB Residency Platform",
       "shortName": "Punk CBGB",
       "subAccountName": "Punk & New Wave Wing",
-      "subAccountNumber": "PSA-TEST-ROCKHALL-PUNK-NEW-WAVE",
+      "subAccountNumber": "PSA-TEST-ROCKHALLOFFAME-PUNK-NEW-WAVE",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -105,7 +105,7 @@
       "projectName": "Soul & R&B — Motown Studio Build",
       "shortName": "Soul Motown",
       "subAccountName": "Soul & R&B Wing",
-      "subAccountNumber": "PSA-TEST-ROCKHALL-SOUL-RNB",
+      "subAccountNumber": "PSA-TEST-ROCKHALLOFFAME-SOUL-RNB",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -139,7 +139,7 @@
       "projectName": "Hip-Hop & Rap — Block Party Sound System",
       "shortName": "HipHop BPS",
       "subAccountName": "Hip-Hop & Rap Wing",
-      "subAccountNumber": "PSA-TEST-ROCKHALL-HIP-HOP-RAP",
+      "subAccountNumber": "PSA-TEST-ROCKHALLOFFAME-HIP-HOP-RAP",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
