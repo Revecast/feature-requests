@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "key": "CobraKai",
+  "displayName": "Cobra Kai",
+  "category": "Drama",
+  "emailDomain": "valley-karate.test",
+  "account": {
+    "name": "All Valley Karate (Test Data)",
+    "accountNumber": "PSA-TEST-COBRAKAI"
+  },
+  "mailingAddress": {
+    "street": "19223 Saticoy Street",
+    "city": "Reseda",
+    "state": "CA",
+    "postalCode": "91335",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Grand Sensei",                    "canonical": "Solution Architect",                      "description": "The master who designs the dojo's overall fighting system — sets the architectural style and oversees every black belt's craft." },
+    { "name": "Head Sensei",                     "canonical": "Project Manager",                         "description": "Runs the dojo floor day-to-day — schedules classes, marshals students, answers to the Grand Sensei." },
+    { "name": "Dojo Quartermaster",              "canonical": "Salesforce Administrator",                "description": "Keeper of the gis, belts, mats, and the membership ledger — every record in its place." },
+    { "name": "Black Belt Smith",                "canonical": "Salesforce Developer",                    "description": "Forges custom katas and signature techniques — Apex and LWC of the dojo arsenal." },
+    { "name": "All-Valley Champion - West Coast","canonical": "Salesforce Practice Lead - USA",          "description": "Reigning champion of the western tournament circuit — sets the standard for senior black belts." },
+    { "name": "Senior Sensei - Okinawa Branch",  "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran instructor at the overseas branch dojo — runs advanced classes and mentors juniors." },
+    { "name": "Junior Sensei - Okinawa Branch",  "canonical": "Salesforce Consultant - India",           "description": "Up-and-coming instructor at the overseas dojo — teaches kata and conditioning under senior guidance." },
+    { "name": "Tournament Bracket Architect",    "canonical": "Integration Technical Architect - USA",   "description": "Designs the tournament brackets and inter-dojo communication channels — every seed, every flow." },
+    { "name": "Senior Tournament Coordinator",   "canonical": "Integration Senior Consultant - India",   "description": "Wires up dojo-to-dojo events under the Architect's plan — referees, scoring, and the registration pipeline." },
+    { "name": "Tournament Coordinator",          "canonical": "Integration Consultant - India",          "description": "Learns the tournament craft — bracket entries, timing tables, and the paperwork between sanctioning bodies." },
+    { "name": "Sparring Match Inspector",        "canonical": "QA Engineer",                             "description": "Watches every match for fouls and weak technique — finds the flaws before the All-Valley judges do." },
+    { "name": "Banner Captain",                  "canonical": "Marketing Practice Lead",                 "description": "Owns the dojo's banner, branding, and recruitment campaign — leads all marketing craft." },
+    { "name": "Senior Promoter",                 "canonical": "Marketing Senior Consultant",             "description": "Strategist of dojo demos and tournament hype — books the gyms, sells the seats." },
+    { "name": "Flyer Crew",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign to the streets — flyers at the strip mall, posters at the high school, social posts before practice." },
+    { "name": "Strategy Scribe",                 "canonical": "Business Analyst",                        "description": "Translates between sensei vision and student reality — documents what was promised and what must be drilled." },
+    { "name": "Master Black Belt - West Coast",  "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the West Coast circuit — owns the most demanding katas and reviews every black belt's code." },
+    { "name": "White Belt Recruit",              "canonical": "Junior Salesforce Consultant - India",    "description": "Newest member of the dojo — runs drills, takes notes, learns the way." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every dojo's project starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "cobra-kai-original",
+      "projectName": "Cobra Kai — Strike First Recruitment Drive",
+      "shortName": "Cobra Kai",
+      "subAccountName": "Cobra Kai Dojo (Reseda)",
+      "subAccountNumber": "PSA-TEST-COBRAKAI-ORIGINAL",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Strike First Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Recruitment Sweep", "isDefault": false, "billable": true, "children": [
+          { "name": "Strip Mall Lease Scouting", "billable": true },
+          { "name": "West Valley High Outreach", "billable": true },
+          { "name": "Underdog Talent Spotting", "billable": true }
+        ]},
+        { "name": "Build the No-Mercy Curriculum", "isDefault": false, "billable": true, "children": [
+          { "name": "Crane Counter Drills", "billable": true },
+          { "name": "Sweep the Leg Routine", "billable": true },
+          { "name": "Punching Bag Bay Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Old Trophy Cases", "isDefault": false, "billable": true, "children": [
+          { "name": "1984 Trophy Restoration", "billable": true },
+          { "name": "Class Photo Wall Hang", "billable": true }
+        ]},
+        { "name": "Testing at the All-Valley", "isDefault": false, "billable": true, "children": [
+          { "name": "Qualifier Bracket Run", "billable": true },
+          { "name": "Final Match Stress Test", "billable": true }
+        ]},
+        { "name": "Training the New Cobras", "isDefault": false, "billable": true, "children": [
+          { "name": "White Belt Boot Camp", "billable": true },
+          { "name": "Black Belt Mentorship", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "miyagi-do",
+      "projectName": "Miyagi-Do — Balance & Defense Heritage Build",
+      "shortName": "Miyagi-Do",
+      "subAccountName": "Miyagi-Do Karate (Encino)",
+      "subAccountNumber": "PSA-TEST-COBRAKAI-MIYAGIDO",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Bonsai Garden Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Reflection", "isDefault": false, "billable": true, "children": [
+          { "name": "Mr. Miyagi's Journals Review", "billable": true },
+          { "name": "Family Heritage Interviews", "billable": true },
+          { "name": "Dojo Site Walkthrough", "billable": true }
+        ]},
+        { "name": "Build the Dojo Grounds", "isDefault": false, "billable": true, "children": [
+          { "name": "Wax-On / Wax-Off Stations", "billable": true },
+          { "name": "Paint the Fence Module", "billable": true },
+          { "name": "Koi Pond Restoration", "billable": true }
+        ]},
+        { "name": "Migrate the Family Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Okinawan Lineage Catalog", "billable": true },
+          { "name": "Honor Roll Digitization", "billable": true }
+        ]},
+        { "name": "Testing the Crane Kick", "isDefault": false, "billable": true, "children": [
+          { "name": "Balance Beam Drill", "billable": true },
+          { "name": "Counter-Attack Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Next Generation", "isDefault": false, "billable": true, "children": [
+          { "name": "Beginner Kata Foundations", "billable": true },
+          { "name": "Senior Student Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "eagle-fang",
+      "projectName": "Eagle Fang — Bite Hard Splinter Launch",
+      "shortName": "Eagle Fang",
+      "subAccountName": "Eagle Fang Karate",
+      "subAccountNumber": "PSA-TEST-COBRAKAI-EAGLEFANG",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Eagle Nest Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Defection Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Roster Defection Review", "billable": true },
+          { "name": "Park Practice Site Survey", "billable": true },
+          { "name": "Brand Identity Strategy", "billable": true }
+        ]},
+        { "name": "Build the Eagle Curriculum", "isDefault": false, "billable": true, "children": [
+          { "name": "Talon Strike Drills", "billable": true },
+          { "name": "Aerial Takedown Routine", "billable": true },
+          { "name": "Mohawk-Friendly Helmet Fit", "billable": true }
+        ]},
+        { "name": "Migrate the Cobra Defectors", "isDefault": false, "billable": true, "children": [
+          { "name": "Member Re-Onboarding", "billable": true },
+          { "name": "Old Gi Trade-In Drive", "billable": true }
+        ]},
+        { "name": "Testing at the Sekai Taikai Qualifier", "isDefault": false, "billable": true, "children": [
+          { "name": "Qualifier Sparring Run", "billable": true },
+          { "name": "Captain Selection Trial", "billable": true }
+        ]},
+        { "name": "Training the Eaglets", "isDefault": false, "billable": true, "children": [
+          { "name": "Beginner Conditioning", "billable": true },
+          { "name": "Captain's Playbook", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "terry-silver-international",
+      "projectName": "Silver International — Global Karate Empire Rollout",
+      "shortName": "Silver Intl",
+      "subAccountName": "Terry Silver International Karate",
+      "subAccountNumber": "PSA-TEST-COBRAKAI-SILVERINTL",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Encino Penthouse Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Global Strategy", "isDefault": false, "billable": true, "children": [
+          { "name": "Korean Branch Site Survey", "billable": true },
+          { "name": "Sekai Taikai Sponsor Pitch", "billable": true },
+          { "name": "Investor Roadshow Prep", "billable": true }
+        ]},
+        { "name": "Build the Empire", "isDefault": false, "billable": true, "children": [
+          { "name": "Flagship Dojo Buildout", "billable": true },
+          { "name": "Branded Gi Manufacturing", "billable": true },
+          { "name": "Quicksilver Method Codification", "billable": true }
+        ]},
+        { "name": "Migrate the Acquired Dojos", "isDefault": false, "billable": true, "children": [
+          { "name": "All-Valley Roster Absorption", "billable": true },
+          { "name": "Legacy Trophy Re-Branding", "billable": true }
+        ]},
+        { "name": "Testing at Sekai Taikai", "isDefault": false, "billable": true, "children": [
+          { "name": "World Stage Bracket Run", "billable": true },
+          { "name": "Captain Showcase Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Global Champions", "isDefault": false, "billable": true, "children": [
+          { "name": "International Recruit Onboarding", "billable": true },
+          { "name": "Master Class with Kim Sun-Yung", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "cobra-kai-original": [
+      { "fullName": "Johnny Lawrence",  "themedRole": "Grand Sensei" },
+      { "fullName": "Miguel Diaz",      "themedRole": "All-Valley Champion - West Coast" },
+      { "fullName": "Eli Hawk Moskowitz","themedRole": "Black Belt Smith" },
+      { "fullName": "Aisha Robinson",   "themedRole": "Strategy Scribe" },
+      { "fullName": "Tory Nichols",     "themedRole": "Sparring Match Inspector" },
+      { "fullName": "John Kreese",      "themedRole": "Head Sensei" },
+      { "fullName": "Raymond Stingray Porter","themedRole": "Flyer Crew" }
+    ],
+    "miyagi-do": [
+      { "fullName": "Daniel LaRusso",   "themedRole": "Grand Sensei" },
+      { "fullName": "Samantha LaRusso", "themedRole": "Master Black Belt - West Coast" },
+      { "fullName": "Robby Keene",      "themedRole": "Head Sensei" },
+      { "fullName": "Demetri Alexopoulos","themedRole": "Strategy Scribe" },
+      { "fullName": "Anthony LaRusso",  "themedRole": "White Belt Recruit" },
+      { "fullName": "Chozen Toguchi",   "themedRole": "Senior Sensei - Okinawa Branch" },
+      { "fullName": "Kumiko",           "themedRole": "Junior Sensei - Okinawa Branch" }
+    ],
+    "eagle-fang": [
+      { "fullName": "Johnny Lawrence",  "themedRole": "Grand Sensei" },
+      { "fullName": "Miguel Diaz",      "themedRole": "All-Valley Champion - West Coast" },
+      { "fullName": "Eli Hawk Moskowitz","themedRole": "Black Belt Smith" },
+      { "fullName": "Bert Frasier",     "themedRole": "White Belt Recruit" },
+      { "fullName": "Mitch Penis Breath","themedRole": "Flyer Crew" },
+      { "fullName": "Devon Lee",        "themedRole": "Sparring Match Inspector" },
+      { "fullName": "Kenny Payne",      "themedRole": "Banner Captain" }
+    ],
+    "terry-silver-international": [
+      { "fullName": "Terry Silver",     "themedRole": "Grand Sensei" },
+      { "fullName": "John Kreese",      "themedRole": "Head Sensei" },
+      { "fullName": "Sensei Wolf",      "themedRole": "Tournament Bracket Architect" },
+      { "fullName": "Kim Da-Eun",       "themedRole": "Senior Tournament Coordinator" },
+      { "fullName": "Master Kim Sun-Yung","themedRole": "Master Black Belt - West Coast" },
+      { "fullName": "Mike Barnes",      "themedRole": "Senior Promoter" },
+      { "fullName": "Yoon Do-Jin",      "themedRole": "Tournament Coordinator" }
+    ]
+  },
+
+  "milestones": {
+    "cobra-kai-original": [
+      { "name": "Dojo Doors Open",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the strip-mall sign goes up: Cobra Kai Never Dies." },
+      { "name": "First Class of Recruits",  "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Miguel and the underdogs take their first lesson." },
+      { "name": "Strike First Demo Day",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: public demo at the West Valley fair to draw new students." },
+      { "name": "Coyote Creek Invoice",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: lake retreat training weekend billed back." },
+      { "name": "All-Valley Title Match",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Cobra Kai takes the All-Valley championship trophy." },
+      { "name": "Sensei Hand-off",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: dojo leadership passed to a new generation." }
+    ],
+    "miyagi-do": [
+      { "name": "Open the Garden Gate",     "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Mr. Miyagi's old dojo reopened in the Encino backyard." },
+      { "name": "Wax On, Wax Off",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: foundational drills installed and rehearsed." },
+      { "name": "Paint the Fence Sign-Off", "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: discipline drills accepted by senior students." },
+      { "name": "Crane Kick on the Beach",  "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: signature kata performed at the All-Valley." },
+      { "name": "Bonsai Trim Hand-off",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: dojo grounds handed to Sam and Robby." },
+      { "name": "Heritage Invoice",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Okinawa branch retainer settled with Chozen." }
+    ],
+    "eagle-fang": [
+      { "name": "Bite Hard Manifesto",      "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Johnny declares the new dojo at the public park." },
+      { "name": "Park Practice Launch",     "type": "Operational", "offsetPct": 35,  "description": "Build: outdoor classes in session, no rent required." },
+      { "name": "Defectors Reviewed",       "type": "Gate",        "offsetPct": 60,  "description": "Solution review: Hawk and the others officially welcomed back." },
+      { "name": "Sekai Taikai Qualifier Win","type": "Delivery",   "offsetPct": 90,  "description": "Go-Live: Eagle Fang qualifies for the world stage." },
+      { "name": "Eagle Fang Hand-off",      "type": "Operational", "offsetPct": 100, "description": "Project close: Miguel takes captain's responsibilities." },
+      { "name": "Eagle Fang Final Invoice", "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the eagles' nest." }
+    ],
+    "terry-silver-international": [
+      { "name": "Penthouse Pitch Meeting",  "type": "Gate",        "offsetPct": 10,  "description": "Kickoff strategy session at Terry Silver's Encino estate." },
+      { "name": "Quicksilver Method Reveal","type": "Operational", "offsetPct": 30,  "description": "Discovery: secret training methodology unsealed for the empire." },
+      { "name": "Korean Branch Build",      "type": "Operational", "offsetPct": 55,  "description": "Build: Master Kim's branch dojo absorbed into the network." },
+      { "name": "Sekai Taikai Showcase",    "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Silver's dojos take center stage at the world tournament." },
+      { "name": "Empire Goes Live",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: global karate franchise officially launched." },
+      { "name": "Silver International Invoice","type": "Billing",  "offsetPct": 100, "description": "Final invoice from Silver International — paid in full, no questions asked." }
+    ]
+  },
+
+  "daysOff": {
+    "Johnny Lawrence":         [ { "realm": "cobra-kai-original", "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Coors Banquet refresher and old Iron Eagle marathon." } ],
+    "Miguel Diaz":             [ { "realm": "cobra-kai-original", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Family trip to Ecuador to visit his father." } ],
+    "Eli Hawk Moskowitz":      [ { "realm": "cobra-kai-original", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Mohawk re-bleach and tattoo touch-up appointment." } ],
+    "John Kreese":             [ { "realm": "cobra-kai-original", "offsetWeeks": 18, "numberOfDays": 4, "notes": "Vietnam veterans' reunion — no mercy, no questions." } ],
+    "Daniel LaRusso":          [ { "realm": "miyagi-do",          "offsetWeeks": 6,  "numberOfDays": 3, "notes": "LaRusso Auto Group quarterly sales kickoff." } ],
+    "Samantha LaRusso":        [ { "realm": "miyagi-do",          "offsetWeeks": 12, "numberOfDays": 2, "notes": "College visit weekend with Robby." } ],
+    "Robby Keene":             [ { "realm": "miyagi-do",          "offsetWeeks": 18, "numberOfDays": 3, "notes": "Volunteering at the youth detention center." } ],
+    "Chozen Toguchi":          [ { "realm": "miyagi-do",          "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Okinawa family obligations — annual ancestral rites." } ],
+    "Bert Frasier":            [ { "realm": "eagle-fang",         "offsetWeeks": 5,  "numberOfDays": 2, "notes": "Middle school band trip to Sacramento." } ],
+    "Devon Lee":               [ { "realm": "eagle-fang",         "offsetWeeks": 10, "numberOfDays": 1, "notes": "Debate team regional final." } ],
+    "Kenny Payne":             [ { "realm": "eagle-fang",         "offsetWeeks": 15, "numberOfDays": 2, "notes": "Visiting older brother on military base." } ],
+    "Terry Silver":            [ { "realm": "terry-silver-international", "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Tahiti retreat — meditation and hostile-takeover planning." } ],
+    "Kim Da-Eun":              [ { "realm": "terry-silver-international", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Return to Korea to consult with Master Kim Sun-Yung." } ],
+    "Mike Barnes":             [ { "realm": "terry-silver-international", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Furniture warehouse inventory weekend." } ],
+    "Master Kim Sun-Yung":     [ { "realm": "terry-silver-international", "offsetWeeks": 20, "numberOfDays": 4, "notes": "Annual mountain seclusion — no phones, no students." } ]
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "key": "Succession",
+  "displayName": "Succession",
+  "category": "Drama",
+  "emailDomain": "waystar-royco.test",
+  "account": {
+    "name": "Waystar Royco (Test Data)",
+    "accountNumber": "PSA-TEST-SUCCESSION"
+  },
+  "mailingAddress": {
+    "street": "1 Waystar Plaza, 51st Floor",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10020",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Patriarch Strategist",                "canonical": "Solution Architect",                      "description": "Logan-tier kingmaker — designs the over-arching architecture and decides who gets to touch the keyboard." },
+    { "name": "Number One Boy",                      "canonical": "Project Manager",                         "description": "Holds the timeline, herds the family, and absorbs the screaming on behalf of the team." },
+    { "name": "ATN Control Room Operator",           "canonical": "Salesforce Administrator",                "description": "Steward of permission sets, layouts, and the news ticker of org configuration." },
+    { "name": "Waystar Studios Engineer",            "canonical": "Salesforce Developer",                    "description": "Builds Apex, LWC, and platform pipework deep inside the Waystar machine." },
+    { "name": "US Practice Lead — Manhattan",        "canonical": "Salesforce Practice Lead - USA",          "description": "Sets standards across the American Salesforce craft and reports up to the C-suite." },
+    { "name": "Senior Cruises Consultant — Mumbai",  "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran troubleshooter — patrols the borders of customer requirements with practiced craft." },
+    { "name": "Cruises Consultant — Mumbai",         "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the Cruises division under the senior's eye." },
+    { "name": "Parks Integration Architect — USA",   "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce, ATN, Parks, and the realms beyond." },
+    { "name": "Parks Senior Integration Eng — Mumbai","canonical": "Integration Senior Consultant - India",  "description": "Lays the stones of API, middleware, and event flows under the architect's plan." },
+    { "name": "Parks Integration Engineer — Mumbai", "canonical": "Integration Consultant - India",          "description": "Learns the craft — webhooks, batch, callouts and the GoJo-style error handling." },
+    { "name": "Theme Park QA Inspector",             "canonical": "QA Engineer",                             "description": "Finds the broken rollercoaster bolts before the press tour — owner of the bug list." },
+    { "name": "ATN Marketing Practice Lead",         "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for the brand and the message — leads all marketing craft across the conglomerate." },
+    { "name": "ATN Senior Brand Strategist",         "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather the audience and convert." },
+    { "name": "ATN Brand Coordinator",               "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative, and the daily news cycle." },
+    { "name": "M&A Analyst",                         "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the family and the build team." },
+    { "name": "Senior Studios Engineer — NYC",       "canonical": "Salesforce Senior Developer - USA",       "description": "Senior platform engineer in the Manhattan studios — owns the hardest Apex problems." },
+    { "name": "Junior Cruises Consultant — Mumbai",  "canonical": "Junior Salesforce Consultant - India",    "description": "First-rotation consultant on the Cruises programme — still learning where the bodies are." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "roy-family-core",
+      "projectName": "Roy Family — Succession Planning CRM",
+      "shortName": "Roy SP",
+      "subAccountName": "Roy Family Office",
+      "subAccountNumber": "PSA-TEST-SUCCESSION-ROYFAMILY",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Family Office Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Boar on the Floor", "isDefault": false, "billable": true, "children": [
+          { "name": "Family Therapy Intake", "billable": true },
+          { "name": "Trust Document Review", "billable": true }
+        ]},
+        { "name": "Build the Heir Apparent Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Crown Prince Profiling", "billable": true },
+          { "name": "Sibling Rivalry Scoring Model", "billable": true }
+        ]},
+        { "name": "Migrate the Inheritance Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Trust Vault Inventory", "billable": true },
+          { "name": "Cayman Account Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing at the Hamptons", "isDefault": false, "billable": true, "children": [
+          { "name": "Birthday Weekend UAT", "billable": true },
+          { "name": "Quiet Room Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Inner Circle", "isDefault": false, "billable": true, "children": [
+          { "name": "Heir Onboarding", "billable": true },
+          { "name": "Loyalty Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "waystar-c-suite",
+      "projectName": "Waystar C-Suite — Executive Operations Platform",
+      "shortName": "Waystar CSO",
+      "subAccountName": "Waystar Royco — Executive Office",
+      "subAccountNumber": "PSA-TEST-SUCCESSION-CSUITE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "51st Floor Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & General Counsel Review", "isDefault": false, "billable": true, "children": [
+          { "name": "Cruises Liability Audit", "billable": true },
+          { "name": "Compliance Sweep", "billable": true }
+        ]},
+        { "name": "Build the Boardroom Console", "isDefault": false, "billable": true, "children": [
+          { "name": "Quarterly Earnings Dashboard", "billable": true },
+          { "name": "Proxy Vote Tracker", "billable": true }
+        ]},
+        { "name": "Migrate the Comms Archive", "isDefault": false, "billable": true, "children": [
+          { "name": "Email Disclosure Sweep", "billable": true },
+          { "name": "Memo Reclassification", "billable": true }
+        ]},
+        { "name": "Testing the Crisis Response", "isDefault": false, "billable": true, "children": [
+          { "name": "DOJ Subpoena Drill", "billable": true },
+          { "name": "Press Statement Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Executives", "isDefault": false, "billable": true, "children": [
+          { "name": "Talking Points Bootcamp", "billable": true },
+          { "name": "Town Hall Simulation", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "external-rivals",
+      "projectName": "GoJo & External Rivals — Hostile Takeover Workbench",
+      "shortName": "Rivals HTW",
+      "subAccountName": "External Rivals Consortium",
+      "subAccountNumber": "PSA-TEST-SUCCESSION-RIVALS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "GoJo HQ Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Bear Hug Drafting", "isDefault": false, "billable": true, "children": [
+          { "name": "Pierce Family Diligence", "billable": true },
+          { "name": "Furness Brothers Outreach", "billable": true }
+        ]},
+        { "name": "Build the Bid Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Subscriber Number Modelling", "billable": true },
+          { "name": "Synergy Spreadsheet Tooling", "billable": true }
+        ]},
+        { "name": "Migrate the Activist Playbook", "isDefault": false, "billable": true, "children": [
+          { "name": "13D Filing Inventory", "billable": true },
+          { "name": "Board Slate Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Tender Offer", "isDefault": false, "billable": true, "children": [
+          { "name": "Friendly Term Sheet UAT", "billable": true },
+          { "name": "Hostile Bid Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Activist Investors", "isDefault": false, "billable": true, "children": [
+          { "name": "Proxy Talking Points", "billable": true },
+          { "name": "Mencken Endorsement Briefing", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "political-personal-orbit",
+      "projectName": "Political & Personal Orbit — Influence CRM",
+      "shortName": "Orbit ICRM",
+      "subAccountName": "Roy Personal & Political Network",
+      "subAccountNumber": "PSA-TEST-SUCCESSION-ORBIT",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Tuscany Wedding Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Plus-One Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Wedding Guest Vetting", "billable": true },
+          { "name": "Personal Brand Survey", "billable": true }
+        ]},
+        { "name": "Build the Influence Graph", "isDefault": false, "billable": true, "children": [
+          { "name": "Senator Roster Construction", "billable": true },
+          { "name": "Donor Relationship Mapping", "billable": true }
+        ]},
+        { "name": "Migrate the Address Book", "isDefault": false, "billable": true, "children": [
+          { "name": "Personal Contacts Inventory", "billable": true },
+          { "name": "Yacht Manifest Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Press Strategy", "isDefault": false, "billable": true, "children": [
+          { "name": "Vanity Fair Pitch UAT", "billable": true },
+          { "name": "Cover Story Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Personal Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Bodyguard Briefing", "billable": true },
+          { "name": "Wedding Planner Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "roy-family-core": [
+      { "fullName": "Logan Roy",            "themedRole": "Patriarch Strategist" },
+      { "fullName": "Kendall Roy",          "themedRole": "Number One Boy" },
+      { "fullName": "Siobhan Roy",          "themedRole": "US Practice Lead — Manhattan" },
+      { "fullName": "Roman Roy",            "themedRole": "ATN Marketing Practice Lead" },
+      { "fullName": "Connor Roy",           "themedRole": "M&A Analyst" },
+      { "fullName": "Marcia Roy",           "themedRole": "ATN Senior Brand Strategist" },
+      { "fullName": "Caroline Collingwood", "themedRole": "ATN Brand Coordinator" }
+    ],
+    "waystar-c-suite": [
+      { "fullName": "Gerri Kellman",        "themedRole": "Patriarch Strategist" },
+      { "fullName": "Karl Muller",          "themedRole": "US Practice Lead — Manhattan" },
+      { "fullName": "Frank Vernon",         "themedRole": "Parks Integration Architect — USA" },
+      { "fullName": "Hugo Baker",           "themedRole": "ATN Senior Brand Strategist" },
+      { "fullName": "Tom Wambsgans",        "themedRole": "Number One Boy" },
+      { "fullName": "Karolina Novotney",    "themedRole": "ATN Marketing Practice Lead" },
+      { "fullName": "Greg Hirsch",          "themedRole": "Junior Cruises Consultant — Mumbai" },
+      { "fullName": "Stewy Hosseini",       "themedRole": "M&A Analyst" }
+    ],
+    "external-rivals": [
+      { "fullName": "Lukas Matsson",        "themedRole": "Patriarch Strategist" },
+      { "fullName": "Naomi Pierce",         "themedRole": "ATN Brand Coordinator" },
+      { "fullName": "Sandi Furness",        "themedRole": "Senior Studios Engineer — NYC" },
+      { "fullName": "Sandy Furness",        "themedRole": "Parks Integration Architect — USA" },
+      { "fullName": "Ewan Roy",             "themedRole": "M&A Analyst" },
+      { "fullName": "Rhea Jarrell",         "themedRole": "Senior Cruises Consultant — Mumbai" },
+      { "fullName": "Jeryd Mencken",        "themedRole": "ATN Marketing Practice Lead" }
+    ],
+    "political-personal-orbit": [
+      { "fullName": "Willa Ferreyra",       "themedRole": "ATN Brand Coordinator" },
+      { "fullName": "Tabitha Hayes",        "themedRole": "Cruises Consultant — Mumbai" },
+      { "fullName": "Mondale",              "themedRole": "Theme Park QA Inspector" },
+      { "fullName": "Greg's Gran",          "themedRole": "Parks Senior Integration Eng — Mumbai" },
+      { "fullName": "Tom's Mom",            "themedRole": "ATN Control Room Operator" },
+      { "fullName": "Connor's Wedding Planner","themedRole": "Number One Boy" },
+      { "fullName": "ATN Field Reporter",   "themedRole": "Waystar Studios Engineer" },
+      { "fullName": "Mark Coburn",          "themedRole": "Patriarch Strategist" }
+    ]
+  },
+
+  "milestones": {
+    "roy-family-core": [
+      { "name": "Birthday at the Penthouse",    "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: family summoned for Logan's birthday and the first heir-apparent assessment." },
+      { "name": "Boar on the Floor",            "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: loyalty stress-tested over Tuscan sausage." },
+      { "name": "Vaulter Shutdown Review",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: family aligns on which legacy units to euthanise." },
+      { "name": "Argestes Conference Invoice",  "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Argestes panel attendance billed back to the family office." },
+      { "name": "L to the OG Performance",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Kendall's anointing, captured live." },
+      { "name": "Trust Hand-off",               "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: trust documents sealed and transitioned." }
+    ],
+    "waystar-c-suite": [
+      { "name": "Quarterly Earnings Call",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Q4 numbers reviewed on the 51st floor." },
+      { "name": "Cruises Internal Investigation","type": "Operational","offsetPct": 30,  "description": "Build phase: legacy liability docs ingested and tagged." },
+      { "name": "Senate Hearing Prep",          "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: dry-run testimony with general counsel." },
+      { "name": "Press Conference Go-Live",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: official statement issued from the Waystar lobby." },
+      { "name": "Severance Package Hand-off",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: exiting executives off-boarded with NDAs in hand." },
+      { "name": "Final Retainer Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the executive office." }
+    ],
+    "external-rivals": [
+      { "name": "First GoJo Bid",               "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Matsson's opening offer hits the wire." },
+      { "name": "Bear Hug Letter Drafted",      "type": "Operational", "offsetPct": 35,  "description": "Build: friendly-but-firm tender letter prepared." },
+      { "name": "Pierce Family Diligence Gate", "type": "Gate",        "offsetPct": 60,  "description": "Solution review: PGM diligence findings green-lit." },
+      { "name": "Tender Offer Live",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: bid filed, board ambushed mid-funeral." },
+      { "name": "Closing Dinner in Norway",     "type": "Operational", "offsetPct": 100, "description": "Project close: handshake at the GoJo summit." },
+      { "name": "Banker Success Fee",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice — advisory fee on close." }
+    ],
+    "political-personal-orbit": [
+      { "name": "Connor's Wedding Kickoff",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: guest list locked, plus-ones vetted." },
+      { "name": "Mencken Endorsement Workshop", "type": "Operational", "offsetPct": 30,  "description": "Discovery: political alignment modelled at the donor retreat." },
+      { "name": "Election Night War Room",      "type": "Operational", "offsetPct": 55,  "description": "Build: ATN call-room console live." },
+      { "name": "Vanity Fair Cover Acceptance", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: profile piece signed off pre-publication." },
+      { "name": "Tuscany Wedding Go-Live",      "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: family converges on Italy." },
+      { "name": "Final Personal Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the family office personal staff." }
+    ]
+  },
+
+  "daysOff": {
+    "Logan Roy":             [ { "realm": "roy-family-core",        "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Private medical — not to be discussed outside this room." } ],
+    "Kendall Roy":           [ { "realm": "roy-family-core",        "offsetWeeks": 12, "numberOfDays": 3, "notes": "Iceland recovery retreat — no phones." } ],
+    "Siobhan Roy":           [ { "realm": "waystar-c-suite",        "offsetWeeks": 8,  "numberOfDays": 2, "notes": "DC consulting trip — Gil Eavis fundraiser." } ],
+    "Roman Roy":             [ { "realm": "roy-family-core",        "offsetWeeks": 10, "numberOfDays": 1, "notes": "Management training programme — sales floor day." } ],
+    "Connor Roy":            [ { "realm": "political-personal-orbit","offsetWeeks": 14, "numberOfDays": 5, "notes": "Presidential campaign swing — New Hampshire diner tour." } ],
+    "Tom Wambsgans":         [ { "realm": "waystar-c-suite",        "offsetWeeks": 16, "numberOfDays": 4, "notes": "Cruises remediation deep-dive — alone in the chum bucket." } ],
+    "Greg Hirsch":           [ { "realm": "waystar-c-suite",        "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Visiting Gran in St. Paul — sandwich meeting." } ],
+    "Gerri Kellman":         [ { "realm": "waystar-c-suite",        "offsetWeeks": 18, "numberOfDays": 3, "notes": "Counsel offsite — strictly attorney-client privileged." } ],
+    "Lukas Matsson":         [ { "realm": "external-rivals",        "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Stockholm board reset — biohacking week." } ],
+    "Stewy Hosseini":        [ { "realm": "waystar-c-suite",        "offsetWeeks": 12, "numberOfDays": 2, "notes": "Burning Man — strategic relationships." } ],
+    "Naomi Pierce":          [ { "realm": "external-rivals",        "offsetWeeks": 16, "numberOfDays": 3, "notes": "Pierce family obligation — annual estate visit." } ],
+    "Willa Ferreyra":        [ { "realm": "political-personal-orbit","offsetWeeks": 8,  "numberOfDays": 2, "notes": "Off-Broadway play workshop." } ],
+    "Marcia Roy":            [ { "realm": "roy-family-core",        "offsetWeeks": 14, "numberOfDays": 5, "notes": "Indefinite trip to Milan — back when she's back." } ],
+    "Caroline Collingwood":  [ { "realm": "political-personal-orbit","offsetWeeks": 10, "numberOfDays": 4, "notes": "Tuscany wedding venue walk-through." } ],
+    "Mondale":               [ { "realm": "political-personal-orbit","offsetWeeks": 6,  "numberOfDays": 1, "notes": "Vet appointment — Connor insisted." } ]
+  }
+}
