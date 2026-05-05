@@ -61,7 +61,7 @@ const items = issues.map((i) => ({
   votes: reactionCount(i.reactionGroups, "THUMBS_UP"),
   hearts: reactionCount(i.reactionGroups, "HEART"),
   hooray: reactionCount(i.reactionGroups, "HOORAY"),
-  comments: i.comments,
+  comments: Array.isArray(i.comments) ? i.comments.length : (i.comments || 0),
   author: i.author?.login || null,
   authorAvatar: i.author?.is_bot ? null : `https://github.com/${i.author?.login}.png?size=40`,
   createdAt: i.createdAt,
