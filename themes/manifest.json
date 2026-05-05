@@ -3,92 +3,613 @@
   "generated_at": "2026-05-02",
   "description": "PSA Themed Data Wizard — theme catalogue. Each entry is a selectable theme in the PSA Admin Setup Wizard's Additional Data Creation tab. Phase A: only `key`, `displayName`, `category`, and `featured` are required. Theme body JSONs (with character/realm/role content) are authored separately under themes/content/<key>.json — see Phase E.",
   "themes": [
-    { "key": "Marvel",         "displayName": "Marvel Universe",       "category": "Comics",          "implemented": true,  "featured": true,  "body": "themes/content/marvel.json" },
-    { "key": "DC",             "displayName": "DC Comics",             "category": "Comics",          "implemented": true,  "featured": false, "body": "themes/content/dc.json" },
-
-    { "key": "StarWars",       "displayName": "Star Wars",             "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": true,  "body": "themes/content/star_wars.json" },
-    { "key": "StarTrek",       "displayName": "Star Trek",             "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": false, "body": "themes/content/star_trek.json" },
-    { "key": "HarryPotter",    "displayName": "Harry Potter",          "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": false, "body": "themes/content/harry_potter.json" },
-    { "key": "LOTR",           "displayName": "Lord of the Rings",     "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": true,  "body": "themes/content/lotr.json" },
-    { "key": "GameOfThrones",  "displayName": "Game of Thrones",       "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": false, "body": "themes/content/game_of_thrones.json" },
-    { "key": "DoctorWho",      "displayName": "Doctor Who",            "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/doctor_who.json" },
-    { "key": "Witcher",        "displayName": "The Witcher",           "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/witcher.json" },
-    { "key": "MassEffect",     "displayName": "Mass Effect",           "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/mass_effect.json" },
-    { "key": "FinalFantasyVII","displayName": "Final Fantasy VII",     "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/final_fantasy_vii.json" },
-    { "key": "AvatarLastAirbender","displayName": "Avatar: The Last Airbender", "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/avatar_last_airbender.json" },
-    { "key": "StrangerThings", "displayName": "Stranger Things",       "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/stranger_things.json" },
-    { "key": "PrincessBride",  "displayName": "The Princess Bride",    "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/princess_bride.json" },
-    { "key": "Discworld",      "displayName": "Discworld",             "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/discworld.json" },
-    { "key": "HungerGames",    "displayName": "The Hunger Games",      "category": "Sci-Fi / Fantasy", "implemented": false, "featured": false, "body": "themes/content/hunger_games.json" },
-
-    { "key": "GreekMyth",      "displayName": "Greek Mythology",       "category": "Mythology",       "implemented": false, "featured": true,  "body": "themes/content/greek_mythology.json" },
-    { "key": "RomanMyth",      "displayName": "Roman Mythology",       "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/roman_mythology.json" },
-    { "key": "NorseMyth",      "displayName": "Norse Mythology",       "category": "Mythology",       "implemented": false, "featured": true,  "body": "themes/content/norse_mythology.json" },
-    { "key": "EgyptianMyth",   "displayName": "Egyptian Mythology",    "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/egyptian_mythology.json" },
-    { "key": "HinduMyth",      "displayName": "Hindu Mythology",       "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/hindu_mythology.json" },
-    { "key": "ChineseMyth",    "displayName": "Chinese Mythology",     "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/chinese_mythology.json" },
-    { "key": "JapaneseMyth",   "displayName": "Japanese (Shinto) Mythology", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/japanese_mythology.json" },
-    { "key": "CelticMyth",     "displayName": "Celtic / Irish Mythology", "category": "Mythology",    "implemented": false, "featured": false, "body": "themes/content/celtic_mythology.json" },
-    { "key": "AztecMyth",      "displayName": "Aztec Mythology",       "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/aztec_mythology.json" },
-    { "key": "MayanMyth",      "displayName": "Mayan Mythology",       "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/mayan_mythology.json" },
-    { "key": "PolynesianMyth", "displayName": "Polynesian / Hawaiian Mythology", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/polynesian_mythology.json" },
-    { "key": "SlavicMyth",     "displayName": "Slavic Mythology",      "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/slavic_mythology.json" },
-    { "key": "YorubaMyth",     "displayName": "Yoruba (African) Mythology", "category": "Mythology",  "implemented": false, "featured": false, "body": "themes/content/yoruba_mythology.json" },
-    { "key": "SumerianMyth",   "displayName": "Sumerian / Mesopotamian Mythology", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/sumerian_mythology.json" },
-    { "key": "PersianMyth",    "displayName": "Persian / Zoroastrian Mythology", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/persian_mythology.json" },
-    { "key": "FinnishMyth",    "displayName": "Finnish (Kalevala) Mythology", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/finnish_mythology.json" },
-    { "key": "KoreanMyth",     "displayName": "Korean Mythology",      "category": "Mythology",       "implemented": false, "featured": false, "body": "themes/content/korean_mythology.json" },
-    { "key": "AboriginalDreamtime", "displayName": "Aboriginal Australian Dreamtime", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/aboriginal_dreamtime.json" },
-    { "key": "NativeAmericanSpirits", "displayName": "Native American Spirits", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/native_american_spirits.json" },
-    { "key": "BuddhistDeities","displayName": "Buddhist Deities & Bodhisattvas", "category": "Mythology", "implemented": false, "featured": false, "body": "themes/content/buddhist_deities.json" },
-
-    { "key": "Seinfeld",       "displayName": "Seinfeld",              "category": "Sitcom",          "implemented": false, "featured": false, "body": "themes/content/seinfeld.json" },
-    { "key": "Friends",        "displayName": "Friends",               "category": "Sitcom",          "implemented": false, "featured": false, "body": "themes/content/friends.json" },
-    { "key": "OfficeUS",       "displayName": "The Office (US)",       "category": "Sitcom",          "implemented": false, "featured": true,  "body": "themes/content/office_us.json" },
-    { "key": "ParksAndRec",    "displayName": "Parks & Recreation",    "category": "Sitcom",          "implemented": false, "featured": false, "body": "themes/content/parks_and_rec.json" },
-    { "key": "Brooklyn99",     "displayName": "Brooklyn Nine-Nine",    "category": "Sitcom",          "implemented": false, "featured": false, "body": "themes/content/brooklyn_99.json" },
-    { "key": "SchittsCreek",   "displayName": "Schitt's Creek",        "category": "Sitcom",          "implemented": false, "featured": false, "body": "themes/content/schitts_creek.json" },
-    { "key": "ArrestedDevelopment","displayName": "Arrested Development", "category": "Sitcom",       "implemented": false, "featured": false, "body": "themes/content/arrested_development.json" },
-
-    { "key": "BreakingBad",    "displayName": "Breaking Bad / Better Call Saul", "category": "Drama", "implemented": false, "featured": false, "body": "themes/content/breaking_bad.json" },
-    { "key": "MadMen",         "displayName": "Mad Men",               "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/mad_men.json" },
-    { "key": "Succession",     "displayName": "Succession",            "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/succession.json" },
-    { "key": "Sopranos",       "displayName": "The Sopranos",          "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/sopranos.json" },
-    { "key": "Yellowstone",    "displayName": "Yellowstone",           "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/yellowstone.json" },
-    { "key": "CobraKai",       "displayName": "Cobra Kai",             "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/cobra_kai.json" },
-
-    { "key": "SiliconValley",  "displayName": "Silicon Valley (HBO)",  "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/silicon_valley.json" },
-    { "key": "Suits",          "displayName": "Suits",                 "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/suits.json" },
-
-    { "key": "ToyStoryPixar",  "displayName": "Toy Story / Pixar",     "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/toy_story_pixar.json" },
-    { "key": "StudioGhibli",   "displayName": "Studio Ghibli",         "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/studio_ghibli.json" },
-    { "key": "Spongebob",      "displayName": "SpongeBob SquarePants", "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/spongebob.json" },
-    { "key": "AdventureTime",  "displayName": "Adventure Time",        "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/adventure_time.json" },
-    { "key": "RickAndMorty",   "displayName": "Rick and Morty",        "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/rick_and_morty.json" },
-    { "key": "DisneyPrincesses","displayName": "Disney Princesses",    "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/disney_princesses.json" },
-
-    { "key": "Mario",          "displayName": "Super Mario",           "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/mario.json" },
-    { "key": "Zelda",          "displayName": "The Legend of Zelda",   "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/zelda.json" },
-    { "key": "PokemonGen1",    "displayName": "Pokémon (Gen 1)",       "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/pokemon_gen1.json" },
-    { "key": "Halo",           "displayName": "Halo",                  "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/halo.json" },
-    { "key": "Sonic",          "displayName": "Sonic the Hedgehog",    "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/sonic.json" },
-
-    { "key": "Naruto",         "displayName": "Naruto",                "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/naruto.json" },
-    { "key": "DragonBallZ",    "displayName": "Dragon Ball Z",         "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/dragon_ball_z.json" },
-    { "key": "OnePiece",       "displayName": "One Piece",             "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/one_piece.json" },
-
-    { "key": "IndianaJones",   "displayName": "Indiana Jones",         "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/indiana_jones.json" },
-    { "key": "JamesBond",      "displayName": "James Bond",            "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/james_bond.json" },
-    { "key": "Pirates",        "displayName": "Pirates of the Caribbean", "category": "Pop Culture",  "implemented": false, "featured": false, "body": "themes/content/pirates.json" },
-    { "key": "SherlockHolmes", "displayName": "Sherlock Holmes",       "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/sherlock_holmes.json" },
-    { "key": "Arthurian",      "displayName": "Arthurian Legend",      "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/arthurian.json" },
-    { "key": "RobinHood",      "displayName": "Robin Hood",            "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/robin_hood.json" },
-
-    { "key": "Beatles",        "displayName": "The Beatles",           "category": "Music",           "implemented": false, "featured": false, "body": "themes/content/beatles.json" },
-    { "key": "RockHallOfFame", "displayName": "Rock & Roll Hall of Fame", "category": "Music",        "implemented": false, "featured": false, "body": "themes/content/rock_hall_of_fame.json" },
-
-    { "key": "FamousScientists","displayName": "Famous Scientists",    "category": "Education",       "implemented": false, "featured": false, "body": "themes/content/famous_scientists.json" },
-    { "key": "FamousAuthors",  "displayName": "Famous Authors",        "category": "Education",       "implemented": false, "featured": false, "body": "themes/content/famous_authors.json" },
-    { "key": "NASAAstronauts", "displayName": "NASA Astronauts",       "category": "Education",       "implemented": false, "featured": false, "body": "themes/content/nasa_astronauts.json" }
+    {
+      "key": "Marvel",
+      "displayName": "Marvel Universe",
+      "category": "Comics",
+      "implemented": true,
+      "featured": true,
+      "body": "themes/content/marvel.json"
+    },
+    {
+      "key": "DC",
+      "displayName": "DC Comics",
+      "category": "Comics",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/dc.json"
+    },
+    {
+      "key": "StarWars",
+      "displayName": "Star Wars",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": true,
+      "body": "themes/content/starwars.json"
+    },
+    {
+      "key": "StarTrek",
+      "displayName": "Star Trek",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/startrek.json"
+    },
+    {
+      "key": "HarryPotter",
+      "displayName": "Harry Potter",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/harrypotter.json"
+    },
+    {
+      "key": "LOTR",
+      "displayName": "Lord of the Rings",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": true,
+      "body": "themes/content/lotr.json"
+    },
+    {
+      "key": "GameOfThrones",
+      "displayName": "Game of Thrones",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/gameofthrones.json"
+    },
+    {
+      "key": "DoctorWho",
+      "displayName": "Doctor Who",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/doctorwho.json"
+    },
+    {
+      "key": "Witcher",
+      "displayName": "The Witcher",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/witcher.json"
+    },
+    {
+      "key": "MassEffect",
+      "displayName": "Mass Effect",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/masseffect.json"
+    },
+    {
+      "key": "FinalFantasyVII",
+      "displayName": "Final Fantasy VII",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/finalfantasyvii.json"
+    },
+    {
+      "key": "AvatarLastAirbender",
+      "displayName": "Avatar: The Last Airbender",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/avatarlastairbender.json"
+    },
+    {
+      "key": "StrangerThings",
+      "displayName": "Stranger Things",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/strangerthings.json"
+    },
+    {
+      "key": "PrincessBride",
+      "displayName": "The Princess Bride",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/princessbride.json"
+    },
+    {
+      "key": "Discworld",
+      "displayName": "Discworld",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/discworld.json"
+    },
+    {
+      "key": "HungerGames",
+      "displayName": "The Hunger Games",
+      "category": "Sci-Fi / Fantasy",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/hungergames.json"
+    },
+    {
+      "key": "GreekMyth",
+      "displayName": "Greek Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": true,
+      "body": "themes/content/greekmyth.json"
+    },
+    {
+      "key": "RomanMyth",
+      "displayName": "Roman Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/romanmyth.json"
+    },
+    {
+      "key": "NorseMyth",
+      "displayName": "Norse Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": true,
+      "body": "themes/content/norsemyth.json"
+    },
+    {
+      "key": "EgyptianMyth",
+      "displayName": "Egyptian Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/egyptianmyth.json"
+    },
+    {
+      "key": "HinduMyth",
+      "displayName": "Hindu Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/hindumyth.json"
+    },
+    {
+      "key": "ChineseMyth",
+      "displayName": "Chinese Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/chinesemyth.json"
+    },
+    {
+      "key": "JapaneseMyth",
+      "displayName": "Japanese (Shinto) Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/japanesemyth.json"
+    },
+    {
+      "key": "CelticMyth",
+      "displayName": "Celtic / Irish Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/celticmyth.json"
+    },
+    {
+      "key": "AztecMyth",
+      "displayName": "Aztec Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/aztecmyth.json"
+    },
+    {
+      "key": "MayanMyth",
+      "displayName": "Mayan Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/mayanmyth.json"
+    },
+    {
+      "key": "PolynesianMyth",
+      "displayName": "Polynesian / Hawaiian Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/polynesianmyth.json"
+    },
+    {
+      "key": "SlavicMyth",
+      "displayName": "Slavic Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/slavicmyth.json"
+    },
+    {
+      "key": "YorubaMyth",
+      "displayName": "Yoruba (African) Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/yorubamyth.json"
+    },
+    {
+      "key": "SumerianMyth",
+      "displayName": "Sumerian / Mesopotamian Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/sumerianmyth.json"
+    },
+    {
+      "key": "PersianMyth",
+      "displayName": "Persian / Zoroastrian Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/persianmyth.json"
+    },
+    {
+      "key": "FinnishMyth",
+      "displayName": "Finnish (Kalevala) Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/finnishmyth.json"
+    },
+    {
+      "key": "KoreanMyth",
+      "displayName": "Korean Mythology",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/koreanmyth.json"
+    },
+    {
+      "key": "AboriginalDreamtime",
+      "displayName": "Aboriginal Australian Dreamtime",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/aboriginaldreamtime.json"
+    },
+    {
+      "key": "NativeAmericanSpirits",
+      "displayName": "Native American Spirits",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/nativeamericanspirits.json"
+    },
+    {
+      "key": "BuddhistDeities",
+      "displayName": "Buddhist Deities & Bodhisattvas",
+      "category": "Mythology",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/buddhistdeities.json"
+    },
+    {
+      "key": "Seinfeld",
+      "displayName": "Seinfeld",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/seinfeld.json"
+    },
+    {
+      "key": "Friends",
+      "displayName": "Friends",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/friends.json"
+    },
+    {
+      "key": "OfficeUS",
+      "displayName": "The Office (US)",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": true,
+      "body": "themes/content/officeus.json"
+    },
+    {
+      "key": "ParksAndRec",
+      "displayName": "Parks & Recreation",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/parksandrec.json"
+    },
+    {
+      "key": "Brooklyn99",
+      "displayName": "Brooklyn Nine-Nine",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/brooklyn99.json"
+    },
+    {
+      "key": "SchittsCreek",
+      "displayName": "Schitt's Creek",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/schittscreek.json"
+    },
+    {
+      "key": "ArrestedDevelopment",
+      "displayName": "Arrested Development",
+      "category": "Sitcom",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/arresteddevelopment.json"
+    },
+    {
+      "key": "BreakingBad",
+      "displayName": "Breaking Bad / Better Call Saul",
+      "category": "Drama",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/breakingbad.json"
+    },
+    {
+      "key": "MadMen",
+      "displayName": "Mad Men",
+      "category": "Drama",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/madmen.json"
+    },
+    {
+      "key": "Succession",
+      "displayName": "Succession",
+      "category": "Drama",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/succession.json"
+    },
+    {
+      "key": "Sopranos",
+      "displayName": "The Sopranos",
+      "category": "Drama",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/sopranos.json"
+    },
+    {
+      "key": "Yellowstone",
+      "displayName": "Yellowstone",
+      "category": "Drama",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/yellowstone.json"
+    },
+    {
+      "key": "CobraKai",
+      "displayName": "Cobra Kai",
+      "category": "Drama",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/cobrakai.json"
+    },
+    {
+      "key": "SiliconValley",
+      "displayName": "Silicon Valley (HBO)",
+      "category": "Workplace",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/siliconvalley.json"
+    },
+    {
+      "key": "Suits",
+      "displayName": "Suits",
+      "category": "Workplace",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/suits.json"
+    },
+    {
+      "key": "ToyStoryPixar",
+      "displayName": "Toy Story / Pixar",
+      "category": "Animation",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/toystorypixar.json"
+    },
+    {
+      "key": "StudioGhibli",
+      "displayName": "Studio Ghibli",
+      "category": "Animation",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/studioghibli.json"
+    },
+    {
+      "key": "Spongebob",
+      "displayName": "SpongeBob SquarePants",
+      "category": "Animation",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/spongebob.json"
+    },
+    {
+      "key": "AdventureTime",
+      "displayName": "Adventure Time",
+      "category": "Animation",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/adventuretime.json"
+    },
+    {
+      "key": "RickAndMorty",
+      "displayName": "Rick and Morty",
+      "category": "Animation",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/rickandmorty.json"
+    },
+    {
+      "key": "DisneyPrincesses",
+      "displayName": "Disney Princesses",
+      "category": "Animation",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/disneyprincesses.json"
+    },
+    {
+      "key": "Mario",
+      "displayName": "Super Mario",
+      "category": "Video Games",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/mario.json"
+    },
+    {
+      "key": "Zelda",
+      "displayName": "The Legend of Zelda",
+      "category": "Video Games",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/zelda.json"
+    },
+    {
+      "key": "PokemonGen1",
+      "displayName": "Pokémon (Gen 1)",
+      "category": "Video Games",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/pokemongen1.json"
+    },
+    {
+      "key": "Halo",
+      "displayName": "Halo",
+      "category": "Video Games",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/halo.json"
+    },
+    {
+      "key": "Sonic",
+      "displayName": "Sonic the Hedgehog",
+      "category": "Video Games",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/sonic.json"
+    },
+    {
+      "key": "Naruto",
+      "displayName": "Naruto",
+      "category": "Anime",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/naruto.json"
+    },
+    {
+      "key": "DragonBallZ",
+      "displayName": "Dragon Ball Z",
+      "category": "Anime",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/dragonballz.json"
+    },
+    {
+      "key": "OnePiece",
+      "displayName": "One Piece",
+      "category": "Anime",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/onepiece.json"
+    },
+    {
+      "key": "IndianaJones",
+      "displayName": "Indiana Jones",
+      "category": "Pop Culture",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/indianajones.json"
+    },
+    {
+      "key": "JamesBond",
+      "displayName": "James Bond",
+      "category": "Pop Culture",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/jamesbond.json"
+    },
+    {
+      "key": "Pirates",
+      "displayName": "Pirates of the Caribbean",
+      "category": "Pop Culture",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/pirates.json"
+    },
+    {
+      "key": "SherlockHolmes",
+      "displayName": "Sherlock Holmes",
+      "category": "Pop Culture",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/sherlockholmes.json"
+    },
+    {
+      "key": "Arthurian",
+      "displayName": "Arthurian Legend",
+      "category": "Pop Culture",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/arthurian.json"
+    },
+    {
+      "key": "RobinHood",
+      "displayName": "Robin Hood",
+      "category": "Pop Culture",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/robinhood.json"
+    },
+    {
+      "key": "Beatles",
+      "displayName": "The Beatles",
+      "category": "Music",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/beatles.json"
+    },
+    {
+      "key": "RockHallOfFame",
+      "displayName": "Rock & Roll Hall of Fame",
+      "category": "Music",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/rockhalloffame.json"
+    },
+    {
+      "key": "FamousScientists",
+      "displayName": "Famous Scientists",
+      "category": "Education",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/famousscientists.json"
+    },
+    {
+      "key": "FamousAuthors",
+      "displayName": "Famous Authors",
+      "category": "Education",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/famousauthors.json"
+    },
+    {
+      "key": "NASAAstronauts",
+      "displayName": "NASA Astronauts",
+      "category": "Education",
+      "implemented": true,
+      "featured": false,
+      "body": "themes/content/nasaastronauts.json"
+    }
   ]
 }
