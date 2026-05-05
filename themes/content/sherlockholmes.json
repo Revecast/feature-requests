@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "key": "SherlockHolmes",
+  "displayName": "Sherlock Holmes",
+  "category": "Pop Culture",
+  "emailDomain": "221b-baker.test",
+  "account": {
+    "name": "Sherlock Holmes Universe (Test Data)",
+    "accountNumber": "PSA-TEST-SHERLOCKHOLMES"
+  },
+  "mailingAddress": {
+    "street": "221B Baker Street",
+    "city": "London",
+    "state": "Greater London",
+    "postalCode": "NW1 6XE",
+    "country": "United Kingdom"
+  },
+
+  "roles": [
+    { "name": "Consulting Detective",                 "canonical": "Solution Architect",                      "description": "The singular mind that perceives the whole pattern — designs the over-arching solution from clue to conclusion." },
+    { "name": "Case Manager of Baker Street",         "canonical": "Project Manager",                         "description": "Marshals the irregulars, holds the case timeline, and answers to the client at the door." },
+    { "name": "Keeper of the Commonplace Books",      "canonical": "Salesforce Administrator",                "description": "Steward of the index, the cuttings, and the agony columns — every record filed and cross-referenced." },
+    { "name": "Cipher-Smith of the Study",            "canonical": "Salesforce Developer",                    "description": "Cracks dancing-men ciphers and forges Apex, LWC and platform craft at the bench." },
+    { "name": "Senior Inspector of the Yard",         "canonical": "Salesforce Practice Lead - USA",          "description": "Scotland Yard's most decorated — sets standards for all official investigators." },
+    { "name": "Inspector of the Yard",                "canonical": "Salesforce Senior Consultant - India",    "description": "A practiced hand at the difficult cases — patrols the borders of customer requirements." },
+    { "name": "Constable of the Beat",                "canonical": "Salesforce Consultant - India",           "description": "Walks the cobbles night after night — carries discovery and configuration under the Inspector's eye." },
+    { "name": "Telegraph-Master of Whitehall",        "canonical": "Integration Technical Architect - USA",   "description": "Architect of the wires between Baker Street and the realms beyond — Whitehall, the Diogenes, the Continent." },
+    { "name": "Telegraph Operator",                   "canonical": "Integration Senior Consultant - India",   "description": "Lays the cables of API, middleware and event flows under the Telegraph-Master's plan." },
+    { "name": "Apprentice Telegraphist",              "canonical": "Integration Consultant - India",          "description": "Learns the dits and dahs of webhooks, batch and callouts — the patient craft of integration." },
+    { "name": "Police Surgeon",                       "canonical": "QA Engineer",                             "description": "Tends to the post-mortem of every release — finds the wound before the case reaches the magistrate." },
+    { "name": "Editor of The Strand",                 "canonical": "Marketing Practice Lead",                 "description": "Lifts the headline and the broadsheet for product and message — leads all marketing craft." },
+    { "name": "Senior Correspondent",                 "canonical": "Marketing Senior Consultant",             "description": "Strategist of the column inches — sounds the call to gather and convert." },
+    { "name": "Fleet Street Reporter",                "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — copy, broadsides, and the daily edition." },
+    { "name": "Doctor & Chronicler",                  "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal client and the detective's deductions." },
+    { "name": "Senior Cipher-Smith of London",        "canonical": "Salesforce Senior Developer - USA",       "description": "The most seasoned forger of code — when the cipher is impossible, the call goes to her." },
+    { "name": "Junior Investigator",                  "canonical": "Junior Salesforce Consultant - India",    "description": "First-year on the beat — earns the magnifying glass through patient apprenticeship." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "baker-street-irregulars",
+      "projectName": "Baker Street — Consulting Detective Practice CRM",
+      "shortName": "Baker St CRM",
+      "subAccountName": "Baker Street Irregulars Agency",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-BAKER-STREET-IRREGULARS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "221B Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Deduction", "isDefault": false, "billable": true, "children": [
+          { "name": "Initial Interview at the Door", "billable": true },
+          { "name": "Scene-of-Crime Reconnaissance", "billable": true },
+          { "name": "Hypothesis Drafting", "billable": true }
+        ]},
+        { "name": "Build the Case File", "isDefault": false, "billable": true, "children": [
+          { "name": "Commonplace Book Indexing", "billable": true },
+          { "name": "Magnifying-Glass Tooling", "billable": true },
+          { "name": "Disguise Wardrobe Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Index", "isDefault": false, "billable": true, "children": [
+          { "name": "Agony Column Catalog", "billable": true },
+          { "name": "Cuttings & Pasted Records", "billable": true }
+        ]},
+        { "name": "Testing in the Sitting Room", "isDefault": false, "billable": true, "children": [
+          { "name": "Hansom-Cab Field Trial", "billable": true },
+          { "name": "Persian-Slipper Smoke Test", "billable": true }
+        ]},
+        { "name": "Training the Irregulars", "isDefault": false, "billable": true, "children": [
+          { "name": "Street Urchin Onboarding", "billable": true },
+          { "name": "Wiggins's Captain Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "scotland-yard",
+      "projectName": "Scotland Yard — Official Investigations Platform",
+      "shortName": "Yard OIP",
+      "subAccountName": "Metropolitan Police — Scotland Yard",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-SCOTLAND-YARD",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Whitehall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Inquiry", "isDefault": false, "billable": true, "children": [
+          { "name": "Constabulary Census", "billable": true },
+          { "name": "Beat-Map Survey", "billable": true },
+          { "name": "Strategy with the Commissioner", "billable": true }
+        ]},
+        { "name": "Build the Case Registry", "isDefault": false, "billable": true, "children": [
+          { "name": "Bertillon Records Foundation", "billable": true },
+          { "name": "Fingerprint Bureau Tooling", "billable": true },
+          { "name": "Black Maria Dispatch System", "billable": true }
+        ]},
+        { "name": "Migrate the Blotter", "isDefault": false, "billable": true, "children": [
+          { "name": "Charge-Sheet Roll Call", "billable": true },
+          { "name": "Evidence Locker Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Old Bailey", "isDefault": false, "billable": true, "children": [
+          { "name": "Witness-Box Drill", "billable": true },
+          { "name": "Cross-Examination Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Constables", "isDefault": false, "billable": true, "children": [
+          { "name": "Truncheon & Whistle Foundations", "billable": true },
+          { "name": "Inspector's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "moriarty-syndicate",
+      "projectName": "Moriarty Syndicate — Criminal Operations Network",
+      "shortName": "Moriarty CON",
+      "subAccountName": "Professor Moriarty's Network",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-MORIARTY-SYNDICATE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Reichenbach Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Surveillance", "isDefault": false, "billable": true, "children": [
+          { "name": "Moran's Reconnaissance", "billable": true },
+          { "name": "Continental Spy Network Polling", "billable": true },
+          { "name": "Professor's War Room Strategy", "billable": true }
+        ]},
+        { "name": "Build the Web", "isDefault": false, "billable": true, "children": [
+          { "name": "Safehouse Foundation Forging", "billable": true },
+          { "name": "Air-Gun Calibration", "billable": true },
+          { "name": "Blackmail Ledger Network", "billable": true }
+        ]},
+        { "name": "Migrate the Operatives", "isDefault": false, "billable": true, "children": [
+          { "name": "Underworld Roll Call", "billable": true },
+          { "name": "Fence & Forger Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Heist", "isDefault": false, "billable": true, "children": [
+          { "name": "Bank-Vault Pen-test", "billable": true },
+          { "name": "Reichenbach Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Lieutenants", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Conscription", "billable": true },
+          { "name": "Colonel's Battle Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "diogenes-club-mycroft",
+      "projectName": "Diogenes Club — Whitehall Intelligence Implementation",
+      "shortName": "Diogenes WII",
+      "subAccountName": "The Diogenes Club & Whitehall",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-DIOGENES-CLUB-MYCROFT",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Stranger's Room Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Quiet Counsel", "isDefault": false, "billable": true, "children": [
+          { "name": "Mycroft's Memorandum Review", "billable": true },
+          { "name": "Future-State Briefing", "billable": true },
+          { "name": "Cabinet Council", "billable": true }
+        ]},
+        { "name": "Build the Cabinet Brief", "isDefault": false, "billable": true, "children": [
+          { "name": "Pall Mall Dossier Selection", "billable": true },
+          { "name": "Whitehall Platform Construction", "billable": true },
+          { "name": "Diplomatic Pouch Threading", "billable": true }
+        ]},
+        { "name": "Migrate the State Papers", "isDefault": false, "billable": true, "children": [
+          { "name": "Foreign Office Manuscript Catalog", "billable": true },
+          { "name": "Bruce-Partington Plans Recording", "billable": true }
+        ]},
+        { "name": "Testing the Codebook", "isDefault": false, "billable": true, "children": [
+          { "name": "Cipher Strength Trial", "billable": true },
+          { "name": "Despatch-Box Verification", "billable": true }
+        ]},
+        { "name": "Training the Pages", "isDefault": false, "billable": true, "children": [
+          { "name": "Cartwright's Errand-Boy Refresh", "billable": true },
+          { "name": "Silent-Member Etiquette Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "baker-street-irregulars": [
+      { "fullName": "Sherlock Holmes",        "themedRole": "Consulting Detective" },
+      { "fullName": "Dr. John Watson",        "themedRole": "Doctor & Chronicler" },
+      { "fullName": "Mrs. Hudson",            "themedRole": "Keeper of the Commonplace Books" },
+      { "fullName": "Wiggins",                "themedRole": "Case Manager of Baker Street" },
+      { "fullName": "Mary Morstan",           "themedRole": "Police Surgeon" },
+      { "fullName": "Inspector Lestrade",     "themedRole": "Inspector of the Yard" },
+      { "fullName": "The Baker Street Irregulars", "themedRole": "Junior Investigator" }
+    ],
+    "scotland-yard": [
+      { "fullName": "Inspector Lestrade",     "themedRole": "Senior Inspector of the Yard" },
+      { "fullName": "Inspector Gregson",      "themedRole": "Inspector of the Yard" },
+      { "fullName": "Inspector Hopkins",      "themedRole": "Inspector of the Yard" },
+      { "fullName": "Inspector Bradstreet",   "themedRole": "Inspector of the Yard" },
+      { "fullName": "Inspector MacDonald",    "themedRole": "Inspector of the Yard" },
+      { "fullName": "Constable Cook",         "themedRole": "Constable of the Beat" },
+      { "fullName": "Sergeant Coventry",      "themedRole": "Constable of the Beat" }
+    ],
+    "moriarty-syndicate": [
+      { "fullName": "Professor James Moriarty","themedRole": "Consulting Detective" },
+      { "fullName": "Colonel Sebastian Moran","themedRole": "Case Manager of Baker Street" },
+      { "fullName": "Charles Augustus Milverton","themedRole": "Editor of The Strand" },
+      { "fullName": "Henry Wood",             "themedRole": "Constable of the Beat" },
+      { "fullName": "John Clay",              "themedRole": "Cipher-Smith of the Study" },
+      { "fullName": "Killer Evans",           "themedRole": "Apprentice Telegraphist" },
+      { "fullName": "Stapleton",              "themedRole": "Doctor & Chronicler" }
+    ],
+    "diogenes-club-mycroft": [
+      { "fullName": "Mycroft Holmes",         "themedRole": "Consulting Detective" },
+      { "fullName": "Lord Holdhurst",         "themedRole": "Senior Inspector of the Yard" },
+      { "fullName": "Sir James Walter",       "themedRole": "Telegraph-Master of Whitehall" },
+      { "fullName": "Cadogan West",           "themedRole": "Telegraph Operator" },
+      { "fullName": "Hugo Oberstein",         "themedRole": "Senior Correspondent" },
+      { "fullName": "Cartwright",             "themedRole": "Junior Investigator" },
+      { "fullName": "Members of the Diogenes Club","themedRole": "Senior Cipher-Smith of London" },
+      { "fullName": "Fleet Street Press Pool","themedRole": "Fleet Street Reporter" }
+    ]
+  },
+
+  "milestones": {
+    "baker-street-irregulars": [
+      { "name": "The Client at the Door",    "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — case accepted in the sitting room at 221B." },
+      { "name": "The Game is Afoot",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Holmes pockets the magnifying glass and hails a hansom." },
+      { "name": "The Three-Pipe Problem",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: review with Watson over tobacco and silence." },
+      { "name": "Telegram to Lestrade",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the Yard summoned for the arrest." },
+      { "name": "The Solution Revealed",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Holmes lays out the deduction in the sitting room." },
+      { "name": "Case Filed in the Index",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the case is bound and shelved between covers." }
+    ],
+    "scotland-yard": [
+      { "name": "Briefing at the Yard",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Inspectors muster in the briefing room." },
+      { "name": "House-to-House Inquiry",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: constables canvas every door on the beat." },
+      { "name": "Suspect in Custody",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the prisoner held pending the magistrate." },
+      { "name": "Trial at the Old Bailey",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the case carried through to verdict." },
+      { "name": "Verdict & Sentencing",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the gavel falls and the case is closed." },
+      { "name": "Final Charge to the Crown", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: expenses billed to the Home Office." }
+    ],
+    "moriarty-syndicate": [
+      { "name": "The Web is Woven",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Professor's network of agents is mapped." },
+      { "name": "The Air-Gun is Loaded",     "type": "Operational", "offsetPct": 35,  "description": "Build: Moran's instrument tuned and sighted." },
+      { "name": "The Professor's Audit",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review at Moriarty's chambers — every variable accounted for." },
+      { "name": "The Heist Executed",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the operation runs as plotted on the blackboard." },
+      { "name": "Reichenbach Falls",         "type": "Operational", "offsetPct": 100, "description": "Project close: the syndicate dissolves into the spray." },
+      { "name": "Final Reckoning",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid in unmarked sovereigns." }
+    ],
+    "diogenes-club-mycroft": [
+      { "name": "Audience with Mycroft",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff in the Stranger's Room of the Diogenes Club." },
+      { "name": "Pall Mall Memorandum",      "type": "Operational", "offsetPct": 30,  "description": "Discovery: the brief drafted and circulated to Whitehall." },
+      { "name": "Cabinet Briefing",          "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards laid before the ministers in silence." },
+      { "name": "Bruce-Partington Recovered","type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the missing plans are returned to the safe." },
+      { "name": "Royal Audience",            "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the matter resolved at the highest level." },
+      { "name": "Discreet Recompense",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice — settled quietly through the Treasury." }
+    ]
+  },
+
+  "daysOff": {
+    "Sherlock Holmes":       [ { "realm": "baker-street-irregulars", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Black mood — Persian slipper, violin, and the seven-per-cent solution." } ],
+    "Dr. John Watson":       [ { "realm": "baker-street-irregulars", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Visiting Mary — domestic obligations at the Paddington practice." } ],
+    "Mrs. Hudson":           [ { "realm": "baker-street-irregulars", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Spring-cleaning at 221B — Holmes is told to vacate." } ],
+    "Wiggins":               [ { "realm": "baker-street-irregulars", "offsetWeeks": 6,  "numberOfDays": 1, "notes": "Treating the Irregulars to penny buns at Covent Garden." } ],
+    "Inspector Lestrade":    [ { "realm": "scotland-yard",           "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Annual constabulary review at the Home Office." } ],
+    "Inspector Gregson":     [ { "realm": "scotland-yard",           "offsetWeeks": 16, "numberOfDays": 3, "notes": "Recovering from a tussle on the Lambeth waterfront." } ],
+    "Inspector Hopkins":     [ { "realm": "scotland-yard",           "offsetWeeks": 12, "numberOfDays": 1, "notes": "Studying Holmes's monograph on tobacco ash — day of leave granted." } ],
+    "Professor James Moriarty": [ { "realm": "moriarty-syndicate",   "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Lecturing on the binomial theorem at a provincial university." } ],
+    "Colonel Sebastian Moran": [ { "realm": "moriarty-syndicate",    "offsetWeeks": 10, "numberOfDays": 3, "notes": "Tiger-hunt in the Indian foothills — old habits." } ],
+    "Charles Augustus Milverton": [ { "realm": "moriarty-syndicate", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Hampstead garden party — collecting indiscretions over cucumber sandwiches." } ],
+    "Mycroft Holmes":        [ { "realm": "diogenes-club-mycroft",   "offsetWeeks": 4,  "numberOfDays": 3, "notes": "His unvarying orbit broken — extraordinary government summons." } ],
+    "Cartwright":            [ { "realm": "diogenes-club-mycroft",   "offsetWeeks": 10, "numberOfDays": 1, "notes": "Errand to Dartmoor — the page-boy must catch the train." } ],
+    "Lord Holdhurst":        [ { "realm": "diogenes-club-mycroft",   "offsetWeeks": 16, "numberOfDays": 4, "notes": "Country seat — pheasant shoot with Cabinet colleagues." } ],
+    "Sir James Walter":      [ { "realm": "diogenes-club-mycroft",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Submarine plans audit — confidential, no questions." } ]
+  }
+}

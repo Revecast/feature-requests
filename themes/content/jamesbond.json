@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "key": "JamesBond",
+  "displayName": "James Bond",
+  "category": "Pop Culture",
+  "emailDomain": "mi6.test",
+  "account": {
+    "name": "MI6 Secret Intelligence Service (Test Data)",
+    "accountNumber": "PSA-TEST-JAMESBOND"
+  },
+  "mailingAddress": {
+    "street": "85 Albert Embankment",
+    "city": "London",
+    "state": "Greater London",
+    "postalCode": "SE1 7TP",
+    "country": "United Kingdom"
+  },
+
+  "roles": [
+    { "name": "Head of the Service (M)",            "canonical": "Solution Architect",                       "description": "Director-General of the Secret Intelligence Service — designs the over-arching mission architecture and signs the licence to kill." },
+    { "name": "Section Chief",                      "canonical": "Project Manager",                          "description": "Runs the operation from desk to dead-drop — tracks every agent, asset, and timeline against M's brief." },
+    { "name": "Quartermaster Branch (Q)",           "canonical": "Salesforce Administrator",                 "description": "Steward of the kit — manages gadgets, badges, fields, layouts, and every gizmo that comes through Q-Branch." },
+    { "name": "Q-Branch Engineer",                  "canonical": "Salesforce Developer",                     "description": "Builds the exploding pens and Aston Martins of Apex — bespoke automation for licensed-to-kill workloads." },
+    { "name": "Head of Station — Americas",         "canonical": "Salesforce Practice Lead - USA",           "description": "Senior officer over all Western-hemisphere Salesforce operations — sets tradecraft and mentors junior agents." },
+    { "name": "00 Agent — Senior Field Officer",    "canonical": "Salesforce Senior Consultant - India",     "description": "Holds a double-O number — operates with autonomy across enemy borders of customer requirements." },
+    { "name": "Field Operative",                    "canonical": "Salesforce Consultant - India",            "description": "Carries discovery, configuration, and recon across the realm under the 00's command." },
+    { "name": "Cipher Bureau Chief",                "canonical": "Integration Technical Architect - USA",    "description": "Architect of the great signal lines between MI6 and the realms beyond — APIs, middleware, and event flows." },
+    { "name": "Cryptographer — Senior",             "canonical": "Integration Senior Consultant - India",    "description": "Lays the cipher and the canal between systems under the Bureau Chief's plan." },
+    { "name": "Cryptographer — Junior",             "canonical": "Integration Consultant - India",           "description": "Apprentice of the cipher — webhooks, callouts, and the patient art of error handling." },
+    { "name": "Internal Affairs Auditor",           "canonical": "QA Engineer",                              "description": "Sweeps every safehouse for bugs — finds the maladies in the build before they reach the Minister." },
+    { "name": "Director of Public Affairs",         "canonical": "Marketing Practice Lead",                  "description": "Lifts the banner for the Service to the world above — leads all marketing and cover-story craft." },
+    { "name": "Press Liaison Officer",              "canonical": "Marketing Senior Consultant",              "description": "Strategist of the public face — campaigns, narratives, and the careful leak." },
+    { "name": "Cover Story Specialist",             "canonical": "Marketing Consultant",                     "description": "Carries the campaign forward into the field — content, creative, and the daily brush-pass." },
+    { "name": "Mission Briefing Analyst",           "canonical": "Business Analyst",                         "description": "Records what is needed and what is promised — translates between the Minister and the operatives." },
+    { "name": "Master Armourer",                    "canonical": "Salesforce Senior Developer - USA",        "description": "Senior smith of the Service's heavy ordnance — Apex frameworks, platform features, and the deepest delvings." },
+    { "name": "Trainee Operative",                  "canonical": "Junior Salesforce Consultant - India",     "description": "Fresh from the Fort — learns the ropes of configuration, declarative tradecraft, and not blowing one's cover." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every era starts in the past — past weeks get Time Entries, future weeks get Schedules. Each Bond era becomes a realm with its own cast of villains, allies, and field officers.",
+
+  "realms": [
+    {
+      "key": "connery-era",
+      "projectName": "Connery Era — Cold War Counter-Intelligence Rollout",
+      "shortName": "Connery CWC",
+      "subAccountName": "MI6 — Connery-Era Operations",
+      "subAccountNumber": "PSA-TEST-JAMESBOND-CONNERY",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Universal Exports Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Briefing at Universal Exports", "isDefault": false, "billable": true, "children": [
+          { "name": "Office Briefing with M", "billable": true },
+          { "name": "Crab Key Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Walther PPK Toolkit", "isDefault": false, "billable": true, "children": [
+          { "name": "Q-Branch Sidearm Fitting", "billable": true },
+          { "name": "Aston Martin DB5 Outfitting", "billable": true }
+        ]},
+        { "name": "Migrate the SMERSH Dossiers", "isDefault": false, "billable": true, "children": [
+          { "name": "Card Index Inventory", "billable": true },
+          { "name": "SPECTRE File Translation", "billable": true }
+        ]},
+        { "name": "Testing at Fort Knox", "isDefault": false, "billable": true, "children": [
+          { "name": "Vault Penetration Drill", "billable": true },
+          { "name": "Laser Cutter Stress Test", "billable": true }
+        ]},
+        { "name": "Training the New Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "00 Section Onboarding", "billable": true },
+          { "name": "Moneypenny's Front Desk Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "moore-era",
+      "projectName": "Moore Era — Detente Surveillance Modernisation",
+      "shortName": "Moore DSM",
+      "subAccountName": "MI6 — Moore-Era Operations",
+      "subAccountNumber": "PSA-TEST-JAMESBOND-MOORE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Lotus Esprit Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Yacht-side Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Drax Industries Survey", "billable": true },
+          { "name": "Atlantis Base Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Submersible Lotus", "isDefault": false, "billable": true, "children": [
+          { "name": "Wet-bike Prototyping", "billable": true },
+          { "name": "Ski-pole Rocket Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Octopussy Dossiers", "isDefault": false, "billable": true, "children": [
+          { "name": "Circus Roster Import", "billable": true },
+          { "name": "Faberge Egg Provenance", "billable": true }
+        ]},
+        { "name": "Testing in Outer Space", "isDefault": false, "billable": true, "children": [
+          { "name": "Moonraker Shuttle Drill", "billable": true },
+          { "name": "Zero-G UAT Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the New Field Officers", "isDefault": false, "billable": true, "children": [
+          { "name": "Karate-chop Foundations", "billable": true },
+          { "name": "Eyebrow-raise Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "brosnan-era",
+      "projectName": "Brosnan Era — Post-Cold-War GoldenEye Platform",
+      "shortName": "Brosnan GEP",
+      "subAccountName": "MI6 — Brosnan-Era Operations",
+      "subAccountNumber": "PSA-TEST-JAMESBOND-BROSNAN",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "BMW Z3 Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Severnaya Recon", "isDefault": false, "billable": true, "children": [
+          { "name": "Janus Syndicate Profiling", "billable": true },
+          { "name": "King Industries Audit", "billable": true }
+        ]},
+        { "name": "Build the GoldenEye Defence Grid", "isDefault": false, "billable": true, "children": [
+          { "name": "Satellite Hardening", "billable": true },
+          { "name": "Tank Chase Choreography", "billable": true }
+        ]},
+        { "name": "Migrate the Cold-War Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "KGB Defector Files", "billable": true },
+          { "name": "Stealth Ship Blueprints", "billable": true }
+        ]},
+        { "name": "Testing at the Carver Citadel", "isDefault": false, "billable": true, "children": [
+          { "name": "Headline Stress Test", "billable": true },
+          { "name": "Pen-test the Press Room", "billable": true }
+        ]},
+        { "name": "Training Judi Dench's Generation", "isDefault": false, "billable": true, "children": [
+          { "name": "00 Re-certification", "billable": true },
+          { "name": "Moneypenny Innuendo Lab", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "craig-era",
+      "projectName": "Craig Era — Quantum & Spectre Modernisation",
+      "shortName": "Craig QSM",
+      "subAccountName": "MI6 — Craig-Era Operations",
+      "subAccountNumber": "PSA-TEST-JAMESBOND-CRAIG",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Aston Martin DBS Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at Casino Royale", "isDefault": false, "billable": true, "children": [
+          { "name": "Quantum Network Profiling", "billable": true },
+          { "name": "Spectre Ledger Inventory", "billable": true }
+        ]},
+        { "name": "Build the Skyfall Lodge Defences", "isDefault": false, "billable": true, "children": [
+          { "name": "Highland Trap Engineering", "billable": true },
+          { "name": "DB5 Machine-gun Refit", "billable": true }
+        ]},
+        { "name": "Migrate the Nine Eyes Programme", "isDefault": false, "billable": true, "children": [
+          { "name": "Surveillance Feed Catalog", "billable": true },
+          { "name": "Joint-Intelligence File Merge", "billable": true }
+        ]},
+        { "name": "Testing on the Heracles Project", "isDefault": false, "billable": true, "children": [
+          { "name": "Nanobot Containment Drill", "billable": true },
+          { "name": "Poison Garden UAT", "billable": true }
+        ]},
+        { "name": "Training the Next 007", "isDefault": false, "billable": true, "children": [
+          { "name": "Nomi's Foundations", "billable": true },
+          { "name": "Q-Branch Smartblood Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "connery-era": [
+      { "fullName": "Sean Connery's James Bond",  "themedRole": "00 Agent — Senior Field Officer" },
+      { "fullName": "M (Bernard Lee)",            "themedRole": "Head of the Service (M)" },
+      { "fullName": "Q (Desmond Llewelyn)",       "themedRole": "Quartermaster Branch (Q)" },
+      { "fullName": "Moneypenny (Lois Maxwell)",  "themedRole": "Mission Briefing Analyst" },
+      { "fullName": "Dr. No",                     "themedRole": "Cipher Bureau Chief" },
+      { "fullName": "Auric Goldfinger",           "themedRole": "Master Armourer" },
+      { "fullName": "Pussy Galore",               "themedRole": "Field Operative" },
+      { "fullName": "Honey Rider",                "themedRole": "Trainee Operative" },
+      { "fullName": "Felix Leiter",               "themedRole": "Head of Station — Americas" }
+    ],
+    "moore-era": [
+      { "fullName": "Roger Moore's James Bond",   "themedRole": "00 Agent — Senior Field Officer" },
+      { "fullName": "Jaws",                       "themedRole": "Q-Branch Engineer" },
+      { "fullName": "Francisco Scaramanga",       "themedRole": "Master Armourer" },
+      { "fullName": "Octopussy",                  "themedRole": "Section Chief" },
+      { "fullName": "Holly Goodhead",             "themedRole": "Cryptographer — Senior" },
+      { "fullName": "May Day",                    "themedRole": "Field Operative" },
+      { "fullName": "Hugo Drax",                  "themedRole": "Cipher Bureau Chief" },
+      { "fullName": "Karl Stromberg",             "themedRole": "Director of Public Affairs" }
+    ],
+    "brosnan-era": [
+      { "fullName": "Pierce Brosnan's James Bond","themedRole": "00 Agent — Senior Field Officer" },
+      { "fullName": "M (Judi Dench)",             "themedRole": "Head of the Service (M)" },
+      { "fullName": "Alec Trevelyan / 006",       "themedRole": "Internal Affairs Auditor" },
+      { "fullName": "Xenia Onatopp",              "themedRole": "Field Operative" },
+      { "fullName": "Elektra King",               "themedRole": "Press Liaison Officer" },
+      { "fullName": "Wai Lin",                    "themedRole": "Cryptographer — Senior" },
+      { "fullName": "Valentin Zukovsky",          "themedRole": "Cover Story Specialist" },
+      { "fullName": "Renard",                     "themedRole": "Cryptographer — Junior" },
+      { "fullName": "Jinx",                       "themedRole": "Head of Station — Americas" }
+    ],
+    "craig-era": [
+      { "fullName": "Daniel Craig's James Bond",  "themedRole": "00 Agent — Senior Field Officer" },
+      { "fullName": "M (Judi Dench)",             "themedRole": "Head of the Service (M)" },
+      { "fullName": "M (Ralph Fiennes)",          "themedRole": "Head of the Service (M)" },
+      { "fullName": "Q (Ben Whishaw)",            "themedRole": "Quartermaster Branch (Q)" },
+      { "fullName": "Moneypenny (Naomie Harris)", "themedRole": "Mission Briefing Analyst" },
+      { "fullName": "Vesper Lynd",                "themedRole": "Cryptographer — Senior" },
+      { "fullName": "Le Chiffre",                 "themedRole": "Cipher Bureau Chief" },
+      { "fullName": "Raoul Silva",                "themedRole": "Q-Branch Engineer" },
+      { "fullName": "Madeleine Swann",            "themedRole": "Mission Briefing Analyst" },
+      { "fullName": "Lyutsifer Safin",            "themedRole": "Master Armourer" }
+    ]
+  },
+
+  "milestones": {
+    "connery-era": [
+      { "name": "Briefing at Universal Exports",  "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — M briefs 007 from behind the padded door." },
+      { "name": "Q-Branch Kit Issued",            "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Walther PPK, Aston Martin DB5, ejector seat installed." },
+      { "name": "Audience at Goldfinger's Stud Farm","type": "Gate",     "offsetPct": 50,  "description": "Mid-project gate: villain encounter and laser-table review." },
+      { "name": "Operation Grand Slam Foiled",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Fort Knox heist averted." },
+      { "name": "Crab Key Lair Demolished",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Dr. No's reactor goes critical, mission complete." },
+      { "name": "Debrief and Martini",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: shaken, not stirred — handover at the bar." }
+    ],
+    "moore-era": [
+      { "name": "Yacht-side Briefing",            "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: cocktails on the Riviera, eyebrow lifted." },
+      { "name": "Lotus Submersible Delivered",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: car-becomes-submarine ready for sea trials." },
+      { "name": "Atlantis Base Infiltrated",      "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Stromberg's undersea citadel surveyed and breached." },
+      { "name": "Moonraker Shuttle Recovered",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: orbital station Drax neutralised, nerve gas contained." },
+      { "name": "Octopussy Circus Closed",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: jewel-smuggling ring rolled up cleanly." },
+      { "name": "Final Bill from Q-Branch",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: gadget repair, ski-pole rockets, one Lotus." }
+    ],
+    "brosnan-era": [
+      { "name": "Severnaya Discovery",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: GoldenEye satellite weapon catalogued and traced." },
+      { "name": "Tank Chase Through St Petersburg","type": "Operational","offsetPct": 35,  "description": "Build: heavy-armour deployment through downtown infrastructure." },
+      { "name": "Audit at Carver Media Group",    "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the press baron himself." },
+      { "name": "Stealth Ship Sunk",              "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Carver's stealth ship neutralised in international waters." },
+      { "name": "Nuclear Submarine Recovered",    "type": "Operational", "offsetPct": 100, "description": "Project close: Renard contained, Elektra King handled." },
+      { "name": "Final Reckoning with Janus",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice from MI6 — 006's defection accounted for." }
+    ],
+    "craig-era": [
+      { "name": "Casino Royale Buy-in",           "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: high-stakes table at Montenegro, Le Chiffre opposite." },
+      { "name": "Quantum Cell Dismantled",        "type": "Operational", "offsetPct": 30,  "description": "Discovery: Quantum's Bolivia operation rolled up." },
+      { "name": "Skyfall Lodge Defended",         "type": "Operational", "offsetPct": 55,  "description": "Build: Silva's siege of the Highland lodge survived." },
+      { "name": "Spectre Audit at L'Américain",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Blofeld unmasked, organisation map complete." },
+      { "name": "Heracles Project Neutralised",   "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Safin's nanobot facility destroyed." },
+      { "name": "Final Toast at the Service",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: a salute to a fallen agent — 007 stands down." }
+    ]
+  },
+
+  "daysOff": {
+    "Sean Connery's James Bond":   [ { "realm": "connery-era", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recuperation in the Bahamas — pina colada and physiotherapy." } ],
+    "Moneypenny (Lois Maxwell)":   [ { "realm": "connery-era", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Long weekend — finally took the holiday she's been saving." } ],
+    "Felix Leiter":                [ { "realm": "connery-era", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Langley conference — annual CIA liaison summit." } ],
+    "Honey Rider":                 [ { "realm": "connery-era", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Shell-diving expedition off Crab Key." } ],
+    "Roger Moore's James Bond":    [ { "realm": "moore-era",   "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Skiing in St Moritz — and a 'work' encounter on the slopes." } ],
+    "Jaws":                        [ { "realm": "moore-era",   "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Dental appointment — annual orthodontic adjustment." } ],
+    "Holly Goodhead":              [ { "realm": "moore-era",   "offsetWeeks": 16, "numberOfDays": 3, "notes": "NASA refresher training — zero-G certification renewal." } ],
+    "Pierce Brosnan's James Bond": [ { "realm": "brosnan-era", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Caribbean sabbatical — beach, BMW, and a brief cigar." } ],
+    "M (Judi Dench)":              [ { "realm": "brosnan-era", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Cabinet Office briefings — closed-door PM session." } ],
+    "Wai Lin":                     [ { "realm": "brosnan-era", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Chinese New Year — family obligations in Beijing." } ],
+    "Daniel Craig's James Bond":   [ { "realm": "craig-era",   "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Off-grid in Jamaica — retired, allegedly." } ],
+    "Q (Ben Whishaw)":             [ { "realm": "craig-era",   "offsetWeeks": 10, "numberOfDays": 2, "notes": "Cat-sitting weekend — the two Sphynxes need attention." } ],
+    "Moneypenny (Naomie Harris)":  [ { "realm": "craig-era",   "offsetWeeks": 14, "numberOfDays": 2, "notes": "Weekend at the range — keeping the field-shot certified." } ],
+    "Madeleine Swann":             [ { "realm": "craig-era",   "offsetWeeks": 18, "numberOfDays": 4, "notes": "Family matter in the French Alps — taking Mathilde to the lake." } ]
+  }
+}

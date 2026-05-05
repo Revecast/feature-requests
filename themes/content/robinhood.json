@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "key": "RobinHood",
+  "displayName": "Robin Hood",
+  "category": "Pop Culture",
+  "emailDomain": "sherwood.test",
+  "account": {
+    "name": "Sherwood Forest (Test Data)",
+    "accountNumber": "PSA-TEST-ROBINHOOD"
+  },
+  "mailingAddress": {
+    "street": "1 Major Oak Glade",
+    "city": "Edwinstowe",
+    "state": "Nottinghamshire",
+    "postalCode": "NG21 9HN",
+    "country": "England"
+  },
+
+  "roles": [
+    { "name": "Master of the Greenwood",          "canonical": "Solution Architect",                      "description": "Knower of every glade and footpath — designs the over-arching solution and watches its integrity from the canopy." },
+    { "name": "Captain of the Band",              "canonical": "Project Manager",                         "description": "Marshals the merry men of delivery, holds the timeline, and answers to Robin himself." },
+    { "name": "Keeper of the Tally Sticks",       "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets — every coin and quiver counted." },
+    { "name": "Bowyer of Sherwood",               "canonical": "Salesforce Developer",                    "description": "Crafts Apex, LWC, and platform features the way a bowyer shapes yew — true and lethal." },
+    { "name": "Sheriff's Bane (Practice Lead)",   "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Salesforce craft in the band — sets standards and guides the senior bowyers." },
+    { "name": "Forester of the Greenwood",        "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced craft." },
+    { "name": "Yeoman of the Glade",              "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the Forester's eye." },
+    { "name": "Master of the King's Bridges",     "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the forest." },
+    { "name": "Bridge-Warden of the Trent",       "canonical": "Integration Senior Consultant - India",   "description": "Lays the planks of API, middleware, and event flows under the Master's plan." },
+    { "name": "Apprentice Bridge-Warden",         "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the stout patterns of error handling." },
+    { "name": "Master Bowyer of Locksley",        "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of the platform — mentors the younger bowyers and shapes the deepest custom code." },
+    { "name": "Apprentice Yeoman",                "canonical": "Junior Salesforce Consultant - India",    "description": "Newest to the band — learns the lay of the forest under every other yeoman's watch." },
+    { "name": "Healer of the Hermitage",          "canonical": "QA Engineer",                             "description": "Tends the wounded and the weary — finds the maladies in the build before they reach the King." },
+    { "name": "Herald of the Horn",               "canonical": "Marketing Practice Lead",                 "description": "Lifts the horn of Sherwood for product and message — leads all marketing craft." },
+    { "name": "Minstrel of the Camp",             "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert with ballad and broadside." },
+    { "name": "Balladeer of the Road",            "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Council Scribe of Sherwood",       "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the customer and the band's craft." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "merry-men",
+      "projectName": "Merry Men — Outlaw Operations Platform",
+      "shortName": "Merry Men OOP",
+      "subAccountName": "The Merry Men of Sherwood",
+      "subAccountNumber": "PSA-TEST-ROBINHOOD-MERRY-MEN",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Greenwood Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Scouting", "isDefault": false, "billable": true, "children": [
+          { "name": "Forest Reconnaissance", "billable": true },
+          { "name": "King's Road Watch", "billable": true },
+          { "name": "Camp Council Drafting", "billable": true }
+        ]},
+        { "name": "Build the Hideouts", "isDefault": false, "billable": true, "children": [
+          { "name": "Major Oak Stronghold", "billable": true },
+          { "name": "Glade Cache Tooling", "billable": true },
+          { "name": "Hidden Path Hardening", "billable": true }
+        ]},
+        { "name": "Redistribute the Treasure", "isDefault": false, "billable": true, "children": [
+          { "name": "Coffer Inventory", "billable": true },
+          { "name": "Poor-Folk Ledger", "billable": true }
+        ]},
+        { "name": "Testing at the Tournament", "isDefault": false, "billable": true, "children": [
+          { "name": "Archery Trial (UAT)", "billable": true },
+          { "name": "Quarterstaff Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Band", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Initiation", "billable": true },
+          { "name": "Captain's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "nottingham-court",
+      "projectName": "Nottingham Court — Sheriff's Tax & Levies CRM",
+      "shortName": "Notts STL",
+      "subAccountName": "The High Court of Nottingham",
+      "subAccountNumber": "PSA-TEST-ROBINHOOD-NOTTINGHAM-COURT",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Castle Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Decree", "isDefault": false, "billable": true, "children": [
+          { "name": "Shire Census", "billable": true },
+          { "name": "Tax Roll Audit", "billable": true },
+          { "name": "Strategy with the Prince", "billable": true }
+        ]},
+        { "name": "Fortify the Keep", "isDefault": false, "billable": true, "children": [
+          { "name": "Curtain Wall Construction", "billable": true },
+          { "name": "Portcullis & Drawbridge Forging", "billable": true },
+          { "name": "Banner & Heraldry Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Rolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Vellum Ledger Catalog", "billable": true },
+          { "name": "Tithe Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing at the Assize", "isDefault": false, "billable": true, "children": [
+          { "name": "Court Session Drill", "billable": true },
+          { "name": "Garrison Muster Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Pikeman Foundations", "billable": true },
+          { "name": "Marshal's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "lionhearted-loyalists",
+      "projectName": "Lionhearted Loyalists — King's Return Programme",
+      "shortName": "Lionheart KRP",
+      "subAccountName": "Loyalists of King Richard",
+      "subAccountNumber": "PSA-TEST-ROBINHOOD-LIONHEARTED-LOYALISTS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Crown Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Embassy", "isDefault": false, "billable": true, "children": [
+          { "name": "Crusader Roll Survey", "billable": true },
+          { "name": "Loyal Houses Outreach", "billable": true },
+          { "name": "Council of the Crown", "billable": true }
+        ]},
+        { "name": "Build the King's Return", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Procession Plan", "billable": true },
+          { "name": "Treasury Restoration Tooling", "billable": true },
+          { "name": "Loyalty Charter Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Treasury", "isDefault": false, "billable": true, "children": [
+          { "name": "Coronation Reserve Audit", "billable": true },
+          { "name": "Crusade Debt Reckoning", "billable": true }
+        ]},
+        { "name": "Testing the Restoration", "isDefault": false, "billable": true, "children": [
+          { "name": "Court of Audience UAT", "billable": true },
+          { "name": "Tournament of Welcome Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Loyal Houses", "isDefault": false, "billable": true, "children": [
+          { "name": "Knight's Code Refresh", "billable": true },
+          { "name": "Lady's Court Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "outlaws-of-the-greenwood",
+      "projectName": "Outlaws of the Greenwood — Wider Brotherhood Network",
+      "shortName": "Outlaws WBN",
+      "subAccountName": "The Wider Brotherhood of Outlaws",
+      "subAccountNumber": "PSA-TEST-ROBINHOOD-OUTLAWS-OF-THE-GREENWOOD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Brotherhood Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Whispers", "isDefault": false, "billable": true, "children": [
+          { "name": "Tavern Listening Post", "billable": true },
+          { "name": "Outlaw Census", "billable": true },
+          { "name": "Brotherhood Council", "billable": true }
+        ]},
+        { "name": "Build the Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Cloudesley Bowmen Roster", "billable": true },
+          { "name": "Cross-County Courier Tooling", "billable": true },
+          { "name": "Safehouse Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Loot", "isDefault": false, "billable": true, "children": [
+          { "name": "Cache Inventory", "billable": true },
+          { "name": "Fence & Tinker Ledger", "billable": true }
+        ]},
+        { "name": "Testing the Brotherhood", "isDefault": false, "billable": true, "children": [
+          { "name": "Sherwood-Inglewood Joint Drill", "billable": true },
+          { "name": "Ambush Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Outlaws", "isDefault": false, "billable": true, "children": [
+          { "name": "Longbow Foundations", "billable": true },
+          { "name": "Disguise & Stealth Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "merry-men": [
+      { "fullName": "Robin Hood",             "themedRole": "Master of the Greenwood" },
+      { "fullName": "Little John",            "themedRole": "Captain of the Band" },
+      { "fullName": "Friar Tuck",             "themedRole": "Healer of the Hermitage" },
+      { "fullName": "Will Scarlet",           "themedRole": "Bowyer of Sherwood" },
+      { "fullName": "Allan-a-Dale",           "themedRole": "Minstrel of the Camp" },
+      { "fullName": "Much the Miller's Son",  "themedRole": "Keeper of the Tally Sticks" },
+      { "fullName": "David of Doncaster",     "themedRole": "Forester of the Greenwood" },
+      { "fullName": "Arthur a Bland",         "themedRole": "Yeoman of the Glade" }
+    ],
+    "nottingham-court": [
+      { "fullName": "Sheriff of Nottingham",  "themedRole": "Master of the Greenwood" },
+      { "fullName": "Sir Guy of Gisbourne",   "themedRole": "Sheriff's Bane (Practice Lead)" },
+      { "fullName": "Prince John",            "themedRole": "Herald of the Horn" },
+      { "fullName": "the Bishop of Hereford", "themedRole": "Council Scribe of Sherwood" },
+      { "fullName": "Sir Reginald",           "themedRole": "Captain of the Band" },
+      { "fullName": "Lieutenant Gisbourne",   "themedRole": "Yeoman of the Glade" },
+      { "fullName": "Marshal Stutely",        "themedRole": "Forester of the Greenwood" },
+      { "fullName": "Master Fitzwalter",      "themedRole": "Keeper of the Tally Sticks" }
+    ],
+    "lionhearted-loyalists": [
+      { "fullName": "King Richard the Lionheart", "themedRole": "Master of the Greenwood" },
+      { "fullName": "Maid Marian",                "themedRole": "Council Scribe of Sherwood" },
+      { "fullName": "Sir Roger of Gisbourne",     "themedRole": "Master of the King's Bridges" },
+      { "fullName": "Lady Mathilda",              "themedRole": "Balladeer of the Road" },
+      { "fullName": "Earl of Huntingdon",         "themedRole": "Master Bowyer of Locksley" },
+      { "fullName": "the Hermit of Copmanhurst",  "themedRole": "Healer of the Hermitage" },
+      { "fullName": "Sir Walter",                 "themedRole": "Bridge-Warden of the Trent" },
+      { "fullName": "Hubert Walter",              "themedRole": "Captain of the Band" }
+    ],
+    "outlaws-of-the-greenwood": [
+      { "fullName": "Will Stutely",           "themedRole": "Bowyer of Sherwood" },
+      { "fullName": "George a Green",         "themedRole": "Forester of the Greenwood" },
+      { "fullName": "Eric o' Lincoln",        "themedRole": "Yeoman of the Glade" },
+      { "fullName": "the Tanner of Blyth",    "themedRole": "Apprentice Bridge-Warden" },
+      { "fullName": "the Tinker",             "themedRole": "Apprentice Yeoman" },
+      { "fullName": "the Beggar",             "themedRole": "Balladeer of the Road" },
+      { "fullName": "Adam Bell",              "themedRole": "Master Bowyer of Locksley" },
+      { "fullName": "Clim of the Clough",     "themedRole": "Bridge-Warden of the Trent" },
+      { "fullName": "William of Cloudesley",  "themedRole": "Captain of the Band" }
+    ]
+  },
+
+  "milestones": {
+    "merry-men": [
+      { "name": "Horn Sounds at the Major Oak", "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the band gathers under the great oak." },
+      { "name": "Stringing the Yew Bows",       "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: every bow strung and tested for the season ahead." },
+      { "name": "The Bishop's Coach Stopped",   "type": "Billing",     "offsetPct": 50,  "description": "Phase invoice trigger: a fat purse taken on the King's Road." },
+      { "name": "Archery at Nottingham Fair",   "type": "Gate",        "offsetPct": 70,  "description": "Mid-project gate: Robin wins the silver arrow in disguise." },
+      { "name": "Feast at the Greenwood",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the venison turns on the spit and the band celebrates." },
+      { "name": "Watch on the Forest Roads",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: scouts posted, hideouts stocked for winter." }
+    ],
+    "nottingham-court": [
+      { "name": "Proclamation at the Castle Gate", "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Sheriff's decree read from the battlements." },
+      { "name": "Levy Carts Roll Out",             "type": "Operational", "offsetPct": 30,  "description": "Build phase: tax wagons dispatched to every hundred." },
+      { "name": "The Assize Convenes",             "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the high court hears the rolls and finds them sound." },
+      { "name": "Coffers Sealed at Nottingham",    "type": "Billing",     "offsetPct": 80,  "description": "Phase invoice trigger: the year's silver locked in the keep." },
+      { "name": "Garrison at Full Strength",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: every wall manned, every bowman at his post." },
+      { "name": "Sheriff's Annual Audit",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ledgers reconciled, garrison stood down for the season." }
+    ],
+    "lionhearted-loyalists": [
+      { "name": "Word from the Holy Land",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery: ravens arrive bearing news the King is freed." },
+      { "name": "Loyal Houses Rallied",           "type": "Operational", "offsetPct": 30,  "description": "Build: the loyal earls and barons signal their support." },
+      { "name": "King's Council at Westminster",  "type": "Gate",        "offsetPct": 55,  "description": "Solution review with the Crown's inner circle." },
+      { "name": "Ransom Reckoning",               "type": "Billing",     "offsetPct": 75,  "description": "Phase invoice trigger: the King's ransom finally accounted for." },
+      { "name": "Coronation in the Greenwood",    "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: King Richard receives Robin and the band, lawful again." },
+      { "name": "Charter of Pardon Sealed",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: pardons issued, lands restored to the Earl of Huntingdon." }
+    ],
+    "outlaws-of-the-greenwood": [
+      { "name": "Whispers in the Tavern",         "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: word passes between Sherwood and Inglewood that a brotherhood is forming." },
+      { "name": "Cross-County Courier Lit",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: the runner network between forests is tested and proven." },
+      { "name": "Joint Cache at Barnsdale",       "type": "Operational", "offsetPct": 55,  "description": "Build: the shared loot cache opens for both bands." },
+      { "name": "Trial of the New Yeomen",        "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: every new outlaw passes the longbow trial." },
+      { "name": "Pardon at Carlisle",             "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Adam Bell and his fellows kneel before the King and are pardoned." },
+      { "name": "Final Reckoning of the Cache",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: shares divided between the brotherhood and the poor of the shire." }
+    ]
+  },
+
+  "daysOff": {
+    "Robin Hood":               [ { "realm": "merry-men",                "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Disguised visit to Nottingham — Marian's name day." } ],
+    "Little John":              [ { "realm": "merry-men",                "offsetWeeks": 12, "numberOfDays": 3, "notes": "Quarterstaff bout up at Hathersage — annual rematch." } ],
+    "Friar Tuck":               [ { "realm": "merry-men",                "offsetWeeks": 18, "numberOfDays": 2, "notes": "Pilgrimage to Fountains Abbey — and the cellars therein." } ],
+    "Will Scarlet":             [ { "realm": "merry-men",                "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Tailor in York — new scarlet hose for the season." } ],
+    "Allan-a-Dale":             [ { "realm": "merry-men",                "offsetWeeks": 14, "numberOfDays": 4, "notes": "Wedding tour with Ellen — playing every hall in the shire." } ],
+    "Maid Marian":              [ { "realm": "lionhearted-loyalists",   "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Court of Queen Eleanor at Westminster — summoned." } ],
+    "King Richard the Lionheart": [ { "realm": "lionhearted-loyalists", "offsetWeeks": 16, "numberOfDays": 5, "notes": "Inspection of the Aquitaine garrisons — long-planned." } ],
+    "Sheriff of Nottingham":    [ { "realm": "nottingham-court",         "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Hawking party with Prince John at Clipstone." } ],
+    "Sir Guy of Gisbourne":     [ { "realm": "nottingham-court",         "offsetWeeks": 14, "numberOfDays": 3, "notes": "Tournament at Lincoln — pursuing the silver chain." } ],
+    "Prince John":              [ { "realm": "nottingham-court",         "offsetWeeks": 18, "numberOfDays": 4, "notes": "Council at Windsor — cannot be put off." } ],
+    "the Bishop of Hereford":   [ { "realm": "nottingham-court",         "offsetWeeks": 10, "numberOfDays": 3, "notes": "Diocesan visitation — a slow ride and many feasts." } ],
+    "Adam Bell":                [ { "realm": "outlaws-of-the-greenwood", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Hunting in Inglewood with the old company." } ],
+    "William of Cloudesley":    [ { "realm": "outlaws-of-the-greenwood", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Family visit to Carlisle — wife and children." } ],
+    "the Tinker":               [ { "realm": "outlaws-of-the-greenwood", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Mending pots at the Blue Boar — paying tab." } ],
+    "the Beggar":               [ { "realm": "outlaws-of-the-greenwood", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Holy day rounds — best alms of the year." } ]
+  }
+}

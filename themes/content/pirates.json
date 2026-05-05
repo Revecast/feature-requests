@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "key": "Pirates",
+  "displayName": "Pirates of the Caribbean",
+  "category": "Pop Culture",
+  "emailDomain": "black-pearl.test",
+  "account": {
+    "name": "Pirates of the Caribbean (Test Data)",
+    "accountNumber": "PSA-TEST-PIRATES"
+  },
+  "mailingAddress": {
+    "street": "1 Tortuga Harbour",
+    "city": "Port Royal",
+    "state": "Jamaica",
+    "postalCode": "JM-PR-1692",
+    "country": "Caribbean Sea"
+  },
+
+  "roles": [
+    { "name": "Cartographer of the Charts",       "canonical": "Solution Architect",                      "description": "Plots the great chart — designs the over-arching Salesforce solution and reads the wind." },
+    { "name": "First Mate",                       "canonical": "Project Manager",                         "description": "Keeps the crew in line, the ship on course, and the captain's timeline honest." },
+    { "name": "Quartermaster of the Hold",        "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets — knows where every barrel is stowed." },
+    { "name": "Master Shipwright",                "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features in the shipyard's heat." },
+    { "name": "Master Shipwright of the Pearl",   "canonical": "Salesforce Senior Developer - USA",       "description": "Senior shipwright — designs the keel and overrules the apprentices' lazy joinery." },
+    { "name": "Commodore of the Fleet",           "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Salesforce craft in the fleet — sets standards and commands the senior shipwrights." },
+    { "name": "Boatswain of the Indies",          "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the rigging of customer requirements with practiced rope-craft." },
+    { "name": "Deckhand of the Indies",           "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the deck under the Boatswain's eye." },
+    { "name": "Powder Monkey of the Indies",      "canonical": "Junior Salesforce Consultant - India",    "description": "Newest aboard — runs the small jobs, learns the lines, fetches the powder." },
+    { "name": "Master of the Spyglass",           "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the horizon." },
+    { "name": "Rigger of the Indies",             "canonical": "Integration Senior Consultant - India",   "description": "Lays the ropes of API, middleware, and event flows under the Master's plan." },
+    { "name": "Apprentice Rigger",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the saltwater patterns of error handling." },
+    { "name": "Powdersmith of the Gun Deck",      "canonical": "QA Engineer",                             "description": "Tests every charge before it fires — finds the duds in the build before they reach the captain." },
+    { "name": "Town Crier of Tortuga",            "canonical": "Marketing Practice Lead",                 "description": "Lifts the flag and the lantern for product and message — leads all marketing craft in the fleet." },
+    { "name": "Herald of the Bay",                "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and plunder." },
+    { "name": "Pamphleteer of the Quay",          "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the port — content, creative, and the daily broadside." },
+    { "name": "Ship's Scribe",                    "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between merchant Customer and the shipwright's craft." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "black-pearl-crew",
+      "projectName": "Black Pearl — Free Crew Operations Platform",
+      "shortName": "Pearl FCO",
+      "subAccountName": "Crew of the Black Pearl",
+      "subAccountNumber": "PSA-TEST-PIRATES-BLACK-PEARL-CREW",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Pearl Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Parley", "isDefault": false, "billable": true, "children": [
+          { "name": "Tortuga Tavern Recon", "billable": true },
+          { "name": "Pirate Code Review", "billable": true },
+          { "name": "Captain's Map Drafting", "billable": true }
+        ]},
+        { "name": "Refit the Pearl", "isDefault": false, "billable": true, "children": [
+          { "name": "Hull Caulking", "billable": true },
+          { "name": "Black Sail Stitching", "billable": true },
+          { "name": "Cannon Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Plunder", "isDefault": false, "billable": true, "children": [
+          { "name": "Treasure Inventory", "billable": true },
+          { "name": "Doubloon Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing at Isla de Muerta", "isDefault": false, "billable": true, "children": [
+          { "name": "Cursed Coin Trial", "billable": true },
+          { "name": "Cave Echo Verification", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Swabbie Onboarding", "billable": true },
+          { "name": "First Mate's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "flying-dutchman",
+      "projectName": "Flying Dutchman — Souls Ledger Implementation",
+      "shortName": "Dutchman SLI",
+      "subAccountName": "Crew of the Flying Dutchman",
+      "subAccountNumber": "PSA-TEST-PIRATES-FLYING-DUTCHMAN",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Locker Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Soundings", "isDefault": false, "billable": true, "children": [
+          { "name": "Abyssal Survey", "billable": true },
+          { "name": "Soul Census", "billable": true },
+          { "name": "Heart-Chest Strategy", "billable": true }
+        ]},
+        { "name": "Build the Organ Console", "isDefault": false, "billable": true, "children": [
+          { "name": "Pipe Assembly", "billable": true },
+          { "name": "Bellows Tuning", "billable": true },
+          { "name": "Tentacle Keys Wiring", "billable": true }
+        ]},
+        { "name": "Migrate the Damned", "isDefault": false, "billable": true, "children": [
+          { "name": "Drowned Sailor Roll", "billable": true },
+          { "name": "Barnacle Cleansing", "billable": true }
+        ]},
+        { "name": "Testing the Kraken", "isDefault": false, "billable": true, "children": [
+          { "name": "Tentacle Stress Drill", "billable": true },
+          { "name": "Maelstrom Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Cursed", "isDefault": false, "billable": true, "children": [
+          { "name": "Crustacean Crew Foundations", "billable": true },
+          { "name": "Bosun's Damnation Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "east-india-trading-co",
+      "projectName": "East India Trading Co. — Imperial Fleet ERP Rollout",
+      "shortName": "EITC IFE",
+      "subAccountName": "East India Trading Company",
+      "subAccountNumber": "PSA-TEST-PIRATES-EAST-INDIA-TRADING-CO",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Company Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Writs", "isDefault": false, "billable": true, "children": [
+          { "name": "Letters of Marque Audit", "billable": true },
+          { "name": "Trade Route Mapping", "billable": true },
+          { "name": "Boardroom Strategy", "billable": true }
+        ]},
+        { "name": "Build the Endeavour", "isDefault": false, "billable": true, "children": [
+          { "name": "Man-o-War Outfitting", "billable": true },
+          { "name": "Powder Magazine Hardening", "billable": true },
+          { "name": "Marine Detachment Drill", "billable": true }
+        ]},
+        { "name": "Migrate the Ledgers", "isDefault": false, "billable": true, "children": [
+          { "name": "Spice Manifest Reconciliation", "billable": true },
+          { "name": "Sterling Vault Inventory", "billable": true }
+        ]},
+        { "name": "Testing at Port Royal", "isDefault": false, "billable": true, "children": [
+          { "name": "Garrison UAT", "billable": true },
+          { "name": "Gibbet Compliance Trial", "billable": true }
+        ]},
+        { "name": "Training the Officers", "isDefault": false, "billable": true, "children": [
+          { "name": "Lieutenant Onboarding", "billable": true },
+          { "name": "Admiralty Field Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "queen-annes-revenge-blackbeard",
+      "projectName": "Queen Anne's Revenge — Fountain of Youth Discovery Build",
+      "shortName": "QAR FYD",
+      "subAccountName": "Crew of the Queen Anne's Revenge",
+      "subAccountNumber": "PSA-TEST-PIRATES-QUEEN-ANNES-REVENGE-BLACKBEARD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Revenge Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Voodoo", "isDefault": false, "billable": true, "children": [
+          { "name": "Chalice Provenance Research", "billable": true },
+          { "name": "Mermaid Hunting Reconnaissance", "billable": true },
+          { "name": "Ritual Strategy Drafting", "billable": true }
+        ]},
+        { "name": "Forge the Sword of Triton", "isDefault": false, "billable": true, "children": [
+          { "name": "Blade Reforging", "billable": true },
+          { "name": "Sail-binding Enchantment", "billable": true },
+          { "name": "Flamethrower Bowsprit Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Ship-in-Bottles", "isDefault": false, "billable": true, "children": [
+          { "name": "Bottle Fleet Inventory", "billable": true },
+          { "name": "Cork & Wax Sealing", "billable": true }
+        ]},
+        { "name": "Testing at Whitecap Bay", "isDefault": false, "billable": true, "children": [
+          { "name": "Mermaid Net Drill", "billable": true },
+          { "name": "Lantern Lure Verification", "billable": true }
+        ]},
+        { "name": "Training the Zombies", "isDefault": false, "billable": true, "children": [
+          { "name": "Officer Reanimation Workshop", "billable": true },
+          { "name": "Quartermaster's Voodoo Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "black-pearl-crew": [
+      { "fullName": "Captain Jack Sparrow", "themedRole": "Cartographer of the Charts" },
+      { "fullName": "Hector Barbossa",      "themedRole": "Commodore of the Fleet" },
+      { "fullName": "Will Turner",          "themedRole": "Master Shipwright" },
+      { "fullName": "Elizabeth Swann",      "themedRole": "First Mate" },
+      { "fullName": "Mr. Gibbs",            "themedRole": "Quartermaster of the Hold" },
+      { "fullName": "Pintel",               "themedRole": "Deckhand of the Indies" },
+      { "fullName": "Ragetti",              "themedRole": "Powder Monkey of the Indies" },
+      { "fullName": "Marty",                "themedRole": "Boatswain of the Indies" },
+      { "fullName": "Cotton",               "themedRole": "Pamphleteer of the Quay" }
+    ],
+    "flying-dutchman": [
+      { "fullName": "Davy Jones",                 "themedRole": "Cartographer of the Charts" },
+      { "fullName": "Bootstrap Bill Turner",      "themedRole": "Master Shipwright of the Pearl" },
+      { "fullName": "Maccus",                     "themedRole": "First Mate" },
+      { "fullName": "Koleniko",                   "themedRole": "Rigger of the Indies" },
+      { "fullName": "Jimmy Legs",                 "themedRole": "Powdersmith of the Gun Deck" },
+      { "fullName": "Kraken-trainer",             "themedRole": "Apprentice Rigger" },
+      { "fullName": "Wyvern",                     "themedRole": "Ship's Scribe" },
+      { "fullName": "Hadras",                     "themedRole": "Deckhand of the Indies" }
+    ],
+    "east-india-trading-co": [
+      { "fullName": "Lord Cutler Beckett",        "themedRole": "Commodore of the Fleet" },
+      { "fullName": "Admiral James Norrington",   "themedRole": "Master of the Spyglass" },
+      { "fullName": "Mercer",                     "themedRole": "First Mate" },
+      { "fullName": "Murtogg",                    "themedRole": "Deckhand of the Indies" },
+      { "fullName": "Mullroy",                    "themedRole": "Powder Monkey of the Indies" },
+      { "fullName": "Governor Swann",             "themedRole": "Ship's Scribe" },
+      { "fullName": "Lieutenant Groves",          "themedRole": "Boatswain of the Indies" }
+    ],
+    "queen-annes-revenge-blackbeard": [
+      { "fullName": "Edward Teach",               "themedRole": "Cartographer of the Charts" },
+      { "fullName": "Angelica Teach",             "themedRole": "First Mate" },
+      { "fullName": "Philip Swift",               "themedRole": "Ship's Scribe" },
+      { "fullName": "Syrena",                     "themedRole": "Town Crier of Tortuga" },
+      { "fullName": "Scrum",                      "themedRole": "Deckhand of the Indies" },
+      { "fullName": "Salaman",                    "themedRole": "Herald of the Bay" },
+      { "fullName": "Quartermaster",              "themedRole": "Quartermaster of the Hold" },
+      { "fullName": "Gunner",                     "themedRole": "Powdersmith of the Gun Deck" }
+    ]
+  },
+
+  "milestones": {
+    "black-pearl-crew": [
+      { "name": "Hoist the Black Flag",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — colours run up the mainmast over Tortuga." },
+      { "name": "Refit at Shipwreck Cove",     "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: keel scraped and sails restitched at the Brethren's hideaway." },
+      { "name": "Parley with the Brethren",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: code review with the Pirate Lords." },
+      { "name": "Raid on Port Royal",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: a daring strike that pays the crew." },
+      { "name": "Crowning of the Pirate King", "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the new king of the Brethren Court is named." },
+      { "name": "Shares Divided",              "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: plunder counted and divvied per the Code." }
+    ],
+    "flying-dutchman": [
+      { "name": "Strike the Bargain",          "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: a soul pledged to a hundred years' service." },
+      { "name": "Carve the Heart-Chest",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: the captain's heart locked away from the ribs." },
+      { "name": "Summon the Kraken",           "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the great beast called from the deep — does it answer?" },
+      { "name": "Ferry of the Drowned",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: souls now ferried on schedule across the divide." },
+      { "name": "Heart Restored",              "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the captain's heart returns to its rightful chest." },
+      { "name": "Toll of the Locker",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: every soul counted, every coin tallied." }
+    ],
+    "east-india-trading-co": [
+      { "name": "Royal Charter Granted",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Crown signs the writ — Company licensed to trade and to hang." },
+      { "name": "Endeavour Sets Sail",         "type": "Operational", "offsetPct": 35,  "description": "Build: the flagship leaves dry-dock under Norrington's command." },
+      { "name": "Beckett's Audit",             "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Lord Beckett — every ledger, every soul." },
+      { "name": "Mass Hangings at Port Royal", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: martial law in effect, gallows operational." },
+      { "name": "Fleet Stand-down",            "type": "Operational", "offsetPct": 100, "description": "Project close: the Endeavour anchors and the marines stand at ease." },
+      { "name": "Shareholder Dividend",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice: profits remitted to the directors in London." }
+    ],
+    "queen-annes-revenge-blackbeard": [
+      { "name": "Vision in the Goblet",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff vision: Blackbeard sees the Fountain in the chalice." },
+      { "name": "Mermaid Hunt at Whitecap Bay","type": "Operational", "offsetPct": 30,  "description": "Discovery: a mermaid's tear acquired for the ritual." },
+      { "name": "Forge the Chalices",          "type": "Operational", "offsetPct": 55,  "description": "Build: Ponce de León's silver cups recovered and polished." },
+      { "name": "Ritual at the Fountain",      "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the rite performed, the years exchanged." },
+      { "name": "Drink of Eternity",           "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: a life ends so another may continue." },
+      { "name": "Captain's Final Recompense",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the bond with the crew settled in shares of life." }
+    ]
+  },
+
+  "daysOff": {
+    "Captain Jack Sparrow":   [ { "realm": "black-pearl-crew",              "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Marooned on a small island — strictly involuntary, but rum was found." } ],
+    "Hector Barbossa":        [ { "realm": "black-pearl-crew",              "offsetWeeks": 14, "numberOfDays": 2, "notes": "Apple-tasting tour of the Tortuga markets." } ],
+    "Will Turner":            [ { "realm": "black-pearl-crew",              "offsetWeeks": 10, "numberOfDays": 4, "notes": "Forge maintenance — restocking blades for Port Royal." } ],
+    "Elizabeth Swann":        [ { "realm": "black-pearl-crew",              "offsetWeeks": 18, "numberOfDays": 3, "notes": "Gown fitting at the Governor's residence — non-negotiable." } ],
+    "Mr. Gibbs":              [ { "realm": "black-pearl-crew",              "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Sleeping off shore leave at the Faithful Bride." } ],
+    "Davy Jones":             [ { "realm": "flying-dutchman",               "offsetWeeks": 12, "numberOfDays": 5, "notes": "Organ recital practice in the captain's cabin — do not disturb." } ],
+    "Bootstrap Bill Turner":  [ { "realm": "flying-dutchman",               "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Scraping barnacles off himself — quarterly grooming." } ],
+    "Lord Cutler Beckett":    [ { "realm": "east-india-trading-co",         "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Audience with the directors in London — annual." } ],
+    "Admiral James Norrington":[ { "realm": "east-india-trading-co",        "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Wig powdering and uniform refit at the garrison tailor." } ],
+    "Mercer":                 [ { "realm": "east-india-trading-co",         "offsetWeeks": 14, "numberOfDays": 1, "notes": "Quiet errand — does not appear on the manifest." } ],
+    "Governor Swann":         [ { "realm": "east-india-trading-co",         "offsetWeeks": 10, "numberOfDays": 4, "notes": "Visiting Elizabeth — paternal concern outweighs the schedule." } ],
+    "Edward Teach":           [ { "realm": "queen-annes-revenge-blackbeard","offsetWeeks": 6,  "numberOfDays": 3, "notes": "Beard-braiding ritual with slow-burning fuses — vanity ceremony." } ],
+    "Angelica Teach":         [ { "realm": "queen-annes-revenge-blackbeard","offsetWeeks": 12, "numberOfDays": 2, "notes": "Convent retreat in Spain — penance before the next voyage." } ],
+    "Philip Swift":           [ { "realm": "queen-annes-revenge-blackbeard","offsetWeeks": 8,  "numberOfDays": 3, "notes": "Theological study — preparing sermons for an unwilling crew." } ],
+    "Syrena":                 [ { "realm": "queen-annes-revenge-blackbeard","offsetWeeks": 16, "numberOfDays": 2, "notes": "Tide-pool rest — gills require quiet salt water." } ]
+  }
+}
