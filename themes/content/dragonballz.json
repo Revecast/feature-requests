@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "key": "DragonBallZ",
+  "displayName": "Dragon Ball Z",
+  "category": "Anime",
+  "emailDomain": "dbz.test",
+  "account": {
+    "name": "Z-Fighters Universe (Test Data)",
+    "accountNumber": "PSA-TEST-DRAGONBALLZ"
+  },
+  "mailingAddress": {
+    "street": "439 East District, Mount Paozu",
+    "city": "West City",
+    "state": "Western Capital Prefecture",
+    "postalCode": "439-0001",
+    "country": "Earth"
+  },
+
+  "roles": [
+    { "name": "Grand Kai Strategist",            "canonical": "Solution Architect",                      "description": "Surveys all seven universes of the solution — designs the over-arching architecture and watches over its ki." },
+    { "name": "Capsule Corp Project Captain",    "canonical": "Project Manager",                         "description": "Marshals the team of fighters, holds the timeline, and reports to the Briefs board." },
+    { "name": "Hyperbolic Time Chamber Keeper",  "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields, and permission sets — keeps a year's work running in a day." },
+    { "name": "Saiyan Code Smith",               "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features at full power." },
+    { "name": "Earth Defense Force Lead",        "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Earthbound Salesforce craft — sets standards and trains the senior fighters." },
+    { "name": "Crane School Senior Tactician",   "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced battle technique." },
+    { "name": "Turtle School Disciple",          "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the Tactician's eye." },
+    { "name": "Galactic Patrol Architect",       "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — across galaxies." },
+    { "name": "Capsule Corp Engineer",           "canonical": "Integration Senior Consultant - India",   "description": "Lays the bolts of API, middleware, and event flows under the Galactic Patrol's plan." },
+    { "name": "Apprentice Capsule Engineer",     "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the saiyan patterns of error handling." },
+    { "name": "Senzu Bean Quality Inspector",    "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the King of All." },
+    { "name": "Tournament Announcer",            "canonical": "Marketing Practice Lead",                 "description": "Lifts the microphone for product and message — leads all marketing craft at the World Tournament." },
+    { "name": "Bulma's Campaign Strategist",     "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — broadcasts the call across West City." },
+    { "name": "Capsule Corp Brand Herald",       "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily broadcast." },
+    { "name": "Kami's Lookout Scribe",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the divine craft of design." },
+    { "name": "Super Saiyan Senior Smith",       "canonical": "Salesforce Senior Developer - USA",       "description": "Ascended developer — the architect of the most demanding platform features." },
+    { "name": "Junior Turtle Pupil",             "canonical": "Junior Salesforce Consultant - India",    "description": "First lesson at the Kame House — learns config, flows, and the basics of the orange gi." }
+  ],
+
+  "_realmNotes": "Four sagas as realms — windowOffsetWeeks values are negative so every saga starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "saiyan-saga",
+      "projectName": "Saiyan Saga — Earth Defense Platform Rollout",
+      "shortName": "Saiyan EDP",
+      "subAccountName": "Earth Defense Force",
+      "subAccountNumber": "PSA-TEST-DRAGONBALLZ-SAIYAN-SAGA",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Kame House Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Scouter Readings", "isDefault": false, "billable": true, "children": [
+          { "name": "Power Level Survey", "billable": true },
+          { "name": "Saibaman Field Recon", "billable": true }
+        ]},
+        { "name": "Build the Defenses", "isDefault": false, "billable": true, "children": [
+          { "name": "Kamehameha Wave Tooling", "billable": true },
+          { "name": "Weighted Training Gear Forging", "billable": true }
+        ]},
+        { "name": "Migrate the Z-Fighters", "isDefault": false, "billable": true, "children": [
+          { "name": "Roster Onboarding", "billable": true },
+          { "name": "Ki Signature Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Wasteland", "isDefault": false, "billable": true, "children": [
+          { "name": "Crater Stress Test", "billable": true },
+          { "name": "Spirit Bomb Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Turtle School Foundations", "billable": true },
+          { "name": "Master Roshi's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "frieza-saga",
+      "projectName": "Frieza Saga — Namekian Cloud Migration",
+      "shortName": "Frieza NCM",
+      "subAccountName": "Planet Namek Resistance",
+      "subAccountNumber": "PSA-TEST-DRAGONBALLZ-FRIEZA-SAGA",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Namek Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Dragon Ball Hunt", "isDefault": false, "billable": true, "children": [
+          { "name": "Namekian Village Survey", "billable": true },
+          { "name": "Dragon Radar Calibration", "billable": true },
+          { "name": "Resistance Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Resistance", "isDefault": false, "billable": true, "children": [
+          { "name": "Healing Tank Construction", "billable": true },
+          { "name": "Battle Armor Forging", "billable": true },
+          { "name": "Spaceship Hangar Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Survivors", "isDefault": false, "billable": true, "children": [
+          { "name": "Refugee Roll Call", "billable": true },
+          { "name": "Sacred Texts Backup", "billable": true }
+        ]},
+        { "name": "Testing the Ginyu Force", "isDefault": false, "billable": true, "children": [
+          { "name": "Pose Drill UAT", "billable": true },
+          { "name": "Body Swap Edge Cases", "billable": true }
+        ]},
+        { "name": "Training on King Kai's Planet", "isDefault": false, "billable": true, "children": [
+          { "name": "Kaio-ken Foundations", "billable": true },
+          { "name": "Bubbles & Gregory Cardio", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "cell-saga",
+      "projectName": "Cell Saga — Time Travel Forecasting Engine",
+      "shortName": "Cell TTFE",
+      "subAccountName": "Future Timeline Initiative",
+      "subAccountNumber": "PSA-TEST-DRAGONBALLZ-CELL-SAGA",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Capsule Corp Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Timeline Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Trunks' Future Briefing", "billable": true },
+          { "name": "Android Threat Modelling", "billable": true },
+          { "name": "Bulma's Tech Council", "billable": true }
+        ]},
+        { "name": "Build the Time Chamber", "isDefault": false, "billable": true, "children": [
+          { "name": "Hyperbolic Door Foundation", "billable": true },
+          { "name": "Gravity Room Calibration", "billable": true },
+          { "name": "Saiyan Suit Tailoring", "billable": true }
+        ]},
+        { "name": "Migrate the Androids", "isDefault": false, "billable": true, "children": [
+          { "name": "Dr. Gero Schematic Recovery", "billable": true },
+          { "name": "Power Cell Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Cell Games", "isDefault": false, "billable": true, "children": [
+          { "name": "Arena Stress Test", "billable": true },
+          { "name": "Father-Son Kamehameha Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Next Generation", "isDefault": false, "billable": true, "children": [
+          { "name": "Super Saiyan Endurance", "billable": true },
+          { "name": "Gohan's Hidden Power Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "buu-saga",
+      "projectName": "Buu Saga — Fusion Collaboration Suite",
+      "shortName": "Buu FCS",
+      "subAccountName": "World Martial Arts Federation",
+      "subAccountNumber": "PSA-TEST-DRAGONBALLZ-BUU-SAGA",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Lookout Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & World Tournament Scouting", "isDefault": false, "billable": true, "children": [
+          { "name": "Tournament Bracket Survey", "billable": true },
+          { "name": "Babidi's Spell Decoding", "billable": true },
+          { "name": "Supreme Kai Council", "billable": true }
+        ]},
+        { "name": "Build the Fusion Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Metamoran Pose Pipeline", "billable": true },
+          { "name": "Potara Earring Forging", "billable": true },
+          { "name": "Spirit Bomb Aggregator", "billable": true }
+        ]},
+        { "name": "Migrate the Fighters", "isDefault": false, "billable": true, "children": [
+          { "name": "World Champion Onboarding", "billable": true },
+          { "name": "Otherworld Roster Sync", "billable": true }
+        ]},
+        { "name": "Testing in the Sealed Realm", "isDefault": false, "billable": true, "children": [
+          { "name": "Mafuba Containment Trial", "billable": true },
+          { "name": "Buu Absorption Edge Cases", "billable": true }
+        ]},
+        { "name": "Training the Next Heroes", "isDefault": false, "billable": true, "children": [
+          { "name": "Goten & Trunks Fusion Drills", "billable": true },
+          { "name": "Mr. Satan PR Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "saiyan-saga": [
+      { "fullName": "Son Goku",       "themedRole": "Grand Kai Strategist" },
+      { "fullName": "Piccolo",        "themedRole": "Earth Defense Force Lead" },
+      { "fullName": "Son Gohan",      "themedRole": "Junior Turtle Pupil" },
+      { "fullName": "Krillin",        "themedRole": "Turtle School Disciple" },
+      { "fullName": "Vegeta",         "themedRole": "Saiyan Code Smith" },
+      { "fullName": "Nappa",          "themedRole": "Crane School Senior Tactician" },
+      { "fullName": "Raditz",         "themedRole": "Capsule Corp Project Captain" }
+    ],
+    "frieza-saga": [
+      { "fullName": "Son Goku",       "themedRole": "Super Saiyan Senior Smith" },
+      { "fullName": "Vegeta",         "themedRole": "Saiyan Code Smith" },
+      { "fullName": "Krillin",        "themedRole": "Turtle School Disciple" },
+      { "fullName": "Son Gohan",      "themedRole": "Junior Turtle Pupil" },
+      { "fullName": "Frieza",         "themedRole": "Galactic Patrol Architect" },
+      { "fullName": "Captain Ginyu",  "themedRole": "Capsule Corp Project Captain" },
+      { "fullName": "Zarbon",         "themedRole": "Crane School Senior Tactician" },
+      { "fullName": "Dodoria",        "themedRole": "Apprentice Capsule Engineer" }
+    ],
+    "cell-saga": [
+      { "fullName": "Future Trunks",  "themedRole": "Capsule Corp Engineer" },
+      { "fullName": "Son Goku",       "themedRole": "Grand Kai Strategist" },
+      { "fullName": "Son Gohan",      "themedRole": "Super Saiyan Senior Smith" },
+      { "fullName": "Vegeta",         "themedRole": "Saiyan Code Smith" },
+      { "fullName": "Cell",           "themedRole": "Galactic Patrol Architect" },
+      { "fullName": "Android 17",     "themedRole": "Hyperbolic Time Chamber Keeper" },
+      { "fullName": "Android 18",     "themedRole": "Senzu Bean Quality Inspector" },
+      { "fullName": "Dr. Gero",       "themedRole": "Kami's Lookout Scribe" }
+    ],
+    "buu-saga": [
+      { "fullName": "Son Goku",       "themedRole": "Grand Kai Strategist" },
+      { "fullName": "Vegeta",         "themedRole": "Earth Defense Force Lead" },
+      { "fullName": "Son Gohan",      "themedRole": "Super Saiyan Senior Smith" },
+      { "fullName": "Trunks",         "themedRole": "Junior Turtle Pupil" },
+      { "fullName": "Son Goten",      "themedRole": "Junior Turtle Pupil" },
+      { "fullName": "Majin Buu",      "themedRole": "Tournament Announcer" },
+      { "fullName": "Babidi",         "themedRole": "Bulma's Campaign Strategist" },
+      { "fullName": "Dabura",         "themedRole": "Capsule Corp Brand Herald" }
+    ]
+  },
+
+  "milestones": {
+    "saiyan-saga": [
+      { "name": "Raditz Lands on Earth",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — first contact with the Saiyan threat assessed." },
+      { "name": "Training with King Kai",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: foundations laid on the small planet at the end of Snake Way." },
+      { "name": "Saibaman Skirmish",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: first integration test against live opposition." },
+      { "name": "Nappa's Defeat",            "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: first major boss dispatched." },
+      { "name": "Vegeta Retreats",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the Saiyan invasion repelled, platform live on Earth." },
+      { "name": "Recovery at the Hospital",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: senzu beans dispensed, fighters mended." }
+    ],
+    "frieza-saga": [
+      { "name": "Departure for Namek",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: spaceship launched from Capsule Corp." },
+      { "name": "Discovery on Namek",        "type": "Operational", "offsetPct": 30,  "description": "Build phase: Dragon Balls catalogued and Namekian villages mapped." },
+      { "name": "Defeat of the Ginyu Force", "type": "Gate",        "offsetPct": 55,  "description": "UAT gate: integration test against the elite squad complete." },
+      { "name": "Super Saiyan Awakens",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: legendary transformation unlocked, Frieza defeated." },
+      { "name": "Escape from Namek",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: survivors evacuated before planet destruction." },
+      { "name": "Wish Granted by Porunga",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Namekian Dragon's wish triggers payment." }
+    ],
+    "cell-saga": [
+      { "name": "Trunks Arrives from the Future", "type": "Gate",        "offsetPct": 10,  "description": "Discovery: future-state requirements delivered with a sword." },
+      { "name": "Androids Activated",         "type": "Operational", "offsetPct": 35,  "description": "Build: legacy systems brought online — Dr. Gero's creations awaken." },
+      { "name": "Cell Reaches Perfect Form",  "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the perfected entity itself." },
+      { "name": "Father-Son Kamehameha",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Gohan unleashes hidden potential, Cell defeated." },
+      { "name": "Peace at the Lookout",       "type": "Operational", "offsetPct": 100, "description": "Project close: Kami's tower restored, fighters at rest." },
+      { "name": "Cell Games Prize Money",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: tournament purse delivered to Mr. Satan." }
+    ],
+    "buu-saga": [
+      { "name": "World Tournament Opens",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff at the World Martial Arts Tournament arena." },
+      { "name": "Babidi's Ship Discovered",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: hostile system infiltration detected and traced." },
+      { "name": "Buu Awakens",                "type": "Operational", "offsetPct": 55,  "description": "Build: production system goes live before readiness — chaos ensues." },
+      { "name": "Fusion of Goten & Trunks",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Gotenks integration test complete." },
+      { "name": "Spirit Bomb Victory",        "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Earth's energy combined, Buu defeated." },
+      { "name": "World Peace Restored",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the grateful peoples of Earth." }
+    ]
+  },
+
+  "daysOff": {
+    "Son Goku":       [ { "realm": "saiyan-saga", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Snake Way travel — out of comms zone." } ],
+    "Piccolo":        [ { "realm": "saiyan-saga", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Meditation retreat in the wastelands." } ],
+    "Son Gohan":      [ { "realm": "cell-saga",   "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Hyperbolic Time Chamber session — a year inside, a day outside." } ],
+    "Krillin":        [ { "realm": "frieza-saga", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Kame House beach day with Master Roshi." } ],
+    "Vegeta":         [ { "realm": "cell-saga",   "offsetWeeks": 12, "numberOfDays": 3, "notes": "Solo gravity chamber training — do not disturb." } ],
+    "Future Trunks":  [ { "realm": "cell-saga",   "offsetWeeks": 14, "numberOfDays": 4, "notes": "Return trip to alternate timeline — temporal furlough." } ],
+    "Frieza":         [ { "realm": "frieza-saga", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Tour of intergalactic real estate acquisitions." } ],
+    "Captain Ginyu":  [ { "realm": "frieza-saga", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Pose practice intensive." } ],
+    "Cell":           [ { "realm": "cell-saga",   "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Self-perfection regeneration cycle." } ],
+    "Android 18":     [ { "realm": "cell-saga",   "offsetWeeks": 16, "numberOfDays": 2, "notes": "Shopping trip — new wardrobe required." } ],
+    "Majin Buu":      [ { "realm": "buu-saga",    "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Candy convention in West City." } ],
+    "Babidi":         [ { "realm": "buu-saga",    "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Father's-day pilgrimage to Bibidi's tomb." } ],
+    "Son Goten":      [ { "realm": "buu-saga",    "offsetWeeks": 12, "numberOfDays": 2, "notes": "Fishing trip with Trunks." } ],
+    "Trunks":         [ { "realm": "buu-saga",    "offsetWeeks": 14, "numberOfDays": 2, "notes": "Capsule Corp family weekend." } ],
+    "Nappa":          [ { "realm": "saiyan-saga", "offsetWeeks": 14, "numberOfDays": 1, "notes": "Mustache grooming appointment." } ]
+  }
+}
