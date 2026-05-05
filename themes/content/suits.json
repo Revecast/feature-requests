@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "key": "Suits",
+  "displayName": "Suits",
+  "category": "Workplace",
+  "emailDomain": "pearson-specter.test",
+  "account": {
+    "name": "Pearson Specter Litt (Test Data)",
+    "accountNumber": "PSA-TEST-SUITS"
+  },
+
+  "roles": [
+    { "name": "Senior Partner",                   "canonical": "Solution Architect",                      "description": "Name on the door — owns the firm's strategic posture and signs off the biggest deals." },
+    { "name": "Best Goddamn Closer in NYC",       "canonical": "Salesforce Practice Lead - USA",          "description": "The closer. Sets the standard for the senior litigators and refuses to lose." },
+    { "name": "Managing Partner",                 "canonical": "Project Manager",                         "description": "Runs the floor — keeps the matter on schedule, on budget, and out of the press." },
+    { "name": "Junior Partner",                   "canonical": "Salesforce Senior Developer - USA",       "description": "Equity-track senior — drafts the hard motions, owns the technical craft of the case." },
+    { "name": "Of Counsel",                       "canonical": "Integration Technical Architect - USA",   "description": "Specialist brought in for the cross-jurisdiction work — designs the connections between firms, regulators, and clients." },
+    { "name": "Senior Associate",                 "canonical": "Salesforce Senior Consultant - India",    "description": "Trusted line attorney — runs depositions, drafts briefs, mentors the new class." },
+    { "name": "Associate",                        "canonical": "Salesforce Consultant - India",           "description": "Billable hour engine — discovery, document review, the day-to-day craft of the case." },
+    { "name": "Junior Associate",                 "canonical": "Junior Salesforce Consultant - India",    "description": "First-year out of Harvard (allegedly) — does the grunt work and learns the trade." },
+    { "name": "Cross-Border Counsel",             "canonical": "Integration Senior Consultant - India",   "description": "Builds the bridges to outside firms, regulators, and opposing counsel — the integration craft of legal practice." },
+    { "name": "Discovery Associate",              "canonical": "Integration Consultant - India",          "description": "Owns document production, the API of legal — keeps the evidence flowing both ways." },
+    { "name": "Forensic Investigator",            "canonical": "QA Engineer",                             "description": "Finds the holes in the case before opposing counsel does — pressure-tests every theory." },
+    { "name": "Director of Marketing",            "canonical": "Marketing Practice Lead",                 "description": "Runs firm brand and rainmaker comms — the public face of the partnership." },
+    { "name": "PR Strategist",                    "canonical": "Marketing Senior Consultant",             "description": "Plays the press, drafts the statement, controls the narrative around marquee cases." },
+    { "name": "Communications Associate",         "canonical": "Marketing Consultant",                    "description": "Writes the announcements, runs the social, supports the rainmaker comms calendar." },
+    { "name": "Paralegal of the Year",            "canonical": "Business Analyst",                        "description": "Translates between attorney and client — captures requirements, builds the binder, never misses a fact." },
+    { "name": "Chief of Staff",                   "canonical": "Salesforce Administrator",                "description": "Runs the partner's universe — calendar, files, permissions, who gets in the door." },
+    { "name": "Forge & Filings Clerk",            "canonical": "Salesforce Developer",                    "description": "Drafts the motions, builds the templates, hand-codes the contract clauses no one else will touch." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Realms map to four eras of the firm across the show.",
+
+  "realms": [
+    {
+      "key": "pearson-hardman",
+      "projectName": "Pearson Hardman — Founding Firm Stabilisation",
+      "shortName": "P&H Stabilisation",
+      "subAccountName": "Pearson Hardman",
+      "subAccountNumber": "PSA-TEST-SUITS-PEARSON-HARDMAN",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Bullpen Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Client Intake & Conflicts", "isDefault": false, "billable": true, "children": [
+          { "name": "Conflict Check Sweep", "billable": true },
+          { "name": "Retainer Drafting", "billable": true }
+        ]},
+        { "name": "Litigation Build", "isDefault": false, "billable": true, "children": [
+          { "name": "Motion Drafting", "billable": true },
+          { "name": "Witness Preparation", "billable": true }
+        ]},
+        { "name": "Discovery & Document Review", "isDefault": false, "billable": true, "children": [
+          { "name": "Banker's Box Triage", "billable": true },
+          { "name": "Privilege Log", "billable": true }
+        ]},
+        { "name": "Hardman Audit Defence", "isDefault": false, "billable": true, "children": [
+          { "name": "Account Reconciliation", "billable": true },
+          { "name": "Internal Investigation", "billable": true }
+        ]},
+        { "name": "Associate Onboarding", "isDefault": false, "billable": true, "children": [
+          { "name": "Harvard Class Orientation", "billable": true },
+          { "name": "Mock Deposition Drills", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pearson-specter",
+      "projectName": "Pearson Specter — Post-Coup Rebuild",
+      "shortName": "P&S Rebuild",
+      "subAccountName": "Pearson Specter",
+      "subAccountNumber": "PSA-TEST-SUITS-PEARSON-SPECTER",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Name Partner Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Client Retention Tour", "isDefault": false, "billable": true, "children": [
+          { "name": "Top 50 Client Visits", "billable": true },
+          { "name": "Counter-Offer Defence", "billable": true }
+        ]},
+        { "name": "Folsom Foods Class Action", "isDefault": false, "billable": true, "children": [
+          { "name": "Plaintiff Deposition Marathon", "billable": true },
+          { "name": "Settlement Strategy Sessions", "billable": true }
+        ]},
+        { "name": "Merger Defence — Edward Darby", "isDefault": false, "billable": true, "children": [
+          { "name": "Cross-Atlantic Due Diligence", "billable": true },
+          { "name": "Partnership Vote Whip", "billable": true }
+        ]},
+        { "name": "Mike Ross Risk Mitigation", "isDefault": false, "billable": true, "children": [
+          { "name": "Personnel File Cleanup", "billable": true },
+          { "name": "Need-to-Know Compartmentalisation", "billable": true }
+        ]},
+        { "name": "Junior Associate Training", "isDefault": false, "billable": true, "children": [
+          { "name": "Mock Trial Bootcamp", "billable": true },
+          { "name": "Client-Facing Polish", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pearson-specter-litt",
+      "projectName": "Pearson Specter Litt — Name Change & SEC Crisis",
+      "shortName": "PSL SEC",
+      "subAccountName": "Pearson Specter Litt",
+      "subAccountNumber": "PSA-TEST-SUITS-PEARSON-SPECTER-LITT",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Litt Up Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Name Change Rollout", "isDefault": false, "billable": true, "children": [
+          { "name": "Lobby Signage Replacement", "billable": true },
+          { "name": "Letterhead & Brand Refresh", "billable": true }
+        ]},
+        { "name": "SEC Investigation Defence", "isDefault": false, "billable": true, "children": [
+          { "name": "Cahill Subpoena Response", "billable": true },
+          { "name": "Document Production War Room", "billable": true }
+        ]},
+        { "name": "Mike Ross Bar Application", "isDefault": false, "billable": true, "children": [
+          { "name": "Character & Fitness Hearing Prep", "billable": true },
+          { "name": "Plea Negotiation", "billable": true }
+        ]},
+        { "name": "New Client Acquisition", "isDefault": false, "billable": true, "children": [
+          { "name": "Velocity Data Solutions Pitch", "billable": true },
+          { "name": "Pro Bono Innocence Project", "billable": true }
+        ]},
+        { "name": "Bullpen Restructure", "isDefault": false, "billable": true, "children": [
+          { "name": "Associate Layoff Review", "billable": true },
+          { "name": "Office Reassignment Lottery", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "specter-litt-wheeler-williams",
+      "projectName": "Specter Litt Wheeler Williams — Next Generation Firm",
+      "shortName": "SLWW Next-Gen",
+      "subAccountName": "Specter Litt Wheeler Williams",
+      "subAccountNumber": "PSA-TEST-SUITS-SPECTER-LITT-WHEELER-WILLIAMS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Managing Partner Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Wheeler Lateral Integration", "isDefault": false, "billable": true, "children": [
+          { "name": "Book of Business Onboarding", "billable": true },
+          { "name": "Conflict Check & Cleanup", "billable": true }
+        ]},
+        { "name": "Williams Senior Partner Track", "isDefault": false, "billable": true, "children": [
+          { "name": "Client Handover Sessions", "billable": true },
+          { "name": "Equity Negotiation", "billable": true }
+        ]},
+        { "name": "Bratton Gould Talent Raid", "isDefault": false, "billable": true, "children": [
+          { "name": "Lateral Outreach Calls", "billable": true },
+          { "name": "Compensation Package Drafting", "billable": true }
+        ]},
+        { "name": "Chicago Office Spin-Off", "isDefault": false, "billable": true, "children": [
+          { "name": "Office Buildout", "billable": true },
+          { "name": "Local Counsel Recruitment", "billable": true }
+        ]},
+        { "name": "Firm Culture Refresh", "isDefault": false, "billable": true, "children": [
+          { "name": "Diversity Hiring Initiative", "billable": true },
+          { "name": "Mentorship Programme Rollout", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "pearson-hardman": [
+      { "fullName": "Jessica Pearson",      "themedRole": "Senior Partner" },
+      { "fullName": "Daniel Hardman",       "themedRole": "Senior Partner" },
+      { "fullName": "Harvey Specter",       "themedRole": "Best Goddamn Closer in NYC" },
+      { "fullName": "Louis Litt",           "themedRole": "Junior Partner" },
+      { "fullName": "Donna Paulsen",        "themedRole": "Chief of Staff" },
+      { "fullName": "Rachel Zane",          "themedRole": "Paralegal of the Year" },
+      { "fullName": "Norma",                "themedRole": "Chief of Staff" }
+    ],
+    "pearson-specter": [
+      { "fullName": "Jessica Pearson",      "themedRole": "Senior Partner" },
+      { "fullName": "Harvey Specter",       "themedRole": "Best Goddamn Closer in NYC" },
+      { "fullName": "Mike Ross",            "themedRole": "Associate" },
+      { "fullName": "Louis Litt",           "themedRole": "Junior Partner" },
+      { "fullName": "Donna Paulsen",        "themedRole": "Chief of Staff" },
+      { "fullName": "Rachel Zane",          "themedRole": "Paralegal of the Year" },
+      { "fullName": "Katrina Bennett",      "themedRole": "Senior Associate" },
+      { "fullName": "Mark Coburn",          "themedRole": "Senior Partner" }
+    ],
+    "pearson-specter-litt": [
+      { "fullName": "Jessica Pearson",      "themedRole": "Senior Partner" },
+      { "fullName": "Harvey Specter",       "themedRole": "Senior Partner" },
+      { "fullName": "Louis Litt",           "themedRole": "Senior Partner" },
+      { "fullName": "Mike Ross",            "themedRole": "Junior Partner" },
+      { "fullName": "Donna Paulsen",        "themedRole": "Director of Marketing" },
+      { "fullName": "Rachel Zane",          "themedRole": "Junior Associate" },
+      { "fullName": "Sean Cahill",          "themedRole": "Forensic Investigator" }
+    ],
+    "specter-litt-wheeler-williams": [
+      { "fullName": "Harvey Specter",       "themedRole": "Senior Partner" },
+      { "fullName": "Louis Litt",           "themedRole": "Senior Partner" },
+      { "fullName": "Samantha Wheeler",     "themedRole": "Senior Partner" },
+      { "fullName": "Alex Williams",        "themedRole": "Senior Partner" },
+      { "fullName": "Robert Zane",          "themedRole": "Of Counsel" },
+      { "fullName": "Sheila Sazs",          "themedRole": "Paralegal of the Year" },
+      { "fullName": "Katrina Bennett",      "themedRole": "Junior Partner" }
+    ]
+  },
+
+  "milestones": {
+    "pearson-hardman": [
+      { "name": "Hire a New Associate",         "type": "Gate",        "offsetPct": 5,   "description": "Harvard interview day — Harvey hires Mike Ross out of an interview-room briefcase." },
+      { "name": "First Big Case",               "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: rookie associate gets thrown into a marquee matter to prove he belongs." },
+      { "name": "Hardman's Audit Discovery",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: irregularities found in the founding partner's books." },
+      { "name": "Settle Out of Court",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: matter resolved before trial — fee letter goes out." },
+      { "name": "Partnership Vote",             "type": "Gate",        "offsetPct": 90,  "description": "Partners convene; votes are whipped, one rainmaker is forced out." },
+      { "name": "Name Change",                  "type": "Delivery",    "offsetPct": 100, "description": "Go-Live: Hardman's name is removed from the door — Pearson stands alone." }
+    ],
+    "pearson-specter": [
+      { "name": "Coup Aftermath All-Hands",     "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: Jessica addresses the firm; Harvey reassures the top 50 clients." },
+      { "name": "Folsom Foods Filing",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: class action complaint filed and served." },
+      { "name": "Darby Merger Term Sheet",      "type": "Gate",        "offsetPct": 55,  "description": "Mid-project gate: cross-Atlantic merger conditionally agreed." },
+      { "name": "Settle Folsom Foods",          "type": "Billing",     "offsetPct": 75,  "description": "Phase invoice: settlement reached, contingency fee triggered." },
+      { "name": "Mike's Secret Almost Out",     "type": "Gate",        "offsetPct": 85,  "description": "Risk gate: opposing counsel sniffs around the credentials, contained for now." },
+      { "name": "Managing Partner Hand-off",    "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Harvey takes the corner office, Jessica steps into chair." },
+      { "name": "Hyper-care: Mike Stays",       "type": "Operational", "offsetPct": 100, "description": "Project close: associate retained, NDA refreshed, watch list active." }
+    ],
+    "pearson-specter-litt": [
+      { "name": "Litt Up the Lobby",            "type": "Delivery",    "offsetPct": 10,  "description": "Kickoff: new lobby signage unveiled, Louis cries (just a little)." },
+      { "name": "SEC Subpoena Served",          "type": "Gate",        "offsetPct": 25,  "description": "Discovery gate: Cahill arrives with a subpoena and a smile." },
+      { "name": "Mike Ross Indictment",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project escalation: the credentials catch up; entire firm pivots to defence." },
+      { "name": "Plea Deal Signed",             "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice: Mike takes the deal so the firm survives — Pearson billable hours absorbed." },
+      { "name": "Jessica Walks",                "type": "Gate",        "offsetPct": 85,  "description": "Founder departs for Chicago — succession plan executed under fire." },
+      { "name": "Mike Passes the Bar",          "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: character & fitness hearing won, Mike Ross is finally a real lawyer." },
+      { "name": "Firm Survives",                "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Pearson Specter Litt is still in business. Barely." }
+    ],
+    "specter-litt-wheeler-williams": [
+      { "name": "Wheeler Lateral Lands",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: Samantha Wheeler crosses the street with her book of business." },
+      { "name": "Williams Equity Vote",         "type": "Gate",        "offsetPct": 30,  "description": "Mid-build gate: Alex Williams gets his equity slice, name on the door." },
+      { "name": "Bratton Gould Raid",           "type": "Operational", "offsetPct": 50,  "description": "Build phase: a dozen senior associates jump ship, signing bonuses paid." },
+      { "name": "Settle the Class Action",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: marquee matter resolved with a nine-figure settlement." },
+      { "name": "Chicago Office Opens",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: ribbon cut on the spin-off office — Jessica blesses it from afar." },
+      { "name": "Final Name Change",            "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Specter Litt Wheeler Williams is officially up in lights." }
+    ]
+  },
+
+  "daysOff": {
+    "Harvey Specter":     [ { "realm": "pearson-specter", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Pearl Jam concert at MSG — non-negotiable, do not call." } ],
+    "Mike Ross":          [ { "realm": "pearson-specter-litt", "offsetWeeks": 10, "numberOfDays": 5, "notes": "Studying for the bar — Donna confiscated his phone." } ],
+    "Louis Litt":         [ { "realm": "pearson-specter-litt", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Mud bath retreat at the Greenbrier — annual tradition." } ],
+    "Jessica Pearson":    [ { "realm": "pearson-specter", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Chicago scouting trip — confidential." } ],
+    "Donna Paulsen":      [ { "realm": "pearson-specter", "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Annual psychic reading — she already knows what they'll say." } ],
+    "Rachel Zane":        [ { "realm": "pearson-specter-litt", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Columbia Law finals week." } ],
+    "Daniel Hardman":     [ { "realm": "pearson-hardman", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "\"Caring for his sick wife\" — verify with HR." } ],
+    "Robert Zane":        [ { "realm": "specter-litt-wheeler-williams", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Father-of-the-bride dress fitting." } ],
+    "Katrina Bennett":    [ { "realm": "pearson-specter", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Yale Law alumni weekend." } ],
+    "Samantha Wheeler":   [ { "realm": "specter-litt-wheeler-williams", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Equestrian competition — undefeated, thank you." } ],
+    "Alex Williams":      [ { "realm": "specter-litt-wheeler-williams", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Daughter's school play — front row, no exceptions." } ],
+    "Sheila Sazs":        [ { "realm": "specter-litt-wheeler-williams", "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Harvard Law admissions panel." } ],
+    "Sean Cahill":        [ { "realm": "pearson-specter-litt", "offsetWeeks": 14, "numberOfDays": 2, "notes": "SEC interagency conference — lots of free pens." } ],
+    "Norma":              [ { "realm": "pearson-hardman", "offsetWeeks": 12, "numberOfDays": 1, "notes": "Doctor's appointment — Louis is inconsolable." } ]
+  }
+}

@@ -57,8 +57,8 @@
     { "key": "Yellowstone",    "displayName": "Yellowstone",           "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/yellowstone.json" },
     { "key": "CobraKai",       "displayName": "Cobra Kai",             "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/cobrakai.json" },
 
-    { "key": "SiliconValley",  "displayName": "Silicon Valley (HBO)",  "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/silicon_valley.json" },
-    { "key": "Suits",          "displayName": "Suits",                 "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/suits.json" },
+    { "key": "SiliconValley",  "displayName": "Silicon Valley (HBO)",  "category": "Workplace",       "implemented": true , "featured": false, "body": "themes/content/siliconvalley.json" },
+    { "key": "Suits",          "displayName": "Suits",                 "category": "Workplace",       "implemented": true , "featured": false, "body": "themes/content/suits.json" },
 
     { "key": "ToyStoryPixar",  "displayName": "Toy Story / Pixar",     "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/toystorypixar.json" },
     { "key": "StudioGhibli",   "displayName": "Studio Ghibli",         "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/studioghibli.json" },

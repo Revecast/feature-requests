@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "key": "SiliconValley",
+  "displayName": "Silicon Valley (HBO)",
+  "category": "Workplace",
+  "emailDomain": "pied-piper.test",
+  "account": {
+    "name": "Pied Piper / Silicon Valley (Test Data)",
+    "accountNumber": "PSA-TEST-SILICONVALLEY"
+  },
+
+  "roles": [
+    { "name": "Compression Algorithm Lead",      "canonical": "Solution Architect",                      "description": "Owner of the middle-out vision — designs the over-arching platform and defends the Weissman score." },
+    { "name": "Negotiator (Jared)",              "canonical": "Project Manager",                         "description": "Walks the team through impossible timelines with unwavering optimism and a colour-coded Gantt." },
+    { "name": "Sysadmin in a Hoodie",            "canonical": "Salesforce Administrator",                "description": "Keeper of permission sets, page layouts, and the office wifi password." },
+    { "name": "10X Engineer",                    "canonical": "Salesforce Developer",                    "description": "Cranks out Apex and LWC at 3am fuelled by Soylent and spite." },
+    { "name": "VP of Engineering — USA",         "canonical": "Salesforce Practice Lead - USA",          "description": "Sets the engineering bar across the org and shields the team from product's worst ideas." },
+    { "name": "Senior Backend Bro — Bangalore",  "canonical": "Salesforce Senior Consultant - India",    "description": "Carries hard delivery work with practiced craft and a Kubernetes obsession." },
+    { "name": "Junior Stack Bro — Bangalore",    "canonical": "Salesforce Consultant - India",           "description": "Picks up the tickets nobody else wants and ships them clean." },
+    { "name": "Cloud Plumbing Architect",        "canonical": "Integration Technical Architect - USA",   "description": "Designs the pipes between Pied Piper, Hooli, AWS, and the seventeen vendor APIs of doom." },
+    { "name": "Senior Pipe-fitter — Bangalore",  "canonical": "Integration Senior Consultant - India",   "description": "Lays middleware, event flows, and webhooks under the architect's plan." },
+    { "name": "Apprentice Pipe-fitter",          "canonical": "Integration Consultant - India",          "description": "Learns the dark arts of retries, idempotency, and dead-letter queues." },
+    { "name": "DevOps Wizard",                   "canonical": "QA Engineer",                             "description": "Breaks the build before customers can — owns regression, smoke, and the brutal Friday deploy review." },
+    { "name": "Growth Hacker-in-Chief",          "canonical": "Marketing Practice Lead",                 "description": "Heads brand, demand-gen, and the daily war on bounce rate." },
+    { "name": "Brand Strategist",                "canonical": "Marketing Senior Consultant",             "description": "Architects campaigns and decides whether the new logo really needs to be lowercase." },
+    { "name": "Content Ninja",                   "canonical": "Marketing Consultant",                    "description": "Cranks out blog posts, landing pages, and tweet-storms on a 24-hour cycle." },
+    { "name": "Product Whisperer",               "canonical": "Business Analyst",                        "description": "Translates between the founder's hand-waving and the engineering team's eye-rolling." },
+    { "name": "Principal Engineer — USA",        "canonical": "Salesforce Senior Developer - USA",       "description": "Reviews every PR, owns the gnarliest legacy code, and gets paged when prod is on fire." },
+    { "name": "Bootcamp Grad",                   "canonical": "Junior Salesforce Consultant - India",    "description": "Six months out of a coding bootcamp and ready to scale anything to a billion users." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "pied-piper",
+      "projectName": "Pied Piper — Middle-Out Compression Platform",
+      "shortName": "PP MOC",
+      "subAccountName": "Pied Piper Inc.",
+      "subAccountNumber": "PSA-TEST-SILICONVALLEY-PIEDPIPER",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Hacker Hostel Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Whiteboarding", "isDefault": false, "billable": true, "children": [
+          { "name": "Algorithm Brainstorm", "billable": true },
+          { "name": "Founders' Pitch Deck", "billable": true }
+        ]},
+        { "name": "Build the Compression Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Middle-Out Core", "billable": true },
+          { "name": "Weissman Score Tuning", "billable": true }
+        ]},
+        { "name": "Migrate Off Hooli Cloud", "isDefault": false, "billable": true, "children": [
+          { "name": "Data Egress Plan", "billable": true },
+          { "name": "Customer Re-pointing", "billable": true }
+        ]},
+        { "name": "Beta Testing the Platform", "isDefault": false, "billable": true, "children": [
+          { "name": "TechCrunch Demo Rehearsal", "billable": true },
+          { "name": "Load Test on Anton", "billable": true }
+        ]},
+        { "name": "Onboarding the Devs", "isDefault": false, "billable": true, "children": [
+          { "name": "Hostel Bootcamp", "billable": true },
+          { "name": "Tabs vs Spaces Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "hooli",
+      "projectName": "Hooli — Nucleus Enterprise Rollout",
+      "shortName": "Hooli NER",
+      "subAccountName": "Hooli Inc.",
+      "subAccountNumber": "PSA-TEST-SILICONVALLEY-HOOLI",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Hooli Campus Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Vision Quest", "isDefault": false, "billable": true, "children": [
+          { "name": "Gavin's Mountain Retreat", "billable": true },
+          { "name": "Hoolicon Keynote Drafting", "billable": true }
+        ]},
+        { "name": "Build Nucleus", "isDefault": false, "billable": true, "children": [
+          { "name": "Box-3 Hardware Spec", "billable": true },
+          { "name": "Compression Module Re-implementation", "billable": true }
+        ]},
+        { "name": "Migrate the Hooli Search Index", "isDefault": false, "billable": true, "children": [
+          { "name": "Endframe Asset Acquisition", "billable": true },
+          { "name": "Patent Lawsuit Discovery", "billable": true }
+        ]},
+        { "name": "Internal Stress Testing", "isDefault": false, "billable": true, "children": [
+          { "name": "Hooli-XYZ Skunkworks Trial", "billable": true },
+          { "name": "PR Disaster Drill", "billable": true }
+        ]},
+        { "name": "Training the Hooligans", "isDefault": false, "billable": true, "children": [
+          { "name": "Conference Room A Onboarding", "billable": true },
+          { "name": "Bicycle Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "raviga-capital",
+      "projectName": "Raviga Capital — Portfolio Ops Platform",
+      "shortName": "Raviga POP",
+      "subAccountName": "Raviga Capital LLC",
+      "subAccountNumber": "PSA-TEST-SILICONVALLEY-RAVIGA",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Sand Hill Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Diligence", "isDefault": false, "billable": true, "children": [
+          { "name": "Portfolio Audit", "billable": true },
+          { "name": "LP Reporting Survey", "billable": true }
+        ]},
+        { "name": "Build the Cap Table Platform", "isDefault": false, "billable": true, "children": [
+          { "name": "Convertible Note Modeling", "billable": true },
+          { "name": "Term Sheet Generator", "billable": true }
+        ]},
+        { "name": "Migrate the Deal Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Portfolio Company Roll-call", "billable": true },
+          { "name": "Pitch Deck Archive", "billable": true }
+        ]},
+        { "name": "Testing the Valuation Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Down-round Scenario Drill", "billable": true },
+          { "name": "IPO Stress Model", "billable": true }
+        ]},
+        { "name": "Training the Partners", "isDefault": false, "billable": true, "children": [
+          { "name": "GP Onboarding", "billable": true },
+          { "name": "LP Quarterly Review Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "aviato",
+      "projectName": "Aviato — Incubator Operations Build",
+      "shortName": "Aviato IO",
+      "subAccountName": "Aviato (Erlich Bachman Holdings)",
+      "subAccountNumber": "PSA-TEST-SILICONVALLEY-AVIATO",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 20,
+      "workstreams": [
+        { "name": "Incubator Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Branding", "isDefault": false, "billable": true, "children": [
+          { "name": "Logo Reveal Workshop", "billable": true },
+          { "name": "Equity Negotiation", "billable": true }
+        ]},
+        { "name": "Build the Incubator Stack", "isDefault": false, "billable": true, "children": [
+          { "name": "Founder Intake Pipeline", "billable": true },
+          { "name": "Demo Day Platform", "billable": true }
+        ]},
+        { "name": "Migrate Side Ventures", "isDefault": false, "billable": true, "children": [
+          { "name": "SeeFood Asset Sweep", "billable": true },
+          { "name": "Bachmanity Holdings Cleanup", "billable": true }
+        ]},
+        { "name": "Testing the Pitch Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Investor Cold Call Drill", "billable": true },
+          { "name": "TechCrunch Booth Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Residents", "isDefault": false, "billable": true, "children": [
+          { "name": "Hostel House Rules", "billable": true },
+          { "name": "Pitch Deck Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "pied-piper": [
+      { "fullName": "Richard Hendricks",  "themedRole": "Compression Algorithm Lead" },
+      { "fullName": "Bertram Gilfoyle",   "themedRole": "Principal Engineer — USA" },
+      { "fullName": "Dinesh Chugtai",     "themedRole": "10X Engineer" },
+      { "fullName": "Jared Dunn",         "themedRole": "Negotiator (Jared)" },
+      { "fullName": "Erlich Bachman",     "themedRole": "Growth Hacker-in-Chief" },
+      { "fullName": "Big Head",           "themedRole": "Bootcamp Grad" },
+      { "fullName": "Mark Coburn",        "themedRole": "Compression Algorithm Lead" }
+    ],
+    "hooli": [
+      { "fullName": "Gavin Belson",       "themedRole": "Compression Algorithm Lead" },
+      { "fullName": "Patrice Alexander",  "themedRole": "Negotiator (Jared)" },
+      { "fullName": "Hoover",             "themedRole": "Sysadmin in a Hoodie" },
+      { "fullName": "Denpok Bahjaree",    "themedRole": "Product Whisperer" },
+      { "fullName": "Big Head",           "themedRole": "VP of Engineering — USA" },
+      { "fullName": "Ron LaFlamme",       "themedRole": "Brand Strategist" },
+      { "fullName": "Jack Barker",        "themedRole": "VP of Engineering — USA" }
+    ],
+    "raviga-capital": [
+      { "fullName": "Monica Hall",        "themedRole": "Product Whisperer" },
+      { "fullName": "Laurie Bream",       "themedRole": "Compression Algorithm Lead" },
+      { "fullName": "Peter Gregory",      "themedRole": "VP of Engineering — USA" },
+      { "fullName": "Ed Chen",            "themedRole": "Brand Strategist" },
+      { "fullName": "Dan Melcher",        "themedRole": "Cloud Plumbing Architect" },
+      { "fullName": "Russ Hanneman",      "themedRole": "Growth Hacker-in-Chief" },
+      { "fullName": "C.J. Cantwell",      "themedRole": "Content Ninja" }
+    ],
+    "aviato": [
+      { "fullName": "Erlich Bachman",     "themedRole": "Compression Algorithm Lead" },
+      { "fullName": "Jian-Yang",          "themedRole": "10X Engineer" },
+      { "fullName": "Nelson Big Head Bighetti", "themedRole": "Negotiator (Jared)" },
+      { "fullName": "Tara",               "themedRole": "Brand Strategist" },
+      { "fullName": "Mochachino",         "themedRole": "Apprentice Pipe-fitter" },
+      { "fullName": "Keenan Feldspar",    "themedRole": "10X Engineer" },
+      { "fullName": "Russ Hanneman",      "themedRole": "Growth Hacker-in-Chief" }
+    ]
+  },
+
+  "milestones": {
+    "pied-piper": [
+      { "name": "Compression Demo Day",      "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — first middle-out demo passes the napkin test." },
+      { "name": "TechCrunch Disrupt",        "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: launch on the Disrupt stage with a live Weissman score." },
+      { "name": "Series A Closed",           "type": "Billing",     "offsetPct": 45,  "description": "Funding milestone: Raviga wires the cash, payroll un-blocked." },
+      { "name": "Pivot to Platform",         "type": "Gate",        "offsetPct": 65,  "description": "Mid-project gate: consumer app shelved, B2B platform approved." },
+      { "name": "GA Launch",                 "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: platform open to enterprise customers." },
+      { "name": "Acquisition Talks",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Amazon, Google, and Hooli all circling." }
+    ],
+    "hooli": [
+      { "name": "Hoolicon Keynote",          "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Gavin announces Nucleus to a packed Shoreline." },
+      { "name": "Box-3 Hardware Reveal",     "type": "Operational", "offsetPct": 30,  "description": "Build phase: Endframe boxes physically deployed to the demo lab." },
+      { "name": "Patent Suit Settled",       "type": "Gate",        "offsetPct": 55,  "description": "Legal gate: IP dispute with Pied Piper resolved on appeal." },
+      { "name": "Nucleus GA",                "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: enterprise rollout to first 50 Hooli customers." },
+      { "name": "Hooli-XYZ Spin-out",        "type": "Operational", "offsetPct": 100, "description": "Project close: skunkworks team absorbed back into core." },
+      { "name": "Final Vendor Invoice",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Hooli accounts payable processes the SOW." }
+    ],
+    "raviga-capital": [
+      { "name": "Term Sheet Signed",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Raviga commits, project funded through GA." },
+      { "name": "Cap Table Migration",       "type": "Operational", "offsetPct": 35,  "description": "Build: portfolio companies onboarded into the new system." },
+      { "name": "LP Annual Review",          "type": "Gate",        "offsetPct": 60,  "description": "Solution review: limited partners sign off on reporting." },
+      { "name": "Down-Round Drill Passed",   "type": "Operational", "offsetPct": 75,  "description": "Stress test: valuation engine handles a 70% haircut scenario." },
+      { "name": "Platform GA",               "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: deal pipeline platform live across all GPs." },
+      { "name": "Carry Distribution",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice triggered alongside year-end carry payout." }
+    ],
+    "aviato": [
+      { "name": "Logo Unveiled",             "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the Aviato logo (worth $5M, allegedly) revealed at Demo Day." },
+      { "name": "First Cohort Onboarded",    "type": "Operational", "offsetPct": 30,  "description": "Build: incubator residents installed in the hostel." },
+      { "name": "SeeFood Pivot Approved",    "type": "Operational", "offsetPct": 55,  "description": "Mid-build: side-venture shifts from hot-dog/not-hot-dog to octopus identifier." },
+      { "name": "Demo Day Pitches",          "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: cohort pitches to Sand Hill Road." },
+      { "name": "Incubator GA",              "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: ops platform running, residents fully self-serve." },
+      { "name": "Bachmanity Settlement",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: paid out from Bachmanity Holdings before bankruptcy." }
+    ]
+  },
+
+  "daysOff": {
+    "Richard Hendricks":  [ { "realm": "pied-piper",     "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Stress-induced hives — doctor-ordered downtime." } ],
+    "Erlich Bachman":     [ { "realm": "aviato",         "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Aviato founders' retreat — mushroom-assisted strategy session in Arizona." } ],
+    "Bertram Gilfoyle":   [ { "realm": "pied-piper",     "offsetWeeks": 10, "numberOfDays": 4, "notes": "Burning Man — annual pilgrimage, on-call coverage by Dinesh (against his will)." } ],
+    "Dinesh Chugtai":     [ { "realm": "pied-piper",     "offsetWeeks": 14, "numberOfDays": 3, "notes": "Cousin Wajeed's wedding — has to wear a gold chain." } ],
+    "Jared Dunn":         [ { "realm": "pied-piper",     "offsetWeeks": 12, "numberOfDays": 1, "notes": "Donovan family reunion — first contact in seven years." } ],
+    "Big Head":           [ { "realm": "hooli",          "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Sabbatical on the Hooli rooftop — promoted upward, no actual duties." } ],
+    "Gavin Belson":       [ { "realm": "hooli",          "offsetWeeks": 16, "numberOfDays": 7, "notes": "Spiritual quest with Denpok — Tibet, no devices." } ],
+    "Monica Hall":        [ { "realm": "raviga-capital", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "LP roadshow in New York." } ],
+    "Laurie Bream":       [ { "realm": "raviga-capital", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Maternity-adjacent leave — efficiency-optimised." } ],
+    "Russ Hanneman":      [ { "realm": "aviato",         "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Yacht maintenance in Half Moon Bay — McLaren also serviced." } ],
+    "Jian-Yang":          [ { "realm": "aviato",         "offsetWeeks": 10, "numberOfDays": 6, "notes": "Visiting his uncle in Beijing — also possibly faking his own death." } ],
+    "Peter Gregory":      [ { "realm": "raviga-capital", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Burger King research trip — sesame seed sequencing study." } ],
+    "Jack Barker":        [ { "realm": "hooli",          "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Horse ranch in Atherton — quarterly Conjoined Triangles review." } ],
+    "Keenan Feldspar":    [ { "realm": "aviato",         "offsetWeeks": 6,  "numberOfDays": 3, "notes": "VR demo tour — Oculus, HTC, anyone with a chequebook." } ]
+  }
+}
