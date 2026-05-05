@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "key": "NASAAstronauts",
+  "displayName": "NASA Astronauts",
+  "category": "Education",
+  "emailDomain": "nasa.test",
+  "account": {
+    "name": "NASA Astronaut Corps (Test Data)",
+    "accountNumber": "PSA-TEST-NASAASTRONAUTS"
+  },
+  "mailingAddress": {
+    "street": "2101 NASA Parkway",
+    "city": "Houston",
+    "state": "TX",
+    "postalCode": "77058",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Mission Architect",                 "canonical": "Solution Architect",                    "description": "Designs the over-arching mission solution — orbital mechanics, hardware, and software stitched into one flight plan." },
+    { "name": "Flight Director",                   "canonical": "Project Manager",                       "description": "Owns the timeline from T-minus to splashdown — coordinates every console in Mission Control." },
+    { "name": "Capsule Communicator",              "canonical": "Salesforce Administrator",              "description": "Keeps the records straight, speaks to the crew, and stewards the platform's day-to-day configuration." },
+    { "name": "Propulsion Engineer",               "canonical": "Salesforce Developer",                  "description": "Builds the engines — Apex, LWC, and platform features that get the mission to orbit." },
+    { "name": "Chief Astronaut",                   "canonical": "Salesforce Practice Lead - USA",        "description": "Heads the Astronaut Office — sets standards across all crewed missions and mentors the senior corps." },
+    { "name": "Mission Specialist",                "canonical": "Salesforce Senior Consultant - India",  "description": "Trained for the deep work — payload operations, EVAs, and the most complex configuration tasks." },
+    { "name": "Payload Specialist",                "canonical": "Salesforce Consultant - India",         "description": "Carries discovery and configuration into orbit under the Mission Specialist's direction." },
+    { "name": "Lead Systems Integrator",           "canonical": "Integration Technical Architect - USA", "description": "Architect of the bridges between flight systems — every interface from launch tower to docking port." },
+    { "name": "Avionics Engineer",                 "canonical": "Integration Senior Consultant - India", "description": "Lays the wiring of API, middleware, and event flows under the Lead Integrator's plan." },
+    { "name": "Telemetry Technician",              "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — webhooks, batch, callouts, and the careful handling of downlink errors." },
+    { "name": "Quality Assurance Inspector",       "canonical": "QA Engineer",                           "description": "Tends to readiness — finds the faults in the build before they reach the launch pad." },
+    { "name": "Public Affairs Officer",            "canonical": "Marketing Practice Lead",               "description": "Lifts the banner of the agency — leads all messaging from press kit to live broadcast." },
+    { "name": "Mission Press Liaison",             "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the call to gather attention and convert interest." },
+    { "name": "Outreach Coordinator",              "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into classrooms and newsrooms — content, creative, and the daily cadence." },
+    { "name": "Mission Planner",                   "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between the customer and the engineering corps." },
+    { "name": "Senior Propulsion Engineer",        "canonical": "Salesforce Senior Developer - USA",     "description": "Master of the deep build — leads complex Apex, LWC, and architecture work for the most senior missions." },
+    { "name": "Astronaut Candidate",               "canonical": "Junior Salesforce Consultant - India",  "description": "Rookie of the corps — learns the ropes through hands-on configuration under close supervision." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "mercury-gemini",
+      "projectName": "Mercury-Gemini — First Steps to Orbit",
+      "shortName": "MerGem FSO",
+      "subAccountName": "Mercury & Gemini Programs",
+      "subAccountNumber": "PSA-TEST-NASAASTRONAUTS-MERCURYGEMINI",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Cape Canaveral Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Selection", "isDefault": false, "billable": true, "children": [
+          { "name": "Mercury Seven Selection", "billable": true },
+          { "name": "Centrifuge Trials", "billable": true },
+          { "name": "Mission Profile Drafting", "billable": true }
+        ]},
+        { "name": "Build the Capsule", "isDefault": false, "billable": true, "children": [
+          { "name": "Heat Shield Forging", "billable": true },
+          { "name": "Retro-Rocket Tooling", "billable": true },
+          { "name": "Pressure Suit Fitting", "billable": true }
+        ]},
+        { "name": "Migrate from Redstone to Atlas", "isDefault": false, "billable": true, "children": [
+          { "name": "Booster Inventory", "billable": true },
+          { "name": "Pad Reconfiguration", "billable": true }
+        ]},
+        { "name": "Testing at Wallops", "isDefault": false, "billable": true, "children": [
+          { "name": "Suborbital Hop Drill", "billable": true },
+          { "name": "Splashdown Recovery Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Astronaut Corps", "isDefault": false, "billable": true, "children": [
+          { "name": "Survival Training — Desert", "billable": true },
+          { "name": "Simulator Hours", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "apollo-program",
+      "projectName": "Apollo Program — Lunar Surface Delivery",
+      "shortName": "Apollo LSD",
+      "subAccountName": "Apollo Program Office",
+      "subAccountNumber": "PSA-TEST-NASAASTRONAUTS-APOLLOPROGRAM",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Houston Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Lunar Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Surveyor Site Analysis", "billable": true },
+          { "name": "Trajectory Plotting", "billable": true },
+          { "name": "Mission Rules Council", "billable": true }
+        ]},
+        { "name": "Build the Saturn V", "isDefault": false, "billable": true, "children": [
+          { "name": "F-1 Engine Assembly", "billable": true },
+          { "name": "Lunar Module Construction", "billable": true },
+          { "name": "Command Module Outfitting", "billable": true }
+        ]},
+        { "name": "Migrate the Flight Software", "isDefault": false, "billable": true, "children": [
+          { "name": "AGC Rope Memory Weave", "billable": true },
+          { "name": "Guidance Computer Verification", "billable": true }
+        ]},
+        { "name": "Testing at White Sands", "isDefault": false, "billable": true, "children": [
+          { "name": "LM Drop Test", "billable": true },
+          { "name": "Full-Stack Static Fire", "billable": true }
+        ]},
+        { "name": "Training the Lunar Crews", "isDefault": false, "billable": true, "children": [
+          { "name": "Geology Field School", "billable": true },
+          { "name": "Lunar Lander Simulator", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "space-shuttle",
+      "projectName": "Space Shuttle — Orbiter Operations Platform",
+      "shortName": "Shuttle OOP",
+      "subAccountName": "Space Shuttle Program",
+      "subAccountNumber": "PSA-TEST-NASAASTRONAUTS-SPACESHUTTLE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Kennedy Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Manifest Planning", "isDefault": false, "billable": true, "children": [
+          { "name": "Payload Manifest Review", "billable": true },
+          { "name": "Crew Selection Board", "billable": true },
+          { "name": "Mission Objectives Council", "billable": true }
+        ]},
+        { "name": "Build the Orbiter Stack", "isDefault": false, "billable": true, "children": [
+          { "name": "Tile Refurbishment", "billable": true },
+          { "name": "SRB Stacking", "billable": true },
+          { "name": "External Tank Mating", "billable": true }
+        ]},
+        { "name": "Migrate the Payloads", "isDefault": false, "billable": true, "children": [
+          { "name": "Spacelab Module Loading", "billable": true },
+          { "name": "Satellite Cradle Install", "billable": true }
+        ]},
+        { "name": "Testing at the Pad", "isDefault": false, "billable": true, "children": [
+          { "name": "Wet Dress Rehearsal", "billable": true },
+          { "name": "Flight Readiness Firing", "billable": true }
+        ]},
+        { "name": "Training the Mission Specialists", "isDefault": false, "billable": true, "children": [
+          { "name": "Neutral Buoyancy Lab", "billable": true },
+          { "name": "Robotic Arm Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "iss-modern",
+      "projectName": "ISS — Long-Duration Operations Modernization",
+      "shortName": "ISS LDOM",
+      "subAccountName": "International Space Station Program",
+      "subAccountNumber": "PSA-TEST-NASAASTRONAUTS-ISSMODERN",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Star City Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Expedition Planning", "isDefault": false, "billable": true, "children": [
+          { "name": "Expedition Crew Selection", "billable": true },
+          { "name": "Science Payload Survey", "billable": true },
+          { "name": "Mission Council with Roscosmos", "billable": true }
+        ]},
+        { "name": "Build the Habitation Upgrades", "isDefault": false, "billable": true, "children": [
+          { "name": "Cupola Window Servicing", "billable": true },
+          { "name": "Life Support Refit", "billable": true },
+          { "name": "Treadmill Vibration Isolation", "billable": true }
+        ]},
+        { "name": "Migrate to Commercial Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Dragon Docking Port Fit-out", "billable": true },
+          { "name": "Crew Transport Manifest", "billable": true }
+        ]},
+        { "name": "Testing on Orbit", "isDefault": false, "billable": true, "children": [
+          { "name": "EVA Dress Rehearsal", "billable": true },
+          { "name": "Microgravity Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Long-Duration Crews", "isDefault": false, "billable": true, "children": [
+          { "name": "Year-in-Space Conditioning", "billable": true },
+          { "name": "Soyuz Descent Simulator", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "mercury-gemini": [
+      { "fullName": "Alan Shepard",     "themedRole": "Chief Astronaut" },
+      { "fullName": "John Glenn",       "themedRole": "Mission Architect" },
+      { "fullName": "Gus Grissom",      "themedRole": "Flight Director" },
+      { "fullName": "Scott Carpenter",  "themedRole": "Mission Specialist" },
+      { "fullName": "Wally Schirra",    "themedRole": "Lead Systems Integrator" },
+      { "fullName": "Gordon Cooper",    "themedRole": "Propulsion Engineer" },
+      { "fullName": "Deke Slayton",     "themedRole": "Mission Planner" },
+      { "fullName": "Ed White",         "themedRole": "Avionics Engineer" }
+    ],
+    "apollo-program": [
+      { "fullName": "Neil Armstrong",   "themedRole": "Chief Astronaut" },
+      { "fullName": "Buzz Aldrin",      "themedRole": "Senior Propulsion Engineer" },
+      { "fullName": "Michael Collins",  "themedRole": "Lead Systems Integrator" },
+      { "fullName": "Jim Lovell",       "themedRole": "Flight Director" },
+      { "fullName": "Pete Conrad",      "themedRole": "Mission Specialist" },
+      { "fullName": "Alan Bean",        "themedRole": "Payload Specialist" },
+      { "fullName": "John Young",       "themedRole": "Mission Architect" },
+      { "fullName": "Charles Duke",     "themedRole": "Capsule Communicator" },
+      { "fullName": "Harrison Schmitt", "themedRole": "Quality Assurance Inspector" },
+      { "fullName": "Gene Cernan",      "themedRole": "Public Affairs Officer" }
+    ],
+    "space-shuttle": [
+      { "fullName": "John Young",          "themedRole": "Mission Architect" },
+      { "fullName": "Robert Crippen",      "themedRole": "Flight Director" },
+      { "fullName": "Sally Ride",          "themedRole": "Mission Specialist" },
+      { "fullName": "Guion Bluford",       "themedRole": "Avionics Engineer" },
+      { "fullName": "Christa McAuliffe",   "themedRole": "Outreach Coordinator" },
+      { "fullName": "Eileen Collins",      "themedRole": "Chief Astronaut" },
+      { "fullName": "Chris Hadfield",      "themedRole": "Mission Press Liaison" },
+      { "fullName": "Story Musgrave",      "themedRole": "Senior Propulsion Engineer" }
+    ],
+    "iss-modern": [
+      { "fullName": "Peggy Whitson",       "themedRole": "Chief Astronaut" },
+      { "fullName": "Scott Kelly",         "themedRole": "Mission Specialist" },
+      { "fullName": "Mark Kelly",          "themedRole": "Flight Director" },
+      { "fullName": "Mike Massimino",      "themedRole": "Telemetry Technician" },
+      { "fullName": "Sunita Williams",     "themedRole": "Mission Architect" },
+      { "fullName": "Jessica Meir",        "themedRole": "Payload Specialist" },
+      { "fullName": "Christina Koch",      "themedRole": "Astronaut Candidate" },
+      { "fullName": "Doug Hurley",         "themedRole": "Lead Systems Integrator" },
+      { "fullName": "Bob Behnken",         "themedRole": "Senior Propulsion Engineer" }
+    ]
+  },
+
+  "milestones": {
+    "mercury-gemini": [
+      { "name": "Astronaut Selection Board",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Mercury Seven announced to the world." },
+      { "name": "Freedom 7 Suborbital",        "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Shepard's 15-minute hop proves the capsule." },
+      { "name": "Friendship 7 Orbits Earth",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Glenn becomes the first American in orbit." },
+      { "name": "Gemini IV Spacewalk",         "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Ed White's first American EVA." },
+      { "name": "Gemini VIII Docking",         "type": "Operational", "offsetPct": 85,  "description": "Build complete: Armstrong & Scott achieve first orbital docking." },
+      { "name": "Gemini XII Splashdown",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: program closes, lessons captured for Apollo." },
+      { "name": "Program Hand-off to Apollo",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: rendezvous and EVA techniques transferred." }
+    ],
+    "apollo-program": [
+      { "name": "Apollo 1 Pad Review",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: hard lessons learned, program rebuilt around safety." },
+      { "name": "Apollo 8 Earthrise",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: first crewed lunar orbit — Borman, Lovell, Anders." },
+      { "name": "Apollo 11 Tranquility Base",  "type": "Delivery",    "offsetPct": 55,  "description": "Go-Live: 'The Eagle has landed' — Armstrong & Aldrin walk on the Moon." },
+      { "name": "Apollo 13 Successful Failure","type": "Gate",        "offsetPct": 70,  "description": "UAT gate: 'Houston, we have a problem' — crew returned safely." },
+      { "name": "Apollo 17 Last Lunar EVA",    "type": "Operational", "offsetPct": 90,  "description": "Final crewed lunar mission: Cernan and Schmitt close the surface program." },
+      { "name": "Splashdown of Apollo 17",     "type": "Billing",     "offsetPct": 95,  "description": "Final invoice: lunar surface program complete." },
+      { "name": "Skylab Hand-off",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: hardware repurposed for orbital workshop." }
+    ],
+    "space-shuttle": [
+      { "name": "STS-1 Wheels Stop",           "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Young & Crippen prove the orbiter on Columbia's first flight." },
+      { "name": "First Female Commander Selected","type": "Operational","offsetPct": 30,"description": "Build: Eileen Collins assigned to STS-93 — diversity milestone." },
+      { "name": "Hubble Servicing Mission 1",  "type": "Gate",        "offsetPct": 55,  "description": "Mid-project gate: Musgrave's crew restores Hubble's vision on STS-61." },
+      { "name": "ISS Assembly Begins",         "type": "Operational", "offsetPct": 75,  "description": "Build phase: Endeavour delivers Unity Node — orbital assembly underway." },
+      { "name": "Return to Flight",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: STS-114 returns the fleet to safe operations under Eileen Collins." },
+      { "name": "STS-135 Final Landing",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Atlantis closes the 30-year shuttle program." }
+    ],
+    "iss-modern": [
+      { "name": "Expedition Selection Board",  "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: long-duration crew selected for the next increment." },
+      { "name": "Year in Space Begins",        "type": "Operational", "offsetPct": 30,  "description": "Discovery: Scott Kelly & Mikhail Kornienko start the 340-day mission." },
+      { "name": "First All-Female Spacewalk",  "type": "Operational", "offsetPct": 55,  "description": "Build: Christina Koch and Jessica Meir complete the historic EVA." },
+      { "name": "Demo-2 Crew Dragon Docking",  "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Hurley & Behnken arrive aboard the first commercial crew flight." },
+      { "name": "Year-Long Mission Splashdown","type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Kelly returns — biomedical data transitions to flight surgeons." },
+      { "name": "Increment Hand-over",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: command of the station handed to the next expedition." },
+      { "name": "Final Mission Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: science yield and operational metrics reconciled." }
+    ]
+  },
+
+  "daysOff": {
+    "Alan Shepard":      [ { "realm": "mercury-gemini", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Grounded for Ménière's disease — medical leave to recover his flight status." } ],
+    "John Glenn":        [ { "realm": "mercury-gemini", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Senate campaign trail — Ohio constituents to meet." } ],
+    "Gus Grissom":       [ { "realm": "mercury-gemini", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Indiana fishing trip — earned after the Liberty Bell 7 hatch ordeal." } ],
+    "Ed White":          [ { "realm": "mercury-gemini", "offsetWeeks": 18, "numberOfDays": 3, "notes": "West Point reunion with the class of 1952." } ],
+    "Neil Armstrong":    [ { "realm": "apollo-program", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Quiet farm time in Ohio — declined yet another speaking engagement." } ],
+    "Buzz Aldrin":       [ { "realm": "apollo-program", "offsetWeeks": 12, "numberOfDays": 3, "notes": "MIT seminar — orbital rendezvous lecture series." } ],
+    "Michael Collins":   [ { "realm": "apollo-program", "offsetWeeks": 16, "numberOfDays": 5, "notes": "Smithsonian Air & Space curatorial review." } ],
+    "Jim Lovell":        [ { "realm": "apollo-program", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Naval Academy alumni weekend." } ],
+    "Sally Ride":        [ { "realm": "space-shuttle",  "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Sally Ride Science workshop with middle-school girls." } ],
+    "Chris Hadfield":    [ { "realm": "space-shuttle",  "offsetWeeks": 10, "numberOfDays": 2, "notes": "Recording session — guitar and orbital photography projects." } ],
+    "Eileen Collins":    [ { "realm": "space-shuttle",  "offsetWeeks": 16, "numberOfDays": 4, "notes": "Air Force Academy commencement address." } ],
+    "Story Musgrave":    [ { "realm": "space-shuttle",  "offsetWeeks": 12, "numberOfDays": 3, "notes": "Sixth graduate degree coursework — chasing another diploma." } ],
+    "Scott Kelly":       [ { "realm": "iss-modern",     "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Post-flight rehab — readjusting to gravity after 340 days on orbit." } ],
+    "Peggy Whitson":     [ { "realm": "iss-modern",     "offsetWeeks": 14, "numberOfDays": 2, "notes": "Iowa State biochemistry guest lecture." } ],
+    "Christina Koch":    [ { "realm": "iss-modern",     "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Artemis II crew briefings — preparing for lunar flyby." } ]
+  }
+}
