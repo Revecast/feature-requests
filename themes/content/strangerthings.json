@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "key": "StrangerThings",
+  "displayName": "Stranger Things",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "hawkins-indiana.test",
+  "account": {
+    "name": "Hawkins, Indiana (Test Data)",
+    "accountNumber": "PSA-TEST-STRANGERTHINGS"
+  },
+  "mailingAddress": {
+    "street": "4819 Mirkwood Drive",
+    "city": "Hawkins",
+    "state": "IN",
+    "postalCode": "47331",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Dungeon Master",                    "canonical": "Solution Architect",                      "description": "Sets the campaign — designs the over-arching solution and keeps the party on the rails." },
+    { "name": "Party Leader",                      "canonical": "Project Manager",                         "description": "Marshals the party of delivery, holds the timeline, and answers to the Mayor's office." },
+    { "name": "AV Club President",                 "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets — keeps the radio tuned and the projector humming." },
+    { "name": "Hellfire Codecaster",               "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features from the basement of Hawkins High." },
+    { "name": "Hawkins Lab Lead Scientist",        "canonical": "Salesforce Practice Lead - USA",          "description": "Runs the lab — sets standards and guides the senior practitioners on every experiment." },
+    { "name": "Senior Hawkins Lab Researcher",     "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced craft — knows where the bodies are buried." },
+    { "name": "Hawkins Lab Researcher",            "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the senior researcher's eye." },
+    { "name": "Starcourt Mall Maintenance Chief",  "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the underground systems beyond." },
+    { "name": "Senior Mall Tech",                  "canonical": "Integration Senior Consultant - India",   "description": "Lays the wires of API, middleware, and event flows under the Maintenance Chief's plan." },
+    { "name": "Mall Tech Apprentice",              "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the Russian-coded patterns of error handling." },
+    { "name": "Scoops Troop Inspector",            "canonical": "QA Engineer",                             "description": "Tastes every flavor before it ships — finds the sourness in the build before it reaches the customer." },
+    { "name": "Family Video Marketing Director",   "canonical": "Marketing Practice Lead",                 "description": "Lifts the megaphone for product and message — leads all marketing craft in the storefront." },
+    { "name": "Senior Family Video Promoter",      "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert the rental crowd." },
+    { "name": "Family Video Clerk",                "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily rewinds." },
+    { "name": "Hawkins High Reporter",             "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal customer and the engineering basement." },
+    { "name": "Senior Hellfire Codecaster",        "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran of the basement — leads the deepest and most arcane platform builds." },
+    { "name": "Junior AV Club Member",             "canonical": "Junior Salesforce Consultant - India",    "description": "Apprentice with a walkie and a notebook — picks up tickets and learns the craft." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "the-party",
+      "projectName": "The Party — Campaign Coordination Platform",
+      "shortName": "Party CCP",
+      "subAccountName": "The Party (Hellfire Club)",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-THE-PARTY",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Basement HQ Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Walkie Recon", "isDefault": false, "billable": true, "children": [
+          { "name": "Mirkwood Stakeout", "billable": true },
+          { "name": "Channel 6 Sweep", "billable": true },
+          { "name": "Quest Briefing", "billable": true }
+        ]},
+        { "name": "Build the Hellfire Toolkit", "isDefault": false, "billable": true, "children": [
+          { "name": "Character Sheet Forging", "billable": true },
+          { "name": "D20 Calibration", "billable": true },
+          { "name": "Module Assembly", "billable": true }
+        ]},
+        { "name": "Migrate the Campaign Notes", "isDefault": false, "billable": true, "children": [
+          { "name": "Notebook Inventory", "billable": true },
+          { "name": "Lore Translation", "billable": true }
+        ]},
+        { "name": "Testing the Demogorgon", "isDefault": false, "billable": true, "children": [
+          { "name": "Boss Battle Drill (UAT)", "billable": true },
+          { "name": "Initiative Stress Test", "billable": true }
+        ]},
+        { "name": "Training the New Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Newbie Onboarding", "billable": true },
+          { "name": "DM's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "byers-wheeler-family",
+      "projectName": "Byers-Wheeler — Family Care Records Rollout",
+      "shortName": "BW Family",
+      "subAccountName": "Byers & Wheeler Households",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-BYERS-WHEELER-FAMILY",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Maple Street Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Kitchen Table", "isDefault": false, "billable": true, "children": [
+          { "name": "Living Room Interview", "billable": true },
+          { "name": "School Permission Slip Audit", "billable": true },
+          { "name": "Dinner Table Strategy", "billable": true }
+        ]},
+        { "name": "Build the Christmas Lights", "isDefault": false, "billable": true, "children": [
+          { "name": "Wall Stringing", "billable": true },
+          { "name": "Alphabet Calibration", "billable": true },
+          { "name": "Power Wiring", "billable": true }
+        ]},
+        { "name": "Migrate the Photo Albums", "isDefault": false, "billable": true, "children": [
+          { "name": "Polaroid Catalog", "billable": true },
+          { "name": "Yearbook Digitization", "billable": true }
+        ]},
+        { "name": "Testing at the New House", "isDefault": false, "billable": true, "children": [
+          { "name": "Move-in Day Drill", "billable": true },
+          { "name": "Long-Distance Call Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Babysitters", "isDefault": false, "billable": true, "children": [
+          { "name": "Holly's Bedtime Routine", "billable": true },
+          { "name": "Karen's Household Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "hawkins-pd-and-government",
+      "projectName": "Hawkins PD & Gov — Case Files Modernization",
+      "shortName": "Hawkins PD CFM",
+      "subAccountName": "Hawkins Police Department & US DoE",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-HAWKINS-PD-AND-GOVERNMENT",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Station House Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Stakeout", "isDefault": false, "billable": true, "children": [
+          { "name": "Quarry Site Survey", "billable": true },
+          { "name": "Witness Statement Intake", "billable": true },
+          { "name": "Chief's Briefing", "billable": true }
+        ]},
+        { "name": "Build the Case Board", "isDefault": false, "billable": true, "children": [
+          { "name": "Pin & Twine Mapping", "billable": true },
+          { "name": "Photo Evidence Tagging", "billable": true },
+          { "name": "Cold Case Reopening", "billable": true }
+        ]},
+        { "name": "Migrate the Cold Case Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Filing Cabinet Audit", "billable": true },
+          { "name": "Microfiche Conversion", "billable": true }
+        ]},
+        { "name": "Testing the Lab Lockdown", "isDefault": false, "billable": true, "children": [
+          { "name": "Perimeter Drill", "billable": true },
+          { "name": "Containment Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Deputies", "isDefault": false, "billable": true, "children": [
+          { "name": "Rookie Onboarding", "billable": true },
+          { "name": "Hopper's Field Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "upside-down-and-villains",
+      "projectName": "Upside Down — Threat Intelligence Platform",
+      "shortName": "UD Threat",
+      "subAccountName": "The Upside Down (Threat Actor Registry)",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-UPSIDE-DOWN-AND-VILLAINS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Hive Mind Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Vine Tracing", "isDefault": false, "billable": true, "children": [
+          { "name": "Gate Reconnaissance", "billable": true },
+          { "name": "Particle Detection", "billable": true },
+          { "name": "Mind Flayer Strategy", "billable": true }
+        ]},
+        { "name": "Build the Gate Surveillance", "isDefault": false, "billable": true, "children": [
+          { "name": "Rift Sensor Forging", "billable": true },
+          { "name": "Shadow Map Calibration", "billable": true },
+          { "name": "Tendril Tracking Network", "billable": true }
+        ]},
+        { "name": "Migrate the Test Subjects", "isDefault": false, "billable": true, "children": [
+          { "name": "Subject Roster Audit", "billable": true },
+          { "name": "Lab Notebook Conversion", "billable": true }
+        ]},
+        { "name": "Testing Vecna's Curse", "isDefault": false, "billable": true, "children": [
+          { "name": "Mind Lair Pen-test", "billable": true },
+          { "name": "Music-Memory Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Russian Operatives", "isDefault": false, "billable": true, "children": [
+          { "name": "Cipher Onboarding", "billable": true },
+          { "name": "Demogorgon Handler Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "the-party": [
+      { "fullName": "Mike Wheeler",       "themedRole": "Party Leader" },
+      { "fullName": "Lucas Sinclair",     "themedRole": "Senior Hawkins Lab Researcher" },
+      { "fullName": "Dustin Henderson",   "themedRole": "AV Club President" },
+      { "fullName": "Will Byers",         "themedRole": "Hellfire Codecaster" },
+      { "fullName": "Eleven Hopper",      "themedRole": "Dungeon Master" },
+      { "fullName": "Max Mayfield",       "themedRole": "Hawkins High Reporter" },
+      { "fullName": "Erica Sinclair",     "themedRole": "Junior AV Club Member" }
+    ],
+    "byers-wheeler-family": [
+      { "fullName": "Joyce Byers",        "themedRole": "Party Leader" },
+      { "fullName": "Jonathan Byers",     "themedRole": "Family Video Clerk" },
+      { "fullName": "Bob Newby",          "themedRole": "AV Club President" },
+      { "fullName": "Karen Wheeler",      "themedRole": "Senior Family Video Promoter" },
+      { "fullName": "Nancy Wheeler",      "themedRole": "Hawkins High Reporter" },
+      { "fullName": "Ted Wheeler",        "themedRole": "Hawkins Lab Researcher" },
+      { "fullName": "Holly Wheeler",      "themedRole": "Junior AV Club Member" },
+      { "fullName": "Lonnie Byers",       "themedRole": "Mall Tech Apprentice" }
+    ],
+    "hawkins-pd-and-government": [
+      { "fullName": "Jim Hopper",         "themedRole": "Dungeon Master" },
+      { "fullName": "Officer Powell",     "themedRole": "Senior Hawkins Lab Researcher" },
+      { "fullName": "Officer Callahan",   "themedRole": "Hawkins Lab Researcher" },
+      { "fullName": "Doctor Brenner",     "themedRole": "Hawkins Lab Lead Scientist" },
+      { "fullName": "Sam Owens",          "themedRole": "Senior Hellfire Codecaster" },
+      { "fullName": "Murray Bauman",      "themedRole": "Hawkins High Reporter" },
+      { "fullName": "Dr. Sullivan",       "themedRole": "Starcourt Mall Maintenance Chief" },
+      { "fullName": "Sara Hopper",        "themedRole": "Junior AV Club Member" }
+    ],
+    "upside-down-and-villains": [
+      { "fullName": "Henry Creel",        "themedRole": "Dungeon Master" },
+      { "fullName": "Mind Flayer",        "themedRole": "Hawkins Lab Lead Scientist" },
+      { "fullName": "Demogorgon",         "themedRole": "Senior Mall Tech" },
+      { "fullName": "Demodogs",           "themedRole": "Mall Tech Apprentice" },
+      { "fullName": "Grigori",            "themedRole": "Starcourt Mall Maintenance Chief" },
+      { "fullName": "Antonov",            "themedRole": "Senior Hellfire Codecaster" },
+      { "fullName": "Yuri Ismaylov",      "themedRole": "Family Video Marketing Director" },
+      { "fullName": "Billy Hargrove",     "themedRole": "Party Leader" }
+    ]
+  },
+
+  "milestones": {
+    "the-party": [
+      { "name": "Roll for Initiative",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — character sheets approved, dice rolled." },
+      { "name": "Forge the +1 Sword",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: weapons readied for the first encounter." },
+      { "name": "Audience at the Wheeler Basement", "type": "Gate",  "offsetPct": 50,  "description": "Mid-project gate: solution review with the full party." },
+      { "name": "Snow Ball Phase Invoice",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Hawkins Middle dance fully provisioned." },
+      { "name": "Defeat the Demogorgon",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the boss is down and the campaign world saved." },
+      { "name": "Closing Credits Hand-off",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ownership passed to next session's DM." }
+    ],
+    "byers-wheeler-family": [
+      { "name": "Move-in Day Kickoff",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: boxes unpacked, alphabet wall mounted." },
+      { "name": "Christmas Lights Strung",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: alphabet wall fully wired and tested." },
+      { "name": "Parent-Teacher Conference",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: school records validated with Karen and Joyce." },
+      { "name": "Thanksgiving Dinner Live",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the family table seats everyone, no leftovers." },
+      { "name": "Holiday Card Mailing",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the family is back together, photos out." },
+      { "name": "Final Family Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: cost split between the Wheelers and the Byers." }
+    ],
+    "hawkins-pd-and-government": [
+      { "name": "First Missing Person Filed", "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Will's case opened, file system online." },
+      { "name": "Stake Out the Lab",          "type": "Operational", "offsetPct": 35,  "description": "Build: surveillance perimeter around Hawkins National Lab deployed." },
+      { "name": "Mayor's Audit",              "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Mayor's office and DoE liaison." },
+      { "name": "Lab Lockdown Live",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: case files migrated, station fully operational." },
+      { "name": "Cold Case Cleared",          "type": "Operational", "offsetPct": 100, "description": "Project close: backlog of unsolved cases reviewed and stamped." },
+      { "name": "Departmental Final Bill",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Hawkins PD and DoE." }
+    ],
+    "upside-down-and-villains": [
+      { "name": "First Gate Detected",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: rift signature confirmed beneath Hawkins Lab." },
+      { "name": "Map the Hive Mind",          "type": "Operational", "offsetPct": 30,  "description": "Discovery: Mind Flayer's tendril network charted." },
+      { "name": "Containment Field Built",    "type": "Operational", "offsetPct": 55,  "description": "Build: gate surveillance and shadow tracking platform deployed." },
+      { "name": "Vecna Curse Diagnostic",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: music-memory countermeasure validated against Creel." },
+      { "name": "Gate Sealed",                "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: rift closed, Upside Down quarantined." },
+      { "name": "Russian Black-budget Settle","type": "Billing",     "offsetPct": 100, "description": "Final invoice routed via covert channels — payment in rubles or favors." }
+    ]
+  },
+
+  "daysOff": {
+    "Will Byers":         [ { "realm": "the-party",                 "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery week — recurring Upside Down flashbacks, doctor's orders." } ],
+    "Eleven Hopper":      [ { "realm": "the-party",                 "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Eggos and waffles run with Hop — overdue." } ],
+    "Mike Wheeler":       [ { "realm": "the-party",                 "offsetWeeks": 12, "numberOfDays": 2, "notes": "Family trip to Lenora Hills to see El." } ],
+    "Dustin Henderson":   [ { "realm": "the-party",                 "offsetWeeks": 16, "numberOfDays": 4, "notes": "Camp Know Where — annual radio camp." } ],
+    "Max Mayfield":       [ { "realm": "the-party",                 "offsetWeeks": 18, "numberOfDays": 3, "notes": "Cemetery visit and Walkman therapy session." } ],
+    "Joyce Byers":        [ { "realm": "byers-wheeler-family",      "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Encyclopedia sales conference — territory training." } ],
+    "Jonathan Byers":     [ { "realm": "byers-wheeler-family",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Photography assignment for the school paper." } ],
+    "Nancy Wheeler":      [ { "realm": "byers-wheeler-family",      "offsetWeeks": 14, "numberOfDays": 2, "notes": "Hawkins Post deadline week — investigative deep dive." } ],
+    "Bob Newby":          [ { "realm": "byers-wheeler-family",      "offsetWeeks": 6,  "numberOfDays": 1, "notes": "Radio Shack regional manager training." } ],
+    "Jim Hopper":         [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Cabin maintenance and a fishing trip — non-negotiable." } ],
+    "Officer Callahan":   [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Bowling league championship weekend." } ],
+    "Sam Owens":          [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 16, "numberOfDays": 3, "notes": "DC briefing — congressional oversight committee." } ],
+    "Murray Bauman":      [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Conspiracy research retreat at the Illinois bunker." } ],
+    "Henry Creel":        [ { "realm": "upside-down-and-villains",  "offsetWeeks": 10, "numberOfDays": 5, "notes": "Mind Lair recalibration — quarterly maintenance." } ],
+    "Billy Hargrove":     [ { "realm": "upside-down-and-villains",  "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Lifeguard shift at the Hawkins Community Pool." } ]
+  }
+}

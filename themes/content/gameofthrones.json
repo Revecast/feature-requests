@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "key": "GameOfThrones",
+  "displayName": "Game of Thrones",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "westeros.test",
+  "account": {
+    "name": "Seven Kingdoms (Test Data)",
+    "accountNumber": "PSA-TEST-GAMEOFTHRONES"
+  },
+  "mailingAddress": {
+    "street": "1 Iron Throne Plaza, Red Keep",
+    "city": "King's Landing",
+    "state": "Crownlands",
+    "postalCode": "WS-001",
+    "country": "Westeros"
+  },
+
+  "roles": [
+    { "name": "Maester of the Citadel",            "canonical": "Solution Architect",                      "description": "Forges chains of many metals — designs the over-arching Salesforce solution and safeguards its integrity." },
+    { "name": "Hand of the King",                  "canonical": "Project Manager",                         "description": "Speaks with the king's voice — marshals the council of delivery and holds the timeline." },
+    { "name": "Master of Coin",                    "canonical": "Salesforce Administrator",                "description": "Steward of ledgers, layouts, fields and permission sets across the realm." },
+    { "name": "Blacksmith of the Street of Steel", "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features at the smithy of King's Landing." },
+    { "name": "Lord Commander of the Westerlands", "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Salesforce craft of the West — sets standards and guides the senior smiths." },
+    { "name": "Captain of the Unsullied",          "canonical": "Salesforce Senior Consultant - India",    "description": "Disciplined veteran — leads delivery squads through the toughest customer engagements." },
+    { "name": "Spearman of Astapor",               "canonical": "Salesforce Consultant - India",           "description": "Rank-and-file warrior of configuration and discovery, marching under the Captain's command." },
+    { "name": "Master of the Painted Table",       "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the Narrow Sea." },
+    { "name": "Cartographer of the Free Cities",   "canonical": "Integration Senior Consultant - India",   "description": "Lays the trade routes of API, middleware, and event flows under the Master's plan." },
+    { "name": "Apprentice Cartographer",           "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling." },
+    { "name": "Master at Arms",                    "canonical": "QA Engineer",                             "description": "Tests every blade and bow — finds the maladies in the build before they reach the throne." },
+    { "name": "Master of Whisperers",              "canonical": "Marketing Practice Lead",                 "description": "Lord of little birds and grand campaigns — leads all marketing craft across the kingdoms." },
+    { "name": "Herald of the Tourney",             "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather the smallfolk and the lords alike." },
+    { "name": "Singer of Ballads",                 "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into every great hall — content, creative, and the daily song." },
+    { "name": "Septa of the Records",              "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the Maester's craft." },
+    { "name": "Master Weaponsmith of Valyrian Steel","canonical": "Salesforce Senior Developer - USA",     "description": "Forges the rarest blades — senior platform craft, complex Apex, and the most delicate platform features." },
+    { "name": "Squire of the Round Tower",         "canonical": "Junior Salesforce Consultant - India",    "description": "Newly sworn to service — learns admin and config under the eye of more seasoned knights." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "house-stark-north",
+      "projectName": "House Stark — Wardenship of the North CRM",
+      "shortName": "Stark WNC",
+      "subAccountName": "House Stark of Winterfell",
+      "subAccountNumber": "PSA-TEST-GAMEOFTHRONES-HOUSESTARKNORTH",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Winterfell Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Godswood", "isDefault": false, "billable": true, "children": [
+          { "name": "Council in the Great Hall", "billable": true },
+          { "name": "Survey of the Wolfswood", "billable": true },
+          { "name": "Strategy by the Heart Tree", "billable": true }
+        ]},
+        { "name": "Build the Castle Walls", "isDefault": false, "billable": true, "children": [
+          { "name": "Granite Foundation Stones", "billable": true },
+          { "name": "Broken Tower Restoration", "billable": true },
+          { "name": "Crypt Vault Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Sworn Houses", "isDefault": false, "billable": true, "children": [
+          { "name": "Bannermen Roll Call", "billable": true },
+          { "name": "Hearth & Smoke Inventory", "billable": true }
+        ]},
+        { "name": "Testing at Moat Cailin", "isDefault": false, "billable": true, "children": [
+          { "name": "Causeway Defense Drill", "billable": true },
+          { "name": "Northern March Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Northmen", "isDefault": false, "billable": true, "children": [
+          { "name": "Direwolf Pup Onboarding", "billable": true },
+          { "name": "Sword of the Morning Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "house-lannister-westerlands",
+      "projectName": "House Lannister — Casterly Rock Wealth Platform",
+      "shortName": "Lannister CRW",
+      "subAccountName": "House Lannister of Casterly Rock",
+      "subAccountNumber": "PSA-TEST-GAMEOFTHRONES-HOUSELANNISTERWESTERLANDS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Casterly Rock Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Iron Bank Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council in the Lion's Mouth", "billable": true },
+          { "name": "Goldroad Reconnaissance", "billable": true },
+          { "name": "Strategy with the Old Lion", "billable": true }
+        ]},
+        { "name": "Build the Goldmines", "isDefault": false, "billable": true, "children": [
+          { "name": "Mineshaft Foundation", "billable": true },
+          { "name": "Smelting Furnace Tooling", "billable": true },
+          { "name": "Vault Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Bannermen", "isDefault": false, "billable": true, "children": [
+          { "name": "Vassal Ledger Inventory", "billable": true },
+          { "name": "Debt Scroll Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Blackwater", "isDefault": false, "billable": true, "children": [
+          { "name": "Wildfire Battle Drill (UAT)", "billable": true },
+          { "name": "Chain-Boom Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Lions", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Onboarding at Lannisport", "billable": true },
+          { "name": "Kingsguard Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "house-targaryen-essos",
+      "projectName": "House Targaryen — Dragon Reclamation Programme",
+      "shortName": "Targaryen DRP",
+      "subAccountName": "House Targaryen in Exile",
+      "subAccountNumber": "PSA-TEST-GAMEOFTHRONES-HOUSETARGARYENESSOS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Meereen Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery Across the Narrow Sea", "isDefault": false, "billable": true, "children": [
+          { "name": "Khalasar Survey", "billable": true },
+          { "name": "Free Cities Polling", "billable": true },
+          { "name": "Small Council in Exile", "billable": true }
+        ]},
+        { "name": "Build the Dragon Pit", "isDefault": false, "billable": true, "children": [
+          { "name": "Egg Incubation Forging", "billable": true },
+          { "name": "Hatchling Calibration", "billable": true },
+          { "name": "Aerie Signal Network", "billable": true }
+        ]},
+        { "name": "Migrate the Khalasar", "isDefault": false, "billable": true, "children": [
+          { "name": "Dothraki Bloodrider Roll", "billable": true },
+          { "name": "Caravan & Cart Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Unsullied", "isDefault": false, "billable": true, "children": [
+          { "name": "Yunkai Siege Pen-test", "billable": true },
+          { "name": "Slaver's Bay Stress", "billable": true }
+        ]},
+        { "name": "Training the Bloodriders", "isDefault": false, "billable": true, "children": [
+          { "name": "Arakh & Bow Drill", "billable": true },
+          { "name": "Khaleesi's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "nights-watch-beyond-the-wall",
+      "projectName": "Night's Watch — Wall Surveillance Modernisation",
+      "shortName": "Watch WSM",
+      "subAccountName": "The Night's Watch at Castle Black",
+      "subAccountNumber": "PSA-TEST-GAMEOFTHRONES-NIGHTSWATCHBEYONDTHEWALL",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Castle Black Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Ranging", "isDefault": false, "billable": true, "children": [
+          { "name": "Ranger Reconnaissance", "billable": true },
+          { "name": "Wildling Encampment Survey", "billable": true },
+          { "name": "Lord Commander's Council", "billable": true }
+        ]},
+        { "name": "Build the Wall Watchtowers", "isDefault": false, "billable": true, "children": [
+          { "name": "Ice Foundation Stones", "billable": true },
+          { "name": "Beacon Brazier Tooling", "billable": true },
+          { "name": "Winch & Cage Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Black Brothers", "isDefault": false, "billable": true, "children": [
+          { "name": "Sworn Brother Roll Call", "billable": true },
+          { "name": "Steward & Builder Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Fist of the First Men", "isDefault": false, "billable": true, "children": [
+          { "name": "Wight Defense Drill", "billable": true },
+          { "name": "White Walker Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Greenboy Onboarding", "billable": true },
+          { "name": "Master-at-Arms Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "house-stark-north": [
+      { "fullName": "Eddard Stark",   "themedRole": "Lord Commander of the Westerlands" },
+      { "fullName": "Catelyn Stark",  "themedRole": "Hand of the King" },
+      { "fullName": "Robb Stark",     "themedRole": "Captain of the Unsullied" },
+      { "fullName": "Sansa Stark",    "themedRole": "Septa of the Records" },
+      { "fullName": "Arya Stark",     "themedRole": "Spearman of Astapor" },
+      { "fullName": "Bran Stark",     "themedRole": "Maester of the Citadel" },
+      { "fullName": "Rickon Stark",   "themedRole": "Squire of the Round Tower" },
+      { "fullName": "Jon Snow",       "themedRole": "Master Weaponsmith of Valyrian Steel" },
+      { "fullName": "Theon Greyjoy",  "themedRole": "Apprentice Cartographer" },
+      { "fullName": "Jeor Mormont",   "themedRole": "Master at Arms" }
+    ],
+    "house-lannister-westerlands": [
+      { "fullName": "Tywin Lannister",    "themedRole": "Lord Commander of the Westerlands" },
+      { "fullName": "Cersei Lannister",   "themedRole": "Master of Whisperers" },
+      { "fullName": "Jaime Lannister",    "themedRole": "Captain of the Unsullied" },
+      { "fullName": "Tyrion Lannister",   "themedRole": "Hand of the King" },
+      { "fullName": "Joffrey Baratheon",  "themedRole": "Squire of the Round Tower" },
+      { "fullName": "Tommen Baratheon",   "themedRole": "Singer of Ballads" },
+      { "fullName": "Myrcella Baratheon", "themedRole": "Septa of the Records" },
+      { "fullName": "Kevan Lannister",    "themedRole": "Master of Coin" },
+      { "fullName": "Bronn",              "themedRole": "Spearman of Astapor" }
+    ],
+    "house-targaryen-essos": [
+      { "fullName": "Daenerys Targaryen",  "themedRole": "Master of the Painted Table" },
+      { "fullName": "Viserys Targaryen",   "themedRole": "Herald of the Tourney" },
+      { "fullName": "Khal Drogo",          "themedRole": "Captain of the Unsullied" },
+      { "fullName": "Jorah Mormont",       "themedRole": "Cartographer of the Free Cities" },
+      { "fullName": "Missandei",           "themedRole": "Septa of the Records" },
+      { "fullName": "Grey Worm",           "themedRole": "Master at Arms" },
+      { "fullName": "Daario Naharis",      "themedRole": "Spearman of Astapor" },
+      { "fullName": "Barristan Selmy",     "themedRole": "Maester of the Citadel" },
+      { "fullName": "Aegon",               "themedRole": "Apprentice Cartographer" },
+      { "fullName": "Rhaegar",             "themedRole": "Singer of Ballads" }
+    ],
+    "nights-watch-beyond-the-wall": [
+      { "fullName": "Jon Snow",            "themedRole": "Hand of the King" },
+      { "fullName": "Samwell Tarly",       "themedRole": "Maester of the Citadel" },
+      { "fullName": "Jeor Mormont",        "themedRole": "Lord Commander of the Westerlands" },
+      { "fullName": "Alliser Thorne",      "themedRole": "Master at Arms" },
+      { "fullName": "Janos Slynt",         "themedRole": "Master of Coin" },
+      { "fullName": "Mance Rayder",        "themedRole": "Master of Whisperers" },
+      { "fullName": "Tormund Giantsbane",  "themedRole": "Captain of the Unsullied" },
+      { "fullName": "Ygritte",             "themedRole": "Spearman of Astapor" },
+      { "fullName": "Edd Tollett",         "themedRole": "Apprentice Cartographer" },
+      { "fullName": "the Night King",      "themedRole": "Blacksmith of the Street of Steel" }
+    ]
+  },
+
+  "milestones": {
+    "house-stark-north": [
+      { "name": "Oath at the Heart Tree",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — vows sworn beneath the weirwood at Winterfell." },
+      { "name": "Reforging Ice",                 "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the Stark greatsword reforged for the wars to come." },
+      { "name": "Council in the Great Hall",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: bannermen review under the direwolf banner." },
+      { "name": "King in the North Proclaimed",  "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the lords raise their swords." },
+      { "name": "Return of the Direwolves",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the pack runs free across the North once more." },
+      { "name": "Steward's Hand-off",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: wardenship passed to the next generation." }
+    ],
+    "house-lannister-westerlands": [
+      { "name": "Audience at Casterly Rock",     "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Old Lion convenes his council." },
+      { "name": "Goldroad Procession",           "type": "Operational", "offsetPct": 30,  "description": "Build phase: tribute and bannermen ride east." },
+      { "name": "Battle of the Blackwater",      "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: wildfire holds the bay, the city stands." },
+      { "name": "A Lannister Always Pays",       "type": "Billing",     "offsetPct": 75,  "description": "Phase invoice: the debts of House Lannister settled in gold." },
+      { "name": "Coronation in the Sept",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the crown sits upon a Lannister brow." },
+      { "name": "Funeral at the Sept of Baelor", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the patriarch laid to rest." }
+    ],
+    "house-targaryen-essos": [
+      { "name": "The Dragons Awaken",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the eggs hatch, the Mother claims her brood." },
+      { "name": "Sack of Astapor",               "type": "Operational", "offsetPct": 35,  "description": "Build: the Unsullied freed and turned to the cause." },
+      { "name": "Audience at Meereen",           "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Breaker of Chains atop her pyramid." },
+      { "name": "Crossing the Narrow Sea",       "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the fleet sails for Westeros." },
+      { "name": "Landing at Dragonstone",        "type": "Operational", "offsetPct": 100, "description": "Project close: the ancestral seat reclaimed." },
+      { "name": "Tribute to the Iron Bank",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the debts of exile repaid in dragonglass and gold." }
+    ],
+    "nights-watch-beyond-the-wall": [
+      { "name": "Vows at the Weirwood Grove",    "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: 'I am the sword in the darkness, the watcher on the walls.'" },
+      { "name": "Ranging Beyond the Wall",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: the Great Ranging maps the threat to come." },
+      { "name": "Hardhome Evacuation",           "type": "Operational", "offsetPct": 55,  "description": "Build: free folk and brothers stand together against the dead." },
+      { "name": "Battle of Castle Black",        "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the Wall holds against the wildling host." },
+      { "name": "The Long Night Survived",       "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: dawn breaks, the watch endures." },
+      { "name": "Final Reckoning at Castle Black","type": "Billing",    "offsetPct": 100, "description": "Final invoice from the Lord Commander's table." }
+    ]
+  },
+
+  "daysOff": {
+    "Eddard Stark":       [ { "realm": "house-stark-north",            "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Summons to King's Landing — small council business." } ],
+    "Catelyn Stark":      [ { "realm": "house-stark-north",            "offsetWeeks": 10, "numberOfDays": 2, "notes": "Visiting Riverrun — her father Lord Hoster fails." } ],
+    "Robb Stark":         [ { "realm": "house-stark-north",            "offsetWeeks": 14, "numberOfDays": 4, "notes": "Wedding at the Twins — promised crossing of the river." } ],
+    "Arya Stark":         [ { "realm": "house-stark-north",            "offsetWeeks": 18, "numberOfDays": 5, "notes": "Dancing lessons with Syrio Forel — water dance practice." } ],
+    "Jon Snow":           [ { "realm": "nights-watch-beyond-the-wall", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Ranging beyond the Wall — Lord Commander's orders." } ],
+    "Tyrion Lannister":   [ { "realm": "house-lannister-westerlands",  "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Touring the brothels of Lannisport — 'research,' he insists." } ],
+    "Jaime Lannister":    [ { "realm": "house-lannister-westerlands",  "offsetWeeks": 16, "numberOfDays": 3, "notes": "Kingsguard rotation at the Red Keep." } ],
+    "Cersei Lannister":   [ { "realm": "house-lannister-westerlands",  "offsetWeeks": 22, "numberOfDays": 2, "notes": "Audience with the High Septon — penance arrangements." } ],
+    "Bronn":              [ { "realm": "house-lannister-westerlands",  "offsetWeeks": 12, "numberOfDays": 2, "notes": "Negotiating a higher fee — always negotiating." } ],
+    "Daenerys Targaryen": [ { "realm": "house-targaryen-essos",        "offsetWeeks": 10, "numberOfDays": 4, "notes": "Liberating a slaver city — itinerary unconfirmed." } ],
+    "Khal Drogo":         [ { "realm": "house-targaryen-essos",        "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Khalasar ride to Vaes Dothrak — sacred journey." } ],
+    "Jorah Mormont":      [ { "realm": "house-targaryen-essos",        "offsetWeeks": 14, "numberOfDays": 3, "notes": "Searching for greyscale cure at Old Valyria's edge." } ],
+    "Samwell Tarly":      [ { "realm": "nights-watch-beyond-the-wall", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Studying at the Citadel in Oldtown — forging his chain." } ],
+    "Tormund Giantsbane": [ { "realm": "nights-watch-beyond-the-wall", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Free folk gathering — meat, mead, and giants." } ],
+    "Ygritte":            [ { "realm": "nights-watch-beyond-the-wall", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Hunting north of the Wall — 'you know nothing.'" } ]
+  }
+}

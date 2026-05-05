@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "key": "AvatarLastAirbender",
+  "displayName": "Avatar — The Last Airbender",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "four-nations.test",
+  "account": {
+    "name": "The Four Nations (Test Data)",
+    "accountNumber": "PSA-TEST-AVATARLASTAIRBENDER"
+  },
+  "mailingAddress": {
+    "street": "1 Avatar Temple Way",
+    "city": "Ba Sing Se",
+    "state": "Earth Kingdom",
+    "postalCode": "00100",
+    "country": "The Four Nations"
+  },
+
+  "roles": [
+    { "name": "Avatar Sage",                        "canonical": "Solution Architect",                      "description": "Bridges all four disciplines — designs the over-arching solution that keeps balance across the nations." },
+    { "name": "White Lotus Grandmaster",            "canonical": "Project Manager",                         "description": "Orchestrates the order's plays — holds timeline, scope, and the wisdom of the elders." },
+    { "name": "Scroll Keeper of the Western Air Temple", "canonical": "Salesforce Administrator",          "description": "Steward of the airbending scrolls — owns records, layouts, fields, and permission sets." },
+    { "name": "Mechanist of the Northern Air Temple", "canonical": "Salesforce Developer",                  "description": "Tinkerer of war balloons and gliders — builds Apex, LWC, and platform features." },
+    { "name": "Fire Sage of the Crescent Island",   "canonical": "Salesforce Practice Lead - USA",          "description": "Master of the temple's craft — sets standards across the senior benders." },
+    { "name": "Dai Li Senior Agent",                "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the upper ring of customer requirements with practiced earthbending precision." },
+    { "name": "Dai Li Acolyte",                     "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration through the lower ring under the Senior Agent's watch." },
+    { "name": "Bridge Builder of Wan Shi Tong",     "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between the spirit library and the mortal realms." },
+    { "name": "Wan Shi Tong's Knowledge Seeker",    "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Bridge Builder's plan." },
+    { "name": "Knowledge Seeker Apprentice",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the patterns of error handling." },
+    { "name": "Healer of the Spirit Oasis",         "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the Avatar." },
+    { "name": "Town Crier of Omashu",               "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for the message — leads all marketing craft across the nations." },
+    { "name": "Herald of the Earth King",           "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call across the walls of Ba Sing Se." },
+    { "name": "Pamphleteer of the Lower Ring",      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the streets — content, creative, and the daily message." },
+    { "name": "Council Scribe of the Air Temples",  "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the monks' design." },
+    { "name": "Master Mechanist of Caldera",        "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of war machines — leads the most senior platform builds at the capital forges." },
+    { "name": "Earth Rumble Apprentice",            "canonical": "Junior Salesforce Consultant - India",    "description": "Newcomer to the ring — learns configuration and discovery under the senior earthbenders." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "air-nomads-southern-water-tribe",
+      "projectName": "Air Nomads & Southern Water Tribe — Avatar Awakening Platform",
+      "shortName": "Aang AAP",
+      "subAccountName": "Air Nomads & Southern Water Tribe Alliance",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-AIR-NOMADS-SOUTHERN-WATER-TRIBE",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Southern Air Temple Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Iceberg Thaw", "isDefault": false, "billable": true, "children": [
+          { "name": "Avatar State Diagnostics", "billable": true },
+          { "name": "Sky Bison Reconnaissance", "billable": true },
+          { "name": "Penguin Sled Survey", "billable": true }
+        ]},
+        { "name": "Build the Glider Fleet", "isDefault": false, "billable": true, "children": [
+          { "name": "Air Glider Carpentry", "billable": true },
+          { "name": "Sky Bison Saddle Forge", "billable": true },
+          { "name": "Wind Current Mapping", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Scrolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Airbending Scroll Inventory", "billable": true },
+          { "name": "Waterbending Form Catalog", "billable": true }
+        ]},
+        { "name": "Testing at Kyoshi Island", "isDefault": false, "billable": true, "children": [
+          { "name": "Warrior Drill (UAT)", "billable": true },
+          { "name": "Unagi Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Young Avatar", "isDefault": false, "billable": true, "children": [
+          { "name": "Element Sequencing Workshop", "billable": true },
+          { "name": "Meditation Onboarding", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "earth-kingdom",
+      "projectName": "Earth Kingdom — Ba Sing Se Stewardship CRM",
+      "shortName": "EK BSS",
+      "subAccountName": "Kingdom of Earth",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-EARTH-KINGDOM",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Upper Ring Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council of Five", "isDefault": false, "billable": true, "children": [
+          { "name": "Long Feng's Briefing", "billable": true },
+          { "name": "Lower Ring Field Survey", "billable": true },
+          { "name": "Earth King Audience Prep", "billable": true }
+        ]},
+        { "name": "Build the Outer Wall", "isDefault": false, "billable": true, "children": [
+          { "name": "Wall Foundation Bending", "billable": true },
+          { "name": "Gate Mechanism Tooling", "billable": true },
+          { "name": "Watchtower Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Palace Scroll Inventory", "billable": true },
+          { "name": "Tea Recipe Translation", "billable": true }
+        ]},
+        { "name": "Testing at Omashu", "isDefault": false, "billable": true, "children": [
+          { "name": "Bumi's Mad Genius Drill", "billable": true },
+          { "name": "Mail Chute Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Dai Li", "isDefault": false, "billable": true, "children": [
+          { "name": "Stone Glove Foundations", "billable": true },
+          { "name": "Earth Rumble Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "fire-nation",
+      "projectName": "Fire Nation — Caldera Conquest Surveillance Build",
+      "shortName": "FN CCS",
+      "subAccountName": "Fire Nation",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-FIRE-NATION",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Caldera Palace Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & War Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Azula Reconnaissance", "billable": true },
+          { "name": "Yuyan Archer Polling", "billable": true },
+          { "name": "Fire Lord Strategy Session" , "billable": true }
+        ]},
+        { "name": "Build the War Fleet", "isDefault": false, "billable": true, "children": [
+          { "name": "Battleship Foundation Forging", "billable": true },
+          { "name": "Tundra Tank Calibration", "billable": true },
+          { "name": "Beacon Signal Network", "billable": true }
+        ]},
+        { "name": "Migrate the Imperial Forces", "isDefault": false, "billable": true, "children": [
+          { "name": "Firebender Legion Roll", "billable": true },
+          { "name": "Siege Engine Inventory", "billable": true }
+        ]},
+        { "name": "Testing at Boiling Rock", "isDefault": false, "billable": true, "children": [
+          { "name": "Prison Tower Pen-test", "billable": true },
+          { "name": "Sozin's Comet Stress", "billable": true }
+        ]},
+        { "name": "Training the Royal Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Conscription", "billable": true },
+          { "name": "Dragon of the West Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "northern-water-tribe-spirit-world",
+      "projectName": "Northern Water Tribe & Spirit World — Mirror Analytics Implementation",
+      "shortName": "NWT-SW MAI",
+      "subAccountName": "Northern Water Tribe & Spirit World",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-NORTHERN-WATER-TRIBE-SPIRIT-WORLD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Agna Qel'a Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Spirit Gazing", "isDefault": false, "billable": true, "children": [
+          { "name": "Spirit Oasis Calibration", "billable": true },
+          { "name": "Future-state Vision Quest", "billable": true },
+          { "name": "Chief's Council", "billable": true }
+        ]},
+        { "name": "Build the Ice Citadel", "isDefault": false, "billable": true, "children": [
+          { "name": "Ice Wall Bending", "billable": true },
+          { "name": "Platform Construction", "billable": true },
+          { "name": "Canal Network Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Tribal Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Waterbending Manuscript Catalog", "billable": true },
+          { "name": "Spirit Song Recording", "billable": true }
+        ]},
+        { "name": "Testing the Spirit Bridge", "isDefault": false, "billable": true, "children": [
+          { "name": "Koh Encounter Trial", "billable": true },
+          { "name": "Tui & La Sync Verification", "billable": true }
+        ]},
+        { "name": "Training the Waterbenders", "isDefault": false, "billable": true, "children": [
+          { "name": "Healing Form Refresh", "billable": true },
+          { "name": "Master Pakku's Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "air-nomads-southern-water-tribe": [
+      { "fullName": "Avatar Aang",      "themedRole": "Avatar Sage" },
+      { "fullName": "Katara",           "themedRole": "Healer of the Spirit Oasis" },
+      { "fullName": "Sokka",            "themedRole": "White Lotus Grandmaster" },
+      { "fullName": "Monk Gyatso",      "themedRole": "Council Scribe of the Air Temples" },
+      { "fullName": "King Bumi",        "themedRole": "Mechanist of the Northern Air Temple" },
+      { "fullName": "Avatar Kuruk",     "themedRole": "Avatar Sage" },
+      { "fullName": "Hakoda",           "themedRole": "Fire Sage of the Crescent Island" },
+      { "fullName": "Bato",             "themedRole": "Dai Li Senior Agent" },
+      { "fullName": "Princess Yue",     "themedRole": "Town Crier of Omashu" }
+    ],
+    "earth-kingdom": [
+      { "fullName": "King Bumi",        "themedRole": "Avatar Sage" },
+      { "fullName": "Toph Beifong",     "themedRole": "Master Mechanist of Caldera" },
+      { "fullName": "General Iroh",     "themedRole": "Fire Sage of the Crescent Island" },
+      { "fullName": "King Kuei",        "themedRole": "White Lotus Grandmaster" },
+      { "fullName": "Long Feng",        "themedRole": "Council Scribe of the Air Temples" },
+      { "fullName": "Joo Dee",          "themedRole": "Herald of the Earth King" },
+      { "fullName": "Master Yu",        "themedRole": "Dai Li Senior Agent" },
+      { "fullName": "The Boulder",      "themedRole": "Earth Rumble Apprentice" },
+      { "fullName": "Gan Jin",          "themedRole": "Dai Li Acolyte" }
+    ],
+    "fire-nation": [
+      { "fullName": "Prince Zuko",      "themedRole": "Avatar Sage" },
+      { "fullName": "Princess Azula",   "themedRole": "Fire Sage of the Crescent Island" },
+      { "fullName": "Fire Lord Ozai",   "themedRole": "White Lotus Grandmaster" },
+      { "fullName": "General Iroh",     "themedRole": "Master Mechanist of Caldera" },
+      { "fullName": "Mai",              "themedRole": "Dai Li Senior Agent" },
+      { "fullName": "Ty Lee",           "themedRole": "Pamphleteer of the Lower Ring" },
+      { "fullName": "Lo and Li",        "themedRole": "Council Scribe of the Air Temples" },
+      { "fullName": "Avatar Roku",      "themedRole": "Bridge Builder of Wan Shi Tong" }
+    ],
+    "northern-water-tribe-spirit-world": [
+      { "fullName": "Princess Yue",     "themedRole": "Avatar Sage" },
+      { "fullName": "Chief Arnook",     "themedRole": "White Lotus Grandmaster" },
+      { "fullName": "Master Pakku",     "themedRole": "Fire Sage of the Crescent Island" },
+      { "fullName": "Hama",             "themedRole": "Dai Li Senior Agent" },
+      { "fullName": "Hue",              "themedRole": "Knowledge Seeker Apprentice" },
+      { "fullName": "Koh the Face Stealer", "themedRole": "Wan Shi Tong's Knowledge Seeker" },
+      { "fullName": "Wan Shi Tong",     "themedRole": "Bridge Builder of Wan Shi Tong" },
+      { "fullName": "Avatar Yangchen",  "themedRole": "Scroll Keeper of the Western Air Temple" }
+    ]
+  },
+
+  "milestones": {
+    "air-nomads-southern-water-tribe": [
+      { "name": "Iceberg Cracks Open",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Avatar awakens from the southern ice." },
+      { "name": "Glider Flight Test",           "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: first glider takes wing from the southern temple." },
+      { "name": "Council at Kyoshi Island",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: warrior elders review the plan." },
+      { "name": "Sky Bison Migration",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Appa carries the team across the world." },
+      { "name": "Avatar State Mastered",        "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the Avatar enters and exits the state at will." },
+      { "name": "Air Temple Hand-off",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed back to the monks of the Western Air Temple." }
+    ],
+    "earth-kingdom": [
+      { "name": "Audience with the Earth King", "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the team is presented at the palace of Ba Sing Se." },
+      { "name": "Drill Breaches the Wall",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: the great drill is dismantled outside the outer wall." },
+      { "name": "Dai Li Coup Foiled",           "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the conspiracy under Lake Laogai is exposed." },
+      { "name": "Liberation of Ba Sing Se",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Order of the White Lotus reclaims the city." },
+      { "name": "Return of the Earth King",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: King Kuei returns to his throne." },
+      { "name": "Tea Shop Grand Opening",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the Jasmine Dragon opens its doors." }
+    ],
+    "fire-nation": [
+      { "name": "War Council Convenes",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Fire Lord's strategy is set in the throne room." },
+      { "name": "Forge the Imperial Fleet",     "type": "Operational", "offsetPct": 35,  "description": "Build: the navy is launched from the harbor of Caldera." },
+      { "name": "Day of Black Sun",             "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Fire Lord during the eclipse." },
+      { "name": "Sozin's Comet Activation",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the firebenders' power reaches its peak." },
+      { "name": "Throne Room Falls Quiet",      "type": "Operational", "offsetPct": 100, "description": "Project close: the war ends with Ozai's defeat." },
+      { "name": "Coronation of Fire Lord Zuko", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: a new era begins under Fire Lord Zuko." }
+    ],
+    "northern-water-tribe-spirit-world": [
+      { "name": "Council at Agna Qel'a",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the great ice city of the north." },
+      { "name": "Gaze into the Spirit Oasis",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: the koi pond reveals the path forward." },
+      { "name": "Crossing into the Spirit World","type": "Operational","offsetPct": 55,  "description": "Build: the Avatar passes through Wan Shi Tong's library." },
+      { "name": "Moon Spirit Restored",         "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Princess Yue gives her life and Tui returns." },
+      { "name": "Siege of the North Lifted",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the Fire Nation fleet is repelled from the north." },
+      { "name": "Final Recompense",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Chief and the Council of Elders." }
+    ]
+  },
+
+  "daysOff": {
+    "Avatar Aang":        [ { "realm": "air-nomads-southern-water-tribe", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery in the Spirit World — meditation retreat with Roku." } ],
+    "Katara":             [ { "realm": "northern-water-tribe-spirit-world", "offsetWeeks": 8, "numberOfDays": 2, "notes": "Healing study under Yagoda at the northern oasis." } ],
+    "Sokka":              [ { "realm": "air-nomads-southern-water-tribe", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Sword training with Master Piandao on Shu Jing." } ],
+    "Toph Beifong":       [ { "realm": "earth-kingdom", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Earth Rumble VI championship — competing under The Blind Bandit." } ],
+    "King Bumi":          [ { "realm": "earth-kingdom", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Rock candy harvest — mad genius needs his sweets." } ],
+    "Prince Zuko":        [ { "realm": "fire-nation", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Ember Island family vacation — uncle's orders." } ],
+    "Princess Azula":     [ { "realm": "fire-nation", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Lightning practice retreat at the volcano rim." } ],
+    "General Iroh":       [ { "realm": "earth-kingdom", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Tea sourcing trip to the foothills outside Ba Sing Se." } ],
+    "Mai":                [ { "realm": "fire-nation", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Knife-throwing tournament on Ember Island." } ],
+    "Ty Lee":             [ { "realm": "fire-nation", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Acrobatic showcase with the Kyoshi Warriors." } ],
+    "Princess Yue":       [ { "realm": "northern-water-tribe-spirit-world", "offsetWeeks": 8, "numberOfDays": 5, "notes": "Moon ceremony — quarterly spiritual observance." } ],
+    "Master Pakku":       [ { "realm": "northern-water-tribe-spirit-world", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Visit to the Southern Water Tribe — re-establishing ties." } ],
+    "Avatar Roku":        [ { "realm": "fire-nation", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Spirit World consultation — past-life advisory session." } ],
+    "Monk Gyatso":        [ { "realm": "air-nomads-southern-water-tribe", "offsetWeeks": 4, "numberOfDays": 2, "notes": "Pie-baking competition at the Eastern Air Temple." } ]
+  }
+}

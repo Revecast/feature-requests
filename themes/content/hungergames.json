@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "key": "HungerGames",
+  "displayName": "The Hunger Games",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "panem.test",
+  "account": {
+    "name": "Panem (Test Data)",
+    "accountNumber": "PSA-TEST-HUNGERGAMES"
+  },
+  "mailingAddress": {
+    "street": "1 Snow Mansion Avenue",
+    "city": "The Capitol",
+    "state": "Panem",
+    "postalCode": "00001",
+    "country": "Panem"
+  },
+
+  "roles": [
+    { "name": "Head Gamemaker",                  "canonical": "Solution Architect",                      "description": "Architect of the arena — designs the over-arching system and oversees its integrity from the Control Room." },
+    { "name": "Arena Coordinator",               "canonical": "Project Manager",                         "description": "Marshals the tributes of delivery, holds the countdown, and answers to the Head Gamemaker." },
+    { "name": "Capitol Records Keeper",          "canonical": "Salesforce Administrator",                "description": "Steward of tribute files, sponsor lists, and citizen permission decrees." },
+    { "name": "Forge Apprentice of District 3",  "canonical": "Salesforce Developer",                    "description": "Builds Apex, LWC, and arena tech in the District 3 workshops." },
+    { "name": "Victor's Village Elder",          "canonical": "Salesforce Practice Lead - USA",          "description": "Senior victor who sets the standards and mentors the rising tributes of the Capitol practice." },
+    { "name": "District 4 Trident Master",       "canonical": "Salesforce Senior Consultant - India",    "description": "Seasoned career tribute — patrols requirements with practiced craft and a sharp trident." },
+    { "name": "District 7 Axe Hand",             "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration through the timber stands under the Trident Master's eye." },
+    { "name": "Beetee's Wire Architect",         "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great wires between the arena and the world beyond — circuits, currents, and traps." },
+    { "name": "Wire-runner of District 3",       "canonical": "Integration Senior Consultant - India",   "description": "Strings the cables of API, middleware, and event flows under Beetee's plan." },
+    { "name": "Apprentice Wire-runner",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of wiring — webhooks, batch jobs, callouts and the District 3 patterns of error handling." },
+    { "name": "Avox Quality Inspector",          "canonical": "QA Engineer",                             "description": "Silent and watchful — finds the flaws in the build before the cameras start rolling." },
+    { "name": "Capitol Stylist-in-Chief",        "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the brand for product and message — leads all stylist craft and Capitol broadcasts." },
+    { "name": "Sponsor Strategist",              "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather sponsors and convert parachutes." },
+    { "name": "Capitol Prep Team Member",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily styling ride." },
+    { "name": "Tribute Mentor Scribe",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the District tribute and the Capitol design council." },
+    { "name": "Senior Forge Master",             "canonical": "Salesforce Senior Developer - USA",       "description": "Master craftsman of the Capitol's deep workshops — leads the most complex Apex and LWC builds." },
+    { "name": "Reaping Day Initiate",            "canonical": "Junior Salesforce Consultant - India",    "description": "Newly reaped — learning configuration, declarative tooling, and the ways of the platform." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "district-12-tributes",
+      "projectName": "District 12 — Seam Logistics & Tribute CRM",
+      "shortName": "D12 Tributes",
+      "subAccountName": "District 12 — The Seam",
+      "subAccountNumber": "PSA-TEST-HUNGERGAMES-DISTRICT-12-TRIBUTES",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Seam Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Reaping", "isDefault": false, "billable": true, "children": [
+          { "name": "Justice Building Census", "billable": true },
+          { "name": "Hob Marketplace Survey", "billable": true },
+          { "name": "Mining Shaft Audit", "billable": true }
+        ]},
+        { "name": "Build the Bow", "isDefault": false, "billable": true, "children": [
+          { "name": "Arrow Fletching Workshop", "billable": true },
+          { "name": "Mockingjay Pin Forging", "billable": true },
+          { "name": "Snare Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Tessera Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Grain Allotment Catalog", "billable": true },
+          { "name": "Oil Ration Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing in the Woods", "isDefault": false, "billable": true, "children": [
+          { "name": "Game Tracking Trial", "billable": true },
+          { "name": "Electric Fence Bypass Test", "billable": true }
+        ]},
+        { "name": "Training the Seam", "isDefault": false, "billable": true, "children": [
+          { "name": "Hunter's Onboarding", "billable": true },
+          { "name": "Healer's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "capitol-elite",
+      "projectName": "Capitol — Broadcast & Surveillance Modernization",
+      "shortName": "Capitol Elite",
+      "subAccountName": "The Capitol of Panem",
+      "subAccountNumber": "PSA-TEST-HUNGERGAMES-CAPITOL-ELITE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Snow Mansion Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Pageantry", "isDefault": false, "billable": true, "children": [
+          { "name": "Tribute Parade Planning", "billable": true },
+          { "name": "Caesar's Interview Prep", "billable": true },
+          { "name": "Gamemaker Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Cornucopia", "isDefault": false, "billable": true, "children": [
+          { "name": "Arena Foundation Pour", "billable": true },
+          { "name": "Mutt Genetics Lab", "billable": true },
+          { "name": "Forcefield Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Citizen Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Avox Roster Cleanup", "billable": true },
+          { "name": "District Quota Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Broadcast", "isDefault": false, "billable": true, "children": [
+          { "name": "Live Feed Stress Test", "billable": true },
+          { "name": "Sponsor Parachute Drop Drill", "billable": true }
+        ]},
+        { "name": "Training the Stylists", "isDefault": false, "billable": true, "children": [
+          { "name": "Prep Team Onboarding", "billable": true },
+          { "name": "Cinna's Couture Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "victors-and-mentors",
+      "projectName": "Victor's Village — Mentorship & Sponsor Platform",
+      "shortName": "Victors VMP",
+      "subAccountName": "Victor's Village Council",
+      "subAccountNumber": "PSA-TEST-HUNGERGAMES-VICTORS-AND-MENTORS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Victor's Village Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Mentorship Intake", "isDefault": false, "billable": true, "children": [
+          { "name": "Tribute Skill Assessment", "billable": true },
+          { "name": "Sponsor Network Mapping", "billable": true },
+          { "name": "Survival Scenario Workshop", "billable": true }
+        ]},
+        { "name": "Build the Sponsor Console", "isDefault": false, "billable": true, "children": [
+          { "name": "Parachute Dispatch Module", "billable": true },
+          { "name": "Odds-Maker Integration", "billable": true },
+          { "name": "Bet Ledger Foundations", "billable": true }
+        ]},
+        { "name": "Migrate the Victor Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Past Games Data Lift", "billable": true },
+          { "name": "Mentor Roster Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing in the Quell", "isDefault": false, "billable": true, "children": [
+          { "name": "Quarter Quell Dry Run", "billable": true },
+          { "name": "Lightning Tree Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Mentors", "isDefault": false, "billable": true, "children": [
+          { "name": "Haymitch's Survival Seminar", "billable": true },
+          { "name": "Finnick's Charm Masterclass", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "district-13-rebellion",
+      "projectName": "District 13 — Rebellion Command & Control",
+      "shortName": "D13 Rebellion",
+      "subAccountName": "District 13 Resistance",
+      "subAccountNumber": "PSA-TEST-HUNGERGAMES-DISTRICT-13-REBELLION",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Bunker Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Propaganda Intake", "isDefault": false, "billable": true, "children": [
+          { "name": "Propo Storyboard Session", "billable": true },
+          { "name": "District Sentiment Survey", "billable": true },
+          { "name": "Coin's War Council", "billable": true }
+        ]},
+        { "name": "Build the Mockingjay Broadcast", "isDefault": false, "billable": true, "children": [
+          { "name": "Underground Studio Construction", "billable": true },
+          { "name": "Hijack Capitol Signal", "billable": true },
+          { "name": "Squad 451 Combat Cam Rig", "billable": true }
+        ]},
+        { "name": "Migrate the Bunker Rosters", "isDefault": false, "billable": true, "children": [
+          { "name": "Compartment Assignment Catalog", "billable": true },
+          { "name": "Schedule Tattoo Sync", "billable": true }
+        ]},
+        { "name": "Testing the Pods", "isDefault": false, "billable": true, "children": [
+          { "name": "Holo Pod Trap Simulation", "billable": true },
+          { "name": "Black Liquid Wave Drill", "billable": true }
+        ]},
+        { "name": "Training the Soldiers", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Block Training", "billable": true },
+          { "name": "Commander's Briefing Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "district-12-tributes": [
+      { "fullName": "Katniss Everdeen",   "themedRole": "Head Gamemaker" },
+      { "fullName": "Peeta Mellark",      "themedRole": "Capitol Stylist-in-Chief" },
+      { "fullName": "Primrose Everdeen",  "themedRole": "Avox Quality Inspector" },
+      { "fullName": "Gale Hawthorne",     "themedRole": "District 4 Trident Master" },
+      { "fullName": "Mrs. Everdeen",      "themedRole": "Tribute Mentor Scribe" },
+      { "fullName": "Madge Undersee",     "themedRole": "Reaping Day Initiate" },
+      { "fullName": "Greasy Sae",         "themedRole": "Capitol Records Keeper" },
+      { "fullName": "Mayor Undersee",     "themedRole": "Arena Coordinator" }
+    ],
+    "capitol-elite": [
+      { "fullName": "President Coriolanus Snow", "themedRole": "Head Gamemaker" },
+      { "fullName": "Effie Trinket",      "themedRole": "Arena Coordinator" },
+      { "fullName": "Caesar Flickerman",  "themedRole": "Capitol Stylist-in-Chief" },
+      { "fullName": "Claudius Templesmith","themedRole": "Sponsor Strategist" },
+      { "fullName": "Cinna",              "themedRole": "Senior Forge Master" },
+      { "fullName": "Portia",             "themedRole": "Capitol Prep Team Member" },
+      { "fullName": "Octavia",            "themedRole": "Capitol Prep Team Member" },
+      { "fullName": "Flavius",            "themedRole": "Capitol Prep Team Member" },
+      { "fullName": "Venia",              "themedRole": "Capitol Prep Team Member" },
+      { "fullName": "Plutarch Heavensbee","themedRole": "Head Gamemaker" }
+    ],
+    "victors-and-mentors": [
+      { "fullName": "Haymitch Abernathy", "themedRole": "Victor's Village Elder" },
+      { "fullName": "Finnick Odair",      "themedRole": "District 4 Trident Master" },
+      { "fullName": "Johanna Mason",      "themedRole": "District 7 Axe Hand" },
+      { "fullName": "Mags",               "themedRole": "Tribute Mentor Scribe" },
+      { "fullName": "Wiress",             "themedRole": "Wire-runner of District 3" },
+      { "fullName": "Beetee",             "themedRole": "Beetee's Wire Architect" },
+      { "fullName": "Annie Cresta",       "themedRole": "Apprentice Wire-runner" },
+      { "fullName": "Brutus",             "themedRole": "Forge Apprentice of District 3" },
+      { "fullName": "Enobaria",           "themedRole": "District 4 Trident Master" },
+      { "fullName": "Cashmere",           "themedRole": "Capitol Stylist-in-Chief" },
+      { "fullName": "Gloss",              "themedRole": "Senior Forge Master" }
+    ],
+    "district-13-rebellion": [
+      { "fullName": "President Alma Coin","themedRole": "Head Gamemaker" },
+      { "fullName": "Boggs",              "themedRole": "Arena Coordinator" },
+      { "fullName": "Cressida",           "themedRole": "Capitol Stylist-in-Chief" },
+      { "fullName": "Pollux",             "themedRole": "Capitol Prep Team Member" },
+      { "fullName": "Castor",             "themedRole": "Sponsor Strategist" },
+      { "fullName": "Messalla",           "themedRole": "Tribute Mentor Scribe" },
+      { "fullName": "Lieutenant Jackson", "themedRole": "District 7 Axe Hand" },
+      { "fullName": "Leeg 1",             "themedRole": "Reaping Day Initiate" },
+      { "fullName": "Leeg 2",             "themedRole": "Reaping Day Initiate" },
+      { "fullName": "Commander Paylor",   "themedRole": "Victor's Village Elder" }
+    ]
+  },
+
+  "milestones": {
+    "district-12-tributes": [
+      { "name": "Reaping Day",              "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — names drawn at the Justice Building." },
+      { "name": "Forge the Mockingjay Pin", "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the symbol passed from Madge to Katniss." },
+      { "name": "Hob Trade Review",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: marketplace check-in with Greasy Sae." },
+      { "name": "Tessera Reconciliation",   "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: grain and oil rations reconciled." },
+      { "name": "Volunteer As Tribute",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Katniss steps forward for Prim." },
+      { "name": "Seam Hand-off",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Gale and the hunters." }
+    ],
+    "capitol-elite": [
+      { "name": "Tribute Parade Lights Up", "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the chariots ride down the Avenue of the Tributes." },
+      { "name": "Caesar's Live Interview",  "type": "Operational", "offsetPct": 30,  "description": "Build phase: prime-time broadcast goes live with the new console." },
+      { "name": "Gamemaker Mid-Games Audit","type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Plutarch reviews arena feeds end-to-end." },
+      { "name": "Coronation of the Victor", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: crown placed in the City Circle ceremony." },
+      { "name": "Victory Tour Dispatch",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: tour scheduled across the districts." },
+      { "name": "Snow's Final Invoice",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: settled at the Snow Mansion." }
+    ],
+    "victors-and-mentors": [
+      { "name": "Quell Card Reading",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the envelope is opened and the rules of the Quarter Quell announced." },
+      { "name": "Sponsor Console Online",   "type": "Operational", "offsetPct": 35,  "description": "Build: parachute dispatch goes live for the mentors' floor." },
+      { "name": "Haymitch's Strategy Audit","type": "Gate",        "offsetPct": 60,  "description": "Solution review with the bottle in one hand and the playbook in the other." },
+      { "name": "Lightning Tree Activation","type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the wire is fired, the forcefield breaks." },
+      { "name": "Hovercraft Extraction",    "type": "Operational", "offsetPct": 100, "description": "Project close: Plutarch's lift exits the arena." },
+      { "name": "Sponsor Settlement",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Victor's Village treasury." }
+    ],
+    "district-13-rebellion": [
+      { "name": "Compartment Assignment",   "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: bunker tattoos applied, schedules synced." },
+      { "name": "First Propo Drops",        "type": "Operational", "offsetPct": 30,  "description": "Discovery: Mockingjay propos broadcast across the districts." },
+      { "name": "Squad 451 Deployment",     "type": "Operational", "offsetPct": 55,  "description": "Build: Star Squad enters the Capitol with combat cams rolling." },
+      { "name": "Pod Map Acceptance",       "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the Holo's pod manifest verified end-to-end." },
+      { "name": "Storming the Mansion",     "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the rebellion reaches President Snow's gates." },
+      { "name": "Coin's Settlement",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Command, signed by President Coin." }
+    ]
+  },
+
+  "daysOff": {
+    "Katniss Everdeen":         [ { "realm": "district-12-tributes", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Hunting trip beyond the fence — restocking the Hob." } ],
+    "Peeta Mellark":            [ { "realm": "district-12-tributes", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Bakery inventory day — frosting batch overdue." } ],
+    "Primrose Everdeen":        [ { "realm": "district-12-tributes", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Tending Lady the goat — kid born early." } ],
+    "Gale Hawthorne":           [ { "realm": "district-12-tributes", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Mining shift in Seam — covering for Hazelle." } ],
+    "President Coriolanus Snow":[ { "realm": "capitol-elite",        "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Rose garden tending — annual cultivar pruning." } ],
+    "Effie Trinket":            [ { "realm": "capitol-elite",        "offsetWeeks": 12, "numberOfDays": 3, "notes": "Wig fitting and schedule realignment — punctuality demands it." } ],
+    "Cinna":                    [ { "realm": "capitol-elite",        "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Couture studio retreat — sketching the girl on fire collection." } ],
+    "Plutarch Heavensbee":      [ { "realm": "capitol-elite",        "offsetWeeks": 18, "numberOfDays": 2, "notes": "Off-grid strategy retreat — clock pocket-watch under repair." } ],
+    "Haymitch Abernathy":       [ { "realm": "victors-and-mentors",  "offsetWeeks": 5,  "numberOfDays": 4, "notes": "Re-supply run — white liquor stock depleted." } ],
+    "Finnick Odair":            [ { "realm": "victors-and-mentors",  "offsetWeeks": 10, "numberOfDays": 3, "notes": "District 4 visit — checking on Annie." } ],
+    "Johanna Mason":            [ { "realm": "victors-and-mentors",  "offsetWeeks": 14, "numberOfDays": 2, "notes": "Avoiding water therapy — recovering in the woods." } ],
+    "Beetee":                   [ { "realm": "victors-and-mentors",  "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Wire workshop maintenance — soldering iron recalibration." } ],
+    "President Alma Coin":      [ { "realm": "district-13-rebellion","offsetWeeks": 12, "numberOfDays": 1, "notes": "Closed-door Command session — no visitors." } ],
+    "Boggs":                    [ { "realm": "district-13-rebellion","offsetWeeks": 6,  "numberOfDays": 2, "notes": "Holo recalibration drill — squad readiness check." } ],
+    "Cressida":                 [ { "realm": "district-13-rebellion","offsetWeeks": 16, "numberOfDays": 3, "notes": "Documentary editing block — propo cut for District 8." } ]
+  }
+}
