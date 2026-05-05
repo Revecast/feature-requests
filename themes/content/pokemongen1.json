@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "key": "PokemonGen1",
+  "displayName": "Pokémon (Gen 1)",
+  "category": "Video Games",
+  "emailDomain": "kanto.test",
+  "account": {
+    "name": "Kanto Region (Test Data)",
+    "accountNumber": "PSA-TEST-POKEMONGEN1"
+  },
+  "mailingAddress": {
+    "street": "1 Route 1, Pokémon Lab",
+    "city": "Pallet Town",
+    "state": "Kanto",
+    "postalCode": "00001",
+    "country": "Kanto Region"
+  },
+
+  "roles": [
+    { "name": "Pokémon Professor",                "canonical": "Solution Architect",                      "description": "The grand designer — surveys the whole Pokédex of the solution and shapes its architecture." },
+    { "name": "Gym Leader",                       "canonical": "Project Manager",                         "description": "Holds the badge of authority — keeps the team marching toward the next gym milestone." },
+    { "name": "Pokémon Center Nurse",             "canonical": "Salesforce Administrator",                "description": "Tends to fields, layouts, and permission sets — keeps the org healthy and ready for battle." },
+    { "name": "Move Tutor",                       "canonical": "Salesforce Developer",                    "description": "Teaches the hardest moves — Apex, LWC, and platform tricks beyond TM." },
+    { "name": "Elite Four Champion",              "canonical": "Salesforce Practice Lead - USA",          "description": "Top of the league — sets standards for the senior trainers and reviews every battle plan." },
+    { "name": "Senior Pokémon Ranger",            "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols Routes 1–25 with seasoned skill — leads delivery in the field." },
+    { "name": "Pokémon Ranger",                   "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and config across Kanto under the Senior Ranger's guidance." },
+    { "name": "Master of the Pokémon Tower",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great links between Lavender Tower, Silph Co., and Saffron — designs every integration." },
+    { "name": "Senior Silph Co. Engineer",        "canonical": "Integration Senior Consultant - India",   "description": "Builds the API, middleware, and event flows under the Tower Master's blueprint." },
+    { "name": "Silph Co. Engineer",               "canonical": "Integration Consultant - India",          "description": "Apprentice of the Master Ball — learns webhooks, batch jobs, and Silph Scope diagnostics." },
+    { "name": "Pokédex QA Researcher",            "canonical": "QA Engineer",                             "description": "Tests every entry against canon — finds the bugs (Bug-types and otherwise) before release." },
+    { "name": "Game Corner Promoter",             "canonical": "Marketing Practice Lead",                 "description": "Lights up the marquees of Celadon — leads all marketing craft for the region." },
+    { "name": "Senior Contest Coordinator",       "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — runs the Contest Hall and drives top-of-funnel reach." },
+    { "name": "Cerulean Cape Promoter",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign on the road — content, creative, and the daily ride between cities." },
+    { "name": "Pokémon League Scribe",            "canonical": "Business Analyst",                        "description": "Records what trainers need and what coaches promise — translates between Customer and design." },
+    { "name": "Master Move Tutor",                "canonical": "Salesforce Senior Developer - USA",       "description": "Teacher of the legendary moves — owns the hardest Apex and architectural code." },
+    { "name": "Junior Pokémon Trainer",           "canonical": "Junior Salesforce Consultant - India",    "description": "Just left Pallet Town with a starter — learns the craft on real config tickets." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "pallet-town-trainers",
+      "projectName": "Pallet Town — Trainer Onboarding Platform",
+      "shortName": "Pallet TOP",
+      "subAccountName": "Pallet Town Trainers",
+      "subAccountNumber": "PSA-TEST-POKEMONGEN1-PALLET-TOWN-TRAINERS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Pallet Lab Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Pokédex Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Choose Your Starter Workshop", "billable": true },
+          { "name": "Route 1 Field Reconnaissance", "billable": true },
+          { "name": "Pokédex Requirements Drafting", "billable": true }
+        ]},
+        { "name": "Build the Trainer Toolkit", "isDefault": false, "billable": true, "children": [
+          { "name": "Poké Ball Inventory Design", "billable": true },
+          { "name": "TM/HM Library Build", "billable": true },
+          { "name": "Bicycle Shop Integration", "billable": true }
+        ]},
+        { "name": "Migrate the Pokédex Entries", "isDefault": false, "billable": true, "children": [
+          { "name": "Sprite & Cry Catalog", "billable": true },
+          { "name": "Type Chart Translation", "billable": true }
+        ]},
+        { "name": "Testing on Route 22", "isDefault": false, "billable": true, "children": [
+          { "name": "Rival Battle Drill (UAT)", "billable": true },
+          { "name": "Wild Encounter Stress Test", "billable": true }
+        ]},
+        { "name": "Training the New Trainers", "isDefault": false, "billable": true, "children": [
+          { "name": "Starter Onboarding", "billable": true },
+          { "name": "Professor's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "gym-leaders",
+      "projectName": "Kanto Gym League — Badge Management System",
+      "shortName": "Gym BMS",
+      "subAccountName": "Kanto Gym League",
+      "subAccountNumber": "PSA-TEST-POKEMONGEN1-GYM-LEADERS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Indigo Plateau Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Badge Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Eight-Gym Survey", "billable": true },
+          { "name": "Type Coverage Analysis", "billable": true },
+          { "name": "Strategy with the League", "billable": true }
+        ]},
+        { "name": "Build the Badge Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Boulder Badge Foundation", "billable": true },
+          { "name": "Cascade Badge API", "billable": true },
+          { "name": "Thunder Badge Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Challenger Roster", "isDefault": false, "billable": true, "children": [
+          { "name": "Trainer Card Inventory", "billable": true },
+          { "name": "Challenge Queue Build", "billable": true }
+        ]},
+        { "name": "Testing at Saffron Gym", "isDefault": false, "billable": true, "children": [
+          { "name": "Psychic Shield Drill", "billable": true },
+          { "name": "Eight-Badge Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Gym Trainers", "isDefault": false, "billable": true, "children": [
+          { "name": "Junior Trainer Onboarding", "billable": true },
+          { "name": "Leader's Strategy Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "team-rocket",
+      "projectName": "Team Rocket — Covert Operations Tracker",
+      "shortName": "Rocket COT",
+      "subAccountName": "Team Rocket HQ",
+      "subAccountNumber": "PSA-TEST-POKEMONGEN1-TEAM-ROCKET",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Rocket HQ Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Reconnaissance", "isDefault": false, "billable": true, "children": [
+          { "name": "Mt. Moon Fossil Recon", "billable": true },
+          { "name": "Silph Co. Infiltration Plan", "billable": true },
+          { "name": "Boss's Strategy Briefing", "billable": true }
+        ]},
+        { "name": "Build the Heist Toolkit", "isDefault": false, "billable": true, "children": [
+          { "name": "Master Ball Prototype", "billable": true },
+          { "name": "Silph Scope Calibration", "billable": true },
+          { "name": "Hot Air Balloon Fleet", "billable": true }
+        ]},
+        { "name": "Migrate the Stolen Pokémon", "isDefault": false, "billable": true, "children": [
+          { "name": "Game Corner Slot Inventory", "billable": true },
+          { "name": "Hideout Vault Audit", "billable": true }
+        ]},
+        { "name": "Testing the Getaway Routes", "isDefault": false, "billable": true, "children": [
+          { "name": "Celadon Hideout Pen-test", "billable": true },
+          { "name": "Meowth Balloon Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Grunts", "isDefault": false, "billable": true, "children": [
+          { "name": "Grunt Recruitment", "billable": true },
+          { "name": "Executive's Mission Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "elite-four-and-rivals",
+      "projectName": "Indigo Plateau — Elite Four Tournament Platform",
+      "shortName": "Elite ETP",
+      "subAccountName": "Indigo Plateau Elite Four",
+      "subAccountNumber": "PSA-TEST-POKEMONGEN1-ELITE-FOUR-AND-RIVALS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Champion's Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Tournament Bracket", "isDefault": false, "billable": true, "children": [
+          { "name": "Bracket Design Council", "billable": true },
+          { "name": "Type-Matchup Visioning", "billable": true },
+          { "name": "Champion's Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Battle Arena", "isDefault": false, "billable": true, "children": [
+          { "name": "Ice Chamber Construction (Lorelei)", "billable": true },
+          { "name": "Fighting Dojo Build (Bruno)", "billable": true },
+          { "name": "Ghost Pavilion Wiring (Agatha)", "billable": true }
+        ]},
+        { "name": "Migrate the Hall of Fame", "isDefault": false, "billable": true, "children": [
+          { "name": "Champion Registry Catalog", "billable": true },
+          { "name": "Trainer Card Archive", "billable": true }
+        ]},
+        { "name": "Testing the Final Battle", "isDefault": false, "billable": true, "children": [
+          { "name": "Rival Showdown Trial", "billable": true },
+          { "name": "Dragon Den Stress Test (Lance)", "billable": true }
+        ]},
+        { "name": "Training the Next Champions", "isDefault": false, "billable": true, "children": [
+          { "name": "Challenger Foundations", "billable": true },
+          { "name": "Champion's Masterclass", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "pallet-town-trainers": [
+      { "fullName": "Professor Oak",  "themedRole": "Pokémon Professor" },
+      { "fullName": "Ash Ketchum",    "themedRole": "Junior Pokémon Trainer" },
+      { "fullName": "Misty",          "themedRole": "Senior Pokémon Ranger" },
+      { "fullName": "Brock",          "themedRole": "Pokémon Center Nurse" },
+      { "fullName": "Gary Oak",       "themedRole": "Pokémon Ranger" },
+      { "fullName": "Tracey Sketchit","themedRole": "Pokémon League Scribe" },
+      { "fullName": "Jessie",         "themedRole": "Cerulean Cape Promoter" },
+      { "fullName": "James",          "themedRole": "Senior Contest Coordinator" }
+    ],
+    "gym-leaders": [
+      { "fullName": "Brock",          "themedRole": "Gym Leader" },
+      { "fullName": "Misty",          "themedRole": "Gym Leader" },
+      { "fullName": "Lt. Surge",      "themedRole": "Master Move Tutor" },
+      { "fullName": "Erika",          "themedRole": "Game Corner Promoter" },
+      { "fullName": "Koga",           "themedRole": "Senior Pokémon Ranger" },
+      { "fullName": "Sabrina",        "themedRole": "Master of the Pokémon Tower" },
+      { "fullName": "Blaine",         "themedRole": "Move Tutor" },
+      { "fullName": "Giovanni",       "themedRole": "Elite Four Champion" }
+    ],
+    "team-rocket": [
+      { "fullName": "Giovanni",       "themedRole": "Elite Four Champion" },
+      { "fullName": "Jessie",         "themedRole": "Cerulean Cape Promoter" },
+      { "fullName": "James",          "themedRole": "Senior Contest Coordinator" },
+      { "fullName": "Meowth",         "themedRole": "Pokédex QA Researcher" },
+      { "fullName": "Cassidy",        "themedRole": "Senior Silph Co. Engineer" },
+      { "fullName": "Butch",          "themedRole": "Silph Co. Engineer" },
+      { "fullName": "Domino",         "themedRole": "Pokémon Ranger" },
+      { "fullName": "Madame Boss",    "themedRole": "Pokémon Professor" }
+    ],
+    "elite-four-and-rivals": [
+      { "fullName": "Lorelei",            "themedRole": "Elite Four Champion" },
+      { "fullName": "Bruno",              "themedRole": "Master Move Tutor" },
+      { "fullName": "Agatha",             "themedRole": "Master of the Pokémon Tower" },
+      { "fullName": "Lance",              "themedRole": "Elite Four Champion" },
+      { "fullName": "Gary Oak",           "themedRole": "Senior Pokémon Ranger" },
+      { "fullName": "Erika the Champion", "themedRole": "Game Corner Promoter" },
+      { "fullName": "Champion Red",       "themedRole": "Elite Four Champion" }
+    ]
+  },
+
+  "milestones": {
+    "pallet-town-trainers": [
+      { "name": "Choose Your Starter",      "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Bulbasaur, Charmander or Squirtle picked from Oak's lab." },
+      { "name": "First Pokédex Entry",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: first wild Pokémon caught and registered." },
+      { "name": "Viridian Forest Trek",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: navigate the bug-strewn forest to Pewter City." },
+      { "name": "Route 1 Toll Invoice",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Pokémon Trainer license fees come due." },
+      { "name": "Pokédex Goes Live",        "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Pokédex platform live across Pallet Town." },
+      { "name": "Professor's Hand-off",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Oak hands stewardship to the new trainers." }
+    ],
+    "gym-leaders": [
+      { "name": "Boulder Badge Awarded",    "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Pewter Gym onboarded as first deployment." },
+      { "name": "Cascade & Thunder Build",  "type": "Operational", "offsetPct": 30,  "description": "Build phase: Cerulean and Vermilion gyms wired to the platform." },
+      { "name": "Soul Badge Gate Review",   "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Fuchsia Gym signs off — only three gyms remain." },
+      { "name": "Earth Badge Go-Live",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Viridian Gym (Giovanni) launches — full eight-badge system live." },
+      { "name": "Indigo Plateau Hand-off",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: League takes over operations." },
+      { "name": "Annual Gym Dues",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: yearly contribution from all eight gyms." }
+    ],
+    "team-rocket": [
+      { "name": "Mt. Moon Fossil Heist",    "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Dome and Helix fossils acquired (\"borrowed\")." },
+      { "name": "Silph Co. Master Ball Build","type": "Operational","offsetPct": 35,  "description": "Build: Master Ball schematics extracted from Silph HQ." },
+      { "name": "Boss's Audit",             "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Giovanni at Viridian Gym." },
+      { "name": "Celadon Hideout Activation","type": "Delivery",   "offsetPct": 90,  "description": "Go-Live: covert ops platform live across Kanto hideouts." },
+      { "name": "Operation Goes Dark",      "type": "Operational", "offsetPct": 100, "description": "Project close: hideout dismantled, Rockets scatter." },
+      { "name": "Boss's Final Cut",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Team Rocket HQ to the Boss." }
+    ],
+    "elite-four-and-rivals": [
+      { "name": "Indigo Plateau Council",   "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council with Lance and the Elite Four." },
+      { "name": "Battle Format Modelled",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: tournament bracket and ruleset finalised." },
+      { "name": "Champion's Arena Build",   "type": "Operational", "offsetPct": 55,  "description": "Build: the four chambers and Champion's hall ready for battle." },
+      { "name": "Hall of Fame UAT",         "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: trainers' Pokémon teams registered for posterity." },
+      { "name": "New Champion Crowned",     "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Red defeats Blue, takes the Champion's title." },
+      { "name": "League Final Settlement",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Pokémon League." }
+    ]
+  },
+
+  "daysOff": {
+    "Ash Ketchum":    [ { "realm": "pallet-town-trainers", "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Pikachu refuses to enter Poké Ball — bonding retreat." } ],
+    "Misty":          [ { "realm": "pallet-town-trainers", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Cerulean Gym sister duty — covering for Daisy." } ],
+    "Brock":          [ { "realm": "gym-leaders",          "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Looking after his ten younger siblings in Pewter." } ],
+    "Gary Oak":       [ { "realm": "elite-four-and-rivals","offsetWeeks": 8,  "numberOfDays": 2, "notes": "Cheerleader squad photoshoot." } ],
+    "Professor Oak":  [ { "realm": "pallet-town-trainers", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Pokédex research expedition to the Orange Islands." } ],
+    "Jessie":         [ { "realm": "team-rocket",          "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Pokémon Coordinator contest in Vermilion." } ],
+    "James":          [ { "realm": "team-rocket",          "offsetWeeks": 12, "numberOfDays": 3, "notes": "Visiting his estate and his Growlithe, Growlie." } ],
+    "Meowth":         [ { "realm": "team-rocket",          "offsetWeeks": 16, "numberOfDays": 1, "notes": "Hollywood acting audition — \"meowth that's right!\"" } ],
+    "Giovanni":       [ { "realm": "team-rocket",          "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Viridian Gym leader duties — keeping the cover identity." } ],
+    "Sabrina":        [ { "realm": "gym-leaders",          "offsetWeeks": 14, "numberOfDays": 2, "notes": "Psychic meditation retreat at Saffron Tower." } ],
+    "Lt. Surge":      [ { "realm": "gym-leaders",          "offsetWeeks": 18, "numberOfDays": 3, "notes": "Annual veterans' gathering in Vermilion Harbor." } ],
+    "Erika":          [ { "realm": "gym-leaders",          "offsetWeeks": 20, "numberOfDays": 2, "notes": "Celadon perfume garden — seasonal harvest." } ],
+    "Lance":          [ { "realm": "elite-four-and-rivals","offsetWeeks": 12, "numberOfDays": 4, "notes": "Dragon's Den training in Blackthorn — annual pilgrimage." } ],
+    "Agatha":         [ { "realm": "elite-four-and-rivals","offsetWeeks": 16, "numberOfDays": 3, "notes": "Visiting the Pokémon Tower in Lavender — old friends." } ],
+    "Champion Red":   [ { "realm": "elite-four-and-rivals","offsetWeeks": 22, "numberOfDays": 5, "notes": "Mt. Silver solitude — silent training, no contact." } ]
+  }
+}

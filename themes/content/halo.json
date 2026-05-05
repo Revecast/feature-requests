@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "key": "Halo",
+  "displayName": "Halo",
+  "category": "Video Games",
+  "emailDomain": "unsc.test",
+  "account": {
+    "name": "Halo Universe (Test Data)",
+    "accountNumber": "PSA-TEST-HALO"
+  },
+  "mailingAddress": {
+    "street": "Hangar Bay 7, FLEETCOM HQ",
+    "city": "Sydney",
+    "state": "New South Wales",
+    "postalCode": "2000",
+    "country": "Earth (UEG)"
+  },
+
+  "roles": [
+    { "name": "Forerunner Architect",              "canonical": "Solution Architect",                       "description": "Designer of the great installations — owns the over-arching Salesforce solution and its galactic integrity." },
+    { "name": "Fleet Admiral",                     "canonical": "Project Manager",                          "description": "Commands the delivery battlegroup, holds the timeline, and answers to FLEETCOM." },
+    { "name": "ONI Systems Officer",               "canonical": "Salesforce Administrator",                 "description": "Quietly manages records, layouts, fields and permission sets across the Office of Naval Intelligence." },
+    { "name": "Spartan Engineer",                  "canonical": "Salesforce Developer",                     "description": "Forges Apex, LWC and platform features inside MJOLNIR-class armor." },
+    { "name": "FLEETCOM Practice Lead",            "canonical": "Salesforce Practice Lead - USA",           "description": "Captain over all UNSC Salesforce craft — sets standards and guides the senior smiths." },
+    { "name": "Senior Pelican Pilot",              "canonical": "Salesforce Senior Consultant - India",     "description": "Veteran dropship pilot — patrols the borders of customer requirements with practiced craft." },
+    { "name": "Pelican Pilot",                     "canonical": "Salesforce Consultant - India",            "description": "Carries discovery and configuration across the theatre under the Senior Pilot's wing." },
+    { "name": "Slipspace Engineer",                "canonical": "Integration Technical Architect - USA",    "description": "Architect of the great spans between Salesforce and the realms beyond — bends the integration fabric." },
+    { "name": "Senior Slipspace Technician",       "canonical": "Integration Senior Consultant - India",    "description": "Lays the conduits of API, middleware, and event flows under the Slipspace Engineer's plan." },
+    { "name": "Slipspace Technician",              "canonical": "Integration Consultant - India",           "description": "Learns the craft of integration — webhooks, batch, callouts, and the resilient patterns of error handling." },
+    { "name": "Spartan Combat Tester",             "canonical": "QA Engineer",                              "description": "Tests every weapon and waypoint — finds the maladies in the build before they reach High Charity." },
+    { "name": "Voice of the Prophets",             "canonical": "Marketing Practice Lead",                  "description": "Lifts the standard for product and message — leads all marketing craft across the Covenant of Customers." },
+    { "name": "Senior Herald of the Covenant",     "canonical": "Marketing Senior Consultant",              "description": "Strategist of campaigns — sounds the call to gather the faithful." },
+    { "name": "Herald of the Covenant",            "canonical": "Marketing Consultant",                     "description": "Carries the campaign forward — content, creative, and the daily broadcast." },
+    { "name": "Cortana Analyst",                   "canonical": "Business Analyst",                         "description": "Records what is needed and what is promised — translates between mortal Customer and the AI's design." },
+    { "name": "Master Chief Engineer",             "canonical": "Salesforce Senior Developer - USA",        "description": "Senior smith of the Spartan workshop — the heaviest Apex and LWC lifts." },
+    { "name": "Spartan Recruit Engineer",          "canonical": "Junior Salesforce Consultant - India",     "description": "Augmentee learning the craft — paired with veterans on configuration and discovery." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "unsc-spartans",
+      "projectName": "UNSC SPARTAN-II — Reach Defense Platform",
+      "shortName": "UNSC RDP",
+      "subAccountName": "UNSC SPARTAN-II Programme",
+      "subAccountNumber": "PSA-TEST-HALO-UNSC-SPARTANS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "FLEETCOM Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & ONI Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Threat Assessment", "billable": true },
+          { "name": "Reach Recon Sweep", "billable": true },
+          { "name": "Mission Planning", "billable": true }
+        ]},
+        { "name": "Forge MJOLNIR Mark VI", "isDefault": false, "billable": true, "children": [
+          { "name": "Armor Plate Fabrication", "billable": true },
+          { "name": "Shield Generator Tuning", "billable": true },
+          { "name": "Neural Interface Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Cole Protocol Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Nav Data Sanitization", "billable": true },
+          { "name": "Personnel File Transfer", "billable": true }
+        ]},
+        { "name": "Testing at the Pillar of Autumn", "isDefault": false, "billable": true, "children": [
+          { "name": "Live-Fire Drill (UAT)", "billable": true },
+          { "name": "Slipspace Stress Test", "billable": true }
+        ]},
+        { "name": "Training the SPARTAN-IIs", "isDefault": false, "billable": true, "children": [
+          { "name": "Augmentation Onboarding", "billable": true },
+          { "name": "Halsey's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "covenant",
+      "projectName": "Covenant — Great Journey Liturgy Platform",
+      "shortName": "Covenant GJP",
+      "subAccountName": "Covenant Hierarchy",
+      "subAccountNumber": "PSA-TEST-HALO-COVENANT",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "High Charity Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Hierarchs' Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Prophets' Decree", "billable": true },
+          { "name": "Sangheili Honour Survey", "billable": true },
+          { "name": "Glyph Translation", "billable": true }
+        ]},
+        { "name": "Build the Assault Carrier", "isDefault": false, "billable": true, "children": [
+          { "name": "Hull Plasma Forging", "billable": true },
+          { "name": "Energy Projector Calibration", "billable": true },
+          { "name": "Gravity Lift Assembly", "billable": true }
+        ]},
+        { "name": "Migrate the Forerunner Relics", "isDefault": false, "billable": true, "children": [
+          { "name": "Luminary Cataloguing", "billable": true },
+          { "name": "Reliquary Transport", "billable": true }
+        ]},
+        { "name": "Testing the Honour Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Energy Sword Drill", "billable": true },
+          { "name": "Carbine Range Trials", "billable": true }
+        ]},
+        { "name": "Training the Sangheili", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiate Catechism", "billable": true },
+          { "name": "Shipmaster's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "flood-and-forerunners",
+      "projectName": "Forerunner — Halo Array Containment Initiative",
+      "shortName": "Forerunner HACI",
+      "subAccountName": "Forerunner Ecumene Remnant",
+      "subAccountNumber": "PSA-TEST-HALO-FLOOD-AND-FORERUNNERS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Ecumene Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Containment Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Flood Spore Reconnaissance", "billable": true },
+          { "name": "Monitor Diagnostics", "billable": true },
+          { "name": "Librarian's Index Review", "billable": true }
+        ]},
+        { "name": "Build the Sentinel Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Sentinel Forge Calibration", "billable": true },
+          { "name": "Constructor Deployment", "billable": true },
+          { "name": "Pulse Beam Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Composer Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Essence Pattern Extraction", "billable": true },
+          { "name": "Domain Synchronization", "billable": true }
+        ]},
+        { "name": "Testing the Containment Field", "isDefault": false, "billable": true, "children": [
+          { "name": "Quarantine Breach Drill", "billable": true },
+          { "name": "Halo Pulse Simulation", "billable": true }
+        ]},
+        { "name": "Training the Promethean Knights", "isDefault": false, "billable": true, "children": [
+          { "name": "Knight Initiation Rites", "billable": true },
+          { "name": "Didact's Wargames", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "onyx-spartan-iv-program",
+      "projectName": "Onyx — SPARTAN-IV Fireteam Operations",
+      "shortName": "Onyx SIVO",
+      "subAccountName": "SPARTAN-IV Programme (Onyx Cell)",
+      "subAccountNumber": "PSA-TEST-HALO-ONYX-SPARTAN-IV-PROGRAM",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Infinity Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Fireteam Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "ODST Recon Drop", "billable": true },
+          { "name": "Mission Threat Brief", "billable": true },
+          { "name": "Palmer's Tactical Review", "billable": true }
+        ]},
+        { "name": "Build the GEN2 MJOLNIR", "isDefault": false, "billable": true, "children": [
+          { "name": "Variant Plate Fabrication", "billable": true },
+          { "name": "Mod Loadout Engineering", "billable": true },
+          { "name": "Holo-HUD Integration", "billable": true }
+        ]},
+        { "name": "Migrate the Onyx Battle Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Battle Net Sync", "billable": true },
+          { "name": "Fireteam Roster Transfer", "billable": true }
+        ]},
+        { "name": "Testing at War Games Deck", "isDefault": false, "billable": true, "children": [
+          { "name": "Spartan Ops Simulation (UAT)", "billable": true },
+          { "name": "Live Drop Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the SPARTAN-IVs", "isDefault": false, "billable": true, "children": [
+          { "name": "Augmentation Refresh", "billable": true },
+          { "name": "Buck's Field Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "unsc-spartans": [
+      { "fullName": "Master Chief John-117", "themedRole": "Master Chief Engineer" },
+      { "fullName": "Cortana",               "themedRole": "Cortana Analyst" },
+      { "fullName": "Captain Jacob Keyes",   "themedRole": "Fleet Admiral" },
+      { "fullName": "Sergeant Avery Johnson","themedRole": "FLEETCOM Practice Lead" },
+      { "fullName": "Linda-058",             "themedRole": "Senior Pelican Pilot" },
+      { "fullName": "Kelly-087",             "themedRole": "Spartan Engineer" },
+      { "fullName": "Fred-104",              "themedRole": "Forerunner Architect" },
+      { "fullName": "Kurt-051",              "themedRole": "Spartan Combat Tester" }
+    ],
+    "covenant": [
+      { "fullName": "Prophet of Truth",      "themedRole": "Voice of the Prophets" },
+      { "fullName": "Prophet of Mercy",      "themedRole": "Senior Herald of the Covenant" },
+      { "fullName": "Prophet of Regret",     "themedRole": "Herald of the Covenant" },
+      { "fullName": "Tartarus",              "themedRole": "ONI Systems Officer" },
+      { "fullName": "Rtas 'Vadum",           "themedRole": "Slipspace Engineer" },
+      { "fullName": "Thel 'Vadam",           "themedRole": "Fleet Admiral" },
+      { "fullName": "Sesa 'Refumee",         "themedRole": "Senior Slipspace Technician" }
+    ],
+    "flood-and-forerunners": [
+      { "fullName": "Gravemind",             "themedRole": "Forerunner Architect" },
+      { "fullName": "343 Guilty Spark",      "themedRole": "ONI Systems Officer" },
+      { "fullName": "Mendicant Bias",        "themedRole": "Slipspace Technician" },
+      { "fullName": "Offensive Bias",        "themedRole": "Spartan Combat Tester" },
+      { "fullName": "The Didact",            "themedRole": "Master Chief Engineer" },
+      { "fullName": "The Librarian",         "themedRole": "Cortana Analyst" },
+      { "fullName": "IsoDidact",             "themedRole": "Spartan Engineer" }
+    ],
+    "onyx-spartan-iv-program": [
+      { "fullName": "Sarah Palmer",          "themedRole": "Fleet Admiral" },
+      { "fullName": "Edward Buck",           "themedRole": "FLEETCOM Practice Lead" },
+      { "fullName": "Veronica Dare",         "themedRole": "ONI Systems Officer" },
+      { "fullName": "Mickey Crespo",         "themedRole": "Pelican Pilot" },
+      { "fullName": "Romeo",                 "themedRole": "Senior Pelican Pilot" },
+      { "fullName": "Dutch",                 "themedRole": "Spartan Recruit Engineer" },
+      { "fullName": "The Rookie",            "themedRole": "Spartan Recruit Engineer" },
+      { "fullName": "Jameson Locke",         "themedRole": "Forerunner Architect" }
+    ]
+  },
+
+  "milestones": {
+    "unsc-spartans": [
+      { "name": "Cole Protocol Activated",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — nav data scrubbed; mission greenlit by FLEETCOM." },
+      { "name": "MJOLNIR Mark VI Issued",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Spartan armor distributed for the deployment." },
+      { "name": "Briefing at FLEETCOM",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: tactical review with Fleet Admiral and ONI." },
+      { "name": "Fall of Reach Engagement",  "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: holding action against the Covenant glassing fleet." },
+      { "name": "Halo Activation Averted",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Installation 04 pulse prevented." },
+      { "name": "Pillar of Autumn Hand-off", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: vessel command transitioned." }
+    ],
+    "covenant": [
+      { "name": "Hierarchs' Decree",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Prophets sanctify the Great Journey roadmap." },
+      { "name": "Assault Carrier Forged",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: capital ship hull complete and consecrated." },
+      { "name": "Sangheili Honour Trial",    "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the Honour Guard pass the rite of arms." },
+      { "name": "March on High Charity",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: holy city integration deployed across the fleet." },
+      { "name": "Schism of the Covenant",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: post-launch reorganisation managed." },
+      { "name": "Final Tithe to the Prophets","type": "Billing",    "offsetPct": 100, "description": "Final invoice rendered to the Hierarchy." }
+    ],
+    "flood-and-forerunners": [
+      { "name": "Domain Index Awakens",      "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Forerunner records re-indexed and surveillance plane online." },
+      { "name": "Sentinel Network Online",   "type": "Operational", "offsetPct": 35,  "description": "Build: constructor and sentinel mesh deployed across the installation." },
+      { "name": "Didact's Solution Review",  "type": "Gate",        "offsetPct": 60,  "description": "Architecture review with the Promethean council." },
+      { "name": "Composer Activated",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: essence-encoding pipeline fully operational." },
+      { "name": "Containment Field Sealed",  "type": "Operational", "offsetPct": 100, "description": "Project close: Flood quarantined and quiescent." },
+      { "name": "Reclamation Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice rendered through the Domain." }
+    ],
+    "onyx-spartan-iv-program": [
+      { "name": "Spartan Ops Briefing",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff aboard the UNSC Infinity — fireteams assigned." },
+      { "name": "GEN2 MJOLNIR Issued",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: variant loadouts modelled and distributed." },
+      { "name": "War Games Mid-Sim",         "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards and combat reports running on the holodeck." },
+      { "name": "Fireteam Osiris Acceptance","type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Locke's team signs off the build." },
+      { "name": "Drop on Onyx",              "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: SPARTAN-IV cell fully operational on Onyx." },
+      { "name": "Infinity Final Recompense", "type": "Billing",     "offsetPct": 100, "description": "Final invoice from FLEETCOM." }
+    ]
+  },
+
+  "daysOff": {
+    "Master Chief John-117": [ { "realm": "unsc-spartans", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Cryosleep cycle — scheduled hibernation between deployments." } ],
+    "Cortana":               [ { "realm": "unsc-spartans", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Rampancy diagnostic — quarterly stability check." } ],
+    "Sergeant Avery Johnson":[ { "realm": "unsc-spartans", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Cigar resupply run on Earth — strictly necessary." } ],
+    "Linda-058":             [ { "realm": "unsc-spartans", "offsetWeeks": 18, "numberOfDays": 4, "notes": "Sniper marksmanship retreat — solo, no comms." } ],
+    "Kelly-087":             [ { "realm": "unsc-spartans", "offsetWeeks": 14, "numberOfDays": 1, "notes": "Track and field meet at Reach Memorial." } ],
+    "Thel 'Vadam":           [ { "realm": "covenant",      "offsetWeeks": 10, "numberOfDays": 4, "notes": "Sangheilios state visit — Arbiter duties." } ],
+    "Rtas 'Vadum":           [ { "realm": "covenant",      "offsetWeeks": 16, "numberOfDays": 3, "notes": "Shadow of Intent maintenance dock." } ],
+    "Prophet of Truth":      [ { "realm": "covenant",      "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Pilgrimage to the Forerunner Dreadnought." } ],
+    "343 Guilty Spark":      [ { "realm": "flood-and-forerunners", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Monitor self-diagnostic and memory defragmentation." } ],
+    "The Librarian":         [ { "realm": "flood-and-forerunners", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Indexing expedition — biological catalogue update." } ],
+    "The Didact":            [ { "realm": "flood-and-forerunners", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Cryptum meditation — strategic isolation." } ],
+    "Sarah Palmer":          [ { "realm": "onyx-spartan-iv-program", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Infinity command staff offsite." } ],
+    "Edward Buck":           [ { "realm": "onyx-spartan-iv-program", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Veronica anniversary leave — pre-approved." } ],
+    "The Rookie":            [ { "realm": "onyx-spartan-iv-program", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Mombasa post-mission decompression — silent as ever." } ],
+    "Jameson Locke":         [ { "realm": "onyx-spartan-iv-program", "offsetWeeks": 18, "numberOfDays": 3, "notes": "ONI debrief tour — manhunt closeout." } ]
+  }
+}
