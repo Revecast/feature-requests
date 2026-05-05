@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "key": "SchittsCreek",
+  "displayName": "Schitt's Creek",
+  "category": "Sitcom",
+  "emailDomain": "schitts-creek-motel.test",
+  "account": {
+    "name": "Town of Schitt's Creek (Test Data)",
+    "accountNumber": "PSA-TEST-SCHITTSCREEK"
+  },
+  "mailingAddress": {
+    "street": "1 Rosebud Motel Lane",
+    "city": "Schitt's Creek",
+    "state": "ON",
+    "postalCode": "L0R 1B0",
+    "country": "Canada"
+  },
+
+  "roles": [
+    { "name": "Town Visionary",                     "canonical": "Solution Architect",                      "description": "The big-picture dreamer — designs the entire town's vision and watches over its dramatic integrity." },
+    { "name": "Motel Manager",                      "canonical": "Project Manager",                         "description": "Keeps the rooms booked, the timeline tight, and the front desk staffed — answers to the family." },
+    { "name": "Front Desk Steward",                 "canonical": "Salesforce Administrator",                "description": "Master of the ledger, the layouts, and the keys behind the counter." },
+    { "name": "Apothecary Builder",                 "canonical": "Salesforce Developer",                    "description": "Crafts bespoke Apex and LWC potions on the storefront shelves." },
+    { "name": "Senior Apothecary",                  "canonical": "Salesforce Senior Developer - USA",       "description": "Most-experienced builder — sets the brand standards for every artisanal Apex blend." },
+    { "name": "Practice Lead of the Café Tropical", "canonical": "Salesforce Practice Lead - USA",          "description": "Captain of the Salesforce craft — leads senior consultants the way Twyla leads the brunch rush." },
+    { "name": "Cabaret Senior Choreographer",       "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols requirements with practiced craft — translates client intent to the stage." },
+    { "name": "Cabaret Stagehand",                  "canonical": "Salesforce Consultant - India",          "description": "Carries discovery, configuration, and prop placement under the choreographer's eye." },
+    { "name": "Junior Cabaret Stagehand",           "canonical": "Junior Salesforce Consultant - India",    "description": "First-time stagehand learning the ropes — small builds under close mentorship." },
+    { "name": "Bridge-Master of the General Store", "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and every aisle of the legacy store." },
+    { "name": "Senior Crow Wrangler",               "canonical": "Integration Senior Consultant - India",   "description": "Lays the API stones, middleware, and the events that fly between systems." },
+    { "name": "Junior Crow Wrangler",               "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, and graceful error handling." },
+    { "name": "Wig Quality Inspector",              "canonical": "QA Engineer",                             "description": "Tends the wardrobe and finds the maladies in the build before opening night." },
+    { "name": "Herald of Rose Apothecary",          "canonical": "Marketing Practice Lead",                 "description": "Lifts the brand banner — leads all marketing craft for the boutique apothecary line." },
+    { "name": "Senior Brand Stylist",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert the boutique crowd." },
+    { "name": "Brand Stylist",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative, and the daily aesthetic upkeep." },
+    { "name": "Council Scribe of Town Hall",        "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between residents and the build team." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "rose-family",
+      "projectName": "Rose Family — Apothecary CRM Rollout",
+      "shortName": "Rose Apoth",
+      "subAccountName": "Rose Family Holdings",
+      "subAccountNumber": "PSA-TEST-SCHITTSCREEK-ROSEFAMILY",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Rose Apothecary Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Family Meeting", "isDefault": false, "billable": true, "children": [
+          { "name": "Vision Boarding with Moira", "billable": true },
+          { "name": "Receipts Audit with Johnny", "billable": true }
+        ]},
+        { "name": "Build the Storefront", "isDefault": false, "billable": true, "children": [
+          { "name": "Hand-Milled Soap Catalog", "billable": true },
+          { "name": "Boutique Signage Forging", "billable": true }
+        ]},
+        { "name": "Migrate the Receipts", "isDefault": false, "billable": true, "children": [
+          { "name": "Closet Inventory of Wigs", "billable": true },
+          { "name": "Family Photo Archive", "billable": true }
+        ]},
+        { "name": "Testing the Sample Sale", "isDefault": false, "billable": true, "children": [
+          { "name": "David's UAT Tantrum", "billable": true },
+          { "name": "Alexis's Smile Test", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Moira's Diction Workshop", "billable": true },
+          { "name": "Johnny's POS Onboarding", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "rosebud-motel-staff",
+      "projectName": "Rosebud Motel — Front Desk Operations Platform",
+      "shortName": "Motel Ops",
+      "subAccountName": "Rosebud Motel Group",
+      "subAccountNumber": "PSA-TEST-SCHITTSCREEK-ROSEBUDMOTELSTAFF",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Front Desk Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Check-In Flow", "isDefault": false, "billable": true, "children": [
+          { "name": "Lobby Walkthrough with Stevie", "billable": true },
+          { "name": "Continental Breakfast Survey", "billable": true }
+        ]},
+        { "name": "Build the Booking Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Room Key Cabinet Wiring", "billable": true },
+          { "name": "Check-Out Receipt Templates", "billable": true }
+        ]},
+        { "name": "Migrate the Guest Logs", "isDefault": false, "billable": true, "children": [
+          { "name": "Vintage Reservation Cards", "billable": true },
+          { "name": "Towel Count Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing at Peak Season", "isDefault": false, "billable": true, "children": [
+          { "name": "Family Reunion Stress Test", "billable": true },
+          { "name": "Vending Machine Integration", "billable": true }
+        ]},
+        { "name": "Training the Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Mutt's Maintenance Manual", "billable": true },
+          { "name": "Bob's Garage Parts Liaison", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "town-residents",
+      "projectName": "Town Hall — Civic Engagement Implementation",
+      "shortName": "Town Hall",
+      "subAccountName": "Town of Schitt's Creek",
+      "subAccountNumber": "PSA-TEST-SCHITTSCREEK-TOWNRESIDENTS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Town Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council Meeting", "isDefault": false, "billable": true, "children": [
+          { "name": "Mayor Roland's Town Tour", "billable": true },
+          { "name": "Café Tropical Focus Group", "billable": true }
+        ]},
+        { "name": "Build the Civic Portal", "isDefault": false, "billable": true, "children": [
+          { "name": "Permit Application Forms", "billable": true },
+          { "name": "Bylaw Enforcement Console", "billable": true }
+        ]},
+        { "name": "Migrate the Town Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Voter Roll Reconciliation", "billable": true },
+          { "name": "Property Tax Ledger", "billable": true }
+        ]},
+        { "name": "Testing the Annual Asphalt Festival", "isDefault": false, "billable": true, "children": [
+          { "name": "Crowd Capacity Drill", "billable": true },
+          { "name": "Ribbon-Cutting Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Residents", "isDefault": false, "billable": true, "children": [
+          { "name": "Twyla's Goodwill Workshop", "billable": true },
+          { "name": "Patrick's Onboarding Sing-Along", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "cabaret-and-orbit",
+      "projectName": "Cabaret & Orbit — Production Analytics Build",
+      "shortName": "Cabaret",
+      "subAccountName": "Schitt's Creek Cabaret Society",
+      "subAccountNumber": "PSA-TEST-SCHITTSCREEK-CABARETANDORBIT",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Town Hall Theatre Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Auditions", "isDefault": false, "billable": true, "children": [
+          { "name": "Vocal Range Assessments", "billable": true },
+          { "name": "Wig Inventory Pre-Read", "billable": true }
+        ]},
+        { "name": "Build the Stage", "isDefault": false, "billable": true, "children": [
+          { "name": "Lighting Rig Construction", "billable": true },
+          { "name": "Set Design — Berlin Backdrop", "billable": true }
+        ]},
+        { "name": "Migrate the Costumes", "isDefault": false, "billable": true, "children": [
+          { "name": "Moira's Wig Wall Catalog", "billable": true },
+          { "name": "Costume Rack Tagging", "billable": true }
+        ]},
+        { "name": "Testing the Dress Rehearsal", "isDefault": false, "billable": true, "children": [
+          { "name": "Maybe This Time — Run-Through", "billable": true },
+          { "name": "Mein Herr — Tech Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Cast", "isDefault": false, "billable": true, "children": [
+          { "name": "Stevie's Vocal Coach Sessions", "billable": true },
+          { "name": "Choreography Drills", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "rose-family": [
+      { "fullName": "Johnny Rose",   "themedRole": "Town Visionary" },
+      { "fullName": "Moira Rose",    "themedRole": "Herald of Rose Apothecary" },
+      { "fullName": "David Rose",    "themedRole": "Apothecary Builder" },
+      { "fullName": "Alexis Rose",   "themedRole": "Senior Brand Stylist" },
+      { "fullName": "Patrick Brewer","themedRole": "Senior Apothecary" },
+      { "fullName": "Stevie Budd",   "themedRole": "Council Scribe of Town Hall" },
+      { "fullName": "Mark Coburn",   "themedRole": "Town Visionary" }
+    ],
+    "rosebud-motel-staff": [
+      { "fullName": "Stevie Budd",     "themedRole": "Motel Manager" },
+      { "fullName": "Roland Schitt",   "themedRole": "Front Desk Steward" },
+      { "fullName": "Mutt Schitt",     "themedRole": "Bridge-Master of the General Store" },
+      { "fullName": "Jocelyn Schitt",  "themedRole": "Council Scribe of Town Hall" },
+      { "fullName": "Bob Currie",      "themedRole": "Senior Crow Wrangler" },
+      { "fullName": "Johnny Rose",     "themedRole": "Practice Lead of the Café Tropical" },
+      { "fullName": "Ray Butani",      "themedRole": "Junior Crow Wrangler" }
+    ],
+    "town-residents": [
+      { "fullName": "Mayor Roland Schitt","themedRole": "Town Visionary" },
+      { "fullName": "Ronnie Lee",      "themedRole": "Bridge-Master of the General Store" },
+      { "fullName": "Twyla Sands",     "themedRole": "Cabaret Senior Choreographer" },
+      { "fullName": "Ted Mullens",     "themedRole": "Wig Quality Inspector" },
+      { "fullName": "Patrick Brewer",  "themedRole": "Motel Manager" },
+      { "fullName": "Heather Warner",  "themedRole": "Cabaret Stagehand" },
+      { "fullName": "Ray Butani",      "themedRole": "Brand Stylist" }
+    ],
+    "cabaret-and-orbit": [
+      { "fullName": "Moira Rose",          "themedRole": "Town Visionary" },
+      { "fullName": "Stevie Budd",         "themedRole": "Cabaret Senior Choreographer" },
+      { "fullName": "Cabaret Ensemble",    "themedRole": "Cabaret Stagehand" },
+      { "fullName": "Vocal Coach Greta",   "themedRole": "Senior Apothecary" },
+      { "fullName": "Bjorn Bjornson",      "themedRole": "Junior Cabaret Stagehand" },
+      { "fullName": "Sebastien Raine",     "themedRole": "Herald of Rose Apothecary" },
+      { "fullName": "Tennessee",           "themedRole": "Junior Crow Wrangler" }
+    ]
+  },
+
+  "milestones": {
+    "rose-family": [
+      { "name": "Bébé, You Got This",         "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Moira blesses the project with a single tear." },
+      { "name": "Hand-Milled Soap Forging",   "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: artisanal soap line goes into production." },
+      { "name": "Family Council Audit",       "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Johnny reviews the receipts at the dinner table." },
+      { "name": "Sample Sale Invoice",        "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: pop-up event at the General Store." },
+      { "name": "Apothecary Grand Opening",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: ribbon cut, David and Patrick at the till." },
+      { "name": "Hyper-Care Hand-Off",        "type": "Operational", "offsetPct": 100, "description": "Hand-off: Patrick takes day-to-day; David handles aesthetics." }
+    ],
+    "rosebud-motel-staff": [
+      { "name": "Welcome Pamphlet Printing",  "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Stevie unlocks the front desk for discovery." },
+      { "name": "Booking Engine Wiring",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: room availability live, no more sticky-note ledger." },
+      { "name": "Continental Breakfast UAT",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: muffins ordered, coffee tested, guests surveyed." },
+      { "name": "Peak Season Go-Live",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: bookings flow during reunion weekend." },
+      { "name": "Roland's Mayoral Hand-Off",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ops handed back to Stevie and Roland." },
+      { "name": "Final Invoice from the Lobby","type": "Billing",    "offsetPct": 100, "description": "Final invoice issued from the front desk." }
+    ],
+    "town-residents": [
+      { "name": "Council Convenes",           "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Mayor Roland gavels the kickoff in town hall." },
+      { "name": "Civic Portal Build-Out",     "type": "Operational", "offsetPct": 35,  "description": "Build: permits and bylaws online for the first time." },
+      { "name": "Mayor's Audit",              "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Roland — somehow involves chili." },
+      { "name": "Asphalt Festival Go-Live",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: portal handles the festival registration rush." },
+      { "name": "Town Records Stabilization", "type": "Operational", "offsetPct": 100, "description": "Project close: legacy ledgers retired, new records in flight." },
+      { "name": "Final Town Reckoning",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Mayor's office." }
+    ],
+    "cabaret-and-orbit": [
+      { "name": "Auditions Open",             "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: Moira posts notices on every lamppost in town." },
+      { "name": "Wig Wall Inventory",         "type": "Operational", "offsetPct": 30,  "description": "Discovery: every wig catalogued by name and personality." },
+      { "name": "Set Construction Complete",  "type": "Operational", "offsetPct": 55,  "description": "Build: Berlin cabaret backdrop assembled in the town hall." },
+      { "name": "Dress Rehearsal Sign-Off",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Moira approves with a single dramatic exhale." },
+      { "name": "Opening Night",              "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Cabaret opens to a packed house." },
+      { "name": "Encore Invoice",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Cabaret Society." }
+    ]
+  },
+
+  "daysOff": {
+    "Johnny Rose":      [ { "realm": "rose-family",          "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Pitching motel franchise to a former Video Planet contact." } ],
+    "Moira Rose":       [ { "realm": "cabaret-and-orbit",    "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Sunrise Bay reunion shoot — quote: 'Bébé, I must.'" } ],
+    "David Rose":       [ { "realm": "rose-family",          "offsetWeeks": 12, "numberOfDays": 3, "notes": "Sourcing artisanal goat milk from a farmer in Elmdale." } ],
+    "Alexis Rose":      [ { "realm": "rose-family",          "offsetWeeks": 18, "numberOfDays": 2, "notes": "Networking event — 'Ew, David, it's for work.'" } ],
+    "Stevie Budd":      [ { "realm": "rosebud-motel-staff",  "offsetWeeks": 10, "numberOfDays": 3, "notes": "Solo road trip — needed a reset, ate a lot of pretzels." } ],
+    "Roland Schitt":    [ { "realm": "town-residents",       "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Mayoral conference in Elm Glen — bringing his own snacks." } ],
+    "Mutt Schitt":      [ { "realm": "rosebud-motel-staff",  "offsetWeeks": 14, "numberOfDays": 5, "notes": "Off-grid in his cabin — no phone, no problem." } ],
+    "Jocelyn Schitt":   [ { "realm": "town-residents",       "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Parent-teacher conferences at the school." } ],
+    "Patrick Brewer":   [ { "realm": "rose-family",          "offsetWeeks": 16, "numberOfDays": 3, "notes": "Visiting his parents — bringing David, with mixed feelings." } ],
+    "Ted Mullens":      [ { "realm": "town-residents",       "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Veterinary research expedition to the Galápagos." } ],
+    "Twyla Sands":      [ { "realm": "town-residents",       "offsetWeeks": 12, "numberOfDays": 2, "notes": "Lottery winnings paperwork — keeping it casual." } ],
+    "Bob Currie":       [ { "realm": "rosebud-motel-staff",  "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Bob's Garage inventory week — counting every last fan belt." } ],
+    "Sebastien Raine":  [ { "realm": "cabaret-and-orbit",    "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Photography exhibit opening — pretentiously unavoidable." } ],
+    "Bjorn Bjornson":   [ { "realm": "cabaret-and-orbit",    "offsetWeeks": 10, "numberOfDays": 2, "notes": "Crystal-healing retreat in Sedona." } ]
+  }
+}

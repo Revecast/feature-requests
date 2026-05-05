@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "key": "ParksAndRec",
+  "displayName": "Parks & Recreation",
+  "category": "Sitcom",
+  "emailDomain": "pawnee-indiana.test",
+  "account": {
+    "name": "Pawnee, Indiana (Test Data)",
+    "accountNumber": "PSA-TEST-PARKSANDREC"
+  },
+  "mailingAddress": {
+    "street": "Pawnee City Hall, 100 Main Street",
+    "city": "Pawnee",
+    "state": "IN",
+    "postalCode": "47998",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Deputy Director of Parks",            "canonical": "Solution Architect",                       "description": "Architect of the binder — designs the master plan that turns Lot 48 into something the people of Pawnee will actually love." },
+    { "name": "Pit-to-Park Project Lead",            "canonical": "Project Manager",                          "description": "Runs the subcommittee, books the conference room, brings the waffles, and answers to City Council." },
+    { "name": "Permit Desk Administrator",           "canonical": "Salesforce Administrator",                 "description": "Steward of the filing cabinet — keeps every form, layout, and permission set in triplicate." },
+    { "name": "Workshop Engineer",                   "canonical": "Salesforce Developer",                     "description": "Builds custom swings, bespoke benches, and the occasional Apex trigger in the city workshop." },
+    { "name": "City Manager — USA",                  "canonical": "Salesforce Practice Lead - USA",           "description": "Sets the standard for excellence in municipal Salesforce craft. Literally vibrates with enthusiasm." },
+    { "name": "Senior Parks Planner — Indianapolis", "canonical": "Salesforce Senior Consultant - India",     "description": "Veteran planner from the regional office — patrols the borders of scope with practiced calm." },
+    { "name": "Junior Parks Planner — Indianapolis", "canonical": "Salesforce Consultant - India",            "description": "Fresh from planning school — runs site surveys, configuration, and permit drafts under the senior planner's eye." },
+    { "name": "Sister-City Liaison Architect",       "canonical": "Integration Technical Architect - USA",    "description": "Architect of the great bridges between Pawnee, Eagleton, Indianapolis, and the state DMV." },
+    { "name": "Sister-City Senior Liaison",          "canonical": "Integration Senior Consultant - India",    "description": "Builds the API spans across municipal boundaries under the Liaison Architect's plan." },
+    { "name": "Sister-City Junior Liaison",          "canonical": "Integration Consultant - India",           "description": "Apprentice in the dark arts of webhooks, batch jobs, and the legendary Indiana State Government file format." },
+    { "name": "Health Inspector",                    "canonical": "QA Engineer",                              "description": "Tours every booth, every burger, every build — finds the violations before opening day." },
+    { "name": "Entertainment 720 Director",          "canonical": "Marketing Practice Lead",                  "description": "Leads all media spectacle — banners, billboards, and the occasional horse made of cake." },
+    { "name": "Senior Campaign Strategist",          "canonical": "Marketing Senior Consultant",              "description": "Plans the Knope-for-Council push — debate prep, doorknocks, and yard-sign theory." },
+    { "name": "Campaign Field Coordinator",          "canonical": "Marketing Consultant",                     "description": "On the ground daily with flyers, hand-shakes, and the iron-clad belief that the candidate is going to win." },
+    { "name": "Subcommittee Scribe",                 "canonical": "Business Analyst",                         "description": "Records every motion, every tabled item, every weird Pawnee bylaw — translates citizen rage into requirements." },
+    { "name": "Senior Workshop Engineer — USA",      "canonical": "Salesforce Senior Developer - USA",        "description": "Lead carpenter on the gazebo — owns the deep technical builds and mentors the workshop crew." },
+    { "name": "Parks Intern",                        "canonical": "Junior Salesforce Consultant - India",     "description": "Coffee, copier, configuration. Learning the trade one binder at a time. Treat well — interns become Leslie." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "parks-department",
+      "projectName": "Parks Department — Lot 48 Pit-to-Park Program",
+      "shortName": "Parks Lot 48",
+      "subAccountName": "Pawnee Parks & Recreation Department",
+      "subAccountNumber": "PSA-TEST-PARKSANDREC-PARKS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Parks Department Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Public Forum", "isDefault": false, "billable": true, "children": [
+          { "name": "Town Hall Listening Sessions", "billable": true },
+          { "name": "Lot 48 Site Survey", "billable": true },
+          { "name": "Binder Drafting", "billable": true }
+        ]},
+        { "name": "Build the Park", "isDefault": false, "billable": true, "children": [
+          { "name": "Fill the Pit", "billable": true },
+          { "name": "Swing Set Installation", "billable": true },
+          { "name": "Gazebo Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Permits", "isDefault": false, "billable": true, "children": [
+          { "name": "Filing Cabinet Audit", "billable": true },
+          { "name": "Permit Re-issuance", "billable": true }
+        ]},
+        { "name": "Testing at the Harvest Festival", "isDefault": false, "billable": true, "children": [
+          { "name": "Lil' Sebastian Soft-Open", "billable": true },
+          { "name": "Funnel Cake Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Rangers", "isDefault": false, "billable": true, "children": [
+          { "name": "Pawnee Rangers Onboarding", "billable": true },
+          { "name": "Ron's Woodworking Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "city-hall-government",
+      "projectName": "City Hall — Council Operations Modernization",
+      "shortName": "City Hall COM",
+      "subAccountName": "Pawnee City Hall",
+      "subAccountNumber": "PSA-TEST-PARKSANDREC-CITYHALL",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "City Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Council Member Interviews", "billable": true },
+          { "name": "Budget Review with Ben", "billable": true },
+          { "name": "Wellness Survey by Chris", "billable": true }
+        ]},
+        { "name": "Build the Chamber Systems", "isDefault": false, "billable": true, "children": [
+          { "name": "Roll-Call Voting Module", "billable": true },
+          { "name": "Public Comment Queue", "billable": true },
+          { "name": "Mayor's Dashboard", "billable": true }
+        ]},
+        { "name": "Migrate the Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Ethel's Stenography Archive", "billable": true },
+          { "name": "Ordinance Re-coding", "billable": true }
+        ]},
+        { "name": "Testing in Open Session", "isDefault": false, "billable": true, "children": [
+          { "name": "Mock Council Meeting UAT", "billable": true },
+          { "name": "Newport Filibuster Drill", "billable": true }
+        ]},
+        { "name": "Training the Council", "isDefault": false, "billable": true, "children": [
+          { "name": "New Councilor Orientation", "billable": true },
+          { "name": "Mayor's Office Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pawnee-businesses",
+      "projectName": "Pawnee Businesses — Local Vendor CRM Rollout",
+      "shortName": "Pawnee Biz",
+      "subAccountName": "Pawnee Chamber of Commerce",
+      "subAccountNumber": "PSA-TEST-PARKSANDREC-BIZ",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Chamber Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Vendor Outreach", "isDefault": false, "billable": true, "children": [
+          { "name": "Cologne Counter Walk-throughs", "billable": true },
+          { "name": "Sewage Plant Site Visit", "billable": true },
+          { "name": "Saperstein Pitch Sessions", "billable": true }
+        ]},
+        { "name": "Build the Vendor Portal", "isDefault": false, "billable": true, "children": [
+          { "name": "Entertainment 720 Theme", "billable": true },
+          { "name": "Tom's Bistro Booking Flow", "billable": true },
+          { "name": "Rent-A-Swag Inventory Sync", "billable": true }
+        ]},
+        { "name": "Migrate the Vendor Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Local Business Directory Import", "billable": true },
+          { "name": "Health Code Violations Cleanup", "billable": true }
+        ]},
+        { "name": "Testing on Perd's Show", "isDefault": false, "billable": true, "children": [
+          { "name": "Live Broadcast Rehearsal", "billable": true },
+          { "name": "Crazy Ira & The Douche Sound Check", "billable": true }
+        ]},
+        { "name": "Training the Vendors", "isDefault": false, "billable": true, "children": [
+          { "name": "Chamber Member Onboarding", "billable": true },
+          { "name": "Snake Juice Sampling Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "eagleton-rivals",
+      "projectName": "Eagleton — Cross-Border Reconciliation Platform",
+      "shortName": "Eagleton CBR",
+      "subAccountName": "Town of Eagleton",
+      "subAccountNumber": "PSA-TEST-PARKSANDREC-EAGLETON",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Eagleton Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cross-Border Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Border Fence Audit", "billable": true },
+          { "name": "Country Club Stakeholder Interviews", "billable": true },
+          { "name": "Bankruptcy Filing Review", "billable": true }
+        ]},
+        { "name": "Build the Reconciliation Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Asset Transfer Pipeline", "billable": true },
+          { "name": "Eagleton Hills Mapping", "billable": true },
+          { "name": "Premium Service Tier Config", "billable": true }
+        ]},
+        { "name": "Migrate the Eagleton Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Country Club Member Roster", "billable": true },
+          { "name": "Imported Cheese Permit Log", "billable": true }
+        ]},
+        { "name": "Testing the Merger", "isDefault": false, "billable": true, "children": [
+          { "name": "Joint Council Session UAT", "billable": true },
+          { "name": "Town Sign Re-painting Drill", "billable": true }
+        ]},
+        { "name": "Training the Eagletonians", "isDefault": false, "billable": true, "children": [
+          { "name": "Pawnee Sensitivity Workshop", "billable": true },
+          { "name": "Public Park Etiquette Class", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "parks-department": [
+      { "fullName": "Leslie Knope",        "themedRole": "Deputy Director of Parks" },
+      { "fullName": "Ron Swanson",         "themedRole": "City Manager — USA" },
+      { "fullName": "Tom Haverford",       "themedRole": "Entertainment 720 Director" },
+      { "fullName": "April Ludgate",       "themedRole": "Subcommittee Scribe" },
+      { "fullName": "Andy Dwyer",          "themedRole": "Workshop Engineer" },
+      { "fullName": "Donna Meagle",        "themedRole": "Senior Parks Planner — Indianapolis" },
+      { "fullName": "Garry Gergich",       "themedRole": "Permit Desk Administrator" },
+      { "fullName": "Mark Brendanawicz",   "themedRole": "Pit-to-Park Project Lead" }
+    ],
+    "city-hall-government": [
+      { "fullName": "Ben Wyatt",           "themedRole": "Pit-to-Park Project Lead" },
+      { "fullName": "Chris Traeger",       "themedRole": "City Manager — USA" },
+      { "fullName": "Walter Gunderson",    "themedRole": "Deputy Director of Parks" },
+      { "fullName": "Ethel Beavers",       "themedRole": "Subcommittee Scribe" },
+      { "fullName": "Joan Callamezzo",     "themedRole": "Senior Campaign Strategist" },
+      { "fullName": "Bobby Newport",       "themedRole": "Parks Intern" },
+      { "fullName": "Jeremy Jamm",         "themedRole": "Health Inspector" },
+      { "fullName": "Ann Perkins",         "themedRole": "Health Inspector" }
+    ],
+    "pawnee-businesses": [
+      { "fullName": "Dennis Feinstein",    "themedRole": "Entertainment 720 Director" },
+      { "fullName": "Tammy Swanson-One",   "themedRole": "Permit Desk Administrator" },
+      { "fullName": "Tammy Swanson-Two",   "themedRole": "Senior Parks Planner — Indianapolis" },
+      { "fullName": "Jean-Ralphio Saperstein","themedRole": "Campaign Field Coordinator" },
+      { "fullName": "Mona-Lisa Saperstein","themedRole": "Junior Parks Planner — Indianapolis" },
+      { "fullName": "Perd Hapley",         "themedRole": "Senior Campaign Strategist" },
+      { "fullName": "Joe Sewage",          "themedRole": "Workshop Engineer" },
+      { "fullName": "Crazy Ira",           "themedRole": "Marketing Consultant" }
+    ],
+    "eagleton-rivals": [
+      { "fullName": "Lindsay Carlisle Shay","themedRole": "Deputy Director of Parks" },
+      { "fullName": "Mayor Eagleton",      "themedRole": "City Manager — USA" },
+      { "fullName": "Brett Tamada",        "themedRole": "Sister-City Liaison Architect" },
+      { "fullName": "Edward Howser",       "themedRole": "Sister-City Senior Liaison" },
+      { "fullName": "Eleanor Eagleton",    "themedRole": "Sister-City Junior Liaison" },
+      { "fullName": "Reginald Hightower",  "themedRole": "Senior Workshop Engineer — USA" },
+      { "fullName": "Penelope Carmichael", "themedRole": "Pit-to-Park Project Lead" }
+    ]
+  },
+
+  "milestones": {
+    "parks-department": [
+      { "name": "Pit Discovery Sign-off",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery gate — Leslie's binder approved by the subcommittee." },
+      { "name": "Fill the Pit",                 "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: dump trucks roll into Lot 48." },
+      { "name": "Subcommittee Mid-Review",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: forum with the citizens of Pawnee — expect yelling." },
+      { "name": "Harvest Festival Invoice",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice triggered when the Lil' Sebastian booth opens." },
+      { "name": "Park Grand Opening",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: ribbon-cut at the Pawnee Commons." },
+      { "name": "Hand-off to Garry",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: maintenance handed to Garry. He'll do his best." }
+    ],
+    "city-hall-government": [
+      { "name": "Council Caucus Kickoff",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff — convened in Chamber, opened with the gavel." },
+      { "name": "Roll-Call Module Live",        "type": "Operational", "offsetPct": 30,  "description": "Build phase: voting module deployed in time for the next session." },
+      { "name": "Public Forum Acceptance",      "type": "Gate",        "offsetPct": 60,  "description": "UAT gate — opened to public comment. Survived." },
+      { "name": "Mayor's Sign-off",             "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Mayor Gunderson stamps the ordinance from his bed." },
+      { "name": "Final Budget Reconciliation",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice — Ben balances the books to the penny." },
+      { "name": "Council Hand-off",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ops transferred to the City Clerk's office." }
+    ],
+    "pawnee-businesses": [
+      { "name": "Chamber Discovery Gate",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: chamber members enrolled, intent letters signed." },
+      { "name": "Vendor Portal Build Begins",   "type": "Operational", "offsetPct": 35,  "description": "Build kickoff — first integrations stood up for Tom's Bistro." },
+      { "name": "Health Inspector Walkthrough", "type": "Gate",        "offsetPct": 60,  "description": "Mid-project gate: Pawnee Health passes the build (barely)." },
+      { "name": "Snake Juice Launch Day",       "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: portal opened, Snake Juice flowing, regret immediate." },
+      { "name": "Entertainment 720 Invoice",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid in cologne, jet skis, and a small amount of cash." },
+      { "name": "Chamber Hand-off",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: portal handed to the Chamber's permanent staff." }
+    ],
+    "eagleton-rivals": [
+      { "name": "Border Survey Sign-off",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery — fence audited, asset list reconciled with the Eagleton clerks." },
+      { "name": "Reconciliation Engine Built",  "type": "Operational", "offsetPct": 35,  "description": "Build phase: pipeline live, premium-tier objects mapped." },
+      { "name": "Joint Council Acceptance",     "type": "Gate",        "offsetPct": 60,  "description": "UAT gate — Pawnee and Eagleton councils convene without a fistfight." },
+      { "name": "Town Sign Replacement",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Eagleton's signs come down, Pawnee's go up." },
+      { "name": "Bankruptcy Reconciliation",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice — what's left of Eagleton's treasury changes hands." },
+      { "name": "Eagleton Hand-off",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Eagleton operations folded into Pawnee Parks." }
+    ]
+  },
+
+  "daysOff": {
+    "Leslie Knope":         [ { "realm": "parks-department",     "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Galentine's Day brunch — non-negotiable, waffles required." } ],
+    "Ron Swanson":          [ { "realm": "parks-department",     "offsetWeeks": 12, "numberOfDays": 5, "notes": "Off-grid in his cabin. Do not contact. Do not even think about it." } ],
+    "Tom Haverford":        [ { "realm": "pawnee-businesses",    "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Networking trip to a Vegas pool party — strictly business, treat-yo-self adjacent." } ],
+    "April Ludgate":        [ { "realm": "parks-department",     "offsetWeeks": 14, "numberOfDays": 3, "notes": "Halloween prep with Andy. Allegedly a funeral." } ],
+    "Andy Dwyer":           [ { "realm": "parks-department",     "offsetWeeks": 10, "numberOfDays": 2, "notes": "Mouse Rat practice — opening for a bar mitzvah." } ],
+    "Donna Meagle":         [ { "realm": "parks-department",     "offsetWeeks": 18, "numberOfDays": 4, "notes": "Treat. Yo. Self. Spa weekend in Indianapolis." } ],
+    "Garry Gergich":        [ { "realm": "parks-department",     "offsetWeeks": 4,  "numberOfDays": 1, "notes": "Daughter's recital — also nobody noticed he was gone." } ],
+    "Ben Wyatt":            [ { "realm": "city-hall-government", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Star Wars convention — Calzone Zone panel attendance mandatory." } ],
+    "Chris Traeger":        [ { "realm": "city-hall-government", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Annual triathlon — LITERALLY the highlight of his year." } ],
+    "Ethel Beavers":        [ { "realm": "city-hall-government", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Stenography conference, also rotator cuff." } ],
+    "Bobby Newport":        [ { "realm": "city-hall-government", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Family yacht in the Mediterranean. He doesn't know what week it is." } ],
+    "Jean-Ralphio Saperstein":[ { "realm": "pawnee-businesses",  "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Faking his own death for insurance money. Allegedly." } ],
+    "Perd Hapley":          [ { "realm": "pawnee-businesses",    "offsetWeeks": 12, "numberOfDays": 1, "notes": "The reason for his time off is that he is taking time off." } ],
+    "Lindsay Carlisle Shay":[ { "realm": "eagleton-rivals",      "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Eagleton spa retreat — Pawnee mention prohibited." } ],
+    "Brett Tamada":         [ { "realm": "eagleton-rivals",      "offsetWeeks": 16, "numberOfDays": 3, "notes": "Cross-border integration summit — Indianapolis." } ]
+  }
+}
