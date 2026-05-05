@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "key": "Seinfeld",
+  "displayName": "Seinfeld",
+  "category": "Sitcom",
+  "emailDomain": "nbc-show-about-nothing.test",
+  "account": {
+    "name": "Seinfeld Universe (Test Data)",
+    "accountNumber": "PSA-TEST-SEINFELD"
+  },
+  "mailingAddress": {
+    "street": "129 West 81st Street, Apt 5A",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10024",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Show About Nothing Architect",        "canonical": "Solution Architect",                      "description": "Designs the over-arching premise — what's the deal with this Salesforce solution?" },
+    { "name": "Master of His Domain",                "canonical": "Project Manager",                         "description": "Holds the timeline, the calendar, and the regifted commitments — runs the show like a Soup Nazi." },
+    { "name": "Vault Manager",                       "canonical": "Salesforce Administrator",                "description": "Keeper of the vault — secrets, fields, permission sets, and who's been deleted from the contact list." },
+    { "name": "Festivus Engineer",                   "canonical": "Salesforce Developer",                    "description": "Builds Apex and LWC for the rest of us — airs grievances about technical debt." },
+    { "name": "Latex Salesman Lead",                 "canonical": "Salesforce Practice Lead - USA",          "description": "Senior partner over all stateside Salesforce craft — like Vandelay Industries, but real." },
+    { "name": "Bizarro Senior Consultant",           "canonical": "Salesforce Senior Consultant - India",    "description": "Mirror-image consultant from across the world — does everything Jerry would, just opposite." },
+    { "name": "Bizarro Consultant",                  "canonical": "Salesforce Consultant - India",           "description": "Junior bizarro — picks up discovery and configuration with very different methods." },
+    { "name": "Subway Conductor Architect",          "canonical": "Integration Technical Architect - USA",   "description": "Architect of the underground tunnels between Salesforce and the rest of NYC's systems." },
+    { "name": "Mailman Senior Integrator",           "canonical": "Integration Senior Consultant - India",   "description": "Senior letter-carrier — delivers payloads through middleware come rain, sleet, or Newman." },
+    { "name": "Bike Messenger Integrator",           "canonical": "Integration Consultant - India",          "description": "Apprentice carrier — webhooks, batches, and getting the package across town before the meter runs out." },
+    { "name": "Pretzel Tester",                      "canonical": "QA Engineer",                             "description": "These pretzels are making me thirsty — finds every defect that makes a release go stale." },
+    { "name": "J. Peterman Catalog Lead",            "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner of the brand — narrates every campaign with the gravitas of a man who's been to Burma." },
+    { "name": "Catalog Senior Copywriter",           "canonical": "Marketing Senior Consultant",             "description": "Seasoned wordsmith for the catalog — turns a simple shirt into a tale of windswept adventure." },
+    { "name": "Catalog Copywriter",                  "canonical": "Marketing Consultant",                    "description": "Junior copy — drafts campaigns and the daily catalog content under Peterman's eye." },
+    { "name": "Importer/Exporter",                   "canonical": "Business Analyst",                        "description": "Importer AND exporter — translates between the customer's world and the engineering crew. Like Art Vandelay." },
+    { "name": "Master Cosmetologist",                "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of the build — has the level (no longer an assistant)." },
+    { "name": "Kramerica Intern",                    "canonical": "Junior Salesforce Consultant - India",    "description": "Bright-eyed intern at Kramerica Industries — learns the trade on the oil-tanker bladder system project." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "core-four",
+      "projectName": "Core Four — Apartment 5A CRM Rollout",
+      "shortName": "Core Four",
+      "subAccountName": "Apartment 5A Productions",
+      "subAccountNumber": "PSA-TEST-SEINFELD-COREFOUR",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Monk's Coffee Shop Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Coffee Shop Banter", "isDefault": false, "billable": true, "children": [
+          { "name": "Booth Stakeholder Interviews", "billable": true },
+          { "name": "Yada Yada Requirements", "billable": true },
+          { "name": "What's the Deal Workshop", "billable": true }
+        ]},
+        { "name": "Build the Pilot", "isDefault": false, "billable": true, "children": [
+          { "name": "Apartment Set Construction", "billable": true },
+          { "name": "Cereal Box Inventory System", "billable": true },
+          { "name": "Buzzer Intercom Integration", "billable": true }
+        ]},
+        { "name": "Migrate the Rolodex", "isDefault": false, "billable": true, "children": [
+          { "name": "Address Book Cleanse", "billable": true },
+          { "name": "Regifting Audit Trail", "billable": true }
+        ]},
+        { "name": "Testing at the Diner", "isDefault": false, "billable": true, "children": [
+          { "name": "Big Salad Smoke Test", "billable": true },
+          { "name": "Soup Nazi Stress Drill", "billable": true }
+        ]},
+        { "name": "Training the Foursome", "isDefault": false, "billable": true, "children": [
+          { "name": "Master of Your Domain Bootcamp", "billable": true },
+          { "name": "Sponge-Worthy Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "costanza-family",
+      "projectName": "Costanza Family — Festivus Grievance Tracker",
+      "shortName": "Festivus GT",
+      "subAccountName": "Costanza Family Holdings",
+      "subAccountNumber": "PSA-TEST-SEINFELD-COSTANZAFAMILY",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Queens Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Airing of Grievances", "isDefault": false, "billable": true, "children": [
+          { "name": "Pole Requirements Survey", "billable": true },
+          { "name": "Stakeholder Yelling Sessions", "billable": true },
+          { "name": "Serenity Now Strategy", "billable": true }
+        ]},
+        { "name": "Build the Vandelay Empire", "isDefault": false, "billable": true, "children": [
+          { "name": "Latex Sales Pipeline", "billable": true },
+          { "name": "Importer/Exporter Hub", "billable": true },
+          { "name": "Architect Persona Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Tupperware", "isDefault": false, "billable": true, "children": [
+          { "name": "Frank's Container Inventory", "billable": true },
+          { "name": "Estelle's Recipe Archive", "billable": true }
+        ]},
+        { "name": "Testing the Feats of Strength", "isDefault": false, "billable": true, "children": [
+          { "name": "Pinning Performance Trial", "billable": true },
+          { "name": "Holiday Load Test", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Festivus Etiquette 101", "billable": true },
+          { "name": "Lloyd Braun's Serenity Coaching", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "peterman-pendant",
+      "projectName": "Peterman Pendant — Catalog Commerce Build",
+      "shortName": "Peterman CC",
+      "subAccountName": "J. Peterman Company",
+      "subAccountNumber": "PSA-TEST-SEINFELD-PETERMANPENDANT",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Peterman HQ Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Catalog Vision", "isDefault": false, "billable": true, "children": [
+          { "name": "Burma Trip Reconnaissance", "billable": true },
+          { "name": "Editor's Voice Workshop", "billable": true },
+          { "name": "Urban Sombrero Trend Brief", "billable": true }
+        ]},
+        { "name": "Build the Catalog", "isDefault": false, "billable": true, "children": [
+          { "name": "Pendant Product Pages", "billable": true },
+          { "name": "Catalog Layout Design", "billable": true },
+          { "name": "Order Pipeline Build", "billable": true }
+        ]},
+        { "name": "Migrate the Customer Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Mr. Pitt VIP Records", "billable": true },
+          { "name": "Sue Ellen's Bra-less Brigade", "billable": true }
+        ]},
+        { "name": "Testing the Catalog Drop", "isDefault": false, "billable": true, "children": [
+          { "name": "Mailing List Smoke Test", "billable": true },
+          { "name": "Returns Workflow Trial", "billable": true }
+        ]},
+        { "name": "Training the Editorial Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Peterman Voice Bootcamp", "billable": true },
+          { "name": "Elaine's Veto Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "nyc-recurring",
+      "projectName": "NYC Recurring — Citywide Service Network",
+      "shortName": "NYC Network",
+      "subAccountName": "Manhattan Recurring Cast Co-op",
+      "subAccountNumber": "PSA-TEST-SEINFELD-NYCRECURRING",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Tom's Restaurant Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sidewalk Surveys", "isDefault": false, "billable": true, "children": [
+          { "name": "Soup Line Field Study", "billable": true },
+          { "name": "Bubble Boy Accessibility Review", "billable": true },
+          { "name": "Jackie Chiles Legal Discovery", "billable": true }
+        ]},
+        { "name": "Build the Bladder System", "isDefault": false, "billable": true, "children": [
+          { "name": "Kramerica Tanker Prototype", "billable": true },
+          { "name": "Oil Capacity Calibration", "billable": true },
+          { "name": "Spillage Control Module", "billable": true }
+        ]},
+        { "name": "Migrate the Rumor Mill", "isDefault": false, "billable": true, "children": [
+          { "name": "Bob Sacamano Contact Sync", "billable": true },
+          { "name": "Lomez Reference Check", "billable": true }
+        ]},
+        { "name": "Testing at the Soup Stand", "isDefault": false, "billable": true, "children": [
+          { "name": "No Soup For You Load Test", "billable": true },
+          { "name": "Order Protocol Drill", "billable": true }
+        ]},
+        { "name": "Training the Recurring Cast", "isDefault": false, "billable": true, "children": [
+          { "name": "Hello Newman Onboarding", "billable": true },
+          { "name": "High Five Certification (Puddy)", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "core-four": [
+      { "fullName": "Jerry Seinfeld",     "themedRole": "Show About Nothing Architect" },
+      { "fullName": "George Costanza",    "themedRole": "Importer/Exporter" },
+      { "fullName": "Elaine Benes",       "themedRole": "Master of His Domain" },
+      { "fullName": "Cosmo Kramer",       "themedRole": "Festivus Engineer" },
+      { "fullName": "Newman",             "themedRole": "Mailman Senior Integrator" },
+      { "fullName": "Kenny Bania",        "themedRole": "Pretzel Tester" },
+      { "fullName": "Mickey Abbott",      "themedRole": "Bike Messenger Integrator" }
+    ],
+    "costanza-family": [
+      { "fullName": "George Costanza",    "themedRole": "Latex Salesman Lead" },
+      { "fullName": "Frank Costanza",     "themedRole": "Show About Nothing Architect" },
+      { "fullName": "Estelle Costanza",   "themedRole": "Vault Manager" },
+      { "fullName": "Lloyd Braun",        "themedRole": "Bizarro Senior Consultant" },
+      { "fullName": "Susan Ross",         "themedRole": "Catalog Senior Copywriter" },
+      { "fullName": "Mr. Lippman",        "themedRole": "Master of His Domain" },
+      { "fullName": "Cousin Jeffrey",     "themedRole": "Bizarro Consultant" }
+    ],
+    "peterman-pendant": [
+      { "fullName": "Elaine Benes",       "themedRole": "J. Peterman Catalog Lead" },
+      { "fullName": "J. Peterman",        "themedRole": "Show About Nothing Architect" },
+      { "fullName": "Mr. Pitt",           "themedRole": "Latex Salesman Lead" },
+      { "fullName": "Justin Pitt",        "themedRole": "Catalog Copywriter" },
+      { "fullName": "Mr. Lippman",        "themedRole": "Master Cosmetologist" },
+      { "fullName": "Sue Ellen Mischke",  "themedRole": "Catalog Senior Copywriter" },
+      { "fullName": "Peggy",              "themedRole": "Pretzel Tester" }
+    ],
+    "nyc-recurring": [
+      { "fullName": "Bob Sacamano",       "themedRole": "Subway Conductor Architect" },
+      { "fullName": "Lomez",              "themedRole": "Importer/Exporter" },
+      { "fullName": "Jackie Chiles",      "themedRole": "Latex Salesman Lead" },
+      { "fullName": "Uncle Leo",          "themedRole": "Vault Manager" },
+      { "fullName": "The Soup Nazi",      "themedRole": "Master of His Domain" },
+      { "fullName": "David Puddy",        "themedRole": "Festivus Engineer" },
+      { "fullName": "Wilhelm",            "themedRole": "Master Cosmetologist" },
+      { "fullName": "Toby Whitman",       "themedRole": "Kramerica Intern" },
+      { "fullName": "The Bubble Boy",     "themedRole": "Bizarro Consultant" }
+    ]
+  },
+
+  "milestones": {
+    "core-four": [
+      { "name": "Pilot Pitch to NBC",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the show about nothing gets greenlit." },
+      { "name": "Move into Apartment 5A",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the set is dressed and the cereal cabinet is stocked." },
+      { "name": "The Contest",                 "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate — discipline review: who is still master of their domain?" },
+      { "name": "The Marine Biologist Invoice","type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger — the sea was angry that day, my friends." },
+      { "name": "Series Finale Go-Live",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the foursome stand trial in Latham, MA. System cuts over." },
+      { "name": "Hyper-Care in Holding Cell",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: support during the post-go-live sentence." }
+    ],
+    "costanza-family": [
+      { "name": "Festivus Pole Raised",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff — an aluminum pole, no tinsel, the season begins." },
+      { "name": "Vandelay Industries Incorporated","type": "Operational","offsetPct": 30, "description": "Build phase: latex sales pipeline live, architect persona ready." },
+      { "name": "Airing of Grievances Review", "type": "Gate",        "offsetPct": 60,  "description": "UAT gate — Frank lists how the project has disappointed him this year." },
+      { "name": "Feats of Strength Cutover",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Festivus is not over until the head of household is pinned." },
+      { "name": "Serenity Now Hyper-Care",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: insanity later, but for now, serenity now." },
+      { "name": "Final Invoice from Costanza & Son","type": "Billing", "offsetPct": 100, "description": "Final invoice — Frank insists on cash, Estelle insists on a check." }
+    ],
+    "peterman-pendant": [
+      { "name": "Catalog Concept Approved",    "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Peterman voice and pendant SKU sign-off." },
+      { "name": "Burma Sourcing Trip",         "type": "Operational", "offsetPct": 35,  "description": "Build: Peterman returns from Myanmar with the pendant prototype." },
+      { "name": "Editor's Acceptance Review",  "type": "Gate",        "offsetPct": 60,  "description": "Solution review with J. Peterman — the prose must sing." },
+      { "name": "Catalog Mails Out",           "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the spring catalog hits every mailbox in the tri-state area." },
+      { "name": "Returns Window Hyper-Care",   "type": "Operational", "offsetPct": 100, "description": "Project close: the returns desk ramps down." },
+      { "name": "Final Catalog Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid out of the petty cash drawer Elaine controls." }
+    ],
+    "nyc-recurring": [
+      { "name": "Sidewalk Survey Sign-Off",    "type": "Gate",        "offsetPct": 10,  "description": "Kickoff at Tom's Restaurant — the recurring cast assembles." },
+      { "name": "Kramerica Bladder Prototype", "type": "Operational", "offsetPct": 30,  "description": "Discovery: the oil tanker bladder system enters first build." },
+      { "name": "Soup Stand Opens for UAT",    "type": "Operational", "offsetPct": 55,  "description": "Build: the Soup Nazi opens his line for end-user testing — order correctly or no soup." },
+      { "name": "Jackie Chiles Legal Review",  "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance — outrageous, egregious, preposterous… and signed off." },
+      { "name": "Citywide Network Go-Live",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the recurring cast network goes live across Manhattan." },
+      { "name": "Final Settlement",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice — Chiles takes a third, the rest goes to the co-op." }
+    ]
+  },
+
+  "daysOff": {
+    "Jerry Seinfeld":     [ { "realm": "core-four",       "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Stand-up gig at the Improv — pre-booked road dates." } ],
+    "George Costanza":    [ { "realm": "core-four",       "offsetWeeks": 10, "numberOfDays": 2, "notes": "Napping under the desk at Yankee Stadium — do not disturb." } ],
+    "Elaine Benes":       [ { "realm": "peterman-pendant","offsetWeeks": 8,  "numberOfDays": 2, "notes": "Sponge inventory crisis — must shop the East Side dry." } ],
+    "Cosmo Kramer":       [ { "realm": "core-four",       "offsetWeeks": 12, "numberOfDays": 4, "notes": "Kramerica off-site — testing the bladder system in the harbor." } ],
+    "Newman":             [ { "realm": "core-four",       "offsetWeeks": 14, "numberOfDays": 5, "notes": "Postal route reroute — when you control the mail, you control information." } ],
+    "Frank Costanza":     [ { "realm": "costanza-family", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Cooking kasha for the Festivus dinner — do not interrupt!" } ],
+    "Estelle Costanza":   [ { "realm": "costanza-family", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Doctor's appointment — won't say what for." } ],
+    "Lloyd Braun":        [ { "realm": "costanza-family", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Serenity Now — court-ordered rest." } ],
+    "Susan Ross":         [ { "realm": "costanza-family", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Wedding invitation envelope licking — strictly off-grid." } ],
+    "J. Peterman":        [ { "realm": "peterman-pendant","offsetWeeks": 10, "numberOfDays": 5, "notes": "Sabbatical in Burma — Elaine running the catalog in his absence." } ],
+    "Mr. Pitt":           [ { "realm": "peterman-pendant","offsetWeeks": 12, "numberOfDays": 2, "notes": "Eating a Snickers bar with a knife and fork — uninterrupted." } ],
+    "Sue Ellen Mischke":  [ { "realm": "peterman-pendant","offsetWeeks": 14, "numberOfDays": 1, "notes": "Bra-less heiress photo shoot." } ],
+    "The Soup Nazi":      [ { "realm": "nyc-recurring",   "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Soup recipe retreat — top secret. NO SOUP TODAY!" } ],
+    "Jackie Chiles":      [ { "realm": "nyc-recurring",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Class action prep — outrageous workload." } ],
+    "David Puddy":        [ { "realm": "nyc-recurring",   "offsetWeeks": 16, "numberOfDays": 4, "notes": "Mechanic's certification renewal — and a Devils game." } ]
+  }
+}

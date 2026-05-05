@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "key": "ArrestedDevelopment",
+  "displayName": "Arrested Development",
+  "category": "Sitcom",
+  "emailDomain": "bluth-co.test",
+  "account": {
+    "name": "The Bluth Company (Test Data)",
+    "accountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT"
+  },
+  "mailingAddress": {
+    "street": "Bluth Frozen Banana Stand, Balboa Pier",
+    "city": "Newport Beach",
+    "state": "CA",
+    "postalCode": "92661",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "CEO of the Bluth Company",         "canonical": "Solution Architect",                      "description": "There's always money in the banana stand — designs the over-arching solution and keeps the family business afloat." },
+    { "name": "Project Lead (Reluctant Michael)", "canonical": "Project Manager",                         "description": "The only sane one — marshals scope, timeline, and the chaos of relatives on payroll." },
+    { "name": "Stair Car Operator",               "canonical": "Salesforce Administrator",                "description": "Hop on, hop off — keeps fields, layouts, permission sets and the stair car running daily." },
+    { "name": "Magician's Apprentice (Builder)",  "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and the occasional illusion — never call it a trick." },
+    { "name": "Bluth Family Attorney (US Lead)",  "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all US Salesforce craft — sets standards à la Barry Zuckerkorn (he's very good)." },
+    { "name": "Senior Sudden Valley Consultant",  "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with the seasoned grace of a model home walkthrough." },
+    { "name": "Sudden Valley Site Consultant",    "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm — preferably without crossing into the model home." },
+    { "name": "Frozen Banana Integration Architect","canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — there's always an API in the banana stand." },
+    { "name": "Senior Banana Bag Engineer",       "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware and event flows — bag the bananas, not the budget." },
+    { "name": "Banana Bag Apprentice",            "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the occasional dropped chocolate dipper." },
+    { "name": "Hot Cops Quality Inspector",       "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds maladies before they reach production. Steve Holt!" },
+    { "name": "Bluth Marketing Czar",             "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for product and message — leads all marketing craft. (Mr. F, optional.)" },
+    { "name": "Senior Pitchperson",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert. Like a magician, but with leads." },
+    { "name": "Pitchperson",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative and the daily dance moves." },
+    { "name": "Bluth Family Analyst",             "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the family's chaos and the dev team's clean slate." },
+    { "name": "US Senior Magician-Builder",       "canonical": "Salesforce Senior Developer - USA",       "description": "Senior US-side builder — Apex, LWC, escalations. Don't call them an illusionist." },
+    { "name": "Junior Sudden Valley Consultant",  "canonical": "Junior Salesforce Consultant - India",    "description": "First-year talent — clicks before code, learns the ropes on the Bluth model home tour." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "bluth-family-core",
+      "projectName": "Bluth Family Core — Banana Stand CRM Rollout",
+      "shortName": "Bluth Core",
+      "subAccountName": "Bluth Family Holdings",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-BLUTHFAMILYCORE",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Banana Stand Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Family Meeting", "isDefault": false, "billable": true, "children": [
+          { "name": "Kitchen Table Council", "billable": true },
+          { "name": "Penthouse Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Banana Stand 2.0", "isDefault": false, "billable": true, "children": [
+          { "name": "Frozen Banana Foundations", "billable": true },
+          { "name": "Cash-in-the-Walls Vault", "billable": true }
+        ]},
+        { "name": "Migrate the Family Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Sudden Valley Lot Catalog", "billable": true },
+          { "name": "Family Photos & Skeletons", "billable": true }
+        ]},
+        { "name": "Testing at the Model Home", "isDefault": false, "billable": true, "children": [
+          { "name": "Stair Car UAT", "billable": true },
+          { "name": "Roof Access Smoke Test", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Michael's Onboarding Lecture", "billable": true },
+          { "name": "GOB's Magic Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "bluth-co-staff",
+      "projectName": "Bluth Co. Staff — Operational Sales Platform",
+      "shortName": "Bluth Ops",
+      "subAccountName": "The Bluth Company Operations",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-BLUTHCOSTAFF",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "C-Wing Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Boardroom", "isDefault": false, "billable": true, "children": [
+          { "name": "Sitwell Competitive Survey", "billable": true },
+          { "name": "Stockholder Headcount", "billable": true },
+          { "name": "Strategy with the COO", "billable": true }
+        ]},
+        { "name": "Build the Sales Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Lead Stand Construction", "billable": true },
+          { "name": "Quote-to-Cash Conveyor", "billable": true }
+        ]},
+        { "name": "Migrate the Customer Lists", "isDefault": false, "billable": true, "children": [
+          { "name": "Account Roll Call", "billable": true },
+          { "name": "Open Opportunity Carts", "billable": true }
+        ]},
+        { "name": "Testing at the Office Park", "isDefault": false, "billable": true, "children": [
+          { "name": "Reception UAT (Lupe)", "billable": true },
+          { "name": "Coffee Cart Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Workforce", "isDefault": false, "billable": true, "children": [
+          { "name": "Steve Holt! Recruit Camp", "billable": true },
+          { "name": "Carl Weathers' Stew Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "legal-medical-orbit",
+      "projectName": "Legal & Medical Orbit — Compliance Platform Build",
+      "shortName": "Legal/Med",
+      "subAccountName": "Bluth Legal & Medical Orbit",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-LEGALMEDICALORBIT",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Loblaw Law Blog Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Deposition", "isDefault": false, "billable": true, "children": [
+          { "name": "Zuckerkorn Reconnaissance", "billable": true },
+          { "name": "Bob Loblaw Briefing", "billable": true },
+          { "name": "Wayne Jarvis Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Compliance Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Retainer Foundation", "billable": true },
+          { "name": "Privileged Document Lockup", "billable": true },
+          { "name": "Conflict-of-Interest Checker", "billable": true }
+        ]},
+        { "name": "Migrate the Case Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Litigation Roll", "billable": true },
+          { "name": "Diagnosis Inventory (Tobias)", "billable": true }
+        ]},
+        { "name": "Testing the Discovery Pile", "isDefault": false, "billable": true, "children": [
+          { "name": "Maggie Lizer Pen-test", "billable": true },
+          { "name": "Cross-Examination Stress", "billable": true }
+        ]},
+        { "name": "Training the Counsel", "isDefault": false, "billable": true, "children": [
+          { "name": "Junior Associate Onboarding", "billable": true },
+          { "name": "Bedside Manner Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "extended-cast",
+      "projectName": "Extended Cast — Narrator-Led Ecosystem Project",
+      "shortName": "Ext. Cast",
+      "subAccountName": "Bluth Extended Network",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-EXTENDEDCAST",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Narrator Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & On-the-Next", "isDefault": false, "billable": true, "children": [
+          { "name": "Narrator Voiceover Calibration", "billable": true },
+          { "name": "Marky Bark Field Survey", "billable": true },
+          { "name": "Wee Britain Council", "billable": true }
+        ]},
+        { "name": "Build the Banana Stand Spinoff", "isDefault": false, "billable": true, "children": [
+          { "name": "Cornballer Foundations", "billable": true },
+          { "name": "Mr. Bananagrabber Tooling", "billable": true },
+          { "name": "Surely-You-Can't-Be-Serious Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Side Plots", "isDefault": false, "billable": true, "children": [
+          { "name": "Side-Character Inventory", "billable": true },
+          { "name": "Running-Gag Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Banana Stand", "isDefault": false, "billable": true, "children": [
+          { "name": "Heartfire Drum-Circle UAT", "billable": true },
+          { "name": "Officer Taylor Patrol Test", "billable": true }
+        ]},
+        { "name": "Training the Background Players", "isDefault": false, "billable": true, "children": [
+          { "name": "Recurring-Cameo Onboarding", "billable": true },
+          { "name": "Narrator's Style Guide", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "bluth-family-core": [
+      { "fullName": "Michael Bluth",         "themedRole": "Project Lead (Reluctant Michael)" },
+      { "fullName": "George Sr. Bluth",      "themedRole": "CEO of the Bluth Company" },
+      { "fullName": "Lucille Bluth",         "themedRole": "Bluth Family Analyst" },
+      { "fullName": "GOB Bluth",             "themedRole": "Magician's Apprentice (Builder)" },
+      { "fullName": "Lindsay Bluth Fünke",   "themedRole": "Bluth Marketing Czar" },
+      { "fullName": "Tobias Fünke",          "themedRole": "Senior Pitchperson" },
+      { "fullName": "George-Michael Bluth",  "themedRole": "Junior Sudden Valley Consultant" },
+      { "fullName": "Maeby Fünke",           "themedRole": "Pitchperson" },
+      { "fullName": "Buster Bluth",          "themedRole": "Stair Car Operator" }
+    ],
+    "bluth-co-staff": [
+      { "fullName": "Lupe",                  "themedRole": "Stair Car Operator" },
+      { "fullName": "Carl Weathers",         "themedRole": "Senior Pitchperson" },
+      { "fullName": "Stan Sitwell",          "themedRole": "CEO of the Bluth Company" },
+      { "fullName": "Sally Sitwell",         "themedRole": "Senior Sudden Valley Consultant" },
+      { "fullName": "Larry Middleman",       "themedRole": "Project Lead (Reluctant Michael)" },
+      { "fullName": "Ann Veal",              "themedRole": "Sudden Valley Site Consultant" },
+      { "fullName": "Steve Holt",            "themedRole": "Hot Cops Quality Inspector" },
+      { "fullName": "Annyong Bluth",         "themedRole": "Junior Sudden Valley Consultant" }
+    ],
+    "legal-medical-orbit": [
+      { "fullName": "Barry Zuckerkorn",      "themedRole": "Bluth Family Attorney (US Lead)" },
+      { "fullName": "Bob Loblaw",            "themedRole": "US Senior Magician-Builder" },
+      { "fullName": "Wayne Jarvis",          "themedRole": "Frozen Banana Integration Architect" },
+      { "fullName": "Dr. Tobias Fünke",      "themedRole": "Senior Banana Bag Engineer" },
+      { "fullName": "Lucille Austero",       "themedRole": "Bluth Family Analyst" },
+      { "fullName": "Trisha Thoon",          "themedRole": "Pitchperson" },
+      { "fullName": "Phyllis",               "themedRole": "Banana Bag Apprentice" }
+    ],
+    "extended-cast": [
+      { "fullName": "Rita Leeds",            "themedRole": "Bluth Marketing Czar" },
+      { "fullName": "Marky Bark",            "themedRole": "Sudden Valley Site Consultant" },
+      { "fullName": "Ron Howard",            "themedRole": "Project Lead (Reluctant Michael)" },
+      { "fullName": "Mort Meyers",           "themedRole": "US Senior Magician-Builder" },
+      { "fullName": "Heartfire",             "themedRole": "Pitchperson" },
+      { "fullName": "Maggie Lizer",          "themedRole": "Bluth Family Attorney (US Lead)" },
+      { "fullName": "Officer Taylor",        "themedRole": "Hot Cops Quality Inspector" },
+      { "fullName": "Surely Fünke",          "themedRole": "Junior Sudden Valley Consultant" }
+    ]
+  },
+
+  "milestones": {
+    "bluth-family-core": [
+      { "name": "Family Meeting Kickoff",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — kitchen table convened, no jokes about Lucille's drinking." },
+      { "name": "Cash in the Banana Stand",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff — there's always money in the banana stand. Always." },
+      { "name": "Audit by the SEC",              "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate — government inspectors review the books." },
+      { "name": "GOB's Illusion Demo",           "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger — never call it a trick. Featuring The Final Countdown." },
+      { "name": "Penthouse Go-Live",             "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live — the family business returns to the penthouse." },
+      { "name": "Michael's Hand-off to Buster",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close — stewardship passed (regrettably) to Buster." }
+    ],
+    "bluth-co-staff": [
+      { "name": "All-Hands at the C-Wing",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff — entire staff convened, including Lupe and Carl Weathers." },
+      { "name": "Stew Day with Carl Weathers",   "type": "Operational", "offsetPct": 30,  "description": "Build phase — baby, you've got a stew going. Lunch & learn." },
+      { "name": "Sitwell Counter-Bid Defended",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate — Sitwell Enterprises competitive review survived." },
+      { "name": "Steve Holt! Goes Live",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live — Steve Holt charges through the door. STEVE HOLT!" },
+      { "name": "Office Park Hyper-care",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close — Larry Middleman provides remote support." },
+      { "name": "Final Bluth Co. Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice — Lupe approves, Lucille signs reluctantly." }
+    ],
+    "legal-medical-orbit": [
+      { "name": "Zuckerkorn Engagement",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery — He's very good. Retainer signed, court date set." },
+      { "name": "Forge the Bob Loblaw Law Blog", "type": "Operational", "offsetPct": 35,  "description": "Build — content layer deployed, defamation risk reviewed." },
+      { "name": "Wayne Jarvis Compliance Audit", "type": "Gate",        "offsetPct": 60,  "description": "Solution review — strict, sober, and on schedule." },
+      { "name": "Tobias Diagnosis Module Live",  "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live — analrapist platform fully operational. (He's both.)" },
+      { "name": "Discovery Closed",              "type": "Operational", "offsetPct": 100, "description": "Project close — depositions archived, files sealed." },
+      { "name": "Final Legal Reckoning",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice — billable hours from the orbit settled." }
+    ],
+    "extended-cast": [
+      { "name": "Narrator's Opening Voiceover",  "type": "Gate",        "offsetPct": 10,  "description": "Kickoff — Now the story of a wealthy family who lost everything…" },
+      { "name": "Marky Bark Field Trip",         "type": "Operational", "offsetPct": 30,  "description": "Discovery — ostrich farm site survey complete." },
+      { "name": "Cornballer Recall Resolved",    "type": "Operational", "offsetPct": 55,  "description": "Build — recurring product hazard finally patched." },
+      { "name": "On-the-Next-Episode Preview",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance — preview reel approved by stakeholders." },
+      { "name": "Series Finale Go-Live",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff — and that's why you don't ship on Friday." },
+      { "name": "Final Narrator Invoice",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice — Ron Howard signs off." }
+    ]
+  },
+
+  "daysOff": {
+    "Michael Bluth":       [ { "realm": "bluth-family-core", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Phoenix relocation attempt — again." } ],
+    "George Sr. Bluth":    [ { "realm": "bluth-family-core", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "In the attic. Or Mexico. Or the model home wall." } ],
+    "Lucille Bluth":       [ { "realm": "bluth-family-core", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Cocktails at the Balboa Club — required attendance." } ],
+    "GOB Bluth":           [ { "realm": "bluth-family-core", "offsetWeeks": 10, "numberOfDays": 1, "notes": "Magician's Alliance meeting — strictly illusionists." } ],
+    "Buster Bluth":        [ { "realm": "bluth-family-core", "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Hand reattachment follow-up — loose seal incident." } ],
+    "Tobias Fünke":        [ { "realm": "bluth-family-core", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Blue Man Group standby audition." } ],
+    "George-Michael Bluth":[ { "realm": "bluth-family-core", "offsetWeeks": 16, "numberOfDays": 1, "notes": "FaceBook (the sequel) demo day at school." } ],
+    "Maeby Fünke":         [ { "realm": "bluth-family-core", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Studio exec day job — no one suspects a thing." } ],
+    "Carl Weathers":       [ { "realm": "bluth-co-staff",    "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Stew simmering — baby, you've got a stew going." } ],
+    "Steve Holt":          [ { "realm": "bluth-co-staff",    "offsetWeeks": 10, "numberOfDays": 1, "notes": "Pep rally — STEVE HOLT!" } ],
+    "Ann Veal":            [ { "realm": "bluth-co-staff",    "offsetWeeks": 12, "numberOfDays": 2, "notes": "Church retreat — Her?" } ],
+    "Barry Zuckerkorn":    [ { "realm": "legal-medical-orbit", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Court appearance — unrelated charges, allegedly." } ],
+    "Bob Loblaw":          [ { "realm": "legal-medical-orbit", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Bob Loblaw Law Blog content sprint." } ],
+    "Ron Howard":          [ { "realm": "extended-cast",       "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Directing — narrator booth closed for the week." } ],
+    "Rita Leeds":          [ { "realm": "extended-cast",       "offsetWeeks": 10, "numberOfDays": 2, "notes": "Wee Britain visit — Mr. F." } ]
+  }
+}

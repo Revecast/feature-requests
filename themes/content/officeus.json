@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "key": "OfficeUS",
+  "displayName": "The Office (US)",
+  "category": "Sitcom",
+  "emailDomain": "dunder-mifflin.test",
+  "account": {
+    "name": "Dunder Mifflin Paper Company (Test Data)",
+    "accountNumber": "PSA-TEST-OFFICEUS"
+  },
+  "mailingAddress": {
+    "street": "1725 Slough Avenue, Suite 200",
+    "city": "Scranton",
+    "state": "PA",
+    "postalCode": "18505",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Regional Manager",                  "canonical": "Solution Architect",                      "description": "World's Best Boss — owns the over-arching solution and keeps morale (and the architecture) intact." },
+    { "name": "Assistant (to the) Regional Manager","canonical": "Project Manager",                        "description": "Schedules every meeting in the conference room, runs the timeline, and holds everyone accountable. Beets optional." },
+    { "name": "Office Administrator",              "canonical": "Salesforce Administrator",                "description": "Keeper of the supply closet and the permission sets — fields, layouts, and party-planning bylaws." },
+    { "name": "Pretzel Day Engineer",              "canonical": "Salesforce Developer",                    "description": "Builds the Apex and LWCs that make Pretzel Day actually scale across the org." },
+    { "name": "VP of Northeast Sales",             "canonical": "Salesforce Practice Lead - USA",          "description": "Sets standards across the bullpen — the senior practice voice with a corner office." },
+    { "name": "Top Salesman of the Branch",        "canonical": "Salesforce Senior Consultant - India",    "description": "Closes the largest accounts with practiced craft and the occasional ill-advised prank." },
+    { "name": "Junior Sales Associate",            "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration calls under the Top Salesman's mentorship." },
+    { "name": "IT Guy from Corporate",             "canonical": "Integration Technical Architect - USA",   "description": "Architect of every system that talks to Dunder Mifflin Infinity — including the printers." },
+    { "name": "Website Architect",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the API and middleware between Dunder Mifflin Infinity 2.0 and the world." },
+    { "name": "Tech Support Temp",                 "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batches, and resetting Creed's password again." },
+    { "name": "Quality Assurance Auditor",         "canonical": "QA Engineer",                             "description": "Roams the floor with a clipboard finding bugs before they reach the customer (or HR)." },
+    { "name": "Director of First Impressions",     "canonical": "Marketing Practice Lead",                 "description": "Owns brand voice and front-of-house messaging for the entire company. Yes, the receptionist runs marketing now." },
+    { "name": "Brand Strategist",                  "canonical": "Marketing Senior Consultant",             "description": "Plans campaigns — the office-Olympics-grade strategist of conversion and gather." },
+    { "name": "Promotional Materials Lead",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the field — Dundies, brochures, and the daily commute mug." },
+    { "name": "HR Representative",                 "canonical": "Business Analyst",                        "description": "Translates between Sales, Accounting, and Corporate — captures requirements without anyone crying. Usually." },
+    { "name": "Senior VP Director of Sales",       "canonical": "Salesforce Senior Developer - USA",       "description": "The most senior builder on staff — when Threat Level Midnight ships, he wrote it." },
+    { "name": "Sales Trainee",                     "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh out of Cornell — eager, untested, and one promotion away from running the place (badly)." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "scranton-management",
+      "projectName": "Scranton Management — Branch Leadership CRM Rollout",
+      "shortName": "Scranton Mgmt",
+      "subAccountName": "Dunder Mifflin Scranton — Management",
+      "subAccountNumber": "PSA-TEST-OFFICEUS-SCRANTONMANAGEMENT",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "World's Best Boss Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Conference Room Meeting", "isDefault": false, "billable": true, "children": [
+          { "name": "Mandatory Staff Meeting", "billable": true },
+          { "name": "Branch Tour with Michael", "billable": true },
+          { "name": "Strategy Whiteboarding", "billable": true }
+        ]},
+        { "name": "Build the Branch Dashboard", "isDefault": false, "billable": true, "children": [
+          { "name": "KPI Foundation Layout", "billable": true },
+          { "name": "Manager Pipeline Widget", "billable": true },
+          { "name": "Threat Level Midnight Alerts", "billable": true }
+        ]},
+        { "name": "Migrate the Filing Cabinets", "isDefault": false, "billable": true, "children": [
+          { "name": "Office Records Inventory", "billable": true },
+          { "name": "Memo & Post-It Translation", "billable": true }
+        ]},
+        { "name": "Testing in the Conference Room", "isDefault": false, "billable": true, "children": [
+          { "name": "Roundtable UAT", "billable": true },
+          { "name": "Fire Drill Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Management Team", "isDefault": false, "billable": true, "children": [
+          { "name": "New Manager Onboarding", "billable": true },
+          { "name": "Schrute Bucks Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "scranton-sales-bullpen",
+      "projectName": "Scranton Sales Bullpen — Pipeline & Quota Platform",
+      "shortName": "Sales Bullpen",
+      "subAccountName": "Dunder Mifflin Scranton — Sales",
+      "subAccountNumber": "PSA-TEST-OFFICEUS-SCRANTONSALESBULLPEN",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Bullpen Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cold Calling", "isDefault": false, "billable": true, "children": [
+          { "name": "Territory Survey", "billable": true },
+          { "name": "Client List Audit", "billable": true },
+          { "name": "Strategy with the Top Salesman", "billable": true }
+        ]},
+        { "name": "Build the Sales Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Lead Routing Construction", "billable": true },
+          { "name": "Quota Tracker Forging", "billable": true },
+          { "name": "Commission Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Rolodex", "isDefault": false, "billable": true, "children": [
+          { "name": "Account Roll Call", "billable": true },
+          { "name": "Lead Scoring Pass", "billable": true }
+        ]},
+        { "name": "Testing the Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Cold Call Rehearsal", "billable": true },
+          { "name": "Closing Drill", "billable": true }
+        ]},
+        { "name": "Training the Sales Floor", "isDefault": false, "billable": true, "children": [
+          { "name": "Bullpen Foundations", "billable": true },
+          { "name": "Closer's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "scranton-accounting-warehouse",
+      "projectName": "Scranton Accounting & Warehouse — Operations Build",
+      "shortName": "Acct & Whse",
+      "subAccountName": "Dunder Mifflin Scranton — Accounting & Warehouse",
+      "subAccountNumber": "PSA-TEST-OFFICEUS-SCRANTONACCOUNTINGWAREHOUSE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Annex & Loading Dock Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Ledger Reconnaissance", "billable": true },
+          { "name": "Inventory Spot Check", "billable": true },
+          { "name": "Annex Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Watchful Ledger", "isDefault": false, "billable": true, "children": [
+          { "name": "Chart of Accounts Forging", "billable": true },
+          { "name": "Forklift Tracker Calibration", "billable": true },
+          { "name": "Receipt Scanning Network", "billable": true }
+        ]},
+        { "name": "Migrate the Inventory", "isDefault": false, "billable": true, "children": [
+          { "name": "Pallet Roll Call", "billable": true },
+          { "name": "Reams-on-Hand Census", "billable": true }
+        ]},
+        { "name": "Testing the Books", "isDefault": false, "billable": true, "children": [
+          { "name": "Year-End Close Pen-test", "billable": true },
+          { "name": "Loading Dock Stress", "billable": true }
+        ]},
+        { "name": "Training the Back Office", "isDefault": false, "billable": true, "children": [
+          { "name": "New Hire Conscription", "billable": true },
+          { "name": "Foreman's Operations Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "corporate-other-branches",
+      "projectName": "Corporate & Other Branches — Enterprise Rollout",
+      "shortName": "Corp Rollout",
+      "subAccountName": "Dunder Mifflin Corporate (NYC)",
+      "subAccountNumber": "PSA-TEST-OFFICEUS-CORPORATEOTHERBRANCHES",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Corporate HQ Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Boardroom Gazing", "isDefault": false, "billable": true, "children": [
+          { "name": "Branch Performance Review", "billable": true },
+          { "name": "Future-state Vision", "billable": true },
+          { "name": "CFO's Council", "billable": true }
+        ]},
+        { "name": "Build the Infinity Platform", "isDefault": false, "billable": true, "children": [
+          { "name": "Multi-Branch Schema Design", "billable": true },
+          { "name": "Platform Construction", "billable": true },
+          { "name": "Cross-Branch Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Corporate Memos", "isDefault": false, "billable": true, "children": [
+          { "name": "Policy Manuscript Catalog", "billable": true },
+          { "name": "Quarterly Earnings Recording", "billable": true }
+        ]},
+        { "name": "Testing the Rollout", "isDefault": false, "billable": true, "children": [
+          { "name": "Multi-Branch Tensile Trial", "billable": true },
+          { "name": "Synergy Verification", "billable": true }
+        ]},
+        { "name": "Training the Corporate Cohort", "isDefault": false, "billable": true, "children": [
+          { "name": "VP Onboarding Refresh", "billable": true },
+          { "name": "Executive Power-User Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "scranton-management": [
+      { "fullName": "Michael Scott",       "themedRole": "Regional Manager" },
+      { "fullName": "Jim Halpert",         "themedRole": "Assistant (to the) Regional Manager" },
+      { "fullName": "Pam Beesly",          "themedRole": "Director of First Impressions" },
+      { "fullName": "Dwight Schrute",      "themedRole": "Assistant (to the) Regional Manager" },
+      { "fullName": "Andy Bernard",        "themedRole": "Regional Manager" },
+      { "fullName": "Robert California",   "themedRole": "VP of Northeast Sales" },
+      { "fullName": "David Wallace",       "themedRole": "Senior VP Director of Sales" }
+    ],
+    "scranton-sales-bullpen": [
+      { "fullName": "Jim Halpert",         "themedRole": "Top Salesman of the Branch" },
+      { "fullName": "Dwight Schrute",      "themedRole": "Top Salesman of the Branch" },
+      { "fullName": "Stanley Hudson",      "themedRole": "Top Salesman of the Branch" },
+      { "fullName": "Phyllis Lapin",       "themedRole": "Junior Sales Associate" },
+      { "fullName": "Andy Bernard",        "themedRole": "Junior Sales Associate" },
+      { "fullName": "Ryan Howard",         "themedRole": "Sales Trainee" },
+      { "fullName": "Erin Hannon",         "themedRole": "Director of First Impressions" }
+    ],
+    "scranton-accounting-warehouse": [
+      { "fullName": "Angela Martin",       "themedRole": "Office Administrator" },
+      { "fullName": "Oscar Martinez",      "themedRole": "Quality Assurance Auditor" },
+      { "fullName": "Kevin Malone",        "themedRole": "Pretzel Day Engineer" },
+      { "fullName": "Meredith Palmer",     "themedRole": "Promotional Materials Lead" },
+      { "fullName": "Creed Bratton",       "themedRole": "Tech Support Temp" },
+      { "fullName": "Toby Flenderson",     "themedRole": "HR Representative" },
+      { "fullName": "Darryl Philbin",      "themedRole": "Brand Strategist" },
+      { "fullName": "Roy Anderson",        "themedRole": "Junior Sales Associate" }
+    ],
+    "corporate-other-branches": [
+      { "fullName": "David Wallace",       "themedRole": "Regional Manager" },
+      { "fullName": "Charles Miner",       "themedRole": "VP of Northeast Sales" },
+      { "fullName": "Jan Levinson",        "themedRole": "Brand Strategist" },
+      { "fullName": "Holly Flax",          "themedRole": "HR Representative" },
+      { "fullName": "Karen Filippelli",    "themedRole": "Top Salesman of the Branch" },
+      { "fullName": "Josh Porter",         "themedRole": "Assistant (to the) Regional Manager" },
+      { "fullName": "Robert Dunder",       "themedRole": "IT Guy from Corporate" },
+      { "fullName": "Gabe Lewis",          "themedRole": "Website Architect" },
+      { "fullName": "Nellie Bertram",      "themedRole": "Regional Manager" }
+    ]
+  },
+
+  "milestones": {
+    "scranton-management": [
+      { "name": "Conference Room — Five Minutes!",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Michael calls everyone in for an unscheduled all-hands." },
+      { "name": "Dundies Awards Ceremony",           "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: morale event launches the delivery phase." },
+      { "name": "Performance Review with Toby",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: HR-led stewardship review of the build." },
+      { "name": "Schrute Farms Phase Invoice",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger — beets, bears, billing." },
+      { "name": "Casino Night Go-Live",              "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the new branch dashboard launches at Casino Night." },
+      { "name": "Manager's Hand-off",                "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the next Regional Manager." }
+    ],
+    "scranton-sales-bullpen": [
+      { "name": "Sales Kickoff Meeting",             "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the bullpen is briefed on Q-targets." },
+      { "name": "Office Olympics",                   "type": "Operational", "offsetPct": 30,  "description": "Build phase: morale-building games run alongside the dev sprint." },
+      { "name": "Quarterly Quota Review",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the pipeline holds up to David Wallace's review." },
+      { "name": "Salesman of the Year Announced",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: pipeline platform live, top performer crowned." },
+      { "name": "Return to the Bullpen",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the team gets back to selling paper." },
+      { "name": "Year-End Commission Run",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice: commissions paid, books closed." }
+    ],
+    "scranton-accounting-warehouse": [
+      { "name": "The Audit Begins",                  "type": "Gate",        "offsetPct": 10,  "description": "Discovery: ledger plane online, the auditor arrives." },
+      { "name": "Inventory Count Day",               "type": "Operational", "offsetPct": 35,  "description": "Build: warehouse inventory and chart-of-accounts deployed." },
+      { "name": "Oscar's Reconciliation Review",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the lead accountant himself." },
+      { "name": "Forklift Certification Day",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: warehouse ops platform fully operational." },
+      { "name": "End-of-Quarter Lock",               "type": "Operational", "offsetPct": 100, "description": "Project close: books closed, dock secured." },
+      { "name": "Final Reckoning at Annex",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice from accounting." }
+    ],
+    "corporate-other-branches": [
+      { "name": "Board of Directors Kickoff",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the New York boardroom." },
+      { "name": "Branch Closing Announcement",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: which branches consolidate, which expand." },
+      { "name": "Weave the Infinity Reports",        "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards woven across every branch." },
+      { "name": "Sabre Acquisition Review",          "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: corporate signs off on the rollout." },
+      { "name": "Company-wide Go-Live",              "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: every branch on Dunder Mifflin Infinity 2.0." },
+      { "name": "Final Recompense from Corporate",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice from David Wallace's office." }
+    ]
+  },
+
+  "daysOff": {
+    "Michael Scott":       [ { "realm": "scranton-management",          "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Improv class showcase — Sandals resort optional." } ],
+    "Dwight Schrute":      [ { "realm": "scranton-management",          "offsetWeeks": 12, "numberOfDays": 3, "notes": "Beet harvest at Schrute Farms — agritourism check-in." } ],
+    "Jim Halpert":         [ { "realm": "scranton-sales-bullpen",       "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Athlead trip to Philadelphia — totally legitimate startup business." } ],
+    "Pam Beesly":          [ { "realm": "scranton-management",          "offsetWeeks": 14, "numberOfDays": 4, "notes": "Pratt Institute — graphic design intensive." } ],
+    "Andy Bernard":        [ { "realm": "scranton-sales-bullpen",       "offsetWeeks": 10, "numberOfDays": 5, "notes": "Cornell a cappella reunion — Here Comes Treble." } ],
+    "Stanley Hudson":      [ { "realm": "scranton-sales-bullpen",       "offsetWeeks": 16, "numberOfDays": 5, "notes": "Pretzel Day vacation — early Florida retirement scouting." } ],
+    "Phyllis Lapin":       [ { "realm": "scranton-sales-bullpen",       "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Bob Vance, Vance Refrigeration — anniversary getaway." } ],
+    "Erin Hannon":         [ { "realm": "scranton-sales-bullpen",       "offsetWeeks": 18, "numberOfDays": 1, "notes": "Looking for her birth parents — quick trip out of town." } ],
+    "Angela Martin":       [ { "realm": "scranton-accounting-warehouse","offsetWeeks": 6,  "numberOfDays": 2, "notes": "Cat show — Princess Lady is competing." } ],
+    "Oscar Martinez":      [ { "realm": "scranton-accounting-warehouse","offsetWeeks": 16, "numberOfDays": 3, "notes": "Annual gay-pride parade in Manhattan." } ],
+    "Kevin Malone":        [ { "realm": "scranton-accounting-warehouse","offsetWeeks": 8,  "numberOfDays": 1, "notes": "Famous Kevin's Famous Chili relaunch — testing the new pot." } ],
+    "Meredith Palmer":     [ { "realm": "scranton-accounting-warehouse","offsetWeeks": 12, "numberOfDays": 4, "notes": "Rabies awareness 5K fun-run — and recovery." } ],
+    "Creed Bratton":       [ { "realm": "scranton-accounting-warehouse","offsetWeeks": 20, "numberOfDays": 5, "notes": "Off the grid — do not ask, do not call the authorities." } ],
+    "Toby Flenderson":     [ { "realm": "scranton-accounting-warehouse","offsetWeeks": 14, "numberOfDays": 2, "notes": "Costa Rica — zip-lining, again." } ],
+    "David Wallace":       [ { "realm": "corporate-other-branches",     "offsetWeeks": 10, "numberOfDays": 3, "notes": "Suck It — pitching the vacuum prototype to investors." } ]
+  }
+}

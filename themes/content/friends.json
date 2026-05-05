@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "key": "Friends",
+  "displayName": "Friends",
+  "category": "Sitcom",
+  "emailDomain": "central-perk.test",
+  "account": {
+    "name": "Friends (Test Data)",
+    "accountNumber": "PSA-TEST-FRIENDS"
+  },
+  "mailingAddress": {
+    "street": "90 Bedford Street, Apt 20",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10014",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Head Paleontologist",              "canonical": "Solution Architect",                      "description": "Excavates the over-arching design — knows where every bone of the solution belongs." },
+    { "name": "Head Chef",                        "canonical": "Project Manager",                         "description": "Runs the kitchen pass — keeps every order moving and every plate on time." },
+    { "name": "Apartment Manager",                "canonical": "Salesforce Administrator",                "description": "Steward of the building — keys, layouts, permission sets and who gets in which apartment." },
+    { "name": "Sandwich Architect",               "canonical": "Salesforce Developer",                    "description": "Builds the Joey Special of Apex and LWC — never share my Apex." },
+    { "name": "Transponster (Practice Lead USA)", "canonical": "Salesforce Practice Lead - USA",          "description": "It's not even a word! Leads the New York Salesforce practice and keeps the standards high." },
+    { "name": "Senior Buyer at Bloomingdale's",   "canonical": "Salesforce Senior Consultant - India",    "description": "Seasoned consultant — picks the right configuration off the rack every time." },
+    { "name": "Junior Buyer at Bloomingdale's",   "canonical": "Salesforce Consultant - India",           "description": "Up-and-coming consultant on the floor — running discovery and configuration under the senior buyer's eye." },
+    { "name": "Coffee Shop Architect",            "canonical": "Integration Technical Architect - USA",   "description": "Designs the espresso lines that connect every system — Central Perk's master plumber." },
+    { "name": "Espresso Engineer",                "canonical": "Integration Senior Consultant - India",   "description": "Pulls the integration shots — APIs, middleware, events, all to spec." },
+    { "name": "Barista in Training",              "canonical": "Integration Consultant - India",          "description": "Learning the integration craft — webhooks, batch jobs, and the foam art of error handling." },
+    { "name": "Quality Inspector at Mattress King","canonical": "QA Engineer",                            "description": "Tests every spring before a customer sleeps on it — finds the lumps before go-live." },
+    { "name": "Head of Marketing at Ralph Lauren","canonical": "Marketing Practice Lead",                 "description": "Sets the brand voice — runs the marketing floor with poise and a tasteful scarf." },
+    { "name": "Senior Stylist at Bloomingdale's", "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — pulls the right looks together season after season." },
+    { "name": "Vogue Assistant",                  "canonical": "Marketing Consultant",                    "description": "Carries the campaigns into the field — content, creative, and the daily grind on Sixth Avenue." },
+    { "name": "Data Processor at Chandler's Office","canonical": "Business Analyst",                     "description": "WENUS reports and weekly estimated net usage statistics — translates the business into the build." },
+    { "name": "Senior Sandwich Architect",        "canonical": "Salesforce Senior Developer - USA",       "description": "Oldest hand at the deli counter — owns the gnarliest Apex and the trickiest LWC." },
+    { "name": "Smelly Cat Intern",                "canonical": "Junior Salesforce Consultant - India",    "description": "Brand new on the scene — learning the chords of admin and config one off-key strum at a time." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "core-six",
+      "projectName": "Core Six — Apartment 20 CRM Rollout",
+      "shortName": "Core Six A20",
+      "subAccountName": "Apartment 20 (The Core Six)",
+      "subAccountNumber": "PSA-TEST-FRIENDS-CORESIX",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Could This BE Any More Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery on the Orange Couch", "isDefault": false, "billable": true, "children": [
+          { "name": "We Were on a Break — Requirements", "billable": true },
+          { "name": "Pivot! Pivot! — Backlog Grooming", "billable": true }
+        ]},
+        { "name": "Build the Apartment", "isDefault": false, "billable": true, "children": [
+          { "name": "Foosball Table Assembly", "billable": true },
+          { "name": "Magna Doodle Wireframes", "billable": true }
+        ]},
+        { "name": "Migrate the Boxes", "isDefault": false, "billable": true, "children": [
+          { "name": "Pivot the Couch Up the Stairs", "billable": true },
+          { "name": "Ugly Naked Guy Data Cleanse", "billable": true }
+        ]},
+        { "name": "UAT at Central Perk", "isDefault": false, "billable": true, "children": [
+          { "name": "Open Mic Smoke Test", "billable": true },
+          { "name": "Latte Regression Pass", "billable": true }
+        ]},
+        { "name": "Training the Roommates", "isDefault": false, "billable": true, "children": [
+          { "name": "Apartment Quiz Onboarding", "billable": true },
+          { "name": "Trifle Recipe Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "central-perk-staff",
+      "projectName": "Central Perk — Coffee House Operations Platform",
+      "shortName": "Perk Ops",
+      "subAccountName": "Central Perk Coffee House",
+      "subAccountNumber": "PSA-TEST-FRIENDS-CENTRALPERK",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Behind the Counter Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Open Mic", "isDefault": false, "billable": true, "children": [
+          { "name": "Smelly Cat Audience Research", "billable": true },
+          { "name": "Muffin Inventory Survey", "billable": true }
+        ]},
+        { "name": "Build the Espresso Line", "isDefault": false, "billable": true, "children": [
+          { "name": "La Marzocco Provisioning", "billable": true },
+          { "name": "Couch Cushion Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Tip Jar", "isDefault": false, "billable": true, "children": [
+          { "name": "Loyalty Punch Card Conversion", "billable": true },
+          { "name": "Daily Specials Catalogue Lift", "billable": true }
+        ]},
+        { "name": "UAT at the Coffee Bar", "isDefault": false, "billable": true, "children": [
+          { "name": "Saturday Brunch Stress Test", "billable": true },
+          { "name": "Foam Art Quality Pass", "billable": true }
+        ]},
+        { "name": "Training the Baristas", "isDefault": false, "billable": true, "children": [
+          { "name": "Latte Art Bootcamp", "billable": true },
+          { "name": "Apron Etiquette Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "geller-bing-family",
+      "projectName": "Geller-Bing Family — Thanksgiving Logistics System",
+      "shortName": "GB Family",
+      "subAccountName": "Geller-Bing Family Holdings",
+      "subAccountNumber": "PSA-TEST-FRIENDS-GBFAMILY",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Thanksgiving Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Family Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Mother's Worry Workshop", "billable": true },
+          { "name": "Children's Table Survey", "billable": true }
+        ]},
+        { "name": "Build the Guest List", "isDefault": false, "billable": true, "children": [
+          { "name": "RSVP Pipeline Foundations", "billable": true },
+          { "name": "Plus-One Provisioning", "billable": true }
+        ]},
+        { "name": "Migrate the Photo Albums", "isDefault": false, "billable": true, "children": [
+          { "name": "Childhood Slide Digitisation", "billable": true },
+          { "name": "Wedding Tape Conversion", "billable": true }
+        ]},
+        { "name": "UAT at the Dinner Table", "isDefault": false, "billable": true, "children": [
+          { "name": "Turkey Carving Drill", "billable": true },
+          { "name": "Stuffing Smoke Test", "billable": true }
+        ]},
+        { "name": "Training the In-Laws", "isDefault": false, "billable": true, "children": [
+          { "name": "Geller Cup Rules Refresh", "billable": true },
+          { "name": "Toast Etiquette Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "dating-pool",
+      "projectName": "Dating Pool — Relationship Lifecycle Management",
+      "shortName": "Dating RLM",
+      "subAccountName": "The Dating Pool of Manhattan",
+      "subAccountNumber": "PSA-TEST-FRIENDS-DATINGPOOL",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Singles Mixer Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & First Dates", "isDefault": false, "billable": true, "children": [
+          { "name": "Coffee House Meet-Cute Survey", "billable": true },
+          { "name": "Compatibility Spreadsheet Drafting", "billable": true }
+        ]},
+        { "name": "Build the Relationship", "isDefault": false, "billable": true, "children": [
+          { "name": "Second Date Provisioning", "billable": true },
+          { "name": "Meeting the Friends Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Toothbrush", "isDefault": false, "billable": true, "children": [
+          { "name": "Drawer Allocation", "billable": true },
+          { "name": "Closet Space Negotiation", "billable": true }
+        ]},
+        { "name": "UAT at the Anniversary Dinner", "isDefault": false, "billable": true, "children": [
+          { "name": "Candlelight Dress Rehearsal", "billable": true },
+          { "name": "Gift Reaction Smoke Test", "billable": true }
+        ]},
+        { "name": "Training the Next Partner", "isDefault": false, "billable": true, "children": [
+          { "name": "Roommate Approval Refresh", "billable": true },
+          { "name": "Holiday Schedule Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "core-six": [
+      { "fullName": "Ross Geller",        "themedRole": "Head Paleontologist" },
+      { "fullName": "Rachel Green",       "themedRole": "Head of Marketing at Ralph Lauren" },
+      { "fullName": "Monica Geller",      "themedRole": "Head Chef" },
+      { "fullName": "Chandler Bing",      "themedRole": "Data Processor at Chandler's Office" },
+      { "fullName": "Joey Tribbiani",     "themedRole": "Sandwich Architect" },
+      { "fullName": "Phoebe Buffay",      "themedRole": "Smelly Cat Intern" },
+      { "fullName": "Mark Coburn",        "themedRole": "Transponster (Practice Lead USA)" }
+    ],
+    "central-perk-staff": [
+      { "fullName": "Gunther",            "themedRole": "Coffee Shop Architect" },
+      { "fullName": "Jasmine",            "themedRole": "Espresso Engineer" },
+      { "fullName": "Terry",              "themedRole": "Apartment Manager" },
+      { "fullName": "Estelle Leonard",    "themedRole": "Senior Stylist at Bloomingdale's" },
+      { "fullName": "Eddie Menuek",       "themedRole": "Barista in Training" },
+      { "fullName": "Phoebe Buffay",      "themedRole": "Vogue Assistant" },
+      { "fullName": "Joey Tribbiani",     "themedRole": "Quality Inspector at Mattress King" }
+    ],
+    "geller-bing-family": [
+      { "fullName": "Jack Geller",        "themedRole": "Transponster (Practice Lead USA)" },
+      { "fullName": "Judy Geller",        "themedRole": "Senior Buyer at Bloomingdale's" },
+      { "fullName": "Nora Bing",          "themedRole": "Senior Sandwich Architect" },
+      { "fullName": "Charles Bing",       "themedRole": "Junior Buyer at Bloomingdale's" },
+      { "fullName": "Ben Geller",         "themedRole": "Smelly Cat Intern" },
+      { "fullName": "Frank Buffay Jr.",   "themedRole": "Apartment Manager" },
+      { "fullName": "Ursula Buffay",      "themedRole": "Vogue Assistant" }
+    ],
+    "dating-pool": [
+      { "fullName": "Janice Litman",      "themedRole": "Head of Marketing at Ralph Lauren" },
+      { "fullName": "Mike Hannigan",      "themedRole": "Head Paleontologist" },
+      { "fullName": "Tag Jones",          "themedRole": "Sandwich Architect" },
+      { "fullName": "Charlie Wheeler",    "themedRole": "Senior Buyer at Bloomingdale's" },
+      { "fullName": "Richard Burke",      "themedRole": "Coffee Shop Architect" },
+      { "fullName": "Carol Willick",      "themedRole": "Data Processor at Chandler's Office" },
+      { "fullName": "Susan Bunch",        "themedRole": "Senior Stylist at Bloomingdale's" }
+    ]
+  },
+
+  "milestones": {
+    "core-six": [
+      { "name": "Keys to Apartment 20",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — keys handed over and the orange couch is in place." },
+      { "name": "Pivot the Couch",             "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: PIVOT! PIVOT! — the couch (and the architecture) finally goes up the stairs." },
+      { "name": "The One With the Apartment Quiz","type": "Gate",     "offsetPct": 55,  "description": "Mid-project gate: who knows the system best — losers move out." },
+      { "name": "Trifle Tasting (with Beef)",  "type": "Operational", "offsetPct": 70,  "description": "UAT pass: Rachel's trifle. Tastes like feet. Logged as a known issue." },
+      { "name": "We Were on a Break Sign-off", "type": "Billing",     "offsetPct": 85,  "description": "Phase invoice trigger: contract clarified, no more ambiguity." },
+      { "name": "The Last One",                "type": "Delivery",    "offsetPct": 100, "description": "Go-Live: keys returned, lights off, coffee one last time at Central Perk." }
+    ],
+    "central-perk-staff": [
+      { "name": "Open the Doors",              "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Gunther flips the sign to OPEN." },
+      { "name": "Smelly Cat Soundcheck",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: open mic stage stood up, Phoebe approves the levels." },
+      { "name": "Saturday Brunch Rush",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the espresso line holds through the brunch rush." },
+      { "name": "New Espresso Machine Online", "type": "Delivery",    "offsetPct": 85,  "description": "Go-Live: La Marzocco fully provisioned and pulling shots." },
+      { "name": "Tip Jar Reconciliation",      "type": "Billing",     "offsetPct": 95,  "description": "Final invoice: end-of-shift tip jar counted and split." },
+      { "name": "Closing Time",                "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: chairs up, mop out, Gunther locks up." }
+    ],
+    "geller-bing-family": [
+      { "name": "Save Date for Thanksgiving",  "type": "Gate",        "offsetPct": 5,   "description": "Discovery: invitations modelled, RSVPs flowing in." },
+      { "name": "Geller Cup Kickoff",          "type": "Operational", "offsetPct": 25,  "description": "Build: the football is dusted off and the Geller Cup is on the line." },
+      { "name": "The One Where Monica Cooks",  "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Monica takes the kitchen — no one else gets in." },
+      { "name": "Carving the Turkey",          "type": "Delivery",    "offsetPct": 80,  "description": "Go-Live: Joey eats an entire turkey, the family is fed." },
+      { "name": "Photo Album on the Coffee Table","type": "Operational","offsetPct": 95,"description": "Hyper-care close: photos digitised and back on the shelf." },
+      { "name": "Final Holiday Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Geller-Bing household." }
+    ],
+    "dating-pool": [
+      { "name": "First Coffee at Central Perk","type": "Gate",        "offsetPct": 5,   "description": "Kickoff: meet-cute logged in the CRM, opportunity opened." },
+      { "name": "Meeting the Friends",         "type": "Gate",        "offsetPct": 30,  "description": "Discovery: stakeholder review with the Core Six." },
+      { "name": "The Toothbrush in the Cup",   "type": "Operational", "offsetPct": 55,  "description": "Build: cohabitation provisioning complete." },
+      { "name": "Anniversary Dinner Sign-off", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: candlelight, soft music, all acceptance criteria met." },
+      { "name": "Move-in or Break-up",         "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the relationship is upgraded to production (or rolled back)." },
+      { "name": "Final Settlement",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice: who keeps the chick and the duck." }
+    ]
+  },
+
+  "daysOff": {
+    "Ross Geller":       [ { "realm": "core-six",            "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Museum dig in Beijing — pre-arranged research trip." } ],
+    "Rachel Green":      [ { "realm": "core-six",            "offsetWeeks": 14, "numberOfDays": 4, "notes": "Bloomingdale's buyer trip — Paris collection." } ],
+    "Monica Geller":     [ { "realm": "core-six",            "offsetWeeks": 10, "numberOfDays": 2, "notes": "Catering an iron chef tasting — 11 on the cleanliness scale." } ],
+    "Chandler Bing":     [ { "realm": "core-six",            "offsetWeeks": 18, "numberOfDays": 3, "notes": "Tulsa office reassignment — could this BE any more inconvenient?" } ],
+    "Joey Tribbiani":    [ { "realm": "central-perk-staff",  "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Days of Our Lives shoot — Dr. Drake Ramoray returns." } ],
+    "Phoebe Buffay":     [ { "realm": "central-perk-staff",  "offsetWeeks": 12, "numberOfDays": 2, "notes": "Smelly Cat recording session at the studio." } ],
+    "Gunther":           [ { "realm": "central-perk-staff",  "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Hair re-bleaching appointment — quarterly." } ],
+    "Janice Litman":     [ { "realm": "dating-pool",         "offsetWeeks": 6,  "numberOfDays": 1, "notes": "OH. MY. GOD. — voice rest." } ],
+    "Mike Hannigan":     [ { "realm": "dating-pool",         "offsetWeeks": 10, "numberOfDays": 3, "notes": "Piano gig at the hotel bar — extended residency." } ],
+    "Richard Burke":     [ { "realm": "dating-pool",         "offsetWeeks": 14, "numberOfDays": 2, "notes": "Mustache trim and ophthalmology conference." } ],
+    "Carol Willick":     [ { "realm": "dating-pool",         "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Parent-teacher day at Ben's school." } ],
+    "Jack Geller":       [ { "realm": "geller-bing-family",  "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Long Island garage cleanout — annual tradition." } ],
+    "Judy Geller":       [ { "realm": "geller-bing-family",  "offsetWeeks": 12, "numberOfDays": 2, "notes": "Bridge club tournament." } ],
+    "Nora Bing":         [ { "realm": "geller-bing-family",  "offsetWeeks": 16, "numberOfDays": 4, "notes": "Book tour — new romance novel launch." } ],
+    "Frank Buffay Jr.":  [ { "realm": "geller-bing-family",  "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Triplets' birthday week — Frank Jr. Jr., Leslie, and Chandler." } ]
+  }
+}
