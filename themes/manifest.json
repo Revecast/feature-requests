@@ -77,12 +77,12 @@
     { "key": "DragonBallZ",    "displayName": "Dragon Ball Z",         "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/dragon_ball_z.json" },
     { "key": "OnePiece",       "displayName": "One Piece",             "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/one_piece.json" },
 
-    { "key": "IndianaJones",   "displayName": "Indiana Jones",         "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/indiana_jones.json" },
-    { "key": "JamesBond",      "displayName": "James Bond",            "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/james_bond.json" },
-    { "key": "Pirates",        "displayName": "Pirates of the Caribbean", "category": "Pop Culture",  "implemented": false, "featured": false, "body": "themes/content/pirates.json" },
-    { "key": "SherlockHolmes", "displayName": "Sherlock Holmes",       "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/sherlock_holmes.json" },
-    { "key": "Arthurian",      "displayName": "Arthurian Legend",      "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/arthurian.json" },
-    { "key": "RobinHood",      "displayName": "Robin Hood",            "category": "Pop Culture",     "implemented": false, "featured": false, "body": "themes/content/robin_hood.json" },
+    { "key": "IndianaJones",   "displayName": "Indiana Jones",         "category": "Pop Culture",     "implemented": true,  "featured": false, "body": "themes/content/indianajones.json" },
+    { "key": "JamesBond",      "displayName": "James Bond",            "category": "Pop Culture",     "implemented": true,  "featured": false, "body": "themes/content/jamesbond.json" },
+    { "key": "Pirates",        "displayName": "Pirates of the Caribbean", "category": "Pop Culture",  "implemented": true,  "featured": false, "body": "themes/content/pirates.json" },
+    { "key": "SherlockHolmes", "displayName": "Sherlock Holmes",       "category": "Pop Culture",     "implemented": true,  "featured": false, "body": "themes/content/sherlockholmes.json" },
+    { "key": "Arthurian",      "displayName": "Arthurian Legend",      "category": "Pop Culture",     "implemented": true,  "featured": false, "body": "themes/content/arthurian.json" },
+    { "key": "RobinHood",      "displayName": "Robin Hood",            "category": "Pop Culture",     "implemented": true,  "featured": false, "body": "themes/content/robinhood.json" },
 
     { "key": "Beatles",        "displayName": "The Beatles",           "category": "Music",           "implemented": true,  "featured": false, "body": "themes/content/beatles.json" },
     { "key": "RockHallOfFame", "displayName": "Rock & Roll Hall of Fame", "category": "Music",        "implemented": true,  "featured": false, "body": "themes/content/rockhalloffame.json" },

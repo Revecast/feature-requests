@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "key": "Arthurian",
+  "displayName": "Arthurian Legend",
+  "category": "Pop Culture",
+  "emailDomain": "camelot.test",
+  "account": {
+    "name": "Camelot (Test Data)",
+    "accountNumber": "PSA-TEST-ARTHURIAN"
+  },
+  "mailingAddress": {
+    "street": "1 Round Table Court",
+    "city": "Camelot",
+    "state": "Logres",
+    "postalCode": "AV1 1ON",
+    "country": "Britannia"
+  },
+
+  "roles": [
+    { "name": "Court Mage",                       "canonical": "Solution Architect",                      "description": "Keeper of arcane lore — designs the realm's solution and weaves enchantments into the architecture." },
+    { "name": "Marshal of the Realm",             "canonical": "Project Manager",                         "description": "Marshals knights of delivery, holds the campaign timeline, and answers to the King." },
+    { "name": "Steward of the Keep",              "canonical": "Salesforce Administrator",                "description": "Steward of the castle records — layouts, fields, permission sets, and the keys to every chamber." },
+    { "name": "Castle Smith",                     "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features in the heat of the keep's smithy." },
+    { "name": "Knight-Captain of the Round Table","canonical": "Salesforce Practice Lead - USA",          "description": "First among the knights of Salesforce craft — sets the chivalric code and guides the senior knights." },
+    { "name": "Errant Knight of Logres",          "canonical": "Salesforce Senior Consultant - India",    "description": "Rides the borders of customer requirements with practiced sword and counsel." },
+    { "name": "Squire of the Realm",              "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration into the field under the Errant Knight's eye." },
+    { "name": "Bridgekeeper of Avalon",           "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the mists." },
+    { "name": "Drawbridge Engineer",              "canonical": "Integration Senior Consultant - India",   "description": "Lays the chains and timbers of API, middleware, and event flows under the Bridgekeeper's plan." },
+    { "name": "Apprentice of the Drawbridge",     "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the mason's patterns of error handling." },
+    { "name": "Tournament Adjudicator",           "canonical": "QA Engineer",                             "description": "Judge of the lists — finds flaws in armor and code before they meet the field of battle." },
+    { "name": "Herald of Camelot",                "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for product and message — leads all marketing craft of the court." },
+    { "name": "Court Bard",                       "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sings the deeds and conversions to the gathered hall." },
+    { "name": "Banner-Bearer of the King",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Scribe of the Round Table",        "canonical": "Business Analyst",                        "description": "Records what is needed and what is sworn — translates between mortal Customer and the wizard's craft of design." },
+    { "name": "Master Smith of Excalibur",        "canonical": "Salesforce Senior Developer - USA",       "description": "Master of the Avalonian forge — crafts the keenest Apex and LWC features, mentor to the castle smiths." },
+    { "name": "Page of the Court",                "canonical": "Junior Salesforce Consultant - India",    "description": "Newest to the keep — learns the crafts of admin and config under the Squire's tutelage." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "round-table-knights",
+      "projectName": "Round Table Knights — Chivalric Order CRM",
+      "shortName": "Round Table",
+      "subAccountName": "Order of the Round Table",
+      "subAccountNumber": "PSA-TEST-ARTHURIAN-ROUND-TABLE-KNIGHTS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Round Table Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Oath-Taking", "isDefault": false, "billable": true, "children": [
+          { "name": "Knightly Vows Workshop", "billable": true },
+          { "name": "Field Reconnaissance — Camlann", "billable": true },
+          { "name": "Strategy at the Round Table", "billable": true }
+        ]},
+        { "name": "Reforging the Sword", "isDefault": false, "billable": true, "children": [
+          { "name": "Anvil Foundation Work", "billable": true },
+          { "name": "Blade Tempering", "billable": true },
+          { "name": "Hilt & Pommel Fitting", "billable": true }
+        ]},
+        { "name": "Migrate the Heraldry", "isDefault": false, "billable": true, "children": [
+          { "name": "Coat-of-Arms Inventory", "billable": true },
+          { "name": "Banner Translation", "billable": true }
+        ]},
+        { "name": "Tournament Trials (UAT)", "isDefault": false, "billable": true, "children": [
+          { "name": "Joust Drill", "billable": true },
+          { "name": "Mêlée Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Squires", "isDefault": false, "billable": true, "children": [
+          { "name": "Squire Onboarding", "billable": true },
+          { "name": "Captain's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pendragon-court",
+      "projectName": "Pendragon Court — Royal Council Platform",
+      "shortName": "Pendragon",
+      "subAccountName": "House of Pendragon",
+      "subAccountNumber": "PSA-TEST-ARTHURIAN-PENDRAGON-COURT",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Camelot Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Royal Audience", "isDefault": false, "billable": true, "children": [
+          { "name": "Throne Room Survey", "billable": true },
+          { "name": "Courtier Headcount", "billable": true },
+          { "name": "Strategy with the King", "billable": true }
+        ]},
+        { "name": "Build the Throne Room", "isDefault": false, "billable": true, "children": [
+          { "name": "Pillar Construction", "billable": true },
+          { "name": "Tapestry Weaving", "billable": true },
+          { "name": "Crown & Sceptre Forging", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Lineage", "isDefault": false, "billable": true, "children": [
+          { "name": "Pendragon Genealogy Roll", "billable": true },
+          { "name": "Treasury Ledger Import", "billable": true }
+        ]},
+        { "name": "Testing at the Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Audience Hall Drill", "billable": true },
+          { "name": "Coronation Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Courtiers", "isDefault": false, "billable": true, "children": [
+          { "name": "Etiquette Foundations", "billable": true },
+          { "name": "Chamberlain's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "grail-quest",
+      "projectName": "Grail Quest — Pilgrimage Tracking System",
+      "shortName": "Grail Quest",
+      "subAccountName": "Fellowship of the Holy Grail",
+      "subAccountNumber": "PSA-TEST-ARTHURIAN-GRAIL-QUEST",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Corbenic Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Vision", "isDefault": false, "billable": true, "children": [
+          { "name": "Hermit's Counsel", "billable": true },
+          { "name": "Pilgrim Reconnaissance", "billable": true },
+          { "name": "Sacred Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Sanctuary", "isDefault": false, "billable": true, "children": [
+          { "name": "Chapel Foundation Stones", "billable": true },
+          { "name": "Reliquary Crafting", "billable": true },
+          { "name": "Stained Glass Installation", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Texts", "isDefault": false, "billable": true, "children": [
+          { "name": "Scripture Catalog", "billable": true },
+          { "name": "Illuminated Manuscript Import", "billable": true }
+        ]},
+        { "name": "Testing the Worthy", "isDefault": false, "billable": true, "children": [
+          { "name": "Trial of Purity", "billable": true },
+          { "name": "Trial of Faith Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Pilgrims", "isDefault": false, "billable": true, "children": [
+          { "name": "Pilgrim Catechism", "billable": true },
+          { "name": "Bishop's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "enemies-of-camelot",
+      "projectName": "Enemies of Camelot — Threat Surveillance Build",
+      "shortName": "Enemies",
+      "subAccountName": "Adversaries of the Crown",
+      "subAccountNumber": "PSA-TEST-ARTHURIAN-ENEMIES-OF-CAMELOT",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Shadow Keep Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Spies", "isDefault": false, "billable": true, "children": [
+          { "name": "Saxon Reconnaissance", "billable": true },
+          { "name": "Morgan's Scrying", "billable": true },
+          { "name": "Dark Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Siege Engines", "isDefault": false, "billable": true, "children": [
+          { "name": "Trebuchet Foundation Forging", "billable": true },
+          { "name": "Battering Ram Calibration", "billable": true },
+          { "name": "Signal Fire Network", "billable": true }
+        ]},
+        { "name": "Migrate the Hosts", "isDefault": false, "billable": true, "children": [
+          { "name": "Saxon Legion Roll", "billable": true },
+          { "name": "Mercenary Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Black Knights", "isDefault": false, "billable": true, "children": [
+          { "name": "Border Raid Pen-test", "billable": true },
+          { "name": "Castle Siege Stress", "billable": true }
+        ]},
+        { "name": "Training the Mercenaries", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Conscription", "billable": true },
+          { "name": "Captain's Battle Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "round-table-knights": [
+      { "fullName": "King Arthur",      "themedRole": "Court Mage" },
+      { "fullName": "Sir Lancelot",     "themedRole": "Knight-Captain of the Round Table" },
+      { "fullName": "Sir Gawain",       "themedRole": "Marshal of the Realm" },
+      { "fullName": "Sir Percival",     "themedRole": "Errant Knight of Logres" },
+      { "fullName": "Sir Galahad",      "themedRole": "Castle Smith" },
+      { "fullName": "Sir Bedivere",     "themedRole": "Steward of the Keep" },
+      { "fullName": "Sir Kay",          "themedRole": "Scribe of the Round Table" },
+      { "fullName": "Sir Tristan",      "themedRole": "Court Bard" },
+      { "fullName": "Sir Bors",         "themedRole": "Squire of the Realm" }
+    ],
+    "pendragon-court": [
+      { "fullName": "King Arthur",      "themedRole": "Court Mage" },
+      { "fullName": "Queen Guinevere",  "themedRole": "Herald of Camelot" },
+      { "fullName": "Merlin",           "themedRole": "Master Smith of Excalibur" },
+      { "fullName": "Sir Ector",        "themedRole": "Steward of the Keep" },
+      { "fullName": "Sir Pellinore",    "themedRole": "Errant Knight of Logres" },
+      { "fullName": "Morgan le Fay",    "themedRole": "Bridgekeeper of Avalon" },
+      { "fullName": "Mordred",          "themedRole": "Page of the Court" },
+      { "fullName": "Nimue",            "themedRole": "Drawbridge Engineer" },
+      { "fullName": "Vivien",           "themedRole": "Apprentice of the Drawbridge" }
+    ],
+    "grail-quest": [
+      { "fullName": "Sir Galahad",          "themedRole": "Knight-Captain of the Round Table" },
+      { "fullName": "Sir Percival",         "themedRole": "Marshal of the Realm" },
+      { "fullName": "Sir Bors",             "themedRole": "Errant Knight of Logres" },
+      { "fullName": "Joseph of Arimathea",  "themedRole": "Court Mage" },
+      { "fullName": "the Fisher King",      "themedRole": "Steward of the Keep" },
+      { "fullName": "Bishop Baudwin",       "themedRole": "Herald of Camelot" },
+      { "fullName": "Hermit Naciens",       "themedRole": "Scribe of the Round Table" },
+      { "fullName": "the maiden of the grail", "themedRole": "Banner-Bearer of the King" }
+    ],
+    "enemies-of-camelot": [
+      { "fullName": "Mordred",          "themedRole": "Court Mage" },
+      { "fullName": "Morgan le Fay",    "themedRole": "Bridgekeeper of Avalon" },
+      { "fullName": "King Lot",         "themedRole": "Marshal of the Realm" },
+      { "fullName": "Sir Meliagrant",   "themedRole": "Errant Knight of Logres" },
+      { "fullName": "Sir Turquine",     "themedRole": "Castle Smith" },
+      { "fullName": "Black Knight",     "themedRole": "Tournament Adjudicator" },
+      { "fullName": "the Saxons",       "themedRole": "Squire of the Realm" },
+      { "fullName": "Vortigern",        "themedRole": "Steward of the Keep" },
+      { "fullName": "Accolon",          "themedRole": "Page of the Court" }
+    ]
+  },
+
+  "milestones": {
+    "round-table-knights": [
+      { "name": "The Sword in the Stone",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the rightful king proven and the project chartered." },
+      { "name": "Forging of Excalibur",     "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the king's blade reforged at Avalon." },
+      { "name": "Audience at Camelot",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the Round Table reviews progress in council." },
+      { "name": "Joust at Pentecost",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the great tournament marks the milestone payment." },
+      { "name": "Knighting Ceremony",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: new knights sworn to the order." },
+      { "name": "Captain's Hand-off",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the order entrusted to Sir Lancelot." }
+    ],
+    "pendragon-court": [
+      { "name": "Royal Audience at Camelot","type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the court convened in the throne room." },
+      { "name": "Crowning of the King",     "type": "Operational", "offsetPct": 30,  "description": "Build phase: the crown placed upon Arthur's brow." },
+      { "name": "Wedding at Camelot",       "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the realm united under the royal marriage." },
+      { "name": "Pentecost Feast",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the great feast marks the platform live." },
+      { "name": "Court Recess",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the court adjourns to the summer keep." },
+      { "name": "Treasury Reckoning",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the Chamberlain settles the books." }
+    ],
+    "grail-quest": [
+      { "name": "Vision in the Hall",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Grail appears in vision — the quest is set." },
+      { "name": "Departure from Camelot",   "type": "Operational", "offsetPct": 35,  "description": "Build: the chosen knights ride forth on pilgrimage." },
+      { "name": "Trial at Corbenic",        "type": "Gate",        "offsetPct": 60,  "description": "Solution review at the Fisher King's castle." },
+      { "name": "Beholding of the Grail",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Holy Grail revealed to the worthy." },
+      { "name": "Ascension of Galahad",     "type": "Operational", "offsetPct": 100, "description": "Project close: the purest knight is taken into glory." },
+      { "name": "Final Tithe",              "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the abbey treasury." }
+    ],
+    "enemies-of-camelot": [
+      { "name": "The Shadow Stirs",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery: threat plane online — Morgan's plotting begins." },
+      { "name": "Forge the Cursed Blades",  "type": "Operational", "offsetPct": 35,  "description": "Build: the dark armory deployed." },
+      { "name": "Morgan's Audit",           "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the enchantress herself." },
+      { "name": "Battle of Camlann",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the great battle joined on the western field." },
+      { "name": "Mists of Avalon",          "type": "Operational", "offsetPct": 100, "description": "Project close: the field falls silent, the mists roll in." },
+      { "name": "Spoils Reckoned",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice tallied from the field." }
+    ]
+  },
+
+  "daysOff": {
+    "King Arthur":        [ { "realm": "pendragon-court",      "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Hunt in the Forest Sauvage — pre-arranged royal leave." } ],
+    "Sir Lancelot":       [ { "realm": "round-table-knights",  "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Errand to Joyous Gard — personal business." } ],
+    "Sir Gawain":         [ { "realm": "round-table-knights",  "offsetWeeks": 12, "numberOfDays": 2, "notes": "Pilgrimage to the Green Chapel — annual obligation." } ],
+    "Sir Percival":       [ { "realm": "grail-quest",          "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Visit to mother in the Welsh wilderness." } ],
+    "Sir Galahad":        [ { "realm": "grail-quest",          "offsetWeeks": 14, "numberOfDays": 2, "notes": "Vigil and fast at the Abbey of the White Friars." } ],
+    "Sir Bedivere":       [ { "realm": "round-table-knights",  "offsetWeeks": 18, "numberOfDays": 3, "notes": "Lakeside watch — quarterly vigil at the Lady's mere." } ],
+    "Queen Guinevere":    [ { "realm": "pendragon-court",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Maying festival in the meadows of Carlisle." } ],
+    "Merlin":             [ { "realm": "pendragon-court",      "offsetWeeks": 14, "numberOfDays": 5, "notes": "Retreat to the crystal cave — prophetic meditation." } ],
+    "Morgan le Fay":      [ { "realm": "enemies-of-camelot",   "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Sabbatical at the Castle of Maidens — sorcery refresher." } ],
+    "Mordred":            [ { "realm": "enemies-of-camelot",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Plotting weekend at Orkney — strictly personal." } ],
+    "Nimue":              [ { "realm": "pendragon-court",      "offsetWeeks": 16, "numberOfDays": 3, "notes": "Lake of Avalon — quarterly water rites." } ],
+    "Joseph of Arimathea":[ { "realm": "grail-quest",          "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Pilgrimage to Glastonbury Tor — founding rites." } ],
+    "the Fisher King":    [ { "realm": "grail-quest",          "offsetWeeks": 16, "numberOfDays": 2, "notes": "Convalescence at Corbenic — old wound flares." } ],
+    "Black Knight":       [ { "realm": "enemies-of-camelot",   "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Bridge maintenance — ford toll booth repairs." } ],
+    "Vortigern":          [ { "realm": "enemies-of-camelot",   "offsetWeeks": 16, "numberOfDays": 4, "notes": "Tower foundation inspection — the dragons stir below." } ]
+  }
+}

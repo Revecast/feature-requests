@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "key": "IndianaJones",
+  "displayName": "Indiana Jones",
+  "category": "Pop Culture",
+  "emailDomain": "marshall-college.test",
+  "account": {
+    "name": "Indiana Jones Universe (Test Data)",
+    "accountNumber": "PSA-TEST-INDIANAJONES"
+  },
+  "mailingAddress": {
+    "street": "Marshall College, 12 Archaeology Hall",
+    "city": "Bedford",
+    "state": "CT",
+    "postalCode": "06801",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Chair of Archaeology",          "canonical": "Solution Architect",                      "description": "Tenured scholar who designs the over-arching expedition plan and safeguards its scholarly integrity." },
+    { "name": "Expedition Leader",             "canonical": "Project Manager",                         "description": "Marshals the field team, holds the timeline, and answers to the museum board." },
+    { "name": "Curator of the Catalogue",      "canonical": "Salesforce Administrator",               "description": "Steward of every artifact record, layout, field, and permission set." },
+    { "name": "Master Cryptologist",           "canonical": "Salesforce Developer",                    "description": "Decodes ancient scripts and forges Apex, LWC, and platform features for the dig." },
+    { "name": "Dean of American Antiquities",  "canonical": "Salesforce Practice Lead - USA",          "description": "Captain of the New England research circuit — sets standards and mentors the senior fellows." },
+    { "name": "Senior Field Archaeologist",    "canonical": "Salesforce Senior Consultant - India",    "description": "Leads survey grids and translates the customer's wishes into trenches and finds." },
+    { "name": "Junior Field Archaeologist",    "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration into the field under the senior's eye." },
+    { "name": "Bridgemaster of the Mine Cars", "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — APIs, events, and rope bridges alike." },
+    { "name": "Senior Bridge Engineer",        "canonical": "Integration Senior Consultant - India",   "description": "Lays the rivets of API, middleware, and event flows under the Bridgemaster's plan." },
+    { "name": "Apprentice Bridge Engineer",    "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the snake-pit patterns of error handling." },
+    { "name": "Conservator of the Vaults",     "canonical": "QA Engineer",                             "description": "Tests every relic before display — finds the curses and cracks before they reach the public exhibit." },
+    { "name": "Director of Public Outreach",   "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for the museum's discoveries — leads all marketing craft for the expedition." },
+    { "name": "Senior Curator of Exhibits",    "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather visitors and donors." },
+    { "name": "Exhibit Designer",              "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily exhibit signage." },
+    { "name": "Field Notes Scribe",            "canonical": "Business Analyst",                        "description": "Records every field journal entry — translates between the curator and the cryptologist's craft." },
+    { "name": "Master Tomb Engineer",          "canonical": "Salesforce Senior Developer - USA",       "description": "The senior dwarf-of-the-deep — engineers traps, pressure plates, and complex platform mechanics." },
+    { "name": "Trail-Hand Surveyor",           "canonical": "Junior Salesforce Consultant - India",    "description": "Earliest of the dig team — totes the theodolite, runs the chain, and learns the trade in the dust." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "raiders-lost-ark",
+      "projectName": "Raiders of the Lost Ark — Tanis Excavation Platform",
+      "shortName": "Raiders TEP",
+      "subAccountName": "Tanis Expedition Society",
+      "subAccountNumber": "PSA-TEST-INDIANAJONES-RAIDERS-LOST-ARK",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Marshall College Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Headpiece Reading", "isDefault": false, "billable": true, "children": [
+          { "name": "Headpiece of Ra Translation", "billable": true },
+          { "name": "Map Room Survey — Tanis", "billable": true },
+          { "name": "Sallah Coordination", "billable": true }
+        ]},
+        { "name": "Excavate the Well of Souls", "isDefault": false, "billable": true, "children": [
+          { "name": "Shaft Foundation Stones", "billable": true },
+          { "name": "Snake Mitigation Plan", "billable": true },
+          { "name": "Ark Crating & Lift", "billable": true }
+        ]},
+        { "name": "Migrate the Catalogue", "isDefault": false, "billable": true, "children": [
+          { "name": "Field Journal Inventory", "billable": true },
+          { "name": "Hieroglyph Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Pan-American", "isDefault": false, "billable": true, "children": [
+          { "name": "Flying Wing Stress Test", "billable": true },
+          { "name": "Truck Convoy Drill (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Museum Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Top Men Onboarding", "billable": true },
+          { "name": "Marcus Brody's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "temple-of-doom",
+      "projectName": "Temple of Doom — Sankara Stones Recovery",
+      "shortName": "Temple SSR",
+      "subAccountName": "Pankot Palace Recovery Mission",
+      "subAccountNumber": "PSA-TEST-INDIANAJONES-TEMPLE-OF-DOOM",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Mayapore Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Village Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Sankara Stone Provenance", "billable": true },
+          { "name": "Village Headman Briefing", "billable": true },
+          { "name": "Pankot Palace Recon", "billable": true }
+        ]},
+        { "name": "Build the Mine Cart Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Track Foundation Laying", "billable": true },
+          { "name": "Cart Brake Engineering", "billable": true },
+          { "name": "Tunnel Lighting Rig", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Texts", "isDefault": false, "billable": true, "children": [
+          { "name": "Thuggee Manuscript Catalog", "billable": true },
+          { "name": "Sanskrit Translation", "billable": true }
+        ]},
+        { "name": "Testing on the Rope Bridge", "isDefault": false, "billable": true, "children": [
+          { "name": "Tensile Snap Trial", "billable": true },
+          { "name": "Crocodile Pit Verification (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Palace Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Drill", "billable": true },
+          { "name": "Captain Blumburtt's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "last-crusade",
+      "projectName": "Last Crusade — Holy Grail Knowledge Base",
+      "shortName": "Crusade HGKB",
+      "subAccountName": "Brotherhood of the Cruciform Sword",
+      "subAccountNumber": "PSA-TEST-INDIANAJONES-LAST-CRUSADE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Venice Library Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Grail Diary", "isDefault": false, "billable": true, "children": [
+          { "name": "Henry Sr.'s Diary Review", "billable": true },
+          { "name": "Catacomb Survey — Venice", "billable": true },
+          { "name": "Brotherhood Liaison", "billable": true }
+        ]},
+        { "name": "Build the Three Trials", "isDefault": false, "billable": true, "children": [
+          { "name": "Breath of God Calibration", "billable": true },
+          { "name": "Word of God Tile-Stepper", "billable": true },
+          { "name": "Path of God Leap of Faith Bridge", "billable": true }
+        ]},
+        { "name": "Migrate the Library", "isDefault": false, "billable": true, "children": [
+          { "name": "Marcus Brody Catalog Sync", "billable": true },
+          { "name": "Latin Manuscript Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Canyon of the Crescent Moon", "isDefault": false, "billable": true, "children": [
+          { "name": "Tank Pursuit Stress", "billable": true },
+          { "name": "Zeppelin Escape Drill (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Faithful", "isDefault": false, "billable": true, "children": [
+          { "name": "Pilgrim Onboarding", "billable": true },
+          { "name": "Knight Templar Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "kingdom-crystal-skull-and-dial",
+      "projectName": "Crystal Skull & Dial of Destiny — Akator Time Platform",
+      "shortName": "Akator ATP",
+      "subAccountName": "Akator-Syracuse Joint Venture",
+      "subAccountNumber": "PSA-TEST-INDIANAJONES-KINGDOM-CRYSTAL-SKULL-AND-DIAL",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Marshall College Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Antikythera Reading", "isDefault": false, "billable": true, "children": [
+          { "name": "Crystal Skull Calibration", "billable": true },
+          { "name": "Antikythera Half-Dial Survey", "billable": true },
+          { "name": "Oxley Field Notes Review", "billable": true }
+        ]},
+        { "name": "Build the Akator Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Temple Foundation Stones", "billable": true },
+          { "name": "Crystal Throne Assembly", "billable": true },
+          { "name": "Inter-dimensional Portal Wiring", "billable": true }
+        ]},
+        { "name": "Migrate the Cold War Archive", "isDefault": false, "billable": true, "children": [
+          { "name": "Hangar 51 Crate Inventory", "billable": true },
+          { "name": "Soviet Cipher Translation", "billable": true }
+        ]},
+        { "name": "Testing the Time Fissure", "isDefault": false, "billable": true, "children": [
+          { "name": "Syracuse 212 BC Jump Trial", "billable": true },
+          { "name": "Tuk-Tuk Chase Drill (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Next Generation", "isDefault": false, "billable": true, "children": [
+          { "name": "Mutt's Greaser Onboarding", "billable": true },
+          { "name": "Helena's Auction-Hall Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "raiders-lost-ark": [
+      { "fullName": "Indiana Jones",        "themedRole": "Chair of Archaeology" },
+      { "fullName": "Marion Ravenwood",     "themedRole": "Curator of the Catalogue" },
+      { "fullName": "Dr. Marcus Brody",     "themedRole": "Dean of American Antiquities" },
+      { "fullName": "Sallah",               "themedRole": "Expedition Leader" },
+      { "fullName": "Belloq",               "themedRole": "Master Cryptologist" },
+      { "fullName": "Major Toht",           "themedRole": "Senior Bridge Engineer" },
+      { "fullName": "Colonel Dietrich",     "themedRole": "Master Tomb Engineer" }
+    ],
+    "temple-of-doom": [
+      { "fullName": "Indiana Jones",        "themedRole": "Chair of Archaeology" },
+      { "fullName": "Willie Scott",         "themedRole": "Director of Public Outreach" },
+      { "fullName": "Short Round",          "themedRole": "Trail-Hand Surveyor" },
+      { "fullName": "Mola Ram",             "themedRole": "Master Cryptologist" },
+      { "fullName": "Chattar Lal",          "themedRole": "Field Notes Scribe" },
+      { "fullName": "Captain Blumburtt",    "themedRole": "Expedition Leader" },
+      { "fullName": "Lao Che",              "themedRole": "Senior Curator of Exhibits" }
+    ],
+    "last-crusade": [
+      { "fullName": "Indiana Jones",        "themedRole": "Chair of Archaeology" },
+      { "fullName": "Henry Jones Sr.",      "themedRole": "Dean of American Antiquities" },
+      { "fullName": "Marcus Brody",         "themedRole": "Curator of the Catalogue" },
+      { "fullName": "Sallah",               "themedRole": "Expedition Leader" },
+      { "fullName": "Dr. Elsa Schneider",   "themedRole": "Senior Field Archaeologist" },
+      { "fullName": "Walter Donovan",       "themedRole": "Bridgemaster of the Mine Cars" },
+      { "fullName": "Colonel Vogel",        "themedRole": "Master Tomb Engineer" }
+    ],
+    "kingdom-crystal-skull-and-dial": [
+      { "fullName": "Indiana Jones",        "themedRole": "Chair of Archaeology" },
+      { "fullName": "Mutt Williams",        "themedRole": "Junior Field Archaeologist" },
+      { "fullName": "Marion Ravenwood",     "themedRole": "Curator of the Catalogue" },
+      { "fullName": "Irina Spalko",         "themedRole": "Master Cryptologist" },
+      { "fullName": "Professor Oxley",      "themedRole": "Field Notes Scribe" },
+      { "fullName": "Helena Shaw",          "themedRole": "Senior Field Archaeologist" },
+      { "fullName": "Dr. Voller",           "themedRole": "Master Tomb Engineer" },
+      { "fullName": "Klaber",               "themedRole": "Apprentice Bridge Engineer" },
+      { "fullName": "Renaldo",              "themedRole": "Conservator of the Vaults" }
+    ]
+  },
+
+  "milestones": {
+    "raiders-lost-ark": [
+      { "name": "Headpiece Authenticated",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Marion's medallion verified at Marshall College." },
+      { "name": "Map Room Sun Strike",       "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the staff of Ra casts its beam on the model city." },
+      { "name": "Well of Souls Opened",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: shaft excavation reviewed and signed off." },
+      { "name": "Cairo Bazaar Diversion",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feint through the bazaar to draw the Nazis off." },
+      { "name": "Ark Delivered to Washington","type": "Delivery",   "offsetPct": 95,  "description": "Go-Live: the Ark crated and shipped to the Top Men." },
+      { "name": "Top Men Hand-off",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Warehouse 51 stewardship transferred." }
+    ],
+    "temple-of-doom": [
+      { "name": "Nightclub Hand-off",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: diamond and antidote exchanged at Club Obi Wan." },
+      { "name": "Crash-Land at Mayapore",    "type": "Operational", "offsetPct": 25,  "description": "Build phase begins: raft-landing in the Indian foothills." },
+      { "name": "Sankara Stones Recovered",  "type": "Gate",        "offsetPct": 55,  "description": "UAT gate: the three glowing stones in hand." },
+      { "name": "Mine Cart Escape Run",      "type": "Operational", "offsetPct": 75,  "description": "Stress drill: full run of the mine cart network under load." },
+      { "name": "Rope Bridge Severed",       "type": "Billing",     "offsetPct": 90,  "description": "Phase invoice trigger: Mola Ram and the Thuggees cut loose." },
+      { "name": "Stones Returned to Mayapore","type": "Delivery",   "offsetPct": 100, "description": "Go-Live: village restored, children home, hyper-care begins." }
+    ],
+    "last-crusade": [
+      { "name": "Cross of Coronado Recovered","type": "Gate",       "offsetPct": 5,   "description": "Discovery: the cross finally where it belongs — in a museum." },
+      { "name": "Catacombs Beneath Venice",  "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: rats, oil, and the Knight's tomb located." },
+      { "name": "Brunwald Castle Rescue",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Henry Sr. retrieved, diary recovered." },
+      { "name": "Berlin Diary Reclaimed",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: autograph from the Führer secured." },
+      { "name": "Three Trials Cleared",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Breath, Word, and Path of God all passed." },
+      { "name": "Ride into the Sunset",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Grail left in the Canyon, team rides west." }
+    ],
+    "kingdom-crystal-skull-and-dial": [
+      { "name": "Hangar 51 Break-In",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Soviets crash the warehouse, kickoff forced." },
+      { "name": "Oxley Field Notes Decoded", "type": "Operational", "offsetPct": 30,  "description": "Build phase: the riddle of Akator translated." },
+      { "name": "Antikythera Half-Dial Found","type": "Gate",       "offsetPct": 50,  "description": "Mid-project gate: Helena delivers the second half of the Dial." },
+      { "name": "Tuk-Tuk Chase Through Tangier","type": "Operational","offsetPct": 70,"description": "Stress drill: full pursuit through the medina under live fire." },
+      { "name": "Akator Temple Revealed",    "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the crystal throne returns to its rightful place." },
+      { "name": "Marshall College Reinstatement","type": "Billing", "offsetPct": 100, "description": "Final invoice: tenured chair restored, retirement deferred." }
+    ]
+  },
+
+  "daysOff": {
+    "Indiana Jones":      [ { "realm": "raiders-lost-ark", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Snake-bite recovery — refuses to discuss." } ],
+    "Marion Ravenwood":   [ { "realm": "raiders-lost-ark", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Reopening The Raven in Nepal — annual ledger close." } ],
+    "Dr. Marcus Brody":   [ { "realm": "raiders-lost-ark", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Lost in his own museum again — staff sent search party." } ],
+    "Sallah":             [ { "realm": "last-crusade",     "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Family time in Cairo — many, many children." } ],
+    "Short Round":        [ { "realm": "temple-of-doom",   "offsetWeeks": 5,  "numberOfDays": 2, "notes": "Driving practice — Dr. Jones said he is ready." } ],
+    "Willie Scott":       [ { "realm": "temple-of-doom",   "offsetWeeks": 10, "numberOfDays": 3, "notes": "Shanghai cabaret booking — contractual." } ],
+    "Henry Jones Sr.":    [ { "realm": "last-crusade",     "offsetWeeks": 12, "numberOfDays": 5, "notes": "Library research in Oxford — do NOT call him 'Junior'." } ],
+    "Dr. Elsa Schneider": [ { "realm": "last-crusade",     "offsetWeeks": 16, "numberOfDays": 2, "notes": "Austrian alpine retreat — 'belongs in a museum' conference." } ],
+    "Mutt Williams":      [ { "realm": "kingdom-crystal-skull-and-dial", "offsetWeeks": 6, "numberOfDays": 2, "notes": "Motorcycle tune-up — greaser jamboree." } ],
+    "Helena Shaw":        [ { "realm": "kingdom-crystal-skull-and-dial", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Tangier auction circuit — strictly above board." } ],
+    "Professor Oxley":    [ { "realm": "kingdom-crystal-skull-and-dial", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Recuperation — extended exposure to crystal skull." } ],
+    "Belloq":             [ { "realm": "raiders-lost-ark", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Sorbonne guest lecture — 'shadowy reflection' keynote." } ],
+    "Mola Ram":           [ { "realm": "temple-of-doom",   "offsetWeeks": 16, "numberOfDays": 1, "notes": "Annual Kali devotional fast — no calls." } ],
+    "Walter Donovan":     [ { "realm": "last-crusade",     "offsetWeeks": 18, "numberOfDays": 3, "notes": "Wine country tour — 'choosing wisely' workshop." } ],
+    "Marion Ravenwood (Crystal Skull)":[ { "realm": "kingdom-crystal-skull-and-dial", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Wedding planning — Indy's tuxedo fitting." } ]
+  }
+}
