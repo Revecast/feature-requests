@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "key": "Spongebob",
+  "displayName": "SpongeBob SquarePants",
+  "category": "Animation",
+  "emailDomain": "bikinibottom.test",
+  "account": {
+    "name": "Bikini Bottom (Test Data)",
+    "accountNumber": "PSA-TEST-SPONGEBOB"
+  },
+  "mailingAddress": {
+    "street": "124 Conch Street",
+    "city": "Bikini Bottom",
+    "state": "Pacific Ocean",
+    "postalCode": "BB-0001",
+    "country": "Bikini Atoll"
+  },
+
+  "roles": [
+    { "name": "Master Fry Cook",                 "canonical": "Solution Architect",                    "description": "Architect of the perfect Krabby Patty stack — designs the over-arching solution and guards the secret formula." },
+    { "name": "Krusty Krab Manager",             "canonical": "Project Manager",                       "description": "Wrangles the crew, the timeline, and the cash register — answers to Mr. Krabs." },
+    { "name": "Register Keeper",                 "canonical": "Salesforce Administrator",              "description": "Tends fields, layouts, and permissions like a clean cash drawer at end of shift." },
+    { "name": "Grill-Side Engineer",             "canonical": "Salesforce Developer",                  "description": "Forges Apex and LWC at the hot grill — turns out features at lunch-rush pace." },
+    { "name": "Head Chef of the West Reef",      "canonical": "Salesforce Practice Lead - USA",        "description": "Senior galley boss across the reef — sets the standard and trains the next round of cooks." },
+    { "name": "Senior Reef Consultant",          "canonical": "Salesforce Senior Consultant - India",  "description": "Veteran of many a lunch rush — leads complex configuration with calm fins." },
+    { "name": "Reef Apprentice Consultant",      "canonical": "Salesforce Consultant - India",         "description": "Hustles between tickets and tables — carries discovery and config under the senior chef's eye." },
+    { "name": "Pneumatic Tube Architect",        "canonical": "Integration Technical Architect - USA", "description": "Designs the great pneumatic tubes between Krusty Krab POS and the realms beyond." },
+    { "name": "Senior Tube Engineer",            "canonical": "Integration Senior Consultant - India", "description": "Lays the brass piping of APIs, middleware, and event flows under the Tube Architect's plan." },
+    { "name": "Apprentice Tube Engineer",        "canonical": "Integration Consultant - India",        "description": "Learns the craft — webhooks, batch jobs, callouts, and the proper cleanup of leaky valves." },
+    { "name": "Health Inspector",                "canonical": "QA Engineer",                           "description": "Sniffs out bugs before they reach the customer — keeps the kitchen squeaky clean." },
+    { "name": "Bikini Bottom Crier",             "canonical": "Marketing Practice Lead",               "description": "Lifts the megaphone for product and message — leads all marketing voyages." },
+    { "name": "Senior Billboard Strategist",     "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — plots the placement of every neon sign on Conch Street." },
+    { "name": "Flyer Distribution Specialist",   "canonical": "Marketing Consultant",                  "description": "Carries the campaign to every mailbox and pineapple in town." },
+    { "name": "Order-Taker Analyst",             "canonical": "Business Analyst",                      "description": "Takes the order, repeats it back, and writes it down so the cook gets it right the first time." },
+    { "name": "Senior Grill Foreman",            "canonical": "Salesforce Senior Developer - USA",     "description": "Veteran USA-side cook — owns the most complex Apex and the deep grill." },
+    { "name": "Junior Reef Cook",                "canonical": "Junior Salesforce Consultant - India",  "description": "Newest hand on deck — learns the menu, the platform, and the crew." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "krusty-krab",
+      "projectName": "Krusty Krab — Patty Operations CRM",
+      "shortName": "KK Patty Ops",
+      "subAccountName": "The Krusty Krab",
+      "subAccountNumber": "PSA-TEST-SPONGEBOB-KRUSTYKRAB",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Krusty Krab Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Menu Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Krabby Patty Recipe Review", "billable": true },
+          { "name": "Customer Line Observation", "billable": true },
+          { "name": "Mr. Krabs Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Order Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Order Window Wiring", "billable": true },
+          { "name": "Grill Ticket Tooling", "billable": true },
+          { "name": "Cash Register Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Recipe Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Secret Formula Inventory", "billable": true },
+          { "name": "Old Receipt Conversion", "billable": true }
+        ]},
+        { "name": "Testing the Lunch Rush", "isDefault": false, "billable": true, "children": [
+          { "name": "Friday Rush Drill (UAT)", "billable": true },
+          { "name": "Krabby Patty Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "New Hire Orientation", "billable": true },
+          { "name": "Manager Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "chum-bucket",
+      "projectName": "Chum Bucket — Karen-Powered Customer Acquisition",
+      "shortName": "CB Karen CRM",
+      "subAccountName": "The Chum Bucket",
+      "subAccountNumber": "PSA-TEST-SPONGEBOB-CHUMBUCKET",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Chum Bucket Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Espionage", "isDefault": false, "billable": true, "children": [
+          { "name": "Krusty Krab Recon", "billable": true },
+          { "name": "Customer Sentiment Probe", "billable": true },
+          { "name": "Plankton Master Plan Drafting", "billable": true }
+        ]},
+        { "name": "Build the Karen Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Mainframe Foundation", "billable": true },
+          { "name": "Voice Module Calibration", "billable": true },
+          { "name": "Robot Minion Assembly", "billable": true }
+        ]},
+        { "name": "Migrate the Schemes", "isDefault": false, "billable": true, "children": [
+          { "name": "Failed Plan Archive", "billable": true },
+          { "name": "Bucket Helmet Catalog", "billable": true }
+        ]},
+        { "name": "Testing the Trap", "isDefault": false, "billable": true, "children": [
+          { "name": "Lure Effectiveness Trial", "billable": true },
+          { "name": "Mind-Control Helmet QA", "billable": true }
+        ]},
+        { "name": "Training the Minions", "isDefault": false, "billable": true, "children": [
+          { "name": "Minion Boot Camp", "billable": true },
+          { "name": "Karen's Operating Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "jellyfish-fields",
+      "projectName": "Jellyfish Fields — Wildlife Monitoring Platform",
+      "shortName": "JF Wildlife",
+      "subAccountName": "Jellyfish Fields Reserve",
+      "subAccountNumber": "PSA-TEST-SPONGEBOB-JELLYFISHFIELDS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Jellyfish Fields Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Habitat Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Jellyfish Migration Tracking", "billable": true },
+          { "name": "Meadow Soil Sampling", "billable": true },
+          { "name": "Sandy's Field Briefing", "billable": true }
+        ]},
+        { "name": "Build the Observation Net", "isDefault": false, "billable": true, "children": [
+          { "name": "Boating School Outpost Setup", "billable": true },
+          { "name": "Sensor Net Deployment", "billable": true },
+          { "name": "Treedome Data Relay", "billable": true }
+        ]},
+        { "name": "Migrate the Naturalist Logs", "isDefault": false, "billable": true, "children": [
+          { "name": "Patchy's Pirate Field Notes", "billable": true },
+          { "name": "Old Bubble Buddy Photos", "billable": true }
+        ]},
+        { "name": "Testing the Reserve", "isDefault": false, "billable": true, "children": [
+          { "name": "Sting-Resistance Drill (UAT)", "billable": true },
+          { "name": "Net-Catch Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Rangers", "isDefault": false, "billable": true, "children": [
+          { "name": "Mrs. Puff's Boating Refresher", "billable": true },
+          { "name": "Naturalist Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "atlantis-flying-dutchman",
+      "projectName": "Atlantis & Flying Dutchman — Legacy Realms Integration",
+      "shortName": "AFD Legacy",
+      "subAccountName": "Atlantis & the Flying Dutchman",
+      "subAccountNumber": "PSA-TEST-SPONGEBOB-ATLANTISFLYINGDUTCHMAN",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Atlantean Court Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Royal Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Treasure Vault Inventory", "billable": true },
+          { "name": "Ghostly Account Probe", "billable": true },
+          { "name": "King Neptune's Council", "billable": true }
+        ]},
+        { "name": "Build the Trident Stack", "isDefault": false, "billable": true, "children": [
+          { "name": "Atlantean Pillar Foundation", "billable": true },
+          { "name": "Spectral Ship Wiring", "billable": true },
+          { "name": "Crown Jewel Data Layer", "billable": true }
+        ]},
+        { "name": "Migrate the Ancient Scrolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Lost-City Manuscript Catalog", "billable": true },
+          { "name": "Cursed Ledger Conversion", "billable": true }
+        ]},
+        { "name": "Testing the Haunting", "isDefault": false, "billable": true, "children": [
+          { "name": "Ghost-Trigger Penetration Test", "billable": true },
+          { "name": "Tidal Wave Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Royal Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Atlantean Citizen Onboarding", "billable": true },
+          { "name": "Spectral Crew Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "krusty-krab": [
+      { "fullName": "SpongeBob SquarePants", "themedRole": "Master Fry Cook" },
+      { "fullName": "Squidward Tentacles",   "themedRole": "Order-Taker Analyst" },
+      { "fullName": "Eugene H. Krabs",       "themedRole": "Krusty Krab Manager" },
+      { "fullName": "Pearl Krabs",           "themedRole": "Flyer Distribution Specialist" },
+      { "fullName": "Jim the Original Fry Cook", "themedRole": "Head Chef of the West Reef" },
+      { "fullName": "Patrick Star",          "themedRole": "Junior Reef Cook" },
+      { "fullName": "Mark Coburn",           "themedRole": "Master Fry Cook" }
+    ],
+    "chum-bucket": [
+      { "fullName": "Sheldon J. Plankton",   "themedRole": "Master Fry Cook" },
+      { "fullName": "Karen Plankton",        "themedRole": "Pneumatic Tube Architect" },
+      { "fullName": "Computer Wife Minion Alpha", "themedRole": "Senior Tube Engineer" },
+      { "fullName": "Computer Wife Minion Beta",  "themedRole": "Apprentice Tube Engineer" },
+      { "fullName": "Computer Wife Minion Gamma", "themedRole": "Junior Reef Cook" },
+      { "fullName": "Computer Wife Minion Delta", "themedRole": "Health Inspector" },
+      { "fullName": "Computer Wife Minion Epsilon", "themedRole": "Register Keeper" }
+    ],
+    "jellyfish-fields": [
+      { "fullName": "Patrick Star",          "themedRole": "Reef Apprentice Consultant" },
+      { "fullName": "Sandy Cheeks",          "themedRole": "Senior Grill Foreman" },
+      { "fullName": "Mrs. Puff",             "themedRole": "Senior Reef Consultant" },
+      { "fullName": "Patchy the Pirate",     "themedRole": "Bikini Bottom Crier" },
+      { "fullName": "French Narrator",       "themedRole": "Senior Billboard Strategist" },
+      { "fullName": "SpongeBob SquarePants", "themedRole": "Grill-Side Engineer" },
+      { "fullName": "Squidward Tentacles",   "themedRole": "Order-Taker Analyst" }
+    ],
+    "atlantis-flying-dutchman": [
+      { "fullName": "Flying Dutchman",       "themedRole": "Master Fry Cook" },
+      { "fullName": "King Neptune",          "themedRole": "Head Chef of the West Reef" },
+      { "fullName": "Mindy",                 "themedRole": "Krusty Krab Manager" },
+      { "fullName": "Atlantean Jones",       "themedRole": "Pneumatic Tube Architect" },
+      { "fullName": "Old Man Jenkins",       "themedRole": "Senior Reef Consultant" },
+      { "fullName": "Patrick Star",          "themedRole": "Junior Reef Cook" },
+      { "fullName": "SpongeBob SquarePants", "themedRole": "Grill-Side Engineer" }
+    ]
+  },
+
+  "milestones": {
+    "krusty-krab": [
+      { "name": "Open the Order Window",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the doors swing open for the morning crowd." },
+      { "name": "Forge the Spatula",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the master spatula is forged for the grill." },
+      { "name": "Mr. Krabs' Coin Audit",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: every penny accounted for under Krabs' watchful eye." },
+      { "name": "Friday Rush Invoice",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Friday's takings tallied and billed." },
+      { "name": "Employee of the Month",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: SpongeBob earns the plaque once again." },
+      { "name": "Closing Time Hand-off",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: keys handed to Squidward for the night shift." }
+    ],
+    "chum-bucket": [
+      { "name": "Plankton's Master Plan",    "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the latest scheme is unveiled to Karen." },
+      { "name": "Karen Boots Up",            "type": "Operational", "offsetPct": 30,  "description": "Build phase: the mainframe hums to life." },
+      { "name": "Recipe Heist Rehearsal",    "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: dry-run of the Krabby Patty formula heist." },
+      { "name": "Chum Bucket Grand Opening", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the doors open and the customers... arrive." },
+      { "name": "Karen's Quiet Reboot",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Karen back to standby." },
+      { "name": "Final Scheme Invoice",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Chum Bucket — bill the Krabs anyway." }
+    ],
+    "jellyfish-fields": [
+      { "name": "First Net Cast",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: jellyfish census begins at dawn." },
+      { "name": "Treedome Sensor Online",    "type": "Operational", "offsetPct": 35,  "description": "Build: Sandy's treedome relay broadcasting." },
+      { "name": "Sandy's Field Review",      "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the resident scientist." },
+      { "name": "Wildlife Reserve Opens",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the reserve welcomes its first naturalist tour." },
+      { "name": "Migration Season Close",    "type": "Operational", "offsetPct": 100, "description": "Project close: the jellyfish move on to deeper meadows." },
+      { "name": "Reserve Funding Invoice",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the conservation board." }
+    ],
+    "atlantis-flying-dutchman": [
+      { "name": "Royal Audience",            "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: an audience with King Neptune in his throne room." },
+      { "name": "Trident Calibration",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: the king's trident tuned to the new platform." },
+      { "name": "Ghost Ship Boarding",       "type": "Operational", "offsetPct": 55,  "description": "Build: the Flying Dutchman's manifests linked into the stack." },
+      { "name": "Atlantean Acceptance",      "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: gifts of the realm bestowed on each crew member." },
+      { "name": "Crowning of the New System","type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the realms join the modern age." },
+      { "name": "Royal Recompense",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid in pearls and doubloons." }
+    ]
+  },
+
+  "daysOff": {
+    "SpongeBob SquarePants": [ { "realm": "krusty-krab",              "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Jellyfishing trip with Patrick — long-planned." } ],
+    "Patrick Star":          [ { "realm": "jellyfish-fields",         "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Under-the-rock nap — uninterruptible." } ],
+    "Squidward Tentacles":   [ { "realm": "krusty-krab",              "offsetWeeks": 12, "numberOfDays": 4, "notes": "Clarinet recital at the Bikini Bottom Conservatory." } ],
+    "Eugene H. Krabs":       [ { "realm": "krusty-krab",              "offsetWeeks": 18, "numberOfDays": 1, "notes": "Annual coin-counting day — strictly observed." } ],
+    "Pearl Krabs":           [ { "realm": "krusty-krab",              "offsetWeeks": 14, "numberOfDays": 2, "notes": "Mall day with the girls — non-negotiable." } ],
+    "Sandy Cheeks":          [ { "realm": "jellyfish-fields",         "offsetWeeks": 10, "numberOfDays": 3, "notes": "Texas Rodeo — riding home for the weekend." } ],
+    "Mrs. Puff":             [ { "realm": "jellyfish-fields",         "offsetWeeks": 16, "numberOfDays": 5, "notes": "Boating-school recovery — yet another crash." } ],
+    "Sheldon J. Plankton":   [ { "realm": "chum-bucket",              "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Evil-genius retreat — strategy with Karen." } ],
+    "Karen Plankton":        [ { "realm": "chum-bucket",              "offsetWeeks": 12, "numberOfDays": 2, "notes": "Mainframe maintenance — quarterly defrag." } ],
+    "Patchy the Pirate":     [ { "realm": "jellyfish-fields",         "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Pirate convention — Encino chapter." } ],
+    "French Narrator":       [ { "realm": "jellyfish-fields",         "offsetWeeks": 14, "numberOfDays": 2, "notes": "Recording sabbatical — a documentary on land." } ],
+    "Flying Dutchman":       [ { "realm": "atlantis-flying-dutchman", "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Haunting tour of the seven seas — annual." } ],
+    "King Neptune":          [ { "realm": "atlantis-flying-dutchman", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Royal court ceremonial duties." } ],
+    "Mindy":                 [ { "realm": "atlantis-flying-dutchman", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Mermaid envoy mission to Bikini Bottom." } ],
+    "Old Man Jenkins":       [ { "realm": "atlantis-flying-dutchman", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Doctor's appointment — confused as usual." } ]
+  }
+}

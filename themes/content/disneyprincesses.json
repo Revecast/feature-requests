@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "key": "DisneyPrincesses",
+  "displayName": "Disney Princesses",
+  "category": "Animation",
+  "emailDomain": "disney-realms.test",
+  "account": {
+    "name": "Disney Princess Realms (Test Data)",
+    "accountNumber": "PSA-TEST-DISNEYPRINCESSES"
+  },
+  "mailingAddress": {
+    "street": "1 Castle Way",
+    "city": "Magic Kingdom",
+    "state": "FL",
+    "postalCode": "32830",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Royal Architect of the Castle",        "canonical": "Solution Architect",                       "description": "Designs the grand halls of the Salesforce solution — keeps the towers from toppling." },
+    { "name": "Captain of the Royal Guard",           "canonical": "Project Manager",                          "description": "Marshals the kingdom's heroes, holds the schedule, and answers to the crown." },
+    { "name": "Keeper of the Royal Decrees",          "canonical": "Salesforce Administrator",                 "description": "Steward of records, layouts, fields, and permission sets across all kingdoms." },
+    { "name": "Master Enchanter of Code",             "canonical": "Salesforce Developer",                     "description": "Weaves Apex spells, conjures LWCs, and forges automation magic." },
+    { "name": "Grand Vizier of Salesforce",           "canonical": "Salesforce Practice Lead - USA",           "description": "Counsel to the throne — sets the standard for all Salesforce craft in the realm." },
+    { "name": "Senior Royal Sage",                    "canonical": "Salesforce Senior Consultant - India",     "description": "A seasoned advisor who guides the journey through customer requirements." },
+    { "name": "Apprentice Sage of the Court",         "canonical": "Salesforce Consultant - India",            "description": "Learns the craft of configuration and discovery under the Senior Sage's wing." },
+    { "name": "Bridge Master of the Enchanted Realms","canonical": "Integration Technical Architect - USA",   "description": "Architect of the magical bridges between Salesforce and the kingdoms beyond." },
+    { "name": "Senior Bridge Weaver",                 "canonical": "Integration Senior Consultant - India",    "description": "Lays the enchanted stones of API and middleware under the Bridge Master's plan." },
+    { "name": "Junior Bridge Weaver",                 "canonical": "Integration Consultant - India",           "description": "Begins the apprenticeship of webhooks, batch jobs, and callout charms." },
+    { "name": "Royal Tester of Potions",              "canonical": "QA Engineer",                              "description": "Tastes every spell before it reaches the princess — finds the bitter notes early." },
+    { "name": "Royal Herald of the Kingdom",          "canonical": "Marketing Practice Lead",                  "description": "Lifts the banner and trumpet for the kingdom's message — leads all marketing craft." },
+    { "name": "Senior Town Crier",                    "canonical": "Marketing Senior Consultant",              "description": "Strategist of campaigns — sounds the call across the village square." },
+    { "name": "Junior Town Crier",                    "canonical": "Marketing Consultant",                     "description": "Carries the day's news through the streets — content, creative, and the daily call." },
+    { "name": "Scribe of the Royal Council",          "canonical": "Business Analyst",                         "description": "Records the wishes of the court — translates royal dreams into design specs." },
+    { "name": "Master Royal Enchanter",               "canonical": "Salesforce Senior Developer - USA",        "description": "A wizard of the highest order — leads the deepest custom builds and platform craft." },
+    { "name": "Squire Sage in Training",              "canonical": "Junior Salesforce Consultant - India",     "description": "Newest of the apprentices — learning Flow, validation rules, and reports under the Sages." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "arendelle",
+      "projectName": "Arendelle — Frozen Harbor Modernization",
+      "shortName": "Arendelle FHM",
+      "subAccountName": "Kingdom of Arendelle",
+      "subAccountNumber": "PSA-TEST-DISNEYPRINCESSES-ARENDELLE",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Ice Palace Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Coronation", "isDefault": false, "billable": true, "children": [
+          { "name": "Trolls' Council at the Valley", "billable": true },
+          { "name": "Fjord Field Survey", "billable": true },
+          { "name": "Royal Strategy Drafting", "billable": true }
+        ]},
+        { "name": "Build the Ice Palace", "isDefault": false, "billable": true, "children": [
+          { "name": "Snowflake Foundation Casting", "billable": true },
+          { "name": "Crystal Spire Carving", "billable": true },
+          { "name": "Northern Light Glazing", "billable": true }
+        ]},
+        { "name": "Migrate the Trade Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Harbor Ledger Inventory", "billable": true },
+          { "name": "Sami Trade Translation", "billable": true }
+        ]},
+        { "name": "Testing the Thaw", "isDefault": false, "billable": true, "children": [
+          { "name": "Eternal Winter Stress Test", "billable": true },
+          { "name": "Sven's Sled Performance Trial", "billable": true }
+        ]},
+        { "name": "Training the Townsfolk", "isDefault": false, "billable": true, "children": [
+          { "name": "Castle Staff Onboarding", "billable": true },
+          { "name": "Snowgies Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "agrabah",
+      "projectName": "Agrabah — Sultan's Bazaar Commerce Platform",
+      "shortName": "Agrabah SBC",
+      "subAccountName": "Sultanate of Agrabah",
+      "subAccountNumber": "PSA-TEST-DISNEYPRINCESSES-AGRABAH",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Palace Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Wishes", "isDefault": false, "billable": true, "children": [
+          { "name": "Cave of Wonders Reconnaissance", "billable": true },
+          { "name": "Bazaar Merchant Survey", "billable": true },
+          { "name": "Three Wishes Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Magic Carpet API", "isDefault": false, "billable": true, "children": [
+          { "name": "Lamp Service Foundation", "billable": true },
+          { "name": "Genie Endpoint Wiring", "billable": true },
+          { "name": "Carpet Velocity Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Treasury", "isDefault": false, "billable": true, "children": [
+          { "name": "Gold Coin Ledger Roll", "billable": true },
+          { "name": "Jewel Inventory Cataloguing", "billable": true }
+        ]},
+        { "name": "Testing in the Cave", "isDefault": false, "billable": true, "children": [
+          { "name": "Forbidden Treasure Pen-test", "billable": true },
+          { "name": "Tiger Head Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Palace Guards", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Guard Onboarding", "billable": true },
+          { "name": "Sultan's Court Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mulan-china",
+      "projectName": "Imperial China — Great Wall Defense Analytics",
+      "shortName": "China GWD",
+      "subAccountName": "Imperial Court of China",
+      "subAccountNumber": "PSA-TEST-DISNEYPRINCESSES-MULAN-CHINA",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Imperial Court Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Conscription", "isDefault": false, "billable": true, "children": [
+          { "name": "Ancestral Shrine Consultation", "billable": true },
+          { "name": "Village Headcount Roll", "billable": true },
+          { "name": "Emperor's War Council", "billable": true }
+        ]},
+        { "name": "Build the Great Wall", "isDefault": false, "billable": true, "children": [
+          { "name": "Watchtower Foundation Stones", "billable": true },
+          { "name": "Signal Fire Cannon Forging", "billable": true },
+          { "name": "Wall Segment Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Imperial Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Conscription Scroll Translation", "billable": true },
+          { "name": "Battle Tactic Manuscript Roll", "billable": true }
+        ]},
+        { "name": "Testing the Avalanche", "isDefault": false, "billable": true, "children": [
+          { "name": "Mountain Pass Stress Drill", "billable": true },
+          { "name": "Cannon Trajectory Trial", "billable": true }
+        ]},
+        { "name": "Training the Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "I'll Make a Man Out of You — Bootcamp", "billable": true },
+          { "name": "Captain's Combat Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "the-isle-of-naveen-tiana",
+      "projectName": "Bayou Bayonne — Tiana's Place Restaurant Launch",
+      "shortName": "Bayou TPR",
+      "subAccountName": "Tiana's Place — French Quarter",
+      "subAccountNumber": "PSA-TEST-DISNEYPRINCESSES-THE-ISLE-OF-NAVEEN-TIANA",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "French Quarter Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Gumbo Tasting", "isDefault": false, "billable": true, "children": [
+          { "name": "Bayou Site Survey", "billable": true },
+          { "name": "Mama Odie's Vision Quest", "billable": true },
+          { "name": "Menu Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Restaurant", "isDefault": false, "billable": true, "children": [
+          { "name": "Sugar Mill Foundation", "billable": true },
+          { "name": "Kitchen Range Installation", "billable": true },
+          { "name": "Jazz Stage Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Recipe Cards", "isDefault": false, "billable": true, "children": [
+          { "name": "Daddy's Recipe Catalogue", "billable": true },
+          { "name": "Beignet Batch Calibration", "billable": true }
+        ]},
+        { "name": "Testing the Shadow Magic", "isDefault": false, "billable": true, "children": [
+          { "name": "Voodoo Charm Pen-test", "billable": true },
+          { "name": "Firefly Light Performance Trial", "billable": true }
+        ]},
+        { "name": "Training the Wait Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Dig a Little Deeper — Crew Onboarding", "billable": true },
+          { "name": "Maître d' Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "arendelle": [
+      { "fullName": "Elsa",        "themedRole": "Royal Architect of the Castle" },
+      { "fullName": "Anna",        "themedRole": "Captain of the Royal Guard" },
+      { "fullName": "Kristoff",    "themedRole": "Senior Royal Sage" },
+      { "fullName": "Olaf",        "themedRole": "Junior Town Crier" },
+      { "fullName": "Sven",        "themedRole": "Apprentice Sage of the Court" },
+      { "fullName": "Hans",        "themedRole": "Scribe of the Royal Council" },
+      { "fullName": "Pabbie",      "themedRole": "Grand Vizier of Salesforce" },
+      { "fullName": "Marshmallow", "themedRole": "Royal Tester of Potions" }
+    ],
+    "agrabah": [
+      { "fullName": "Jasmine",      "themedRole": "Royal Architect of the Castle" },
+      { "fullName": "Aladdin",      "themedRole": "Captain of the Royal Guard" },
+      { "fullName": "Genie",        "themedRole": "Master Enchanter of Code" },
+      { "fullName": "Abu",          "themedRole": "Squire Sage in Training" },
+      { "fullName": "Jafar",        "themedRole": "Bridge Master of the Enchanted Realms" },
+      { "fullName": "Iago",         "themedRole": "Senior Town Crier" },
+      { "fullName": "Sultan",       "themedRole": "Grand Vizier of Salesforce" },
+      { "fullName": "Magic Carpet", "themedRole": "Senior Bridge Weaver" }
+    ],
+    "mulan-china": [
+      { "fullName": "Mulan",       "themedRole": "Royal Architect of the Castle" },
+      { "fullName": "Mushu",       "themedRole": "Royal Herald of the Kingdom" },
+      { "fullName": "Shang",       "themedRole": "Captain of the Royal Guard" },
+      { "fullName": "Cri-Kee",     "themedRole": "Royal Tester of Potions" },
+      { "fullName": "Yao",         "themedRole": "Junior Bridge Weaver" },
+      { "fullName": "Ling",        "themedRole": "Apprentice Sage of the Court" },
+      { "fullName": "Chien-Po",    "themedRole": "Senior Royal Sage" },
+      { "fullName": "Shan Yu",     "themedRole": "Master Royal Enchanter" },
+      { "fullName": "Emperor",     "themedRole": "Grand Vizier of Salesforce" }
+    ],
+    "the-isle-of-naveen-tiana": [
+      { "fullName": "Tiana",                "themedRole": "Royal Architect of the Castle" },
+      { "fullName": "Naveen",               "themedRole": "Junior Town Crier" },
+      { "fullName": "Lottie",               "themedRole": "Senior Town Crier" },
+      { "fullName": "Louis the Alligator",  "themedRole": "Master Royal Enchanter" },
+      { "fullName": "Ray",                  "themedRole": "Squire Sage in Training" },
+      { "fullName": "Mama Odie",            "themedRole": "Grand Vizier of Salesforce" },
+      { "fullName": "Dr. Facilier",         "themedRole": "Bridge Master of the Enchanted Realms" },
+      { "fullName": "Lawrence",             "themedRole": "Scribe of the Royal Council" },
+      { "fullName": "James",                "themedRole": "Royal Herald of the Kingdom" }
+    ]
+  },
+
+  "milestones": {
+    "arendelle": [
+      { "name": "Coronation Day",            "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the gates of Arendelle open at last." },
+      { "name": "Let It Go — Build Kickoff", "type": "Operational", "offsetPct": 25,  "description": "Build phase begins: Elsa raises the ice palace from the mountain." },
+      { "name": "Council on the North Mountain","type": "Gate",     "offsetPct": 50,  "description": "Mid-project gate: Anna and Kristoff present progress to the queen." },
+      { "name": "The Great Thaw — UAT",      "type": "Gate",        "offsetPct": 70,  "description": "UAT acceptance: eternal winter recedes and the harbor reopens." },
+      { "name": "Summer Returns — Go-Live",  "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the kingdom celebrates Olaf in Summer." },
+      { "name": "Royal Settlement",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: paid in chocolate and Sven's carrots." }
+    ],
+    "agrabah": [
+      { "name": "Diamond in the Rough Found","type": "Gate",        "offsetPct": 5,   "description": "Discovery: the right resource located deep in the Cave of Wonders." },
+      { "name": "Lamp Awakens",              "type": "Operational", "offsetPct": 30,  "description": "Build phase: the Genie wakes and integration spell-work begins." },
+      { "name": "A Whole New World — Demo",  "type": "Gate",        "offsetPct": 55,  "description": "Mid-project demo: a magic carpet ride through the new platform." },
+      { "name": "Sultan's Audit",            "type": "Gate",        "offsetPct": 75,  "description": "Solution review with the Sultan and his council." },
+      { "name": "Wedding at the Palace",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Jasmine and Aladdin cut the ribbon at the new bazaar." },
+      { "name": "Genie Sets You Free",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: third wish granted, project closed." }
+    ],
+    "mulan-china": [
+      { "name": "Honor to the Ancestors",    "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: ancestral shrine blessings secured for the project." },
+      { "name": "Conscription Notice Sent",  "type": "Operational", "offsetPct": 25,  "description": "Build phase: one man from every family — and one woman in disguise." },
+      { "name": "Reflection — Mid-Build Review","type": "Gate",     "offsetPct": 50,  "description": "Mid-project gate: the team reviews who they truly are." },
+      { "name": "Avalanche at Tung Shao Pass","type": "Operational","offsetPct": 70,  "description": "Stress test: the cannon fires, the mountain falls, the army scatters." },
+      { "name": "Saving the Emperor",        "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the platform defends the imperial palace." },
+      { "name": "Imperial Decree of Payment","type": "Billing",     "offsetPct": 100, "description": "Final invoice: sealed with the Emperor's chop." }
+    ],
+    "the-isle-of-naveen-tiana": [
+      { "name": "Almost There — Site Secured","type": "Gate",       "offsetPct": 10,  "description": "Discovery: the old sugar mill is purchased — Tiana's dream begins." },
+      { "name": "Kissed by the Frog",        "type": "Operational", "offsetPct": 30,  "description": "Build phase begins — and a few unexpected transformations." },
+      { "name": "Mama Odie's Wisdom",        "type": "Gate",        "offsetPct": 55,  "description": "Mid-project review with the bayou's blind voodoo priestess." },
+      { "name": "Friends on the Other Side — UAT","type": "Gate",   "offsetPct": 75,  "description": "UAT gate: shadow magic neutralized, the platform passes inspection." },
+      { "name": "Grand Opening of Tiana's Place","type": "Delivery","offsetPct": 95,  "description": "Go-Live: jazz plays, beignets fly, the doors open." },
+      { "name": "Final Tip Jar",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid in cash, gumbo, and good music." }
+    ]
+  },
+
+  "daysOff": {
+    "Elsa":           [ { "realm": "arendelle", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Solitude on the North Mountain — needs space to control the magic." } ],
+    "Anna":           [ { "realm": "arendelle", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Visiting the trolls in the Valley of the Living Rock." } ],
+    "Olaf":           [ { "realm": "arendelle", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Summer vacation — finally experiencing warm hugs." } ],
+    "Kristoff":       [ { "realm": "arendelle", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Ice harvest season with Sven — annual obligation." } ],
+    "Jasmine":        [ { "realm": "agrabah",   "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Escaping the palace walls — incognito tour of the bazaar." } ],
+    "Aladdin":        [ { "realm": "agrabah",   "offsetWeeks": 14, "numberOfDays": 2, "notes": "Magic carpet expedition with Abu — destination unknown." } ],
+    "Genie":          [ { "realm": "agrabah",   "offsetWeeks": 20, "numberOfDays": 5, "notes": "World tour — finally free, taking the long-promised vacation." } ],
+    "Mulan":          [ { "realm": "mulan-china","offsetWeeks": 4, "numberOfDays": 2, "notes": "Visiting Grandmother Fa and the family ancestors." } ],
+    "Mushu":          [ { "realm": "mulan-china","offsetWeeks": 10,"numberOfDays": 1, "notes": "Reinstatement ceremony — Guardian status restored." } ],
+    "Shang":          [ { "realm": "mulan-china","offsetWeeks": 16,"numberOfDays": 3, "notes": "Father's memorial pilgrimage." } ],
+    "Tiana":          [ { "realm": "the-isle-of-naveen-tiana", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Daddy's birthday — visiting the family home." } ],
+    "Naveen":         [ { "realm": "the-isle-of-naveen-tiana", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Royal duties in Maldonia — parents demanding an appearance." } ],
+    "Louis the Alligator": [ { "realm": "the-isle-of-naveen-tiana", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Headlining the New Orleans jazz festival." } ],
+    "Ray":            [ { "realm": "the-isle-of-naveen-tiana", "offsetWeeks": 20, "numberOfDays": 5, "notes": "Family reunion in the bayou — all the cousins." } ],
+    "Mama Odie":      [ { "realm": "the-isle-of-naveen-tiana", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Annual gumbo brewing — 197 years young." } ]
+  }
+}

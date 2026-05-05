@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "key": "StudioGhibli",
+  "displayName": "Studio Ghibli",
+  "category": "Animation",
+  "emailDomain": "ghibli.test",
+  "account": {
+    "name": "Studio Ghibli Worlds (Test Data)",
+    "accountNumber": "PSA-TEST-STUDIOGHIBLI"
+  },
+  "mailingAddress": {
+    "street": "1-4-25 Kajino-cho",
+    "city": "Koganei",
+    "state": "Tokyo",
+    "postalCode": "184-0002",
+    "country": "Japan"
+  },
+
+  "roles": [
+    { "name": "Master Animator",                  "canonical": "Solution Architect",                      "description": "Sketches the grand storyboard — designs the overarching Salesforce solution and guards its artistry." },
+    { "name": "Production Director",              "canonical": "Project Manager",                         "description": "Keeps the studio on schedule, marshals the team, and answers to the producer." },
+    { "name": "Background Painter",               "canonical": "Salesforce Administrator",                "description": "Tends the layered worlds — fields, layouts, permission sets and the quiet detail behind every scene." },
+    { "name": "Key Frame Artist",                 "canonical": "Salesforce Developer",                    "description": "Draws the moments that define motion — Apex, LWC, and the platform mechanics that bring the story alive." },
+    { "name": "Senior Production Lead — USA",     "canonical": "Salesforce Practice Lead - USA",          "description": "Oversees the Western studio's Salesforce craft — sets standards and mentors the senior animators." },
+    { "name": "Inbetween Artist Senior",          "canonical": "Salesforce Senior Consultant - India",    "description": "Bridges key frames with practiced hand — patrols the borders of customer requirements." },
+    { "name": "Inbetween Artist",                 "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration scene by scene under the senior artist's eye." },
+    { "name": "Sound Engineer Master — USA",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great score and soundscape — designs the spans between Salesforce and the realms beyond." },
+    { "name": "Senior Foley Artist",              "canonical": "Integration Senior Consultant - India",   "description": "Lays the textures of API, middleware and event flow under the Sound Engineer's plan." },
+    { "name": "Foley Apprentice",                 "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patient art of error handling." },
+    { "name": "Continuity Inspector",             "canonical": "QA Engineer",                             "description": "Tends every frame for inconsistency — finds the maladies in the build before they reach the screen." },
+    { "name": "Producer",                         "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for the studio — leads all marketing craft and promotional campaigns." },
+    { "name": "Senior Marketing Animator",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — composes the call to gather audiences." },
+    { "name": "Promotional Illustrator",          "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily work." },
+    { "name": "Story Editor",                     "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between client wishes and the studio's craft." },
+    { "name": "Master Cel Painter — USA",         "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of the painted cel — leads complex Apex, LWC and platform builds in the Western studio." },
+    { "name": "Junior Inbetween Artist",          "canonical": "Junior Salesforce Consultant - India",    "description": "First-year apprentice — learns the studio's patterns through close mentorship and gentle work." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "spirited-away",
+      "projectName": "Spirited Away — Bathhouse Operations Platform",
+      "shortName": "Spirited Ops",
+      "subAccountName": "Aburaya Bathhouse",
+      "subAccountNumber": "PSA-TEST-STUDIOGHIBLI-SPIRITEDAWAY",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Bathhouse Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Spirit Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Yubaba's Contract Review", "billable": true },
+          { "name": "Guest Spirit Census", "billable": true }
+        ]},
+        { "name": "Build the Boiler Room", "isDefault": false, "billable": true, "children": [
+          { "name": "Soot Sprite Workforce Setup", "billable": true },
+          { "name": "Herbal Bath Token Pipeline", "billable": true }
+        ]},
+        { "name": "Migrate the Ledger", "isDefault": false, "billable": true, "children": [
+          { "name": "Name Registry Conversion", "billable": true },
+          { "name": "Gold Coin Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Stink Spirit Cleanse", "isDefault": false, "billable": true, "children": [
+          { "name": "River God Soak Trial", "billable": true },
+          { "name": "No-Face Containment Drill", "billable": true }
+        ]},
+        { "name": "Training the Yuna", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Bath Attendant Onboarding", "billable": true },
+          { "name": "Foreman's Handbook", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "princess-mononoke",
+      "projectName": "Princess Mononoke — Iron Town Production Suite",
+      "shortName": "Iron Town PS",
+      "subAccountName": "Tatara Iron Works",
+      "subAccountNumber": "PSA-TEST-STUDIOGHIBLI-PRINCESSMONONOKE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Tatara Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Forest Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Forest Spirit Reconnaissance", "billable": true },
+          { "name": "Iron Town Headcount", "billable": true }
+        ]},
+        { "name": "Build the Bellows", "isDefault": false, "billable": true, "children": [
+          { "name": "Furnace Foundation Forging", "billable": true },
+          { "name": "Rifle Workshop Tooling", "billable": true }
+        ]},
+        { "name": "Migrate the Ore", "isDefault": false, "billable": true, "children": [
+          { "name": "Sand Iron Inventory", "billable": true },
+          { "name": "Smelting Schedule Conversion", "billable": true }
+        ]},
+        { "name": "Testing the Boar Charge", "isDefault": false, "billable": true, "children": [
+          { "name": "Wall Defense Drill", "billable": true },
+          { "name": "Wolf Clan Pen-test", "billable": true }
+        ]},
+        { "name": "Training the Ironworkers", "isDefault": false, "billable": true, "children": [
+          { "name": "Bellows Operator Onboarding", "billable": true },
+          { "name": "Lady Eboshi's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "howls-moving-castle",
+      "projectName": "Howl's Moving Castle — Portal Magic Integration",
+      "shortName": "Howl PMI",
+      "subAccountName": "Pendragon Wizard Workshop",
+      "subAccountNumber": "PSA-TEST-STUDIOGHIBLI-HOWLSMOVINGCASTLE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Castle Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Star Pact", "isDefault": false, "billable": true, "children": [
+          { "name": "Calcifer's Contract Audit", "billable": true },
+          { "name": "Door Dial Mapping", "billable": true }
+        ]},
+        { "name": "Build the Portal Door", "isDefault": false, "billable": true, "children": [
+          { "name": "Color Dial Calibration", "billable": true },
+          { "name": "Hearth Spell Wiring", "billable": true }
+        ]},
+        { "name": "Migrate the Spell Book", "isDefault": false, "billable": true, "children": [
+          { "name": "Grimoire Translation", "billable": true },
+          { "name": "Charm Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Bombing Run", "isDefault": false, "billable": true, "children": [
+          { "name": "Bird-form Stress Trial", "billable": true },
+          { "name": "Curse Resilience Drill", "billable": true }
+        ]},
+        { "name": "Training the Apprentices", "isDefault": false, "billable": true, "children": [
+          { "name": "Markl's Workshop Onboarding", "billable": true },
+          { "name": "Sophie's Housekeeping Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "my-neighbor-totoro",
+      "projectName": "My Neighbor Totoro — Forest Stewardship CRM",
+      "shortName": "Totoro FS",
+      "subAccountName": "Kusakabe Family Cottage",
+      "subAccountNumber": "PSA-TEST-STUDIOGHIBLI-MYNEIGHBORTOTORO",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Cottage Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Camphor Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Acorn Plot Mapping", "billable": true },
+          { "name": "Soot Sprite Tenant Census", "billable": true }
+        ]},
+        { "name": "Build the Tree Shrine", "isDefault": false, "billable": true, "children": [
+          { "name": "Camphor Trunk Foundations", "billable": true },
+          { "name": "Acorn Sprout Pipeline", "billable": true }
+        ]},
+        { "name": "Migrate the Field Notes", "isDefault": false, "billable": true, "children": [
+          { "name": "Garden Ledger Conversion", "billable": true },
+          { "name": "Cucumber & Watermelon Index", "billable": true }
+        ]},
+        { "name": "Testing the Catbus Route", "isDefault": false, "billable": true, "children": [
+          { "name": "Stop Sign Drill", "billable": true },
+          { "name": "Twelve-Leg Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Neighbors", "isDefault": false, "billable": true, "children": [
+          { "name": "Village Elder Onboarding", "billable": true },
+          { "name": "Granny's Garden Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "spirited-away": [
+      { "fullName": "Chihiro Ogino",   "themedRole": "Junior Inbetween Artist" },
+      { "fullName": "Haku",            "themedRole": "Master Animator" },
+      { "fullName": "Yubaba",          "themedRole": "Production Director" },
+      { "fullName": "No-Face",         "themedRole": "Inbetween Artist" },
+      { "fullName": "Lin",             "themedRole": "Inbetween Artist Senior" },
+      { "fullName": "Kamaji",          "themedRole": "Sound Engineer Master — USA" },
+      { "fullName": "Boh",             "themedRole": "Background Painter" },
+      { "fullName": "Zeniba",          "themedRole": "Story Editor" }
+    ],
+    "princess-mononoke": [
+      { "fullName": "Ashitaka",        "themedRole": "Master Animator" },
+      { "fullName": "San",             "themedRole": "Continuity Inspector" },
+      { "fullName": "Lady Eboshi",     "themedRole": "Senior Production Lead — USA" },
+      { "fullName": "Moro",            "themedRole": "Sound Engineer Master — USA" },
+      { "fullName": "Jigo",            "themedRole": "Producer" },
+      { "fullName": "Kohroku",         "themedRole": "Foley Apprentice" },
+      { "fullName": "Toki",            "themedRole": "Senior Marketing Animator" },
+      { "fullName": "Gonza",           "themedRole": "Production Director" }
+    ],
+    "howls-moving-castle": [
+      { "fullName": "Howl Pendragon",  "themedRole": "Master Cel Painter — USA" },
+      { "fullName": "Sophie Hatter",   "themedRole": "Background Painter" },
+      { "fullName": "Calcifer",        "themedRole": "Senior Foley Artist" },
+      { "fullName": "Markl",           "themedRole": "Junior Inbetween Artist" },
+      { "fullName": "Witch of the Waste","themedRole": "Promotional Illustrator" },
+      { "fullName": "Madame Suliman",  "themedRole": "Senior Production Lead — USA" },
+      { "fullName": "Heen",            "themedRole": "Continuity Inspector" }
+    ],
+    "my-neighbor-totoro": [
+      { "fullName": "Satsuke Kusakabe","themedRole": "Production Director" },
+      { "fullName": "Mei Kusakabe",    "themedRole": "Junior Inbetween Artist" },
+      { "fullName": "Totoro",          "themedRole": "Master Animator" },
+      { "fullName": "Catbus",          "themedRole": "Sound Engineer Master — USA" },
+      { "fullName": "Nanny Granny",    "themedRole": "Story Editor" },
+      { "fullName": "Tatsuo Kusakabe", "themedRole": "Master Cel Painter — USA" },
+      { "fullName": "Yasuko Kusakabe", "themedRole": "Background Painter" }
+    ]
+  },
+
+  "milestones": {
+    "spirited-away": [
+      { "name": "Crossing the Tunnel",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the family steps through the threshold into the spirit world." },
+      { "name": "Signing the Contract",      "type": "Operational", "offsetPct": 20,  "description": "Build kickoff: Yubaba seals the deal, work begins at the bathhouse." },
+      { "name": "Bathing the River God",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the great cleansing scrubbed clean of bicycles and refuse." },
+      { "name": "No-Face Banquet Invoice",   "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: gold offered freely, all of it false." },
+      { "name": "Visit to Zeniba",           "type": "Operational", "offsetPct": 85,  "description": "UAT excursion — the train ride to Swamp Bottom for hand-stitched approval." },
+      { "name": "Return to the Tunnel",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Chihiro names the pigs, the family walks back into daylight." },
+      { "name": "Bathhouse Hyper-care",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Lin and Kamaji steady the boiler room." }
+    ],
+    "princess-mononoke": [
+      { "name": "Curse of the Boar God",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery: Ashitaka rides west, the project is set in motion." },
+      { "name": "Arrival at Iron Town",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the bellows roar, the furnace lights." },
+      { "name": "Wolf Clan Negotiation",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Moro's terms reviewed at the cliff's edge." },
+      { "name": "Rifle Shipment Invoice",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Jigo's order delivered to the gates." },
+      { "name": "The Forest Spirit's Head",  "type": "Gate",        "offsetPct": 85,  "description": "UAT acceptance: the Deer God's gift returned, the forest reborn." },
+      { "name": "Iron Town Rebuilt",         "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Lady Eboshi vows to build a better town." },
+      { "name": "Final Reckoning",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Tatara works." }
+    ],
+    "howls-moving-castle": [
+      { "name": "First Door Opens",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Sophie crosses the threshold of the moving castle." },
+      { "name": "Calcifer's Pact Confirmed", "type": "Operational", "offsetPct": 30,  "description": "Build phase: the hearth spell stabilised, work begins in earnest." },
+      { "name": "Royal Audience with Suliman","type": "Gate",       "offsetPct": 55,  "description": "Solution review with the king's wizard." },
+      { "name": "Bombing Run Invoice",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: night work over the war zone." },
+      { "name": "Castle Reassembly",         "type": "Operational", "offsetPct": 85,  "description": "UAT: the castle rebuilt smaller, lighter, and flying." },
+      { "name": "Curse Lifted",              "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: hearts returned, the curse is broken." },
+      { "name": "Pendragon Workshop Close",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Markl tends the new hearth." }
+    ],
+    "my-neighbor-totoro": [
+      { "name": "Moving Day at the Cottage", "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Kusakabe family settles into the country house." },
+      { "name": "First Glimpse of Totoro",   "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Mei tumbles into the camphor tree, project sponsor identified." },
+      { "name": "Acorn Sprout Ceremony",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the seedlings burst skyward in a single night." },
+      { "name": "Catbus Charter Invoice",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: emergency transit booked across the rice fields." },
+      { "name": "Hospital Visit",            "type": "Gate",        "offsetPct": 85,  "description": "UAT acceptance: corn delivered to mother's window, sponsor signs off." },
+      { "name": "Summer's End Handover",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the family settled, Totoro returns to the forest." },
+      { "name": "Cottage Hyper-care",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Granny watches over the seedlings." }
+    ]
+  },
+
+  "daysOff": {
+    "Chihiro Ogino":      [ { "realm": "spirited-away",       "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Recovering her name — quiet day with Haku at the river." } ],
+    "No-Face":            [ { "realm": "spirited-away",       "offsetWeeks": 10, "numberOfDays": 3, "notes": "Stitching with Zeniba — long apprenticeship at Swamp Bottom." } ],
+    "Kamaji":             [ { "realm": "spirited-away",       "offsetWeeks": 14, "numberOfDays": 1, "notes": "Boiler maintenance — the soot sprites get a half-day too." } ],
+    "Yubaba":             [ { "realm": "spirited-away",       "offsetWeeks": 18, "numberOfDays": 2, "notes": "Boh's birthday — the office is closed." } ],
+    "Ashitaka":           [ { "realm": "princess-mononoke",   "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Pilgrimage east — visiting the Emishi village." } ],
+    "San":                [ { "realm": "princess-mononoke",   "offsetWeeks": 12, "numberOfDays": 4, "notes": "Wolf clan hunt — three nights in the deep forest." } ],
+    "Lady Eboshi":        [ { "realm": "princess-mononoke",   "offsetWeeks": 16, "numberOfDays": 2, "notes": "Recruiting for Iron Town — visiting the brothels and leper houses." } ],
+    "Howl Pendragon":     [ { "realm": "howls-moving-castle", "offsetWeeks": 4,  "numberOfDays": 1, "notes": "Hair dye crisis — the bathroom is closed." } ],
+    "Sophie Hatter":      [ { "realm": "howls-moving-castle", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Visiting Lettie at the bakery — sister time." } ],
+    "Calcifer":           [ { "realm": "howls-moving-castle", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Hearth dim day — needs a fresh log delivery." } ],
+    "Witch of the Waste": [ { "realm": "howls-moving-castle", "offsetWeeks": 20, "numberOfDays": 3, "notes": "Spa retreat — recovering her composure after losing her powers." } ],
+    "Mei Kusakabe":       [ { "realm": "my-neighbor-totoro",  "offsetWeeks": 6,  "numberOfDays": 1, "notes": "Lost in the corn field — found by Catbus." } ],
+    "Satsuke Kusakabe":   [ { "realm": "my-neighbor-totoro",  "offsetWeeks": 12, "numberOfDays": 2, "notes": "Hospital visit to mother — corn in hand." } ],
+    "Tatsuo Kusakabe":    [ { "realm": "my-neighbor-totoro",  "offsetWeeks": 16, "numberOfDays": 3, "notes": "University lecture series — three days in Tokyo." } ],
+    "Nanny Granny":       [ { "realm": "my-neighbor-totoro",  "offsetWeeks": 20, "numberOfDays": 2, "notes": "Garden harvest — picking cucumbers and watermelon." } ]
+  }
+}
