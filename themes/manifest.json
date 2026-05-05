@@ -60,12 +60,12 @@
     { "key": "SiliconValley",  "displayName": "Silicon Valley (HBO)",  "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/silicon_valley.json" },
     { "key": "Suits",          "displayName": "Suits",                 "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/suits.json" },
 
-    { "key": "ToyStoryPixar",  "displayName": "Toy Story / Pixar",     "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/toy_story_pixar.json" },
-    { "key": "StudioGhibli",   "displayName": "Studio Ghibli",         "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/studio_ghibli.json" },
-    { "key": "Spongebob",      "displayName": "SpongeBob SquarePants", "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/spongebob.json" },
-    { "key": "AdventureTime",  "displayName": "Adventure Time",        "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/adventure_time.json" },
-    { "key": "RickAndMorty",   "displayName": "Rick and Morty",        "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/rick_and_morty.json" },
-    { "key": "DisneyPrincesses","displayName": "Disney Princesses",    "category": "Animation",       "implemented": false, "featured": false, "body": "themes/content/disney_princesses.json" },
+    { "key": "ToyStoryPixar",  "displayName": "Toy Story / Pixar",     "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/toystorypixar.json" },
+    { "key": "StudioGhibli",   "displayName": "Studio Ghibli",         "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/studioghibli.json" },
+    { "key": "Spongebob",      "displayName": "SpongeBob SquarePants", "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/spongebob.json" },
+    { "key": "AdventureTime",  "displayName": "Adventure Time",        "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/adventuretime.json" },
+    { "key": "RickAndMorty",   "displayName": "Rick and Morty",        "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/rickandmorty.json" },
+    { "key": "DisneyPrincesses","displayName": "Disney Princesses",    "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/disneyprincesses.json" },
 
     { "key": "Mario",          "displayName": "Super Mario",           "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/mario.json" },
     { "key": "Zelda",          "displayName": "The Legend of Zelda",   "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/zelda.json" },
