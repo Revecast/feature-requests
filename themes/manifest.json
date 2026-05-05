@@ -50,12 +50,12 @@
     { "key": "SchittsCreek",   "displayName": "Schitt's Creek",        "category": "Sitcom",          "implemented": false, "featured": false, "body": "themes/content/schitts_creek.json" },
     { "key": "ArrestedDevelopment","displayName": "Arrested Development", "category": "Sitcom",       "implemented": false, "featured": false, "body": "themes/content/arrested_development.json" },
 
-    { "key": "BreakingBad",    "displayName": "Breaking Bad / Better Call Saul", "category": "Drama", "implemented": false, "featured": false, "body": "themes/content/breaking_bad.json" },
-    { "key": "MadMen",         "displayName": "Mad Men",               "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/mad_men.json" },
-    { "key": "Succession",     "displayName": "Succession",            "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/succession.json" },
-    { "key": "Sopranos",       "displayName": "The Sopranos",          "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/sopranos.json" },
-    { "key": "Yellowstone",    "displayName": "Yellowstone",           "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/yellowstone.json" },
-    { "key": "CobraKai",       "displayName": "Cobra Kai",             "category": "Drama",           "implemented": false, "featured": false, "body": "themes/content/cobra_kai.json" },
+    { "key": "BreakingBad",    "displayName": "Breaking Bad / Better Call Saul", "category": "Drama", "implemented": true,  "featured": false, "body": "themes/content/breakingbad.json" },
+    { "key": "MadMen",         "displayName": "Mad Men",               "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/madmen.json" },
+    { "key": "Succession",     "displayName": "Succession",            "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/succession.json" },
+    { "key": "Sopranos",       "displayName": "The Sopranos",          "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/sopranos.json" },
+    { "key": "Yellowstone",    "displayName": "Yellowstone",           "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/yellowstone.json" },
+    { "key": "CobraKai",       "displayName": "Cobra Kai",             "category": "Drama",           "implemented": true,  "featured": false, "body": "themes/content/cobrakai.json" },
 
     { "key": "SiliconValley",  "displayName": "Silicon Valley (HBO)",  "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/silicon_valley.json" },
     { "key": "Suits",          "displayName": "Suits",                 "category": "Workplace",       "implemented": false, "featured": false, "body": "themes/content/suits.json" },
