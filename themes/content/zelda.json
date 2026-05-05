@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "key": "Zelda",
+  "displayName": "The Legend of Zelda",
+  "category": "Video Games",
+  "emailDomain": "hyrule.test",
+  "account": {
+    "name": "Kingdom of Hyrule (Test Data)",
+    "accountNumber": "PSA-TEST-ZELDA"
+  },
+  "mailingAddress": {
+    "street": "1 Castle Approach, Hyrule Castle Town",
+    "city": "Hyrule Castle Town",
+    "state": "Central Hyrule",
+    "postalCode": "HC-0001",
+    "country": "Hyrule"
+  },
+
+  "roles": [
+    { "name": "Royal Architect of the Sacred Realm",  "canonical": "Solution Architect",                       "description": "Designs the grand architecture of the kingdom's systems — keeper of the Triforce blueprint." },
+    { "name": "Captain of the Royal Guard",           "canonical": "Project Manager",                          "description": "Marshals the knights of delivery, holds the timeline, and answers to the Princess." },
+    { "name": "Keeper of the Royal Records",          "canonical": "Salesforce Administrator",                 "description": "Steward of scrolls, layouts, fields and permission sets within the castle vaults." },
+    { "name": "Master Smith of Goron City",           "canonical": "Salesforce Developer",                     "description": "Forges Apex, LWC, and platform craft at the volcanic anvils of Death Mountain." },
+    { "name": "Royal Smith of the Master Sword",      "canonical": "Salesforce Senior Developer - USA",        "description": "Senior craftsman who reforges and tempers the most sacred Salesforce code." },
+    { "name": "Knight Commander of Hyrule",           "canonical": "Salesforce Practice Lead - USA",           "description": "Leads all Hylian Salesforce craft — sets the standards and trains the senior knights." },
+    { "name": "Sheikah Ranger of Kakariko",           "canonical": "Salesforce Senior Consultant - India",     "description": "Patrols the borders of customer requirements with practiced shadow-craft." },
+    { "name": "Sheikah Scout of the Plateau",         "canonical": "Salesforce Consultant - India",            "description": "Carries discovery and configuration across the realm under the Ranger's eye." },
+    { "name": "Apprentice of the Sheikah Slate",      "canonical": "Junior Salesforce Consultant - India",     "description": "Newest recruit to the Sheikah order — learns the Slate's runes step by step." },
+    { "name": "Bridge-Master of Eldin",               "canonical": "Integration Technical Architect - USA",    "description": "Architect of the great spans between Hyrule's systems and the realms beyond." },
+    { "name": "Bridge-Builder of Eldin",              "canonical": "Integration Senior Consultant - India",    "description": "Lays the stones of API, middleware, and event flows under the Bridge-Master's plan." },
+    { "name": "Apprentice of the Divine Beasts",      "canonical": "Integration Consultant - India",           "description": "Learns the craft of integration — webhooks, batch, callouts and the ancient Sheikah patterns." },
+    { "name": "Healer of the Great Fairy Fountain",   "canonical": "QA Engineer",                              "description": "Tends the wounded build — finds the maladies before they reach the Princess." },
+    { "name": "Royal Herald of Hyrule",               "canonical": "Marketing Practice Lead",                  "description": "Lifts the banner and the trumpet for product and message — leads all marketing craft." },
+    { "name": "Trumpeter of Castle Town",             "canonical": "Marketing Senior Consultant",              "description": "Strategist of campaigns — sounds the call for festivals and proclamations." },
+    { "name": "Banner-Bearer of the Royal Family",    "canonical": "Marketing Consultant",                     "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Court Scribe of Hyrule Castle",        "canonical": "Business Analyst",                         "description": "Records what is needed and what is promised — translates between mortal Customer and the royal craft of design." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "hyrule-castle-town",
+      "projectName": "Hyrule Castle Town — Royal Stewardship CRM Rollout",
+      "shortName": "Castle CRM",
+      "subAccountName": "Hyrule Castle Town Royal Court",
+      "subAccountNumber": "PSA-TEST-ZELDA-CASTLETOWN",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Royal Court Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Royal Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Sages", "billable": true },
+          { "name": "Field Reconnaissance — Hyrule Field", "billable": true },
+          { "name": "Strategy with the Princess", "billable": true }
+        ]},
+        { "name": "Reforging the Master Sword", "isDefault": false, "billable": true, "children": [
+          { "name": "Pedestal Foundation Stones", "billable": true },
+          { "name": "Blade Tempering Workshop", "billable": true },
+          { "name": "Hilt & Crossguard Inlay", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Tome Inventory of the Library", "billable": true },
+          { "name": "Manuscript Translation — Ancient Hylian", "billable": true }
+        ]},
+        { "name": "Testing at the Sanctum", "isDefault": false, "billable": true, "children": [
+          { "name": "Throne Room Drill (UAT)", "billable": true },
+          { "name": "Sanctum Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Royal Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Onboarding at the Barracks", "billable": true },
+          { "name": "Captain's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "kakariko-village-sheikah",
+      "projectName": "Kakariko Village — Sheikah Slate Analytics Build",
+      "shortName": "Sheikah SSA",
+      "subAccountName": "Sheikah Tribe of Kakariko",
+      "subAccountNumber": "PSA-TEST-ZELDA-KAKARIKO",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Kakariko Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Shadow-Sight", "isDefault": false, "billable": true, "children": [
+          { "name": "Elder Impa's Briefing", "billable": true },
+          { "name": "Shrine Reconnaissance", "billable": true },
+          { "name": "Strategy at the Goddess Statue", "billable": true }
+        ]},
+        { "name": "Build the Sheikah Slate", "isDefault": false, "billable": true, "children": [
+          { "name": "Rune Engraving — Magnesis", "billable": true },
+          { "name": "Rune Engraving — Stasis", "billable": true },
+          { "name": "Sheikah Tower Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Ancient Tech", "isDefault": false, "billable": true, "children": [
+          { "name": "Guardian Parts Inventory", "billable": true },
+          { "name": "Ancient Core Refurbishment", "billable": true }
+        ]},
+        { "name": "Testing at Hateno Lab", "isDefault": false, "billable": true, "children": [
+          { "name": "Purah's Field Trial", "billable": true },
+          { "name": "Robbie's Workshop Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Yiga Watch", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Stealth Drills", "billable": true },
+          { "name": "Captain's Shadow Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "gerudo-desert",
+      "projectName": "Gerudo Desert — Thunderhelm Logistics Platform",
+      "shortName": "Gerudo TLP",
+      "subAccountName": "Gerudo Town Council",
+      "subAccountNumber": "PSA-TEST-ZELDA-GERUDO",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Gerudo Town Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sand Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Chieftain's Council", "billable": true },
+          { "name": "Yiga Clan Threat Assessment", "billable": true },
+          { "name": "Strategy at the Bazaar", "billable": true }
+        ]},
+        { "name": "Build the Thunderhelm Platform", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Conductor Forging", "billable": true },
+          { "name": "Sand Seal Saddle Workshop", "billable": true },
+          { "name": "Dune Beacon Network", "billable": true }
+        ]},
+        { "name": "Migrate the Bazaar Ledgers", "isDefault": false, "billable": true, "children": [
+          { "name": "Merchant Roll Call", "billable": true },
+          { "name": "Spice & Silk Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Yiga Hideout", "isDefault": false, "billable": true, "children": [
+          { "name": "Stealth Infiltration Drill", "billable": true },
+          { "name": "Sandstorm Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Gerudo Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Scimitar Drills", "billable": true },
+          { "name": "Captain Buliara's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "kokiri-zora-hyrule-fields",
+      "projectName": "Kokiri Forest & Zora's Domain — Wildwater Analytics Implementation",
+      "shortName": "Wildwater WAI",
+      "subAccountName": "Kokiri & Zora Federated Council",
+      "subAccountNumber": "PSA-TEST-ZELDA-KOKIRIZORA",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Kokiri Grove Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & River Gazing", "isDefault": false, "billable": true, "children": [
+          { "name": "Great Deku Tree Briefing", "billable": true },
+          { "name": "Zora River Survey", "billable": true,  "isDefault": false },
+          { "name": "Lady Mipha's Council", "billable": true }
+        ]},
+        { "name": "Build the Vah Ruta Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Trunk Selection — Lost Woods", "billable": true },
+          { "name": "Zora Domain Aqueduct Construction", "billable": true },
+          { "name": "Rope Bridge Threading — Forest Canopy", "billable": true }
+        ]},
+        { "name": "Migrate the Forest & River Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Kokiri Song Catalog", "billable": true },
+          { "name": "Zora Stone Tablet Recording", "billable": true }
+        ]},
+        { "name": "Testing the Currents", "isDefault": false, "billable": true, "children": [
+          { "name": "Waterfall Tensile Trial", "billable": true },
+          { "name": "Lost Woods Pathfinding Verification", "billable": true }
+        ]},
+        { "name": "Training the Forest & River Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Slingshot & Bow Refresh", "billable": true },
+          { "name": "Zora Spear Weaving Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "hyrule-castle-town": [
+      { "fullName": "Princess Zelda",         "themedRole": "Royal Architect of the Sacred Realm" },
+      { "fullName": "Link",                   "themedRole": "Captain of the Royal Guard" },
+      { "fullName": "Impa",                   "themedRole": "Court Scribe of Hyrule Castle" },
+      { "fullName": "King Daphnes",           "themedRole": "Knight Commander of Hyrule" },
+      { "fullName": "Ganondorf",              "themedRole": "Bridge-Master of Eldin" },
+      { "fullName": "Sheik",                  "themedRole": "Sheikah Ranger of Kakariko" },
+      { "fullName": "Mark Coburn",            "themedRole": "Royal Architect of the Sacred Realm" }
+    ],
+    "kakariko-village-sheikah": [
+      { "fullName": "Impa",                   "themedRole": "Knight Commander of Hyrule" },
+      { "fullName": "Paya",                   "themedRole": "Court Scribe of Hyrule Castle" },
+      { "fullName": "Robbie",                 "themedRole": "Master Smith of Goron City" },
+      { "fullName": "Purah",                  "themedRole": "Royal Smith of the Master Sword" },
+      { "fullName": "Cado",                   "themedRole": "Sheikah Scout of the Plateau" },
+      { "fullName": "Dorian",                 "themedRole": "Sheikah Ranger of Kakariko" },
+      { "fullName": "Olkin",                  "themedRole": "Apprentice of the Sheikah Slate" },
+      { "fullName": "Steen",                  "themedRole": "Apprentice of the Divine Beasts" }
+    ],
+    "gerudo-desert": [
+      { "fullName": "Urbosa",                 "themedRole": "Knight Commander of Hyrule" },
+      { "fullName": "Riju",                   "themedRole": "Captain of the Royal Guard" },
+      { "fullName": "Buliara",                "themedRole": "Sheikah Ranger of Kakariko" },
+      { "fullName": "Ganondorf",              "themedRole": "Bridge-Master of Eldin" },
+      { "fullName": "Nabooru",                "themedRole": "Royal Herald of Hyrule" },
+      { "fullName": "Aveil",                  "themedRole": "Trumpeter of Castle Town" },
+      { "fullName": "Patricia the Sand Seal", "themedRole": "Banner-Bearer of the Royal Family" }
+    ],
+    "kokiri-zora-hyrule-fields": [
+      { "fullName": "Saria",                  "themedRole": "Court Scribe of Hyrule Castle" },
+      { "fullName": "Mido",                   "themedRole": "Captain of the Royal Guard" },
+      { "fullName": "Princess Ruto",          "themedRole": "Royal Architect of the Sacred Realm" },
+      { "fullName": "King Zora",              "themedRole": "Knight Commander of Hyrule" },
+      { "fullName": "Sidon",                  "themedRole": "Bridge-Builder of Eldin" },
+      { "fullName": "Mipha",                  "themedRole": "Healer of the Great Fairy Fountain" },
+      { "fullName": "Prince Sidon",           "themedRole": "Sheikah Ranger of Kakariko" },
+      { "fullName": "Bazz",                   "themedRole": "Sheikah Scout of the Plateau" },
+      { "fullName": "Gaddison",               "themedRole": "Apprentice of the Sheikah Slate" },
+      { "fullName": "Tulin",                  "themedRole": "Apprentice of the Divine Beasts" },
+      { "fullName": "Revali",                 "themedRole": "Master Smith of Goron City" }
+    ]
+  },
+
+  "milestones": {
+    "hyrule-castle-town": [
+      { "name": "Light the Sanctum Lanterns",    "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — lanterns lit from the Sanctum to Castle Town." },
+      { "name": "Reforging the Master Sword",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the Princess's blade reforged at the pedestal." },
+      { "name": "Audience at the Throne Room",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review with King Daphnes's council." },
+      { "name": "Calamity Diversion at Hyrule Field", "type": "Billing", "offsetPct": 70, "description": "Phase invoice trigger: feint at the Calamity to draw the eye." },
+      { "name": "Coronation of Princess Zelda",  "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the crown returns to Hyrule Castle." },
+      { "name": "Royal Hand-off to Impa",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Impa." }
+    ],
+    "kakariko-village-sheikah": [
+      { "name": "Awakening at the Shrine of Resurrection", "type": "Gate", "offsetPct": 5, "description": "Project kickoff: the Slate awakens in Kakariko." },
+      { "name": "Climb the Great Plateau Tower",  "type": "Operational", "offsetPct": 30,  "description": "Build phase: Sheikah Towers brought online across the regions." },
+      { "name": "Hateno Lab Activation",          "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Purah's lab brings the Slate's runes to life." },
+      { "name": "Divine Beast Vah Medoh Reclaimed","type": "Delivery",   "offsetPct": 90,  "description": "Go-Live: Sheikah analytics network broadcasting kingdom-wide." },
+      { "name": "Return to Kakariko",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the village resumes its quiet watch." },
+      { "name": "Tribute to Elder Impa",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the Sheikah elder's blessing on the work." }
+    ],
+    "gerudo-desert": [
+      { "name": "Council at Gerudo Town",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the chieftain receives the project charter." },
+      { "name": "Forge the Lightning Helms",      "type": "Operational", "offsetPct": 35,  "description": "Build: Thunderhelm prototypes forged at the bazaar smithy." },
+      { "name": "Audit by Lady Urbosa",           "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Champion of the Gerudo." },
+      { "name": "Vah Naboris Activation",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Divine Beast walks the desert once more." },
+      { "name": "Sandstorm Subsides",             "type": "Operational", "offsetPct": 100, "description": "Project close: the desert calms and the bazaar reopens." },
+      { "name": "Final Tribute to the Chieftain", "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the throne of Gerudo Town." }
+    ],
+    "kokiri-zora-hyrule-fields": [
+      { "name": "Council at the Great Deku Tree", "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the Kokiri Grove." },
+      { "name": "Gaze into the Zora Falls",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: reports modelled from the river's flow." },
+      { "name": "Weave the Aqueduct Reports",     "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards woven from Zora silk and forest fibre." },
+      { "name": "Gift-Giving at Zora's Domain",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Lady Mipha bestows gifts on each member." },
+      { "name": "Sailing into the Lost Woods",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the Kokiri vanish into the trees, the Zora into the sea." },
+      { "name": "Final Recompense from King Zora","type": "Billing",     "offsetPct": 100, "description": "Final invoice from the throne of Zora's Domain." }
+    ]
+  },
+
+  "daysOff": {
+    "Princess Zelda":   [ { "realm": "hyrule-castle-town",         "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Pilgrimage to the Spring of Wisdom — annual prayer." } ],
+    "Link":             [ { "realm": "hyrule-castle-town",         "offsetWeeks": 12, "numberOfDays": 3, "notes": "Hyrule Field patrol — pre-arranged silent ride." } ],
+    "Impa":             [ { "realm": "kakariko-village-sheikah",   "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Sheikah elder's quarterly meditation in Kakariko." } ],
+    "Sheik":            [ { "realm": "hyrule-castle-town",         "offsetWeeks": 10, "numberOfDays": 2, "notes": "Harp practice retreat — songs of the Goddesses." } ],
+    "Purah":            [ { "realm": "kakariko-village-sheikah",   "offsetWeeks": 14, "numberOfDays": 5, "notes": "Hateno Lab — Guardian autopsy week." } ],
+    "Robbie":           [ { "realm": "kakariko-village-sheikah",   "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Akkala Tech Lab — ancient furnace ignition." } ],
+    "Urbosa":           [ { "realm": "gerudo-desert",              "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Thunderhelm vigil — annual lightning storm." } ],
+    "Riju":             [ { "realm": "gerudo-desert",              "offsetWeeks": 16, "numberOfDays": 2, "notes": "Coronation anniversary at Gerudo Town." } ],
+    "Buliara":          [ { "realm": "gerudo-desert",              "offsetWeeks": 10, "numberOfDays": 1, "notes": "Scimitar maintenance day." } ],
+    "Mipha":            [ { "realm": "kokiri-zora-hyrule-fields", "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Healing waters retreat at Zora's Domain." } ],
+    "Sidon":            [ { "realm": "kokiri-zora-hyrule-fields", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Diplomatic visit to Lurelin Village." } ],
+    "Saria":            [ { "realm": "kokiri-zora-hyrule-fields", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Sacred Forest Meadow — ocarina recital." } ],
+    "Tulin":            [ { "realm": "kokiri-zora-hyrule-fields", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Rito Village family visit — flight festival." } ],
+    "Revali":           [ { "realm": "kokiri-zora-hyrule-fields", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Solo flight training — Revali's Gale rehearsal." } ],
+    "Ganondorf":        [ { "realm": "gerudo-desert",              "offsetWeeks": 14, "numberOfDays": 5, "notes": "Sealed Grounds strategic retreat." } ]
+  }
+}

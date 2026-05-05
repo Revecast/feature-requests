@@ -67,11 +67,11 @@
     { "key": "RickAndMorty",   "displayName": "Rick and Morty",        "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/rickandmorty.json" },
     { "key": "DisneyPrincesses","displayName": "Disney Princesses",    "category": "Animation",       "implemented": true , "featured": false, "body": "themes/content/disneyprincesses.json" },
 
-    { "key": "Mario",          "displayName": "Super Mario",           "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/mario.json" },
-    { "key": "Zelda",          "displayName": "The Legend of Zelda",   "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/zelda.json" },
-    { "key": "PokemonGen1",    "displayName": "Pokémon (Gen 1)",       "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/pokemon_gen1.json" },
-    { "key": "Halo",           "displayName": "Halo",                  "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/halo.json" },
-    { "key": "Sonic",          "displayName": "Sonic the Hedgehog",    "category": "Video Games",     "implemented": false, "featured": false, "body": "themes/content/sonic.json" },
+    { "key": "Mario",          "displayName": "Super Mario",           "category": "Video Games",     "implemented": true , "featured": false, "body": "themes/content/mario.json" },
+    { "key": "Zelda",          "displayName": "The Legend of Zelda",   "category": "Video Games",     "implemented": true , "featured": false, "body": "themes/content/zelda.json" },
+    { "key": "PokemonGen1",    "displayName": "Pokémon (Gen 1)",       "category": "Video Games",     "implemented": true , "featured": false, "body": "themes/content/pokemongen1.json" },
+    { "key": "Halo",           "displayName": "Halo",                  "category": "Video Games",     "implemented": true , "featured": false, "body": "themes/content/halo.json" },
+    { "key": "Sonic",          "displayName": "Sonic the Hedgehog",    "category": "Video Games",     "implemented": true , "featured": false, "body": "themes/content/sonic.json" },
 
     { "key": "Naruto",         "displayName": "Naruto",                "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/naruto.json" },
     { "key": "DragonBallZ",    "displayName": "Dragon Ball Z",         "category": "Anime",           "implemented": false, "featured": false, "body": "themes/content/dragon_ball_z.json" },

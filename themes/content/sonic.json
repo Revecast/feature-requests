@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "key": "Sonic",
+  "displayName": "Sonic the Hedgehog",
+  "category": "Video Games",
+  "emailDomain": "green-hill-zone.test",
+  "account": {
+    "name": "Sonic Universe (Test Data)",
+    "accountNumber": "PSA-TEST-SONIC"
+  },
+  "mailingAddress": {
+    "street": "1 Green Hill Loop",
+    "city": "Station Square",
+    "state": "South Island",
+    "postalCode": "GHZ-001",
+    "country": "Mobius"
+  },
+
+  "roles": [
+    { "name": "Chaos Architect",                  "canonical": "Solution Architect",                      "description": "Designs the grand-scale solution — channels Chaos Energy into a stable platform blueprint." },
+    { "name": "Speed Captain",                    "canonical": "Project Manager",                         "description": "Keeps the team running at Mach speed — owns the timeline, scope, and ring count." },
+    { "name": "Ring Keeper",                      "canonical": "Salesforce Administrator",                "description": "Steward of profiles, permission sets, layouts and the precious rings of configuration." },
+    { "name": "Tornado Mechanic",                 "canonical": "Salesforce Developer",                    "description": "Builds Apex, LWC and triggers in the workshop — keeps the platform airworthy." },
+    { "name": "Freedom Fighter Lead",             "canonical": "Salesforce Practice Lead - USA",          "description": "Leads the Salesforce strike team — sets craft standards and mentors the senior crew." },
+    { "name": "Mystic Ruins Senior Scout",        "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran field consultant — patrols deep customer requirements with practiced craft." },
+    { "name": "Emerald Hill Scout",               "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the zone under the senior scout's eye." },
+    { "name": "Bridge-Master of Sky Sanctuary",   "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the systems beyond." },
+    { "name": "Capsule Engineer",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the cables of API, middleware, and event flow under the Bridge-Master's plan." },
+    { "name": "Badnik Wrangler",                  "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the dark arts of error handling." },
+    { "name": "Chao Garden Tester",               "canonical": "QA Engineer",                             "description": "Tends the build like a Chao — finds the bugs before they hatch into production." },
+    { "name": "Sonic Boom Herald",                "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for product and message — leads all marketing craft with sonic flair." },
+    { "name": "Spin Dash Strategist",             "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — coils up the plan and releases at full velocity." },
+    { "name": "Ring Collector",                   "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward across zones — content, creative, and the daily run." },
+    { "name": "Tails' Workshop Analyst",          "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the customer and the workshop crew." },
+    { "name": "Master Roboticist",                "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman — builds and reviews the most ambitious platform mechanisms." },
+    { "name": "Apprentice Spin Engineer",         "canonical": "Junior Salesforce Consultant - India",    "description": "Earliest career — learns the platform under the watch of the seniors." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every faction starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "team-sonic",
+      "projectName": "Team Sonic — Green Hill CRM Rollout",
+      "shortName": "Team Sonic GHC",
+      "subAccountName": "Team Sonic — Freedom Fighters",
+      "subAccountNumber": "PSA-TEST-SONIC-TEAMSONIC",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Green Hill Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Loop-de-Loop", "isDefault": false, "billable": true, "children": [
+          { "name": "Zone Reconnaissance", "billable": true },
+          { "name": "Ring Pickup Survey", "billable": true },
+          { "name": "Strategy at Tails' Workshop", "billable": true }
+        ]},
+        { "name": "Build the Tornado", "isDefault": false, "billable": true, "children": [
+          { "name": "Biplane Frame Forging", "billable": true },
+          { "name": "Engine Tuning", "billable": true },
+          { "name": "Wing Aileron Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Animal Friends", "isDefault": false, "billable": true, "children": [
+          { "name": "Capsule Roster Audit", "billable": true },
+          { "name": "Habitat Re-homing", "billable": true }
+        ]},
+        { "name": "Testing at Chemical Plant", "isDefault": false, "billable": true, "children": [
+          { "name": "Mega Mack Stress Test", "billable": true },
+          { "name": "Conveyor Drill (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Freedom Fighters", "isDefault": false, "billable": true, "children": [
+          { "name": "Spin Dash Bootcamp", "billable": true },
+          { "name": "Captain's Loop Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "team-dark-shadow",
+      "projectName": "Team Dark — Black Comet Surveillance Build",
+      "shortName": "Team Dark BCS",
+      "subAccountName": "Team Dark — G.U.N. Special Ops",
+      "subAccountNumber": "PSA-TEST-SONIC-TEAMDARK",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Space Colony ARK Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Chaos Control", "isDefault": false, "billable": true, "children": [
+          { "name": "ARK Memory Recovery", "billable": true },
+          { "name": "G.U.N. Intel Brief", "billable": true },
+          { "name": "Ultimate Lifeform Strategy", "billable": true }
+        ]},
+        { "name": "Build the Eclipse Cannon", "isDefault": false, "billable": true, "children": [
+          { "name": "Targeting Array Forging", "billable": true },
+          { "name": "Chaos Emerald Mounting", "billable": true },
+          { "name": "Power Core Calibration" , "billable": true }
+        ]},
+        { "name": "Migrate the Black Arms Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Comet Telemetry Catalog", "billable": true },
+          { "name": "Alien Specimen Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Final Hazard", "isDefault": false, "billable": true, "children": [
+          { "name": "Re-entry Heat Trial", "billable": true },
+          { "name": "Chaos Spear Pen-test", "billable": true }
+        ]},
+        { "name": "Training the Operatives", "isDefault": false, "billable": true, "children": [
+          { "name": "Hover Skate Drills", "billable": true },
+          { "name": "Sniper Rifle Refresher", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "eggman-empire",
+      "projectName": "Eggman Empire — Death Egg Industrial Platform",
+      "shortName": "Eggman DEI",
+      "subAccountName": "Eggman Empire Industries",
+      "subAccountNumber": "PSA-TEST-SONIC-EGGMAN",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Death Egg Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Evil Schemes", "isDefault": false, "billable": true, "children": [
+          { "name": "Hedgehog Surveillance", "billable": true },
+          { "name": "World Domination Briefing", "billable": true },
+          { "name": "Eggman's Master Plan", "billable": true }
+        ]},
+        { "name": "Build the Badnik Army", "isDefault": false, "billable": true, "children": [
+          { "name": "Buzz Bomber Assembly", "billable": true },
+          { "name": "Motobug Production Line", "billable": true },
+          { "name": "Crabmeat Forge", "billable": true }
+        ]},
+        { "name": "Migrate the Robotnik Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Blueprint Vault Inventory", "billable": true },
+          { "name": "Patent Filing System", "billable": true }
+        ]},
+        { "name": "Testing at Scrap Brain Zone", "isDefault": false, "billable": true, "children": [
+          { "name": "Conveyor Hazard Trial", "billable": true },
+          { "name": "Final Boss Stress Run", "billable": true }
+        ]},
+        { "name": "Training the Lackeys", "isDefault": false, "billable": true, "children": [
+          { "name": "Orbot & Cubot Onboarding", "billable": true },
+          { "name": "Henchman Loyalty Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "chaotix-detective-agency",
+      "projectName": "Chaotix Detective Agency — Case Management Implementation",
+      "shortName": "Chaotix CMI",
+      "subAccountName": "Chaotix Detective Agency",
+      "subAccountNumber": "PSA-TEST-SONIC-CHAOTIX",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Agency Office Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Stakeout", "isDefault": false, "billable": true, "children": [
+          { "name": "Client Interview Tour", "billable": true },
+          { "name": "Espio's Stealth Recon", "billable": true },
+          { "name": "Case Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Case Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Evidence Locker Construction", "billable": true },
+          { "name": "Surveillance Rig Wiring", "billable": true },
+          { "name": "Bee-Line Courier Network", "billable": true }
+        ]},
+        { "name": "Migrate the Cold Cases", "isDefault": false, "billable": true, "children": [
+          { "name": "Old Mystic Cave Records", "billable": true },
+          { "name": "Witness Statement Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Crime Scene", "isDefault": false, "billable": true, "children": [
+          { "name": "Forensic Drill (UAT)", "billable": true },
+          { "name": "Suspect Interrogation Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Junior Detectives", "isDefault": false, "billable": true, "children": [
+          { "name": "Charmy's Sleuth Bootcamp", "billable": true },
+          { "name": "Vector's Field Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "team-sonic": [
+      { "fullName": "Sonic the Hedgehog",      "themedRole": "Speed Captain" },
+      { "fullName": "Miles \"Tails\" Prower",  "themedRole": "Tornado Mechanic" },
+      { "fullName": "Knuckles the Echidna",    "themedRole": "Freedom Fighter Lead" },
+      { "fullName": "Amy Rose",                "themedRole": "Sonic Boom Herald" },
+      { "fullName": "Sticks the Badger",       "themedRole": "Emerald Hill Scout" },
+      { "fullName": "Big the Cat",             "themedRole": "Ring Keeper" },
+      { "fullName": "Cream the Rabbit",        "themedRole": "Apprentice Spin Engineer" }
+    ],
+    "team-dark-shadow": [
+      { "fullName": "Shadow the Hedgehog",     "themedRole": "Chaos Architect" },
+      { "fullName": "Rouge the Bat",           "themedRole": "Mystic Ruins Senior Scout" },
+      { "fullName": "E-123 Omega",             "themedRole": "Master Roboticist" },
+      { "fullName": "Maria Robotnik",          "themedRole": "Tails' Workshop Analyst" },
+      { "fullName": "Gerald Robotnik",         "themedRole": "Bridge-Master of Sky Sanctuary" },
+      { "fullName": "Black Doom",              "themedRole": "Speed Captain" },
+      { "fullName": "Eclipse Vanguard",        "themedRole": "Chao Garden Tester" }
+    ],
+    "eggman-empire": [
+      { "fullName": "Dr. Ivo \"Eggman\" Robotnik", "themedRole": "Chaos Architect" },
+      { "fullName": "Metal Sonic",             "themedRole": "Master Roboticist" },
+      { "fullName": "E-100 Alpha (Zero)",      "themedRole": "Capsule Engineer" },
+      { "fullName": "Orbot",                   "themedRole": "Ring Keeper" },
+      { "fullName": "Cubot",                   "themedRole": "Apprentice Spin Engineer" },
+      { "fullName": "Decoe",                   "themedRole": "Badnik Wrangler" },
+      { "fullName": "Bocoe",                   "themedRole": "Badnik Wrangler" },
+      { "fullName": "Bokkun",                  "themedRole": "Ring Collector" }
+    ],
+    "chaotix-detective-agency": [
+      { "fullName": "Vector the Crocodile",    "themedRole": "Speed Captain" },
+      { "fullName": "Espio the Chameleon",     "themedRole": "Mystic Ruins Senior Scout" },
+      { "fullName": "Charmy Bee",              "themedRole": "Apprentice Spin Engineer" },
+      { "fullName": "Mighty the Armadillo",    "themedRole": "Tornado Mechanic" },
+      { "fullName": "Ray the Flying Squirrel", "themedRole": "Emerald Hill Scout" },
+      { "fullName": "Honey the Cat",           "themedRole": "Spin Dash Strategist" }
+    ]
+  },
+
+  "milestones": {
+    "team-sonic": [
+      { "name": "Roll Call at Green Hill",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the team gathers at the loop." },
+      { "name": "Tornado Takes Off",           "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Tails' biplane lifts from the runway." },
+      { "name": "Casino Night Review",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stakeholder review under the neon lights." },
+      { "name": "Chemical Plant Phase Bill",   "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: build phase concludes." },
+      { "name": "Defeat the Final Boss",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the platform ships, the day is saved." },
+      { "name": "Victory Lap & Hand-off",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: a lap around the zone before signing off." }
+    ],
+    "team-dark-shadow": [
+      { "name": "ARK Awakens",                 "type": "Gate",        "offsetPct": 5,   "description": "Discovery: Shadow's pod reactivated, mission begins." },
+      { "name": "Chaos Emerald Acquired",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: first Emerald secured, power core online." },
+      { "name": "G.U.N. Mid-Mission Review",   "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Commander signs off on the operation so far." },
+      { "name": "Eclipse Cannon Live Fire",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the cannon is operational and aimed." },
+      { "name": "Re-entry & Hand-off",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the team returns to Earth." },
+      { "name": "Final Mission Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: G.U.N. settles the contract." }
+    ],
+    "eggman-empire": [
+      { "name": "Master Plan Unveiled",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Eggman reveals the next world domination scheme." },
+      { "name": "Badnik Production Online",    "type": "Operational", "offsetPct": 35,  "description": "Build: assembly line cranks out the Badnik army." },
+      { "name": "Doctor's Audit",              "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Doctor himself — no margin for error." },
+      { "name": "Death Egg Launch",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Death Egg achieves orbit." },
+      { "name": "Empire Hand-off",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Orbot and Cubot take over operations." },
+      { "name": "Final Reckoning",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Doctor's accounting department." }
+    ],
+    "chaotix-detective-agency": [
+      { "name": "Case File Opened",            "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: client briefs Vector at the agency office." },
+      { "name": "Stakeout Wraps",              "type": "Operational", "offsetPct": 30,  "description": "Discovery complete: surveillance evidence gathered." },
+      { "name": "Suspect Interview Round",     "type": "Operational", "offsetPct": 55,  "description": "Build: witnesses processed, leads pursued." },
+      { "name": "Case Cracked (UAT)",          "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: client confirms the case is solved." },
+      { "name": "Verdict Delivered",           "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: case file closed, justice served." },
+      { "name": "Agency Invoice Issued",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Chaotix front desk." }
+    ]
+  },
+
+  "daysOff": {
+    "Sonic the Hedgehog":         [ { "realm": "team-sonic",               "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Chili dog tour of Station Square — annual tradition." } ],
+    "Miles \"Tails\" Prower":     [ { "realm": "team-sonic",               "offsetWeeks": 10, "numberOfDays": 3, "notes": "Mystic Ruins workshop maintenance day." } ],
+    "Knuckles the Echidna":       [ { "realm": "team-sonic",               "offsetWeeks": 14, "numberOfDays": 4, "notes": "Master Emerald guard duty — solo retreat at Angel Island." } ],
+    "Amy Rose":                   [ { "realm": "team-sonic",               "offsetWeeks": 18, "numberOfDays": 1, "notes": "Wedding planning workshop (just in case)." } ],
+    "Big the Cat":                [ { "realm": "team-sonic",               "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Froggy fishing trip — open-ended." } ],
+    "Shadow the Hedgehog":        [ { "realm": "team-dark-shadow",         "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Visit Maria's memorial on the ARK." } ],
+    "Rouge the Bat":              [ { "realm": "team-dark-shadow",         "offsetWeeks": 12, "numberOfDays": 3, "notes": "Jewel auction in Casino Night — strictly off-duty." } ],
+    "E-123 Omega":                [ { "realm": "team-dark-shadow",         "offsetWeeks": 16, "numberOfDays": 1, "notes": "Scheduled maintenance — chassis lubrication cycle." } ],
+    "Dr. Ivo \"Eggman\" Robotnik":[ { "realm": "eggman-empire",            "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Eggmanland grand-opening site visit." } ],
+    "Metal Sonic":                [ { "realm": "eggman-empire",            "offsetWeeks": 10, "numberOfDays": 1, "notes": "Firmware upgrade — V.4 patch deployment." } ],
+    "Orbot":                      [ { "realm": "eggman-empire",            "offsetWeeks": 14, "numberOfDays": 2, "notes": "Diagnostic recalibration with Cubot." } ],
+    "Vector the Crocodile":       [ { "realm": "chaotix-detective-agency", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Headphones repair — overdue equipment service." } ],
+    "Espio the Chameleon":        [ { "realm": "chaotix-detective-agency", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Ninja training retreat — undisclosed location." } ],
+    "Charmy Bee":                 [ { "realm": "chaotix-detective-agency", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Hive family reunion — quarterly." } ],
+    "Mighty the Armadillo":       [ { "realm": "chaotix-detective-agency", "offsetWeeks": 20, "numberOfDays": 3, "notes": "Visiting Ray's family in the forest zone." } ]
+  }
+}
