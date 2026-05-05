@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "key": "ToyStoryPixar",
+  "displayName": "Toy Story / Pixar",
+  "category": "Animation",
+  "emailDomain": "pixar.test",
+  "account": {
+    "name": "Pixar Animation Universe (Test Data)",
+    "accountNumber": "PSA-TEST-TOYSTORYPIXAR"
+  },
+  "mailingAddress": {
+    "street": "1200 Park Avenue",
+    "city": "Emeryville",
+    "state": "CA",
+    "postalCode": "94608",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Story Architect",                 "canonical": "Solution Architect",                      "description": "Designs the over-arching story spine — the Salesforce solution blueprint that all departments build to." },
+    { "name": "Production Manager",              "canonical": "Project Manager",                         "description": "Holds the schedule, the call sheet, and the burn-down — answers to the Director." },
+    { "name": "Pipeline Wrangler",               "canonical": "Salesforce Administrator",                "description": "Steward of the production pipeline — fields, layouts, permission sets and shot tracking." },
+    { "name": "Render Engineer",                 "canonical": "Salesforce Developer",                    "description": "Writes the Apex and LWC that bring the frames to life on the platform." },
+    { "name": "Director of Photography",         "canonical": "Salesforce Practice Lead - USA",          "description": "Sets the look and the standard for all Salesforce craft on the lot." },
+    { "name": "Senior Animator",                 "canonical": "Salesforce Senior Consultant - India",    "description": "Hand-keys the most expressive shots — leads the junior animation pod through complex requirements." },
+    { "name": "Junior Animator",                 "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration through the shot under the Senior Animator's watch." },
+    { "name": "VFX Supervisor",                  "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great effects spans — ties Salesforce to RenderMan, Houdini, and the realms beyond." },
+    { "name": "FX Technical Director",           "canonical": "Integration Senior Consultant - India",   "description": "Sets the simulations — APIs, middleware, and event flows under the Supervisor's plan." },
+    { "name": "FX Apprentice",                   "canonical": "Integration Consultant - India",          "description": "Learns the craft of effects integration — webhooks, batch, callouts, and the careful art of error handling." },
+    { "name": "Quality Inspector",               "canonical": "QA Engineer",                             "description": "Tends the dailies and the screenings — finds the rendering errors before they reach the audience." },
+    { "name": "Marketing Producer",              "canonical": "Marketing Practice Lead",                 "description": "Lifts the trailer and the poster — leads all marketing craft for the picture." },
+    { "name": "Trailer Editor",                  "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — cuts the spots that bring the audience to the theater." },
+    { "name": "Publicity Coordinator",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the press — content, creative, and the daily push." },
+    { "name": "Story Artist",                    "canonical": "Business Analyst",                        "description": "Boards the sequences — translates between the Producer's wish and the engineering craft." },
+    { "name": "Lead Render Engineer",            "canonical": "Salesforce Senior Developer - USA",       "description": "Owns the most demanding renders — the senior platform craft, mentor to the development pod." },
+    { "name": "In-Betweener",                    "canonical": "Junior Salesforce Consultant - India",    "description": "Fills the frames between the keys — entry-level platform work with senior oversight." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "toy-story",
+      "projectName": "Toy Story — Andy's Room Inventory Platform",
+      "shortName": "Toy Story AIP",
+      "subAccountName": "Andy's Room Toys",
+      "subAccountNumber": "PSA-TEST-TOYSTORYPIXAR-TOY-STORY",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Toy Box Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Roll Call", "isDefault": false, "billable": true, "children": [
+          { "name": "Toy Census in the Toy Box", "billable": true },
+          { "name": "Andy's Bedroom Survey", "billable": true },
+          { "name": "Strategy at Pizza Planet", "billable": true }
+        ]},
+        { "name": "Build to Infinity", "isDefault": false, "billable": true, "children": [
+          { "name": "Spring Loading Buzz's Wings", "billable": true },
+          { "name": "Pull-String Voice Modules", "billable": true },
+          { "name": "Saddle-Up for Bullseye", "billable": true }
+        ]},
+        { "name": "Migrate the Old Toys", "isDefault": false, "billable": true, "children": [
+          { "name": "Sid's House Rescue Op", "billable": true },
+          { "name": "Daycare Transfer Manifest", "billable": true }
+        ]},
+        { "name": "Testing the Claw Machine", "isDefault": false, "billable": true, "children": [
+          { "name": "Pizza Planet Crane UAT", "billable": true },
+          { "name": "Slinky Stretch Test", "billable": true }
+        ]},
+        { "name": "Training the Toys", "isDefault": false, "billable": true, "children": [
+          { "name": "New Toy Orientation", "billable": true },
+          { "name": "Sheriff's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "monsters-inc",
+      "projectName": "Monsters Inc — Scare Floor Energy CRM",
+      "shortName": "Monsters SFE",
+      "subAccountName": "Monsters, Incorporated",
+      "subAccountNumber": "PSA-TEST-TOYSTORYPIXAR-MONSTERS-INC",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Scare Floor Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Door Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Door Vault Inventory", "billable": true },
+          { "name": "Closet Network Mapping", "billable": true },
+          { "name": "Strategy with Waternoose", "billable": true }
+        ]},
+        { "name": "Build the Scare Floor", "isDefault": false, "billable": true, "children": [
+          { "name": "Scream Canister Manufacturing", "billable": true },
+          { "name": "Door Station Wiring", "billable": true },
+          { "name": "Scare Card Reader Install", "billable": true }
+        ]},
+        { "name": "Migrate to Laugh Power", "isDefault": false, "billable": true, "children": [
+          { "name": "Comedy Routine Catalog", "billable": true },
+          { "name": "Joke Calibration", "billable": true }
+        ]},
+        { "name": "Testing the CDA Protocols", "isDefault": false, "billable": true, "children": [
+          { "name": "23-19 Decontamination Drill", "billable": true },
+          { "name": "Closed Door Penetration Test", "billable": true }
+        ]},
+        { "name": "Training the Scarers", "isDefault": false, "billable": true, "children": [
+          { "name": "Scare School Refresher", "billable": true },
+          { "name": "Assistant's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "finding-nemo",
+      "projectName": "Finding Nemo — Ocean Currents Logistics System",
+      "shortName": "Nemo OCL",
+      "subAccountName": "Great Barrier Reef Authority",
+      "subAccountNumber": "PSA-TEST-TOYSTORYPIXAR-FINDING-NEMO",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Reef Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Reconnaissance", "isDefault": false, "billable": true, "children": [
+          { "name": "Anemone Habitat Survey", "billable": true },
+          { "name": "Drop-off Edge Mapping", "billable": true },
+          { "name": "Strategy with the School" , "billable": true }
+        ]},
+        { "name": "Build the EAC", "isDefault": false, "billable": true, "children": [
+          { "name": "Current Routing Channels", "billable": true },
+          { "name": "Turtle Highway Onramps", "billable": true },
+          { "name": "Jellyfish Avoidance Lanes", "billable": true }
+        ]},
+        { "name": "Migrate the Tank Gang", "isDefault": false, "billable": true, "children": [
+          { "name": "Dentist Office Extraction", "billable": true },
+          { "name": "Sydney Harbour Manifest", "billable": true }
+        ]},
+        { "name": "Testing the Filter Systems", "isDefault": false, "billable": true, "children": [
+          { "name": "Pipe Pressure UAT", "billable": true },
+          { "name": "Chum Bucket Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Reef School", "isDefault": false, "billable": true, "children": [
+          { "name": "Mr. Ray's Field Trip", "billable": true },
+          { "name": "Just Keep Swimming Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "incredibles",
+      "projectName": "Incredibles — Super Identity Management Platform",
+      "shortName": "Incredibles SIM",
+      "subAccountName": "National Supers Agency",
+      "subAccountNumber": "PSA-TEST-TOYSTORYPIXAR-INCREDIBLES",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Parr Household Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Threat Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Nomanisan Island Survey", "billable": true },
+          { "name": "Omnidroid Capability Audit", "billable": true },
+          { "name": "Strategy with Dicker", "billable": true }
+        ]},
+        { "name": "Build the Super Suits", "isDefault": false, "billable": true, "children": [
+          { "name": "No Capes Compliance Review", "billable": true },
+          { "name": "Elastic Fabric Weaving", "billable": true },
+          { "name": "Force-field Lining Install", "billable": true }
+        ]},
+        { "name": "Migrate the Glory Days Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Insurance Cabinet Extract", "billable": true },
+          { "name": "Relocation Program Roll-up", "billable": true }
+        ]},
+        { "name": "Testing on Nomanisan", "isDefault": false, "billable": true, "children": [
+          { "name": "Omnidroid Combat UAT", "billable": true },
+          { "name": "Zero-Point Energy Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Powers Practice in the Backyard", "billable": true },
+          { "name": "Edna's Suit Briefing", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "toy-story": [
+      { "fullName": "Woody",            "themedRole": "Story Architect" },
+      { "fullName": "Buzz Lightyear",   "themedRole": "Director of Photography" },
+      { "fullName": "Jessie",           "themedRole": "Production Manager" },
+      { "fullName": "Bullseye",         "themedRole": "Junior Animator" },
+      { "fullName": "Rex",              "themedRole": "Quality Inspector" },
+      { "fullName": "Hamm",             "themedRole": "Story Artist" },
+      { "fullName": "Mr. Potato Head",  "themedRole": "Pipeline Wrangler" },
+      { "fullName": "Slinky Dog",       "themedRole": "Senior Animator" },
+      { "fullName": "Bo Peep",          "themedRole": "Marketing Producer" }
+    ],
+    "monsters-inc": [
+      { "fullName": "James P. Sullivan","themedRole": "Story Architect" },
+      { "fullName": "Mike Wazowski",    "themedRole": "Production Manager" },
+      { "fullName": "Boo",              "themedRole": "In-Betweener" },
+      { "fullName": "Randall Boggs",    "themedRole": "FX Technical Director" },
+      { "fullName": "Celia Mae",        "themedRole": "Publicity Coordinator" },
+      { "fullName": "Roz",              "themedRole": "Pipeline Wrangler" },
+      { "fullName": "Henry J. Waternoose","themedRole": "Director of Photography" }
+    ],
+    "finding-nemo": [
+      { "fullName": "Marlin",           "themedRole": "Production Manager" },
+      { "fullName": "Nemo",             "themedRole": "Junior Animator" },
+      { "fullName": "Dory",             "themedRole": "Story Artist" },
+      { "fullName": "Bruce",            "themedRole": "VFX Supervisor" },
+      { "fullName": "Crush",            "themedRole": "Senior Animator" },
+      { "fullName": "Squirt",           "themedRole": "FX Apprentice" },
+      { "fullName": "Gill",             "themedRole": "Story Architect" },
+      { "fullName": "Nigel",            "themedRole": "Trailer Editor" }
+    ],
+    "incredibles": [
+      { "fullName": "Bob Parr",         "themedRole": "Story Architect" },
+      { "fullName": "Helen Parr",       "themedRole": "Production Manager" },
+      { "fullName": "Violet Parr",      "themedRole": "Render Engineer" },
+      { "fullName": "Dash Parr",        "themedRole": "Junior Animator" },
+      { "fullName": "Jack-Jack Parr",   "themedRole": "In-Betweener" },
+      { "fullName": "Lucius Best",      "themedRole": "Lead Render Engineer" },
+      { "fullName": "Edna Mode",        "themedRole": "Director of Photography" },
+      { "fullName": "Buddy Pine",       "themedRole": "VFX Supervisor" }
+    ]
+  },
+
+  "milestones": {
+    "toy-story": [
+      { "name": "Andy's Birthday Roll Call",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — every toy accounted for under the bed." },
+      { "name": "Wings Unfolded",                "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Buzz's spring-loaded wings deploy on cue." },
+      { "name": "Pizza Planet Strategy Review",  "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: solution review over the claw machine." },
+      { "name": "Toys Rescued from Sid",         "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: legacy toys safely migrated." },
+      { "name": "Andy's Move to College",        "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the toy box ships to the new house." },
+      { "name": "Hand-off to Bonnie",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the next kid." }
+    ],
+    "monsters-inc": [
+      { "name": "Scare Floor Open",              "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Scare Floor lights come on." },
+      { "name": "First Door Activated",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: the first closet door spins up on the rail." },
+      { "name": "23-19 Drill Passes",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: CDA decontamination protocols proven." },
+      { "name": "Switch to Laugh Power",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: comedy energy floods the grid." },
+      { "name": "Boo's Door Reassembled",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: every door restored to service." },
+      { "name": "Final Energy Invoice",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: city power contract reconciled." }
+    ],
+    "finding-nemo": [
+      { "name": "Drop-off Briefing",             "type": "Gate",        "offsetPct": 10,  "description": "Discovery: scope of the open ocean defined." },
+      { "name": "Hop on the EAC",                "type": "Operational", "offsetPct": 35,  "description": "Build: routing onto the East Australian Current." },
+      { "name": "P. Sherman 42 Wallaby Way",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review: address located, dentist confirmed." },
+      { "name": "Tank Gang Liberation",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the tank gang escapes into Sydney Harbour." },
+      { "name": "Reef Re-opened to the School",  "type": "Operational", "offsetPct": 100, "description": "Project close: Mr. Ray resumes the field trips." },
+      { "name": "Final Reef Invoice",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Reef Authority." }
+    ],
+    "incredibles": [
+      { "name": "Agent Dicker Briefing",         "type": "Gate",        "offsetPct": 10,  "description": "Kickoff at the NSA: identities and aliases briefed." },
+      { "name": "Suits Fitted by Edna",          "type": "Operational", "offsetPct": 30,  "description": "Discovery: each Super outfitted to spec — and no capes." },
+      { "name": "Omnidroid Field Test",          "type": "Operational", "offsetPct": 55,  "description": "Build: combat capabilities certified on Nomanisan." },
+      { "name": "Family UAT in the Backyard",    "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: powers integrated across the family." },
+      { "name": "Underminer Surfaces",           "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the platform meets its first real threat." },
+      { "name": "Final Hero Invoice",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the National Supers Agency." }
+    ]
+  },
+
+  "daysOff": {
+    "Woody":             [ { "realm": "toy-story",    "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Cleaned and repaired at Al's Toy Barn — arm restitched." } ],
+    "Buzz Lightyear":    [ { "realm": "toy-story",    "offsetWeeks": 10, "numberOfDays": 2, "notes": "Recharging at Star Command between missions." } ],
+    "Jessie":            [ { "realm": "toy-story",    "offsetWeeks": 16, "numberOfDays": 2, "notes": "Yodeling festival — annual Woody's Roundup reunion." } ],
+    "Mr. Potato Head":   [ { "realm": "toy-story",    "offsetWeeks": 12, "numberOfDays": 1, "notes": "Lost his ear under the couch — recovery day." } ],
+    "James P. Sullivan": [ { "realm": "monsters-inc", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Mandatory Top Scarer wellness break." } ],
+    "Mike Wazowski":     [ { "realm": "monsters-inc", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Anniversary trip with Celia to the Harryhausen's reservation." } ],
+    "Boo":               [ { "realm": "monsters-inc", "offsetWeeks": 18, "numberOfDays": 1, "notes": "Naptime — non-negotiable." } ],
+    "Marlin":            [ { "realm": "finding-nemo", "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Anemone deep-clean and worry-recovery week." } ],
+    "Dory":              [ { "realm": "finding-nemo", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Forgot she scheduled time off — taking it anyway." } ],
+    "Crush":             [ { "realm": "finding-nemo", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Riding the EAC — totally rad sabbatical, dude." } ],
+    "Bob Parr":          [ { "realm": "incredibles",  "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Bowling night — keeping up appearances at Insuricare." } ],
+    "Helen Parr":        [ { "realm": "incredibles",  "offsetWeeks": 12, "numberOfDays": 3, "notes": "PTA week — Dash's school principal meetings." } ],
+    "Edna Mode":         [ { "realm": "incredibles",  "offsetWeeks": 10, "numberOfDays": 4, "notes": "Couture week — darling, no interruptions." } ],
+    "Lucius Best":       [ { "realm": "incredibles",  "offsetWeeks": 16, "numberOfDays": 2, "notes": "Honey said so. That's it. That's the reason." } ]
+  }
+}

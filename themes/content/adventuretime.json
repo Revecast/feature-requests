@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "key": "AdventureTime",
+  "displayName": "Adventure Time",
+  "category": "Animation",
+  "emailDomain": "ooo.test",
+  "account": {
+    "name": "Land of Ooo (Test Data)",
+    "accountNumber": "PSA-TEST-ADVENTURETIME"
+  },
+  "mailingAddress": {
+    "street": "1 Tree Fort Lane",
+    "city": "Candy Kingdom",
+    "state": "Land of Ooo",
+    "postalCode": "OOO-001",
+    "country": "Ooo"
+  },
+
+  "roles": [
+    { "name": "Royal Architect of Sweet Systems",   "canonical": "Solution Architect",                    "description": "Designer of the kingdom's grand sugary architecture — owns the over-arching Salesforce solution." },
+    { "name": "Hero of Ooo",                        "canonical": "Project Manager",                       "description": "Marshals the band of adventurers, holds the timeline, and answers to the Princess." },
+    { "name": "Royal Gumball Keeper",               "canonical": "Salesforce Administrator",              "description": "Steward of records, layouts, fields and permission sets — keeps every gumball in its place." },
+    { "name": "Master Candy Smith",                 "canonical": "Salesforce Developer",                  "description": "Forges Apex, LWC, and platform features in the Candy Kingdom workshops." },
+    { "name": "Senior Candy Smith of the Citadel",  "canonical": "Salesforce Senior Developer - USA",     "description": "Senior smith with the deepest recipes — leads complex Apex and integration craft." },
+    { "name": "Banana Guard Captain",               "canonical": "Salesforce Practice Lead - USA",        "description": "Captain of the kingdom's most senior practice — sets standards and trains the guard." },
+    { "name": "Senior Adventurer of the Grass Lands","canonical": "Salesforce Senior Consultant - India", "description": "Seasoned adventurer who patrols the borders of customer requirements with practiced skill." },
+    { "name": "Adventurer Apprentice",              "canonical": "Salesforce Consultant - India",         "description": "Carries discovery and configuration across the realm under the senior adventurer's eye." },
+    { "name": "Trainee Adventurer",                 "canonical": "Junior Salesforce Consultant - India",  "description": "Newest member of the band — learns the ropes of configuration and discovery in the Grass Lands." },
+    { "name": "Bridgemaster of the Bad Lands",      "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond Ooo." },
+    { "name": "Senior Bridge Builder",              "canonical": "Integration Senior Consultant - India", "description": "Lays the stones of API, middleware, and event flows under the Bridgemaster's plan." },
+    { "name": "Apprentice Bridge Builder",          "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — webhooks, batch, callouts and the dungeon-tested patterns." },
+    { "name": "Royal Test Hero",                    "canonical": "QA Engineer",                           "description": "Tends the wounded build and finds the maladies before they reach the Princess." },
+    { "name": "Royal Trumpet Herald",               "canonical": "Marketing Practice Lead",               "description": "Lifts the banner and trumpet for product and message — leads all marketing craft." },
+    { "name": "Senior Town Crier",                  "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the call across Ooo to gather and convert." },
+    { "name": "Town Crier Apprentice",              "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Royal Scribe of Mathematical!",      "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between mortal Customer and the wizardly craft of design." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "candy-kingdom",
+      "projectName": "Candy Kingdom — Sugar Sovereign CRM Rollout",
+      "shortName": "Candy SSC",
+      "subAccountName": "Kingdom of Candy",
+      "subAccountNumber": "PSA-TEST-ADVENTURETIME-CANDY-KINGDOM",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Candy Castle Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Royal Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Bubblegum Lab Diagnostic", "billable": true },
+          { "name": "Banana Guard Roll Call", "billable": true }
+        ]},
+        { "name": "Build the Gumball Machine", "isDefault": false, "billable": true, "children": [
+          { "name": "Sugar Foundation Pour", "billable": true },
+          { "name": "Gumball Dispenser Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Recipes", "isDefault": false, "billable": true, "children": [
+          { "name": "Candy Cookbook Inventory", "billable": true },
+          { "name": "Sour Cream Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Gumball Guardian", "isDefault": false, "billable": true, "children": [
+          { "name": "Sugar Stress Trial", "billable": true },
+          { "name": "Banana Guard Drill", "billable": true }
+        ]},
+        { "name": "Training the Candy Citizens", "isDefault": false, "billable": true, "children": [
+          { "name": "Peppermint Onboarding", "billable": true },
+          { "name": "Princess Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "ice-kingdom",
+      "projectName": "Ice Kingdom — Frozen Realm Logistics Platform",
+      "shortName": "Ice FRL",
+      "subAccountName": "Kingdom of Ice",
+      "subAccountNumber": "PSA-TEST-ADVENTURETIME-ICE-KINGDOM",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Ice Castle Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Penguin Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Gunter Reconnaissance", "billable": true },
+          { "name": "Frozen Tundra Audit", "billable": true }
+        ]},
+        { "name": "Build the Ice Throne", "isDefault": false, "billable": true, "children": [
+          { "name": "Glacier Foundation Carving", "billable": true },
+          { "name": "Crown of Madness Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Princess Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Princess Card Sorting", "billable": true },
+          { "name": "Wenk-Wenk Roll Call", "billable": true }
+        ]},
+        { "name": "Testing the Frozen Defenses", "isDefault": false, "billable": true, "children": [
+          { "name": "Blizzard Endurance Trial", "billable": true },
+          { "name": "Penguin Battalion Drill", "billable": true }
+        ]},
+        { "name": "Training the Penguins", "isDefault": false, "billable": true, "children": [
+          { "name": "Wenk Onboarding", "billable": true },
+          { "name": "Ice King's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "nightosphere-vampires",
+      "projectName": "Nightosphere — Soul Surveillance Build",
+      "shortName": "Night SSB",
+      "subAccountName": "Realm of the Nightosphere",
+      "subAccountNumber": "PSA-TEST-ADVENTURETIME-NIGHTOSPHERE-VAMPIRES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Abadeer Manor Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Soul Census", "isDefault": false, "billable": true, "children": [
+          { "name": "Soul Sucker Survey", "billable": true },
+          { "name": "Bass Riff Strategy", "billable": true }
+        ]},
+        { "name": "Build the Soul Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Demon Gate Forging", "billable": true },
+          { "name": "Axe Bass Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Vampire Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Stakes Catalog", "billable": true },
+          { "name": "Hambo Restoration Notes", "billable": true }
+        ]},
+        { "name": "Testing the Dark Magic", "isDefault": false, "billable": true, "children": [
+          { "name": "Sunlight Resistance Trial", "billable": true },
+          { "name": "Schwabl Familiar Drill", "billable": true }
+        ]},
+        { "name": "Training the Underlings", "isDefault": false, "billable": true, "children": [
+          { "name": "Demon Conscript Manual", "billable": true },
+          { "name": "Marceline's Master Class", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "lumpy-space-fire-kingdom",
+      "projectName": "Lumpy Space & Fire Kingdom — Drama Analytics Implementation",
+      "shortName": "LSFK DAI",
+      "subAccountName": "Lumpy Space & Fire Kingdom Federation",
+      "subAccountNumber": "PSA-TEST-ADVENTURETIME-LUMPY-SPACE-FIRE-KINGDOM",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Lumpy Lounge Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Drama Gazing", "isDefault": false, "billable": true, "children": [
+          { "name": "Lumpy Gossip Audit", "billable": true },
+          { "name": "Flame Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Flame Console", "isDefault": false, "billable": true, "children": [
+          { "name": "Lava Foundation Pour", "billable": true },
+          { "name": "Heat Shield Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Floating Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Cloud Drive Catalog", "billable": true },
+          { "name": "Princess Tier Sorting", "billable": true }
+        ]},
+        { "name": "Testing the Heat Resistance", "isDefault": false, "billable": true, "children": [
+          { "name": "Inferno Stress Trial", "billable": true },
+          { "name": "Lumpy Drama Pen-test", "billable": true }
+        ]},
+        { "name": "Training the Royals", "isDefault": false, "billable": true, "children": [
+          { "name": "BMO Operator Bootcamp", "billable": true },
+          { "name": "Royal Decorum Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "candy-kingdom": [
+      { "fullName": "Princess Bubblegum",  "themedRole": "Royal Architect of Sweet Systems" },
+      { "fullName": "Finn the Human",      "themedRole": "Hero of Ooo" },
+      { "fullName": "Jake the Dog",        "themedRole": "Senior Adventurer of the Grass Lands" },
+      { "fullName": "Peppermint Butler",   "themedRole": "Royal Gumball Keeper" },
+      { "fullName": "Lemongrab",           "themedRole": "Royal Test Hero" },
+      { "fullName": "Cinnamon Bun",        "themedRole": "Trainee Adventurer" },
+      { "fullName": "Banana Guard Number 16","themedRole": "Banana Guard Captain" }
+    ],
+    "ice-kingdom": [
+      { "fullName": "Ice King",            "themedRole": "Royal Architect of Sweet Systems" },
+      { "fullName": "Gunter",              "themedRole": "Master Candy Smith" },
+      { "fullName": "Marceline Abadeer",   "themedRole": "Senior Candy Smith of the Citadel" },
+      { "fullName": "Penguin Wenk",        "themedRole": "Adventurer Apprentice" },
+      { "fullName": "Penguin Gonter",      "themedRole": "Trainee Adventurer" },
+      { "fullName": "Penguin Larvo",       "themedRole": "Town Crier Apprentice" },
+      { "fullName": "Penguin Wonton",      "themedRole": "Royal Scribe of Mathematical!" }
+    ],
+    "nightosphere-vampires": [
+      { "fullName": "Marceline the Vampire Queen", "themedRole": "Royal Architect of Sweet Systems" },
+      { "fullName": "Hunson Abadeer",      "themedRole": "Banana Guard Captain" },
+      { "fullName": "Hambo",               "themedRole": "Royal Scribe of Mathematical!" },
+      { "fullName": "Schwabl",             "themedRole": "Adventurer Apprentice" },
+      { "fullName": "Vampire King",        "themedRole": "Bridgemaster of the Bad Lands" },
+      { "fullName": "The Hierophant",      "themedRole": "Senior Bridge Builder" },
+      { "fullName": "The Empress Vampire", "themedRole": "Apprentice Bridge Builder" }
+    ],
+    "lumpy-space-fire-kingdom": [
+      { "fullName": "Lumpy Space Princess","themedRole": "Royal Trumpet Herald" },
+      { "fullName": "Flame Princess",      "themedRole": "Hero of Ooo" },
+      { "fullName": "Flame King",          "themedRole": "Royal Architect of Sweet Systems" },
+      { "fullName": "BMO",                 "themedRole": "Master Candy Smith" },
+      { "fullName": "NEPTR",               "themedRole": "Royal Test Hero" },
+      { "fullName": "Lady Rainicorn",      "themedRole": "Senior Town Crier" },
+      { "fullName": "Tree Trunks",         "themedRole": "Royal Scribe of Mathematical!" }
+    ]
+  },
+
+  "milestones": {
+    "candy-kingdom": [
+      { "name": "Royal Decree of Kickoff",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Princess Bubblegum signs the royal decree." },
+      { "name": "Gumball Machine Ignition",  "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the great gumball machine rumbles to life." },
+      { "name": "Candy Census Review",       "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Peppermint Butler audits the candy population." },
+      { "name": "Banana Guard Pay Cycle",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the guards must be paid in pancakes." },
+      { "name": "Sugar Sovereign Go-Live",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the new system crowns the Candy Kingdom." },
+      { "name": "Royal Hand-off",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Peppermint Butler." }
+    ],
+    "ice-kingdom": [
+      { "name": "Penguin Muster at Ice Castle","type": "Gate",      "offsetPct": 5,   "description": "Project kickoff: the wenks gather in the great ice hall." },
+      { "name": "Ride to Frozen Lake",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: the ice throne is hauled to its plinth." },
+      { "name": "Princess Trap Test",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: every princess-detection trap fires correctly." },
+      { "name": "Crown of Madness Activation","type": "Delivery",   "offsetPct": 90,  "description": "Go-Live: the Ice King wears the crown — system is live." },
+      { "name": "Return to the Lonely Tower","type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the king returns to his tower." },
+      { "name": "Final Wenk Reckoning",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: paid in penguin form." }
+    ],
+    "nightosphere-vampires": [
+      { "name": "The Bass Drops",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Marceline plays the opening riff." },
+      { "name": "Forge the Soul Vault",      "type": "Operational", "offsetPct": 35,  "description": "Build: the soul-storage vault is hammered into the obsidian wall." },
+      { "name": "Hunson Abadeer's Audit",    "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Lord of Evil himself." },
+      { "name": "Soul Vault Activation",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Nightosphere is fully operational." },
+      { "name": "Soul-Sucking Suspended",    "type": "Operational", "offsetPct": 100, "description": "Project close: surveillance shifted into hyper-care." },
+      { "name": "Final Soul Reckoning",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Nightosphere — payable in souls or USD." }
+    ],
+    "lumpy-space-fire-kingdom": [
+      { "name": "Council of Lumps & Flames", "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the lumpy lounge — drama inevitable." },
+      { "name": "Gaze into the Flame Console","type": "Operational","offsetPct": 30,  "description": "Discovery: reports modelled from the flames themselves." },
+      { "name": "Weave the Heat-Shield Reports","type": "Operational","offsetPct": 55,"description": "Build: dashboards woven of fireproof thread." },
+      { "name": "Drama Acceptance at LSP's Cloud","type": "Gate",   "offsetPct": 80,  "description": "UAT acceptance: LSP herself signs off — eventually." },
+      { "name": "Royal Reveal Go-Live",      "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the kingdoms light up with insight." },
+      { "name": "Final Dramatic Invoice",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice — sent with maximum lumpy drama." }
+    ]
+  },
+
+  "daysOff": {
+    "Finn the Human":        [ { "realm": "candy-kingdom",            "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Adventure quest — rescuing a princess (again)." } ],
+    "Jake the Dog":          [ { "realm": "candy-kingdom",            "offsetWeeks": 10, "numberOfDays": 2, "notes": "Family time with Lady Rainicorn and the pups." } ],
+    "Princess Bubblegum":    [ { "realm": "candy-kingdom",            "offsetWeeks": 14, "numberOfDays": 4, "notes": "Royal lab retreat — uninterrupted science." } ],
+    "Peppermint Butler":     [ { "realm": "candy-kingdom",            "offsetWeeks": 18, "numberOfDays": 1, "notes": "Dark arts seminar — strictly off-the-books." } ],
+    "Ice King":              [ { "realm": "ice-kingdom",              "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Princess-kidnapping sabbatical." } ],
+    "Gunter":                [ { "realm": "ice-kingdom",              "offsetWeeks": 12, "numberOfDays": 2, "notes": "Wenk wenk wenk (translation: spa day)." } ],
+    "Marceline the Vampire Queen": [ { "realm": "nightosphere-vampires", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Studio session — recording new bass tracks." } ],
+    "Hunson Abadeer":        [ { "realm": "nightosphere-vampires",   "offsetWeeks": 10, "numberOfDays": 3, "notes": "Annual evil overlord conference." } ],
+    "Schwabl":               [ { "realm": "nightosphere-vampires",   "offsetWeeks": 16, "numberOfDays": 1, "notes": "Vet appointment — vampire poodle checkup." } ],
+    "Lumpy Space Princess":  [ { "realm": "lumpy-space-fire-kingdom","offsetWeeks": 4,  "numberOfDays": 3, "notes": "Glob — drama with Brad, AGAIN." } ],
+    "Flame Princess":        [ { "realm": "lumpy-space-fire-kingdom","offsetWeeks": 8,  "numberOfDays": 2, "notes": "Cooling-off period — literally." } ],
+    "BMO":                   [ { "realm": "lumpy-space-fire-kingdom","offsetWeeks": 12, "numberOfDays": 2, "notes": "Software update + cartridge cleaning." } ],
+    "Tree Trunks":           [ { "realm": "lumpy-space-fire-kingdom","offsetWeeks": 16, "numberOfDays": 2, "notes": "Apple pie baking marathon." } ],
+    "Lady Rainicorn":        [ { "realm": "lumpy-space-fire-kingdom","offsetWeeks": 18, "numberOfDays": 3, "notes": "Visiting parents in the Crystal Dimension." } ]
+  }
+}

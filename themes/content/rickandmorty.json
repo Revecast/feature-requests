@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "key": "RickAndMorty",
+  "displayName": "Rick and Morty",
+  "category": "Animation",
+  "emailDomain": "c137.test",
+  "account": {
+    "name": "Central Finite Curve (Test Data)",
+    "accountNumber": "PSA-TEST-RICKANDMORTY"
+  },
+  "mailingAddress": {
+    "street": "137 Mulberry Lane",
+    "city": "Seattle",
+    "state": "WA",
+    "postalCode": "98109",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Dimension Architect C-137",       "canonical": "Solution Architect",                    "description": "Designs the over-arching solution across infinite realities — keeps the portal math sound." },
+    { "name": "Adventure Coordinator",            "canonical": "Project Manager",                       "description": "Wrangles Ricks, Mortys, and Federation paperwork to keep the timeline (mostly) on plan." },
+    { "name": "Citadel Sysadmin",                 "canonical": "Salesforce Administrator",              "description": "Steward of records, layouts, fields and the giant Morty database." },
+    { "name": "Garage Tinkerer",                  "canonical": "Salesforce Developer",                  "description": "Builds Apex, LWC, and improvised gadgets between trips through the portal gun." },
+    { "name": "Council of Ricks Lead — USA",      "canonical": "Salesforce Practice Lead - USA",        "description": "Senior Rick over all Salesforce craft — sets the standard the other Ricks pretend to follow." },
+    { "name": "Senior Schwifty Engineer — India", "canonical": "Salesforce Senior Consultant - India",  "description": "Patrols the borders of customer requirements with hard-earned interdimensional craft." },
+    { "name": "Junior Portal Mechanic — India",   "canonical": "Salesforce Consultant - India",         "description": "Carries discovery and configuration across the multiverse under the Senior Rick's eye." },
+    { "name": "Plumbus Integration Architect",    "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — knows the Schleem." },
+    { "name": "Senior Plumbus Engineer — India",  "canonical": "Integration Senior Consultant - India", "description": "Lays the dinglebop and grumbos of API, middleware, and event flows under the Architect's plan." },
+    { "name": "Plumbus Apprentice — India",       "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — webhooks, batch, callouts and the proper rubbing of fleeb juice." },
+    { "name": "Galactic Federation QA",           "canonical": "QA Engineer",                           "description": "Tends the wounded and the weary — finds the maladies in the build before the Federation audits." },
+    { "name": "Interdimensional Cable Producer",  "canonical": "Marketing Practice Lead",               "description": "Lifts the banner for product and message — leads all marketing craft across infinite channels." },
+    { "name": "Ad Break Strategist",              "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the call to gather, convert, and watch Ball Fondlers." },
+    { "name": "Jingle Writer of Squanch",         "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative, and the daily squanch." },
+    { "name": "Council Scribe of Smith Garage",   "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between mortal Customer and Rick's gibberish." },
+    { "name": "Senior Garage Engineer — USA",     "canonical": "Salesforce Senior Developer - USA",     "description": "Numenorean of Apex — leads the deepest builds and mentors the apprentice tinkerers." },
+    { "name": "Apprentice Schwifty — India",      "canonical": "Junior Salesforce Consultant - India",  "description": "First-year portal traveller — shadows the Junior Portal Mechanic and learns the basics of clicks-not-code." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "c-137-smith-family",
+      "projectName": "C-137 Smith Family — Garage Lab Rollout",
+      "shortName": "Smith GLR",
+      "subAccountName": "Smith Family Household (C-137)",
+      "subAccountNumber": "PSA-TEST-RICKANDMORTY-C137",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Garage Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Burping", "isDefault": false, "billable": true, "children": [
+          { "name": "Kitchen Table Council", "billable": true },
+          { "name": "Field Recon — Blips and Chitz", "billable": true }
+        ]},
+        { "name": "Build the Portal Gun", "isDefault": false, "billable": true, "children": [
+          { "name": "Fluid Refinement", "billable": true },
+          { "name": "Trigger Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Spice Rack", "isDefault": false, "billable": true, "children": [
+          { "name": "Inventory of McNuggets Sauce", "billable": true },
+          { "name": "Pantry Re-shelving", "billable": true }
+        ]},
+        { "name": "Testing in the Cronenberg Dimension", "isDefault": false, "billable": true, "children": [
+          { "name": "Mutation UAT", "billable": true },
+          { "name": "Body-swap Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Morty Onboarding", "billable": true },
+          { "name": "Beth's Surgical Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "citadel-of-ricks",
+      "projectName": "Citadel of Ricks — Council Governance Platform",
+      "shortName": "Citadel CGP",
+      "subAccountName": "Citadel of Ricks",
+      "subAccountNumber": "PSA-TEST-RICKANDMORTY-CITADEL",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council Vote", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Ricks Survey", "billable": true },
+          { "name": "Morty Headcount", "billable": true }
+        ]},
+        { "name": "Build the Citadel Lifts", "isDefault": false, "billable": true, "children": [
+          { "name": "Tower Construction", "billable": true },
+          { "name": "Wafer Cookie Factory Wiring", "billable": true }
+        ]},
+        { "name": "Migrate the Morty Database", "isDefault": false, "billable": true, "children": [
+          { "name": "Morty Roll Call", "billable": true },
+          { "name": "Memory Parlor Sync", "billable": true }
+        ]},
+        { "name": "Testing the Election", "isDefault": false, "billable": true, "children": [
+          { "name": "Ballot Stuffing Drill", "billable": true },
+          { "name": "Debate Hall Stress", "billable": true }
+        ]},
+        { "name": "Training the Cop Mortys", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Indoctrination", "billable": true },
+          { "name": "Captain's Riot Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "galactic-federation",
+      "projectName": "Galactic Federation — Currency & Compliance Build",
+      "shortName": "GalFed CCB",
+      "subAccountName": "Galactic Federation",
+      "subAccountNumber": "PSA-TEST-RICKANDMORTY-GALFED",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Federation Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Surveillance", "isDefault": false, "billable": true, "children": [
+          { "name": "Mind-blower Recon", "billable": true },
+          { "name": "Brain Scan Calibration", "billable": true }
+        ]},
+        { "name": "Build the Brad Tax System", "isDefault": false, "billable": true, "children": [
+          { "name": "Currency Conversion Engine", "billable": true },
+          { "name": "Receipt Hologram Design", "billable": true }
+        ]},
+        { "name": "Migrate the Prison Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Inmate Roll", "billable": true },
+          { "name": "Cell Block Re-numbering", "billable": true }
+        ]},
+        { "name": "Testing the Compliance Net", "isDefault": false, "billable": true, "children": [
+          { "name": "Pen-test the Border", "billable": true },
+          { "name": "Audit Stress Drill", "billable": true }
+        ]},
+        { "name": "Training the Agents", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Briefing", "billable": true },
+          { "name": "Captain's Field Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "interdimensional-cable-cast",
+      "projectName": "Interdimensional Cable — Streaming Analytics Implementation",
+      "shortName": "IDC SAI",
+      "subAccountName": "Interdimensional Cable Network",
+      "subAccountNumber": "PSA-TEST-RICKANDMORTY-IDC",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Cable Box Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Channel Surfing", "isDefault": false, "billable": true, "children": [
+          { "name": "Pilot Reel Review", "billable": true },
+          { "name": "Demo Audience Polling", "billable": true }
+        ]},
+        { "name": "Build the Streaming Stack", "isDefault": false, "billable": true, "children": [
+          { "name": "Set Construction", "billable": true },
+          { "name": "Lighting & Costume Rig", "billable": true }
+        ]},
+        { "name": "Migrate the Programming Guide", "isDefault": false, "billable": true, "children": [
+          { "name": "Showtime Catalog", "billable": true },
+          { "name": "Ad Slot Re-mapping", "billable": true }
+        ]},
+        { "name": "Testing the Live Broadcast", "isDefault": false, "billable": true, "children": [
+          { "name": "Tensile Signal Trial", "billable": true },
+          { "name": "Bleep-out Verification", "billable": true }
+        ]},
+        { "name": "Training the Talent", "isDefault": false, "billable": true, "children": [
+          { "name": "Improv Refresh", "billable": true },
+          { "name": "Cue Card Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "c-137-smith-family": [
+      { "fullName": "Rick Sanchez",         "themedRole": "Dimension Architect C-137" },
+      { "fullName": "Morty Smith",          "themedRole": "Junior Portal Mechanic — India" },
+      { "fullName": "Summer Smith",         "themedRole": "Council Scribe of Smith Garage" },
+      { "fullName": "Jerry Smith",          "themedRole": "Galactic Federation QA" },
+      { "fullName": "Beth Smith",           "themedRole": "Adventure Coordinator" },
+      { "fullName": "Mark Coburn",          "themedRole": "Dimension Architect C-137" },
+      { "fullName": "Bird Person",          "themedRole": "Citadel Sysadmin" }
+    ],
+    "citadel-of-ricks": [
+      { "fullName": "Council of Ricks",     "themedRole": "Council of Ricks Lead — USA" },
+      { "fullName": "Evil Morty",           "themedRole": "Adventure Coordinator" },
+      { "fullName": "Cop Morty",            "themedRole": "Galactic Federation QA" },
+      { "fullName": "Doofus Rick",          "themedRole": "Apprentice Schwifty — India" },
+      { "fullName": "Ricktactical",         "themedRole": "Senior Garage Engineer — USA" },
+      { "fullName": "Rick D-99",            "themedRole": "Senior Schwifty Engineer — India" },
+      { "fullName": "Garage Tinkerer Rick", "themedRole": "Garage Tinkerer" }
+    ],
+    "galactic-federation": [
+      { "fullName": "Tammy Guetermann",     "themedRole": "Adventure Coordinator" },
+      { "fullName": "Phoenixperson",        "themedRole": "Plumbus Integration Architect" },
+      { "fullName": "Krombopulos Michael",  "themedRole": "Senior Plumbus Engineer — India" },
+      { "fullName": "Birdperson",           "themedRole": "Council of Ricks Lead — USA" },
+      { "fullName": "Squanchy",             "themedRole": "Plumbus Apprentice — India" },
+      { "fullName": "Federation Scribe",    "themedRole": "Council Scribe of Smith Garage" },
+      { "fullName": "Federation Marketer",  "themedRole": "Interdimensional Cable Producer" }
+    ],
+    "interdimensional-cable-cast": [
+      { "fullName": "Mr. Meeseeks",         "themedRole": "Ad Break Strategist" },
+      { "fullName": "King Jellybean",       "themedRole": "Jingle Writer of Squanch" },
+      { "fullName": "Scary Terry",          "themedRole": "Interdimensional Cable Producer" },
+      { "fullName": "Mr. Poopybutthole",    "themedRole": "Council Scribe of Smith Garage" },
+      { "fullName": "Unity",                "themedRole": "Citadel Sysadmin" },
+      { "fullName": "Noob-Noob",            "themedRole": "Apprentice Schwifty — India" },
+      { "fullName": "Cable Box Stagehand",  "themedRole": "Garage Tinkerer" }
+    ]
+  },
+
+  "milestones": {
+    "c-137-smith-family": [
+      { "name": "Garage Door Opens",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Rick lets the family into the lab." },
+      { "name": "Forge the Portal Gun",       "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the first stable interdimensional doorway." },
+      { "name": "Council Audit at Kitchen",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: review with Beth at the kitchen table." },
+      { "name": "Cronenberg Dimension Bill",  "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: contingency for the body-swap detour." },
+      { "name": "Family Game Night Go-Live",  "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: lab fully integrated with household routines." },
+      { "name": "Hyper-care Hand-off",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Summer takes over admin duties." }
+    ],
+    "citadel-of-ricks": [
+      { "name": "Council Convenes",           "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Ricks gather under the great dome." },
+      { "name": "Lift the First Tower",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: tower one operational, wafer cookies flowing." },
+      { "name": "Election Debate Gate",       "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: candidate Mortys take the stage." },
+      { "name": "Evil Morty Inauguration",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: new president takes the podium." },
+      { "name": "Power Transfer Hyper-care",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: governance handed over." },
+      { "name": "Final Council Invoice",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the Council settles in flurbos." }
+    ],
+    "galactic-federation": [
+      { "name": "Surveillance Net Online",    "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Federation grid lights up." },
+      { "name": "Brad Tax Engine Forged",     "type": "Operational", "offsetPct": 35,  "description": "Build: currency conversion deployed across sectors." },
+      { "name": "Tammy's Compliance Audit",   "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Federation's top auditor." },
+      { "name": "Compliance Go-Live",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Federation's new compliance plane is operational." },
+      { "name": "Net Goes Dark",              "type": "Operational", "offsetPct": 100, "description": "Project close: surveillance handed to local agents." },
+      { "name": "Final Brad Reckoning",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Federation Treasury." }
+    ],
+    "interdimensional-cable-cast": [
+      { "name": "Pilot Greenlight",           "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: first show approved for production." },
+      { "name": "First Live Broadcast",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: pilot airs to the Smith family living room." },
+      { "name": "Weave the Ad Network",       "type": "Operational", "offsetPct": 55,  "description": "Build: ad slots integrated with the streaming stack." },
+      { "name": "Premiere Night Acceptance",  "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: red-carpet event at the Smith garage." },
+      { "name": "Final Cut Goes Live",        "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the network broadcasts 24/7." },
+      { "name": "Final Royalty Statement",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Cable Network." }
+    ]
+  },
+
+  "daysOff": {
+    "Rick Sanchez":         [ { "realm": "c-137-smith-family",         "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Bender-bender at Blips and Chitz — recovery required." } ],
+    "Morty Smith":          [ { "realm": "c-137-smith-family",         "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Jessica's birthday — 'Aw geez, Rick, I gotta go.'" } ],
+    "Summer Smith":         [ { "realm": "c-137-smith-family",         "offsetWeeks": 12, "numberOfDays": 1, "notes": "Mall day with Tricia." } ],
+    "Jerry Smith":          [ { "realm": "c-137-smith-family",         "offsetWeeks": 16, "numberOfDays": 3, "notes": "Jerry-daycare retreat — needs the structure." } ],
+    "Beth Smith":           [ { "realm": "c-137-smith-family",         "offsetWeeks": 18, "numberOfDays": 2, "notes": "Horse surgery emergency at the stables." } ],
+    "Evil Morty":           [ { "realm": "citadel-of-ricks",           "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Strategic retreat — eyepatch maintenance." } ],
+    "Doofus Rick":          [ { "realm": "citadel-of-ricks",           "offsetWeeks": 10, "numberOfDays": 2, "notes": "Trip to taste his own poop, recreationally." } ],
+    "Cop Morty":            [ { "realm": "citadel-of-ricks",           "offsetWeeks": 14, "numberOfDays": 1, "notes": "Mandatory Citadel PD retraining." } ],
+    "Birdperson":           [ { "realm": "galactic-federation",        "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Migration season — non-negotiable." } ],
+    "Squanchy":             [ { "realm": "galactic-federation",        "offsetWeeks": 12, "numberOfDays": 3, "notes": "Squanching at home — needs his squanch." } ],
+    "Krombopulos Michael":  [ { "realm": "galactic-federation",        "offsetWeeks": 16, "numberOfDays": 2, "notes": "Contract job off-world — loves his work." } ],
+    "Mr. Meeseeks":         [ { "realm": "interdimensional-cable-cast","offsetWeeks": 4,  "numberOfDays": 1, "notes": "Existence is pain — brief sabbatical." } ],
+    "Scary Terry":          [ { "realm": "interdimensional-cable-cast","offsetWeeks": 10, "numberOfDays": 2, "notes": "Bedtime, you sons of bitches." } ],
+    "Mr. Poopybutthole":    [ { "realm": "interdimensional-cable-cast","offsetWeeks": 14, "numberOfDays": 4, "notes": "Family vacation with Mrs. Poopybutthole and Poopybutthole Jr." } ],
+    "Unity":                [ { "realm": "interdimensional-cable-cast","offsetWeeks": 18, "numberOfDays": 3, "notes": "Planet-wide synchronization downtime." } ]
+  }
+}
