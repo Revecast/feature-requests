@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "key": "Marvel",
+  "displayName": "Marvel Universe",
+  "category": "Comics",
+  "emailDomain": "marvel.test",
+  "account": {
+    "name": "Marvel Universe (Test Data)",
+    "accountNumber": "PSA-TEST-MARVEL"
+  },
+  "mailingAddress": {
+    "street": "200 Park Avenue, Stark Tower",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10166",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Sorcerer Supreme",                  "canonical": "Solution Architect",                      "description": "Master of the mystic arts of architecture — weaves the over-arching solution across realities." },
+    { "name": "Field Commander",                   "canonical": "Project Manager",                         "description": "Calls the assemble — coordinates the team, holds the timeline, reports to the Director." },
+    { "name": "S.H.I.E.L.D. Quartermaster",        "canonical": "Salesforce Administrator",                "description": "Keeper of the helicarrier configs — fields, page layouts, profiles and permission sets." },
+    { "name": "Stark Industries Engineer",         "canonical": "Salesforce Developer",                    "description": "Builds the suits — Apex, LWC, and platform features in the workshop." },
+    { "name": "Avengers Chairperson — USA",        "canonical": "Salesforce Practice Lead - USA",          "description": "Leads the Avengers practice on the East Coast — sets standards and mentors the senior heroes." },
+    { "name": "Senior Web-Warrior — Mumbai",       "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran web-slinger of the Mumbai chapter — handles tough customer rescues with practiced craft." },
+    { "name": "Web-Warrior Apprentice — Mumbai",   "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the city under the senior web-warrior's eye." },
+    { "name": "Bifröst Bridgekeeper — USA",        "canonical": "Integration Technical Architect - USA",   "description": "Heimdall of the integration realm — architects the rainbow bridge between Salesforce and Asgard beyond." },
+    { "name": "Bifröst Engineer — Mumbai",         "canonical": "Integration Senior Consultant - India",   "description": "Forges the runes of API, middleware, and event flows under the Bridgekeeper's plan." },
+    { "name": "Bifröst Apprentice — Mumbai",       "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the mystical patterns of error handling." },
+    { "name": "Watcher of the Watchtower",         "canonical": "QA Engineer",                             "description": "Sees all that is broken — finds the bugs in the build before they reach the citizens." },
+    { "name": "Daily Bugle Editor-in-Chief",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the headline and the front page for product and message — leads all marketing craft." },
+    { "name": "Senior Press Correspondent",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — knows which story to run on page one." },
+    { "name": "Cub Reporter",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the streets — content, creative, and the daily beat." },
+    { "name": "Council Strategist of the X",       "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the mutant craft of design." },
+    { "name": "Vibranium Forge Master — USA",      "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the Wakandan forge — builds the most intricate Apex, LWC and platform features." },
+    { "name": "Junior Web-Warrior — Mumbai",       "canonical": "Junior Salesforce Consultant - India",    "description": "Newest hire of the Mumbai chapter — pair-programs with the seniors, learns the ropes." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "avengers",
+      "projectName": "Avengers — Tower Operations CRM Rollout",
+      "shortName": "Avengers TOC",
+      "subAccountName": "The Avengers Initiative",
+      "subAccountNumber": "PSA-TEST-MARVEL-AVENGERS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Stark Tower Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Assemble", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiative Briefing", "billable": true },
+          { "name": "Threat Assessment Sweep", "billable": true },
+          { "name": "Charter Drafting", "billable": true }
+        ]},
+        { "name": "Forging the Suit", "isDefault": false, "billable": true, "children": [
+          { "name": "Arc Reactor Calibration", "billable": true },
+          { "name": "Repulsor Tooling", "billable": true },
+          { "name": "HUD Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the S.H.I.E.L.D. Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Helicarrier Inventory", "billable": true },
+          { "name": "Classified Dossier Translation", "billable": true }
+        ]},
+        { "name": "Testing on the Helicarrier", "isDefault": false, "billable": true, "children": [
+          { "name": "Battle Drill (UAT)", "billable": true },
+          { "name": "Chitauri Stress Test", "billable": true }
+        ]},
+        { "name": "Training the New Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiative Onboarding", "billable": true },
+          { "name": "Captain's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "x-men",
+      "projectName": "X-Men — Cerebro Analytics Implementation",
+      "shortName": "X-Men CA",
+      "subAccountName": "Xavier's School for Gifted Youngsters",
+      "subAccountNumber": "PSA-TEST-MARVEL-X-MEN",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Westchester Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Mind-Scan", "isDefault": false, "billable": true, "children": [
+          { "name": "Cerebro Calibration", "billable": true },
+          { "name": "Mutant Registry Survey", "billable": true },
+          { "name": "Strategy with the Professor", "billable": true }
+        ]},
+        { "name": "Build the Danger Room", "isDefault": false, "billable": true, "children": [
+          { "name": "Holographic Foundations", "billable": true },
+          { "name": "Combat Scenario Tooling", "billable": true },
+          { "name": "Containment Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Mutant Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Genosha Roll Call", "billable": true },
+          { "name": "Power Classification Tagging", "billable": true }
+        ]},
+        { "name": "Testing in the X-Jet", "isDefault": false, "billable": true, "children": [
+          { "name": "Blackbird Flight Drill", "billable": true },
+          { "name": "Sentinel Penetration Test", "billable": true }
+        ]},
+        { "name": "Training the New Class", "isDefault": false, "billable": true, "children": [
+          { "name": "First-year Foundations", "billable": true },
+          { "name": "Senior Squad Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "fantastic-four",
+      "projectName": "Fantastic Four — Baxter Building Lab Platform",
+      "shortName": "FF Baxter",
+      "subAccountName": "Future Foundation",
+      "subAccountNumber": "PSA-TEST-MARVEL-FANTASTIC-FOUR",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Baxter Building Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cosmic Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Negative Zone Reconnaissance", "billable": true },
+          { "name": "Cosmic Ray Sampling", "billable": true },
+          { "name": "Reed's Whiteboard Strategy", "billable": true }
+        ]},
+        { "name": "Build the Fantasticar", "isDefault": false, "billable": true, "children": [
+          { "name": "Chassis Forging", "billable": true },
+          { "name": "Anti-Gravity Calibration", "billable": true },
+          { "name": "Force-Field Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Lab Notebooks", "isDefault": false, "billable": true, "children": [
+          { "name": "Experiment Catalog", "billable": true },
+          { "name": "Patent Translation", "billable": true }
+        ]},
+        { "name": "Testing in the Negative Zone", "isDefault": false, "billable": true, "children": [
+          { "name": "Portal Stability Drill", "billable": true },
+          { "name": "Doom Threat Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Future Foundation", "isDefault": false, "billable": true, "children": [
+          { "name": "Young Innovators Onboarding", "billable": true },
+          { "name": "Senior Scientist Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "defenders",
+      "projectName": "Defenders — Hell's Kitchen Patrol Network",
+      "shortName": "Defenders HKP",
+      "subAccountName": "The Defenders Collective",
+      "subAccountNumber": "PSA-TEST-MARVEL-DEFENDERS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Alias Investigations Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Stakeout", "isDefault": false, "billable": true, "children": [
+          { "name": "Rooftop Reconnaissance", "billable": true },
+          { "name": "Informant Interviews", "billable": true },
+          { "name": "Case File Drafting", "billable": true }
+        ]},
+        { "name": "Build the Safehouse Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Bulletproof Foundations", "billable": true },
+          { "name": "Iron Fist Defense Tooling", "billable": true },
+          { "name": "Devil's Workshop Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Case Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Nelson & Murdock Archives", "billable": true },
+          { "name": "Alias PI Dossier Translation", "billable": true }
+        ]},
+        { "name": "Testing in the Alley", "isDefault": false, "billable": true, "children": [
+          { "name": "Street-level Skirmish (UAT)", "billable": true },
+          { "name": "Punisher Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Patrol", "isDefault": false, "billable": true, "children": [
+          { "name": "New Vigilante Onboarding", "billable": true },
+          { "name": "Sensei's Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "avengers": [
+      { "fullName": "Tony Stark",         "themedRole": "Stark Industries Engineer" },
+      { "fullName": "Steve Rogers",       "themedRole": "Field Commander" },
+      { "fullName": "Thor Odinson",       "themedRole": "Avengers Chairperson — USA" },
+      { "fullName": "Bruce Banner",       "themedRole": "Vibranium Forge Master — USA" },
+      { "fullName": "Natasha Romanoff",   "themedRole": "Council Strategist of the X" },
+      { "fullName": "Clint Barton",       "themedRole": "Watcher of the Watchtower" },
+      { "fullName": "Nick Fury",          "themedRole": "S.H.I.E.L.D. Quartermaster" }
+    ],
+    "x-men": [
+      { "fullName": "Charles Xavier",     "themedRole": "Sorcerer Supreme" },
+      { "fullName": "Scott Summers",      "themedRole": "Field Commander" },
+      { "fullName": "Logan Howlett",      "themedRole": "Senior Web-Warrior — Mumbai" },
+      { "fullName": "Ororo Munroe",       "themedRole": "Avengers Chairperson — USA" },
+      { "fullName": "Jean Grey",          "themedRole": "Council Strategist of the X" },
+      { "fullName": "Hank McCoy",         "themedRole": "Vibranium Forge Master — USA" },
+      { "fullName": "Anna Marie Rogue",   "themedRole": "Web-Warrior Apprentice — Mumbai" }
+    ],
+    "fantastic-four": [
+      { "fullName": "Reed Richards",      "themedRole": "Sorcerer Supreme" },
+      { "fullName": "Susan Storm",        "themedRole": "Field Commander" },
+      { "fullName": "Johnny Storm",       "themedRole": "Cub Reporter" },
+      { "fullName": "Ben Grimm",          "themedRole": "Vibranium Forge Master — USA" },
+      { "fullName": "Norrin Radd",        "themedRole": "Bifröst Bridgekeeper — USA" },
+      { "fullName": "Galactus",           "themedRole": "Daily Bugle Editor-in-Chief" },
+      { "fullName": "Victor von Doom",    "themedRole": "Bifröst Engineer — Mumbai" }
+    ],
+    "defenders": [
+      { "fullName": "Matt Murdock",       "themedRole": "Field Commander" },
+      { "fullName": "Jessica Jones",      "themedRole": "Senior Press Correspondent" },
+      { "fullName": "Luke Cage",          "themedRole": "Junior Web-Warrior — Mumbai" },
+      { "fullName": "Danny Rand",         "themedRole": "Bifröst Apprentice — Mumbai" },
+      { "fullName": "Frank Castle",       "themedRole": "Watcher of the Watchtower" },
+      { "fullName": "Peter Parker",       "themedRole": "Web-Warrior Apprentice — Mumbai" },
+      { "fullName": "Stick",              "themedRole": "Sorcerer Supreme" }
+    ]
+  },
+
+  "milestones": {
+    "avengers": [
+      { "name": "Avengers Assemble",         "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — initial roster confirmed at Stark Tower." },
+      { "name": "Suit Mark VII Online",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the new armor is wheels-up and combat-ready." },
+      { "name": "Triskelion Review",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: oversight review with the World Security Council." },
+      { "name": "Battle of New York Invoice","type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: damages and consulting fees from the Chitauri incursion." },
+      { "name": "Tower Go-Live",             "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Avengers Tower fully operational." },
+      { "name": "Initiative Hand-off",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ongoing leadership passed to Captain Rogers." }
+    ],
+    "x-men": [
+      { "name": "Open the School Doors",     "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: enrollment begins at the Westchester mansion." },
+      { "name": "Cerebro Online",            "type": "Operational", "offsetPct": 30,  "description": "Build phase: mutant detection grid live globally." },
+      { "name": "Danger Room Certified",     "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: training simulators pass safety review." },
+      { "name": "Sentinel Threat Defeated",  "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the X-Men dismantle the Sentinel program in the field." },
+      { "name": "Graduation Day",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: first class graduates from the school." },
+      { "name": "Endowment Invoice",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Xavier Foundation settlement." }
+    ],
+    "fantastic-four": [
+      { "name": "Cosmic Ray Briefing",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: rocket launch debrief and powers acclimatization." },
+      { "name": "Fantasticar Rolls Out",     "type": "Operational", "offsetPct": 35,  "description": "Build: the iconic vehicle leaves the Baxter hangar." },
+      { "name": "Reed's Architecture Review","type": "Gate",        "offsetPct": 60,  "description": "Solution review with Mister Fantastic himself." },
+      { "name": "Negative Zone Portal Live", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: portal stable, ready for production traffic." },
+      { "name": "Doom Defeated",             "type": "Operational", "offsetPct": 100, "description": "Project close: Latverian threat neutralized." },
+      { "name": "Future Foundation Invoice", "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Baxter Building." }
+    ],
+    "defenders": [
+      { "name": "Meeting in the Diner",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the four meet under flickering fluorescent lights." },
+      { "name": "Stakeout the Hand",         "type": "Operational", "offsetPct": 30,  "description": "Discovery: midtown surveillance reveals the Hand's operations." },
+      { "name": "Midland Circle Demolition", "type": "Operational", "offsetPct": 55,  "description": "Build: the enemy fortress collapses under coordinated assault." },
+      { "name": "Hell's Kitchen UAT",        "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: streets quieter, neighborhood signs off." },
+      { "name": "Patrol Network Live",       "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: nightly patrol operational, dispatch online." },
+      { "name": "Nelson & Murdock Invoice",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the law office on the corner." }
+    ]
+  },
+
+  "daysOff": {
+    "Tony Stark":         [ { "realm": "avengers",       "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Malibu workshop sabbatical — Mark VIII prototyping." } ],
+    "Steve Rogers":       [ { "realm": "avengers",       "offsetWeeks": 12, "numberOfDays": 2, "notes": "USO veterans memorial visit." } ],
+    "Thor Odinson":       [ { "realm": "avengers",       "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Asgard royal summons — Bifröst transit." } ],
+    "Bruce Banner":       [ { "realm": "avengers",       "offsetWeeks": 18, "numberOfDays": 4, "notes": "Off-grid in Calcutta — stress decompression." } ],
+    "Natasha Romanoff":   [ { "realm": "avengers",       "offsetWeeks": 14, "numberOfDays": 2, "notes": "Classified S.H.I.E.L.D. errand." } ],
+    "Charles Xavier":     [ { "realm": "x-men",          "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Genosha summit — diplomatic obligation." } ],
+    "Logan Howlett":      [ { "realm": "x-men",          "offsetWeeks": 10, "numberOfDays": 4, "notes": "Yukon walkabout — needs the quiet." } ],
+    "Ororo Munroe":       [ { "realm": "x-men",          "offsetWeeks": 16, "numberOfDays": 2, "notes": "Kenya — ancestral homeland visit." } ],
+    "Jean Grey":          [ { "realm": "x-men",          "offsetWeeks": 20, "numberOfDays": 3, "notes": "Phoenix Force meditation retreat." } ],
+    "Reed Richards":      [ { "realm": "fantastic-four", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Lecture at MIT — keynote on multiverse theory." } ],
+    "Susan Storm":        [ { "realm": "fantastic-four", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Family time with Franklin and Valeria." } ],
+    "Johnny Storm":       [ { "realm": "fantastic-four", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Daytona race weekend — flame on." } ],
+    "Ben Grimm":          [ { "realm": "fantastic-four", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Yancy Street poker night reunion." } ],
+    "Matt Murdock":       [ { "realm": "defenders",      "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Catholic retreat — confession and contemplation." } ],
+    "Jessica Jones":      [ { "realm": "defenders",      "offsetWeeks": 12, "numberOfDays": 3, "notes": "Alias Investigations annual closure — bourbon and silence." } ],
+    "Luke Cage":          [ { "realm": "defenders",      "offsetWeeks": 16, "numberOfDays": 2, "notes": "Harlem block party — community obligation." } ],
+    "Danny Rand":         [ { "realm": "defenders",      "offsetWeeks": 20, "numberOfDays": 5, "notes": "K'un-Lun pilgrimage — Iron Fist renewal." } ],
+    "Frank Castle":       [ { "realm": "defenders",      "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Family memorial — Central Park." } ],
+    "Peter Parker":       [ { "realm": "defenders",      "offsetWeeks": 14, "numberOfDays": 2, "notes": "Aunt May's birthday in Forest Hills." } ]
+  }
+}
