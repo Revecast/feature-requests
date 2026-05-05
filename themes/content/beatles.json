@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "key": "Beatles",
+  "displayName": "The Beatles",
+  "category": "Music",
+  "emailDomain": "beatles.test",
+  "account": {
+    "name": "The Beatles (Test Data)",
+    "accountNumber": "PSA-TEST-BEATLES"
+  },
+
+  "roles": [
+    { "name": "Producer in the Booth",            "canonical": "Solution Architect",                      "description": "The man at the desk — designs the shape of the record and watches over the arrangement from the first take to the final mix." },
+    { "name": "Tour Manager",                     "canonical": "Project Manager",                         "description": "Marshals the band, the gear, and the timeline — keeps the lads on the bus and on the schedule." },
+    { "name": "Tape Operator",                    "canonical": "Salesforce Administrator",                "description": "Steward of the reels, the patch bay, and the session log — every layout, field and permission set in their proper bin." },
+    { "name": "Studio Engineer",                  "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC and platform features at the console — the one who makes the desk sing." },
+    { "name": "Head of A&R",                      "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all studio craft — sets the standards and signs off the senior session work." },
+    { "name": "Session Player — Strings",         "canonical": "Salesforce Senior Consultant - India",    "description": "Brought in for the tricky overdubs — practiced craft, plays whatever the song needs." },
+    { "name": "Session Player — Brass",           "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the take under the senior player's eye." },
+    { "name": "Mastering Engineer",               "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between studio and the world beyond — cuts the lacquer that ships." },
+    { "name": "Mixing Desk Operator",             "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware and event flows — rides the faders under the Mastering Engineer's plan." },
+    { "name": "Apprentice Engineer",              "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling, all from the back of the control room." },
+    { "name": "Quality Listener",                 "canonical": "QA Engineer",                             "description": "Tends the wounded takes — finds the maladies in the mix before they reach the pressing plant." },
+    { "name": "Press Officer",                    "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for the single and the album — leads all marketing craft from press release to picture sleeve." },
+    { "name": "Album Sleeve Designer",            "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the visual call to gather and convert the punters." },
+    { "name": "Promo Film Director",              "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily promo shoot." },
+    { "name": "Music Publisher",                  "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the band and the suits at the label." },
+    { "name": "Studio Manager",                   "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith at the console — owns the deepest builds and mentors the apprentice engineers." },
+    { "name": "Roadie",                           "canonical": "Junior Salesforce Consultant - India",    "description": "Hauls the gear, learns the rig — first rung on the studio ladder, eyes wide open." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. The 4 realms are album eras: early-years (1962-1964), mid-period (1965-1966), studio-era (1967-1968), late-years (1969-1970).",
+
+  "realms": [
+    {
+      "key": "early-years",
+      "projectName": "Early Years — Mersey Beat Launch (1962-1964)",
+      "shortName": "Early Years",
+      "subAccountName": "Parlophone — Early Years",
+      "subAccountNumber": "PSA-TEST-BEATLES-EARLY-YEARS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Cavern Club Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Audition", "isDefault": false, "billable": true, "children": [
+          { "name": "Decca Audition Tape", "billable": true },
+          { "name": "Hamburg Residency Survey", "billable": true },
+          { "name": "Strategy with Brian", "billable": true }
+        ]},
+        { "name": "Recording at Abbey Road Studio Two", "isDefault": false, "billable": true, "children": [
+          { "name": "Please Please Me — Day Session", "billable": true },
+          { "name": "With the Beatles — Overdubs", "billable": true },
+          { "name": "A Hard Day's Night — Soundtrack Cut", "billable": true }
+        ]},
+        { "name": "British Tour Logistics", "isDefault": false, "billable": true, "children": [
+          { "name": "Package Tour Roll Call", "billable": true },
+          { "name": "Van & Amplifier Provisioning", "billable": true }
+        ]},
+        { "name": "Beatlemania Press Blitz", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Variety Performance", "billable": true },
+          { "name": "Ed Sullivan Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Roadies", "isDefault": false, "billable": true, "children": [
+          { "name": "Vox Amp Onboarding", "billable": true },
+          { "name": "Mal & Neil Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mid-period",
+      "projectName": "Mid Period — Studio Maturation (1965-1966)",
+      "shortName": "Mid Period",
+      "subAccountName": "Parlophone — Mid Period",
+      "subAccountNumber": "PSA-TEST-BEATLES-MID-PERIOD",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Wembley Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Songwriting", "isDefault": false, "billable": true, "children": [
+          { "name": "Kenwood Demo Sessions", "billable": true },
+          { "name": "Lennon-McCartney Drafting", "billable": true },
+          { "name": "Strategy with George Martin", "billable": true }
+        ]},
+        { "name": "Recording Rubber Soul & Revolver", "isDefault": false, "billable": true, "children": [
+          { "name": "Help! — Soundtrack Sessions", "billable": true },
+          { "name": "Rubber Soul — Folk Pivot", "billable": true },
+          { "name": "Revolver — Tape Loop Experiments", "billable": true }
+        ]},
+        { "name": "World Tour Logistics", "isDefault": false, "billable": true, "children": [
+          { "name": "Shea Stadium Roll Call", "billable": true },
+          { "name": "Manila & Tokyo Provisioning", "billable": true }
+        ]},
+        { "name": "Last Tour Press Storm", "isDefault": false, "billable": true, "children": [
+          { "name": "More Popular Than Jesus Damage Control", "billable": true },
+          { "name": "Candlestick Park Farewell", "billable": true }
+        ]},
+        { "name": "Training the Studio Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "ADT (Artificial Double Tracking) Workshop", "billable": true },
+          { "name": "Sitar & Tabla Familiarisation", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "studio-era",
+      "projectName": "Studio Era — Sgt. Pepper to White Album (1967-1968)",
+      "shortName": "Studio Era",
+      "subAccountName": "Parlophone — Studio Era",
+      "subAccountNumber": "PSA-TEST-BEATLES-STUDIO-ERA",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Studio Two Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Concept", "isDefault": false, "billable": true, "children": [
+          { "name": "Sgt. Pepper Concept Drafting", "billable": true },
+          { "name": "Magical Mystery Tour Storyboards", "billable": true },
+          { "name": "Maharishi Retreat Strategy", "billable": true }
+        ]},
+        { "name": "Recording the Concept Albums", "isDefault": false, "billable": true, "children": [
+          { "name": "Sgt. Pepper — Orchestral Overdubs", "billable": true },
+          { "name": "Magical Mystery Tour — Mellotron Sessions", "billable": true },
+          { "name": "White Album — Rishikesh Demos", "billable": true }
+        ]},
+        { "name": "Apple Records Launch", "isDefault": false, "billable": true, "children": [
+          { "name": "Boutique Inventory", "billable": true },
+          { "name": "Saville Row Headquarters Fit-out", "billable": true }
+        ]},
+        { "name": "Promo Film Production", "isDefault": false, "billable": true, "children": [
+          { "name": "Strawberry Fields Forever Shoot", "billable": true },
+          { "name": "Hey Jude Live Audience Take", "billable": true }
+        ]},
+        { "name": "Training the Apple Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Saville Row Onboarding", "billable": true },
+          { "name": "Press Officer Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "late-years",
+      "projectName": "Late Years — Abbey Road & Let It Be (1969-1970)",
+      "shortName": "Late Years",
+      "subAccountName": "Apple Records — Late Years",
+      "subAccountNumber": "PSA-TEST-BEATLES-LATE-YEARS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Apple Studios Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Get Back Sessions", "isDefault": false, "billable": true, "children": [
+          { "name": "Twickenham Rehearsals", "billable": true },
+          { "name": "Get Back Concept Drafting", "billable": true },
+          { "name": "Strategy with Glyn Johns", "billable": true }
+        ]},
+        { "name": "Recording Abbey Road & Let It Be", "isDefault": false, "billable": true, "children": [
+          { "name": "Yellow Submarine — Animation Soundtrack", "billable": true },
+          { "name": "Abbey Road — Side Two Medley", "billable": true },
+          { "name": "Let It Be — Phil Spector Remix", "billable": true }
+        ]},
+        { "name": "Apple Corps Wind-down", "isDefault": false, "billable": true, "children": [
+          { "name": "Allen Klein Audit", "billable": true },
+          { "name": "Boutique Closure Inventory", "billable": true }
+        ]},
+        { "name": "Rooftop Concert & Final Press", "isDefault": false, "billable": true, "children": [
+          { "name": "Saville Row Rooftop Stage", "billable": true },
+          { "name": "Paul's Statement to the Press", "billable": true }
+        ]},
+        { "name": "Training the Solo Camps", "isDefault": false, "billable": true, "children": [
+          { "name": "Plastic Ono Band Onboarding", "billable": true },
+          { "name": "Wings Cottage Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "early-years": [
+      { "fullName": "John Lennon",        "themedRole": "Producer in the Booth" },
+      { "fullName": "Paul McCartney",     "themedRole": "Studio Engineer" },
+      { "fullName": "George Harrison",    "themedRole": "Session Player — Strings" },
+      { "fullName": "Pete Best",          "themedRole": "Session Player — Brass" },
+      { "fullName": "Ringo Starr",        "themedRole": "Studio Manager" },
+      { "fullName": "Brian Epstein",      "themedRole": "Tour Manager" },
+      { "fullName": "George Martin",      "themedRole": "Head of A&R" },
+      { "fullName": "Norman Smith",       "themedRole": "Tape Operator" }
+    ],
+    "mid-period": [
+      { "fullName": "John Lennon",        "themedRole": "Producer in the Booth" },
+      { "fullName": "Paul McCartney",     "themedRole": "Studio Engineer" },
+      { "fullName": "George Harrison",    "themedRole": "Session Player — Strings" },
+      { "fullName": "Ringo Starr",        "themedRole": "Studio Manager" },
+      { "fullName": "George Martin",      "themedRole": "Head of A&R" },
+      { "fullName": "Geoff Emerick",      "themedRole": "Mixing Desk Operator" },
+      { "fullName": "Ken Townsend",       "themedRole": "Mastering Engineer" }
+    ],
+    "studio-era": [
+      { "fullName": "John Lennon",        "themedRole": "Producer in the Booth" },
+      { "fullName": "Paul McCartney",     "themedRole": "Promo Film Director" },
+      { "fullName": "George Harrison",    "themedRole": "Session Player — Strings" },
+      { "fullName": "Ringo Starr",        "themedRole": "Studio Manager" },
+      { "fullName": "George Martin",      "themedRole": "Head of A&R" },
+      { "fullName": "Geoff Emerick",      "themedRole": "Mixing Desk Operator" },
+      { "fullName": "Pattie Boyd",        "themedRole": "Album Sleeve Designer" },
+      { "fullName": "Neil Aspinall",      "themedRole": "Roadie" }
+    ],
+    "late-years": [
+      { "fullName": "John Lennon",        "themedRole": "Producer in the Booth" },
+      { "fullName": "Paul McCartney",     "themedRole": "Studio Engineer" },
+      { "fullName": "George Harrison",    "themedRole": "Session Player — Strings" },
+      { "fullName": "Ringo Starr",        "themedRole": "Studio Manager" },
+      { "fullName": "Yoko Ono",           "themedRole": "Promo Film Director" },
+      { "fullName": "Linda McCartney",    "themedRole": "Album Sleeve Designer" },
+      { "fullName": "Billy Preston",      "themedRole": "Session Player — Brass" },
+      { "fullName": "Phil Spector",       "themedRole": "Mastering Engineer" },
+      { "fullName": "Allen Klein",        "themedRole": "Music Publisher" }
+    ]
+  },
+
+  "milestones": {
+    "early-years": [
+      { "name": "Decca Says No",              "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Decca passes, Parlophone bites. The journey begins." },
+      { "name": "Love Me Do Released",        "type": "Operational", "offsetPct": 20,  "description": "Build kickoff: first single hits the shops, climbs to #17." },
+      { "name": "Please Please Me at #1",     "type": "Gate",        "offsetPct": 45,  "description": "Mid-project gate: debut album holds the top spot for 30 weeks." },
+      { "name": "Royal Variety Performance",  "type": "Billing",     "offsetPct": 65,  "description": "Phase invoice trigger: 'rattle your jewellery' — the establishment salutes." },
+      { "name": "Ed Sullivan — 73M Viewers",  "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: America falls. Beatlemania goes global." },
+      { "name": "A Hard Day's Night Premiere","type": "Operational", "offsetPct": 100, "description": "Hyper-care close: film and soundtrack ship together, era closes triumphant." }
+    ],
+    "mid-period": [
+      { "name": "Help! Sessions Begin",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: soundtrack album commissioned, cameras roll in the Bahamas." },
+      { "name": "Shea Stadium Sells Out",     "type": "Operational", "offsetPct": 25,  "description": "Build phase: 55,000 fans, screams louder than the Vox amps." },
+      { "name": "Rubber Soul Charts #1",      "type": "Gate",        "offsetPct": 50,  "description": "UAT gate: folk pivot lands, the album as art form begins." },
+      { "name": "Revolver Released",          "type": "Delivery",    "offsetPct": 80,  "description": "Go-Live: Tomorrow Never Knows ships, tape loops break the form." },
+      { "name": "Candlestick Park Farewell",  "type": "Operational", "offsetPct": 95,  "description": "Hyper-care close: last paid concert, the touring era ends." },
+      { "name": "Final Tour Settlement",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Brian closes the tour books for good." }
+    ],
+    "studio-era": [
+      { "name": "Sgt. Pepper Concept Greenlit","type": "Gate",       "offsetPct": 10,  "description": "Discovery: the alter-ego band concept signed off, 700 hours booked at Studio Two." },
+      { "name": "A Day in the Life Recorded", "type": "Operational", "offsetPct": 35,  "description": "Build: 40-piece orchestra in evening dress, the great crescendo committed to tape." },
+      { "name": "Sgt. Pepper Released",       "type": "Gate",        "offsetPct": 55,  "description": "Solution review: the Summer of Love has its soundtrack." },
+      { "name": "Apple Records Launches",     "type": "Delivery",    "offsetPct": 80,  "description": "Go-Live: Saville Row opens, Hey Jude is the first single." },
+      { "name": "White Album Released",       "type": "Operational", "offsetPct": 95,  "description": "Project close: double LP ships, cracks in the band visible in the grooves." },
+      { "name": "Apple Boutique Closes",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: stock given away, the experiment in retail ends." }
+    ],
+    "late-years": [
+      { "name": "Twickenham Rehearsals Begin","type": "Gate",        "offsetPct": 10,  "description": "Kickoff at the cold film stage — Get Back project conceived." },
+      { "name": "Rooftop Concert",            "type": "Operational", "offsetPct": 30,  "description": "Discovery: 42 minutes on the Saville Row roof, the last live performance." },
+      { "name": "Abbey Road Released",        "type": "Operational", "offsetPct": 55,  "description": "Build: side-two medley delivered, the final masterpiece pressed." },
+      { "name": "Paul Announces Departure",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the press release confirms what everyone knew." },
+      { "name": "Let It Be Released",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Phil Spector's mix ships, the band sails into the West." },
+      { "name": "Final Apple Settlement",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Apple Corps — the partnership formally dissolves." }
+    ]
+  },
+
+  "daysOff": {
+    "John Lennon":        [ { "realm": "late-years",   "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Bag-In retreat at the Amsterdam Hilton with Yoko." } ],
+    "Paul McCartney":     [ { "realm": "late-years",   "offsetWeeks": 10, "numberOfDays": 3, "notes": "High Park Farm in Kintyre — escaping the Apple drama." } ],
+    "George Harrison":    [ { "realm": "mid-period",   "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Trip to India for sitar lessons with Ravi Shankar." } ],
+    "Ringo Starr":        [ { "realm": "studio-era",   "offsetWeeks": 12, "numberOfDays": 4, "notes": "Drum kit refurbishment and family time in Surrey." } ],
+    "Brian Epstein":      [ { "realm": "early-years",  "offsetWeeks": 14, "numberOfDays": 2, "notes": "NEMS Enterprises board day in Liverpool." } ],
+    "George Martin":      [ { "realm": "studio-era",   "offsetWeeks": 6,  "numberOfDays": 3, "notes": "AIR Studios planning — leaving Parlophone." } ],
+    "Geoff Emerick":      [ { "realm": "studio-era",   "offsetWeeks": 16, "numberOfDays": 2, "notes": "Burnout recovery — White Album sessions took a toll." } ],
+    "Yoko Ono":           [ { "realm": "late-years",   "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Indica Gallery exhibition install." } ],
+    "Linda McCartney":    [ { "realm": "late-years",   "offsetWeeks": 14, "numberOfDays": 2, "notes": "Photography commission in New York." } ],
+    "Pattie Boyd":        [ { "realm": "studio-era",   "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Modelling assignment — Vogue cover shoot." } ],
+    "Pete Best":          [ { "realm": "early-years",  "offsetWeeks": 10, "numberOfDays": 1, "notes": "Family matters in Liverpool." } ],
+    "Billy Preston":      [ { "realm": "late-years",   "offsetWeeks": 12, "numberOfDays": 3, "notes": "Ray Charles tour commitment." } ],
+    "Neil Aspinall":      [ { "realm": "studio-era",   "offsetWeeks": 18, "numberOfDays": 2, "notes": "Magical Mystery Tour bus refit logistics." } ],
+    "Norman Smith":       [ { "realm": "early-years",  "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Engineer training course at EMI." } ],
+    "Phil Spector":       [ { "realm": "late-years",   "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Wall of Sound consultation in LA." } ]
+  }
+}
