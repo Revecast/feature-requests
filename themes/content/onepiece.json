@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "key": "OnePiece",
+  "displayName": "One Piece",
+  "category": "Anime",
+  "emailDomain": "grandline.test",
+  "account": {
+    "name": "Grand Line Chronicles (Test Data)",
+    "accountNumber": "PSA-TEST-ONEPIECE"
+  },
+  "mailingAddress": {
+    "street": "1 Sabaody Archipelago Plaza",
+    "city": "Sabaody",
+    "state": "Paradise",
+    "postalCode": "GL-0001",
+    "country": "Grand Line"
+  },
+
+  "roles": [
+    { "name": "Pirate King's Strategist",         "canonical": "Solution Architect",                      "description": "Charts the course across the Grand Line — designs the over-arching solution and watches over its integrity." },
+    { "name": "Ship's Navigator",                 "canonical": "Project Manager",                         "description": "Reads the Log Pose and the weather — holds the timeline and answers to the Captain." },
+    { "name": "Quartermaster of the Hold",        "canonical": "Salesforce Administrator",                "description": "Steward of the ship's stores — records, layouts, fields and permission sets." },
+    { "name": "Master Shipwright",                "canonical": "Salesforce Developer",                    "description": "Builds and rebuilds the ship — Apex, LWC, and platform features at the dry dock." },
+    { "name": "Fleet Admiral of the West Blue",   "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Salesforce craft — sets standards and guides the senior shipwrights." },
+    { "name": "Veteran Marine Captain",           "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the Grand Line with practiced craft — drives senior delivery work." },
+    { "name": "Marine Petty Officer",             "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the seas under the Captain's eye." },
+    { "name": "Den Den Mushi Architect",          "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great snail networks between Salesforce and the realms beyond." },
+    { "name": "Senior Snail Operator",            "canonical": "Integration Senior Consultant - India",   "description": "Lays the wires of API, middleware, and event flows under the Architect's plan." },
+    { "name": "Apprentice Snail Operator",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling." },
+    { "name": "Marine Inspector",                 "canonical": "QA Engineer",                             "description": "Hunts the bugs and bounties in the build before they reach the Captain." },
+    { "name": "Town Crier of Loguetown",          "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the Jolly Roger for product and message — leads all marketing craft." },
+    { "name": "Senior News Coo",                  "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — flies the headlines across the seas." },
+    { "name": "News Coo Apprentice",              "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily delivery." },
+    { "name": "Cipher Pol Analyst",               "canonical": "Business Analyst",                        "description": "Decodes what is needed and what is promised — translates between the customer and the crew." },
+    { "name": "Vice Admiral Shipwright",          "canonical": "Salesforce Senior Developer - USA",       "description": "Master craftsman of the West Blue dockyards — builds the most complex Apex and platform features." },
+    { "name": "Cabin Boy Consultant",             "canonical": "Junior Salesforce Consultant - India",    "description": "First voyage on the Grand Line — supports configuration, learns the trade winds." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "straw-hat-pirates",
+      "projectName": "Straw Hat Pirates — Thousand Sunny CRM Voyage",
+      "shortName": "Straw Hats TSV",
+      "subAccountName": "Straw Hat Pirates",
+      "subAccountNumber": "PSA-TEST-ONEPIECE-STRAWHATS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sunny Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Setting Sail", "isDefault": false, "billable": true, "children": [
+          { "name": "Crew Roll Call", "billable": true },
+          { "name": "Log Pose Calibration", "billable": true }
+        ]},
+        { "name": "Build the Thousand Sunny", "isDefault": false, "billable": true, "children": [
+          { "name": "Adam Wood Hull Forging", "billable": true },
+          { "name": "Coup de Burst Engine", "billable": true }
+        ]},
+        { "name": "Migrate the Treasure Hold", "isDefault": false, "billable": true, "children": [
+          { "name": "Berry Vault Inventory", "billable": true },
+          { "name": "Wanted Poster Archive", "billable": true }
+        ]},
+        { "name": "Testing at Marineford", "isDefault": false, "billable": true, "children": [
+          { "name": "Haki Stress Drill", "billable": true },
+          { "name": "Gear Second Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Rookie Onboarding", "billable": true },
+          { "name": "First Mate's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "world-government-marines",
+      "projectName": "Marines — Marineford Command & Control Platform",
+      "shortName": "Marines MCC",
+      "subAccountName": "World Government Marines",
+      "subAccountNumber": "PSA-TEST-ONEPIECE-MARINES",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "HQ Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Intelligence", "isDefault": false, "billable": true, "children": [
+          { "name": "Bounty Office Survey", "billable": true },
+          { "name": "Pirate Threat Assessment", "billable": true }
+        ]},
+        { "name": "Build the Battleship Fleet", "isDefault": false, "billable": true, "children": [
+          { "name": "Marine Vessel Construction", "billable": true },
+          { "name": "Cannon Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Bounty Registry", "isDefault": false, "billable": true, "children": [
+          { "name": "Wanted Poster Roll", "billable": true },
+          { "name": "Impel Down Inmate Index", "billable": true }
+        ]},
+        { "name": "Testing at Enies Lobby", "isDefault": false, "billable": true, "children": [
+          { "name": "Buster Call Drill", "billable": true },
+          { "name": "Justice Gate Trial", "billable": true }
+        ]},
+        { "name": "Training the Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Rokushiki Foundations", "billable": true },
+          { "name": "Vice Admiral's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "shichibukai",
+      "projectName": "Shichibukai — Warlord Reporting & Tribute Build",
+      "shortName": "Shichibukai WRT",
+      "subAccountName": "The Seven Warlords of the Sea",
+      "subAccountNumber": "PSA-TEST-ONEPIECE-SHICHIBUKAI",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Warlord Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Tribute Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Shichibukai Council", "billable": true },
+          { "name": "Tribute Manifest Review", "billable": true }
+        ]},
+        { "name": "Build the Warlord Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Kuja Pirate Liaison", "billable": true },
+          { "name": "Baroque Works Comms", "billable": true }
+        ]},
+        { "name": "Migrate the Bounty Pardons", "isDefault": false, "billable": true, "children": [
+          { "name": "Pardon Document Catalog", "billable": true },
+          { "name": "Devil Fruit User Index", "billable": true }
+        ]},
+        { "name": "Testing at Marineford", "isDefault": false, "billable": true, "children": [
+          { "name": "Loyalty Verification Drill", "billable": true },
+          { "name": "Warlord Summons Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Subordinates", "isDefault": false, "billable": true, "children": [
+          { "name": "Crew Conscription", "billable": true },
+          { "name": "Warlord's Tactical Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "revolutionary-army",
+      "projectName": "Revolutionary Army — Baltigo Liberation Analytics",
+      "shortName": "Rev Army BLA",
+      "subAccountName": "Revolutionary Army",
+      "subAccountNumber": "PSA-TEST-ONEPIECE-REVARMY",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Baltigo Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Liberation Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Kingdom Oppression Audit", "billable": true },
+          { "name": "Cell Network Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Liberation Cells", "isDefault": false, "billable": true, "children": [
+          { "name": "East Army Mobilization", "billable": true },
+          { "name": "Newkama Land Outpost", "billable": true }
+        ]},
+        { "name": "Migrate the Resistance Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Liberation Manifesto Catalog", "billable": true },
+          { "name": "Tenryuubito Dossier", "billable": true }
+        ]},
+        { "name": "Testing at Dressrosa", "isDefault": false, "billable": true, "children": [
+          { "name": "Covert Op Rehearsal", "billable": true },
+          { "name": "Mera Mera Trial", "billable": true }
+        ]},
+        { "name": "Training the Revolutionaries", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Indoctrination", "billable": true },
+          { "name": "Commander's Field Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "straw-hat-pirates": [
+      { "fullName": "Monkey D. Luffy",   "themedRole": "Pirate King's Strategist" },
+      { "fullName": "Roronoa Zoro",      "themedRole": "Veteran Marine Captain" },
+      { "fullName": "Nami",              "themedRole": "Ship's Navigator" },
+      { "fullName": "Usopp",             "themedRole": "Town Crier of Loguetown" },
+      { "fullName": "Sanji",             "themedRole": "Quartermaster of the Hold" },
+      { "fullName": "Tony Tony Chopper", "themedRole": "Marine Inspector" },
+      { "fullName": "Nico Robin",        "themedRole": "Cipher Pol Analyst" },
+      { "fullName": "Franky",            "themedRole": "Master Shipwright" },
+      { "fullName": "Brook",             "themedRole": "Senior News Coo" },
+      { "fullName": "Jinbe",             "themedRole": "Den Den Mushi Architect" }
+    ],
+    "world-government-marines": [
+      { "fullName": "Sengoku",           "themedRole": "Fleet Admiral of the West Blue" },
+      { "fullName": "Monkey D. Garp",    "themedRole": "Vice Admiral Shipwright" },
+      { "fullName": "Sakazuki Akainu",   "themedRole": "Pirate King's Strategist" },
+      { "fullName": "Kuzan Aokiji",      "themedRole": "Den Den Mushi Architect" },
+      { "fullName": "Borsalino Kizaru",  "themedRole": "Senior Snail Operator" },
+      { "fullName": "Smoker",            "themedRole": "Veteran Marine Captain" },
+      { "fullName": "Tashigi",           "themedRole": "Marine Petty Officer" },
+      { "fullName": "Coby",              "themedRole": "Cabin Boy Consultant" }
+    ],
+    "shichibukai": [
+      { "fullName": "Dracule Mihawk",    "themedRole": "Pirate King's Strategist" },
+      { "fullName": "Boa Hancock",       "themedRole": "Ship's Navigator" },
+      { "fullName": "Sir Crocodile",     "themedRole": "Cipher Pol Analyst" },
+      { "fullName": "Bartholomew Kuma",  "themedRole": "Den Den Mushi Architect" },
+      { "fullName": "Donquixote Doflamingo","themedRole": "Town Crier of Loguetown" },
+      { "fullName": "Marshall D. Teach", "themedRole": "Apprentice Snail Operator" },
+      { "fullName": "Gecko Moria",       "themedRole": "News Coo Apprentice" }
+    ],
+    "revolutionary-army": [
+      { "fullName": "Monkey D. Dragon",  "themedRole": "Pirate King's Strategist" },
+      { "fullName": "Sabo",              "themedRole": "Fleet Admiral of the West Blue" },
+      { "fullName": "Koala",             "themedRole": "Cipher Pol Analyst" },
+      { "fullName": "Emporio Ivankov",   "themedRole": "Senior News Coo" },
+      { "fullName": "Inazuma",           "themedRole": "Master Shipwright" },
+      { "fullName": "Bartholomew Kuma",  "themedRole": "Marine Petty Officer" }
+    ]
+  },
+
+  "milestones": {
+    "straw-hat-pirates": [
+      { "name": "Setting Sail from Foosha",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Straw Hat sets out from Foosha Village." },
+      { "name": "Forging the Thousand Sunny",     "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Franky lays the Adam Wood keel at Water Seven." },
+      { "name": "Sabaody Archipelago Council",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: crew strategy review at the bubble grove." },
+      { "name": "Marineford Diversion",           "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feint at the Marine HQ to draw the eye." },
+      { "name": "Crowning of the Pirate King",    "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the One Piece is found and the crown claimed." },
+      { "name": "Captain's Hand-off",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: command passed to the next-generation crew." }
+    ],
+    "world-government-marines": [
+      { "name": "Muster at Marineford",           "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the fleet assembles at HQ." },
+      { "name": "Buster Call Deployed",           "type": "Operational", "offsetPct": 30,  "description": "Build phase: full naval response operationalised." },
+      { "name": "Enies Lobby Verdict",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: justice procedures pass review." },
+      { "name": "Battle of Marineford",           "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the war for the Pirate King's son is fought." },
+      { "name": "Return to New HQ",               "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: HQ relocates to the New World." },
+      { "name": "Final Tribute Invoice",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Marine Headquarters." }
+    ],
+    "shichibukai": [
+      { "name": "Royal Summons",                  "type": "Gate",        "offsetPct": 10,  "description": "Discovery: warlords summoned to Mary Geoise." },
+      { "name": "Forge the Tribute Network",      "type": "Operational", "offsetPct": 35,  "description": "Build: warlord-to-government comms deployed." },
+      { "name": "World Government Audit",         "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Five Elders themselves." },
+      { "name": "Warlord System Activation",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Shichibukai network fully operational." },
+      { "name": "System Disbanded",               "type": "Operational", "offsetPct": 100, "description": "Project close: warlord pacts dissolved by the Reverie." },
+      { "name": "Final Bounty Reckoning",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice — pardons revoked, bounties restored." }
+    ],
+    "revolutionary-army": [
+      { "name": "Council at Baltigo",             "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the revolutionary stronghold." },
+      { "name": "Liberation of a Kingdom",        "type": "Operational", "offsetPct": 30,  "description": "Discovery: first oppressed kingdom freed and modelled." },
+      { "name": "Weave the Cell Network",         "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards woven across all four armies." },
+      { "name": "Reverie Disruption",             "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: covert operation succeeds at the world summit." },
+      { "name": "Dawn of the Revolution",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the new world order takes shape." },
+      { "name": "Final Liberation Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Revolutionary command." }
+    ]
+  },
+
+  "daysOff": {
+    "Monkey D. Luffy":   [ { "realm": "straw-hat-pirates", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Meat-eating contest at Water Seven — unmissable." } ],
+    "Roronoa Zoro":      [ { "realm": "straw-hat-pirates", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Got lost finding the bathroom — back when found." } ],
+    "Nami":              [ { "realm": "straw-hat-pirates", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Tangerine grove harvest — ancestral duty." } ],
+    "Sanji":             [ { "realm": "straw-hat-pirates", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Baratie reunion — cooking with Zeff." } ],
+    "Tony Tony Chopper": [ { "realm": "straw-hat-pirates", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Drum Island medical conference — Doctorine insisted." } ],
+    "Sengoku":           [ { "realm": "world-government-marines", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Goat-feeding duty at HQ — semi-annual." } ],
+    "Monkey D. Garp":    [ { "realm": "world-government-marines", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Visiting his grandsons — uninvited as usual." } ],
+    "Kuzan Aokiji":      [ { "realm": "world-government-marines", "offsetWeeks": 16, "numberOfDays": 5, "notes": "Bicycle tour of the South Blue — slow ride." } ],
+    "Boa Hancock":       [ { "realm": "shichibukai", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Amazon Lily court business — empress duties." } ],
+    "Dracule Mihawk":    [ { "realm": "shichibukai", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Solo retreat at Kuraigana — wine and swordcraft." } ],
+    "Sir Crocodile":     [ { "realm": "shichibukai", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Rain Dinners casino — quarterly inspection." } ],
+    "Monkey D. Dragon":  [ { "realm": "revolutionary-army", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Solo reconnaissance — destination undisclosed." } ],
+    "Sabo":              [ { "realm": "revolutionary-army", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Dadan's mountain hideout visit — sworn-brother tradition." } ],
+    "Koala":             [ { "realm": "revolutionary-army", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Fishman karate seminar with Hack." } ],
+    "Emporio Ivankov":   [ { "realm": "revolutionary-army", "offsetWeeks": 20, "numberOfDays": 3, "notes": "Newkama Land carnival — hostess duties." } ]
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "key": "Naruto",
+  "displayName": "Naruto",
+  "category": "Anime",
+  "emailDomain": "konoha.test",
+  "account": {
+    "name": "Shinobi Alliance (Test Data)",
+    "accountNumber": "PSA-TEST-NARUTO"
+  },
+  "mailingAddress": {
+    "street": "1 Hokage Rock Way",
+    "city": "Konohagakure",
+    "state": "Land of Fire",
+    "postalCode": "00001",
+    "country": "Elemental Nations"
+  },
+
+  "roles": [
+    { "name": "Sage of the Six Paths",            "canonical": "Solution Architect",                      "description": "Master of all chakra natures — architects the over-arching jutsu solution and watches over its integrity." },
+    { "name": "Jōnin Squad Captain",              "canonical": "Project Manager",                         "description": "Leads the genin squad through every mission, holds the timeline, and reports to the Hokage." },
+    { "name": "Keeper of the Forbidden Scroll",   "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields, and permission sets sealed within the village archive." },
+    { "name": "Master Sealmaster",                "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features through complex sealing techniques." },
+    { "name": "Hokage of the Leaf",               "canonical": "Salesforce Practice Lead - USA",          "description": "Leader of all village shinobi craft — sets standards and guides the senior jōnin." },
+    { "name": "Veteran ANBU Operative",           "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced shinobi craft." },
+    { "name": "Chūnin Operative",                 "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the missions under the ANBU's eye." },
+    { "name": "Master of the Rasengan Bridge",    "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the gates." },
+    { "name": "Summoning Contract Signer",        "canonical": "Integration Senior Consultant - India",   "description": "Lays the seals of API, middleware, and event flows under the Bridge Master's plan." },
+    { "name": "Apprentice Sealer",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the shinobi patterns of error handling." },
+    { "name": "Medic-Nin",                        "canonical": "QA Engineer",                             "description": "Tends the wounded mission and finds the maladies in the build before they reach the Kage." },
+    { "name": "Herald of the Hidden Village",     "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for product and message — leads all marketing craft." },
+    { "name": "Tactician of the Strategy Scroll", "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert across the nations." },
+    { "name": "Banner-Bearer of the Village",     "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily mission." },
+    { "name": "Mission Scribe of the Hokage",     "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the shinobi craft of design." },
+    { "name": "Elite Sannin Engineer",            "canonical": "Salesforce Senior Developer - USA",       "description": "Legendary developer-class shinobi — handles the deepest, most senior platform work." },
+    { "name": "Genin Recruit",                    "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh from the academy — picks up configuration and discovery work under senior guidance." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "konohagakure",
+      "projectName": "Konohagakure — Hidden Leaf CRM Rollout",
+      "shortName": "Leaf CRM",
+      "subAccountName": "Hidden Leaf Village",
+      "subAccountNumber": "PSA-TEST-NARUTO-KONOHAGAKURE",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Hokage Tower Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council of Jōnin", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Elders", "billable": true },
+          { "name": "Field Reconnaissance — Land of Fire", "billable": true }
+        ]},
+        { "name": "Build the Will of Fire", "isDefault": false, "billable": true, "children": [
+          { "name": "Hokage Faces Foundation", "billable": true },
+          { "name": "Rasengan Tooling", "billable": true }
+        ]},
+        { "name": "Migrate the Mission Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Mission Scroll Inventory", "billable": true },
+          { "name": "Forbidden Scroll Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Chūnin Exams", "isDefault": false, "billable": true, "children": [
+          { "name": "Forest of Death (UAT)", "billable": true },
+          { "name": "Final Tournament Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Academy", "isDefault": false, "billable": true, "children": [
+          { "name": "Genin Onboarding", "billable": true },
+          { "name": "Jōnin Sensei Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "sunagakure",
+      "projectName": "Sunagakure — Desert Logistics Platform",
+      "shortName": "Sand DLP",
+      "subAccountName": "Hidden Sand Village",
+      "subAccountNumber": "PSA-TEST-NARUTO-SUNAGAKURE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Kazekage Office Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sand Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Wind Country Survey", "billable": true },
+          { "name": "Puppet Corps Headcount", "billable": true }
+        ]},
+        { "name": "Build the Sand Shield", "isDefault": false, "billable": true, "children": [
+          { "name": "Gourd Construction", "billable": true },
+          { "name": "Puppet Mechanism Forging", "billable": true }
+        ]},
+        { "name": "Migrate the Puppet Roster", "isDefault": false, "billable": true, "children": [
+          { "name": "Puppet Master Roll Call", "billable": true },
+          { "name": "Sealed Weapon Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Dunes", "isDefault": false, "billable": true, "children": [
+          { "name": "Sandstorm Defense Drill", "billable": true },
+          { "name": "Desert Ambush Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Sand Squad", "isDefault": false, "billable": true, "children": [
+          { "name": "Puppet Foundations", "billable": true },
+          { "name": "Kazekage's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "kirigakure",
+      "projectName": "Kirigakure — Bloody Mist Surveillance Build",
+      "shortName": "Mist BMS",
+      "subAccountName": "Hidden Mist Village",
+      "subAccountNumber": "PSA-TEST-NARUTO-KIRIGAKURE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Mizukage Manor Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Mist Reconnaissance", "isDefault": false, "billable": true, "children": [
+          { "name": "Seven Swordsmen Sweep", "billable": true },
+          { "name": "Hidden Cove Mapping", "billable": true }
+        ]},
+        { "name": "Build the Silent Killing", "isDefault": false, "billable": true, "children": [
+          { "name": "Hidden Mist Jutsu Tooling", "billable": true },
+          { "name": "Kubikiribōchō Sharpening", "billable": true }
+        ]},
+        { "name": "Migrate the Bloodline Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Kekkei Genkai Census", "billable": true },
+          { "name": "Ice Mirror Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Great Naruto Bridge", "isDefault": false, "billable": true, "children": [
+          { "name": "Bridge Defense Drill", "billable": true },
+          { "name": "Demonic Ice Mirror Stress", "billable": true }
+        ]},
+        { "name": "Training the Mist Hunters", "isDefault": false, "billable": true, "children": [
+          { "name": "Hunter-Nin Foundations", "billable": true },
+          { "name": "Mizukage's Battle Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "kumogakure",
+      "projectName": "Kumogakure — Lightning Analytics Implementation",
+      "shortName": "Cloud LAI",
+      "subAccountName": "Hidden Cloud Village",
+      "subAccountNumber": "PSA-TEST-NARUTO-KUMOGAKURE",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Raikage Office Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Lightning Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Mountain Peak Reconnaissance", "billable": true },
+          { "name": "Tailed Beast Vision Council", "billable": true }
+        ]},
+        { "name": "Build the Lightning Cloak", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Armor Forging", "billable": true },
+          { "name": "Samehada Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Jinchūriki Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Bijū Manuscript Catalog", "billable": true },
+          { "name": "Enka Recording Sessions", "billable": true }
+        ]},
+        { "name": "Testing the Storm", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Speed Trial", "billable": true },
+          { "name": "Cloud Pattern Verification", "billable": true }
+        ]},
+        { "name": "Training the Cloud Shinobi", "isDefault": false, "billable": true, "children": [
+          { "name": "Kenjutsu Refresh", "billable": true },
+          { "name": "Rap Battle Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "konohagakure": [
+      { "fullName": "Naruto Uzumaki",   "themedRole": "Hokage of the Leaf" },
+      { "fullName": "Sasuke Uchiha",    "themedRole": "Sage of the Six Paths" },
+      { "fullName": "Sakura Haruno",    "themedRole": "Medic-Nin" },
+      { "fullName": "Kakashi Hatake",   "themedRole": "Jōnin Squad Captain" },
+      { "fullName": "Hinata Hyuga",     "themedRole": "Veteran ANBU Operative" },
+      { "fullName": "Shikamaru Nara",   "themedRole": "Tactician of the Strategy Scroll" },
+      { "fullName": "Sai",              "themedRole": "Mission Scribe of the Hokage" },
+      { "fullName": "Yamato",           "themedRole": "Master Sealmaster" },
+      { "fullName": "Tsunade",          "themedRole": "Elite Sannin Engineer" }
+    ],
+    "sunagakure": [
+      { "fullName": "Gaara",            "themedRole": "Hokage of the Leaf" },
+      { "fullName": "Temari",           "themedRole": "Jōnin Squad Captain" },
+      { "fullName": "Kankuro",          "themedRole": "Master Sealmaster" },
+      { "fullName": "Baki",             "themedRole": "Veteran ANBU Operative" },
+      { "fullName": "Chiyo",            "themedRole": "Sage of the Six Paths" }
+    ],
+    "kirigakure": [
+      { "fullName": "Mei Terumi",       "themedRole": "Hokage of the Leaf" },
+      { "fullName": "Zabuza Momochi",   "themedRole": "Master of the Rasengan Bridge" },
+      { "fullName": "Haku",             "themedRole": "Apprentice Sealer" },
+      { "fullName": "Chōjūrō",          "themedRole": "Genin Recruit" },
+      { "fullName": "Ao",               "themedRole": "Summoning Contract Signer" }
+    ],
+    "kumogakure": [
+      { "fullName": "Killer Bee",       "themedRole": "Banner-Bearer of the Village" },
+      { "fullName": "A (Raikage)",      "themedRole": "Hokage of the Leaf" },
+      { "fullName": "Darui",            "themedRole": "Chūnin Operative" },
+      { "fullName": "Samui",            "themedRole": "Herald of the Hidden Village" },
+      { "fullName": "C",                "themedRole": "Medic-Nin" },
+      { "fullName": "Karui",            "themedRole": "Genin Recruit" }
+    ]
+  },
+
+  "milestones": {
+    "konohagakure": [
+      { "name": "Light the Hokage Faces",      "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the faces of the Hokage are unveiled at sunrise." },
+      { "name": "Forging the Rasengan",        "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the swirling sphere of chakra is shaped for the road ahead." },
+      { "name": "Audience at Hokage Tower",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: leadership review with the council of elders." },
+      { "name": "Shadow Clone Diversion",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feint with a thousand clones to draw the eye." },
+      { "name": "Inauguration of the Hokage",  "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the new Hokage is inaugurated upon the rooftop." },
+      { "name": "Sensei's Hand-off",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: village stewardship passed to the next generation." }
+    ],
+    "sunagakure": [
+      { "name": "Muster at Sunagakure",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the puppet corps marches from the Kazekage's office." },
+      { "name": "March to the Dunes",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: shinobi deployed across the desert sands." },
+      { "name": "Sand Shield Holds",           "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the sand shield holds against all attacks." },
+      { "name": "Charge of the Puppet Corps",  "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the puppet brigade routs the invading force." },
+      { "name": "Return to the Kazekage",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the squad returns home to the Sand." },
+      { "name": "Funeral of the Fourth",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the burial of the fallen Kazekage." }
+    ],
+    "kirigakure": [
+      { "name": "The Mist Awakens",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Hidden Mist surveillance plane online." },
+      { "name": "Forge the Seven Swords",      "type": "Operational", "offsetPct": 35,  "description": "Build: the legendary blades of the Mist deployed." },
+      { "name": "Mizukage's Audit",            "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Fifth Mizukage herself." },
+      { "name": "Bridge Activation",           "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Great Naruto Bridge fully operational." },
+      { "name": "Mist Lifts",                  "type": "Operational", "offsetPct": 100, "description": "Project close: the bloody mist clears at last." },
+      { "name": "Final Reckoning",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Hidden Mist Village." }
+    ],
+    "kumogakure": [
+      { "name": "Council of the Raikage",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council high atop the cloud-wrapped mountain." },
+      { "name": "Tame the Tailed Beast",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: reports modelled from the visions of the jinchūriki." },
+      { "name": "Weave the Lightning Reports", "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards crackling with chakra lightning." },
+      { "name": "Gift-Giving at Cloud Summit", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: gifts of the Raikage to each squad member." },
+      { "name": "Ride into the Storm",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the Cloud shinobi depart on a new mission." },
+      { "name": "Final Recompense",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Lightning Daimyō." }
+    ]
+  },
+
+  "daysOff": {
+    "Naruto Uzumaki":   [ { "realm": "konohagakure", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Ichiraku ramen marathon — annual tradition." } ],
+    "Sasuke Uchiha":    [ { "realm": "konohagakure", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Solitary wandering — atonement journey." } ],
+    "Sakura Haruno":    [ { "realm": "konohagakure", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Medical ninjutsu conference at the hospital." } ],
+    "Kakashi Hatake":   [ { "realm": "konohagakure", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "New Icha Icha volume release — must read in seclusion." } ],
+    "Hinata Hyuga":     [ { "realm": "konohagakure", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Hyūga clan ceremony — Byakugan rites." } ],
+    "Shikamaru Nara":   [ { "realm": "konohagakure", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Cloud-watching retreat — too troublesome to skip." } ],
+    "Gaara":            [ { "realm": "sunagakure",   "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Kazekage diplomatic summit." } ],
+    "Temari":           [ { "realm": "sunagakure",   "offsetWeeks": 16, "numberOfDays": 3, "notes": "Visiting the Leaf — liaison duties." } ],
+    "Mei Terumi":       [ { "realm": "kirigakure",   "offsetWeeks": 10, "numberOfDays": 2, "notes": "Mizukage matchmaking retreat — quarterly." } ],
+    "Zabuza Momochi":   [ { "realm": "kirigakure",   "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Sword maintenance — Kubikiribōchō reforging." } ],
+    "Haku":             [ { "realm": "kirigakure",   "offsetWeeks": 14, "numberOfDays": 2, "notes": "Mountain herb gathering — for Zabuza-sama." } ],
+    "Killer Bee":       [ { "realm": "kumogakure",   "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Rap album recording session — yo!" } ],
+    "A (Raikage)":      [ { "realm": "kumogakure",   "offsetWeeks": 12, "numberOfDays": 3, "notes": "Strength training summit — bench-press the mountain." } ],
+    "Darui":            [ { "realm": "kumogakure",   "offsetWeeks": 16, "numberOfDays": 1, "notes": "So lazy day — official PTO." } ]
+  }
+}
