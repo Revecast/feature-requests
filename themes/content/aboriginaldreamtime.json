@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "key": "AboriginalDreamtime",
+  "displayName": "Aboriginal Australian Dreamtime",
+  "category": "Mythology",
+  "emailDomain": "dreamtime.test",
+  "account": {
+    "name": "Aboriginal Australian Dreamtime (Test Data)",
+    "accountNumber": "PSA-TEST-ABORIGINALDREAMTIME"
+  },
+  "mailingAddress": {
+    "street": "Uluru Cultural Centre Road",
+    "city": "Mutitjulu",
+    "state": "NT",
+    "postalCode": "0872",
+    "country": "Australia"
+  },
+
+  "_culturalNote": "This theme is created with deep respect for the Aboriginal and Torres Strait Islander peoples of Australia. The Dreaming (Tjukurpa, Jukurrpa, Altjira and many other names across nations) is sacred living lore, not fiction. Names used here are publicly documented ancestral beings drawn from many distinct First Nations across the continent. We acknowledge the Traditional Custodians of all lands, waters and skies, and pay respect to Elders past, present and emerging.",
+
+  "roles": [
+    { "name": "Songline Keeper",                    "canonical": "Solution Architect",                      "description": "Holder of the great songlines — designs the over-arching solution by tracing how every piece sings together across Country." },
+    { "name": "Camp Boss",                          "canonical": "Project Manager",                         "description": "Organises the camp, the journey and the seasonal moves — keeps the mob on track from kickoff to handover." },
+    { "name": "Lawkeeper of the Records",           "canonical": "Salesforce Administrator",                "description": "Steward of customary records, layouts and permissions — keeps the lore tidy and the right people seeing the right things." },
+    { "name": "Toolmaker of Stone and Sky",         "canonical": "Salesforce Developer",                    "description": "Knaps the sharp Apex blades, weaves LWC dilly-bags and shapes platform tools fit for purpose." },
+    { "name": "Elder of the Western Camps",         "canonical": "Salesforce Practice Lead - USA",          "description": "Senior Elder for Salesforce craft across the Western camps — sets standards and mentors the senior toolmakers." },
+    { "name": "Senior Tracker of the Inland Paths", "canonical": "Salesforce Senior Consultant - India",    "description": "Reads the country and the requirements with practiced eye — leads discovery and delivery on the inland routes." },
+    { "name": "Apprentice Tracker",                 "canonical": "Salesforce Consultant - India",           "description": "Carries the dilly-bag of configuration and discovery under the senior tracker's eye." },
+    { "name": "Bridge-builder of the River-Crossings", "canonical": "Integration Technical Architect - USA","description": "Designs the great crossings between Salesforce and the realms beyond — APIs, events and middleware." },
+    { "name": "Senior Bark-Canoe Maker",            "canonical": "Integration Senior Consultant - India",   "description": "Lashes the integration canoes that ferry data between systems — middleware, batch and callouts." },
+    { "name": "Apprentice Canoe Maker",             "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, retries and the patterns of error handling." },
+    { "name": "Healer of the Bora Ground",          "canonical": "QA Engineer",                             "description": "Tends the build before it meets the mob — finds the cracks and the spear-points before go-live." },
+    { "name": "Voice of the Corroboree",            "canonical": "Marketing Practice Lead",                 "description": "Calls the mob to gathering — leads all marketing craft, the painted message and the smoke-signal." },
+    { "name": "Senior Storypainter",                "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — paints the stories on bark and stone that gather the people." },
+    { "name": "Storypainter",                       "canonical": "Marketing Consultant",                    "description": "Carries the campaign across the country — content, dot-paintings and the daily walk." },
+    { "name": "Listener at the Coolamon",           "canonical": "Business Analyst",                        "description": "Sits at the coolamon and listens — translates between the customer's need and the toolmaker's craft." },
+    { "name": "Senior Toolmaker of the Eastern Camps","canonical": "Salesforce Senior Developer - USA",     "description": "Master craftsman of the Eastern camps — shapes the most senior platform builds and mentors the apprentices." },
+    { "name": "Junior Tracker",                     "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh to the songline — learning to read the country, the data and the customer." }
+  ],
+
+  "_realmNotes": "The four realms here are not real Aboriginal nations — they are thematic groupings of publicly documented ancestral beings, organised by the role each plays in the Dreaming. They are presented with respect. Window offsets are negative so most of each project sits in the past for time-entry seeding.",
+
+  "realms": [
+    {
+      "key": "creator-ancestral-beings",
+      "projectName": "Sky Country — Creator Beings CRM Rollout",
+      "shortName": "Sky Country",
+      "subAccountName": "Sky Country Council of Creator Beings",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-CREATOR-ANCESTRAL-BEINGS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sky Camp Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Listening at the First Fire", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Sky Elders", "billable": true },
+          { "name": "Reading the Star Map", "billable": true }
+        ]},
+        { "name": "Shaping the Land", "isDefault": false, "billable": true, "children": [
+          { "name": "Mountain Raising", "billable": true },
+          { "name": "River Carving", "billable": true }
+        ]},
+        { "name": "Naming the Living Things", "isDefault": false, "billable": true, "children": [
+          { "name": "Animal Naming Walk", "billable": true },
+          { "name": "Plant Naming Walk", "billable": true }
+        ]},
+        { "name": "Walking the New World", "isDefault": false, "billable": true, "children": [
+          { "name": "First Light UAT", "billable": true },
+          { "name": "Country Walk-through", "billable": true }
+        ]},
+        { "name": "Teaching the First People", "isDefault": false, "billable": true, "children": [
+          { "name": "Lore Handover", "billable": true },
+          { "name": "Ceremony Rehearsal", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "rainbow-serpent-cycle",
+      "projectName": "Rainbow Serpent — Waterways & Lifecycle Platform",
+      "shortName": "Rainbow Serpent",
+      "subAccountName": "Rainbow Serpent Waterways Authority",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-RAINBOW-SERPENT-CYCLE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Billabong Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Waterhole", "isDefault": false, "billable": true, "children": [
+          { "name": "Spring Source Survey", "billable": true },
+          { "name": "Floodplain Mapping", "billable": true },
+          { "name": "Wet & Dry Season Planning", "billable": true }
+        ]},
+        { "name": "Carving the River Channels", "isDefault": false, "billable": true, "children": [
+          { "name": "Riverbed Foundation", "billable": true },
+          { "name": "Tributary Branching", "billable": true },
+          { "name": "Estuary Hardening", "billable": true }
+        ]},
+        { "name": "Filling the Billabongs", "isDefault": false, "billable": true, "children": [
+          { "name": "Reference Data Inflow", "billable": true },
+          { "name": "Lifecycle Records Migration", "billable": true }
+        ]},
+        { "name": "Testing the Wet Season", "isDefault": false, "billable": true, "children": [
+          { "name": "Flood Stress Test", "billable": true },
+          { "name": "Drought Recovery Drill", "billable": true }
+        ]},
+        { "name": "Teaching the Water Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Caretaker Onboarding", "billable": true },
+          { "name": "Custodian's Handbook", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mortal-heroes-tricksters",
+      "projectName": "Bushlands — Heroes & Tricksters Field Service",
+      "shortName": "Bushlands",
+      "subAccountName": "Bushlands Heroes' Lodge",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-MORTAL-HEROES-TRICKSTERS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Bush Camp Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Walkabout", "isDefault": false, "billable": true, "children": [
+          { "name": "Track Reading", "billable": true },
+          { "name": "Trickster Interviews", "billable": true },
+          { "name": "Hero's Council Strategy", "billable": true }
+        ]},
+        { "name": "Building the Bush Tools", "isDefault": false, "billable": true, "children": [
+          { "name": "Spear-Thrower Forging", "billable": true },
+          { "name": "Boomerang Calibration", "billable": true },
+          { "name": "Firestick Tooling", "billable": true }
+        ]},
+        { "name": "Migrating the Bush Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Tale Catalogue", "billable": true },
+          { "name": "Hero Roll Inventory", "billable": true }
+        ]},
+        { "name": "Testing in the Scrub", "isDefault": false, "billable": true, "children": [
+          { "name": "Trickster Pen-test", "billable": true },
+          { "name": "Hero's Trial Run", "billable": true }
+        ]},
+        { "name": "Teaching the Young Hunters", "isDefault": false, "billable": true, "children": [
+          { "name": "Tracker Onboarding", "billable": true },
+          { "name": "Hunter's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "totemic-and-place-spirits",
+      "projectName": "Country & Totem — Place-Spirit Analytics Implementation",
+      "shortName": "Country & Totem",
+      "subAccountName": "Country & Totem Custodians",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-TOTEMIC-AND-PLACE-SPIRITS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sacred Site Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery on Country", "isDefault": false, "billable": true, "children": [
+          { "name": "Totem Calibration", "billable": true },
+          { "name": "Place-Spirit Mapping", "billable": true },
+          { "name": "Custodians' Council", "billable": true }
+        ]},
+        { "name": "Building the Star Charts", "isDefault": false, "billable": true, "children": [
+          { "name": "Sun & Moon Foundation", "billable": true },
+          { "name": "Star Pattern Construction", "billable": true },
+          { "name": "Seasonal Calendar Threading", "billable": true }
+        ]},
+        { "name": "Migrating the Totemic Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Animal Totem Catalogue", "billable": true },
+          { "name": "Sacred Place Register", "billable": true }
+        ]},
+        { "name": "Testing the Sky-Reading", "isDefault": false, "billable": true, "children": [
+          { "name": "Star Alignment Trial", "billable": true },
+          { "name": "Seasonal Pattern Verification", "billable": true }
+        ]},
+        { "name": "Teaching the Custodians", "isDefault": false, "billable": true, "children": [
+          { "name": "Totem Refresh", "billable": true },
+          { "name": "Place-Spirit Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "creator-ancestral-beings": [
+      { "fullName": "Baiame",                "themedRole": "Songline Keeper" },
+      { "fullName": "Yhi",                   "themedRole": "Voice of the Corroboree" },
+      { "fullName": "Bunjil",                "themedRole": "Elder of the Western Camps" },
+      { "fullName": "Eingana",               "themedRole": "Camp Boss" },
+      { "fullName": "Wandjina",              "themedRole": "Listener at the Coolamon" },
+      { "fullName": "Altjira",               "themedRole": "Lawkeeper of the Records" },
+      { "fullName": "Mangar-kunjer-kunja",   "themedRole": "Toolmaker of Stone and Sky" },
+      { "fullName": "Karora",                "themedRole": "Apprentice Tracker" }
+    ],
+    "rainbow-serpent-cycle": [
+      { "fullName": "Wagyl",                 "themedRole": "Songline Keeper" },
+      { "fullName": "Wonambi",               "themedRole": "Camp Boss" },
+      { "fullName": "Yurlungur",             "themedRole": "Bridge-builder of the River-Crossings" },
+      { "fullName": "Galeru",                "themedRole": "Senior Bark-Canoe Maker" },
+      { "fullName": "Almudj",                "themedRole": "Apprentice Canoe Maker" },
+      { "fullName": "Borlung",               "themedRole": "Senior Tracker of the Inland Paths" },
+      { "fullName": "Julunggul",             "themedRole": "Healer of the Bora Ground" },
+      { "fullName": "Ngalyod",               "themedRole": "Listener at the Coolamon" }
+    ],
+    "mortal-heroes-tricksters": [
+      { "fullName": "Tiddalik",              "themedRole": "Camp Boss" },
+      { "fullName": "Ngurunderi",            "themedRole": "Songline Keeper" },
+      { "fullName": "Yowie",                 "themedRole": "Senior Tracker of the Inland Paths" },
+      { "fullName": "Bunyip",                "themedRole": "Apprentice Tracker" },
+      { "fullName": "Mimi",                  "themedRole": "Storypainter" },
+      { "fullName": "Wati Kutjara",          "themedRole": "Senior Storypainter" },
+      { "fullName": "Pundjel",               "themedRole": "Elder of the Western Camps" },
+      { "fullName": "Karatgurk",             "themedRole": "Voice of the Corroboree" }
+    ],
+    "totemic-and-place-spirits": [
+      { "fullName": "Tjilbruke",             "themedRole": "Songline Keeper" },
+      { "fullName": "Bahloo",                "themedRole": "Senior Toolmaker of the Eastern Camps" },
+      { "fullName": "Wuriupranili",          "themedRole": "Voice of the Corroboree" },
+      { "fullName": "Goanna Ancestor",       "themedRole": "Toolmaker of Stone and Sky" },
+      { "fullName": "Kangaroo Ancestor",     "themedRole": "Camp Boss" },
+      { "fullName": "Possum Ancestor",       "themedRole": "Junior Tracker" },
+      { "fullName": "Bandicoot Ancestor",    "themedRole": "Apprentice Canoe Maker" },
+      { "fullName": "Death Adder Ancestor",  "themedRole": "Healer of the Bora Ground" }
+    ]
+  },
+
+  "milestones": {
+    "creator-ancestral-beings": [
+      { "name": "First Fire Lit",            "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the first fire is lit and the council convened." },
+      { "name": "Mountains Raised",          "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the great ranges are pushed up from the flat earth." },
+      { "name": "Council of the Sky Elders", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: review with Baiame and the sky elders." },
+      { "name": "First Rains Invoice",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice: the rains arrive, the first season closes." },
+      { "name": "First People Walk the Land","type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the first people walk the new country." },
+      { "name": "Lore Handed Down",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the lore is passed to the next generation." }
+    ],
+    "rainbow-serpent-cycle": [
+      { "name": "Serpent Wakes from the Waterhole","type": "Gate",  "offsetPct": 5,   "description": "Project kickoff: the Rainbow Serpent stirs and the journey begins." },
+      { "name": "Riverbeds Carved",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: the great river channels are carved across country." },
+      { "name": "Wet Season UAT",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the floods arrive and the channels hold." },
+      { "name": "Billabongs Filled",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: every billabong sings with water and life." },
+      { "name": "Serpent Returns to Rest",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the Rainbow Serpent coils back into the deep waterhole." },
+      { "name": "Custodians Paid",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the water-keepers are honoured for the cycle's work." }
+    ],
+    "mortal-heroes-tricksters": [
+      { "name": "Walkabout Begins",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the heroes set out on walkabout to read the country." },
+      { "name": "Spears and Boomerangs Forged","type": "Operational","offsetPct": 35, "description": "Build: the bush tools are made ready for the trials ahead." },
+      { "name": "Trickster's Audit",         "type": "Gate",        "offsetPct": 60,  "description": "Solution review: the trickster tests every claim with sharp questions." },
+      { "name": "Hero's Return",             "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the heroes return triumphant with the lore intact." },
+      { "name": "Camp Stories Told",         "type": "Operational", "offsetPct": 100, "description": "Project close: the deeds are told around the fire and committed to memory." },
+      { "name": "Hunters Paid in Kind",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the bush camp." }
+    ],
+    "totemic-and-place-spirits": [
+      { "name": "Custodians' Council",       "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council with the place-spirits and totem ancestors." },
+      { "name": "Star Charts Drawn",         "type": "Operational", "offsetPct": 30,  "description": "Discovery: the seasonal sky-charts are drawn from the night patterns." },
+      { "name": "Totems Recorded on Bark",   "type": "Operational", "offsetPct": 55,  "description": "Build: the totem registry is painted onto bark and stone." },
+      { "name": "Sacred Sites Acceptance",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: each sacred site is walked and signed off by its custodian." },
+      { "name": "Country Sings Again",       "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the country and its totems are alive in the system." },
+      { "name": "Final Tribute",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice: tribute paid to the custodians and place-spirits." }
+    ]
+  },
+
+  "daysOff": {
+    "Baiame":               [ { "realm": "creator-ancestral-beings", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Retreat to the sky country — annual ascension." } ],
+    "Yhi":                  [ { "realm": "creator-ancestral-beings", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Solstice rest — sun pauses at the horizon." } ],
+    "Bunjil":               [ { "realm": "creator-ancestral-beings", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Eaglehawk's high circling — surveying the land from above." } ],
+    "Wandjina":             [ { "realm": "creator-ancestral-beings", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Cloud-tending in the Kimberley — pre-monsoon." } ],
+    "Wagyl":                [ { "realm": "rainbow-serpent-cycle",    "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Returning to the Swan River source." } ],
+    "Yurlungur":            [ { "realm": "rainbow-serpent-cycle",    "offsetWeeks": 14, "numberOfDays": 5, "notes": "Coiled rest beneath the Arnhem Land waterhole." } ],
+    "Wonambi":              [ { "realm": "rainbow-serpent-cycle",    "offsetWeeks": 20, "numberOfDays": 3, "notes": "Slow shedding of the great skin — biennial." } ],
+    "Tiddalik":             [ { "realm": "mortal-heroes-tricksters", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Drinking all the water — recovery afterwards." } ],
+    "Ngurunderi":           [ { "realm": "mortal-heroes-tricksters", "offsetWeeks": 10, "numberOfDays": 4, "notes": "Hunting the great Murray cod down the river." } ],
+    "Mimi":                 [ { "realm": "mortal-heroes-tricksters", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Hiding in the rock crevices — windy day." } ],
+    "Bunyip":               [ { "realm": "mortal-heroes-tricksters", "offsetWeeks": 20, "numberOfDays": 2, "notes": "Lurking deeper in the swamp — quarterly seclusion." } ],
+    "Tjilbruke":            [ { "realm": "totemic-and-place-spirits", "offsetWeeks": 8, "numberOfDays": 3, "notes": "Walking the freshwater springs of the Adelaide coast." } ],
+    "Bahloo":               [ { "realm": "totemic-and-place-spirits", "offsetWeeks": 12,"numberOfDays": 2, "notes": "New moon dark — Bahloo hides his face." } ],
+    "Wuriupranili":         [ { "realm": "totemic-and-place-spirits", "offsetWeeks": 16,"numberOfDays": 1, "notes": "Sunset ceremony — torch dipped below the horizon." } ],
+    "Kangaroo Ancestor":    [ { "realm": "totemic-and-place-spirits", "offsetWeeks": 20,"numberOfDays": 2, "notes": "Mob gathering at the totem ground." } ]
+  }
+}

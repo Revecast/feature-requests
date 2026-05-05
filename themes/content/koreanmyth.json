@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "key": "KoreanMyth",
+  "displayName": "Korean Mythology",
+  "category": "Mythology",
+  "emailDomain": "hanguk.test",
+  "account": {
+    "name": "Samshin Halmoni Pantheon (Test Data)",
+    "accountNumber": "PSA-TEST-KOREANMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Cheonji Hanmaru, Mount Baekdu Sky Pavilion",
+    "city": "Gyeongju",
+    "state": "Gyeongsangbuk-do",
+    "postalCode": "38130",
+    "country": "Korea"
+  },
+
+  "roles": [
+    { "name": "Loremaster of the Cheonbu-gyeong",  "canonical": "Solution Architect",                    "description": "Keeper of the Heavenly Seal scriptures — designs the over-arching solution and guards its integrity across the spheres." },
+    { "name": "Hwarang Captain",                    "canonical": "Project Manager",                       "description": "Leads the Hwarang flower-knights of delivery — holds the timeline and answers to the council." },
+    { "name": "Keeper of the Royal Annals",         "canonical": "Salesforce Administrator",              "description": "Steward of the Joseon-style records — layouts, fields, profiles and permission sets." },
+    { "name": "Master Smith of Gaya Iron",          "canonical": "Salesforce Developer",                  "description": "Forges Apex, LWC and platform features in the iron furnaces of old Gimhae." },
+    { "name": "Yangban Practice Lord",              "canonical": "Salesforce Practice Lead - USA",        "description": "Yangban scholar-noble overseeing all Salesforce craft for the Western court — sets standards for the senior smiths." },
+    { "name": "Senior Hwarang of Silla",            "canonical": "Salesforce Senior Consultant - India",  "description": "Veteran flower-knight who patrols the borders of customer requirements with practiced craft." },
+    { "name": "Hwarang Initiate",                   "canonical": "Salesforce Consultant - India",         "description": "Carries discovery and configuration across the realm under the Senior Hwarang's eye." },
+    { "name": "Bridge-Master of the Eunhasu",       "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans across the Milky Way — Salesforce to the realms beyond." },
+    { "name": "Bridge-builder of the Eunhasu",      "canonical": "Integration Senior Consultant - India", "description": "Lays the stones of API, middleware and event flows under the Bridge-Master's plan." },
+    { "name": "Apprentice of the Magpie Bridge",    "canonical": "Integration Consultant - India",        "description": "Learns the craft of webhooks, batch, callouts and the patterns of error handling on the Ojakgyo." },
+    { "name": "Eumyangsa Quality Inspector",        "canonical": "QA Engineer",                           "description": "Tests the harmony of yin and yang in every release — finds the maladies before they reach the throne." },
+    { "name": "Pungmul Herald",                     "canonical": "Marketing Practice Lead",               "description": "Lifts the pungmul drum and the trumpet for product and message — leads all marketing craft." },
+    { "name": "Pansori Storyteller",                "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the pansori chant to gather and convert." },
+    { "name": "Janggu Drummer",                     "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative and the daily rhythm." },
+    { "name": "Council Scribe of Seokguram",        "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between mortal customer and the carved grotto of design." },
+    { "name": "Senior Master Smith of Pohang",      "canonical": "Salesforce Senior Developer - USA",     "description": "Master of the great Pohang forges — owns the most critical Apex foundations and mentors the smiths of Gaya." },
+    { "name": "Sodang Apprentice",                  "canonical": "Junior Salesforce Consultant - India",  "description": "Sodang village-school newcomer — learns flows, layouts and reports under the Hwarang's wing." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "creation-and-heaven-gods",
+      "projectName": "Heavenly Court — Cheonji Creation Platform",
+      "shortName": "Cheonji CCP",
+      "subAccountName": "Court of Hwanin (Heavenly Realm)",
+      "subAccountNumber": "PSA-TEST-KOREANMYTH-CREATION",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sky Pavilion Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Heavenly Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Hwanin's Throne-Room Briefing", "billable": true },
+          { "name": "Cheonbu-gyeong Scripture Review", "billable": true }
+        ]},
+        { "name": "Forging the Sun and Moon", "isDefault": false, "billable": true, "children": [
+          { "name": "Daebyeol Sun Calibration", "billable": true },
+          { "name": "Sobyeol Moon Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Star Charts", "isDefault": false, "billable": true, "children": [
+          { "name": "Constellation Inventory", "billable": true },
+          { "name": "Eunhasu Lane Mapping", "billable": true }
+        ]},
+        { "name": "Testing at the Sandalwood Tree", "isDefault": false, "billable": true, "children": [
+          { "name": "Sindansu Acceptance Drill", "billable": true },
+          { "name": "Heavenly Audit Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Heavenly Hosts", "isDefault": false, "billable": true, "children": [
+          { "name": "Hwanung Descent Workshop", "billable": true },
+          { "name": "Mago Creation Refresher", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mountain-and-village-spirits",
+      "projectName": "Sansin Hamlet — Village Guardian CRM",
+      "shortName": "Sansin VG",
+      "subAccountName": "Sansin & Seonangdang Federation",
+      "subAccountNumber": "PSA-TEST-KOREANMYTH-MOUNTAIN",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Seonangdang Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Village Rite", "isDefault": false, "billable": true, "children": [
+          { "name": "Mountain Spirit Survey", "billable": true },
+          { "name": "Hamlet Headcount", "billable": true }
+        ]},
+        { "name": "Build the Jangseung", "isDefault": false, "billable": true, "children": [
+          { "name": "Totem Pole Carving", "billable": true },
+          { "name": "Village Gate Painting", "billable": true }
+        ]},
+        { "name": "Migrate the Hearth Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Jowangshin Kitchen Census", "billable": true },
+          { "name": "Munshin Door Roll", "billable": true }
+        ]},
+        { "name": "Testing the Eobshin Fortune", "isDefault": false, "billable": true, "children": [
+          { "name": "Snake-spirit Stress Test", "billable": true },
+          { "name": "Treasure Audit Drill", "billable": true }
+        ]},
+        { "name": "Training the Village Elders", "isDefault": false, "billable": true, "children": [
+          { "name": "Mudang Ritual Onboarding", "billable": true },
+          { "name": "Garam Riverside Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "heroes-of-myth-and-legend",
+      "projectName": "Founders' Charter — Three Kingdoms Rollout",
+      "shortName": "Three KR",
+      "subAccountName": "League of Founder-Kings",
+      "subAccountNumber": "PSA-TEST-KOREANMYTH-HEROES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Royal Court Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Founders' Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Silla Charter Review", "billable": true },
+          { "name": "Goguryeo Frontier Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Three Capitals", "isDefault": false, "billable": true, "children": [
+          { "name": "Gyeongju Foundation Stones", "billable": true },
+          { "name": "Pyongyang Wall Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Annals", "isDefault": false, "billable": true, "children": [
+          { "name": "Bone-Rank Roll Call", "billable": true },
+          { "name": "Tribute Manifest Translation", "billable": true }
+        ]},
+        { "name": "Testing at Onjo's Fortress", "isDefault": false, "billable": true, "children": [
+          { "name": "Baekje Siege Drill", "billable": true },
+          { "name": "Pyeonggang Resilience Trial", "billable": true }
+        ]},
+        { "name": "Training the New Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Princely Onboarding", "billable": true },
+          { "name": "Hwarang Marshal's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "dokkaebi-spirits-and-underworld",
+      "projectName": "Yeomra's Ledger — Underworld Surveillance Build",
+      "shortName": "Yeomra US",
+      "subAccountName": "Yeomra's Ten Kings Tribunal",
+      "subAccountNumber": "PSA-TEST-KOREANMYTH-DOKKAEBI",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Underworld Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Spirit Census", "isDefault": false, "billable": true, "children": [
+          { "name": "Dokkaebi Mischief Audit", "billable": true },
+          { "name": "Gwishin Roll Call", "billable": true }
+        ]},
+        { "name": "Build the Ledger of Souls", "isDefault": false, "billable": true, "children": [
+          { "name": "Yeomra's Judgment Engine", "billable": true },
+          { "name": "Saja Routing Network", "billable": true }
+        ]},
+        { "name": "Migrate the Wandering Spirits", "isDefault": false, "billable": true, "children": [
+          { "name": "Cheonyeo Ghost Inventory", "billable": true },
+          { "name": "Mongdal Bachelor Census", "billable": true }
+        ]},
+        { "name": "Testing at the Black Bridge", "isDefault": false, "billable": true, "children": [
+          { "name": "Mul Gwishin Water Trial", "billable": true },
+          { "name": "Tenth Court Penetration Test", "billable": true }
+        ]},
+        { "name": "Training the Death Messengers", "isDefault": false, "billable": true, "children": [
+          { "name": "Saja Recruit Onboarding", "billable": true },
+          { "name": "Imae Etiquette Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "creation-and-heaven-gods": [
+      { "fullName": "Hwanin",                "themedRole": "Loremaster of the Cheonbu-gyeong" },
+      { "fullName": "Hwanung",               "themedRole": "Yangban Practice Lord" },
+      { "fullName": "Dangun",                "themedRole": "Hwarang Captain" },
+      { "fullName": "Mago",                  "themedRole": "Senior Master Smith of Pohang" },
+      { "fullName": "Haemosu",               "themedRole": "Bridge-Master of the Eunhasu" },
+      { "fullName": "Yuhwa",                 "themedRole": "Council Scribe of Seokguram" },
+      { "fullName": "Cheonji-wang",          "themedRole": "Loremaster of the Cheonbu-gyeong" },
+      { "fullName": "Daebyeol-wang",         "themedRole": "Master Smith of Gaya Iron" },
+      { "fullName": "Sobyeol-wang",          "themedRole": "Senior Hwarang of Silla" }
+    ],
+    "mountain-and-village-spirits": [
+      { "fullName": "Sansin",                "themedRole": "Loremaster of the Cheonbu-gyeong" },
+      { "fullName": "Seonangsin",            "themedRole": "Hwarang Captain" },
+      { "fullName": "Jowangshin",            "themedRole": "Keeper of the Royal Annals" },
+      { "fullName": "Munshin",               "themedRole": "Sodang Apprentice" },
+      { "fullName": "Jangseung",             "themedRole": "Apprentice of the Magpie Bridge" },
+      { "fullName": "Eobshin",               "themedRole": "Eumyangsa Quality Inspector" },
+      { "fullName": "Eopgu",                 "themedRole": "Hwarang Initiate" },
+      { "fullName": "Garam-gushin",          "themedRole": "Bridge-builder of the Eunhasu" }
+    ],
+    "heroes-of-myth-and-legend": [
+      { "fullName": "Bak Hyeokgeose",        "themedRole": "Yangban Practice Lord" },
+      { "fullName": "Jumong",                "themedRole": "Hwarang Captain" },
+      { "fullName": "Onjo",                  "themedRole": "Senior Hwarang of Silla" },
+      { "fullName": "Princess Pyeonggang",   "themedRole": "Council Scribe of Seokguram" },
+      { "fullName": "Ondal the Fool",        "themedRole": "Hwarang Initiate" },
+      { "fullName": "Princess Bari",         "themedRole": "Pungmul Herald" },
+      { "fullName": "Heo Hwang-ok",          "themedRole": "Pansori Storyteller" },
+      { "fullName": "Kim Suro",              "themedRole": "Master Smith of Gaya Iron" }
+    ],
+    "dokkaebi-spirits-and-underworld": [
+      { "fullName": "Yeomra",                "themedRole": "Loremaster of the Cheonbu-gyeong" },
+      { "fullName": "Saja",                  "themedRole": "Janggu Drummer" },
+      { "fullName": "Dokkaebi",              "themedRole": "Apprentice of the Magpie Bridge" },
+      { "fullName": "Cheonyeo Gwishin",      "themedRole": "Eumyangsa Quality Inspector" },
+      { "fullName": "Mul Gwishin",           "themedRole": "Bridge-builder of the Eunhasu" },
+      { "fullName": "Mongdal Gwishin",       "themedRole": "Sodang Apprentice" },
+      { "fullName": "Hwanghyo",              "themedRole": "Council Scribe of Seokguram" },
+      { "fullName": "Imae",                  "themedRole": "Hwarang Initiate" }
+    ]
+  },
+
+  "milestones": {
+    "creation-and-heaven-gods": [
+      { "name": "Hwanin's Decree",                "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Heavenly Lord stamps the project charter." },
+      { "name": "Descent of Hwanung",             "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: 3,000 followers descend Mount Taebaek to begin construction." },
+      { "name": "Sandalwood Council",             "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: review beneath the Sindansu sacred tree." },
+      { "name": "Sun & Moon Invoice",             "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Daebyeol-wang and Sobyeol-wang split the heavens." },
+      { "name": "Founding of Gojoseon",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Dangun establishes the first kingdom." },
+      { "name": "Mago's Hand-off",                "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: creation passed to mortal stewardship." }
+    ],
+    "mountain-and-village-spirits": [
+      { "name": "Mountain Spirit Awakening",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Sansin rises from Mount Jiri to bless the build." },
+      { "name": "Raising the Jangseung",          "type": "Operational", "offsetPct": 30,  "description": "Build phase: totem poles set at every village gate." },
+      { "name": "Seonangdang Acceptance",         "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: village shrine accepts the new system." },
+      { "name": "Eobshin Treasure Reveal",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: fortune snake unveils the harvest dashboard." },
+      { "name": "Hearth Hand-off",                "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Jowangshin takes the kitchen reins." },
+      { "name": "Village Tribute Invoice",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice: rice and grain delivered to the shrine." }
+    ],
+    "heroes-of-myth-and-legend": [
+      { "name": "Bak Hyeokgeose Hatches",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Silla's founder emerges from the radiant egg." },
+      { "name": "Jumong's Bow Strung",            "type": "Operational", "offsetPct": 35,  "description": "Build: Goguryeo's archer-king draws the first arrow." },
+      { "name": "Onjo's Court Review",            "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the founder of Baekje." },
+      { "name": "Heo Hwang-ok Lands at Gimhae",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Ayodhya princess arrives and weds Kim Suro." },
+      { "name": "Pyeonggang's Hand-off",          "type": "Operational", "offsetPct": 100, "description": "Project close: the princess transitions Ondal to steady-state." },
+      { "name": "Three Kingdoms Tribute",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the unified founder-court." }
+    ],
+    "dokkaebi-spirits-and-underworld": [
+      { "name": "Yeomra Convenes the Court",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the King of the Underworld opens the ledger." },
+      { "name": "Saja Dispatch Network Online",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: death messengers routed to every province." },
+      { "name": "Dokkaebi Bangmangi Forged",      "type": "Operational", "offsetPct": 55,  "description": "Build: enchanted clubs distributed for nightly mischief." },
+      { "name": "Tenth Court Acceptance",         "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: each soul tested through all ten tribunals." },
+      { "name": "Bari Gongju's Crossing",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Princess Bari ferries souls to rebirth." },
+      { "name": "Underworld Reckoning",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Yeomra's tribunal." }
+    ]
+  },
+
+  "daysOff": {
+    "Hwanin":              [ { "realm": "creation-and-heaven-gods",     "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Quarterly retreat in the highest sky pavilion — uncontactable." } ],
+    "Hwanung":             [ { "realm": "creation-and-heaven-gods",     "offsetWeeks": 12, "numberOfDays": 3, "notes": "Mount Taebaek pilgrimage — leading 3,000 followers down again." } ],
+    "Dangun":              [ { "realm": "creation-and-heaven-gods",     "offsetWeeks": 18, "numberOfDays": 2, "notes": "Founding-day ceremony at Manisan altar — annual obligation." } ],
+    "Mago":                [ { "realm": "creation-and-heaven-gods",     "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Recreation work — re-shaping a continent, takes a week." } ],
+    "Sansin":              [ { "realm": "mountain-and-village-spirits", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Tiger-feeding rounds across Mount Jiri." } ],
+    "Jowangshin":          [ { "realm": "mountain-and-village-spirits", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Hearth re-consecration — annual kitchen blessing." } ],
+    "Eobshin":             [ { "realm": "mountain-and-village-spirits", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Treasure jar inspection — hibernation week." } ],
+    "Jumong":              [ { "realm": "heroes-of-myth-and-legend",    "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Archery tournament at Goguryeo — defending title." } ],
+    "Princess Pyeonggang": [ { "realm": "heroes-of-myth-and-legend",    "offsetWeeks": 14, "numberOfDays": 3, "notes": "Coaching Ondal at home — no court duties." } ],
+    "Ondal the Fool":      [ { "realm": "heroes-of-myth-and-legend",    "offsetWeeks": 16, "numberOfDays": 4, "notes": "Riding lessons with the princess — full immersion week." } ],
+    "Heo Hwang-ok":        [ { "realm": "heroes-of-myth-and-legend",    "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Voyage from Ayodhya — long sea crossing." } ],
+    "Yeomra":              [ { "realm": "dokkaebi-spirits-and-underworld", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Ledger reconciliation — quarterly." } ],
+    "Dokkaebi":            [ { "realm": "dokkaebi-spirits-and-underworld", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Ssireum wrestling festival — challenging humans for fun." } ],
+    "Princess Bari":       [ { "realm": "dokkaebi-spirits-and-underworld", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Pilgrimage to fetch the water of life — overdue." } ],
+    "Saja":                [ { "realm": "dokkaebi-spirits-and-underworld", "offsetWeeks": 18, "numberOfDays": 1, "notes": "Black hat re-blocking — once a year only." } ]
+  }
+}

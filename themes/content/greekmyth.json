@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "key": "GreekMyth",
+  "displayName": "Greek Mythology",
+  "category": "Mythology",
+  "emailDomain": "olympus.test",
+  "account": {
+    "name": "Pantheon of Olympus (Test Data)",
+    "accountNumber": "PSA-TEST-GREEKMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Mount Olympus Way",
+    "city": "Thessaly",
+    "state": "Macedonia",
+    "postalCode": "42100",
+    "country": "Greece"
+  },
+
+  "roles": [
+    { "name": "Oracle of Delphi",                "canonical": "Solution Architect",                      "description": "Reads the entrails of the requirements and divines the over-arching Salesforce solution." },
+    { "name": "Strategos of the Phalanx",        "canonical": "Project Manager",                         "description": "Marshals hoplites of delivery, holds the timeline, and answers to the council of gods." },
+    { "name": "Keeper of the Sacred Scrolls",    "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets in the temple archives." },
+    { "name": "Smith of Hephaestus's Forge",     "canonical": "Salesforce Developer",                    "description": "Hammers Apex, LWC, and platform features at the volcanic anvil beneath Mount Etna." },
+    { "name": "Master Smith of the Aegis",       "canonical": "Salesforce Senior Developer - USA",       "description": "Forges the most enchanted artifacts — senior platform engineering and complex Apex craft." },
+    { "name": "Archon of the Western Polis",     "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Salesforce craft in the western colonies — sets standards and guides the senior smiths." },
+    { "name": "Hoplite Captain of Sparta",       "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced craft and a long spear." },
+    { "name": "Peltast of the Aegean",           "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the Hoplite Captain's eye." },
+    { "name": "Apprentice of the Stoa",          "canonical": "Junior Salesforce Consultant - India",    "description": "Learns the craft at the painted porch — shadows the seniors, configures small things, asks many questions." },
+    { "name": "Master Bridge-builder of Corinth","canonical": "Integration Technical Architect - USA",   "description": "Architect of the great isthmus spans between Salesforce and the realms beyond." },
+    { "name": "Bridge-builder of Corinth",       "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Master Bridge-builder's plan." },
+    { "name": "Apprentice Stonecutter",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the mason's patterns of error handling." },
+    { "name": "Healer of the Asclepion",         "canonical": "QA Engineer",                             "description": "Tends the wounded build in the temple of healing — finds maladies before they reach the agora." },
+    { "name": "Herald of Hermes",                "canonical": "Marketing Practice Lead",                 "description": "Wing-footed messenger who lifts the banner for product and message — leads all marketing craft." },
+    { "name": "Muse of the Agora",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — invokes the nine muses to inspire, gather, and convert." },
+    { "name": "Bard of the Amphitheatre",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily recital." },
+    { "name": "Scribe of the Lyceum",            "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the philosophers of design." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "olympian-gods",
+      "projectName": "Olympus — Pantheon Governance Platform",
+      "shortName": "Olympus PGP",
+      "subAccountName": "Council of the Twelve Olympians",
+      "subAccountNumber": "PSA-TEST-GREEKMYTH-OLYMPIAN-GODS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Olympus Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Divine Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the Twelve", "billable": true },
+          { "name": "Oracle Consultation at Delphi", "billable": true }
+        ]},
+        { "name": "Forging the Thunderbolts", "isDefault": false, "billable": true, "children": [
+          { "name": "Cyclops Forge Setup", "billable": true },
+          { "name": "Lightning Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Tablet Inventory", "billable": true },
+          { "name": "Hieroglyph Translation", "billable": true }
+        ]},
+        { "name": "Testing on Mount Olympus", "isDefault": false, "billable": true, "children": [
+          { "name": "Trial by Lightning (UAT)", "billable": true },
+          { "name": "Ambrosia Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Demigods", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiate Onboarding", "billable": true },
+          { "name": "Hero's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "underworld-and-titans",
+      "projectName": "Underworld — Souls & Tartarus Ledger Migration",
+      "shortName": "Underworld STL",
+      "subAccountName": "Realm of Hades & the Titans",
+      "subAccountNumber": "PSA-TEST-GREEKMYTH-UNDERWORLD-AND-TITANS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Erebus Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Souls' Census", "isDefault": false, "billable": true, "children": [
+          { "name": "Styx Bank Survey", "billable": true },
+          { "name": "Asphodel Headcount", "billable": true }
+        ]},
+        { "name": "Build the Ferryman's Manifest", "isDefault": false, "billable": true, "children": [
+          { "name": "Charon's Toll Ledger", "billable": true },
+          { "name": "Cerberus Gate Logging", "billable": true }
+        ]},
+        { "name": "Migrate the Tartarus Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Titan Prisoner Roll", "billable": true },
+          { "name": "Chains of Adamant Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Gates of Hades", "isDefault": false, "billable": true, "children": [
+          { "name": "Three-Headed Penetration Test", "billable": true },
+          { "name": "Lethe Recovery Drill", "billable": true }
+        ]},
+        { "name": "Training the Shades", "isDefault": false, "billable": true, "children": [
+          { "name": "Judgement Hall Foundations", "billable": true },
+          { "name": "Persephone's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "heroes-and-demigods",
+      "projectName": "Heroes — Quest Tracking & Glory Analytics",
+      "shortName": "Heroes QTGA",
+      "subAccountName": "League of Heroes & Demigods",
+      "subAccountNumber": "PSA-TEST-GREEKMYTH-HEROES-AND-DEMIGODS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Argo Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Quest Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Twelve Labours Scoping", "billable": true },
+          { "name": "Prophecy Intake", "billable": true }
+        ]},
+        { "name": "Forging the Hero's Arsenal", "isDefault": false, "billable": true, "children": [
+          { "name": "Sword & Shield Smithing", "billable": true },
+          { "name": "Winged Sandal Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Glory Tablets", "isDefault": false, "billable": true, "children": [
+          { "name": "Triumph Roll Catalog", "billable": true },
+          { "name": "Olympic Score Ledger", "billable": true }
+        ]},
+        { "name": "Testing in the Labyrinth", "isDefault": false, "billable": true, "children": [
+          { "name": "Minotaur Trial Run", "billable": true },
+          { "name": "Golden Fleece Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Squires", "isDefault": false, "billable": true, "children": [
+          { "name": "Argonaut Onboarding", "billable": true },
+          { "name": "Chiron's Tutelage", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "monsters-and-nymphs",
+      "projectName": "Wilds — Beasts & Spirits Sanctuary System",
+      "shortName": "Wilds BSSS",
+      "subAccountName": "Sanctuary of Monsters & Nymphs",
+      "subAccountNumber": "PSA-TEST-GREEKMYTH-MONSTERS-AND-NYMPHS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Aeaea Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Beast Bestiary", "isDefault": false, "billable": true, "children": [
+          { "name": "Sphinx Riddle Intake", "billable": true },
+          { "name": "Grove & Grotto Survey", "billable": true }
+        ]},
+        { "name": "Build the Sanctuary Wards", "isDefault": false, "billable": true, "children": [
+          { "name": "Hydra Pen Construction", "billable": true },
+          { "name": "Nymph Spring Plumbing", "billable": true }
+        ]},
+        { "name": "Migrate the Charms & Spells", "isDefault": false, "billable": true, "children": [
+          { "name": "Circe's Spellbook Catalog", "billable": true },
+          { "name": "Siren Song Recording", "billable": true }
+        ]},
+        { "name": "Testing on Calypso's Isle", "isDefault": false, "billable": true, "children": [
+          { "name": "Containment Drill", "billable": true },
+          { "name": "Echo & Reflection Trial", "billable": true }
+        ]},
+        { "name": "Training the Wardens", "isDefault": false, "billable": true, "children": [
+          { "name": "Beastkeeper Foundations", "billable": true },
+          { "name": "Pan's Pipe Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "olympian-gods": [
+      { "fullName": "Zeus",        "themedRole": "Oracle of Delphi" },
+      { "fullName": "Hera",        "themedRole": "Strategos of the Phalanx" },
+      { "fullName": "Athena",      "themedRole": "Archon of the Western Polis" },
+      { "fullName": "Hephaestus",  "themedRole": "Smith of Hephaestus's Forge" },
+      { "fullName": "Hermes",      "themedRole": "Herald of Hermes" },
+      { "fullName": "Apollo",      "themedRole": "Muse of the Agora" },
+      { "fullName": "Artemis",     "themedRole": "Hoplite Captain of Sparta" },
+      { "fullName": "Poseidon",    "themedRole": "Master Bridge-builder of Corinth" }
+    ],
+    "underworld-and-titans": [
+      { "fullName": "Hades",       "themedRole": "Oracle of Delphi" },
+      { "fullName": "Persephone",  "themedRole": "Strategos of the Phalanx" },
+      { "fullName": "Charon",      "themedRole": "Keeper of the Sacred Scrolls" },
+      { "fullName": "Hecate",      "themedRole": "Scribe of the Lyceum" },
+      { "fullName": "Prometheus",  "themedRole": "Master Smith of the Aegis" },
+      { "fullName": "Atlas",       "themedRole": "Bridge-builder of Corinth" },
+      { "fullName": "Cronus",      "themedRole": "Archon of the Western Polis" }
+    ],
+    "heroes-and-demigods": [
+      { "fullName": "Heracles",    "themedRole": "Oracle of Delphi" },
+      { "fullName": "Odysseus",    "themedRole": "Strategos of the Phalanx" },
+      { "fullName": "Perseus",     "themedRole": "Hoplite Captain of Sparta" },
+      { "fullName": "Theseus",     "themedRole": "Peltast of the Aegean" },
+      { "fullName": "Jason",       "themedRole": "Master Bridge-builder of Corinth" },
+      { "fullName": "Achilles",    "themedRole": "Smith of Hephaestus's Forge" },
+      { "fullName": "Atalanta",    "themedRole": "Apprentice of the Stoa" }
+    ],
+    "monsters-and-nymphs": [
+      { "fullName": "Circe",       "themedRole": "Oracle of Delphi" },
+      { "fullName": "Calypso",     "themedRole": "Strategos of the Phalanx" },
+      { "fullName": "Chiron",      "themedRole": "Scribe of the Lyceum" },
+      { "fullName": "Medusa",      "themedRole": "Healer of the Asclepion" },
+      { "fullName": "Pan",         "themedRole": "Bard of the Amphitheatre" },
+      { "fullName": "Echo",        "themedRole": "Apprentice Stonecutter" },
+      { "fullName": "Narcissus",   "themedRole": "Apprentice of the Stoa" }
+    ]
+  },
+
+  "milestones": {
+    "olympian-gods": [
+      { "name": "Convene the Council",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Twelve Olympians convene at the great hall." },
+      { "name": "Forge the Thunderbolts",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Hephaestus and the Cyclopes ignite the forge." },
+      { "name": "Audience at the High Throne","type": "Gate",       "offsetPct": 50,  "description": "Mid-project gate: solution review with Zeus on the marble throne." },
+      { "name": "Hecatomb at the Altar",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: hundred oxen sacrificed to mark the milestone." },
+      { "name": "Coronation of the Pantheon","type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the gods take their thrones; the platform is live across Olympus." },
+      { "name": "Olympian Hand-off",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Hera's chamberlains." }
+    ],
+    "underworld-and-titans": [
+      { "name": "Crossing the Styx",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Charon ferries the team across to begin." },
+      { "name": "Open the Gates of Hades",   "type": "Operational", "offsetPct": 30,  "description": "Build phase: Cerberus admits the engineers to the deep archive." },
+      { "name": "Judgement at the Asphodel", "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Minos, Rhadamanthus, and Aeacus weigh the build." },
+      { "name": "Tartarus Vault Sealed",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Titan ledger is locked behind adamantine doors." },
+      { "name": "Persephone Returns",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: spring returns; handoff complete." },
+      { "name": "Hades' Final Toll",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: payment due to the Lord of the Dead." }
+    ],
+    "heroes-and-demigods": [
+      { "name": "Receive the Prophecy",      "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the oracle delivers the quest charter." },
+      { "name": "Launch of the Argo",        "type": "Operational", "offsetPct": 35,  "description": "Build: the great ship is launched; the Argonauts set sail." },
+      { "name": "Trial of the Twelve Labours","type": "Gate",       "offsetPct": 60,  "description": "Solution review: each labour signed off by Eurystheus." },
+      { "name": "Capture the Golden Fleece", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the prize is won and brought home in triumph." },
+      { "name": "Triumph at Olympia",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: laurels awarded; heroes dispersed." },
+      { "name": "Hero's Bounty Paid",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice: gold and glory disbursed by the king." }
+    ],
+    "monsters-and-nymphs": [
+      { "name": "Council on Aeaea",          "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in Circe's marble hall." },
+      { "name": "Tame the Hydra",            "type": "Operational", "offsetPct": 30,  "description": "Discovery: many-headed sources mapped and contained." },
+      { "name": "Weave the Nymph Wards",     "type": "Operational", "offsetPct": 55,  "description": "Build: protective spells laid across grove and grotto." },
+      { "name": "Solve the Sphinx's Riddle", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the Sphinx grants passage to the next phase." },
+      { "name": "Calypso Releases the Wanderer","type": "Delivery", "offsetPct": 100, "description": "Go-Live + handoff: the system sails for home." },
+      { "name": "Tribute to the Wilds",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the keepers of the sanctuary." }
+    ]
+  },
+
+  "daysOff": {
+    "Zeus":         [ { "realm": "olympian-gods",         "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Dalliance with a mortal — discreet earthly visit." } ],
+    "Hera":         [ { "realm": "olympian-gods",         "offsetWeeks": 12, "numberOfDays": 2, "notes": "Peacock plumage festival at Argos." } ],
+    "Hephaestus":   [ { "realm": "olympian-gods",         "offsetWeeks": 18, "numberOfDays": 4, "notes": "Forge maintenance beneath Mount Etna." } ],
+    "Apollo":       [ { "realm": "olympian-gods",         "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Driving the sun-chariot — annual rotation." } ],
+    "Artemis":      [ { "realm": "olympian-gods",         "offsetWeeks": 14, "numberOfDays": 3, "notes": "Moonlit hunt with the nymphs of Arcadia." } ],
+    "Hades":        [ { "realm": "underworld-and-titans", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Annual leave — rare visit to the surface." } ],
+    "Persephone":   [ { "realm": "underworld-and-titans", "offsetWeeks": 16, "numberOfDays": 5, "notes": "Six months above with Demeter — seasonal." } ],
+    "Charon":       [ { "realm": "underworld-and-titans", "offsetWeeks": 10, "numberOfDays": 1, "notes": "Boat caulking and oar repair." } ],
+    "Atlas":        [ { "realm": "underworld-and-titans", "offsetWeeks": 20, "numberOfDays": 3, "notes": "Shoulder rest — Heracles is covering." } ],
+    "Heracles":     [ { "realm": "heroes-and-demigods",   "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Recovering from the Nemean Lion encounter." } ],
+    "Odysseus":     [ { "realm": "heroes-and-demigods",   "offsetWeeks": 14, "numberOfDays": 5, "notes": "Detour to Ithaca — Penelope and Telemachus." } ],
+    "Achilles":     [ { "realm": "heroes-and-demigods",   "offsetWeeks": 10, "numberOfDays": 2, "notes": "Heel treatment at the Asclepion." } ],
+    "Circe":        [ { "realm": "monsters-and-nymphs",   "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Spell ingredient gathering on Aeaea." } ],
+    "Pan":          [ { "realm": "monsters-and-nymphs",   "offsetWeeks": 16, "numberOfDays": 2, "notes": "Midday nap in the Arcadian woods — sacred." } ],
+    "Chiron":       [ { "realm": "monsters-and-nymphs",   "offsetWeeks": 12, "numberOfDays": 4, "notes": "Tutoring young heroes on Mount Pelion." } ]
+  }
+}

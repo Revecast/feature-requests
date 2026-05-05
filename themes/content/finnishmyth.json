@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "key": "FinnishMyth",
+  "displayName": "Finnish (Kalevala) Mythology",
+  "category": "Mythology",
+  "emailDomain": "kalevala.test",
+  "account": {
+    "name": "Kalevala — Land of Heroes (Test Data)",
+    "accountNumber": "PSA-TEST-FINNISHMYTH"
+  },
+  "mailingAddress": {
+    "street": "Sammon Tie 47",
+    "city": "Kalevala",
+    "state": "Karelia",
+    "postalCode": "00170",
+    "country": "Finland"
+  },
+
+  "roles": [
+    { "name": "Tietäjä — Knower of Runes",                 "canonical": "Solution Architect",                       "description": "Sage of ancient runo-songs — chants the over-arching Salesforce solution into being and guards its harmony." },
+    { "name": "Päällikkö of the Voyage",                   "canonical": "Project Manager",                          "description": "Captain of the longboat — sets the rowing cadence, holds the timeline, and answers to the Mistress." },
+    { "name": "Keeper of the Sampo Ledger",                "canonical": "Salesforce Administrator",                 "description": "Steward of records, layouts, and permission sets — turns the mill of daily configuration." },
+    { "name": "Seppo of the Anvil",                        "canonical": "Salesforce Developer",                     "description": "Smith at the forge — hammers Apex, LWC, and platform features under the smoke of Ilmarinen's bellows." },
+    { "name": "Ilmarinen Master Smith",                    "canonical": "Salesforce Senior Developer - USA",        "description": "Forger of the Sampo itself — leads the most intricate Salesforce builds west of the Pohjola gates." },
+    { "name": "Loremaster of Väinölä",                     "canonical": "Salesforce Practice Lead - USA",           "description": "Elder of the singing-grove — sets standards across all Salesforce craft and mentors the senior smiths." },
+    { "name": "Rune-Singer of Karelia",                    "canonical": "Salesforce Senior Consultant - India",     "description": "Walks the borderlands of customer requirements with practiced kantele in hand." },
+    { "name": "Apprentice Singer of Kalevala",             "canonical": "Salesforce Consultant - India",            "description": "Carries discovery and configuration across the marsh and pine under the Rune-Singer's eye." },
+    { "name": "Junior Apprentice of the Grove",            "canonical": "Junior Salesforce Consultant - India",     "description": "Learns the first verses — declarative work, simple flows, and the quiet patience of the apprentice." },
+    { "name": "Bridge-Wright of the Tuonela Stream",       "canonical": "Integration Technical Architect - USA",    "description": "Architect of the great spans across the dark river — designs every pipe between Salesforce and the realms beyond." },
+    { "name": "Bridge-Builder of Pohjola",                 "canonical": "Integration Senior Consultant - India",    "description": "Lays the planks of API, middleware, and event flow under the Bridge-Wright's plan." },
+    { "name": "Apprentice Plank-Layer",                    "canonical": "Integration Consultant - India",           "description": "Learns the craft of integration — webhooks, batch, callouts, and the swamp-paths of error handling." },
+    { "name": "Healer of Kipuvuori",                       "canonical": "QA Engineer",                              "description": "Tends the wounded build — finds the maladies on Pain Mountain before they reach the king." },
+    { "name": "Herald of the Kantele",                     "canonical": "Marketing Practice Lead",                  "description": "Lifts the song and the bell for product and message — leads all marketing craft." },
+    { "name": "Singer of Northern Campaigns",              "canonical": "Marketing Senior Consultant",              "description": "Strategist of campaigns — sounds the call to gather the heroes for the next launch." },
+    { "name": "Bard of the Wayside",                       "canonical": "Marketing Consultant",                     "description": "Carries the campaign forward into the field — content, creative, and the daily verse." },
+    { "name": "Council Scribe of the Sampo Hall",          "canonical": "Business Analyst",                         "description": "Records what is needed and what is promised — translates between mortal Customer and the rune-songs of design." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "kalevala-heroes",
+      "projectName": "Kalevala Heroes — Sampo Forge Implementation",
+      "shortName": "Kalevala Sampo",
+      "subAccountName": "Heroes of Kalevala",
+      "subAccountNumber": "PSA-TEST-FINNISHMYTH-KALEVALAHEROES",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Väinölä Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Rune-Singing", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the Singers", "billable": true },
+          { "name": "Field Reconnaissance — Karelia", "billable": true },
+          { "name": "Verse Drafting", "billable": true }
+        ]},
+        { "name": "Forge the Sampo", "isDefault": false, "billable": true, "children": [
+          { "name": "Anvil Foundation", "billable": true },
+          { "name": "Bellows Tooling", "billable": true },
+          { "name": "Lid Inscription Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Sagas", "isDefault": false, "billable": true, "children": [
+          { "name": "Rune Inventory", "billable": true },
+          { "name": "Verse Translation", "billable": true }
+        ]},
+        { "name": "Testing on Lake Päijänne", "isDefault": false, "billable": true, "children": [
+          { "name": "Boat Drill (UAT)", "billable": true },
+          { "name": "Storm Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Heroes", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Onboarding", "billable": true },
+          { "name": "Smith's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pohjola-the-north",
+      "projectName": "Pohjola — Northern Stronghold CRM",
+      "shortName": "Pohjola NSC",
+      "subAccountName": "Realm of Pohjola",
+      "subAccountNumber": "PSA-TEST-FINNISHMYTH-POHJOLATHENORTH",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Pohjola Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Bride-Price", "isDefault": false, "billable": true, "children": [
+          { "name": "Louhi's Audience", "billable": true },
+          { "name": "Suitor Survey", "billable": true },
+          { "name": "Dowry Strategy", "billable": true }
+        ]},
+        { "name": "Build the Iron Gates", "isDefault": false, "billable": true, "children": [
+          { "name": "Gatehouse Construction", "billable": true },
+          { "name": "Iron Hinge Forging", "billable": true },
+          { "name": "Watchtower Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Treasury", "isDefault": false, "billable": true, "children": [
+          { "name": "Hoard Inventory", "billable": true },
+          { "name": "Frost-Lock Encryption", "billable": true }
+        ]},
+        { "name": "Testing the Iron Walls", "isDefault": false, "billable": true, "children": [
+          { "name": "Siege Defense Drill", "billable": true },
+          { "name": "Frost-Storm Stress", "billable": true }
+        ]},
+        { "name": "Training the Northern Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Warrior Conscription", "billable": true },
+          { "name": "Mistress's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "ukko-and-nature-deities",
+      "projectName": "Ukko & Nature — Sky and Forest Telemetry Platform",
+      "shortName": "Ukko SFT",
+      "subAccountName": "Court of Ukko & the Wild",
+      "subAccountNumber": "PSA-TEST-FINNISHMYTH-UKKOANDNATUREDEITIES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Sky Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sky-Watching", "isDefault": false, "billable": true, "children": [
+          { "name": "Cloud Reconnaissance", "billable": true },
+          { "name": "Forest Stewardship Survey", "billable": true },
+          { "name": "Wave Pattern Strategy", "billable": true }
+        ]},
+        { "name": "Build the Thunder Chariot", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Wheel Forging", "billable": true },
+          { "name": "Thunder Drum Calibration", "billable": true },
+          { "name": "Storm Cloud Network", "billable": true }
+        ]},
+        { "name": "Migrate the Wild Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Forest Census", "billable": true },
+          { "name": "Sea Creature Roll", "billable": true }
+        ]},
+        { "name": "Testing the Skies", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Strike Pen-test", "billable": true },
+          { "name": "Tempest Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Foresters", "isDefault": false, "billable": true, "children": [
+          { "name": "Tapio's Apprenticeship", "billable": true },
+          { "name": "Mielikki's Lore Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "tuonela-and-spirits",
+      "projectName": "Tuonela — Underworld Records Migration",
+      "shortName": "Tuonela URM",
+      "subAccountName": "Halls of Tuonela",
+      "subAccountNumber": "PSA-TEST-FINNISHMYTH-TUONELAANDSPIRITS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Tuonela Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Crossing", "isDefault": false, "billable": true, "children": [
+          { "name": "Ferry Boat Survey", "billable": true },
+          { "name": "Soul Census", "billable": true },
+          { "name": "Death-Lord Audience", "billable": true }
+        ]},
+        { "name": "Build the Black River Bridge", "isDefault": false, "billable": true, "children": [
+          { "name": "Pile Driving in Dark Water", "billable": true },
+          { "name": "Plank Joining by Torchlight", "billable": true },
+          { "name": "Toll-House Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Departed", "isDefault": false, "billable": true, "children": [
+          { "name": "Shade Roll Call", "billable": true },
+          { "name": "Plague Index Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Crossing", "isDefault": false, "billable": true, "children": [
+          { "name": "Ferryman Drill", "billable": true },
+          { "name": "Surma's Audit Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Pall-Bearers", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Boatman Onboarding", "billable": true },
+          { "name": "Tuonetar's Liturgy Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "kalevala-heroes": [
+      { "fullName": "Väinämöinen",   "themedRole": "Tietäjä — Knower of Runes" },
+      { "fullName": "Ilmarinen",     "themedRole": "Ilmarinen Master Smith" },
+      { "fullName": "Lemminkäinen",  "themedRole": "Päällikkö of the Voyage" },
+      { "fullName": "Joukahainen",   "themedRole": "Apprentice Singer of Kalevala" },
+      { "fullName": "Aino",          "themedRole": "Council Scribe of the Sampo Hall" },
+      { "fullName": "Kullervo",      "themedRole": "Seppo of the Anvil" },
+      { "fullName": "Marjatta",      "themedRole": "Healer of Kipuvuori" },
+      { "fullName": "Untamo",        "themedRole": "Loremaster of Väinölä" },
+      { "fullName": "Kalervo",       "themedRole": "Rune-Singer of Karelia" }
+    ],
+    "pohjola-the-north": [
+      { "fullName": "Louhi",                  "themedRole": "Tietäjä — Knower of Runes" },
+      { "fullName": "Maid of Pohjola",        "themedRole": "Council Scribe of the Sampo Hall" },
+      { "fullName": "Maiden of the North",    "themedRole": "Herald of the Kantele" },
+      { "fullName": "Tuonen tytär",           "themedRole": "Junior Apprentice of the Grove" },
+      { "fullName": "Tursas",                 "themedRole": "Bridge-Builder of Pohjola" },
+      { "fullName": "Warriors of Pohjola",    "themedRole": "Apprentice Plank-Layer" },
+      { "fullName": "Iku-Turso",              "themedRole": "Bridge-Wright of the Tuonela Stream" }
+    ],
+    "ukko-and-nature-deities": [
+      { "fullName": "Ukko",         "themedRole": "Tietäjä — Knower of Runes" },
+      { "fullName": "Akka",         "themedRole": "Loremaster of Väinölä" },
+      { "fullName": "Ahti",         "themedRole": "Päällikkö of the Voyage" },
+      { "fullName": "Vellamo",      "themedRole": "Singer of Northern Campaigns" },
+      { "fullName": "Mielikki",     "themedRole": "Rune-Singer of Karelia" },
+      { "fullName": "Tapio",        "themedRole": "Keeper of the Sampo Ledger" },
+      { "fullName": "Hiisi",        "themedRole": "Apprentice Singer of Kalevala" },
+      { "fullName": "Pellervoinen", "themedRole": "Bard of the Wayside" }
+    ],
+    "tuonela-and-spirits": [
+      { "fullName": "Tuoni",        "themedRole": "Tietäjä — Knower of Runes" },
+      { "fullName": "Tuonetar",     "themedRole": "Council Scribe of the Sampo Hall" },
+      { "fullName": "Surma",        "themedRole": "Healer of Kipuvuori" },
+      { "fullName": "Kalma",        "themedRole": "Apprentice Plank-Layer" },
+      { "fullName": "Tuonen tytti", "themedRole": "Junior Apprentice of the Grove" },
+      { "fullName": "Loviatar",     "themedRole": "Bridge-Builder of Pohjola" },
+      { "fullName": "Hiisi (Spirit)","themedRole": "Seppo of the Anvil" },
+      { "fullName": "Para",         "themedRole": "Bard of the Wayside" }
+    ]
+  },
+
+  "milestones": {
+    "kalevala-heroes": [
+      { "name": "Singing the World into Being", "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Väinämöinen sings the project scope into shape." },
+      { "name": "Bellows Lit at Ilmarinen's Forge","type": "Operational","offsetPct": 25,"description": "Build kickoff: the great forge fires up for the Sampo." },
+      { "name": "Sampo Lid Engraved",           "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the lid of many colours is reviewed by the council." },
+      { "name": "Voyage to Pohjola",            "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the heroes set sail to deliver the mill." },
+      { "name": "Sampo Goes to Sea",            "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the Sampo is launched (and predictably shattered)." },
+      { "name": "Fragments to the Shore",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the broken pieces wash ashore and bring fortune to the land." }
+    ],
+    "pohjola-the-north": [
+      { "name": "Audience with Louhi",          "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: terms set in the cold hall of the Mistress." },
+      { "name": "Bride-Price Negotiated",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: the suitors' tasks accepted into the backlog." },
+      { "name": "Iron Gates Tested",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the gates of Pohjola hold against the heroes." },
+      { "name": "Sampo Locked in the Stone Mountain","type": "Delivery","offsetPct": 90, "description": "Go-Live: the great mill installed beneath the copper mountain." },
+      { "name": "Hand-off to the Maid",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the Maid of Pohjola takes the keys." },
+      { "name": "Final Tribute",                "type": "Billing",     "offsetPct": 100, "description": "Final invoice: gold and grain rendered to the North." }
+    ],
+    "ukko-and-nature-deities": [
+      { "name": "Ukko Strikes the First Spark", "type": "Gate",        "offsetPct": 10,  "description": "Discovery: a thunderbolt lights the project to life." },
+      { "name": "Tapio Names the Forest Beasts","type": "Operational", "offsetPct": 35,  "description": "Build: every animal record catalogued by the forest god." },
+      { "name": "Ahti Audits the Tides",        "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the sea-king himself." },
+      { "name": "Storm Network Activation",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: thunder, rain, and wind telemetry fully online." },
+      { "name": "Mielikki's Stewardship Begins","type": "Operational", "offsetPct": 100, "description": "Project close: the forest goddess assumes ongoing care." },
+      { "name": "Tribute to the Sky",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid in honey, milk, and harvest grain." }
+    ],
+    "tuonela-and-spirits": [
+      { "name": "Council in the Halls of Tuoni","type": "Gate",        "offsetPct": 10,  "description": "Kickoff in the dim hall by the black river." },
+      { "name": "Ferryman Engaged",             "type": "Operational", "offsetPct": 30,  "description": "Discovery: the ferry of souls contracted for the migration." },
+      { "name": "Bridge Half-Built",            "type": "Operational", "offsetPct": 55,  "description": "Build: planks join above the dark water." },
+      { "name": "Loviatar's Acceptance",        "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance — the mother of plagues signs off the data quality." },
+      { "name": "Crossing Opened",              "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: souls cross the new bridge unaided." },
+      { "name": "Final Recompense",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice — paid in cold coin and quiet song." }
+    ]
+  },
+
+  "daysOff": {
+    "Väinämöinen":  [ { "realm": "kalevala-heroes", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Retreat to compose new runo-songs at the river-bend." } ],
+    "Ilmarinen":    [ { "realm": "kalevala-heroes", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Forge maintenance — re-lining the bellows after the Sampo work." } ],
+    "Lemminkäinen": [ { "realm": "kalevala-heroes", "offsetWeeks": 10, "numberOfDays": 5, "notes": "Recovery in the river of Tuonela — pieced back together by his mother." } ],
+    "Aino":         [ { "realm": "kalevala-heroes", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Quiet days by the lake — no suitors permitted." } ],
+    "Kullervo":     [ { "realm": "kalevala-heroes", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Brooding in the wood — kin matters demand attention." } ],
+    "Louhi":        [ { "realm": "pohjola-the-north", "offsetWeeks": 8, "numberOfDays": 4, "notes": "Inspecting the iron gates and re-counting the hoard." } ],
+    "Iku-Turso":    [ { "realm": "pohjola-the-north", "offsetWeeks": 12, "numberOfDays": 5, "notes": "Submerged in the deep — annual abyssal hibernation." } ],
+    "Maid of Pohjola":[ { "realm": "pohjola-the-north", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Weaving the rainbow cloth — quarterly task." } ],
+    "Ukko":         [ { "realm": "ukko-and-nature-deities", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Sky audit — re-stringing the thunder bow." } ],
+    "Ahti":         [ { "realm": "ukko-and-nature-deities", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Tour of the seabed with Vellamo." } ],
+    "Mielikki":     [ { "realm": "ukko-and-nature-deities", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Honey harvest in the deep glades." } ],
+    "Tapio":        [ { "realm": "ukko-and-nature-deities", "offsetWeeks": 20, "numberOfDays": 3, "notes": "Bear-tracking expedition — annual." } ],
+    "Tuoni":        [ { "realm": "tuonela-and-spirits", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Closed-court week in the lower hall." } ],
+    "Loviatar":     [ { "realm": "tuonela-and-spirits", "offsetWeeks": 12, "numberOfDays": 5, "notes": "Birthing of nine new diseases — full week of confinement." } ],
+    "Surma":        [ { "realm": "tuonela-and-spirits", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Sharpening the sickle — biannual." } ]
+  }
+}

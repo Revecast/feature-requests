@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "key": "HinduMyth",
+  "displayName": "Hindu Mythology",
+  "category": "Mythology",
+  "emailDomain": "bharatvarsha.test",
+  "account": {
+    "name": "Bharatvarsha — Devalok Council (Test Data)",
+    "accountNumber": "PSA-TEST-HINDUMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Mount Kailash Road",
+    "city": "Varanasi",
+    "state": "Uttar Pradesh",
+    "postalCode": "221001",
+    "country": "India"
+  },
+
+  "roles": [
+    { "name": "Brahmarishi (Architect of Realms)",       "canonical": "Solution Architect",                      "description": "A seer of the highest order — designs the over-arching solution as Vishvakarma shaped the worlds." },
+    { "name": "Senapati (Commander of the Host)",        "canonical": "Project Manager",                         "description": "Leads the campaign as Kartikeya led the devas — sets the cadence, holds the line, reports to the council." },
+    { "name": "Pandit of the Sacred Records",            "canonical": "Salesforce Administrator",                "description": "Keeper of the manuscripts — guardian of fields, layouts, profiles and permission sets." },
+    { "name": "Vishvakarma's Smith",                     "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC and platform craft at the celestial anvil." },
+    { "name": "Acharya of the Western Gurukul",          "canonical": "Salesforce Practice Lead - USA",          "description": "Master-teacher across the western seas — sets the standards and guides the senior shishyas." },
+    { "name": "Senior Rishi of the Eastern Ashram",      "canonical": "Salesforce Senior Consultant - India",    "description": "Practiced sage of customer requirements — patrols the borders of scope with calm wisdom." },
+    { "name": "Shishya of the Eastern Ashram",           "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the senior rishi's eye." },
+    { "name": "Setubandha Architect (Bridge of the West)","canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — as Nala built the bridge to Lanka." },
+    { "name": "Senior Setu Builder (Eastern Workshop)",  "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware and event flows under the Setubandha Architect's plan." },
+    { "name": "Setu Apprentice",                         "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of resilient handling." },
+    { "name": "Vaidya of the Houses of Healing",         "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the rajya." },
+    { "name": "Royal Herald (Marketing Acharya)",        "canonical": "Marketing Practice Lead",                 "description": "Sounds the conch and lifts the banner for the brand — leads all marketing craft." },
+    { "name": "Senior Bard of the Court",                "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert." },
+    { "name": "Court Bard",                              "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative and the daily yatra." },
+    { "name": "Sutradhara (Council Scribe)",             "canonical": "Business Analyst",                        "description": "Holder of the thread — translates between mortal customer and the celestial craft of design." },
+    { "name": "Master Smith of Devalok",                 "canonical": "Salesforce Senior Developer - USA",       "description": "Most senior of forgers across the western seas — entrusted with the heaviest celestial weapons." },
+    { "name": "Brahmachari Apprentice",                  "canonical": "Junior Salesforce Consultant - India",    "description": "First-stage shishya — learns the asanas of Salesforce craft under careful supervision." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Names treated with respect — Hindu mythology is sacred to a billion-plus living people.",
+
+  "realms": [
+    {
+      "key": "trimurti-and-tridevi",
+      "projectName": "Trimurti & Tridevi — Cosmic Council CRM",
+      "shortName": "Trimurti CCC",
+      "subAccountName": "Devalok — Trimurti & Tridevi Council",
+      "subAccountNumber": "PSA-TEST-HINDUMYTH-TRIMURTI",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Devalok Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Cosmic Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the Trimurti", "billable": true },
+          { "name": "Audience with the Tridevi", "billable": true }
+        ]},
+        { "name": "Build the Brahmaloka Platform", "isDefault": false, "billable": true, "children": [
+          { "name": "Foundation of the Four Vedas", "billable": true },
+          { "name": "Lotus-Throne Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Vedic Manuscript Inventory", "billable": true },
+          { "name": "Puranic Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Ksheera Sagara", "isDefault": false, "billable": true, "children": [
+          { "name": "Samudra Manthan Drill (UAT)", "billable": true },
+          { "name": "Cosmic Load Test", "billable": true }
+        ]},
+        { "name": "Training the Celestial Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Deva Onboarding", "billable": true },
+          { "name": "Acharya's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "vishnus-avatars",
+      "projectName": "Dasavatara — Avatar Lifecycle Platform",
+      "shortName": "Dasavatara ALP",
+      "subAccountName": "Vaikuntha — Avatar Programme Office",
+      "subAccountNumber": "PSA-TEST-HINDUMYTH-AVATARS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Vaikuntha Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Yuga Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Yuga Cycle Mapping", "billable": true },
+          { "name": "Dharma Gap Analysis", "billable": true }
+        ]},
+        { "name": "Forge the Sudarshana Chakra", "isDefault": false, "billable": true, "children": [
+          { "name": "Discus Calibration", "billable": true },
+          { "name": "Conch & Mace Tooling", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Lineages", "isDefault": false, "billable": true, "children": [
+          { "name": "Ikshvaku Genealogy", "billable": true },
+          { "name": "Yadava Roll Call", "billable": true }
+        ]},
+        { "name": "Testing at Lanka and Kurukshetra", "isDefault": false, "billable": true, "children": [
+          { "name": "Setubandha Stress Trial", "billable": true },
+          { "name": "Battlefield Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Avatar Cadre", "isDefault": false, "billable": true, "children": [
+          { "name": "Vanara Sena Onboarding", "billable": true },
+          { "name": "Charioteer's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mahabharata-pandavas",
+      "projectName": "Kurukshetra — Pandava Campaign Platform",
+      "shortName": "Pandava KCP",
+      "subAccountName": "Indraprastha — Pandava Council",
+      "subAccountNumber": "PSA-TEST-HINDUMYTH-PANDAVAS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Indraprastha Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council of the Brothers", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Sabha Strategy", "billable": true },
+          { "name": "Krishna's Diplomatic Survey", "billable": true }
+        ]},
+        { "name": "Build the Gandiva Arsenal", "isDefault": false, "billable": true, "children": [
+          { "name": "Bow & Quiver Forging", "billable": true },
+          { "name": "Chariot Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Allied Hosts", "isDefault": false, "billable": true, "children": [
+          { "name": "Akshauhini Roll Call", "billable": true },
+          { "name": "Provisioning the Camps", "billable": true }
+        ]},
+        { "name": "Testing on the Field of Dharma", "isDefault": false, "billable": true, "children": [
+          { "name": "Vyuha Formation Drill", "billable": true },
+          { "name": "Eighteen-Day Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Maharathis", "isDefault": false, "billable": true, "children": [
+          { "name": "Astra Vidya Foundations", "billable": true },
+          { "name": "Charioteer's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "lesser-deities-and-asuras",
+      "projectName": "Devas vs Asuras — Surveillance & Defence Build",
+      "shortName": "Deva-Asura SDB",
+      "subAccountName": "Svargaloka — Indra's Court",
+      "subAccountNumber": "PSA-TEST-HINDUMYTH-DEVASURAS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Svargaloka Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Spies of Indra", "isDefault": false, "billable": true, "children": [
+          { "name": "Narada's Reconnaissance", "billable": true },
+          { "name": "Asura Threat Mapping", "billable": true }
+        ]},
+        { "name": "Build the Vajra Defence Grid", "isDefault": false, "billable": true, "children": [
+          { "name": "Thunderbolt Foundation", "billable": true },
+          { "name": "Watchtower Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Celestial Hosts", "isDefault": false, "billable": true, "children": [
+          { "name": "Gandharva & Yaksha Roll", "billable": true },
+          { "name": "Apsara Choir Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Ramparts of Svarga", "isDefault": false, "billable": true, "children": [
+          { "name": "Asura Siege Drill", "billable": true },
+          { "name": "Mahishasura Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Devasena", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Inductions", "billable": true },
+          { "name": "Senapati's Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "trimurti-and-tridevi": [
+      { "fullName": "Brahma",      "themedRole": "Brahmarishi (Architect of Realms)" },
+      { "fullName": "Vishnu",      "themedRole": "Acharya of the Western Gurukul" },
+      { "fullName": "Shiva",       "themedRole": "Master Smith of Devalok" },
+      { "fullName": "Saraswati",   "themedRole": "Sutradhara (Council Scribe)" },
+      { "fullName": "Lakshmi",     "themedRole": "Royal Herald (Marketing Acharya)" },
+      { "fullName": "Parvati",     "themedRole": "Senapati (Commander of the Host)" },
+      { "fullName": "Ganga",       "themedRole": "Vaidya of the Houses of Healing" },
+      { "fullName": "Yamuna",      "themedRole": "Pandit of the Sacred Records" }
+    ],
+    "vishnus-avatars": [
+      { "fullName": "Matsya",         "themedRole": "Senior Setu Builder (Eastern Workshop)" },
+      { "fullName": "Kurma",          "themedRole": "Setubandha Architect (Bridge of the West)" },
+      { "fullName": "Varaha",         "themedRole": "Vishvakarma's Smith" },
+      { "fullName": "Narasimha",      "themedRole": "Master Smith of Devalok" },
+      { "fullName": "Vamana",         "themedRole": "Brahmachari Apprentice" },
+      { "fullName": "Parashurama",    "themedRole": "Senior Rishi of the Eastern Ashram" },
+      { "fullName": "Rama",           "themedRole": "Senapati (Commander of the Host)" },
+      { "fullName": "Krishna",        "themedRole": "Brahmarishi (Architect of Realms)" },
+      { "fullName": "Buddha",         "themedRole": "Sutradhara (Council Scribe)" },
+      { "fullName": "Kalki",          "themedRole": "Shishya of the Eastern Ashram" },
+      { "fullName": "Hanuman",        "themedRole": "Setu Apprentice" },
+      { "fullName": "Sita",           "themedRole": "Pandit of the Sacred Records" }
+    ],
+    "mahabharata-pandavas": [
+      { "fullName": "Yudhishthira",   "themedRole": "Acharya of the Western Gurukul" },
+      { "fullName": "Bhima",          "themedRole": "Vishvakarma's Smith" },
+      { "fullName": "Arjuna",         "themedRole": "Senapati (Commander of the Host)" },
+      { "fullName": "Nakula",         "themedRole": "Court Bard" },
+      { "fullName": "Sahadeva",       "themedRole": "Senior Bard of the Court" },
+      { "fullName": "Draupadi",       "themedRole": "Royal Herald (Marketing Acharya)" },
+      { "fullName": "Krishna (charioteer)","themedRole": "Brahmarishi (Architect of Realms)" },
+      { "fullName": "Karna",          "themedRole": "Master Smith of Devalok" },
+      { "fullName": "Duryodhana",     "themedRole": "Senior Rishi of the Eastern Ashram" },
+      { "fullName": "Drona",          "themedRole": "Acharya of the Western Gurukul" },
+      { "fullName": "Bhishma",        "themedRole": "Brahmarishi (Architect of Realms)" }
+    ],
+    "lesser-deities-and-asuras": [
+      { "fullName": "Ganesha",        "themedRole": "Sutradhara (Council Scribe)" },
+      { "fullName": "Kartikeya",      "themedRole": "Senapati (Commander of the Host)" },
+      { "fullName": "Indra",          "themedRole": "Acharya of the Western Gurukul" },
+      { "fullName": "Surya",          "themedRole": "Royal Herald (Marketing Acharya)" },
+      { "fullName": "Agni",           "themedRole": "Vishvakarma's Smith" },
+      { "fullName": "Vayu",           "themedRole": "Setu Apprentice" },
+      { "fullName": "Varuna",         "themedRole": "Setubandha Architect (Bridge of the West)" },
+      { "fullName": "Yama",           "themedRole": "Vaidya of the Houses of Healing" },
+      { "fullName": "Ravana",         "themedRole": "Master Smith of Devalok" },
+      { "fullName": "Mahishasura",    "themedRole": "Senior Rishi of the Eastern Ashram" },
+      { "fullName": "Hiranyakashipu", "themedRole": "Pandit of the Sacred Records" },
+      { "fullName": "Bali",           "themedRole": "Shishya of the Eastern Ashram" }
+    ]
+  },
+
+  "milestones": {
+    "trimurti-and-tridevi": [
+      { "name": "Council Convened",            "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Trimurti and Tridevi take their seats." },
+      { "name": "Churning of the Ocean",       "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the Samudra Manthan begins, devas and asuras pulling in concert." },
+      { "name": "Audience at Brahmaloka",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: solution review with Brahma's council." },
+      { "name": "Amrita Distribution",         "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the nectar is poured and accounted for." },
+      { "name": "Cosmic Dance Go-Live",        "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Shiva's Tandava marks the new cycle." },
+      { "name": "Tridevi Hand-off",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Saraswati, Lakshmi and Parvati." }
+    ],
+    "vishnus-avatars": [
+      { "name": "Matsya Saves the Vedas",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the sacred scriptures rescued from the deluge." },
+      { "name": "Kurma Bears the Mountain",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: foundation laid as the tortoise supports Mandara." },
+      { "name": "Setubandha Bridge Complete",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the bridge to Lanka holds under load." },
+      { "name": "Bhagavad Gita Discourse",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Krishna delivers the Gita on the field — production cutover." },
+      { "name": "Return to Vaikuntha",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the avatar rests in the celestial abode." },
+      { "name": "Kalki's Final Settlement",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the closing of the Kali Yuga ledger." }
+    ],
+    "mahabharata-pandavas": [
+      { "name": "Sabha at Indraprastha",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery gate: the Pandavas convene in their hall of mirrors." },
+      { "name": "Krishna's Peace Embassy",     "type": "Operational", "offsetPct": 35,  "description": "Build: diplomatic outreach before war — every option exhausted." },
+      { "name": "Vyuha Formations Approved",   "type": "Gate",        "offsetPct": 60,  "description": "Solution review: Drona's chakravyuha and Arjuna's counter approved." },
+      { "name": "Victory at Kurukshetra",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the eighteenth day, dharma prevails." },
+      { "name": "Yudhishthira Crowned",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: rajya restored, court reseated at Hastinapura." },
+      { "name": "Final Tribute Paid",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Ashwamedha yajna closes the campaign accounts." }
+    ],
+    "lesser-deities-and-asuras": [
+      { "name": "Indra's Watch Awakens",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Svarga's surveillance plane online." },
+      { "name": "Forge the Vajra Grid",        "type": "Operational", "offsetPct": 30,  "description": "Build: the thunderbolt network deployed across the loka." },
+      { "name": "Durga Defeats Mahishasura",   "type": "Gate",        "offsetPct": 55,  "description": "Solution review: the great pen-test — buffalo demon repelled." },
+      { "name": "Narasimha Slays Hiranyakashipu","type": "Gate",      "offsetPct": 75,  "description": "UAT gate: pillar test passes, demon-king neutralised." },
+      { "name": "Devasena Restored",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Kartikeya's host returns to Svargaloka." },
+      { "name": "Yama's Final Reckoning",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the lord of dharma balances the books." }
+    ]
+  },
+
+  "daysOff": {
+    "Brahma":         [ { "realm": "trimurti-and-tridevi", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Closing of a Brahma-day — the universe rests between cycles." } ],
+    "Shiva":          [ { "realm": "trimurti-and-tridevi", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Tapasya at Mount Kailash — silence and ash." } ],
+    "Saraswati":      [ { "realm": "trimurti-and-tridevi", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Vasant Panchami observance — restringing the veena." } ],
+    "Lakshmi":        [ { "realm": "trimurti-and-tridevi", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Diwali preparations across the realms." } ],
+    "Rama":           [ { "realm": "vishnus-avatars",      "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Forest exile detour — Vanavasa duty." } ],
+    "Krishna":        [ { "realm": "vishnus-avatars",      "offsetWeeks": 14, "numberOfDays": 3, "notes": "Janmashtami in Vrindavan — flute practice." } ],
+    "Hanuman":        [ { "realm": "vishnus-avatars",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Pilgrimage to Kishkindha — devotional reading." } ],
+    "Sita":           [ { "realm": "vishnus-avatars",      "offsetWeeks": 18, "numberOfDays": 3, "notes": "Quiet days at Valmiki's ashram." } ],
+    "Arjuna":         [ { "realm": "mahabharata-pandavas", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Tapasya for divine astras — solo mountain retreat." } ],
+    "Bhima":          [ { "realm": "mahabharata-pandavas", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Mace practice and a feast — Hidimba family visit." } ],
+    "Draupadi":       [ { "realm": "mahabharata-pandavas", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Day of fasting for the brothers' victory." } ],
+    "Karna":          [ { "realm": "mahabharata-pandavas", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Daily surya-arghya extended — coastal pilgrimage." } ],
+    "Ganesha":        [ { "realm": "lesser-deities-and-asuras", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Ganesh Chaturthi — modaks and quiet writing." } ],
+    "Kartikeya":      [ { "realm": "lesser-deities-and-asuras", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Skanda Sashti at Tiruchendur — peacock parade." } ],
+    "Indra":          [ { "realm": "lesser-deities-and-asuras", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Monsoon council — rain rota review." } ]
+  }
+}

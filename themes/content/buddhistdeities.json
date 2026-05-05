@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "key": "BuddhistDeities",
+  "displayName": "Buddhist Deities & Bodhisattvas",
+  "category": "Mythology",
+  "emailDomain": "dharma.test",
+  "account": {
+    "name": "Mandala of the Three Jewels (Test Data)",
+    "accountNumber": "PSA-TEST-BUDDHISTDEITIES"
+  },
+  "mailingAddress": {
+    "street": "108 Bodhi Tree Path",
+    "city": "Bodh Gaya",
+    "state": "Bihar",
+    "postalCode": "824231",
+    "country": "India"
+  },
+
+  "roles": [
+    { "name": "Dharma Architect",                   "canonical": "Solution Architect",                      "description": "Holder of the great view — designs the over-arching solution as one would map the path to liberation." },
+    { "name": "Sangha Steward",                     "canonical": "Project Manager",                         "description": "Marshals the assembly of practitioners, holds the timeline, and reports to the patron." },
+    { "name": "Keeper of the Sutras",               "canonical": "Salesforce Administrator",                "description": "Steward of the recorded teachings — fields, layouts, permission sets, and configuration scripture." },
+    { "name": "Vajra Smith",                        "canonical": "Salesforce Developer",                    "description": "Forges the indestructible thunderbolt of Apex, LWC, and platform craft." },
+    { "name": "Abbot of the Western Vihara",        "canonical": "Salesforce Practice Lead - USA",          "description": "Senior monastic — sets the standard of practice for all Salesforce craft and guides the senior bhikkhus." },
+    { "name": "Senior Bhikkhu of Nalanda",          "canonical": "Salesforce Senior Consultant - India",    "description": "Long-ordained scholar of the great university — patrols the borders of customer requirements with practiced wisdom." },
+    { "name": "Novice Bhikkhu of Nalanda",          "canonical": "Salesforce Consultant - India",           "description": "Junior monastic carrying discovery and configuration across the realm under the senior bhikkhu's eye." },
+    { "name": "Bridge-Builder of the Six Realms",   "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — samsara to nirvana, system to system." },
+    { "name": "Senior Bridge-Walker",               "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Bridge-Builder's plan." },
+    { "name": "Apprentice Bridge-Walker",           "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the patient art of error handling." },
+    { "name": "Healer of the Eightfold Path",       "canonical": "QA Engineer",                             "description": "Tends the maladies in the build before they ripen into suffering — diagnoses defects with the physician's calm." },
+    { "name": "Voice of the Dharma",                "canonical": "Marketing Practice Lead",                 "description": "Lifts the great conch and the dharma drum — leads all marketing craft and the turning of the wheel." },
+    { "name": "Senior Dharma Herald",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather the faithful and the curious alike." },
+    { "name": "Dharma Crier",                       "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the marketplace — content, creative, and the daily teaching." },
+    { "name": "Scribe of the Tripitaka",            "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal patron and the architect's design." },
+    { "name": "Master Vajra Smith of the West",     "canonical": "Salesforce Senior Developer - USA",       "description": "Senior forge-master — leads the most intricate Apex and platform engineering across the practice." },
+    { "name": "Samanera of Nalanda",                "canonical": "Junior Salesforce Consultant - India",    "description": "The newly-ordained novice — learns the precepts of configuration under the elders' patient guidance." }
+  ],
+
+  "_realmNotes": "Four spheres of Buddhist cosmology, treated with respect. windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items with themed children.",
+
+  "realms": [
+    {
+      "key": "historical-buddha-and-disciples",
+      "projectName": "Sangha of Shakyamuni — Foundational Teaching Platform",
+      "shortName": "Shakyamuni STP",
+      "subAccountName": "Sangha of the Historical Buddha",
+      "subAccountNumber": "PSA-TEST-BUDDHISTDEITIES-HISTORICAL",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Jetavana Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at Deer Park", "isDefault": false, "billable": true, "children": [
+          { "name": "First Sermon Requirements", "billable": true },
+          { "name": "Field Reconnaissance — Sarnath", "billable": true },
+          { "name": "Four Noble Truths Drafting", "billable": true }
+        ]},
+        { "name": "Build the Eightfold Path", "isDefault": false, "billable": true, "children": [
+          { "name": "Right View Foundations", "billable": true },
+          { "name": "Right Action Tooling", "billable": true },
+          { "name": "Right Mindfulness Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Oral Tradition", "isDefault": false, "billable": true, "children": [
+          { "name": "Sutta Inventory", "billable": true },
+          { "name": "Pali Canon Translation", "billable": true }
+        ]},
+        { "name": "Testing at Vulture Peak", "isDefault": false, "billable": true, "children": [
+          { "name": "Discourse Validation Drill", "billable": true },
+          { "name": "Vinaya Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Sangha", "isDefault": false, "billable": true, "children": [
+          { "name": "Bhikkhu Onboarding", "billable": true },
+          { "name": "Elder's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "bodhisattvas",
+      "projectName": "Bodhisattva Path — Compassion Engagement CRM",
+      "shortName": "Bodhi CRM",
+      "subAccountName": "Assembly of the Bodhisattvas",
+      "subAccountNumber": "PSA-TEST-BUDDHISTDEITIES-BODHISATTVAS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Pure Land Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Vow-Taking", "isDefault": false, "billable": true, "children": [
+          { "name": "Bodhicitta Survey", "billable": true },
+          { "name": "Six Perfections Audit", "billable": true },
+          { "name": "Compassion Strategy Council", "billable": true }
+        ]},
+        { "name": "Build the Boundless Vehicle", "isDefault": false, "billable": true, "children": [
+          { "name": "Lotus Throne Construction", "billable": true },
+          { "name": "Mantra Engine Forging", "billable": true },
+          { "name": "Mandala Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Vows", "isDefault": false, "billable": true, "children": [
+          { "name": "Aspiration Roll Call", "billable": true },
+          { "name": "Merit Provisioning", "billable": true }
+        ]},
+        { "name": "Testing in the Six Realms", "isDefault": false, "billable": true, "children": [
+          { "name": "Hell-Realm Outreach Drill", "billable": true },
+          { "name": "Hungry-Ghost Liberation Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Aspirants", "isDefault": false, "billable": true, "children": [
+          { "name": "Paramita Foundations", "billable": true },
+          { "name": "Skilful Means Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "dhyani-buddhas-five-tathagatas",
+      "projectName": "Five Tathagatas — Wisdom Mandala Implementation",
+      "shortName": "Tathagata WMI",
+      "subAccountName": "Mandala of the Five Wisdoms",
+      "subAccountNumber": "PSA-TEST-BUDDHISTDEITIES-TATHAGATAS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Akanishtha Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Mandala Design", "isDefault": false, "billable": true, "children": [
+          { "name": "Five-Family Reconnaissance", "billable": true },
+          { "name": "Wisdom-Aggregate Mapping", "billable": true },
+          { "name": "Primordial Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Diamond Realm", "isDefault": false, "billable": true, "children": [
+          { "name": "Vajra Foundation Forging", "billable": true },
+          { "name": "Mirror-Wisdom Calibration", "billable": true },
+          { "name": "Element Network Weaving", "billable": true }
+        ]},
+        { "name": "Migrate the Sadhanas", "isDefault": false, "billable": true, "children": [
+          { "name": "Practice Text Inventory", "billable": true },
+          { "name": "Empowerment Lineage Catalog", "billable": true }
+        ]},
+        { "name": "Testing the Five Wisdoms", "isDefault": false, "billable": true, "children": [
+          { "name": "Mirror-Like Wisdom Trial", "billable": true },
+          { "name": "All-Accomplishing Wisdom Stress", "billable": true }
+        ]},
+        { "name": "Training the Vidyadharas", "isDefault": false, "billable": true, "children": [
+          { "name": "Visualisation Foundations", "billable": true },
+          { "name": "Mantra Recitation Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "wrathful-protectors-and-female-buddhas",
+      "projectName": "Protector Practice — Vajrayana Defense Build",
+      "shortName": "Protector VDB",
+      "subAccountName": "Assembly of Wrathful Protectors and Female Buddhas",
+      "subAccountNumber": "PSA-TEST-BUDDHISTDEITIES-PROTECTORS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Charnel-Ground Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Obstacle Mapping", "isDefault": false, "billable": true, "children": [
+          { "name": "Hindrance Reconnaissance", "billable": true },
+          { "name": "Protector Lineage Survey", "billable": true },
+          { "name": "Dharma-Protector Council", "billable": true }
+        ]},
+        { "name": "Build the Wrathful Mandala", "isDefault": false, "billable": true, "children": [
+          { "name": "Skull-Cup Foundation Forging", "billable": true },
+          { "name": "Flame-Halo Calibration", "billable": true },
+          { "name": "Khatvanga Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Tantric Lineage", "isDefault": false, "billable": true, "children": [
+          { "name": "Termas & Hidden Texts Catalog", "billable": true },
+          { "name": "Empowerment Recording", "billable": true }
+        ]},
+        { "name": "Testing the Wisdom Dakinis", "isDefault": false, "billable": true, "children": [
+          { "name": "Obstacle-Subduing Drill", "billable": true },
+          { "name": "Inner-Heat Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Yogis & Yoginis", "isDefault": false, "billable": true, "children": [
+          { "name": "Generation-Stage Foundations", "billable": true },
+          { "name": "Completion-Stage Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "historical-buddha-and-disciples": [
+      { "fullName": "Siddhartha Gautama",   "themedRole": "Dharma Architect" },
+      { "fullName": "Ananda",               "themedRole": "Scribe of the Tripitaka" },
+      { "fullName": "Sariputta",            "themedRole": "Senior Bhikkhu of Nalanda" },
+      { "fullName": "Maudgalyayana",        "themedRole": "Bridge-Builder of the Six Realms" },
+      { "fullName": "Mahakassapa",          "themedRole": "Abbot of the Western Vihara" },
+      { "fullName": "Upali",                "themedRole": "Keeper of the Sutras" },
+      { "fullName": "Rahula",               "themedRole": "Samanera of Nalanda" },
+      { "fullName": "Suddhodana",           "themedRole": "Sangha Steward" },
+      { "fullName": "Yashodhara",           "themedRole": "Healer of the Eightfold Path" }
+    ],
+    "bodhisattvas": [
+      { "fullName": "Avalokiteshvara",      "themedRole": "Voice of the Dharma" },
+      { "fullName": "Manjushri",            "themedRole": "Dharma Architect" },
+      { "fullName": "Vajrapani",            "themedRole": "Master Vajra Smith of the West" },
+      { "fullName": "Kshitigarbha",         "themedRole": "Healer of the Eightfold Path" },
+      { "fullName": "Maitreya",             "themedRole": "Sangha Steward" },
+      { "fullName": "Samantabhadra",        "themedRole": "Senior Bridge-Walker" },
+      { "fullName": "Akashagarbha",         "themedRole": "Senior Dharma Herald" },
+      { "fullName": "Sarvanivarana-Vishkambhin", "themedRole": "Apprentice Bridge-Walker" }
+    ],
+    "dhyani-buddhas-five-tathagatas": [
+      { "fullName": "Vairocana",            "themedRole": "Dharma Architect" },
+      { "fullName": "Akshobhya",            "themedRole": "Abbot of the Western Vihara" },
+      { "fullName": "Ratnasambhava",        "themedRole": "Voice of the Dharma" },
+      { "fullName": "Amitabha",             "themedRole": "Senior Bhikkhu of Nalanda" },
+      { "fullName": "Amoghasiddhi",         "themedRole": "Master Vajra Smith of the West" },
+      { "fullName": "Akashadhatishvari",    "themedRole": "Scribe of the Tripitaka" },
+      { "fullName": "Locana",               "themedRole": "Novice Bhikkhu of Nalanda" },
+      { "fullName": "Mamaki",               "themedRole": "Dharma Crier" }
+    ],
+    "wrathful-protectors-and-female-buddhas": [
+      { "fullName": "Padmasambhava",        "themedRole": "Dharma Architect" },
+      { "fullName": "Tsongkhapa",           "themedRole": "Abbot of the Western Vihara" },
+      { "fullName": "Mahakala",             "themedRole": "Bridge-Builder of the Six Realms" },
+      { "fullName": "Yamantaka",            "themedRole": "Master Vajra Smith of the West" },
+      { "fullName": "Vajrayogini",          "themedRole": "Senior Dharma Herald" },
+      { "fullName": "Green Tara",           "themedRole": "Sangha Steward" },
+      { "fullName": "Palden Lhamo",         "themedRole": "Healer of the Eightfold Path" },
+      { "fullName": "Kurukulla",            "themedRole": "Dharma Crier" }
+    ]
+  },
+
+  "milestones": {
+    "historical-buddha-and-disciples": [
+      { "name": "Great Renunciation",            "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: leaving the palace — discovery commences." },
+      { "name": "Awakening Beneath the Bodhi Tree", "type": "Operational", "offsetPct": 25, "description": "Build kickoff: the architecture is realised in a single night." },
+      { "name": "First Turning of the Wheel",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the Four Noble Truths reviewed at Deer Park." },
+      { "name": "Rains-Retreat Invoice",         "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: vassa retreat completed, dana offered." },
+      { "name": "Third Turning at Vulture Peak", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Mahayana sutras delivered to assembled disciples." },
+      { "name": "Parinirvana at Kushinagar",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the teaching transmission completes; the Sangha continues the work." }
+    ],
+    "bodhisattvas": [
+      { "name": "Generation of Bodhicitta",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the great vow is taken to liberate all beings." },
+      { "name": "Ride of the Eleven-Headed Avalokiteshvara", "type": "Operational", "offsetPct": 30, "description": "Build phase: compassion-engine deployed across the six realms." },
+      { "name": "Manjushri's Sword Sharpened",   "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the sword of wisdom cuts through delusion in test." },
+      { "name": "Maitreya's Descent",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the future Buddha activates the next-age platform." },
+      { "name": "Dedication of Merit",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: all merit dedicated to the welfare of beings." },
+      { "name": "Final Dana Offering",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the patron's offering completes the cycle." }
+    ],
+    "dhyani-buddhas-five-tathagatas": [
+      { "name": "Mandala Consecration",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the five-family mandala drawn and blessed." },
+      { "name": "Forge the Five Wisdoms",        "type": "Operational", "offsetPct": 35,  "description": "Build: the five purified aggregates instantiated in production." },
+      { "name": "Vairocana's Audit",             "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Primordial Buddha at the centre of the mandala." },
+      { "name": "Mandala Activation",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: all five Tathagatas seated, wisdoms operational." },
+      { "name": "Dissolution of the Mandala",    "type": "Operational", "offsetPct": 100, "description": "Project close: sand mandala swept into the river — impermanence honoured." },
+      { "name": "Closing Empowerment Fee",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Diamond Realm." }
+    ],
+    "wrathful-protectors-and-female-buddhas": [
+      { "name": "Charnel-Ground Council",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council convened where obstacles cannot enter." },
+      { "name": "Subjugation of Inner Demons",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: hindrances surfaced and bound by mantra." },
+      { "name": "Weave the Protector Threads",   "type": "Operational", "offsetPct": 55,  "description": "Build: protective wards woven through every workflow." },
+      { "name": "Tara's Swift Liberation Drill", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: rapid-response paths verified by Green Tara herself." },
+      { "name": "Vajrayogini's Inner Fire",      "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the inner heat ignites the platform; protection complete." },
+      { "name": "Final Tsok Offering",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the feast offering closes the engagement." }
+    ]
+  },
+
+  "daysOff": {
+    "Siddhartha Gautama": [ { "realm": "historical-buddha-and-disciples", "offsetWeeks": 12, "numberOfDays": 5, "notes": "Rains-retreat (vassa) — annual three-month seclusion abbreviated to a working week." } ],
+    "Ananda":             [ { "realm": "historical-buddha-and-disciples", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Memorising the discourses heard at Savatthi — quiet recitation days." } ],
+    "Sariputta":          [ { "realm": "historical-buddha-and-disciples", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Visit to his mother in Nalaka village." } ],
+    "Mahakassapa":        [ { "realm": "historical-buddha-and-disciples", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Solitary forest dwelling — dhutanga ascetic practice." } ],
+    "Rahula":             [ { "realm": "historical-buddha-and-disciples", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Novice training week with the elders — extra precept study." } ],
+    "Avalokiteshvara":    [ { "realm": "bodhisattvas",                    "offsetWeeks": 10, "numberOfDays": 2, "notes": "Listening tour — attending to the cries of the world." } ],
+    "Manjushri":          [ { "realm": "bodhisattvas",                    "offsetWeeks": 16, "numberOfDays": 3, "notes": "Pilgrimage to Mount Wutai — annual study retreat." } ],
+    "Maitreya":           [ { "realm": "bodhisattvas",                    "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Tushita Heaven planning session — long-range roadmap." } ],
+    "Kshitigarbha":       [ { "realm": "bodhisattvas",                    "offsetWeeks": 20, "numberOfDays": 5, "notes": "Hell-realm outreach — vow-keeping field work, no remote access." } ],
+    "Amitabha":           [ { "realm": "dhyani-buddhas-five-tathagatas",  "offsetWeeks": 12, "numberOfDays": 3, "notes": "Sukhavati Pure Land office hours — receiving aspirants." } ],
+    "Vairocana":          [ { "realm": "dhyani-buddhas-five-tathagatas",  "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Centre-of-mandala stillness — non-conceptual review day." } ],
+    "Padmasambhava":      [ { "realm": "wrathful-protectors-and-female-buddhas", "offsetWeeks": 6, "numberOfDays": 4, "notes": "Hiding termas in the Himalayan crags — fieldwork, off-grid." } ],
+    "Green Tara":         [ { "realm": "wrathful-protectors-and-female-buddhas", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Swift-rescue rotation — on-call elsewhere." } ],
+    "Tsongkhapa":         [ { "realm": "wrathful-protectors-and-female-buddhas", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Ganden Monastery scriptural debate — annual logic festival." } ],
+    "Vajrayogini":        [ { "realm": "wrathful-protectors-and-female-buddhas", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Inner-heat (tummo) intensive — solitary cabin practice." } ]
+  }
+}
