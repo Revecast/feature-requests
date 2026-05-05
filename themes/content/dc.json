@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "key": "DC",
+  "displayName": "DC Comics",
+  "category": "Comics",
+  "emailDomain": "dcuniverse.test",
+  "account": {
+    "name": "DC Universe (Test Data)",
+    "accountNumber": "PSA-TEST-DC"
+  },
+  "mailingAddress": {
+    "street": "1007 Mountain Drive",
+    "city": "Gotham City",
+    "state": "NJ",
+    "postalCode": "07101",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Watchtower Architect",            "canonical": "Solution Architect",                      "description": "Designs the over-arching solution from the orbital Watchtower — sees how every hero, gadget and contingency interlocks." },
+    { "name": "League Field Commander",          "canonical": "Project Manager",                         "description": "Marshals the team in the field — owns the timeline, the comms grid, and the after-action report." },
+    { "name": "Batcomputer Operator",            "canonical": "Salesforce Administrator",                "description": "Curator of the Batcomputer's records — fields, layouts, permission sets and case files." },
+    { "name": "Bat-Gadget Engineer",             "canonical": "Salesforce Developer",                    "description": "Forges the bespoke tools in the Batcave workshop — Apex, LWC, and platform widgets." },
+    { "name": "Hall of Justice Chief — USA",     "canonical": "Salesforce Practice Lead - USA",          "description": "Leads the senior practice from the Hall of Justice — sets the standards every chapter follows." },
+    { "name": "Senior Titan — Mumbai Tower",     "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran of many missions — runs delivery streams from the Mumbai Tower." },
+    { "name": "Junior Titan — Mumbai Tower",     "canonical": "Salesforce Consultant - India",           "description": "Rising hero — handles configuration and discovery under the Senior Titan's wing." },
+    { "name": "Boom Tube Architect — USA",       "canonical": "Integration Technical Architect - USA",   "description": "Designs the Boom Tubes between systems — the great spans that move data across the Multiverse." },
+    { "name": "Senior Boom Tube Engineer",       "canonical": "Integration Senior Consultant - India",   "description": "Builds the stable Boom Tubes — APIs, middleware, event flows under the Architect's plan." },
+    { "name": "Boom Tube Apprentice",            "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch jobs, callouts, and the rules of stable transit." },
+    { "name": "Crime Lab Tech",                  "canonical": "QA Engineer",                             "description": "Tests every piece of evidence and every build — finds the flaw before the villain does." },
+    { "name": "Daily Planet Editor-in-Chief",    "canonical": "Marketing Practice Lead",                 "description": "Sets the front page — leads all marketing craft and sets the campaign tone." },
+    { "name": "Senior Daily Planet Reporter",    "canonical": "Marketing Senior Consultant",             "description": "Veteran reporter — designs campaign strategy and hunts the lead story." },
+    { "name": "Daily Planet Cub Reporter",       "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the field — content, creative, and chasing the daily scoop." },
+    { "name": "Wayne Enterprises Analyst",       "canonical": "Business Analyst",                        "description": "Translates between the boardroom and the Batcave — captures requirements and stakeholder intent." },
+    { "name": "Senior Bat-Gadget Engineer — USA","canonical": "Salesforce Senior Developer - USA",       "description": "Master engineer of the Batcave workshop — leads complex builds and mentors the junior smiths." },
+    { "name": "Sidekick Consultant — Mumbai",    "canonical": "Junior Salesforce Consultant - India",    "description": "First mission rookie — shadows the Titans and learns the platform under close supervision." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes), each themed to the team's mission and base of operations.",
+
+  "realms": [
+    {
+      "key": "justice-league",
+      "projectName": "Justice League — Watchtower Operations Platform",
+      "shortName": "JL Watchtower",
+      "subAccountName": "Justice League of America",
+      "subAccountNumber": "PSA-TEST-DC-JUSTICE-LEAGUE",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Watchtower Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Founding Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Founders' Roundtable", "billable": true },
+          { "name": "Threat Surface Mapping", "billable": true }
+        ]},
+        { "name": "Build the Watchtower", "isDefault": false, "billable": true, "children": [
+          { "name": "Orbital Platform Construction", "billable": true },
+          { "name": "Teleporter Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Justice Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Case File Inventory", "billable": true },
+          { "name": "Rogues Gallery Indexing", "billable": true }
+        ]},
+        { "name": "Testing at the Hall of Justice", "isDefault": false, "billable": true, "children": [
+          { "name": "Crisis Simulation (UAT)", "billable": true },
+          { "name": "Multiverse Stress Test", "billable": true }
+        ]},
+        { "name": "Training the League", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Onboarding", "billable": true },
+          { "name": "Founders' Masterclass", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "bat-family",
+      "projectName": "Bat-Family — Batcave Casework System",
+      "shortName": "BatCave CW",
+      "subAccountName": "Wayne Foundation — Batcave Operations",
+      "subAccountNumber": "PSA-TEST-DC-BAT-FAMILY",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Batcave Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Stakeout", "isDefault": false, "billable": true, "children": [
+          { "name": "Crime Alley Reconnaissance", "billable": true },
+          { "name": "Riddler Pattern Analysis", "billable": true }
+        ]},
+        { "name": "Build the Batcomputer", "isDefault": false, "billable": true, "children": [
+          { "name": "Mainframe Forging", "billable": true },
+          { "name": "Bat-Signal Integration", "billable": true }
+        ]},
+        { "name": "Migrate the Case Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Rogues Dossier Conversion", "billable": true },
+          { "name": "Wayne Estate Records", "billable": true }
+        ]},
+        { "name": "Testing at Wayne Manor", "isDefault": false, "billable": true, "children": [
+          { "name": "Penetration Test (Robin Drill)", "billable": true },
+          { "name": "Alfred's Acceptance Pass", "billable": true }
+        ]},
+        { "name": "Training the Bat-Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Robin Onboarding", "billable": true },
+          { "name": "Oracle's Operations Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "teen-titans",
+      "projectName": "Teen Titans — Titans Tower Mission Hub",
+      "shortName": "Titans Hub",
+      "subAccountName": "Titans Tower Foundation",
+      "subAccountNumber": "PSA-TEST-DC-TEEN-TITANS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Titans Tower Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Team-Up", "isDefault": false, "billable": true, "children": [
+          { "name": "Bay Area Recon", "billable": true },
+          { "name": "Mentor Sync (League)", "billable": true }
+        ]},
+        { "name": "Build the Tower Systems", "isDefault": false, "billable": true, "children": [
+          { "name": "T-Shaped Comms Array", "billable": true },
+          { "name": "Training Room Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Mission Logs", "isDefault": false, "billable": true, "children": [
+          { "name": "H.I.V.E. Threat Index", "billable": true },
+          { "name": "Hall of Heroes Archive", "billable": true }
+        ]},
+        { "name": "Testing the Squad", "isDefault": false, "billable": true, "children": [
+          { "name": "Combat Sim (Beast Mode)", "billable": true },
+          { "name": "Raven's Astral Audit", "billable": true }
+        ]},
+        { "name": "Training the Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Sidekick Bootcamp", "billable": true },
+          { "name": "Cyborg's Tech Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "suicide-squad",
+      "projectName": "Suicide Squad — Task Force X Black-Ops Console",
+      "shortName": "Task Force X",
+      "subAccountName": "A.R.G.U.S. — Task Force X",
+      "subAccountNumber": "PSA-TEST-DC-SUICIDE-SQUAD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Belle Reve Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Mission Brief", "isDefault": false, "billable": true, "children": [
+          { "name": "Waller's Threat Briefing", "billable": true },
+          { "name": "Target Dossier Compilation", "billable": true }
+        ]},
+        { "name": "Build the Black-Ops Console", "isDefault": false, "billable": true, "children": [
+          { "name": "Nano-Bomb Tracking Module", "billable": true },
+          { "name": "Comms Encryption Forging", "billable": true }
+        ]},
+        { "name": "Migrate the Inmate Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Belle Reve Roster Conversion", "billable": true },
+          { "name": "Asset Skill Inventory", "billable": true }
+        ]},
+        { "name": "Testing in the Field", "isDefault": false, "billable": true, "children": [
+          { "name": "Live-Fire Drop (UAT)", "billable": true },
+          { "name": "Extraction Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Squad", "isDefault": false, "billable": true, "children": [
+          { "name": "Flag's Tactical Briefing", "billable": true },
+          { "name": "Survival Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "justice-league": [
+      { "fullName": "Superman",           "themedRole": "Watchtower Architect" },
+      { "fullName": "Batman",             "themedRole": "League Field Commander" },
+      { "fullName": "Wonder Woman",       "themedRole": "Hall of Justice Chief — USA" },
+      { "fullName": "Flash",              "themedRole": "Senior Boom Tube Engineer" },
+      { "fullName": "Aquaman",            "themedRole": "Senior Titan — Mumbai Tower" },
+      { "fullName": "Green Lantern",      "themedRole": "Boom Tube Architect — USA" },
+      { "fullName": "Cyborg",             "themedRole": "Senior Bat-Gadget Engineer — USA" },
+      { "fullName": "Martian Manhunter",  "themedRole": "Watchtower Architect" }
+    ],
+    "bat-family": [
+      { "fullName": "Bruce Wayne",        "themedRole": "Watchtower Architect" },
+      { "fullName": "Dick Grayson",       "themedRole": "League Field Commander" },
+      { "fullName": "Barbara Gordon",     "themedRole": "Batcomputer Operator" },
+      { "fullName": "Tim Drake",          "themedRole": "Junior Titan — Mumbai Tower" },
+      { "fullName": "Damian Wayne",       "themedRole": "Sidekick Consultant — Mumbai" },
+      { "fullName": "Alfred",             "themedRole": "Wayne Enterprises Analyst" },
+      { "fullName": "Jim Gordon",         "themedRole": "Crime Lab Tech" },
+      { "fullName": "Selina Kyle",        "themedRole": "Senior Daily Planet Reporter" }
+    ],
+    "teen-titans": [
+      { "fullName": "Robin",              "themedRole": "League Field Commander" },
+      { "fullName": "Starfire",           "themedRole": "Daily Planet Editor-in-Chief" },
+      { "fullName": "Raven",              "themedRole": "Crime Lab Tech" },
+      { "fullName": "Beast Boy",          "themedRole": "Daily Planet Cub Reporter" },
+      { "fullName": "Cyborg (Titan)",     "themedRole": "Bat-Gadget Engineer" },
+      { "fullName": "Kid Flash",          "themedRole": "Boom Tube Apprentice" },
+      { "fullName": "Donna Troy",         "themedRole": "Senior Titan — Mumbai Tower" }
+    ],
+    "suicide-squad": [
+      { "fullName": "Amanda Waller",      "themedRole": "Hall of Justice Chief — USA" },
+      { "fullName": "Deadshot",           "themedRole": "Senior Bat-Gadget Engineer — USA" },
+      { "fullName": "Harley Quinn",       "themedRole": "Daily Planet Cub Reporter" },
+      { "fullName": "Captain Boomerang",  "themedRole": "Junior Titan — Mumbai Tower" },
+      { "fullName": "Rick Flag",          "themedRole": "League Field Commander" },
+      { "fullName": "Killer Croc",        "themedRole": "Boom Tube Apprentice" },
+      { "fullName": "Enchantress",        "themedRole": "Wayne Enterprises Analyst" }
+    ]
+  },
+
+  "milestones": {
+    "justice-league": [
+      { "name": "Founders Assemble",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the seven founders convene aboard the Watchtower." },
+      { "name": "Teleporters Online",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Zeta tube grid hot, comms across the planet." },
+      { "name": "Crisis Tabletop",            "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: multiverse-threat tabletop with the Founders." },
+      { "name": "Phase Invoice — Brainiac Op","type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: post-Brainiac operation billing." },
+      { "name": "Watchtower Go-Live",         "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: orbital command in full production." },
+      { "name": "Hand-off to the League",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ops handed to the standing roster." }
+    ],
+    "bat-family": [
+      { "name": "Cave Lights On",             "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Batcave power-up, Batcomputer warm." },
+      { "name": "Bat-Signal Integration",     "type": "Operational", "offsetPct": 30,  "description": "Build phase: GCPD signal wired into the casework system." },
+      { "name": "Arkham Breakout Drill",      "type": "Gate",        "offsetPct": 55,  "description": "UAT gate: simulate a full Arkham breakout — system holds." },
+      { "name": "Phase Invoice — Wayne Foundation","type": "Billing","offsetPct": 75,  "description": "Phase invoice: Wayne Foundation funding tranche released." },
+      { "name": "Casework System Live",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: every Bat in the field on the new system." },
+      { "name": "Alfred Signs Off",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Alfred stamps the project complete." }
+    ],
+    "teen-titans": [
+      { "name": "Tower Topping-Out",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: T-Tower power and comms commissioned." },
+      { "name": "Forge the Mission Console",  "type": "Operational", "offsetPct": 35,  "description": "Build: mission-control console online, mentor links wired." },
+      { "name": "H.I.V.E. Live-Fire",         "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: live-fire drill against H.I.V.E. operatives." },
+      { "name": "Phase Invoice — Wayne Grant","type": "Billing",     "offsetPct": 80,  "description": "Phase invoice: Wayne Foundation youth-grant tranche." },
+      { "name": "Titans Go!",                 "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Titans deployed on full mission roster." },
+      { "name": "Mentor Hand-off",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: senior mentors release the team." }
+    ],
+    "suicide-squad": [
+      { "name": "Waller's Greenlight",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery sign-off: Amanda Waller approves the mission package." },
+      { "name": "Nano-Bomb Calibration",      "type": "Operational", "offsetPct": 35,  "description": "Build: tracking + compliance module wired to every asset." },
+      { "name": "Belle Reve Audit",           "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: A.R.G.U.S. audit of console + asset roster." },
+      { "name": "Phase Invoice — Black Budget","type": "Billing",    "offsetPct": 75,  "description": "Phase invoice: black-budget tranche released to vendor." },
+      { "name": "Mission Console Live",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Task Force X operating from the new console." },
+      { "name": "Extraction Complete",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: assets returned to Belle Reve, ops debrief." }
+    ]
+  },
+
+  "daysOff": {
+    "Bruce Wayne":       [ { "realm": "bat-family",     "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Wayne Enterprises board week — public-facing engagements." } ],
+    "Dick Grayson":      [ { "realm": "bat-family",     "offsetWeeks": 14, "numberOfDays": 2, "notes": "Bludhaven PD shift swap — covering for Amy." } ],
+    "Barbara Gordon":    [ { "realm": "bat-family",     "offsetWeeks": 10, "numberOfDays": 2, "notes": "Gotham Library benefit — Oracle stays offline." } ],
+    "Alfred":            [ { "realm": "bat-family",     "offsetWeeks": 18, "numberOfDays": 4, "notes": "Annual return to the West End — visiting old friends." } ],
+    "Damian Wayne":      [ { "realm": "bat-family",     "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Veterinary appointment for Titus the Great Dane." } ],
+    "Superman":          [ { "realm": "justice-league", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Daily Planet deadline week — Clark Kent on byline duty." } ],
+    "Wonder Woman":      [ { "realm": "justice-league", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Themysciran ambassadorial visit — embassy week." } ],
+    "Flash":             [ { "realm": "justice-league", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Central City CSI court appearance — Barry Allen testifying." } ],
+    "Aquaman":           [ { "realm": "justice-league", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Atlantean coronation duties — surface comms limited." } ],
+    "Martian Manhunter": [ { "realm": "justice-league", "offsetWeeks": 20, "numberOfDays": 3, "notes": "Meditation retreat — quarterly psychic recalibration." } ],
+    "Starfire":          [ { "realm": "teen-titans",    "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Tamaranean diplomatic check-in — off-world." } ],
+    "Raven":             [ { "realm": "teen-titans",    "offsetWeeks": 12, "numberOfDays": 2, "notes": "Azarath silent-week meditation." } ],
+    "Beast Boy":         [ { "realm": "teen-titans",    "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Vegan food festival — promotional appearance." } ],
+    "Harley Quinn":      [ { "realm": "suicide-squad",  "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Coney Island roller-derby tournament." } ],
+    "Deadshot":          [ { "realm": "suicide-squad",  "offsetWeeks": 10, "numberOfDays": 3, "notes": "Court-supervised visit with Zoe." } ]
+  }
+}
