@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "key": "Discworld",
+  "displayName": "Discworld",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "ankh-morpork.test",
+  "account": {
+    "name": "Discworld (Test Data)",
+    "accountNumber": "PSA-TEST-DISCWORLD"
+  },
+  "mailingAddress": {
+    "street": "1 Pseudopolis Yard",
+    "city": "Ankh-Morpork",
+    "state": "Sto Plains",
+    "postalCode": "AM1 1TP",
+    "country": "Discworld"
+  },
+
+  "roles": [
+    { "name": "Archchancellor of Solutions",        "canonical": "Solution Architect",                    "description": "Wears the pointy hat of architecture — designs the over-arching Salesforce solution and presides over the High Energy Magic Building." },
+    { "name": "Captain of the Watch",               "canonical": "Project Manager",                       "description": "Marshals the squad of delivery, holds the schedule, and answers to the Patrician — never give up, never surrender." },
+    { "name": "Clerk of the Stamp Office",          "canonical": "Salesforce Administrator",              "description": "Steward of records, layouts, fields, and permission sets — every record stamped, sorted, and filed in triplicate." },
+    { "name": "Hex Engineer",                       "canonical": "Salesforce Developer",                  "description": "Forges Apex, LWC, and platform features at Hex — feeds it ants and watches the wheels turn (+++ Out of Cheese Error +++)." },
+    { "name": "High Priest of the Sto Plains",      "canonical": "Salesforce Practice Lead - USA",        "description": "Captain over all Sto Plains Salesforce craft — sets standards and guides the senior wizards." },
+    { "name": "Senior Witch of the Coven",          "canonical": "Salesforce Senior Consultant - India",  "description": "Patrols the borders of customer requirements with practiced craft and a stern look." },
+    { "name": "Witch of the Chalk",                 "canonical": "Salesforce Consultant - India",         "description": "Carries discovery and configuration across the realm under the Senior Witch's eye." },
+    { "name": "Postmaster General",                 "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — Neither rain nor snow nor gloom of night." },
+    { "name": "Clacks Tower Engineer",              "canonical": "Integration Senior Consultant - India", "description": "Lays the stones of API, middleware, and event flows along the Grand Trunk." },
+    { "name": "Apprentice Clacks Operator",         "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — semaphore towers, batch jobs, callouts, and the Smoking GNU patterns of error handling." },
+    { "name": "Igor of Quality",                    "canonical": "QA Engineer",                           "description": "Tendth the wounded and the weary — findth the maladieth in the build before they reach the Patrithian. Yeth, marthter." },
+    { "name": "Town Crier",                         "canonical": "Marketing Practice Lead",               "description": "Lifts the bell and the trumpet for product and message — leads all marketing craft. Oyez! Oyez!" },
+    { "name": "Editor of the Ankh-Morpork Times",   "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — The Truth Shall Make Ye Fret. Sounds the call to gather and convert." },
+    { "name": "Reporter of the Times",              "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative, and the daily edition." },
+    { "name": "Scribe of Lord Vetinari",            "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between the Patrician's office and the wizard's craft of design." },
+    { "name": "Senior Wizard of UU",                "canonical": "Salesforce Senior Developer - USA",     "description": "Master of advanced Apex thaumaturgy — works at the High Energy Magic Building on the deepest spells." },
+    { "name": "Lance-Constable of Code",            "canonical": "Junior Salesforce Consultant - India",  "description": "New recruit to the Watch — learns the badge, the helmet, and how not to confuse SOQL with SOSL on day one." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "ankh-morpork-city-watch",
+      "projectName": "Ankh-Morpork City Watch — Crime CRM Rollout",
+      "shortName": "Watch CRM",
+      "subAccountName": "Ankh-Morpork City Watch",
+      "subAccountNumber": "PSA-TEST-DISCWORLD-WATCH",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Pseudopolis Yard Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Door-Knocking", "isDefault": false, "billable": true, "children": [
+          { "name": "Witness Interviews on the Shades", "billable": true },
+          { "name": "Crime Scene Reconnaissance", "billable": true },
+          { "name": "Strategy with the Patrician", "billable": true }
+        ]},
+        { "name": "Build the Beat", "isDefault": false, "billable": true, "children": [
+          { "name": "Truncheon Forging", "billable": true },
+          { "name": "Helmet & Badge Standardisation", "billable": true },
+          { "name": "Whistle Signal Protocol", "billable": true }
+        ]},
+        { "name": "Migrate the Charge Sheets", "isDefault": false, "billable": true, "children": [
+          { "name": "Old Ledger Inventory", "billable": true },
+          { "name": "Mug-Shot Daguerreotype Catalogue", "billable": true }
+        ]},
+        { "name": "Testing on Treacle Mine Road", "isDefault": false, "billable": true, "children": [
+          { "name": "Foot Patrol Drill (UAT)", "billable": true },
+          { "name": "Riot Containment Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Recruits", "isDefault": false, "billable": true, "children": [
+          { "name": "Lance-Constable Onboarding", "billable": true },
+          { "name": "Sergeant's Field Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "unseen-university",
+      "projectName": "Unseen University — Hex Analytics Implementation",
+      "shortName": "UU Hex",
+      "subAccountName": "Unseen University",
+      "subAccountNumber": "PSA-TEST-DISCWORLD-UU",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "High Energy Magic Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Thaumic Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Faculty Council Interviews", "billable": true },
+          { "name": "Library Stack Reconnaissance (with Librarian)", "billable": true },
+          { "name": "Strategy at High Table", "billable": true }
+        ]},
+        { "name": "Build the Hex", "isDefault": false, "billable": true, "children": [
+          { "name": "Ant Colony Provisioning", "billable": true },
+          { "name": "Phase of the Moon Calibration", "billable": true },
+          { "name": "Anthill Inside Cooling Loop", "billable": true }
+        ]},
+        { "name": "Migrate the Grimoires", "isDefault": false, "billable": true, "children": [
+          { "name": "Octavo Cataloguing", "billable": true },
+          { "name": "L-Space Index Sync", "billable": true }
+        ]},
+        { "name": "Testing in the Octogon", "isDefault": false, "billable": true, "children": [
+          { "name": "Containment Circle Drill", "billable": true },
+          { "name": "Recursive Spell Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Apprentices", "isDefault": false, "billable": true, "children": [
+          { "name": "First-Year Wizardry Foundations", "billable": true },
+          { "name": "Bursar's Dried Frog Pill Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "lancre-witches-and-tiffany-aching",
+      "projectName": "Lancre & The Chalk — Headology Knowledge Base",
+      "shortName": "Lancre KB",
+      "subAccountName": "Lancre Coven & The Chalk",
+      "subAccountNumber": "PSA-TEST-DISCWORLD-LANCRE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Cottage Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Borrowing", "isDefault": false, "billable": true, "children": [
+          { "name": "Cottage Visits Across Lancre", "billable": true },
+          { "name": "Borrowing the Sheep's-Eye View", "billable": true },
+          { "name": "Strategy at the Standing Stones", "billable": true }
+        ]},
+        { "name": "Build the Headology", "isDefault": false, "billable": true, "children": [
+          { "name": "Pointy Hat Standards", "billable": true },
+          { "name": "Cauldron Configuration", "billable": true },
+          { "name": "Broomstick Performance Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Recipes", "isDefault": false, "billable": true, "children": [
+          { "name": "Nanny's Cookbook Catalogue", "billable": true },
+          { "name": "Herbal Remedy Index", "billable": true }
+        ]},
+        { "name": "Testing at the Dancers", "isDefault": false, "billable": true, "children": [
+          { "name": "Fairyland Boundary Probe (UAT)", "billable": true },
+          { "name": "Wee Free Men Crivens Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Young Witches", "isDefault": false, "billable": true, "children": [
+          { "name": "Tiffany's Apprentice Curriculum", "billable": true },
+          { "name": "Miss Tick's Travelling Lecture", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "death-and-his-domain",
+      "projectName": "Death's Domain — Lifetimer Reporting Engine",
+      "shortName": "Domain LRE",
+      "subAccountName": "Death's Domain",
+      "subAccountNumber": "PSA-TEST-DISCWORLD-DOMAIN",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Black Robe Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & The Duty", "isDefault": false, "billable": true, "children": [
+          { "name": "Lifetimer Inventory in the Hourglass Room", "billable": true },
+          { "name": "Auditor Compliance Review", "billable": true },
+          { "name": "Strategy with the Patrician (Vetinari)", "billable": true }
+        ]},
+        { "name": "Build the Scythe", "isDefault": false, "billable": true, "children": [
+          { "name": "Blade Sharpening (cuts the wind itself)", "billable": true },
+          { "name": "Snuff-Box Provisioning", "billable": true },
+          { "name": "Binky Saddle & Tack Refit", "billable": true }
+        ]},
+        { "name": "Migrate the Souls", "isDefault": false, "billable": true, "children": [
+          { "name": "Hourglass Re-shelving", "billable": true },
+          { "name": "Death of Rats Cataloguing (SQUEAK)", "billable": true }
+        ]},
+        { "name": "Testing the Final Appointment", "isDefault": false, "billable": true, "children": [
+          { "name": "Hogswatch Substitution Drill", "billable": true },
+          { "name": "Soul Cake Tuesday Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Apprentice", "isDefault": false, "billable": true, "children": [
+          { "name": "Mort's Field Onboarding", "billable": true },
+          { "name": "Albert's Fry-Up Curriculum", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "ankh-morpork-city-watch": [
+      { "fullName": "Sam Vimes",              "themedRole": "Captain of the Watch" },
+      { "fullName": "Carrot Ironfoundersson", "themedRole": "High Priest of the Sto Plains" },
+      { "fullName": "Detritus",               "themedRole": "Igor of Quality" },
+      { "fullName": "Cheery Littlebottom",    "themedRole": "Hex Engineer" },
+      { "fullName": "Angua von Überwald",     "themedRole": "Senior Witch of the Coven" },
+      { "fullName": "Nobby Nobbs",            "themedRole": "Lance-Constable of Code" },
+      { "fullName": "Fred Colon",             "themedRole": "Clerk of the Stamp Office" },
+      { "fullName": "Sybil Vimes",            "themedRole": "Scribe of Lord Vetinari" },
+      { "fullName": "Constable Visit",        "themedRole": "Reporter of the Times" }
+    ],
+    "unseen-university": [
+      { "fullName": "Mustrum Ridcully",       "themedRole": "Archchancellor of Solutions" },
+      { "fullName": "Ponder Stibbons",        "themedRole": "Senior Wizard of UU" },
+      { "fullName": "The Bursar",             "themedRole": "Clerk of the Stamp Office" },
+      { "fullName": "The Dean",               "themedRole": "High Priest of the Sto Plains" },
+      { "fullName": "The Lecturer in Recent Runes", "themedRole": "Witch of the Chalk" },
+      { "fullName": "The Senior Wrangler",    "themedRole": "Clacks Tower Engineer" },
+      { "fullName": "Rincewind",              "themedRole": "Apprentice Clacks Operator" },
+      { "fullName": "The Librarian",          "themedRole": "Postmaster General" }
+    ],
+    "lancre-witches-and-tiffany-aching": [
+      { "fullName": "Granny Weatherwax",      "themedRole": "Archchancellor of Solutions" },
+      { "fullName": "Nanny Ogg",              "themedRole": "Town Crier" },
+      { "fullName": "Magrat Garlick",         "themedRole": "Witch of the Chalk" },
+      { "fullName": "Agnes Nitt",             "themedRole": "Editor of the Ankh-Morpork Times" },
+      { "fullName": "Tiffany Aching",         "themedRole": "Senior Witch of the Coven" },
+      { "fullName": "Miss Tick",              "themedRole": "Scribe of Lord Vetinari" },
+      { "fullName": "Mistress Weatherwax",    "themedRole": "High Priest of the Sto Plains" },
+      { "fullName": "Rob Anybody (Wee Free Men)", "themedRole": "Lance-Constable of Code" }
+    ],
+    "death-and-his-domain": [
+      { "fullName": "Death",                  "themedRole": "Archchancellor of Solutions" },
+      { "fullName": "Susan Sto Helit",        "themedRole": "Captain of the Watch" },
+      { "fullName": "Mort",                   "themedRole": "Lance-Constable of Code" },
+      { "fullName": "Albert",                 "themedRole": "Clerk of the Stamp Office" },
+      { "fullName": "Binky",                  "themedRole": "Postmaster General" },
+      { "fullName": "The Death of Rats",      "themedRole": "Reporter of the Times" },
+      { "fullName": "Ysabell",                "themedRole": "Scribe of Lord Vetinari" },
+      { "fullName": "Lord Vetinari",          "themedRole": "High Priest of the Sto Plains" },
+      { "fullName": "The Auditors of Reality","themedRole": "Igor of Quality" }
+    ]
+  },
+
+  "milestones": {
+    "ankh-morpork-city-watch": [
+      { "name": "Roll Call at Pseudopolis Yard", "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Vimes lights his cigar, the Watch falls in." },
+      { "name": "Issue the Truncheons",          "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: every officer kitted out for the beat." },
+      { "name": "Audience with the Patrician",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review at the Oblong Office." },
+      { "name": "Glorious Revolution Dress Rehearsal", "type": "Billing", "offsetPct": 70, "description": "Phase invoice trigger: People's Republic of Treacle Mine Road drill." },
+      { "name": "Hogswatch Patrol Go-Live",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the Watch walks the streets with the new system." },
+      { "name": "Commander's Hand-off",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Captain Carrot." }
+    ],
+    "unseen-university": [
+      { "name": "Convocation of the Faculty",    "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the wizards are summoned from the Uncommon Room." },
+      { "name": "Hex Cold-Boot",                 "type": "Operational", "offsetPct": 30,  "description": "Build phase: ants loaded, GBL initialised, Anthill Inside online." },
+      { "name": "Octogon Containment Test",      "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: nothing escaped the chalk circle (this time)." },
+      { "name": "Convivium Demo",                "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the new Hex demoed at the annual Convivium." },
+      { "name": "Return to High Table",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: faculty return to dinner — five courses, no ducks." },
+      { "name": "Bursar's Final Stipend",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice: paid in dried-frog pills and a small annuity." }
+    ],
+    "lancre-witches-and-tiffany-aching": [
+      { "name": "Coven at the Standing Stones",  "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the witches gather; Granny gets the only chair." },
+      { "name": "Borrow the Land",               "type": "Operational", "offsetPct": 35,  "description": "Build: requirements gathered through the eyes of every creature on the Chalk." },
+      { "name": "Granny's Acceptance Stare",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review: Granny Weatherwax looks at it. The build looks back. The build blinks first." },
+      { "name": "Wee Free Men Go-Live",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Crivens! The system is live, ye scunners!" },
+      { "name": "Cottage Hand-off",              "type": "Operational", "offsetPct": 100, "description": "Project close: keys handed to Tiffany — the land remembers." },
+      { "name": "Final Tithe",                   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: paid in eggs, honey, and a respectful nod." }
+    ],
+    "death-and-his-domain": [
+      { "name": "Inventory the Hourglasses",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: every lifetimer in the room counted (it took a while)." },
+      { "name": "Forge the Scythe Blade",        "type": "Operational", "offsetPct": 35,  "description": "Build: blade honed to a keenness that cuts sound itself." },
+      { "name": "Auditor Compliance Review",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Auditors of Reality — they disapprove of personality, but signed off." },
+      { "name": "Hogswatch Substitution Go-Live","type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: HO. HO. HO. THE NEW SYSTEM IS IN PRODUCTION." },
+      { "name": "Return to the Domain",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Binky stabled, Albert frying eggs, all is well." },
+      { "name": "Final Reckoning",               "type": "Billing",     "offsetPct": 100, "description": "Final invoice: settled in the only currency that counts — time." }
+    ]
+  },
+
+  "daysOff": {
+    "Sam Vimes":              [ { "realm": "ankh-morpork-city-watch", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Reading 'Where's My Cow?' to Young Sam at six o'clock — non-negotiable." } ],
+    "Carrot Ironfoundersson": [ { "realm": "ankh-morpork-city-watch", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Letter home to the dwarf parents in Copperhead — handwritten." } ],
+    "Nobby Nobbs":            [ { "realm": "ankh-morpork-city-watch", "offsetWeeks": 18, "numberOfDays": 1, "notes": "Verifying he is, in fact, human (annual)." } ],
+    "Angua von Überwald":     [ { "realm": "ankh-morpork-city-watch", "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Full moon — extended leave, whereabouts undisclosed." } ],
+    "Mustrum Ridcully":       [ { "realm": "unseen-university",       "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Trout fishing on the Ankh — the fish are extremely dead but he tries anyway." } ],
+    "Rincewind":              [ { "realm": "unseen-university",       "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Running away. Direction: anywhere that isn't here." } ],
+    "The Librarian":          [ { "realm": "unseen-university",       "offsetWeeks": 14, "numberOfDays": 2, "notes": "Banana inventory audit — do NOT call him a monkey. Ook." } ],
+    "The Bursar":             [ { "realm": "unseen-university",       "offsetWeeks": 16, "numberOfDays": 3, "notes": "Dried frog pill prescription review with the apothecary." } ],
+    "Granny Weatherwax":      [ { "realm": "lancre-witches-and-tiffany-aching", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Borrowing — body in cottage, mind out walking with the bees. Sign reads 'I ATEN'T DEAD'." } ],
+    "Nanny Ogg":              [ { "realm": "lancre-witches-and-tiffany-aching", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Family dinner — all fifteen children plus Greebo. Pub run afterward." } ],
+    "Tiffany Aching":         [ { "realm": "lancre-witches-and-tiffany-aching", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Tending the sheep on the Chalk — the land takes precedence over the project." } ],
+    "Magrat Garlick":         [ { "realm": "lancre-witches-and-tiffany-aching", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Royal duties at Lancre Castle — Verence needs help with the kingdom." } ],
+    "Death":                  [ { "realm": "death-and-his-domain",    "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Cat sanctuary visit — DEATH LIKES CATS." } ],
+    "Susan Sto Helit":        [ { "realm": "death-and-his-domain",    "offsetWeeks": 12, "numberOfDays": 4, "notes": "Governess duties — the children require a firm hand and a working poker." } ],
+    "Albert":                 [ { "realm": "death-and-his-domain",    "offsetWeeks": 16, "numberOfDays": 2, "notes": "Restocking the lard supply — fry-ups don't fry themselves." } ]
+  }
+}

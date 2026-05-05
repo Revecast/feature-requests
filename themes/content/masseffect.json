@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "key": "MassEffect",
+  "displayName": "Mass Effect",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "normandy-sr2.test",
+  "account": {
+    "name": "Mass Effect Universe (Test Data)",
+    "accountNumber": "PSA-TEST-MASSEFFECT"
+  },
+  "mailingAddress": {
+    "street": "Normandy SR-2, Docking Bay D24",
+    "city": "Citadel",
+    "state": "Presidium Ward",
+    "postalCode": "SR2-2183",
+    "country": "Citadel Space"
+  },
+
+  "roles": [
+    { "name": "Prothean Beacon Reader",            "canonical": "Solution Architect",                      "description": "Decoder of ancient cipher — designs the over-arching Salesforce solution and interprets cycle-old data patterns." },
+    { "name": "Spectre Operations Lead",           "canonical": "Project Manager",                         "description": "Council-sanctioned operative who marshals the squad, holds the timeline, and answers to the Council." },
+    { "name": "Normandy Quartermaster",            "canonical": "Salesforce Administrator",                "description": "Steward of the ship's manifest — records, layouts, fields and permission sets." },
+    { "name": "Tech Specialist",                   "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC and platform features in the engineering bay — omni-tool always lit." },
+    { "name": "Alliance Practice Commander",       "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Alliance Salesforce craft — sets standards and guides the senior engineers." },
+    { "name": "Senior Citadel Consultant",         "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran consultant who patrols the borders of customer requirements with practiced craft." },
+    { "name": "Citadel Field Consultant",          "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the Terminus Systems under the Senior's eye." },
+    { "name": "Mass Relay Architect",              "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — relay-class integrations." },
+    { "name": "Senior Relay Engineer",             "canonical": "Integration Senior Consultant - India",   "description": "Lays the eezo lattice of API, middleware, and event flows under the Architect's plan." },
+    { "name": "Relay Junior Engineer",             "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the salarian patterns of error handling." },
+    { "name": "Salarian STG Analyst",              "canonical": "QA Engineer",                             "description": "Tends the Special Tasks Group laboratory — finds the maladies in the build before they reach the Council." },
+    { "name": "Asari Matriarch of Outreach",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner of message and product — leads all marketing craft across the galaxy." },
+    { "name": "Senior Citadel Broadcaster",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call across Khalisah al-Jilani's news network." },
+    { "name": "Westerlund News Correspondent",     "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily extranet feed." },
+    { "name": "Council Auditor",                   "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between Council edict and squad execution." },
+    { "name": "N7 Senior Engineer",                "canonical": "Salesforce Senior Developer - USA",       "description": "Elite Alliance engineer — leads the deepest builds and mentors the Tech Specialists." },
+    { "name": "Junior Citadel Operative",          "canonical": "Junior Salesforce Consultant - India",    "description": "First-deployment consultant — learns the trade aboard the Normandy under senior crew." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "normandy-crew",
+      "projectName": "Normandy SR-2 — Squad Coordination Platform",
+      "shortName": "Normandy SCP",
+      "subAccountName": "Normandy SR-2 Crew",
+      "subAccountNumber": "PSA-TEST-MASSEFFECT-NORMANDYCREW",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Normandy Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Squad Roster Review", "billable": true },
+          { "name": "Galaxy Map Reconnaissance", "billable": true },
+          { "name": "War Room Strategy", "billable": true }
+        ]},
+        { "name": "Build the Tantalus Drive", "isDefault": false, "billable": true, "children": [
+          { "name": "Stealth Systems Tuning", "billable": true },
+          { "name": "Thanix Cannon Fitting", "billable": true },
+          { "name": "Joker's Cockpit Refit", "billable": true }
+        ]},
+        { "name": "Migrate the Squad Data", "isDefault": false, "billable": true, "children": [
+          { "name": "Crew Dossier Upload", "billable": true },
+          { "name": "Mission Logs Transfer", "billable": true }
+        ]},
+        { "name": "Testing the Omega-4", "isDefault": false, "billable": true, "children": [
+          { "name": "Suicide Mission Drill", "billable": true },
+          { "name": "Collector Base Sim", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Combat Drills with Vega", "billable": true },
+          { "name": "EDI Tactical Briefings", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "cerberus-illusive-man",
+      "projectName": "Cerberus — Pro-Human Intelligence Network",
+      "shortName": "Cerberus PIN",
+      "subAccountName": "Cerberus Operations",
+      "subAccountNumber": "PSA-TEST-MASSEFFECT-CERBERUSILLUSIVEMAN",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Cronos Station Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Black Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Illusive Man's Brief", "billable": true },
+          { "name": "Lazarus Cell Survey", "billable": true },
+          { "name": "Black Site Recon", "billable": true }
+        ]},
+        { "name": "Build the Lazarus Project", "isDefault": false, "billable": true, "children": [
+          { "name": "Cybernetic Reconstruction", "billable": true },
+          { "name": "Project Phoenix Tooling", "billable": true },
+          { "name": "Indoctrination Safeguards", "billable": true }
+        ]},
+        { "name": "Migrate the Cells", "isDefault": false, "billable": true, "children": [
+          { "name": "Operative Dossier Sync", "billable": true },
+          { "name": "Black Funding Ledger", "billable": true }
+        ]},
+        { "name": "Testing the Phoenix", "isDefault": false, "billable": true, "children": [
+          { "name": "Pragia Penal Pen-Test", "billable": true },
+          { "name": "Minuteman Station Stress", "billable": true }
+        ]},
+        { "name": "Training the Operatives", "isDefault": false, "billable": true, "children": [
+          { "name": "Centurion Conditioning", "billable": true },
+          { "name": "Phantom Stealth Drills", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "council-races",
+      "projectName": "Citadel Council — Galactic Compliance Rollout",
+      "shortName": "Council GCR",
+      "subAccountName": "Citadel Council",
+      "subAccountNumber": "PSA-TEST-MASSEFFECT-COUNCILRACES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Presidium Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council Hearings", "isDefault": false, "billable": true, "children": [
+          { "name": "Asari Diplomatic Survey", "billable": true },
+          { "name": "Turian Hierarchy Review", "billable": true },
+          { "name": "Salarian Dalatrass Brief", "billable": true }
+        ]},
+        { "name": "Build the Citadel Tower", "isDefault": false, "billable": true, "children": [
+          { "name": "Council Chamber Foundation", "billable": true },
+          { "name": "Spectre Office Fit-Out", "billable": true },
+          { "name": "C-Sec Integration", "billable": true }
+        ]},
+        { "name": "Migrate the Treaties", "isDefault": false, "billable": true, "children": [
+          { "name": "Treaty of Farixen Index", "billable": true },
+          { "name": "Embassy Records Upload", "billable": true }
+        ]},
+        { "name": "Testing the Wards", "isDefault": false, "billable": true, "children": [
+          { "name": "Zakera Ward UAT", "billable": true },
+          { "name": "Tayseri Ward Stress", "billable": true }
+        ]},
+        { "name": "Training the Spectres", "isDefault": false, "billable": true, "children": [
+          { "name": "Spectre Induction", "billable": true },
+          { "name": "Council Diplomacy Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "reapers-collectors",
+      "projectName": "Reapers — Harvest Cycle Telemetry",
+      "shortName": "Reaper HCT",
+      "subAccountName": "Reaper Sovereign Collective",
+      "subAccountNumber": "PSA-TEST-MASSEFFECT-REAPERSCOLLECTORS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Dark Space Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Indoctrination", "isDefault": false, "billable": true, "children": [
+          { "name": "Sovereign Signal Trace", "billable": true },
+          { "name": "Harbinger Voiceprint", "billable": true },
+          { "name": "Catalyst Doctrine Brief", "billable": true }
+        ]},
+        { "name": "Build the Harvest Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Husk Conversion Foundry", "billable": true },
+          { "name": "Banshee Ascension Lab", "billable": true },
+          { "name": "Brute Hybridization Pit", "billable": true }
+        ]},
+        { "name": "Migrate the Ascended", "isDefault": false, "billable": true, "children": [
+          { "name": "Marauder Squad Roll", "billable": true },
+          { "name": "Collector Pod Manifest", "billable": true }
+        ]},
+        { "name": "Testing the Cycle", "isDefault": false, "billable": true, "children": [
+          { "name": "Omega-4 Relay Trial", "billable": true },
+          { "name": "Earth Invasion Stress", "billable": true }
+        ]},
+        { "name": "Training the Collectors", "isDefault": false, "billable": true, "children": [
+          { "name": "Possession Conditioning", "billable": true },
+          { "name": "General's Battle Doctrine", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "normandy-crew": [
+      { "fullName": "Commander Shepard",  "themedRole": "Spectre Operations Lead" },
+      { "fullName": "Garrus Vakarian",    "themedRole": "N7 Senior Engineer" },
+      { "fullName": "Tali'Zorah",         "themedRole": "Tech Specialist" },
+      { "fullName": "Liara T'Soni",       "themedRole": "Prothean Beacon Reader" },
+      { "fullName": "Urdnot Wrex",        "themedRole": "Alliance Practice Commander" },
+      { "fullName": "Joker",              "themedRole": "Senior Relay Engineer" },
+      { "fullName": "EDI",                "themedRole": "Mass Relay Architect" },
+      { "fullName": "James Vega",         "themedRole": "Junior Citadel Operative" }
+    ],
+    "cerberus-illusive-man": [
+      { "fullName": "The Illusive Man",   "themedRole": "Asari Matriarch of Outreach" },
+      { "fullName": "Miranda Lawson",     "themedRole": "Spectre Operations Lead" },
+      { "fullName": "Jacob Taylor",       "themedRole": "Normandy Quartermaster" },
+      { "fullName": "Kelly Chambers",     "themedRole": "Council Auditor" },
+      { "fullName": "Mordin Solus",       "themedRole": "Salarian STG Analyst" },
+      { "fullName": "Jack",               "themedRole": "Tech Specialist" },
+      { "fullName": "Grunt",              "themedRole": "Citadel Field Consultant" }
+    ],
+    "council-races": [
+      { "fullName": "Councillor Tevos",        "themedRole": "Asari Matriarch of Outreach" },
+      { "fullName": "Councillor Sparatus",     "themedRole": "Alliance Practice Commander" },
+      { "fullName": "Councillor Valern",       "themedRole": "Salarian STG Analyst" },
+      { "fullName": "Councillor Anderson",     "themedRole": "Spectre Operations Lead" },
+      { "fullName": "Captain Bailey",          "themedRole": "Senior Citadel Consultant" },
+      { "fullName": "Nihlus Kryik",            "themedRole": "Citadel Field Consultant" },
+      { "fullName": "Saren Arterius",          "themedRole": "Senior Citadel Broadcaster" }
+    ],
+    "reapers-collectors": [
+      { "fullName": "Sovereign",          "themedRole": "Prothean Beacon Reader" },
+      { "fullName": "Harbinger",          "themedRole": "Spectre Operations Lead" },
+      { "fullName": "Collector General",  "themedRole": "Mass Relay Architect" },
+      { "fullName": "Husk",               "themedRole": "Relay Junior Engineer" },
+      { "fullName": "Banshee",            "themedRole": "Westerlund News Correspondent" },
+      { "fullName": "Marauder",           "themedRole": "Citadel Field Consultant" },
+      { "fullName": "Catalyst",           "themedRole": "Council Auditor" }
+    ]
+  },
+
+  "milestones": {
+    "normandy-crew": [
+      { "name": "Joker Cleared for Departure", "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — clamps released, Normandy underway." },
+      { "name": "Garrus Calibrates the Cannon","type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Thanix calibrations dialed in for the road ahead." },
+      { "name": "Mid-Mission Briefing",        "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: war room debrief with the squad." },
+      { "name": "Shore Leave Invoice",         "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Citadel docking fees and shore-leave reconciliation." },
+      { "name": "Suicide Mission Go-Live",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Omega-4 Relay traversed, base neutralized." },
+      { "name": "Squad Hand-off to EDI",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ship operations handed to EDI and Joker." }
+    ],
+    "cerberus-illusive-man": [
+      { "name": "Lazarus Cell Activated",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Lazarus team assembles on Minuteman Station." },
+      { "name": "Pragia Operation",            "type": "Operational", "offsetPct": 30,  "description": "Build phase: Subject Zero recovery operation green-lit." },
+      { "name": "Illusive Man's Audit",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: holographic review with the Illusive Man himself." },
+      { "name": "Collector Ship Boarding",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Cerberus operatives breach the Collector vessel." },
+      { "name": "Cronos Station Lockdown",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: black-site facility secured." },
+      { "name": "Final Black Account Settle",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: shadow ledger reconciled." }
+    ],
+    "council-races": [
+      { "name": "Open Council Session",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Council convenes in the Presidium tower." },
+      { "name": "Forge the Spectre Authority", "type": "Operational", "offsetPct": 35,  "description": "Build: Spectre commission paperwork and credentials issued." },
+      { "name": "Council Audit Hearing",       "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Tevos, Sparatus and Valern." },
+      { "name": "Embassy Go-Live",             "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: human embassy formally recognized." },
+      { "name": "Council Adjourned",           "type": "Operational", "offsetPct": 100, "description": "Project close: chambers cleared, audit closed." },
+      { "name": "Treaty Settlement Invoice",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Citadel Council." }
+    ],
+    "reapers-collectors": [
+      { "name": "Signal from Dark Space",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: Sovereign's broadcast received across the relay network." },
+      { "name": "Harbinger Assumes Direct Control","type": "Operational","offsetPct": 30,"description": "Discovery: telemetry pipelines model harvest cycle behavior." },
+      { "name": "Husk Foundry Online",         "type": "Operational", "offsetPct": 55,  "description": "Build: conversion forges processing at full throughput." },
+      { "name": "Cycle Acceptance Trial",      "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the Catalyst signs off on harvest readiness." },
+      { "name": "Crucible Activation",         "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Crucible fires, cycle terminated." },
+      { "name": "Final Reaper Reckoning",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Reaper collective." }
+    ]
+  },
+
+  "daysOff": {
+    "Commander Shepard":    [ { "realm": "normandy-crew",         "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Citadel shore leave — fish-feeding at the cabin." } ],
+    "Garrus Vakarian":      [ { "realm": "normandy-crew",         "offsetWeeks": 10, "numberOfDays": 2, "notes": "Calibrations marathon — do not disturb the main battery." } ],
+    "Tali'Zorah":           [ { "realm": "normandy-crew",         "offsetWeeks": 14, "numberOfDays": 3, "notes": "Pilgrimage detour — Migrant Fleet rendezvous." } ],
+    "Liara T'Soni":         [ { "realm": "normandy-crew",         "offsetWeeks": 18, "numberOfDays": 2, "notes": "Shadow Broker dossier review on Hagalaz." } ],
+    "Joker":                [ { "realm": "normandy-crew",         "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Vrolik syndrome physio — cleared by Dr. Chakwas." } ],
+    "James Vega":           [ { "realm": "normandy-crew",         "offsetWeeks": 12, "numberOfDays": 2, "notes": "N-school pull-up tournament on Rio." } ],
+    "The Illusive Man":     [ { "realm": "cerberus-illusive-man", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Cronos Station strategy retreat — cigar inventory check." } ],
+    "Miranda Lawson":       [ { "realm": "cerberus-illusive-man", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Visiting Oriana — sister protective detail." } ],
+    "Jack":                 [ { "realm": "cerberus-illusive-man", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Grissom Academy guest lecture — biotic kids." } ],
+    "Mordin Solus":         [ { "realm": "cerberus-illusive-man", "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Gilbert and Sullivan rehearsal — 'Major-General' run-through." } ],
+    "Councillor Tevos":     [ { "realm": "council-races",         "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Thessia state dinner — diplomatic obligation." } ],
+    "Councillor Sparatus":  [ { "realm": "council-races",         "offsetWeeks": 16, "numberOfDays": 1, "notes": "Palaven hierarchy review." } ],
+    "Councillor Valern":    [ { "realm": "council-races",         "offsetWeeks": 12, "numberOfDays": 2, "notes": "Sur'Kesh STG quarterly classified brief." } ],
+    "Saren Arterius":       [ { "realm": "council-races",         "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Off-grid Spectre operation — reason undisclosed." } ],
+    "Harbinger":            [ { "realm": "reapers-collectors",    "offsetWeeks": 10, "numberOfDays": 3, "notes": "Returns to Dark Space for cycle realignment." } ]
+  }
+}

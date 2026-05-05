@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "key": "Witcher",
+  "displayName": "The Witcher",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "kaer-morhen.test",
+  "account": {
+    "name": "The Continent (Test Data)",
+    "accountNumber": "PSA-TEST-WITCHER"
+  },
+  "mailingAddress": {
+    "street": "Keep of Kaer Morhen, Blue Mountains",
+    "city": "Kaedwen",
+    "state": "Northern Kingdoms",
+    "postalCode": "00451",
+    "country": "The Continent"
+  },
+
+  "roles": [
+    { "name": "Grandmaster of the School of the Wolf", "canonical": "Solution Architect",                      "description": "Eldest witcher of Kaer Morhen — designs the over-arching Salesforce solution and watches over its integrity." },
+    { "name": "Castellan of the Keep",                  "canonical": "Project Manager",                         "description": "Marshals the contract teams, holds the timeline, and answers to the Council of Mages." },
+    { "name": "Court Scribe",                           "canonical": "Salesforce Administrator",                "description": "Steward of records, ledgers, layouts, fields and permission sets across the realm." },
+    { "name": "Runesmith of Mahakam",                   "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features at the dwarven anvils." },
+    { "name": "Northern Marshal",                       "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Northern Salesforce craft — sets standards and guides the senior smiths." },
+    { "name": "Senior Witcher of the Path",             "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran of the Path — patrols the borders of customer requirements with practiced craft." },
+    { "name": "Witcher Apprentice",                     "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the Continent under the Senior Witcher's eye." },
+    { "name": "Portal Mage of Ban Ard",                 "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — bends the planar fabric." },
+    { "name": "Senior Conduit Mage",                    "canonical": "Integration Senior Consultant - India",   "description": "Lays the runes of API, middleware, and event flows under the Portal Mage's plan." },
+    { "name": "Apprentice Conduit Mage",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the dwarvish patterns of error handling." },
+    { "name": "Trial-Master of the Grasses",            "canonical": "QA Engineer",                             "description": "Subjects every build to the Trial — finds the maladies before they reach the contract board." },
+    { "name": "Bardmaster of Oxenfurt",                 "canonical": "Marketing Practice Lead",                 "description": "Lifts the lute and the trumpet for product and message — leads all marketing craft across the Continent." },
+    { "name": "Senior Bard",                            "canonical": "Marketing Senior Consultant",             "description": "Strategist of ballads — sounds the call to gather and convert audiences from Novigrad to Toussaint." },
+    { "name": "Travelling Minstrel",                    "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily verse." },
+    { "name": "Sage of Aretuza",                        "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the elven craft of design." },
+    { "name": "Master Witcher of the Wolf",             "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the Wolf School — the heaviest Apex and LWC lifts on the Path." },
+    { "name": "Novice of the Trials",                   "canonical": "Junior Salesforce Consultant - India",    "description": "Initiate learning the craft — paired with veterans on configuration and discovery." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "northern-kingdoms",
+      "projectName": "Northern Kingdoms — Royal Contracts CRM",
+      "shortName": "NK Contracts",
+      "subAccountName": "Alliance of the Northern Kingdoms",
+      "subAccountNumber": "PSA-TEST-WITCHER-NORTHERN-KINGDOMS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Kaer Morhen Default", "isDefault": true, "billable": false, "children": [
+          { "name": "Keep Maintenance", "billable": true },
+          { "name": "Hearth & Forge Watch", "billable": true }
+        ]},
+        { "name": "Discovery & Council of Kings", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Audience — Vizima", "billable": true },
+          { "name": "Field Reconnaissance — Velen", "billable": true }
+        ]},
+        { "name": "Forge the Silver Sword", "isDefault": false, "billable": true, "children": [
+          { "name": "Meteorite Smelting", "billable": true },
+          { "name": "Runic Inscription", "billable": true }
+        ]},
+        { "name": "Migrate the Bestiary", "isDefault": false, "billable": true, "children": [
+          { "name": "Monster Catalog Inventory", "billable": true },
+          { "name": "Contract Ledger Translation", "billable": true }
+        ]},
+        { "name": "Trials at Kaer Morhen", "isDefault": false, "billable": true, "children": [
+          { "name": "Pendulum Drill (UAT)", "billable": true },
+          { "name": "Combat Course Stress Test", "billable": true }
+        ]},
+        { "name": "Training the King's Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Onboarding", "billable": true },
+          { "name": "Marshal's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "nilfgaard-empire",
+      "projectName": "Nilfgaard — Imperial Intelligence Platform",
+      "shortName": "Nilfgaard IIP",
+      "subAccountName": "Nilfgaardian Empire",
+      "subAccountNumber": "PSA-TEST-WITCHER-NILFGAARD-EMPIRE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "City of Golden Towers Default", "isDefault": true, "billable": false, "children": [
+          { "name": "Palace Maintenance", "billable": true },
+          { "name": "Imperial Logistics", "billable": true }
+        ]},
+        { "name": "Discovery & Imperial Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Provincial Census", "billable": true },
+          { "name": "Strategy with the Emperor", "billable": true }
+        ]},
+        { "name": "Build the Black Banner", "isDefault": false, "billable": true, "children": [
+          { "name": "Legion Standard Forging", "billable": true },
+          { "name": "Sun Sigil Embroidery", "billable": true },
+          { "name": "Cavalry Tack Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Provinces", "isDefault": false, "billable": true, "children": [
+          { "name": "Vassal Roll Call", "billable": true },
+          { "name": "Tribute Ledger Conversion", "billable": true }
+        ]},
+        { "name": "Testing at the Yaruga", "isDefault": false, "billable": true, "children": [
+          { "name": "River Crossing Drill", "billable": true },
+          { "name": "Siege Tower Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Black Ones", "isDefault": false, "billable": true, "children": [
+          { "name": "Legion Foundations", "billable": true },
+          { "name": "Coram Agh Tera Doctrine", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "cintra-elder-blood",
+      "projectName": "Cintra — Elder Blood Lineage Registry",
+      "shortName": "Cintra EBL",
+      "subAccountName": "Kingdom of Cintra",
+      "subAccountNumber": "PSA-TEST-WITCHER-CINTRA-ELDER-BLOOD",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Cintra Throne Default", "isDefault": true, "billable": false, "children": [
+          { "name": "Palace Watch", "billable": true },
+          { "name": "Royal Household", "billable": true }
+        ]},
+        { "name": "Discovery & Lineage Tracing", "isDefault": false, "billable": true, "children": [
+          { "name": "Hen Ichaer Ancestry Survey", "billable": true },
+          { "name": "Druid Council — Skellige", "billable": true },
+          { "name": "Dynastic Strategy", "billable": true }
+        ]},
+        { "name": "Build the Genealogy Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Bloodline Crystal Crafting", "billable": true },
+          { "name": "Royal Seal Engraving", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Coronation Scroll Inventory", "billable": true },
+          { "name": "Treaty Translation", "billable": true }
+        ]},
+        { "name": "Testing on the Isle of Mists", "isDefault": false, "billable": true, "children": [
+          { "name": "Mist Veil Drill", "billable": true },
+          { "name": "Portal Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Skelliger Jarls", "isDefault": false, "billable": true, "children": [
+          { "name": "Drakkar Crew Onboarding", "billable": true },
+          { "name": "Clan Captain's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "lodge-of-sorceresses-monster-hunts",
+      "projectName": "Lodge of Sorceresses — Monster Hunt Coordination",
+      "shortName": "Lodge MHC",
+      "subAccountName": "Lodge of Sorceresses",
+      "subAccountNumber": "PSA-TEST-WITCHER-LODGE-OF-SORCERESSES-MONSTER-HUNTS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Montecalvo Default", "isDefault": true, "billable": false, "children": [
+          { "name": "Tower Maintenance", "billable": true },
+          { "name": "Library Watch", "billable": true }
+        ]},
+        { "name": "Discovery & Scrying", "isDefault": false, "billable": true, "children": [
+          { "name": "Megascope Calibration", "billable": true },
+          { "name": "Dimeritium Survey", "billable": true },
+          { "name": "Lodge Council Strategy", "billable": true }
+        ]},
+        { "name": "Brew the Witcher Decoctions", "isDefault": false, "billable": true, "children": [
+          { "name": "Mandrake Distillation", "billable": true },
+          { "name": "Beast Trophy Rendering", "billable": true },
+          { "name": "Alchemy Bench Tooling", "billable": true }
+        ]},
+        { "name": "Migrate the Grimoires", "isDefault": false, "billable": true, "children": [
+          { "name": "Spell Codex Catalog", "billable": true },
+          { "name": "Bestiary Cross-Reference", "billable": true }
+        ]},
+        { "name": "Testing in the Bog of Velen", "isDefault": false, "billable": true, "children": [
+          { "name": "Crone Encounter Drill", "billable": true },
+          { "name": "Leshy Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Novice Sorceresses", "isDefault": false, "billable": true, "children": [
+          { "name": "Aretuza Foundations", "billable": true },
+          { "name": "Mistress's Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "northern-kingdoms": [
+      { "fullName": "Geralt of Rivia",       "themedRole": "Grandmaster of the School of the Wolf" },
+      { "fullName": "Yennefer of Vengerberg","themedRole": "Portal Mage of Ban Ard" },
+      { "fullName": "Triss Merigold",        "themedRole": "Sage of Aretuza" },
+      { "fullName": "Vesemir",               "themedRole": "Master Witcher of the Wolf" },
+      { "fullName": "Eskel",                 "themedRole": "Senior Witcher of the Path" },
+      { "fullName": "Lambert",               "themedRole": "Witcher Apprentice" },
+      { "fullName": "Jaskier / Dandelion",   "themedRole": "Bardmaster of Oxenfurt" },
+      { "fullName": "Zoltan Chivay",         "themedRole": "Runesmith of Mahakam" },
+      { "fullName": "Vernon Roche",          "themedRole": "Castellan of the Keep" }
+    ],
+    "nilfgaard-empire": [
+      { "fullName": "Emperor Emhyr var Emreis","themedRole": "Northern Marshal" },
+      { "fullName": "Cahir",                  "themedRole": "Castellan of the Keep" },
+      { "fullName": "Fringilla Vigo",         "themedRole": "Senior Conduit Mage" },
+      { "fullName": "Vilgefortz",             "themedRole": "Portal Mage of Ban Ard" },
+      { "fullName": "Letho of Gulet",         "themedRole": "Master Witcher of the Wolf" },
+      { "fullName": "Rience",                 "themedRole": "Apprentice Conduit Mage" },
+      { "fullName": "Cynthia Anna Liv Talbot","themedRole": "Sage of Aretuza" },
+      { "fullName": "Stefan Skellen",         "themedRole": "Court Scribe" }
+    ],
+    "cintra-elder-blood": [
+      { "fullName": "Princess Cirilla / Ciri","themedRole": "Novice of the Trials" },
+      { "fullName": "Queen Calanthe",         "themedRole": "Northern Marshal" },
+      { "fullName": "King Eist",              "themedRole": "Castellan of the Keep" },
+      { "fullName": "Mousesack",              "themedRole": "Sage of Aretuza" },
+      { "fullName": "Crach an Craite",        "themedRole": "Senior Witcher of the Path" },
+      { "fullName": "Pavetta",                "themedRole": "Travelling Minstrel" },
+      { "fullName": "Duny / Emhyr",           "themedRole": "Court Scribe" },
+      { "fullName": "Yarpen Zigrin",          "themedRole": "Runesmith of Mahakam" }
+    ],
+    "lodge-of-sorceresses-monster-hunts": [
+      { "fullName": "Yennefer",               "themedRole": "Grandmaster of the School of the Wolf" },
+      { "fullName": "Triss Merigold",         "themedRole": "Senior Bard" },
+      { "fullName": "Sabrina Glevissig",      "themedRole": "Trial-Master of the Grasses" },
+      { "fullName": "Sheala de Tancarville",  "themedRole": "Senior Conduit Mage" },
+      { "fullName": "Margarita Laux-Antille", "themedRole": "Bardmaster of Oxenfurt" },
+      { "fullName": "Philippa Eilhart",       "themedRole": "Northern Marshal" },
+      { "fullName": "Keira Metz",             "themedRole": "Witcher Apprentice" },
+      { "fullName": "Francesca Findabair",    "themedRole": "Apprentice Conduit Mage" }
+    ]
+  },
+
+  "milestones": {
+    "northern-kingdoms": [
+      { "name": "Council at Kaer Morhen",       "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: the witchers gather at the keep before the season's hunts." },
+      { "name": "Reforging the Silver Sword",   "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the monster-bane blade reforged at the Mahakam anvils." },
+      { "name": "Audience at Vizima",           "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: contract review with King Foltest's court." },
+      { "name": "Contract on the Striga",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the curse of the princess broken at dawn." },
+      { "name": "Slaying the Last Leshy",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the final monster on the board cleared from Velen." },
+      { "name": "Witcher's Hand-off",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the Path passed to the next generation." }
+    ],
+    "nilfgaard-empire": [
+      { "name": "Imperial Decree",              "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Emperor signs the writ in the Golden Towers." },
+      { "name": "Sortie at Sodden Hill",        "type": "Operational", "offsetPct": 30,  "description": "Build phase: the legions advance to the discovery front." },
+      { "name": "Treaty at Cintra",             "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: terms accepted, banners planted." },
+      { "name": "March on Brugge",              "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Black Banner enters the conquered capital." },
+      { "name": "Coronation at the City of Golden Towers","type": "Operational","offsetPct": 100, "description": "Hyper-care close: the Emperor confirms the new viceroy." },
+      { "name": "Tribute Ledger Sealed",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the imperial tribute counted and stamped." }
+    ],
+    "cintra-elder-blood": [
+      { "name": "Betrothal at Cintra",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Law of Surprise invoked, lineage scope set." },
+      { "name": "Trial of the Grasses",         "type": "Operational", "offsetPct": 35,  "description": "Build: Ciri's powers awakened, registry schema confirmed." },
+      { "name": "Slaughter of Cintra Audit",    "type": "Gate",        "offsetPct": 60,  "description": "Solution review: surviving heirs reconciled in the registry." },
+      { "name": "Reunion on the Isle of Mists", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Elder Blood lineage published to the realms." },
+      { "name": "Departure to Tor Lara",        "type": "Operational", "offsetPct": 100, "description": "Project close: Ciri vanishes through the tower portal." },
+      { "name": "Final Lineage Reckoning",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Royal Treasury of Cintra." }
+    ],
+    "lodge-of-sorceresses-monster-hunts": [
+      { "name": "Convocation at Montecalvo",    "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the Lodge's hidden tower." },
+      { "name": "Scry the Continent",           "type": "Operational", "offsetPct": 30,  "description": "Discovery: monster hot-spots modelled from megascope visions." },
+      { "name": "Brew the Decoction Set",       "type": "Operational", "offsetPct": 55,  "description": "Build: alchemy benches tooled and dashboards stocked." },
+      { "name": "Hunt at Crookback Bog",        "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the Crones contract cleared in the field." },
+      { "name": "The Wild Hunt Repelled",       "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the spectral riders driven back beyond the veil." },
+      { "name": "Lodge Recompense",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Lodge of Sorceresses." }
+    ]
+  },
+
+  "daysOff": {
+    "Geralt of Rivia":         [ { "realm": "northern-kingdoms",                 "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Roach the mare needs reshoeing — three days at the smithy." } ],
+    "Yennefer of Vengerberg":  [ { "realm": "northern-kingdoms",                 "offsetWeeks": 12, "numberOfDays": 2, "notes": "Lilac and gooseberries — personal retreat to Vengerberg." } ],
+    "Triss Merigold":          [ { "realm": "lodge-of-sorceresses-monster-hunts","offsetWeeks": 6,  "numberOfDays": 4, "notes": "Recovering from Sodden burns — convalescence in Maribor." } ],
+    "Vesemir":                  [ { "realm": "northern-kingdoms",                 "offsetWeeks": 18, "numberOfDays": 5, "notes": "Annual Kaer Morhen winter — keep maintenance and storytelling." } ],
+    "Jaskier / Dandelion":     [ { "realm": "northern-kingdoms",                 "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Tour stop in Oxenfurt — new ballad debut at the Chameleon." } ],
+    "Zoltan Chivay":           [ { "realm": "northern-kingdoms",                 "offsetWeeks": 14, "numberOfDays": 3, "notes": "Family in Mahakam — quarterly Gwent tournament." } ],
+    "Princess Cirilla / Ciri": [ { "realm": "cintra-elder-blood",                "offsetWeeks": 10, "numberOfDays": 4, "notes": "Sword forms with Vesemir — extended training at Kaer Morhen." } ],
+    "Queen Calanthe":          [ { "realm": "cintra-elder-blood",                "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Inspecting the Skellige fleet at Kaer Trolde." } ],
+    "Mousesack":                [ { "realm": "cintra-elder-blood",                "offsetWeeks": 16, "numberOfDays": 3, "notes": "Druid moot in the Skellige sacred grove." } ],
+    "Emperor Emhyr var Emreis": [ { "realm": "nilfgaard-empire",                  "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Closed audience week at the City of Golden Towers." } ],
+    "Cahir":                    [ { "realm": "nilfgaard-empire",                  "offsetWeeks": 12, "numberOfDays": 3, "notes": "Visiting family in Vicovaro." } ],
+    "Letho of Gulet":           [ { "realm": "nilfgaard-empire",                  "offsetWeeks": 18, "numberOfDays": 4, "notes": "School of the Viper retreat — Gorthur Guaer." } ],
+    "Philippa Eilhart":        [ { "realm": "lodge-of-sorceresses-monster-hunts","offsetWeeks": 8,  "numberOfDays": 2, "notes": "Owl-form scouting over Novigrad — solo flight." } ],
+    "Keira Metz":               [ { "realm": "lodge-of-sorceresses-monster-hunts","offsetWeeks": 14, "numberOfDays": 3, "notes": "Cottage upgrades in Velen — new alchemy lab." } ],
+    "Francesca Findabair":     [ { "realm": "lodge-of-sorceresses-monster-hunts","offsetWeeks": 4,  "numberOfDays": 5, "notes": "Dol Blathanna spring rites — Aen Seidhe ceremony." } ]
+  }
+}

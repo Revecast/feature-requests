@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "key": "PrincessBride",
+  "displayName": "The Princess Bride",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "florin-and-guilder.test",
+  "account": {
+    "name": "Kingdom of Florin (Test Data)",
+    "accountNumber": "PSA-TEST-PRINCESSBRIDE"
+  },
+  "mailingAddress": {
+    "street": "1 Castle Approach, Florin Castle",
+    "city": "Florin City",
+    "state": "Florin",
+    "postalCode": "FL-0001",
+    "country": "Florin"
+  },
+
+  "roles": [
+    { "name": "Master of the Sword",              "canonical": "Solution Architect",                      "description": "Six-fingered swordmaster of design — shapes the over-arching Salesforce solution and defends its honor." },
+    { "name": "Captain of the Guard",             "canonical": "Project Manager",                         "description": "Marshals the brute squad of delivery, holds the timeline, and answers to the prince." },
+    { "name": "Keeper of the Castle Ledger",      "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields, and permission sets — knows every door of the castle." },
+    { "name": "Court Alchemist",                  "canonical": "Salesforce Developer",                    "description": "Brews Apex, LWC, and platform features in the back of the miracle shop." },
+    { "name": "Dread Pirate of the Practice",     "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all American Salesforce craft — sets standards and trains the next Roberts." },
+    { "name": "Spanish Swordmaster",              "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols requirements with practiced craft — hello, my name is Inigo, you killed my data model, prepare to refactor." },
+    { "name": "Apprentice of the Brotherhood",    "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the swordmaster's eye." },
+    { "name": "Architect of the Cliffs",          "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the Cliffs of Insanity." },
+    { "name": "Climber of the Cliffs",            "canonical": "Integration Senior Consultant - India",   "description": "Lays the rope of API, middleware, and event flows under the architect's plan." },
+    { "name": "Apprentice Climber",               "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling on the rocks." },
+    { "name": "Royal Healer of the Houses",       "canonical": "QA Engineer",                             "description": "Tends the mostly-dead and the all-dead — finds the maladies in the build before they reach the prince." },
+    { "name": "Herald of the Crown",              "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for the royal wedding — leads all marketing craft." },
+    { "name": "Trumpeter of the Royal Wedding",   "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert the kingdom." },
+    { "name": "Banner-Bearer of Florin",          "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Council Scribe of the Crown",      "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the prince's wishes and the alchemist's craft." },
+    { "name": "Master Smith of Andalusia",        "canonical": "Salesforce Senior Developer - USA",       "description": "Forges the most senior Apex and platform features in the great American foundries." },
+    { "name": "Stable Boy of the Farm",           "canonical": "Junior Salesforce Consultant - India",    "description": "As you wish — fetches, configures, and learns the craft from Westley himself." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "westley-and-buttercup",
+      "projectName": "Westley & Buttercup — True Love Reunification CRM",
+      "shortName": "True Love CRM",
+      "subAccountName": "House of Westley & Buttercup",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-WESTLEY-AND-BUTTERCUP",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "As You Wish Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cliffs of Insanity", "isDefault": false, "billable": true, "children": [
+          { "name": "Rope Climb Reconnaissance", "billable": true },
+          { "name": "Battle of Wits Planning", "billable": true },
+          { "name": "Strategy on the Cliff Edge", "billable": true }
+        ]},
+        { "name": "Build the Pirate Ship", "isDefault": false, "billable": true, "children": [
+          { "name": "Mast & Sail Forging", "billable": true },
+          { "name": "Crew Quarters Construction", "billable": true },
+          { "name": "Black Flag Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Treasure", "isDefault": false, "billable": true, "children": [
+          { "name": "Doubloon Inventory", "billable": true },
+          { "name": "Map Translation", "billable": true }
+        ]},
+        { "name": "Testing the Fire Swamp", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Sand Drill (UAT)", "billable": true },
+          { "name": "R.O.U.S. Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "New Roberts Onboarding", "billable": true },
+          { "name": "Swordfighting Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "florin-court",
+      "projectName": "Florin Court — Royal Wedding Operations Platform",
+      "shortName": "Florin RWO",
+      "subAccountName": "Royal Court of Florin",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-FLORIN-COURT",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Castle Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Royal Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Court Survey", "billable": true },
+          { "name": "Guild Headcount", "billable": true },
+          { "name": "Strategy with the Prince", "billable": true }
+        ]},
+        { "name": "Build the Wedding", "isDefault": false, "billable": true, "children": [
+          { "name": "Chapel Construction", "billable": true },
+          { "name": "Royal Vestment Forging", "billable": true },
+          { "name": "Tapestry Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Subjects", "isDefault": false, "billable": true, "children": [
+          { "name": "Citizen Roll Call", "billable": true },
+          { "name": "Provisioning Carts", "billable": true }
+        ]},
+        { "name": "Testing the Pit of Despair", "isDefault": false, "billable": true, "children": [
+          { "name": "Machine Calibration Drill", "billable": true },
+          { "name": "Life-Sucking Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Page Foundations", "billable": true },
+          { "name": "Clergyman's Manual (Mawage)", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mountain-cottage-crew",
+      "projectName": "Mountain Cottage — Miracle Pill Manufacturing System",
+      "shortName": "Cottage MPM",
+      "subAccountName": "Miracle Max & Co.",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-MOUNTAIN-COTTAGE-CREW",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Cottage Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Bedside Reading", "isDefault": false, "billable": true, "children": [
+          { "name": "Grandson Symptom Survey", "billable": true },
+          { "name": "Storybook Page Audit", "billable": true },
+          { "name": "Frame Narrative Strategy", "billable": true }
+        ]},
+        { "name": "Build the Miracle Pill", "isDefault": false, "billable": true, "children": [
+          { "name": "Chocolate Coating Forging", "billable": true },
+          { "name": "Mostly-Dead Diagnostics", "billable": true },
+          { "name": "Bellows Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Recipes", "isDefault": false, "billable": true, "children": [
+          { "name": "Herb Inventory", "billable": true },
+          { "name": "Spell Translation", "billable": true }
+        ]},
+        { "name": "Testing the Cure", "isDefault": false, "billable": true, "children": [
+          { "name": "Resurrection Drill (UAT)", "billable": true },
+          { "name": "MLT Sandwich Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Apprentices", "isDefault": false, "billable": true, "children": [
+          { "name": "Valerie's Workshop", "billable": true },
+          { "name": "Storyteller's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "wilds-and-misadventures",
+      "projectName": "Wilds & Misadventures — Hazard Mitigation Implementation",
+      "shortName": "Wilds HMI",
+      "subAccountName": "Brute Squad & Wilds Cooperative",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-WILDS-AND-MISADVENTURES",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Brute Squad Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Hazard Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Lightning Sand Calibration", "billable": true },
+          { "name": "Fire Swamp Vision Quest", "billable": true },
+          { "name": "Eel-Eater Council", "billable": true }
+        ]},
+        { "name": "Build the Pit of Despair", "isDefault": false, "billable": true, "children": [
+          { "name": "Dungeon Branch Selection", "billable": true },
+          { "name": "Machine Construction", "billable": true },
+          { "name": "Albino's Cleanup Crew", "billable": true }
+        ]},
+        { "name": "Migrate the Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Brotherhood Manuscript Catalog", "billable": true },
+          { "name": "R.O.U.S. Pedigree Recording", "billable": true }
+        ]},
+        { "name": "Testing the Hazards", "isDefault": false, "billable": true, "children": [
+          { "name": "Flame Spurt Trial", "billable": true },
+          { "name": "Snow Sand Verification", "billable": true }
+        ]},
+        { "name": "Training the Brute Squad", "isDefault": false, "billable": true, "children": [
+          { "name": "Cudgel & Beard Refresh", "billable": true },
+          { "name": "Squad Recruitment Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "westley-and-buttercup": [
+      { "fullName": "Westley",                     "themedRole": "Master of the Sword" },
+      { "fullName": "Princess Buttercup",          "themedRole": "Herald of the Crown" },
+      { "fullName": "Inigo Montoya",               "themedRole": "Spanish Swordmaster" },
+      { "fullName": "Fezzik",                      "themedRole": "Captain of the Guard" },
+      { "fullName": "Vizzini",                     "themedRole": "Council Scribe of the Crown" },
+      { "fullName": "Dread Pirate Roberts (Original)", "themedRole": "Dread Pirate of the Practice" },
+      { "fullName": "Yellin",                      "themedRole": "Keeper of the Castle Ledger" },
+      { "fullName": "Pierre",                      "themedRole": "Apprentice of the Brotherhood" }
+    ],
+    "florin-court": [
+      { "fullName": "Prince Humperdinck",          "themedRole": "Master of the Sword" },
+      { "fullName": "Count Tyrone Rugen",          "themedRole": "Architect of the Cliffs" },
+      { "fullName": "King Lotharon",               "themedRole": "Dread Pirate of the Practice" },
+      { "fullName": "Queen Bella",                 "themedRole": "Herald of the Crown" },
+      { "fullName": "The Impressive Clergyman",    "themedRole": "Trumpeter of the Royal Wedding" },
+      { "fullName": "Buttercup's Albino",          "themedRole": "Stable Boy of the Farm" }
+    ],
+    "mountain-cottage-crew": [
+      { "fullName": "Miracle Max",                 "themedRole": "Court Alchemist" },
+      { "fullName": "Valerie",                     "themedRole": "Royal Healer of the Houses" },
+      { "fullName": "The Grandfather",             "themedRole": "Council Scribe of the Crown" },
+      { "fullName": "The Grandson",                "themedRole": "Stable Boy of the Farm" },
+      { "fullName": "Fred Savage",                 "themedRole": "Banner-Bearer of Florin" },
+      { "fullName": "Peter Falk",                  "themedRole": "Master Smith of Andalusia" },
+      { "fullName": "The Storyteller",             "themedRole": "Trumpeter of the Royal Wedding" }
+    ],
+    "wilds-and-misadventures": [
+      { "fullName": "The Brute Squad Leader",      "themedRole": "Captain of the Guard" },
+      { "fullName": "The Eel-Eater",               "themedRole": "Climber of the Cliffs" },
+      { "fullName": "R.O.U.S. Handler",            "themedRole": "Apprentice Climber" },
+      { "fullName": "Fire Swamp Surveyor",         "themedRole": "Spanish Swordmaster" },
+      { "fullName": "Lightning Sand Surveyor",     "themedRole": "Apprentice of the Brotherhood" },
+      { "fullName": "Pit of Despair Guard",        "themedRole": "Royal Healer of the Houses" },
+      { "fullName": "The Dungeon Albino",          "themedRole": "Keeper of the Castle Ledger" },
+      { "fullName": "Brotherhood Swordsman",       "themedRole": "Master of the Sword" }
+    ]
+  },
+
+  "milestones": {
+    "westley-and-buttercup": [
+      { "name": "Farm Boy Departs",            "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Westley sets sail to seek his fortune." },
+      { "name": "Reforging as Roberts",        "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the new Dread Pirate Roberts takes the helm." },
+      { "name": "Battle of Wits at the Table", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: iocane powder showdown with Vizzini." },
+      { "name": "Through the Fire Swamp",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: survived lightning sand and the R.O.U.S." },
+      { "name": "True Love's Kiss",            "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: reunited with Buttercup at last." },
+      { "name": "Sail into the Sunset",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the four heroes ride white horses into the east." }
+    ],
+    "florin-court": [
+      { "name": "Royal Engagement Announced",  "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the prince announces his betrothal to the bride." },
+      { "name": "Suits of Armor Forged",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: castle defenses prepared for the wedding." },
+      { "name": "Mawage Rehearsal",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the Impressive Clergyman runs through the ceremony." },
+      { "name": "The Wedding Ceremony",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the royal wedding takes place (briefly)." },
+      { "name": "Storming of the Castle",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Inigo and Fezzik lead the assault." },
+      { "name": "Crown Recompense",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the throne room." }
+    ],
+    "mountain-cottage-crew": [
+      { "name": "Wheelbarrow Arrives",         "type": "Gate",        "offsetPct": 10,  "description": "Discovery: a mostly-dead patient is wheeled to the door." },
+      { "name": "Brew the Miracle Pill",       "type": "Operational", "offsetPct": 35,  "description": "Build: chocolate-coated cure manufactured in the back room." },
+      { "name": "Valerie's Sign-Off",          "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the lady of the house — liar, liar!" },
+      { "name": "Patient Revived",             "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the dead boy lives, briefly, then walks." },
+      { "name": "Frame Story Closes",          "type": "Operational", "offsetPct": 100, "description": "Project close: grandfather closes the storybook." },
+      { "name": "Final Reading Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice for the bedtime engagement." }
+    ],
+    "wilds-and-misadventures": [
+      { "name": "Brute Squad Mustered",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the Thieves' Forest — anybody not in the brute squad?" },
+      { "name": "Survey the Fire Swamp",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: hazards mapped — flame spurts, lightning sand, R.O.U.S." },
+      { "name": "Construct the Pit of Despair","type": "Operational", "offsetPct": 55,  "description": "Build: dungeon machine assembled and calibrated by the Albino." },
+      { "name": "Hazard Acceptance Trial",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the wilds are signed off as fit for misadventure." },
+      { "name": "Storm the Castle Together",   "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the squad joins the assault on Florin Castle." },
+      { "name": "Cooperative Settlement",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Brute Squad & Wilds Cooperative." }
+    ]
+  },
+
+  "daysOff": {
+    "Westley":                       [ { "realm": "westley-and-buttercup", "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Recovery at the cottage — mostly-dead convalescence." } ],
+    "Princess Buttercup":            [ { "realm": "florin-court",          "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Riding lessons on Horse — annual." } ],
+    "Inigo Montoya":                 [ { "realm": "westley-and-buttercup", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Searching for the six-fingered man — pre-arranged." } ],
+    "Fezzik":                        [ { "realm": "westley-and-buttercup", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Rhyming workshop — anybody want a peanut?" } ],
+    "Vizzini":                       [ { "realm": "westley-and-buttercup", "offsetWeeks": 18, "numberOfDays": 1, "notes": "Inconceivable! — pondering a battle of wits." } ],
+    "Prince Humperdinck":            [ { "realm": "florin-court",          "offsetWeeks": 10, "numberOfDays": 2, "notes": "Hunting trip — quarterly." } ],
+    "Count Tyrone Rugen":            [ { "realm": "florin-court",          "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Pit of Despair maintenance retreat." } ],
+    "Miracle Max":                   [ { "realm": "mountain-cottage-crew", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Recovering from being fired by Humperdinck — humiliations galore." } ],
+    "Valerie":                       [ { "realm": "mountain-cottage-crew", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Yelling at Humperdinck through the door." } ],
+    "The Grandfather":               [ { "realm": "mountain-cottage-crew", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Looking for a different bedtime book." } ],
+    "The Grandson":                  [ { "realm": "mountain-cottage-crew", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Sick day — actual flu, not just acting." } ],
+    "The Brute Squad Leader":        [ { "realm": "wilds-and-misadventures", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Beard trim and intimidation refresher." } ],
+    "The Eel-Eater":                 [ { "realm": "wilds-and-misadventures", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Eel migration season — mandatory." } ],
+    "The Dungeon Albino":            [ { "realm": "wilds-and-misadventures", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Throat lozenges — chronic whisper strain." } ]
+  }
+}

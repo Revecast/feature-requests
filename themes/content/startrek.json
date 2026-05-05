@@ -1,0 +1,286 @@
+{
+  "schema_version": 1,
+  "key": "StarTrek",
+  "displayName": "Star Trek",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "starfleet.test",
+  "account": {
+    "name": "United Federation of Planets (Test Data)",
+    "accountNumber": "PSA-TEST-STARTREK"
+  },
+  "mailingAddress": {
+    "street": "24-593 Federation Plaza",
+    "city": "San Francisco",
+    "state": "CA",
+    "postalCode": "94129",
+    "country": "United Federation of Planets"
+  },
+
+  "roles": [
+    { "name": "Chief Science Officer",            "canonical": "Solution Architect",                      "description": "Designs the over-arching mission architecture — surveys the unknown and charts the safest course through it." },
+    { "name": "First Officer",                    "canonical": "Project Manager",                         "description": "Runs the duty roster, holds the timeline, and answers to the Captain on mission status." },
+    { "name": "Operations Officer",               "canonical": "Salesforce Administrator",                "description": "Steward of ship's systems — keeps records, layouts, and consoles in working order." },
+    { "name": "Chief Engineer",                   "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features deep in main engineering." },
+    { "name": "Captain of Starfleet Command",     "canonical": "Salesforce Practice Lead - USA",          "description": "Sets standards across the fleet's Salesforce craft and mentors the senior officers." },
+    { "name": "Senior Engineering Officer",       "canonical": "Salesforce Senior Consultant - India",    "description": "Veteran of countless deck-12 retrofits — carries discovery and configuration with practiced hand." },
+    { "name": "Junior Engineering Officer",       "canonical": "Salesforce Consultant - India",           "description": "Learning the consoles under the Chief's eye — handles configuration and routine builds." },
+    { "name": "Chief of Subspace Communications", "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great subspace links between Salesforce and the realms beyond." },
+    { "name": "Senior Comms Officer",             "canonical": "Integration Senior Consultant - India",   "description": "Lays the relays of API, middleware, and event flows under the Chief Comms officer's plan." },
+    { "name": "Comms Relay Technician",           "canonical": "Integration Consultant - India",          "description": "Learning the craft of integration — webhooks, batch, callouts, and Klingon-grade error handling." },
+    { "name": "Chief Medical Officer",            "canonical": "QA Engineer",                             "description": "Tends the wounded systems — finds the maladies in the build before they reach the bridge." },
+    { "name": "Federation Diplomatic Lead",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the Federation banner — leads the entire marketing and outreach craft." },
+    { "name": "Senior Diplomatic Officer",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of first-contact campaigns — sounds the call to gather and convert." },
+    { "name": "Diplomatic Attaché",               "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily away-mission." },
+    { "name": "Stellar Cartographer",             "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the Captain's intent and the engineer's craft." },
+    { "name": "Senior Engineering Officer — USA", "canonical": "Salesforce Senior Developer - USA",       "description": "Master engineer of the West Coast yards — leads the most complex platform builds." },
+    { "name": "Cadet Consultant",                 "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh out of the Academy — learns under a senior officer's wing on configuration and admin." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every era starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "tos-enterprise",
+      "projectName": "USS Enterprise NCC-1701 — Five Year Mission CRM",
+      "shortName": "TOS Enterprise",
+      "subAccountName": "USS Enterprise NCC-1701",
+      "subAccountNumber": "PSA-TEST-STARTREK-TOS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Bridge Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sensor Sweep", "isDefault": false, "billable": true, "children": [
+          { "name": "Long-Range Scans", "billable": true },
+          { "name": "Away Team Reconnaissance", "billable": true },
+          { "name": "Captain's Briefing", "billable": true }
+        ]},
+        { "name": "Build the Warp Core", "isDefault": false, "billable": true, "children": [
+          { "name": "Dilithium Chamber Assembly", "billable": true },
+          { "name": "Plasma Conduit Routing", "billable": true },
+          { "name": "Impulse Drive Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Ship's Logs", "isDefault": false, "billable": true, "children": [
+          { "name": "Captain's Log Catalog", "billable": true },
+          { "name": "Tricorder Data Import", "billable": true }
+        ]},
+        { "name": "Testing in the Neutral Zone", "isDefault": false, "billable": true, "children": [
+          { "name": "Red Alert Drill (UAT)", "billable": true },
+          { "name": "Klingon Encounter Simulation", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Cadet Onboarding", "billable": true },
+          { "name": "Department Head Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "tng-enterprise-d",
+      "projectName": "USS Enterprise NCC-1701-D — Galaxy-Class Diplomatic Platform",
+      "shortName": "TNG Enterprise-D",
+      "subAccountName": "USS Enterprise NCC-1701-D",
+      "subAccountNumber": "PSA-TEST-STARTREK-TNG",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Ten Forward Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & First Contact", "isDefault": false, "billable": true, "children": [
+          { "name": "Cultural Survey", "billable": true },
+          { "name": "Holodeck Modeling", "billable": true },
+          { "name": "Senior Staff Briefing", "billable": true }
+        ]},
+        { "name": "Build the Saucer Section", "isDefault": false, "billable": true, "children": [
+          { "name": "Family Quarter Construction", "billable": true },
+          { "name": "Holodeck Suite Build", "billable": true },
+          { "name": "Battle Bridge Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Federation Database", "isDefault": false, "billable": true, "children": [
+          { "name": "Memory Alpha Sync", "billable": true },
+          { "name": "Personnel Records Transfer", "billable": true }
+        ]},
+        { "name": "Testing at Wolf 359", "isDefault": false, "billable": true, "children": [
+          { "name": "Borg Defense Drill", "billable": true },
+          { "name": "Saucer Separation Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Officers", "isDefault": false, "billable": true, "children": [
+          { "name": "Bridge Crew Foundations", "billable": true },
+          { "name": "Diplomatic Protocol Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "ds9-deep-space-9",
+      "projectName": "Deep Space 9 — Bajoran Wormhole Operations",
+      "shortName": "DS9 Ops",
+      "subAccountName": "Deep Space 9 Station",
+      "subAccountNumber": "PSA-TEST-STARTREK-DS9",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Promenade Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cardassian Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Wormhole Sensor Sweep", "billable": true },
+          { "name": "Bajoran Liaison Sessions", "billable": true },
+          { "name": "Founders Threat Briefing", "billable": true }
+        ]},
+        { "name": "Build the Defiant Systems", "isDefault": false, "billable": true, "children": [
+          { "name": "Cloaking Device Integration", "billable": true },
+          { "name": "Quantum Torpedo Tubes", "billable": true },
+          { "name": "Pulse Phaser Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Cardassian Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Occupation Records Cleanup", "billable": true },
+          { "name": "Bajoran Manifest Translation", "billable": true }
+        ]},
+        { "name": "Testing in the Gamma Quadrant", "isDefault": false, "billable": true, "children": [
+          { "name": "Jem'Hadar Ambush Drill", "billable": true },
+          { "name": "Wormhole Stability Test", "billable": true }
+        ]},
+        { "name": "Training the Militia", "isDefault": false, "billable": true, "children": [
+          { "name": "Bajoran Recruit Onboarding", "billable": true },
+          { "name": "Station Ops Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "voyager-discovery",
+      "projectName": "USS Voyager & USS Discovery — Far-Frontier Knowledge Sync",
+      "shortName": "Voyager/Discovery",
+      "subAccountName": "Far-Frontier Task Force",
+      "subAccountNumber": "PSA-TEST-STARTREK-VOY",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Mess Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Delta Quadrant Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Astrometrics Mapping", "billable": true },
+          { "name": "Borg Cube Reconnaissance", "billable": true },
+          { "name": "Captain's Ready Room Strategy", "billable": true }
+        ]},
+        { "name": "Build the Spore Drive", "isDefault": false, "billable": true, "children": [
+          { "name": "Mycelial Network Tuning", "billable": true },
+          { "name": "Bio-Neural Gel Pack Replacement", "billable": true },
+          { "name": "Slipstream Drive Prototype", "billable": true }
+        ]},
+        { "name": "Migrate Caretaker's Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Ocampa Cultural Catalog", "billable": true },
+          { "name": "Borg Collective Memory Index", "billable": true }
+        ]},
+        { "name": "Testing the EMH", "isDefault": false, "billable": true, "children": [
+          { "name": "Holographic Failover Drill", "billable": true },
+          { "name": "Sickbay Stress Simulation", "billable": true }
+        ]},
+        { "name": "Training the Maquis Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Starfleet Protocol Bootcamp", "billable": true },
+          { "name": "Cross-Department Bridge Drill", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "tos-enterprise": [
+      { "fullName": "James T. Kirk",        "themedRole": "Captain of Starfleet Command" },
+      { "fullName": "Mr. Spock",            "themedRole": "Chief Science Officer" },
+      { "fullName": "Leonard McCoy",        "themedRole": "Chief Medical Officer" },
+      { "fullName": "Montgomery Scott",     "themedRole": "Chief Engineer" },
+      { "fullName": "Nyota Uhura",          "themedRole": "Chief of Subspace Communications" },
+      { "fullName": "Hikaru Sulu",          "themedRole": "First Officer" },
+      { "fullName": "Pavel Chekov",         "themedRole": "Junior Engineering Officer" },
+      { "fullName": "Christine Chapel",     "themedRole": "Chief Medical Officer" },
+      { "fullName": "Janice Rand",          "themedRole": "Operations Officer" }
+    ],
+    "tng-enterprise-d": [
+      { "fullName": "Jean-Luc Picard",      "themedRole": "Captain of Starfleet Command" },
+      { "fullName": "William Riker",        "themedRole": "First Officer" },
+      { "fullName": "Data",                 "themedRole": "Chief Science Officer" },
+      { "fullName": "Geordi La Forge",      "themedRole": "Chief Engineer" },
+      { "fullName": "Worf",                 "themedRole": "Operations Officer" },
+      { "fullName": "Beverly Crusher",      "themedRole": "Chief Medical Officer" },
+      { "fullName": "Deanna Troi",          "themedRole": "Federation Diplomatic Lead" },
+      { "fullName": "Tasha Yar",            "themedRole": "Senior Engineering Officer — USA" },
+      { "fullName": "Wesley Crusher",       "themedRole": "Cadet Consultant" },
+      { "fullName": "Guinan",               "themedRole": "Stellar Cartographer" },
+      { "fullName": "Q",                    "themedRole": "Senior Diplomatic Officer" }
+    ],
+    "ds9-deep-space-9": [
+      { "fullName": "Benjamin Sisko",       "themedRole": "Captain of Starfleet Command" },
+      { "fullName": "Kira Nerys",           "themedRole": "First Officer" },
+      { "fullName": "Odo",                  "themedRole": "Operations Officer" },
+      { "fullName": "Quark",                "themedRole": "Diplomatic Attaché" },
+      { "fullName": "Jadzia Dax",           "themedRole": "Chief Science Officer" },
+      { "fullName": "Worf (DS9)",           "themedRole": "Senior Engineering Officer" },
+      { "fullName": "Julian Bashir",        "themedRole": "Chief Medical Officer" },
+      { "fullName": "Miles O'Brien",        "themedRole": "Chief Engineer" },
+      { "fullName": "Elim Garak",           "themedRole": "Senior Diplomatic Officer" },
+      { "fullName": "Gul Dukat",            "themedRole": "Federation Diplomatic Lead" },
+      { "fullName": "Weyoun",               "themedRole": "Comms Relay Technician" }
+    ],
+    "voyager-discovery": [
+      { "fullName": "Kathryn Janeway",      "themedRole": "Captain of Starfleet Command" },
+      { "fullName": "Chakotay",             "themedRole": "First Officer" },
+      { "fullName": "Tuvok",                "themedRole": "Operations Officer" },
+      { "fullName": "Tom Paris",            "themedRole": "Senior Engineering Officer" },
+      { "fullName": "B'Elanna Torres",      "themedRole": "Chief Engineer" },
+      { "fullName": "Harry Kim",            "themedRole": "Junior Engineering Officer" },
+      { "fullName": "The Doctor",           "themedRole": "Chief Medical Officer" },
+      { "fullName": "Seven of Nine",        "themedRole": "Chief Science Officer" },
+      { "fullName": "Neelix",               "themedRole": "Diplomatic Attaché" },
+      { "fullName": "Kes",                  "themedRole": "Cadet Consultant" },
+      { "fullName": "Michael Burnham",      "themedRole": "Senior Engineering Officer — USA" },
+      { "fullName": "Saru",                 "themedRole": "Stellar Cartographer" }
+    ]
+  },
+
+  "milestones": {
+    "tos-enterprise": [
+      { "name": "Depart Spacedock",            "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — moorings released, mission begins." },
+      { "name": "Encounter at Talos IV",       "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: first contact tested under illusion-rich conditions." },
+      { "name": "Audience with the Organians", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: solution review by a higher authority." },
+      { "name": "Tribbles Quarantined",        "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: containment milestone met on K-7." },
+      { "name": "Save the Whales",             "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: time-warp slingshot delivers the payload." },
+      { "name": "Five-Year Mission Close",     "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ship returns to Starbase 11." }
+    ],
+    "tng-enterprise-d": [
+      { "name": "Encounter at Farpoint",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: shakedown cruise complete, judgment of Q deferred." },
+      { "name": "Best of Both Worlds",         "type": "Operational", "offsetPct": 30,  "description": "Build phase: Borg defense subsystems online." },
+      { "name": "Klingon Civil War Resolved",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: cross-quadrant diplomatic flows accepted." },
+      { "name": "Mind's Eye Activation",       "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Holodeck and analytics layer cut over." },
+      { "name": "Veridian III Crash Recovery", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: saucer salvaged, lessons logged." },
+      { "name": "All Good Things Invoice",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: time-paradox subscription resolved." }
+    ],
+    "ds9-deep-space-9": [
+      { "name": "Emissary Arrives",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: station ownership transferred from Cardassia." },
+      { "name": "Wormhole Stabilized",         "type": "Operational", "offsetPct": 35,  "description": "Build: Bajoran wormhole monitoring online." },
+      { "name": "Defiant Commissioning",       "type": "Gate",        "offsetPct": 60,  "description": "Solution review: warship cleared for Dominion patrols." },
+      { "name": "Operation Return",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: station retaken, services restored." },
+      { "name": "What You Leave Behind",       "type": "Operational", "offsetPct": 100, "description": "Project close: Dominion War concluded, hyper-care begins." },
+      { "name": "Ferengi Final Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice — handled per the Rules of Acquisition." }
+    ],
+    "voyager-discovery": [
+      { "name": "Caretaker Displacement",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: crews flung 70,000 light-years — scope formally acknowledged." },
+      { "name": "Borg Cooperative Online",     "type": "Operational", "offsetPct": 30,  "description": "Discovery complete: Seven of Nine integrated into the build team." },
+      { "name": "Spore Drive Stabilized",      "type": "Operational", "offsetPct": 55,  "description": "Build: mycelial network jumps validated." },
+      { "name": "Year of Hell Survived",       "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: ship and timeline both restored." },
+      { "name": "Endgame — Earth Reached",     "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Voyager docks at Earth, Discovery jumps to the 32nd century." },
+      { "name": "Final Far-Frontier Invoice",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Starfleet Command, transmitted via subspace." }
+    ]
+  },
+
+  "daysOff": {
+    "James T. Kirk":      [ { "realm": "tos-enterprise",     "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Shore leave on Risa — captain's prerogative." } ],
+    "Mr. Spock":          [ { "realm": "tos-enterprise",     "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Pon farr — return to Vulcan required." } ],
+    "Leonard McCoy":      [ { "realm": "tos-enterprise",     "offsetWeeks": 14, "numberOfDays": 2, "notes": "Medical conference — 'I'm a doctor, not a delegate.'" } ],
+    "Montgomery Scott":   [ { "realm": "tos-enterprise",     "offsetWeeks": 18, "numberOfDays": 3, "notes": "Engineering retreat — and a wee dram or two." } ],
+    "Jean-Luc Picard":    [ { "realm": "tng-enterprise-d",   "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Vineyard at Château Picard — annual harvest." } ],
+    "William Riker":      [ { "realm": "tng-enterprise-d",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Trombone gig at Ten Forward — pre-arranged." } ],
+    "Data":               [ { "realm": "tng-enterprise-d",   "offsetWeeks": 16, "numberOfDays": 1, "notes": "Positronic matrix diagnostic — quarterly." } ],
+    "Worf":               [ { "realm": "tng-enterprise-d",   "offsetWeeks": 20, "numberOfDays": 4, "notes": "Day of Honor observance on Qo'noS." } ],
+    "Benjamin Sisko":     [ { "realm": "ds9-deep-space-9",   "offsetWeeks": 5,  "numberOfDays": 3, "notes": "Sisko's Creole Kitchen — visiting his father in New Orleans." } ],
+    "Kira Nerys":         [ { "realm": "ds9-deep-space-9",   "offsetWeeks": 10, "numberOfDays": 2, "notes": "Bajoran Gratitude Festival pilgrimage." } ],
+    "Quark":              [ { "realm": "ds9-deep-space-9",   "offsetWeeks": 14, "numberOfDays": 3, "notes": "Ferengi Commerce Authority audit — unavoidable." } ],
+    "Miles O'Brien":      [ { "realm": "ds9-deep-space-9",   "offsetWeeks": 18, "numberOfDays": 2, "notes": "Keiko's botany expedition — family time." } ],
+    "Kathryn Janeway":    [ { "realm": "voyager-discovery",  "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Coffee resupply run — black, no compromises." } ],
+    "Tom Paris":          [ { "realm": "voyager-discovery",  "offsetWeeks": 10, "numberOfDays": 3, "notes": "Captain Proton holodeck marathon." } ],
+    "Seven of Nine":      [ { "realm": "voyager-discovery",  "offsetWeeks": 14, "numberOfDays": 1, "notes": "Regeneration cycle extension — alcove maintenance." } ]
+  }
+}

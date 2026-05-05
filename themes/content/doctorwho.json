@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "key": "DoctorWho",
+  "displayName": "Doctor Who",
+  "category": "Sci-Fi / Fantasy",
+  "emailDomain": "tardis.test",
+  "account": {
+    "name": "Whoniverse (Test Data)",
+    "accountNumber": "PSA-TEST-DOCTORWHO"
+  },
+  "mailingAddress": {
+    "street": "76 Totter's Lane, Foreman's Yard",
+    "city": "Shoreditch",
+    "state": "London",
+    "postalCode": "E1 6AN",
+    "country": "United Kingdom"
+  },
+
+  "roles": [
+    { "name": "Time Lord Architect",              "canonical": "Solution Architect",                      "description": "Gallifreyan elder who shapes the timelines of the solution — sees every paradox before it forms." },
+    { "name": "TARDIS Pilot",                     "canonical": "Project Manager",                         "description": "Steers the delivery vessel through the time vortex — keeps the crew alive and the schedule intact." },
+    { "name": "UNIT Quartermaster",               "canonical": "Salesforce Administrator",                "description": "Keeper of the records, kit, and clearances — every layout, permset and field accounted for." },
+    { "name": "Sonic Engineer",                   "canonical": "Salesforce Developer",                    "description": "Wielder of the sonic screwdriver — builds Apex, LWC and platform code for any lock that won't open." },
+    { "name": "Academy Don of Prydonia",          "canonical": "Salesforce Practice Lead - USA",          "description": "Senior Time Lord of the Prydonian Chapter — sets standards for all Salesforce craft and mentors the cardinals." },
+    { "name": "Senior Companion",                 "canonical": "Salesforce Senior Consultant - India",    "description": "Travels at the Doctor's side through the harder adventures — leads discovery and configuration." },
+    { "name": "Companion Initiate",               "canonical": "Salesforce Consultant - India",           "description": "First-trip traveller, learning the console and the customer's universe one stop at a time." },
+    { "name": "Vortex Bridge Architect",          "canonical": "Integration Technical Architect - USA",   "description": "Designer of the Eye-of-Harmony spans between Salesforce and worlds beyond — middleware and event flows." },
+    { "name": "Riftwatcher of Cardiff",           "canonical": "Integration Senior Consultant - India",   "description": "Senior engineer guarding the Cardiff Rift — APIs, queues and inbound storms." },
+    { "name": "Riftwatcher Apprentice",           "canonical": "Integration Consultant - India",          "description": "Learns the patterns of the Rift — webhooks, batches, callouts, and the right way to fail." },
+    { "name": "Medical Officer of the TARDIS",    "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds regenerations needed before the patient reaches the customer." },
+    { "name": "Voice of the Shadow Proclamation", "canonical": "Marketing Practice Lead",                 "description": "Speaks for the cause across the galaxies — leads marketing strategy with proclamation-level authority." },
+    { "name": "Herald of the Ood",                "canonical": "Marketing Senior Consultant",             "description": "Channels the song of campaigns — strategy, segmentation, and the long-form narrative." },
+    { "name": "Psychic Paper Designer",           "canonical": "Marketing Consultant",                    "description": "Creates the artefact that says exactly what the audience needs to read — content, creative, daily run." },
+    { "name": "Adipose Industries Analyst",       "canonical": "Business Analyst",                        "description": "Translates between mortal customer and Time Lord — captures requirements without losing weight." },
+    { "name": "Senior Sonic Engineer",            "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran of the workshop in Totter's Lane — owns the gnarly Apex, async, and platform internals." },
+    { "name": "Cloister Bell Initiate",           "canonical": "Junior Salesforce Consultant - India",    "description": "Newest aboard the TARDIS — runs the Cloister Bell checks and pairs on configuration." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every era starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "classic-doctors",
+      "projectName": "Classic Doctors — Gallifreyan Archive Migration",
+      "shortName": "Classic GAM",
+      "subAccountName": "BBC Classic Series Production",
+      "subAccountNumber": "PSA-TEST-DOCTORWHO-CLASSIC-DOCTORS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Totter's Lane Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at Coal Hill", "isDefault": false, "billable": true, "children": [
+          { "name": "Schoolroom Interviews", "billable": true },
+          { "name": "Junkyard Reconnaissance", "billable": true },
+          { "name": "Council of the High Council", "billable": true }
+        ]},
+        { "name": "Build the Console Room", "isDefault": false, "billable": true, "children": [
+          { "name": "Roundel Wall Assembly", "billable": true },
+          { "name": "Time Rotor Tuning", "billable": true },
+          { "name": "Scarf Knitting Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Matrix", "isDefault": false, "billable": true, "children": [
+          { "name": "APC Net Inventory", "billable": true },
+          { "name": "Type 40 Schematic Translation", "billable": true }
+        ]},
+        { "name": "Testing on Skaro", "isDefault": false, "billable": true, "children": [
+          { "name": "Dalek Encounter Drill", "billable": true },
+          { "name": "Cyberman Resistance Test", "billable": true }
+        ]},
+        { "name": "Training the Companions", "isDefault": false, "billable": true, "children": [
+          { "name": "First Trip Briefing", "billable": true },
+          { "name": "Sonic Screwdriver Basics", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "nu-who-rtd-era",
+      "projectName": "Nu-Who RTD Era — Bad Wolf Analytics Rollout",
+      "shortName": "RTD BWA",
+      "subAccountName": "Bad Wolf Productions",
+      "subAccountNumber": "PSA-TEST-DOCTORWHO-NU-WHO-RTD-ERA",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Powell Estate Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Bad Wolf Trail", "isDefault": false, "billable": true, "children": [
+          { "name": "Henrik's Basement Survey", "billable": true },
+          { "name": "Cardiff Rift Mapping", "billable": true },
+          { "name": "Torchwood Briefing", "billable": true }
+        ]},
+        { "name": "Build the Vortex Manipulator", "isDefault": false, "billable": true, "children": [
+          { "name": "Wrist-strap Fabrication", "billable": true },
+          { "name": "Time Agency Integration", "billable": true },
+          { "name": "Estuary Accent Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Library", "isDefault": false, "billable": true, "children": [
+          { "name": "Donna's Files", "billable": true },
+          { "name": "Adipose Records Cleanup", "billable": true }
+        ]},
+        { "name": "Testing on the Game Station", "isDefault": false, "billable": true, "children": [
+          { "name": "Anne Droid Stress Test", "billable": true },
+          { "name": "Dalek Emperor Pen-test", "billable": true }
+        ]},
+        { "name": "Training at Torchwood", "isDefault": false, "billable": true, "children": [
+          { "name": "Hub Onboarding", "billable": true },
+          { "name": "Webley Revolver Drill", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "moffat-era",
+      "projectName": "Moffat Era — Crack-in-the-Wall Time Stream Platform",
+      "shortName": "Moffat CTSP",
+      "subAccountName": "Pandorica Studios",
+      "subAccountNumber": "PSA-TEST-DOCTORWHO-MOFFAT-ERA",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Leadworth Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Bow-tie Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Crack Inspection — Amelia's Bedroom", "billable": true },
+          { "name": "Stormcage Interviews", "billable": true },
+          { "name": "Diary Cross-reference Workshop", "billable": true }
+        ]},
+        { "name": "Build the Pandorica", "isDefault": false, "billable": true, "children": [
+          { "name": "Stonehenge Foundation Casting", "billable": true },
+          { "name": "Auton Guard Conditioning", "billable": true },
+          { "name": "Lock Sequence Engineering", "billable": true }
+        ]},
+        { "name": "Migrate the Memory", "isDefault": false, "billable": true, "children": [
+          { "name": "Silent Sighting Logs", "billable": true },
+          { "name": "Trenzalore Headstone Catalog", "billable": true }
+        ]},
+        { "name": "Testing at Demons Run", "isDefault": false, "billable": true, "children": [
+          { "name": "Headless Monk Drill", "billable": true },
+          { "name": "Flesh Avatar UAT", "billable": true }
+        ]},
+        { "name": "Training at St Luke's", "isDefault": false, "billable": true, "children": [
+          { "name": "Lecture Hall Onboarding", "billable": true },
+          { "name": "Vault Watch Rotation", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "chibnall-rtd2-era",
+      "projectName": "Chibnall & RTD2 Era — Flux Recovery Implementation",
+      "shortName": "Flux FRI",
+      "subAccountName": "Bad Wolf Studios (Cardiff)",
+      "subAccountNumber": "PSA-TEST-DOCTORWHO-CHIBNALL-RTD2-ERA",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sheffield Fam Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Fam Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Flux Damage Survey", "billable": true },
+          { "name": "Division Records Recovery", "billable": true },
+          { "name": "Toymaker's Game Audit", "billable": true }
+        ]},
+        { "name": "Build the Bi-Generation", "isDefault": false, "billable": true, "children": [
+          { "name": "Console Re-skin (Coral)", "billable": true },
+          { "name": "Custard Cream Dispenser Wiring", "billable": true },
+          { "name": "Goblin-proof Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Lone Cyberman Files", "isDefault": false, "billable": true, "children": [
+          { "name": "Cyberium Inventory", "billable": true },
+          { "name": "Dregs Containment Logs", "billable": true }
+        ]},
+        { "name": "Testing at UNIT HQ", "isDefault": false, "billable": true, "children": [
+          { "name": "Sea Devil Tank Drill", "billable": true },
+          { "name": "Sutekh Containment Trial", "billable": true }
+        ]},
+        { "name": "Training the Fam", "isDefault": false, "billable": true, "children": [
+          { "name": "Park Hill Onboarding", "billable": true },
+          { "name": "Liverpool Field Briefing", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "classic-doctors": [
+      { "fullName": "First Doctor (William Hartnell)",     "themedRole": "Time Lord Architect" },
+      { "fullName": "Second Doctor (Patrick Troughton)",   "themedRole": "Sonic Engineer" },
+      { "fullName": "Third Doctor (Jon Pertwee)",          "themedRole": "Academy Don of Prydonia" },
+      { "fullName": "Fourth Doctor (Tom Baker)",           "themedRole": "Time Lord Architect" },
+      { "fullName": "Fifth Doctor (Peter Davison)",        "themedRole": "TARDIS Pilot" },
+      { "fullName": "Sixth Doctor (Colin Baker)",          "themedRole": "Senior Sonic Engineer" },
+      { "fullName": "Seventh Doctor (Sylvester McCoy)",    "themedRole": "Vortex Bridge Architect" },
+      { "fullName": "Susan Foreman",                       "themedRole": "Cloister Bell Initiate" },
+      { "fullName": "Sarah Jane Smith",                    "themedRole": "Senior Companion" }
+    ],
+    "nu-who-rtd-era": [
+      { "fullName": "Ninth Doctor (Christopher Eccleston)","themedRole": "TARDIS Pilot" },
+      { "fullName": "Tenth Doctor (David Tennant)",        "themedRole": "Time Lord Architect" },
+      { "fullName": "Rose Tyler",                          "themedRole": "Senior Companion" },
+      { "fullName": "Mickey Smith",                        "themedRole": "Riftwatcher Apprentice" },
+      { "fullName": "Captain Jack Harkness",               "themedRole": "Riftwatcher of Cardiff" },
+      { "fullName": "Donna Noble",                         "themedRole": "Adipose Industries Analyst" },
+      { "fullName": "Martha Jones",                        "themedRole": "Medical Officer of the TARDIS" },
+      { "fullName": "Wilfred Mott",                        "themedRole": "UNIT Quartermaster" }
+    ],
+    "moffat-era": [
+      { "fullName": "Eleventh Doctor (Matt Smith)",        "themedRole": "Time Lord Architect" },
+      { "fullName": "Twelfth Doctor (Peter Capaldi)",      "themedRole": "Academy Don of Prydonia" },
+      { "fullName": "Amy Pond",                            "themedRole": "Senior Companion" },
+      { "fullName": "Rory Williams",                       "themedRole": "Medical Officer of the TARDIS" },
+      { "fullName": "River Song",                          "themedRole": "Vortex Bridge Architect" },
+      { "fullName": "Clara Oswald",                        "themedRole": "Companion Initiate" },
+      { "fullName": "Bill Potts",                          "themedRole": "Cloister Bell Initiate" },
+      { "fullName": "Nardole",                             "themedRole": "UNIT Quartermaster" },
+      { "fullName": "Missy (the Master)",                  "themedRole": "Voice of the Shadow Proclamation" }
+    ],
+    "chibnall-rtd2-era": [
+      { "fullName": "Thirteenth Doctor (Jodie Whittaker)", "themedRole": "Time Lord Architect" },
+      { "fullName": "Fourteenth Doctor (Tennant returns)", "themedRole": "Senior Sonic Engineer" },
+      { "fullName": "Fifteenth Doctor (Ncuti Gatwa)",      "themedRole": "TARDIS Pilot" },
+      { "fullName": "Yasmin Khan",                         "themedRole": "Senior Companion" },
+      { "fullName": "Ryan Sinclair",                       "themedRole": "Companion Initiate" },
+      { "fullName": "Graham O'Brien",                      "themedRole": "Psychic Paper Designer" },
+      { "fullName": "Dan Lewis",                           "themedRole": "Riftwatcher Apprentice" },
+      { "fullName": "Ruby Sunday",                         "themedRole": "Herald of the Ood" },
+      { "fullName": "The Toymaker",                        "themedRole": "Voice of the Shadow Proclamation" }
+    ]
+  },
+
+  "milestones": {
+    "classic-doctors": [
+      { "name": "TARDIS Departs Totter's Lane",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — junkyard doors close, time rotor begins." },
+      { "name": "Reverse the Polarity",           "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: neutron flow inverted, console live." },
+      { "name": "High Council Audit",             "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: review on Gallifrey before the Time Lords." },
+      { "name": "Genesis of the Daleks",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: pivotal Skaro engagement billed in full." },
+      { "name": "Logopolis Go-Live",              "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: block-transfer computations cut over." },
+      { "name": "The Regeneration Hand-off",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: previous incarnation passes the keys." }
+    ],
+    "nu-who-rtd-era": [
+      { "name": "Nestene Awakens — Project Kickoff","type": "Gate",      "offsetPct": 5,   "description": "Project kickoff: shop-window dummies stir, Auton invasion drill begins." },
+      { "name": "Bad Wolf Trail Lit",             "type": "Operational", "offsetPct": 30,  "description": "Build phase: graffiti markers connected end-to-end." },
+      { "name": "The Doctor Dances",              "type": "Gate",        "offsetPct": 55,  "description": "UAT gate: Empty Child cured — everybody lives." },
+      { "name": "DoctorDonna Activated",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: meta-crisis fires, full reporting metaphor live in production." },
+      { "name": "End of Time — Hyper-care",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: knock four times — handover complete." },
+      { "name": "Final Voyage Invoice",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the long way round, settled." }
+    ],
+    "moffat-era": [
+      { "name": "The Eleventh Hour",              "type": "Gate",        "offsetPct": 10,  "description": "Discovery: fish-fingers-and-custard kickoff with Amelia." },
+      { "name": "The Pandorica Opens",            "type": "Operational", "offsetPct": 35,  "description": "Build: the perfect prison forged from Stonehenge upward." },
+      { "name": "A Good Man Goes to War",         "type": "Gate",        "offsetPct": 60,  "description": "Solution review at Demons Run before the muster." },
+      { "name": "The Day of the Doctor",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: all thirteen incarnations cut over Gallifrey at once." },
+      { "name": "Heaven Sent — Diamond Wall",     "type": "Operational", "offsetPct": 100, "description": "Project close: 4.5 billion years of patient hyper-care." },
+      { "name": "Final Reckoning at the Vault",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: 70 years guarding Missy, settled." }
+    ],
+    "chibnall-rtd2-era": [
+      { "name": "The Woman Who Fell to Earth",    "type": "Gate",        "offsetPct": 10,  "description": "Kickoff in Sheffield: Tim Shaw audit, Fam assembled." },
+      { "name": "Spyfall — Master Returns",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: classified threat assessment with O at MI6." },
+      { "name": "Flux Damage Containment",        "type": "Operational", "offsetPct": 55,  "description": "Build: half the universe rebuilt, Division records re-shelved." },
+      { "name": "The Giggle — Bi-Generation",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: two Doctors signed off, Toymaker's game closed." },
+      { "name": "Empire of Death — Go-Live",      "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Sutekh defeated, Ruby's mystery resolved." },
+      { "name": "73 Yards Final Invoice",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Welsh coast walk." }
+    ]
+  },
+
+  "daysOff": {
+    "Sarah Jane Smith":    [ { "realm": "classic-doctors",   "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Bannerman Road — K9 maintenance and Mr Smith firmware update." } ],
+    "Susan Foreman":       [ { "realm": "classic-doctors",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Coal Hill School term exams — must not miss History." } ],
+    "Fourth Doctor (Tom Baker)": [ { "realm": "classic-doctors", "offsetWeeks": 18, "numberOfDays": 4, "notes": "Jelly baby restock and scarf darning at the seamstress." } ],
+    "Rose Tyler":          [ { "realm": "nu-who-rtd-era",    "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Powell Estate — chips with Mum and Mickey." } ],
+    "Captain Jack Harkness":[{ "realm": "nu-who-rtd-era",    "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Cardiff Hub — Torchwood quarterly review (and flirting)." } ],
+    "Donna Noble":         [ { "realm": "nu-who-rtd-era",    "offsetWeeks": 14, "numberOfDays": 5, "notes": "Chiswick wedding rehearsal — DO NOT mention bees." } ],
+    "Wilfred Mott":        [ { "realm": "nu-who-rtd-era",    "offsetWeeks": 20, "numberOfDays": 2, "notes": "Stargazing on the hill — comet expected." } ],
+    "Amy Pond":            [ { "realm": "moffat-era",        "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Leadworth — kissogram booking she can't get out of." } ],
+    "Rory Williams":       [ { "realm": "moffat-era",        "offsetWeeks": 10, "numberOfDays": 2, "notes": "Centurion duty — 2,000-year night-shift back-pay reconciliation." } ],
+    "River Song":          [ { "realm": "moffat-era",        "offsetWeeks": 16, "numberOfDays": 4, "notes": "Stormcage furlough — diary update day." } ],
+    "Clara Oswald":        [ { "realm": "moffat-era",        "offsetWeeks": 20, "numberOfDays": 1, "notes": "Coal Hill School parents' evening." } ],
+    "Yasmin Khan":         [ { "realm": "chibnall-rtd2-era", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "South Yorkshire Police — refresher firearms training." } ],
+    "Graham O'Brien":      [ { "realm": "chibnall-rtd2-era", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Cancer check-up at Sheffield General — annual." } ],
+    "Ruby Sunday":         [ { "realm": "chibnall-rtd2-era", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Carla's foster-home open day — Ruby Road." } ],
+    "Dan Lewis":           [ { "realm": "chibnall-rtd2-era", "offsetWeeks": 18, "numberOfDays": 1, "notes": "Liverpool — food bank volunteer shift." } ]
+  }
+}
