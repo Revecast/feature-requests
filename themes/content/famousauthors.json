@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "key": "FamousAuthors",
+  "displayName": "Famous Authors",
+  "category": "Education",
+  "emailDomain": "literary-canon.test",
+  "account": {
+    "name": "Republic of Letters (Test Data)",
+    "accountNumber": "PSA-TEST-FAMOUSAUTHORS"
+  },
+  "mailingAddress": {
+    "street": "12 Parnassus Way",
+    "city": "Stratford-upon-Avon",
+    "state": "Warwickshire",
+    "postalCode": "CV37 6BG",
+    "country": "United Kingdom"
+  },
+
+  "roles": [
+    { "name": "Poet Laureate",                "canonical": "Solution Architect",                      "description": "Crowned voice of the canon — designs the over-arching narrative architecture and watches over its integrity." },
+    { "name": "Editor-in-Chief",              "canonical": "Project Manager",                         "description": "Marshals the writers' room, holds the deadline, and answers to the publisher." },
+    { "name": "Keeper of the Stacks",         "canonical": "Salesforce Administrator",                "description": "Steward of the library — catalogues, layouts, fields and permission sets." },
+    { "name": "Master Typesetter",            "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features at the press." },
+    { "name": "Senior Lecturer in Letters",   "canonical": "Salesforce Practice Lead - USA",          "description": "Chair of the faculty — sets standards and guides the senior writers." },
+    { "name": "Reader of Manuscripts",        "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with a practiced editorial eye." },
+    { "name": "Junior Reader",                "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the canon under the Reader's eye." },
+    { "name": "Translator-in-Residence",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — translates one tongue to another." },
+    { "name": "Assistant Translator",         "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Translator's plan." },
+    { "name": "Apprentice Translator",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the intricate patterns of error handling." },
+    { "name": "Proofreader",                  "canonical": "QA Engineer",                             "description": "Reads the galleys with a sharp pen — finds the errata in the build before it reaches the press." },
+    { "name": "Publisher",                    "canonical": "Marketing Practice Lead",                 "description": "Lifts the imprint and the trumpet for the catalogue — leads all marketing craft." },
+    { "name": "Literary Agent",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather readers and convert them." },
+    { "name": "Pamphleteer",                  "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily print run." },
+    { "name": "Critic",                       "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between Reader and the elegant craft of design." },
+    { "name": "Master Novelist",              "canonical": "Salesforce Senior Developer - USA",       "description": "Spins the long-form work — complex platform features and the architectural prose behind the facade." },
+    { "name": "Apprentice Scribe",            "canonical": "Junior Salesforce Consultant - India",    "description": "Copies fair, learns by doing, and grows into the full craft of the canon." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "classical-canon",
+      "projectName": "Classical Canon — Folio Preservation Programme",
+      "shortName": "Canon FPP",
+      "subAccountName": "Society of the Classical Canon",
+      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-CLASSICALCANON",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Globe Theatre Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Folio Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the First Folio", "billable": true },
+          { "name": "Field Survey — Verona to Wittenberg", "billable": true }
+        ]},
+        { "name": "Forging the Quill", "isDefault": false, "billable": true, "children": [
+          { "name": "Quill Cutting & Inkwell Casting", "billable": true },
+          { "name": "Vellum Preparation", "billable": true }
+        ]},
+        { "name": "Migrate the Folios", "isDefault": false, "billable": true, "children": [
+          { "name": "Manuscript Inventory", "billable": true },
+          { "name": "Folio Translation & Transcription", "billable": true }
+        ]},
+        { "name": "Rehearsal at the Globe (UAT)", "isDefault": false, "billable": true, "children": [
+          { "name": "Dress Rehearsal", "billable": true },
+          { "name": "Patron's Preview", "billable": true }
+        ]},
+        { "name": "Training the Players", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Player Onboarding", "billable": true },
+          { "name": "Master Class with the Bard", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "19th-century-novelists",
+      "projectName": "19th Century Novelists — Serial Publication Engine",
+      "shortName": "Serials SPE",
+      "subAccountName": "Guild of Victorian & Realist Novelists",
+      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-19THCENTURYNOVELISTS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Drawing Room Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Drawing-Room Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Tea & Requirements Gathering", "billable": true },
+          { "name": "Province-by-Province Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Printing Press", "isDefault": false, "billable": true, "children": [
+          { "name": "Steam Press Assembly", "billable": true },
+          { "name": "Type Case Composition", "billable": true }
+        ]},
+        { "name": "Migrate the Serials", "isDefault": false, "billable": true, "children": [
+          { "name": "Back-issue Catalogue", "billable": true },
+          { "name": "Subscriber Roll Migration", "billable": true }
+        ]},
+        { "name": "Testing on Fleet Street (UAT)", "isDefault": false, "billable": true, "children": [
+          { "name": "Galley Proof Review", "billable": true },
+          { "name": "Critical Notice Drill", "billable": true }
+        ]},
+        { "name": "Training the Copyists", "isDefault": false, "billable": true, "children": [
+          { "name": "Penmanship Refresh", "billable": true },
+          { "name": "Editor's Style Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "20th-century-modernists",
+      "projectName": "20th Century Modernists — Stream of Consciousness Platform",
+      "shortName": "Modernist SCP",
+      "subAccountName": "Bloomsbury & Lost Generation Atelier",
+      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-20THCENTURYMODERNISTS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Left Bank Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Café Discourse", "isDefault": false, "billable": true, "children": [
+          { "name": "Les Deux Magots Workshop", "billable": true },
+          { "name": "Salon at 27 rue de Fleurus", "billable": true }
+        ]},
+        { "name": "Build the Stream of Consciousness", "isDefault": false, "billable": true, "children": [
+          { "name": "Interior Monologue Engine", "billable": true },
+          { "name": "Free Indirect Discourse Tooling", "billable": true }
+        ]},
+        { "name": "Migrate the Manuscripts", "isDefault": false, "billable": true, "children": [
+          { "name": "Notebook Digitisation", "billable": true },
+          { "name": "Annotated Marginalia Sync", "billable": true }
+        ]},
+        { "name": "Testing at the Little Magazines (UAT)", "isDefault": false, "billable": true, "children": [
+          { "name": "Avant-garde Review Cycle", "billable": true },
+          { "name": "Censorship Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Modernists", "isDefault": false, "billable": true, "children": [
+          { "name": "Imagist Foundations", "billable": true },
+          { "name": "Master Class with Joyce", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "contemporary",
+      "projectName": "Contemporary — Magical Realism Analytics",
+      "shortName": "Contemporary MRA",
+      "subAccountName": "International Federation of Contemporary Letters",
+      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-CONTEMPORARY",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Macondo Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Magical Surveying", "isDefault": false, "billable": true, "children": [
+          { "name": "Macondo Census", "billable": true },
+          { "name": "Polyphonic Voice Mapping", "billable": true }
+        ]},
+        { "name": "Build the Postmodern Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Metafiction Layer Construction", "billable": true },
+          { "name": "Unreliable Narrator Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Backlist", "isDefault": false, "billable": true, "children": [
+          { "name": "Translated Editions Sync", "billable": true },
+          { "name": "Audiobook Catalogue Migration", "billable": true }
+        ]},
+        { "name": "Testing at the Festivals (UAT)", "isDefault": false, "billable": true, "children": [
+          { "name": "Hay-on-Wye Reading Drill", "billable": true },
+          { "name": "Booker Long-list Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Next Generation", "isDefault": false, "billable": true, "children": [
+          { "name": "MFA Foundations", "billable": true },
+          { "name": "Workshop with the Laureates", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "classical-canon": [
+      { "fullName": "William Shakespeare", "themedRole": "Poet Laureate" },
+      { "fullName": "Dante Alighieri",     "themedRole": "Senior Lecturer in Letters" },
+      { "fullName": "Miguel de Cervantes", "themedRole": "Editor-in-Chief" },
+      { "fullName": "Homer",               "themedRole": "Master Novelist" },
+      { "fullName": "Virgil",              "themedRole": "Critic" },
+      { "fullName": "Geoffrey Chaucer",    "themedRole": "Reader of Manuscripts" },
+      { "fullName": "John Milton",         "themedRole": "Master Typesetter" },
+      { "fullName": "Johann Wolfgang von Goethe", "themedRole": "Translator-in-Residence" }
+    ],
+    "19th-century-novelists": [
+      { "fullName": "Charles Dickens",     "themedRole": "Editor-in-Chief" },
+      { "fullName": "Jane Austen",         "themedRole": "Poet Laureate" },
+      { "fullName": "Leo Tolstoy",         "themedRole": "Master Novelist" },
+      { "fullName": "Fyodor Dostoevsky",   "themedRole": "Senior Lecturer in Letters" },
+      { "fullName": "Victor Hugo",         "themedRole": "Publisher" },
+      { "fullName": "Charlotte Brontë",    "themedRole": "Reader of Manuscripts" },
+      { "fullName": "Herman Melville",     "themedRole": "Master Typesetter" },
+      { "fullName": "Mark Twain",          "themedRole": "Pamphleteer" },
+      { "fullName": "George Eliot",        "themedRole": "Critic" }
+    ],
+    "20th-century-modernists": [
+      { "fullName": "James Joyce",         "themedRole": "Master Novelist" },
+      { "fullName": "Virginia Woolf",      "themedRole": "Poet Laureate" },
+      { "fullName": "Ernest Hemingway",    "themedRole": "Editor-in-Chief" },
+      { "fullName": "William Faulkner",    "themedRole": "Senior Lecturer in Letters" },
+      { "fullName": "Franz Kafka",         "themedRole": "Apprentice Scribe" },
+      { "fullName": "Marcel Proust",       "themedRole": "Master Typesetter" },
+      { "fullName": "T.S. Eliot",          "themedRole": "Literary Agent" },
+      { "fullName": "Jorge Luis Borges",   "themedRole": "Keeper of the Stacks" },
+      { "fullName": "Samuel Beckett",      "themedRole": "Proofreader" }
+    ],
+    "contemporary": [
+      { "fullName": "Gabriel García Márquez", "themedRole": "Poet Laureate" },
+      { "fullName": "Toni Morrison",       "themedRole": "Senior Lecturer in Letters" },
+      { "fullName": "Thomas Pynchon",      "themedRole": "Assistant Translator" },
+      { "fullName": "Don DeLillo",         "themedRole": "Critic" },
+      { "fullName": "Margaret Atwood",     "themedRole": "Publisher" },
+      { "fullName": "Haruki Murakami",     "themedRole": "Junior Reader" },
+      { "fullName": "Arundhati Roy",       "themedRole": "Apprentice Translator" },
+      { "fullName": "Chimamanda Ngozi Adichie", "themedRole": "Literary Agent" }
+    ]
+  },
+
+  "milestones": {
+    "classical-canon": [
+      { "name": "First Folio Compiled",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the First Folio assembled at Stationers' Hall." },
+      { "name": "Quill Cut & Inkwell Filled", "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: tools of the trade prepared for the long writing season." },
+      { "name": "Court Performance",          "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: command performance reviewed by the patron." },
+      { "name": "Patron's Stipend",           "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the patron's purse opens at quarterly tithe." },
+      { "name": "Opening Night at the Globe", "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the play premieres before a full house." },
+      { "name": "Folio Bound and Shelved",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the bound folio entered into the library record." }
+    ],
+    "19th-century-novelists": [
+      { "name": "Subscription Drive Opened",  "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: handbills posted, subscribers enrolled." },
+      { "name": "First Instalment Set",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: the press strikes off the opening chapters." },
+      { "name": "Mid-Serial Review",          "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: critical reception of the middle instalments." },
+      { "name": "Triple-Decker Published",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the three-volume novel released to the lending libraries." },
+      { "name": "Author's Reading Tour",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the author tours the lecture circuit." },
+      { "name": "Royalty Settlement",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: royalties reckoned with the publisher." }
+    ],
+    "20th-century-modernists": [
+      { "name": "Manifesto Drafted",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the modernist manifesto signed at the café." },
+      { "name": "First Draft in Notebook",    "type": "Operational", "offsetPct": 35,  "description": "Build: the long manuscript assembled longhand." },
+      { "name": "Little Magazine Excerpt",    "type": "Gate",        "offsetPct": 60,  "description": "Solution review: pre-publication excerpt printed in The Little Review." },
+      { "name": "Novel Published in Paris",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Shakespeare and Company prints the first edition." },
+      { "name": "Censorship Trial Survived",  "type": "Operational", "offsetPct": 100, "description": "Project close: obscenity charges defeated; the work enters the canon." },
+      { "name": "Foreign Rights Sold",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice: translation rights settled across Europe." }
+    ],
+    "contemporary": [
+      { "name": "Pitch Accepted by Agent",    "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the proposal accepted by the literary agent." },
+      { "name": "Manuscript Workshopped",     "type": "Operational", "offsetPct": 30,  "description": "Discovery: drafts circulated through the MFA workshop." },
+      { "name": "Galleys to Reviewers",       "type": "Operational", "offsetPct": 55,  "description": "Build: advance reading copies dispatched to the trade press." },
+      { "name": "Booker Long-list",           "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the novel survives the long-list cull." },
+      { "name": "Hardcover Release Day",      "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the book reaches the shelves on publication day." },
+      { "name": "Royalty Statement Issued",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: royalties paid out at the close of the season." }
+    ]
+  },
+
+  "daysOff": {
+    "William Shakespeare":   [ { "realm": "classical-canon",         "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Return to Stratford — domestic affairs and the second-best bed." } ],
+    "Geoffrey Chaucer":      [ { "realm": "classical-canon",         "offsetWeeks": 12, "numberOfDays": 5, "notes": "Pilgrimage to Canterbury — research trip." } ],
+    "Dante Alighieri":       [ { "realm": "classical-canon",         "offsetWeeks": 18, "numberOfDays": 4, "notes": "Exile correspondence — Ravenna writing retreat." } ],
+    "Miguel de Cervantes":   [ { "realm": "classical-canon",         "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Tax-collector duties in Andalusia — unavoidable." } ],
+    "Charles Dickens":       [ { "realm": "19th-century-novelists",  "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Public reading tour — sold-out engagement at Boston." } ],
+    "Jane Austen":           [ { "realm": "19th-century-novelists",  "offsetWeeks": 14, "numberOfDays": 3, "notes": "Visiting at Chawton — quiet revisions to the manuscript." } ],
+    "Leo Tolstoy":           [ { "realm": "19th-century-novelists",  "offsetWeeks": 20, "numberOfDays": 5, "notes": "Yasnaya Polyana retreat — ploughing the fields and rethinking everything." } ],
+    "Mark Twain":            [ { "realm": "19th-century-novelists",  "offsetWeeks": 10, "numberOfDays": 3, "notes": "Lecture circuit — Hartford to Hannibal." } ],
+    "James Joyce":           [ { "realm": "20th-century-modernists", "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Eye surgery in Zürich — convalescence required." } ],
+    "Virginia Woolf":        [ { "realm": "20th-century-modernists", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Monk's House, Rodmell — diary writing and quiet." } ],
+    "Ernest Hemingway":      [ { "realm": "20th-century-modernists", "offsetWeeks": 10, "numberOfDays": 5, "notes": "Pamplona — running with the bulls (research)." } ],
+    "Marcel Proust":         [ { "realm": "20th-century-modernists", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Cork-lined room — strict bed rest while writing." } ],
+    "Gabriel García Márquez":[ { "realm": "contemporary",            "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Cartagena — quiet weeks at home with Mercedes." } ],
+    "Haruki Murakami":       [ { "realm": "contemporary",            "offsetWeeks": 12, "numberOfDays": 2, "notes": "Marathon training week — non-negotiable." } ],
+    "Margaret Atwood":       [ { "realm": "contemporary",            "offsetWeeks": 16, "numberOfDays": 3, "notes": "Pelee Island birding — annual migration count." } ]
+  }
+}

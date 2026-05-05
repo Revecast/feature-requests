@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "key": "FamousScientists",
+  "displayName": "Famous Scientists",
+  "category": "Education",
+  "emailDomain": "science-history.test",
+  "account": {
+    "name": "Royal Academy of Sciences (Test Data)",
+    "accountNumber": "PSA-TEST-FAMOUSSCIENTISTS"
+  },
+  "mailingAddress": {
+    "street": "6-9 Carlton House Terrace",
+    "city": "London",
+    "state": "Greater London",
+    "postalCode": "SW1Y 5AG",
+    "country": "United Kingdom"
+  },
+
+  "roles": [
+    { "name": "Principal Investigator",            "canonical": "Solution Architect",                      "description": "Designer of the grand experimental program — sets hypotheses, methodology, and the architecture of discovery." },
+    { "name": "Lab Director",                      "canonical": "Project Manager",                         "description": "Coordinates apparatus, personnel, grant deadlines, and publication milestones across the research program." },
+    { "name": "Curator of the Notebooks",          "canonical": "Salesforce Administrator",                "description": "Steward of the laboratory ledgers — fields, layouts, permission sets, and the integrity of the record." },
+    { "name": "Instrument Maker",                  "canonical": "Salesforce Developer",                    "description": "Forges custom apparatus — Apex, LWC, and the bespoke instruments of the platform." },
+    { "name": "Chair of the Faculty",              "canonical": "Salesforce Practice Lead - USA",          "description": "Leads the senior fellows of the Academy — sets standards and mentors the principal investigators." },
+    { "name": "Senior Fellow",                     "canonical": "Salesforce Senior Consultant - India",    "description": "Experienced researcher — runs experiments and mentors the junior fellows in their craft." },
+    { "name": "Research Fellow",                   "canonical": "Salesforce Consultant - India",           "description": "Carries out the daily work of discovery and configuration under the senior fellow's guidance." },
+    { "name": "Junior Research Assistant",         "canonical": "Junior Salesforce Consultant - India",    "description": "Apprentice in the laboratory — learning the craft of the platform one experiment at a time." },
+    { "name": "Master Telegrapher",                "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great signaling lines between the laboratory and the institutions beyond." },
+    { "name": "Senior Signal Engineer",            "canonical": "Integration Senior Consultant - India",   "description": "Lays the wires of API, middleware, and event flow under the Master Telegrapher's plan." },
+    { "name": "Signal Apprentice",                 "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the patterns of error handling." },
+    { "name": "Master Smith of the Forge",         "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of complex Apex and architectural patterns — the most intricate instruments are theirs." },
+    { "name": "Peer Reviewer",                     "canonical": "QA Engineer",                             "description": "Examines every claim before it reaches the journal — finds the flaws in the experiment before publication." },
+    { "name": "Master of the Lyceum",              "canonical": "Marketing Practice Lead",                 "description": "Lifts the lectern and the broadside — leads all outreach and dissemination of the Academy's work." },
+    { "name": "Senior Lecturer",                   "canonical": "Marketing Senior Consultant",             "description": "Strategist of public lectures and demonstrations — turns discovery into audience and conviction." },
+    { "name": "Demonstrator",                      "canonical": "Marketing Consultant",                    "description": "Carries the message to the lecture hall and the public square — content, demonstrations, and outreach." },
+    { "name": "Cataloguer of Specimens",           "canonical": "Business Analyst",                        "description": "Records what is observed and what is required — translates between the patron and the laboratory." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "physics",
+      "projectName": "Physics — Unified Field Observatory Build",
+      "shortName": "Physics UFO",
+      "subAccountName": "Institute of Physics",
+      "subAccountNumber": "PSA-TEST-FAMOUSSCIENTISTS-PHYSICS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Cavendish Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & First Principles", "isDefault": false, "billable": true, "children": [
+          { "name": "Thought Experiment Drafting", "billable": true },
+          { "name": "Apparatus Survey — CERN", "billable": true },
+          { "name": "Hypothesis Workshop", "billable": true }
+        ]},
+        { "name": "Build the Particle Accelerator", "isDefault": false, "billable": true, "children": [
+          { "name": "Magnet Ring Assembly", "billable": true },
+          { "name": "Beamline Calibration", "billable": true },
+          { "name": "Detector Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Datasets", "isDefault": false, "billable": true, "children": [
+          { "name": "Bubble Chamber Plate Catalog", "billable": true },
+          { "name": "Spectrograph Reading Conversion", "billable": true }
+        ]},
+        { "name": "Testing at Los Alamos", "isDefault": false, "billable": true, "children": [
+          { "name": "Critical Mass Trial (UAT)", "billable": true },
+          { "name": "Cyclotron Stress Run", "billable": true }
+        ]},
+        { "name": "Training the Postdocs", "isDefault": false, "billable": true, "children": [
+          { "name": "Quantum Foundations Bootcamp", "billable": true },
+          { "name": "Detector Operator Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "chemistry",
+      "projectName": "Chemistry — Periodic Table Knowledge Platform",
+      "shortName": "Chem PTKP",
+      "subAccountName": "Royal Society of Chemistry",
+      "subAccountNumber": "PSA-TEST-FAMOUSSCIENTISTS-CHEMISTRY",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Alembic Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Reagent Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Reagent Inventory", "billable": true },
+          { "name": "Reaction Mapping", "billable": true },
+          { "name": "Synthesis Strategy Council", "billable": true }
+        ]},
+        { "name": "Build the Distillation Train", "isDefault": false, "billable": true, "children": [
+          { "name": "Glassware Fabrication", "billable": true },
+          { "name": "Heating Mantle Wiring", "billable": true },
+          { "name": "Fume Hood Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Compendium", "isDefault": false, "billable": true, "children": [
+          { "name": "Element Card Indexing", "billable": true },
+          { "name": "Spectroscopy Library Conversion", "billable": true }
+        ]},
+        { "name": "Testing in the Crucible", "isDefault": false, "billable": true, "children": [
+          { "name": "Titration Trial (UAT)", "billable": true },
+          { "name": "Combustion Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Apprentices", "isDefault": false, "billable": true, "children": [
+          { "name": "Lab Safety Induction", "billable": true },
+          { "name": "Bench Chemist's Handbook", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "biology-medicine",
+      "projectName": "Biology & Medicine — Genome Clinic Rollout",
+      "shortName": "BioMed GCR",
+      "subAccountName": "Pasteur Institute",
+      "subAccountNumber": "PSA-TEST-FAMOUSSCIENTISTS-BIOLOGY-MEDICINE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Field Notebook Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Field Study", "isDefault": false, "billable": true, "children": [
+          { "name": "Galápagos Survey", "billable": true },
+          { "name": "Specimen Collection", "billable": true },
+          { "name": "Pedigree Charting Workshop", "billable": true }
+        ]},
+        { "name": "Build the Sequencing Bench", "isDefault": false, "billable": true, "children": [
+          { "name": "Microscope Assembly", "billable": true },
+          { "name": "Centrifuge Calibration", "billable": true },
+          { "name": "Cold Storage Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Patient Charts", "isDefault": false, "billable": true, "children": [
+          { "name": "Case History Indexing", "billable": true },
+          { "name": "Specimen Slide Conversion", "billable": true }
+        ]},
+        { "name": "Testing in the Clinic", "isDefault": false, "billable": true, "children": [
+          { "name": "Vaccine Trial (UAT)", "billable": true },
+          { "name": "Sterile Field Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Residents", "isDefault": false, "billable": true, "children": [
+          { "name": "Clinical Onboarding", "billable": true },
+          { "name": "Attending's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mathematics-cs",
+      "projectName": "Mathematics & CS — Universal Computation Platform",
+      "shortName": "MathCS UCP",
+      "subAccountName": "Bletchley Park Institute",
+      "subAccountNumber": "PSA-TEST-FAMOUSSCIENTISTS-MATHEMATICS-CS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Chalkboard Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Conjecture", "isDefault": false, "billable": true, "children": [
+          { "name": "Open Problem Survey", "billable": true },
+          { "name": "Proof Sketching", "billable": true },
+          { "name": "Symposium Strategy", "billable": true }
+        ]},
+        { "name": "Build the Universal Machine", "isDefault": false, "billable": true, "children": [
+          { "name": "Tape & Head Fabrication", "billable": true },
+          { "name": "State Table Compilation", "billable": true },
+          { "name": "Bombe Wiring Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Theorems", "isDefault": false, "billable": true, "children": [
+          { "name": "Lemma Catalog", "billable": true },
+          { "name": "Notation Modernisation", "billable": true }
+        ]},
+        { "name": "Testing at Bletchley", "isDefault": false, "billable": true, "children": [
+          { "name": "Cipher Crack Trial (UAT)", "billable": true },
+          { "name": "Algorithm Stress Run", "billable": true }
+        ]},
+        { "name": "Training the Code-breakers", "isDefault": false, "billable": true, "children": [
+          { "name": "Number Theory Bootcamp", "billable": true },
+          { "name": "Combinatorics Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "physics": [
+      { "fullName": "Albert Einstein",       "themedRole": "Principal Investigator" },
+      { "fullName": "Isaac Newton",          "themedRole": "Chair of the Faculty" },
+      { "fullName": "Niels Bohr",            "themedRole": "Lab Director" },
+      { "fullName": "Marie Curie",           "themedRole": "Senior Fellow" },
+      { "fullName": "Richard Feynman",       "themedRole": "Master Smith of the Forge" },
+      { "fullName": "Stephen Hawking",       "themedRole": "Cataloguer of Specimens" },
+      { "fullName": "Werner Heisenberg",     "themedRole": "Instrument Maker" },
+      { "fullName": "Erwin Schrödinger",     "themedRole": "Peer Reviewer" },
+      { "fullName": "Max Planck",            "themedRole": "Master of the Lyceum" }
+    ],
+    "chemistry": [
+      { "fullName": "Dmitri Mendeleev",      "themedRole": "Principal Investigator" },
+      { "fullName": "Antoine Lavoisier",     "themedRole": "Lab Director" },
+      { "fullName": "John Dalton",           "themedRole": "Curator of the Notebooks" },
+      { "fullName": "Linus Pauling",         "themedRole": "Master Smith of the Forge" },
+      { "fullName": "Marie Curie",           "themedRole": "Senior Fellow" },
+      { "fullName": "Jöns Jacob Berzelius",  "themedRole": "Senior Signal Engineer" },
+      { "fullName": "Amedeo Avogadro",       "themedRole": "Research Fellow" },
+      { "fullName": "Robert Boyle",          "themedRole": "Senior Lecturer" }
+    ],
+    "biology-medicine": [
+      { "fullName": "Charles Darwin",        "themedRole": "Principal Investigator" },
+      { "fullName": "Gregor Mendel",         "themedRole": "Cataloguer of Specimens" },
+      { "fullName": "Louis Pasteur",         "themedRole": "Lab Director" },
+      { "fullName": "James Watson",          "themedRole": "Research Fellow" },
+      { "fullName": "Francis Crick",         "themedRole": "Senior Fellow" },
+      { "fullName": "Rosalind Franklin",     "themedRole": "Instrument Maker" },
+      { "fullName": "Jane Goodall",          "themedRole": "Demonstrator" },
+      { "fullName": "Jonas Salk",            "themedRole": "Peer Reviewer" },
+      { "fullName": "Alexander Fleming",     "themedRole": "Junior Research Assistant" }
+    ],
+    "mathematics-cs": [
+      { "fullName": "Leonhard Euler",        "themedRole": "Principal Investigator" },
+      { "fullName": "Carl Friedrich Gauss",  "themedRole": "Chair of the Faculty" },
+      { "fullName": "Alan Turing",           "themedRole": "Master Telegrapher" },
+      { "fullName": "Ada Lovelace",          "themedRole": "Instrument Maker" },
+      { "fullName": "David Hilbert",         "themedRole": "Lab Director" },
+      { "fullName": "Srinivasa Ramanujan",   "themedRole": "Signal Apprentice" },
+      { "fullName": "Bernhard Riemann",      "themedRole": "Master Smith of the Forge" },
+      { "fullName": "Emmy Noether",          "themedRole": "Senior Fellow" },
+      { "fullName": "Paul Erdős",            "themedRole": "Research Fellow" }
+    ]
+  },
+
+  "milestones": {
+    "physics": [
+      { "name": "Hypothesis Lodged",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — paper submitted to the preprint server." },
+      { "name": "First Beam Circulates",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: particles first complete a loop in the accelerator." },
+      { "name": "Solvay Conference Review",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: peer review at the great congress." },
+      { "name": "Trinity Test Invoice",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the first detonation is observed." },
+      { "name": "Nobel Prize Award",          "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the discovery is honoured in Stockholm." },
+      { "name": "Lab Stewardship Hand-off",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: program handed to the next generation." }
+    ],
+    "chemistry": [
+      { "name": "Reagent Inventory Signed",   "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the storeroom is catalogued and ready." },
+      { "name": "First Synthesis Achieved",   "type": "Operational", "offsetPct": 30,  "description": "Build phase: the target compound first appears in the flask." },
+      { "name": "Periodic Table Published",   "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the ordering of the elements is accepted by the Society." },
+      { "name": "Industrial Scale-up",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the process moves from bench to factory." },
+      { "name": "Storeroom Hand-off",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the laboratory is handed to its new chemist." },
+      { "name": "Patron's Final Settlement",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the Royal Society settles its account." }
+    ],
+    "biology-medicine": [
+      { "name": "Field Survey Concluded",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the voyage of observation returns with its specimens." },
+      { "name": "Strain Cultured",            "type": "Operational", "offsetPct": 35,  "description": "Build: the working microbial strain is established in the lab." },
+      { "name": "Ethics Board Review",        "type": "Gate",        "offsetPct": 60,  "description": "Solution review: the trial design is approved by the board." },
+      { "name": "Vaccine Public Release",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the vaccine is released to the public." },
+      { "name": "Surveillance Wind-down",     "type": "Operational", "offsetPct": 100, "description": "Project close: long-term observation handed to the registry." },
+      { "name": "Foundation Final Grant",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the funding foundation." }
+    ],
+    "mathematics-cs": [
+      { "name": "Conjecture Published",       "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the open problem is announced to the field." },
+      { "name": "First Algorithm Coded",      "type": "Operational", "offsetPct": 30,  "description": "Discovery: the procedure runs end-to-end on paper." },
+      { "name": "Universal Machine Powered",  "type": "Operational", "offsetPct": 55,  "description": "Build: the computing apparatus first executes a program." },
+      { "name": "Proof Accepted by Referees", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the journal accepts the proof." },
+      { "name": "Theorem Goes to Press",      "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the result enters the textbooks." },
+      { "name": "Royal Society Honorarium",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Society for the published work." }
+    ]
+  },
+
+  "daysOff": {
+    "Albert Einstein":      [ { "realm": "physics",          "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Sailing on the Long Island Sound — clears the mind for relativity." } ],
+    "Isaac Newton":         [ { "realm": "physics",          "offsetWeeks": 12, "numberOfDays": 5, "notes": "Plague retreat to Woolsthorpe Manor — annus mirabilis." } ],
+    "Marie Curie":          [ { "realm": "chemistry",        "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Convalescence — radium exposure, doctor's orders." } ],
+    "Richard Feynman":      [ { "realm": "physics",          "offsetWeeks": 14, "numberOfDays": 2, "notes": "Bongo-drum gig in Pasadena — long-standing commitment." } ],
+    "Stephen Hawking":      [ { "realm": "physics",          "offsetWeeks": 18, "numberOfDays": 3, "notes": "Zero-gravity flight — bucket-list trip." } ],
+    "Dmitri Mendeleev":     [ { "realm": "chemistry",        "offsetWeeks": 4,  "numberOfDays": 4, "notes": "St. Petersburg lecture circuit." } ],
+    "Antoine Lavoisier":    [ { "realm": "chemistry",        "offsetWeeks": 16, "numberOfDays": 1, "notes": "Tax-farm audit — unavoidable civic duty." } ],
+    "Linus Pauling":        [ { "realm": "chemistry",        "offsetWeeks": 10, "numberOfDays": 2, "notes": "Anti-nuclear petition drive in Geneva." } ],
+    "Charles Darwin":       [ { "realm": "biology-medicine", "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Down House gardening — barnacle observation, allegedly." } ],
+    "Louis Pasteur":        [ { "realm": "biology-medicine", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Vineyard consultation in Arbois — fermentation fieldwork." } ],
+    "Jane Goodall":         [ { "realm": "biology-medicine", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Gombe Stream — annual chimpanzee observation." } ],
+    "Rosalind Franklin":    [ { "realm": "biology-medicine", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Hiking holiday in the Alps — Photo 51 darkroom needs rest too." } ],
+    "Alan Turing":          [ { "realm": "mathematics-cs",   "offsetWeeks": 10, "numberOfDays": 3, "notes": "Long-distance run — marathon training week." } ],
+    "Ada Lovelace":         [ { "realm": "mathematics-cs",   "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Ascot Week — society obligations." } ],
+    "Srinivasa Ramanujan":  [ { "realm": "mathematics-cs",   "offsetWeeks": 14, "numberOfDays": 4, "notes": "Convalescence at Kumbakonam — Cambridge climate is brutal." } ],
+    "Paul Erdős":           [ { "realm": "mathematics-cs",   "offsetWeeks": 18, "numberOfDays": 2, "notes": "Travelling to a colleague's couch — collaboration tour, no fixed address." } ]
+  }
+}
