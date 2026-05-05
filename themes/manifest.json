@@ -87,8 +87,8 @@
     { "key": "Beatles",        "displayName": "The Beatles",           "category": "Music",           "implemented": false, "featured": false, "body": "themes/content/beatles.json" },
     { "key": "RockHallOfFame", "displayName": "Rock & Roll Hall of Fame", "category": "Music",        "implemented": false, "featured": false, "body": "themes/content/rock_hall_of_fame.json" },
 
-    { "key": "FamousScientists","displayName": "Famous Scientists",    "category": "Education",       "implemented": false, "featured": false, "body": "themes/content/famous_scientists.json" },
-    { "key": "FamousAuthors",  "displayName": "Famous Authors",        "category": "Education",       "implemented": false, "featured": false, "body": "themes/content/famous_authors.json" },
-    { "key": "NASAAstronauts", "displayName": "NASA Astronauts",       "category": "Education",       "implemented": false, "featured": false, "body": "themes/content/nasa_astronauts.json" }
+    { "key": "FamousScientists","displayName": "Famous Scientists",    "category": "Education",       "implemented": true , "featured": false, "body": "themes/content/famousscientists.json" },
+    { "key": "FamousAuthors",  "displayName": "Famous Authors",        "category": "Education",       "implemented": true , "featured": false, "body": "themes/content/famousauthors.json" },
+    { "key": "NASAAstronauts", "displayName": "NASA Astronauts",       "category": "Education",       "implemented": true , "featured": false, "body": "themes/content/nasaastronauts.json" }
   ]
 }
