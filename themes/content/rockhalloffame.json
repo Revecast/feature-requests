@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "key": "RockHallOfFame",
+  "displayName": "Rock & Roll Hall of Fame",
+  "category": "Music",
+  "emailDomain": "rockhall.test",
+  "account": {
+    "name": "Rock & Roll Hall of Fame (Test Data)",
+    "accountNumber": "PSA-TEST-ROCKHALL"
+  },
+
+  "roles": [
+    { "name": "Producer",                    "canonical": "Solution Architect",                      "description": "Sits behind the glass — shapes the overall sound and architecture of the record, from arrangement to final mix." },
+    { "name": "Tour Manager",                "canonical": "Project Manager",                         "description": "Keeps the bus rolling — schedules, budgets, dressing rooms and the curfew at every venue." },
+    { "name": "Studio Engineer",             "canonical": "Salesforce Administrator",                "description": "Tends the desk and the patch bay — keeps takes, channels, and session metadata in order." },
+    { "name": "Lead Guitarist",              "canonical": "Salesforce Developer",                    "description": "Writes the riffs — heavy lifting on Apex, LWC, and the signature platform features." },
+    { "name": "Frontman",                    "canonical": "Salesforce Practice Lead - USA",          "description": "Out front with the mic — sets the band's vision, mentors the players, and faces the crowd." },
+    { "name": "Rhythm Guitarist",            "canonical": "Salesforce Senior Consultant - India",    "description": "Holds the chord progressions and the groove — solid craft on customer requirements." },
+    { "name": "Bassist",                     "canonical": "Salesforce Consultant - India",           "description": "Locks in with the drummer — quietly carries discovery and configuration through every song." },
+    { "name": "A&R Rep",                     "canonical": "Integration Technical Architect - USA",   "description": "Scouts and signs the right combinations — architects the deals (and APIs) between systems and labels." },
+    { "name": "Session Musician",            "canonical": "Integration Senior Consultant - India",   "description": "Hired gun on the date — lays down API tracks, middleware fills, and event-driven solos under the A&R's plan." },
+    { "name": "Roadie",                      "canonical": "Integration Consultant - India",          "description": "Loads in, loads out — learns the rig: webhooks, batch jobs, callouts, and the dark art of error handling." },
+    { "name": "Drummer",                     "canonical": "QA Engineer",                             "description": "Keeps perfect time — finds the dropped beats and broken patterns before the show goes live." },
+    { "name": "Label Boss",                  "canonical": "Marketing Practice Lead",                 "description": "Runs the imprint — sets the brand, picks the singles, and leads all marketing craft." },
+    { "name": "Promoter",                    "canonical": "Marketing Senior Consultant",             "description": "Books the tour and papers the town — strategist for campaigns and audience growth." },
+    { "name": "Street Team Lead",            "canonical": "Marketing Consultant",                    "description": "Wheat-pastes the posters and works the merch table — daily campaign execution in the field." },
+    { "name": "Liner-Notes Writer",          "canonical": "Business Analyst",                        "description": "Translates between the artist and the audience — captures requirements, credits, and the story behind the songs." },
+    { "name": "Mastering Engineer",          "canonical": "Salesforce Senior Developer - USA",       "description": "Final polish before the lacquer — senior craft on Apex and the platform's most exacting work." },
+    { "name": "Intern",                      "canonical": "Junior Salesforce Consultant - India",    "description": "Coffee runs and tape splicing — learns the studio under the engineer's eye." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "classic-rock",
+      "projectName": "Classic Rock — Stadium Tour Logistics",
+      "shortName": "Classic STL",
+      "subAccountName": "Classic Rock Wing",
+      "subAccountNumber": "PSA-TEST-ROCKHALL-CLASSIC-ROCK",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Backstage Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & A&R", "isDefault": false, "billable": true, "children": [
+          { "name": "Demo Listening Sessions", "billable": true },
+          { "name": "Venue Site Surveys", "billable": true },
+          { "name": "Setlist Drafting", "billable": true }
+        ]},
+        { "name": "Build the Stage Show", "isDefault": false, "billable": true, "children": [
+          { "name": "Stack & Rig Construction", "billable": true },
+          { "name": "Lighting & Pyro Programming", "billable": true },
+          { "name": "Monitor World Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Back Catalog", "isDefault": false, "billable": true, "children": [
+          { "name": "Master Tape Inventory", "billable": true },
+          { "name": "Remaster & Re-encode", "billable": true }
+        ]},
+        { "name": "Soundcheck & Rehearsal", "isDefault": false, "billable": true, "children": [
+          { "name": "Production Rehearsal", "billable": true },
+          { "name": "Full Dress Run-through", "billable": true }
+        ]},
+        { "name": "Crew Training", "isDefault": false, "billable": true, "children": [
+          { "name": "Roadie Onboarding", "billable": true },
+          { "name": "Tour Manager Briefing", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "punk-new-wave",
+      "projectName": "Punk & New Wave — CBGB Residency Platform",
+      "shortName": "Punk CBGB",
+      "subAccountName": "Punk & New Wave Wing",
+      "subAccountNumber": "PSA-TEST-ROCKHALL-PUNK-NEW-WAVE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Bowery Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Zine Research", "isDefault": false, "billable": true, "children": [
+          { "name": "Scene Reconnaissance", "billable": true },
+          { "name": "Zine Distribution Audit", "billable": true },
+          { "name": "Manifesto Drafting", "billable": true }
+        ]},
+        { "name": "Build the DIY Rig", "isDefault": false, "billable": true, "children": [
+          { "name": "Pawn-Shop Amp Hot-rodding", "billable": true },
+          { "name": "Four-Track Recording Setup", "billable": true },
+          { "name": "Stencil & Flyer Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Demos", "isDefault": false, "billable": true, "children": [
+          { "name": "Cassette Tape Catalog", "billable": true },
+          { "name": "7-inch Pressing Run", "billable": true }
+        ]},
+        { "name": "Soundcheck at CBGB", "isDefault": false, "billable": true, "children": [
+          { "name": "Stage Volume Test", "billable": true },
+          { "name": "Pogo Pit Stress Test", "billable": true }
+        ]},
+        { "name": "Train the Pit Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Door & Bouncer Briefing", "billable": true },
+          { "name": "Sound Tech Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "soul-rnb",
+      "projectName": "Soul & R&B — Motown Studio Build",
+      "shortName": "Soul Motown",
+      "subAccountName": "Soul & R&B Wing",
+      "subAccountNumber": "PSA-TEST-ROCKHALL-SOUL-RNB",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Hitsville Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Songwriter Camp", "isDefault": false, "billable": true, "children": [
+          { "name": "Hit-maker Interviews", "billable": true },
+          { "name": "Chitlin' Circuit Scouting", "billable": true },
+          { "name": "Arrangement Strategy", "billable": true }
+        ]},
+        { "name": "Build the House Band", "isDefault": false, "billable": true, "children": [
+          { "name": "Funk Brothers Booking", "billable": true },
+          { "name": "Horn Section Charting", "billable": true },
+          { "name": "Hammond & Wurlitzer Tuning", "billable": true }
+        ]},
+        { "name": "Migrate the Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Two-inch Tape Inventory", "billable": true },
+          { "name": "Outtake & Alternate-Take Catalog", "billable": true }
+        ]},
+        { "name": "Tracking at Studio A", "isDefault": false, "billable": true, "children": [
+          { "name": "Rhythm Section Cut", "billable": true },
+          { "name": "Vocal Overdub Session", "billable": true }
+        ]},
+        { "name": "Train the Revue", "isDefault": false, "billable": true, "children": [
+          { "name": "Choreography Workshop", "billable": true },
+          { "name": "Charm School", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "hip-hop-rap",
+      "projectName": "Hip-Hop & Rap — Block Party Sound System",
+      "shortName": "HipHop BPS",
+      "subAccountName": "Hip-Hop & Rap Wing",
+      "subAccountNumber": "PSA-TEST-ROCKHALL-HIP-HOP-RAP",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Boombox Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Crate Digging", "isDefault": false, "billable": true, "children": [
+          { "name": "Sample Source Hunt", "billable": true },
+          { "name": "Block Party Site Survey", "billable": true },
+          { "name": "Cipher & Rhyme Workshop", "billable": true }
+        ]},
+        { "name": "Build the Beat", "isDefault": false, "billable": true, "children": [
+          { "name": "MPC Programming", "billable": true },
+          { "name": "Turntable & Mixer Rig", "billable": true },
+          { "name": "Vocal Booth Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Sample Library", "isDefault": false, "billable": true, "children": [
+          { "name": "Vinyl Catalog & Clearance", "billable": true },
+          { "name": "Loop Bank Tagging", "billable": true }
+        ]},
+        { "name": "Mixtape Test Press", "isDefault": false, "billable": true, "children": [
+          { "name": "DJ Set Stress Run", "billable": true },
+          { "name": "Street-team Listen Party", "billable": true }
+        ]},
+        { "name": "Train the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Hype-man Workshop", "billable": true },
+          { "name": "B-boy & B-girl Rehearsal", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "classic-rock": [
+      { "fullName": "Robert Plant",      "themedRole": "Frontman" },
+      { "fullName": "Jimmy Page",        "themedRole": "Lead Guitarist" },
+      { "fullName": "Mick Jagger",       "themedRole": "Frontman" },
+      { "fullName": "Keith Richards",    "themedRole": "Rhythm Guitarist" },
+      { "fullName": "Pete Townshend",    "themedRole": "Producer" },
+      { "fullName": "David Gilmour",     "themedRole": "Lead Guitarist" },
+      { "fullName": "Angus Young",       "themedRole": "Lead Guitarist" },
+      { "fullName": "Bill Graham",       "themedRole": "Tour Manager" }
+    ],
+    "punk-new-wave": [
+      { "fullName": "Joe Strummer",      "themedRole": "Frontman" },
+      { "fullName": "Joey Ramone",       "themedRole": "Frontman" },
+      { "fullName": "David Byrne",       "themedRole": "Producer" },
+      { "fullName": "Debbie Harry",      "themedRole": "Frontman" },
+      { "fullName": "Patti Smith",       "themedRole": "Liner-Notes Writer" },
+      { "fullName": "Tina Weymouth",     "themedRole": "Bassist" },
+      { "fullName": "Hilly Kristal",     "themedRole": "Tour Manager" }
+    ],
+    "soul-rnb": [
+      { "fullName": "Aretha Franklin",   "themedRole": "Frontman" },
+      { "fullName": "James Brown",       "themedRole": "Producer" },
+      { "fullName": "Otis Redding",      "themedRole": "Frontman" },
+      { "fullName": "Stevie Wonder",     "themedRole": "Mastering Engineer" },
+      { "fullName": "Marvin Gaye",       "themedRole": "Producer" },
+      { "fullName": "Berry Gordy",       "themedRole": "Label Boss" },
+      { "fullName": "James Jamerson",    "themedRole": "Bassist" }
+    ],
+    "hip-hop-rap": [
+      { "fullName": "Run-DMC Joseph Simmons", "themedRole": "Frontman" },
+      { "fullName": "Chuck D",                "themedRole": "Frontman" },
+      { "fullName": "Dr. Dre",                "themedRole": "Producer" },
+      { "fullName": "Tupac Shakur",           "themedRole": "Frontman" },
+      { "fullName": "Notorious B.I.G.",       "themedRole": "Frontman" },
+      { "fullName": "Jay-Z",                  "themedRole": "Label Boss" },
+      { "fullName": "DJ Jam Master Jay",      "themedRole": "Studio Engineer" }
+    ]
+  },
+
+  "milestones": {
+    "classic-rock": [
+      { "name": "Demo Tape Approved",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — A&R greenlights the tour concept." },
+      { "name": "Load-in at the Garden",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: trucks roll up to the first arena." },
+      { "name": "Live Album Mid-Tour Mix",  "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: rough mix of the live record reviewed by management." },
+      { "name": "Stadium Run Invoice",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the second leg of the stadium run settles." },
+      { "name": "Sold-Out Final Night",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: encore at the final stadium show." },
+      { "name": "Tour Wrap & Settlement",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: gear back to the warehouse, accounts squared." }
+    ],
+    "punk-new-wave": [
+      { "name": "First Gig at CBGB",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the band plays its first set in the Bowery." },
+      { "name": "Indie 7-inch Pressed",     "type": "Operational", "offsetPct": 30,  "description": "Build phase: the debut single is at the plant." },
+      { "name": "John Peel Session Aired",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: tastemaker airplay confirms the sound." },
+      { "name": "Major-Label Showcase",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: A&R reps from every label in the room." },
+      { "name": "Tour Van Returns Home",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the van limps back, gear unloaded." },
+      { "name": "Royalty Statement Posted", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: first publishing cheque clears." }
+    ],
+    "soul-rnb": [
+      { "name": "Songwriter Camp Closes",   "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the season's hits are picked from the writers' room." },
+      { "name": "Funk Brothers Track Date", "type": "Operational", "offsetPct": 35,  "description": "Build: the rhythm section cuts the album in three nights." },
+      { "name": "Berry Gordy Listen-back",  "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the label boss in Studio A." },
+      { "name": "Single Pressed & Shipped", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: 45s on the truck to every R&B station in the country." },
+      { "name": "Apollo Theater Headline",  "type": "Operational", "offsetPct": 100, "description": "Project close: the revue packs the house in Harlem." },
+      { "name": "Mechanicals & Royalties",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: publishing and mechanicals clear." }
+    ],
+    "hip-hop-rap": [
+      { "name": "Cipher in the Park",       "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the crew freestyles all night under the boombox lights." },
+      { "name": "Beat Tape Locked",         "type": "Operational", "offsetPct": 30,  "description": "Discovery complete: the producer's beat tape is sequenced." },
+      { "name": "Sample Clearance Signed",  "type": "Operational", "offsetPct": 55,  "description": "Build: every loop and break is licensed and paid." },
+      { "name": "Mixtape Drops on the Block","type": "Gate",       "offsetPct": 80,  "description": "UAT acceptance: street team pushes tapes from the trunk." },
+      { "name": "Debut LP Goes Platinum",   "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: RIAA plaque on the studio wall." },
+      { "name": "Publishing Advance Cleared","type": "Billing",    "offsetPct": 100, "description": "Final invoice: publishing advance hits the label account." }
+    ]
+  },
+
+  "daysOff": {
+    "Robert Plant":            [ { "realm": "classic-rock",  "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Voice rest — laryngitis after the Boston run." } ],
+    "Jimmy Page":              [ { "realm": "classic-rock",  "offsetWeeks": 10, "numberOfDays": 4, "notes": "Headley Grange writing retreat." } ],
+    "Keith Richards":          [ { "realm": "classic-rock",  "offsetWeeks": 14, "numberOfDays": 5, "notes": "Drug rehab — court-mandated, no exceptions." } ],
+    "David Gilmour":           [ { "realm": "classic-rock",  "offsetWeeks": 18, "numberOfDays": 2, "notes": "Astoria houseboat — recording overdubs." } ],
+    "Joe Strummer":            [ { "realm": "punk-new-wave", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Picket line in support of the dockworkers." } ],
+    "Joey Ramone":             [ { "realm": "punk-new-wave", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Forest Hills family birthday." } ],
+    "Debbie Harry":            [ { "realm": "punk-new-wave", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Photo shoot for the Village Voice cover." } ],
+    "Patti Smith":             [ { "realm": "punk-new-wave", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Poetry reading at St. Mark's Church." } ],
+    "Aretha Franklin":         [ { "realm": "soul-rnb",      "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Detroit church — gospel residency at New Bethel Baptist." } ],
+    "James Brown":             [ { "realm": "soul-rnb",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Augusta benefit show — hardest working day of the year." } ],
+    "Stevie Wonder":           [ { "realm": "soul-rnb",      "offsetWeeks": 14, "numberOfDays": 3, "notes": "Synthesizer delivery — TONTO arrives from London." } ],
+    "Berry Gordy":             [ { "realm": "soul-rnb",      "offsetWeeks": 18, "numberOfDays": 4, "notes": "L.A. scouting — relocating Hitsville west." } ],
+    "Dr. Dre":                 [ { "realm": "hip-hop-rap",   "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Studio lockout — beats due Friday." } ],
+    "Tupac Shakur":            [ { "realm": "hip-hop-rap",   "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Film shoot on location — feature role." } ],
+    "Jay-Z":                   [ { "realm": "hip-hop-rap",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Roc-A-Fella label meetings — distribution deal." } ]
+  }
+}
