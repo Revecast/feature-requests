@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "key": "Sopranos",
+  "displayName": "The Sopranos",
+  "category": "Drama",
+  "emailDomain": "dimeo-family.test",
+  "account": {
+    "name": "The Sopranos (Test Data)",
+    "accountNumber": "PSA-TEST-SOPRANOS"
+  },
+  "mailingAddress": {
+    "street": "633 Stag Trail Road",
+    "city": "North Caldwell",
+    "state": "NJ",
+    "postalCode": "07006",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Boss",                          "canonical": "Solution Architect",                      "description": "Sits at the head of the table — owns the over-arching solution and answers to no one but the family." },
+    { "name": "Capo",                          "canonical": "Project Manager",                         "description": "Runs the crew day to day, holds the schedule, and reports back to the Boss." },
+    { "name": "Bookkeeper at the Bing",        "canonical": "Salesforce Administrator",                "description": "Keeps the books straight — fields, layouts, profiles and permission sets." },
+    { "name": "Earner",                        "canonical": "Salesforce Developer",                    "description": "Builds the score — Apex, LWC, and the platform features that bring the money in." },
+    { "name": "Underboss",                     "canonical": "Salesforce Practice Lead - USA",          "description": "Second only to the Boss — sets the standard across all the senior earners." },
+    { "name": "Made Soldier — Newark",         "canonical": "Salesforce Senior Consultant - India",    "description": "Trusted soldier with a long résumé — handles serious customer work without supervision." },
+    { "name": "Associate from the Esplanade",  "canonical": "Salesforce Consultant - India",           "description": "On the way up — runs configuration and discovery under a made soldier's eye." },
+    { "name": "Consigliere",                   "canonical": "Integration Technical Architect - USA",   "description": "Trusted advisor on all things between systems — architects the spans between Salesforce and the outside world." },
+    { "name": "Wireman",                       "canonical": "Integration Senior Consultant - India",   "description": "Runs the lines — APIs, middleware, event flows under the Consigliere's plan." },
+    { "name": "Apprentice Wireman",            "canonical": "Integration Consultant - India",          "description": "Learning the wires — webhooks, callouts, batch jobs, and the family patterns of error handling." },
+    { "name": "Cleaner",                       "canonical": "QA Engineer",                             "description": "Comes in after the job to make sure nothing's left behind — finds the problems before they reach the Boss." },
+    { "name": "Front-of-House at Vesuvio",     "canonical": "Marketing Practice Lead",                 "description": "Runs the welcome and the message — leads all marketing craft for the family." },
+    { "name": "Promoter at the Bing",          "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — knows how to fill the room every night." },
+    { "name": "Flyer Crew",                    "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the street — content, creative, and the daily hustle." },
+    { "name": "Numbers Guy",                   "canonical": "Business Analyst",                        "description": "Records what's owed and what's promised — translates between the customer and the earners." },
+    { "name": "Master Earner — Bloomfield",    "canonical": "Salesforce Senior Developer - USA",       "description": "Top earner stateside — builds the most complex Apex and LWC pieces, mentors the junior crew." },
+    { "name": "Bagman from the Esplanade",     "canonical": "Junior Salesforce Consultant - India",    "description": "First job in the family — runs basic config and learns the trade from the senior soldiers." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "dimeo-soprano-crew",
+      "projectName": "DiMeo / Soprano Crew — North Jersey Operations CRM",
+      "shortName": "Soprano Crew NJ",
+      "subAccountName": "DiMeo / Soprano Crime Family",
+      "subAccountNumber": "PSA-TEST-SOPRANOS-DIMEO",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Bada Bing Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sit-Down", "isDefault": false, "billable": true, "children": [
+          { "name": "Sit-Down at Satriale's", "billable": true },
+          { "name": "Field Walk — Bloomfield Ave", "billable": true },
+          { "name": "Strategy at the Bing", "billable": true }
+        ]},
+        { "name": "Build the Operation", "isDefault": false, "billable": true, "children": [
+          { "name": "Bing Back-Office Buildout", "billable": true },
+          { "name": "Pork Store Point-of-Sale", "billable": true },
+          { "name": "Waste Management Routing", "billable": true }
+        ]},
+        { "name": "Migrate the Books", "isDefault": false, "billable": true, "children": [
+          { "name": "Ledger Inventory", "billable": true },
+          { "name": "Envelope Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing on Route 17", "isDefault": false, "billable": true, "children": [
+          { "name": "Hijack Drill (UAT)", "billable": true },
+          { "name": "RICO Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Associate Onboarding", "billable": true },
+          { "name": "Capo's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "lupertazzi-ny-family",
+      "projectName": "Lupertazzi NY — Five Boroughs Logistics Platform",
+      "shortName": "Lupertazzi 5B",
+      "subAccountName": "Lupertazzi Crime Family (NYC)",
+      "subAccountNumber": "PSA-TEST-SOPRANOS-LUPERTAZZI",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Brooklyn Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Five Families", "isDefault": false, "billable": true, "children": [
+          { "name": "Commission Survey", "billable": true },
+          { "name": "Borough Headcount", "billable": true },
+          { "name": "Strategy with Johnny Sack", "billable": true }
+        ]},
+        { "name": "Build the Borough Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Brooklyn Warehouse Buildout", "billable": true },
+          { "name": "Staten Island Routing", "billable": true },
+          { "name": "Garment District Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Crews", "isDefault": false, "billable": true, "children": [
+          { "name": "Capo Roster Roll Call", "billable": true },
+          { "name": "Truck & Trailer Inventory", "billable": true }
+        ]},
+        { "name": "Testing at the Esplanade", "isDefault": false, "billable": true, "children": [
+          { "name": "Construction Site Drill", "billable": true },
+          { "name": "Wire Tap Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Soldiers", "isDefault": false, "billable": true, "children": [
+          { "name": "Made Man Foundations", "billable": true },
+          { "name": "Underboss's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "soprano-household",
+      "projectName": "Soprano Household — Family Affairs Portal",
+      "shortName": "Soprano HH",
+      "subAccountName": "Soprano Family Household",
+      "subAccountNumber": "PSA-TEST-SOPRANOS-HOUSEHOLD",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Stag Trail Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Family Therapy", "isDefault": false, "billable": true, "children": [
+          { "name": "Kitchen Table Council", "billable": true },
+          { "name": "Backyard Walkthrough", "billable": true },
+          { "name": "Sunday Gravy Strategy", "billable": true }
+        ]},
+        { "name": "Build the Household Stack", "isDefault": false, "billable": true, "children": [
+          { "name": "Pool House Renovation", "billable": true },
+          { "name": "Driveway Surveillance", "billable": true },
+          { "name": "Garage Workshop Buildout", "billable": true }
+        ]},
+        { "name": "Migrate the Heirlooms", "isDefault": false, "billable": true, "children": [
+          { "name": "Album & Photo Catalog", "billable": true },
+          { "name": "Recipe Box Digitization", "billable": true }
+        ]},
+        { "name": "Testing in the Den", "isDefault": false, "billable": true, "children": [
+          { "name": "Family Dinner Dry Run", "billable": true },
+          { "name": "Holiday Hosting Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Kids' College Prep", "billable": true },
+          { "name": "Aunt & Uncle Onboarding", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "legitimate-orbit",
+      "projectName": "Legitimate Orbit — Professional Services Engagement",
+      "shortName": "Legit Orbit",
+      "subAccountName": "Legitimate Orbit Associates",
+      "subAccountNumber": "PSA-TEST-SOPRANOS-LEGIT",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Vesuvio Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Intake Session", "isDefault": false, "billable": true, "children": [
+          { "name": "Office Hours with Dr. Melfi", "billable": true },
+          { "name": "Confessional with Father Phil", "billable": true },
+          { "name": "Strategy at Vesuvio", "billable": true }
+        ]},
+        { "name": "Build the Practice", "isDefault": false, "billable": true, "children": [
+          { "name": "Vesuvio Reservation System", "billable": true },
+          { "name": "Parish Outreach Platform", "billable": true },
+          { "name": "Therapy Notes Vault", "billable": true }
+        ]},
+        { "name": "Migrate the Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Patient File Catalog", "billable": true },
+          { "name": "Reservation History Import", "billable": true }
+        ]},
+        { "name": "Testing on the Books", "isDefault": false, "billable": true, "children": [
+          { "name": "Audit Trail Trial", "billable": true },
+          { "name": "Compliance Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Front Office", "isDefault": false, "billable": true, "children": [
+          { "name": "Hostess Onboarding", "billable": true },
+          { "name": "Reception Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "dimeo-soprano-crew": [
+      { "fullName": "Tony Soprano",          "themedRole": "Boss" },
+      { "fullName": "Christopher Moltisanti","themedRole": "Capo" },
+      { "fullName": "Silvio Dante",          "themedRole": "Underboss" },
+      { "fullName": "Paulie Walnuts",        "themedRole": "Made Soldier — Newark" },
+      { "fullName": "Bobby Baccalieri",      "themedRole": "Earner" },
+      { "fullName": "Vito Spatafore",        "themedRole": "Master Earner — Bloomfield" },
+      { "fullName": "Furio Giunta",          "themedRole": "Cleaner" },
+      { "fullName": "Big Pussy Bonpensiero", "themedRole": "Associate from the Esplanade" }
+    ],
+    "lupertazzi-ny-family": [
+      { "fullName": "Phil Leotardo",         "themedRole": "Boss" },
+      { "fullName": "Johnny Sack",           "themedRole": "Underboss" },
+      { "fullName": "Carmine Lupertazzi",    "themedRole": "Consigliere" },
+      { "fullName": "Little Carmine",        "themedRole": "Capo" },
+      { "fullName": "Rusty Millio",          "themedRole": "Made Soldier — Newark" },
+      { "fullName": "Gerry Torciano",        "themedRole": "Wireman" },
+      { "fullName": "Burt Gervasi",          "themedRole": "Apprentice Wireman" },
+      { "fullName": "Doc Santoro",           "themedRole": "Master Earner — Bloomfield" }
+    ],
+    "soprano-household": [
+      { "fullName": "Carmela Soprano",       "themedRole": "Boss" },
+      { "fullName": "Meadow Soprano",        "themedRole": "Numbers Guy" },
+      { "fullName": "AJ Soprano",            "themedRole": "Bagman from the Esplanade" },
+      { "fullName": "Junior Soprano",        "themedRole": "Consigliere" },
+      { "fullName": "Janice Soprano",        "themedRole": "Capo" },
+      { "fullName": "Livia Soprano",         "themedRole": "Front-of-House at Vesuvio" },
+      { "fullName": "Hugh De Angelis",       "themedRole": "Bookkeeper at the Bing" },
+      { "fullName": "Mary De Angelis",       "themedRole": "Flyer Crew" }
+    ],
+    "legitimate-orbit": [
+      { "fullName": "Dr. Jennifer Melfi",    "themedRole": "Consigliere" },
+      { "fullName": "FBI Agent Harris",      "themedRole": "Cleaner" },
+      { "fullName": "Father Phil Intintola", "themedRole": "Front-of-House at Vesuvio" },
+      { "fullName": "Artie Bucco",           "themedRole": "Promoter at the Bing" },
+      { "fullName": "Charmaine Bucco",       "themedRole": "Numbers Guy" },
+      { "fullName": "Hesh Rabkin",           "themedRole": "Underboss" },
+      { "fullName": "Adriana La Cerva",      "themedRole": "Flyer Crew" },
+      { "fullName": "Tony Blundetto",        "themedRole": "Made Soldier — Newark" }
+    ]
+  },
+
+  "milestones": {
+    "dimeo-soprano-crew": [
+      { "name": "Sit-Down at Satriale's",    "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — terms agreed over capicola at the pork store." },
+      { "name": "Whacking the Old System",   "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: legacy CRM gets put down behind the dumpster." },
+      { "name": "Audience with the Boss",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: solution review with Tony in the back of the Bing." },
+      { "name": "Envelope to the Capo",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: weekly tribute moves up the chain." },
+      { "name": "Made Day at the Bing",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the new system is officially made — kissed and welcomed." },
+      { "name": "Hyper-care at the Pork Store","type": "Operational","offsetPct": 100, "description": "Hyper-care close: Paulie watches the floor for 30 days." }
+    ],
+    "lupertazzi-ny-family": [
+      { "name": "Commission Approval",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Five Families bless the build." },
+      { "name": "Crew Assembled at the Esplanade","type": "Operational","offsetPct": 30,"description": "Build phase: capos and soldiers staged for execution." },
+      { "name": "Construction Permit Cleared","type": "Gate",       "offsetPct": 60,  "description": "UAT gate: Brooklyn site passes inspection." },
+      { "name": "Brooklyn Job Goes Down",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: borough network is operational." },
+      { "name": "Cut from the Score",        "type": "Billing",     "offsetPct": 95,  "description": "Phase invoice: Lupertazzi takes its piece off the top." },
+      { "name": "Ride to the Lincoln Tunnel","type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Phil heads home over the river." },
+      { "name": "Final Tribute",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice: closing envelope to the underboss." }
+    ],
+    "soprano-household": [
+      { "name": "Family Therapy Intake",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: kitchen-table council on what the household actually needs." },
+      { "name": "Pool Cover Comes Off",      "type": "Operational", "offsetPct": 35,  "description": "Build: backyard project officially in season." },
+      { "name": "Carmela's Inspection",      "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the lady of the house — every detail checked." },
+      { "name": "Sunday Gravy Go-Live",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the whole family eats off the new system." },
+      { "name": "Holiday Bonus Envelopes",   "type": "Billing",     "offsetPct": 95,  "description": "Phase invoice: end-of-quarter tribute slipped to the contractors." },
+      { "name": "Storm Doors On",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: house is sealed up for the winter." }
+    ],
+    "legitimate-orbit": [
+      { "name": "Intake Session with Dr. Melfi","type": "Gate",     "offsetPct": 10,  "description": "Kickoff: confidential intake with the practice." },
+      { "name": "Reservation System Beta",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: Vesuvio takes its first booking on the new platform." },
+      { "name": "Confession at St. Hubertus","type": "Operational", "offsetPct": 55,  "description": "Build: parish outreach module quietly absolved of its bugs." },
+      { "name": "Audit by Agent Harris",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: an FBI-grade compliance review passes clean." },
+      { "name": "Vesuvio Grand Re-Opening",  "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Artie cuts the ribbon." },
+      { "name": "Final Bill Slid Across the Bar","type": "Billing", "offsetPct": 100, "description": "Final invoice: tab settled, cannoli on the house." }
+    ]
+  },
+
+  "daysOff": {
+    "Tony Soprano":          [ { "realm": "dimeo-soprano-crew",   "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Panic attack — extended Melfi appointments, no calls." } ],
+    "Christopher Moltisanti":[ { "realm": "dimeo-soprano-crew",   "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Rehab in Pennsylvania — clean and serene." } ],
+    "Paulie Walnuts":        [ { "realm": "dimeo-soprano-crew",   "offsetWeeks": 14, "numberOfDays": 2, "notes": "Pilgrimage to see the Virgin Mary apparition." } ],
+    "Big Pussy Bonpensiero": [ { "realm": "dimeo-soprano-crew",   "offsetWeeks": 18, "numberOfDays": 5, "notes": "Boat trip — won't be coming back." } ],
+    "Vito Spatafore":        [ { "realm": "dimeo-soprano-crew",   "offsetWeeks": 12, "numberOfDays": 4, "notes": "Out of state — laying low in New Hampshire." } ],
+    "Phil Leotardo":         [ { "realm": "lupertazzi-ny-family", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Recovery from heart attack — doctor's orders." } ],
+    "Johnny Sack":           [ { "realm": "lupertazzi-ny-family", "offsetWeeks": 16, "numberOfDays": 5, "notes": "Daughter's wedding — out of pocket all week." } ],
+    "Carmela Soprano":       [ { "realm": "soprano-household",    "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Trip to Paris with Rosalie — long overdue." } ],
+    "Meadow Soprano":        [ { "realm": "soprano-household",    "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Columbia midterms — no interruptions." } ],
+    "AJ Soprano":            [ { "realm": "soprano-household",    "offsetWeeks": 12, "numberOfDays": 3, "notes": "Stuck in his room — depressive episode." } ],
+    "Junior Soprano":        [ { "realm": "soprano-household",    "offsetWeeks": 16, "numberOfDays": 5, "notes": "Green Grove — confused about the date again." } ],
+    "Janice Soprano":        [ { "realm": "soprano-household",    "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Yoga retreat — finding her center, again." } ],
+    "Dr. Jennifer Melfi":    [ { "realm": "legitimate-orbit",     "offsetWeeks": 10, "numberOfDays": 2, "notes": "APA conference — clinical ethics panel." } ],
+    "Artie Bucco":           [ { "realm": "legitimate-orbit",     "offsetWeeks": 14, "numberOfDays": 3, "notes": "Sourcing trip to Naples — fresh buffalo mozzarella." } ],
+    "Father Phil Intintola": [ { "realm": "legitimate-orbit",     "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Diocesan retreat — and a stop at the Soprano kitchen." } ]
+  }
+}

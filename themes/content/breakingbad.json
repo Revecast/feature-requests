@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "key": "BreakingBad",
+  "displayName": "Breaking Bad / Better Call Saul",
+  "category": "Drama",
+  "emailDomain": "abq-meth.test",
+  "account": {
+    "name": "Albuquerque Underworld (Test Data)",
+    "accountNumber": "PSA-TEST-BREAKINGBAD"
+  },
+  "mailingAddress": {
+    "street": "308 Negra Arroyo Lane",
+    "city": "Albuquerque",
+    "state": "NM",
+    "postalCode": "87104",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "The One Who Knocks",            "canonical": "Solution Architect",                      "description": "Master cook of the over-arching solution — designs the formula, owns the purity, and answers to no one." },
+    { "name": "Heisenberg's Lieutenant",       "canonical": "Project Manager",                         "description": "Runs the operation day-to-day — schedules cooks, manages the distribution, keeps the timeline on rails." },
+    { "name": "Car Wash Bookkeeper",           "canonical": "Salesforce Administrator",                "description": "Steward of the legitimate front — fields, layouts, permission sets, and clean books." },
+    { "name": "Superlab Engineer",             "canonical": "Salesforce Developer",                    "description": "Builds the underground laboratory — Apex, LWC, triggers and platform craftsmanship at industrial scale." },
+    { "name": "Capo of the Southwest",         "canonical": "Salesforce Practice Lead - USA",          "description": "Heads the American crew — sets standards, trains the lieutenants, owns the whole territory." },
+    { "name": "Madrigal Senior Operative",     "canonical": "Salesforce Senior Consultant - India",    "description": "Trusted offshore hand who knows the formula cold — runs senior config and customer engagements." },
+    { "name": "Madrigal Operative",            "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and config across the route under the Senior Operative's eye." },
+    { "name": "Tunnel Architect",              "canonical": "Integration Technical Architect - USA",   "description": "Designs the great spans between Salesforce and the outside world — the laundry-to-lab pipeline." },
+    { "name": "Tunnel Senior Builder",         "canonical": "Integration Senior Consultant - India",   "description": "Lays the API plumbing, middleware and event flows under the Tunnel Architect's blueprint." },
+    { "name": "Tunnel Apprentice",             "canonical": "Integration Consultant - India",          "description": "Learns the trade — webhooks, batch jobs, callouts and the Cartel patterns of error handling." },
+    { "name": "Quality Control Chemist",       "canonical": "QA Engineer",                             "description": "Tests every batch for purity — finds the impurities before they hit the street." },
+    { "name": "Saul Goodman, Esq.",            "canonical": "Marketing Practice Lead",                 "description": "Better Call Saul — owns the brand, the billboards, the bus benches and every campaign that lands a client." },
+    { "name": "Senior Public Relations Counsel","canonical": "Marketing Senior Consultant",            "description": "Strategist of campaigns — choreographs the message and the call to action." },
+    { "name": "Junior PR Associate",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the field — content, creative, and the daily hustle." },
+    { "name": "Cartel Negotiator",             "canonical": "Business Analyst",                        "description": "Sits at the table between client and crew — translates wants into specs without anyone getting shot." },
+    { "name": "Senior Superlab Engineer",      "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran chemist of the platform — owns the hardest builds, mentors the junior cooks." },
+    { "name": "Junior Madrigal Operative",     "canonical": "Junior Salesforce Consultant - India",    "description": "First days on the route — learns config, declarative tools, and how the family does business." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "white-pinkman-cooks",
+      "projectName": "White-Pinkman Cooks — Blue Sky Production CRM",
+      "shortName": "Blue Sky CRM",
+      "subAccountName": "White & Pinkman Industries",
+      "subAccountNumber": "PSA-TEST-BREAKINGBAD-WHITEPINKMAN",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "RV Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cook Planning", "isDefault": false, "billable": true, "children": [
+          { "name": "Formula Whiteboard Sessions", "billable": true },
+          { "name": "Precursor Sourcing Survey", "billable": true },
+          { "name": "Distribution Strategy Drafting", "billable": true }
+        ]},
+        { "name": "Build the Superlab", "isDefault": false, "billable": true, "children": [
+          { "name": "Reactor Vessel Assembly", "billable": true },
+          { "name": "Methylamine Pipeline", "billable": true },
+          { "name": "Ventilation & Safety Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Inventory", "isDefault": false, "billable": true, "children": [
+          { "name": "Barrel Count & Manifest", "billable": true },
+          { "name": "Storage Unit Cataloguing", "billable": true }
+        ]},
+        { "name": "Testing the Purity", "isDefault": false, "billable": true, "children": [
+          { "name": "99.1% UAT Cook", "billable": true },
+          { "name": "Street Sample Verification", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "New Cook Onboarding", "billable": true },
+          { "name": "Heisenberg Standard Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "salamanca-cartel",
+      "projectName": "Salamanca Cartel — Distribution Network Modernization",
+      "shortName": "Cartel DNM",
+      "subAccountName": "Cartel del Sur — Salamanca Branch",
+      "subAccountNumber": "PSA-TEST-BREAKINGBAD-SALAMANCACARTEL",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Hacienda Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Plaza Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Border Corridor Mapping", "billable": true },
+          { "name": "Lieutenant Headcount", "billable": true },
+          { "name": "Don's Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Pipeline", "isDefault": false, "billable": true, "children": [
+          { "name": "Tunnel Excavation", "billable": true },
+          { "name": "Mule Network Provisioning", "billable": true },
+          { "name": "Burner Phone Logistics", "billable": true }
+        ]},
+        { "name": "Migrate the Plazas", "isDefault": false, "billable": true, "children": [
+          { "name": "Territory Roll Call", "billable": true },
+          { "name": "Sicario Roster Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Routes", "isDefault": false, "billable": true, "children": [
+          { "name": "Border Crossing Drill", "billable": true },
+          { "name": "Counter-Surveillance Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Sicarios", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Initiation", "billable": true },
+          { "name": "Cousins' Field Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "los-pollos-fring-empire",
+      "projectName": "Los Pollos / Fring Empire — Vertical Logistics Platform",
+      "shortName": "Pollos VLP",
+      "subAccountName": "Los Pollos Hermanos & Madrigal Electromotive",
+      "subAccountNumber": "PSA-TEST-BREAKINGBAD-LOSPOLLOSFRINGEMPIRE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Pollos Counter Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cover Operations", "isDefault": false, "billable": true, "children": [
+          { "name": "Restaurant Front Audit", "billable": true },
+          { "name": "Madrigal Books Reconciliation", "billable": true },
+          { "name": "Boardroom Strategy Sessions", "billable": true }
+        ]},
+        { "name": "Build the Industrial Laundry", "isDefault": false, "billable": true, "children": [
+          { "name": "Subterranean Lab Foundation", "billable": true },
+          { "name": "HVAC & Filtration Calibration", "billable": true },
+          { "name": "Distribution Truck Fleet Outfitting", "billable": true }
+        ]},
+        { "name": "Migrate the Supply Chain", "isDefault": false, "billable": true, "children": [
+          { "name": "Chicken Crate Manifest", "billable": true },
+          { "name": "Methylamine Drum Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Operation", "isDefault": false, "billable": true, "children": [
+          { "name": "DEA Audit Pen-test", "billable": true },
+          { "name": "Quarterly Quality Stress Run", "billable": true }
+        ]},
+        { "name": "Training the Crew", "isDefault": false, "billable": true, "children": [
+          { "name": "Counter Staff Onboarding", "billable": true },
+          { "name": "Mike's Security Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "goodman-saul-better-call-saul",
+      "projectName": "Goodman & Associates — Client Acquisition CRM",
+      "shortName": "Saul CAC",
+      "subAccountName": "Saul Goodman & Associates, LLC",
+      "subAccountNumber": "PSA-TEST-BREAKINGBAD-GOODMANSAULBETTERCALLSAUL",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Strip-Mall Office Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Client Intake", "isDefault": false, "billable": true, "children": [
+          { "name": "Burner Phone Hotline Setup", "billable": true },
+          { "name": "Bus Bench Ad Audit", "billable": true },
+          { "name": "Strategy with Kim Wexler", "billable": true }
+        ]},
+        { "name": "Build the Billboard Empire", "isDefault": false, "billable": true, "children": [
+          { "name": "Cinco Pesos Commercial Production", "billable": true },
+          { "name": "Inflatable Statue of Liberty Install", "billable": true },
+          { "name": "Constitution Avenue Signage", "billable": true }
+        ]},
+        { "name": "Migrate the Case Files", "isDefault": false, "billable": true, "children": [
+          { "name": "HHM Document Conversion", "billable": true },
+          { "name": "Legal Pad Digitization", "billable": true }
+        ]},
+        { "name": "Testing the Defense", "isDefault": false, "billable": true, "children": [
+          { "name": "Mock Trial Drill", "billable": true },
+          { "name": "Cross-Examination Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Associates", "isDefault": false, "billable": true, "children": [
+          { "name": "Paralegal Onboarding", "billable": true },
+          { "name": "Closing Argument Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "white-pinkman-cooks": [
+      { "fullName": "Walter White",        "themedRole": "The One Who Knocks" },
+      { "fullName": "Jesse Pinkman",       "themedRole": "Superlab Engineer" },
+      { "fullName": "Skyler White",        "themedRole": "Car Wash Bookkeeper" },
+      { "fullName": "Walt Jr",             "themedRole": "Junior Madrigal Operative" },
+      { "fullName": "Marie Schrader",      "themedRole": "Junior PR Associate" },
+      { "fullName": "Hank Schrader",       "themedRole": "Quality Control Chemist" },
+      { "fullName": "Holly White",         "themedRole": "Junior Madrigal Operative" }
+    ],
+    "salamanca-cartel": [
+      { "fullName": "Hector Salamanca",    "themedRole": "Capo of the Southwest" },
+      { "fullName": "Tuco Salamanca",      "themedRole": "Heisenberg's Lieutenant" },
+      { "fullName": "Marco Salamanca",     "themedRole": "Madrigal Senior Operative" },
+      { "fullName": "Leonel Salamanca",    "themedRole": "Madrigal Operative" },
+      { "fullName": "Lalo Salamanca",      "themedRole": "Cartel Negotiator" },
+      { "fullName": "Don Eladio",          "themedRole": "The One Who Knocks" },
+      { "fullName": "Juan Bolsa",          "themedRole": "Tunnel Architect" },
+      { "fullName": "Gaff",                "themedRole": "Tunnel Apprentice" }
+    ],
+    "los-pollos-fring-empire": [
+      { "fullName": "Gus Fring",           "themedRole": "The One Who Knocks" },
+      { "fullName": "Mike Ehrmantraut",    "themedRole": "Heisenberg's Lieutenant" },
+      { "fullName": "Lydia Rodarte-Quayle","themedRole": "Tunnel Architect" },
+      { "fullName": "Peter Schuler",       "themedRole": "Tunnel Senior Builder" },
+      { "fullName": "Tyrus Kitt",          "themedRole": "Madrigal Senior Operative" },
+      { "fullName": "Victor",              "themedRole": "Senior Superlab Engineer" },
+      { "fullName": "Duane Chow",          "themedRole": "Tunnel Apprentice" }
+    ],
+    "goodman-saul-better-call-saul": [
+      { "fullName": "Saul Goodman",        "themedRole": "Saul Goodman, Esq." },
+      { "fullName": "Kim Wexler",          "themedRole": "Senior Public Relations Counsel" },
+      { "fullName": "Howard Hamlin",       "themedRole": "Capo of the Southwest" },
+      { "fullName": "Chuck McGill",        "themedRole": "The One Who Knocks" },
+      { "fullName": "Huell Babineaux",     "themedRole": "Tunnel Apprentice" },
+      { "fullName": "Patrick Kuby",        "themedRole": "Cartel Negotiator" },
+      { "fullName": "Francesca Liddy",     "themedRole": "Car Wash Bookkeeper" }
+    ]
+  },
+
+  "milestones": {
+    "white-pinkman-cooks": [
+      { "name": "First Cook in the RV",      "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the first batch goes off in the desert outside Tohajiilee." },
+      { "name": "Methylamine Train Heist",   "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: 1,000 gallons of precursor secured for the new lab." },
+      { "name": "Superlab Goes Live",        "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: industrial cook line operational under the laundry." },
+      { "name": "Distribution Phase Invoice","type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: first quarter of street distribution settled." },
+      { "name": "Empire Day",                "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the territory is locked, the brand is Heisenberg." },
+      { "name": "Felina — Final Sweep",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: all loose ends tied off, lab decommissioned." }
+    ],
+    "salamanca-cartel": [
+      { "name": "Don Eladio's Welcome",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: poolside reception at the Don's hacienda." },
+      { "name": "Cousins Cross the Border",  "type": "Operational", "offsetPct": 30,  "description": "Build phase: enforcement assets deployed north of the line." },
+      { "name": "Plaza Hand-off",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: territory transfer signed in blood and tequila." },
+      { "name": "Bell Rings at the Casa Tranquila","type": "Delivery","offsetPct": 90,"description": "Go-Live: the operation reaches its decisive moment." },
+      { "name": "Mexican Standoff Closeout", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the family business stabilized after the dust settles." },
+      { "name": "Final Tribute to the Don",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: tribute paid up the chain to Don Eladio's estate." }
+    ],
+    "los-pollos-fring-empire": [
+      { "name": "Restaurant Soft-Launch",    "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the legitimate front opens its doors in Albuquerque." },
+      { "name": "Industrial Laundry Build-Out","type": "Operational","offsetPct": 35, "description": "Build: subterranean lab construction completes beneath the dryer floor." },
+      { "name": "Madrigal Quarterly Review", "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Hannover board — books must balance." },
+      { "name": "Distribution Network Online","type": "Delivery",   "offsetPct": 90,  "description": "Go-Live: trucks rolling, chicken crates moving, product flowing." },
+      { "name": "Lab Decommission",          "type": "Operational", "offsetPct": 100, "description": "Project close: lab swept, Walter and Jesse paid out, evidence erased." },
+      { "name": "Final Madrigal Invoice",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice routed through the German parent for plausible deniability." }
+    ],
+    "goodman-saul-better-call-saul": [
+      { "name": "Slippin' Jimmy Reborn",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: doors open at the new strip-mall office, hotline live." },
+      { "name": "Cinco Pesos Commercial Airs","type": "Operational","offsetPct": 30,  "description": "Discovery: brand campaign saturates daytime cable across ABQ." },
+      { "name": "Sandpiper Crossing Filed",  "type": "Operational", "offsetPct": 55,  "description": "Build: marquee class action filed and certified." },
+      { "name": "HHM Settlement Conference", "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: rival firm signs the deal, fees secured." },
+      { "name": "Cinnabon Exit",             "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: practice transitions, principal goes underground in Omaha." },
+      { "name": "Final Retainer Invoice",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Goodman & Associates — better call accounting." }
+    ]
+  },
+
+  "daysOff": {
+    "Walter White":         [ { "realm": "white-pinkman-cooks", "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Chemotherapy round — pre-arranged with Dr. Delcavoli." } ],
+    "Jesse Pinkman":        [ { "realm": "white-pinkman-cooks", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Yo, mental health day — recovering at Jane's." } ],
+    "Skyler White":         [ { "realm": "white-pinkman-cooks", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Holly's pediatrician appointments." } ],
+    "Hank Schrader":        [ { "realm": "white-pinkman-cooks", "offsetWeeks": 16, "numberOfDays": 5, "notes": "DEA medical leave — recovering from El Paso." } ],
+    "Marie Schrader":       [ { "realm": "white-pinkman-cooks", "offsetWeeks": 18, "numberOfDays": 1, "notes": "Therapy session — purple-themed." } ],
+    "Hector Salamanca":     [ { "realm": "salamanca-cartel",    "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Casa Tranquila respite — rings the bell once for yes." } ],
+    "Tuco Salamanca":       [ { "realm": "salamanca-cartel",    "offsetWeeks": 10, "numberOfDays": 2, "notes": "Anger management retreat in the desert." } ],
+    "Lalo Salamanca":       [ { "realm": "salamanca-cartel",    "offsetWeeks": 14, "numberOfDays": 3, "notes": "Down in Chihuahua — checking on the family compound." } ],
+    "Don Eladio":           [ { "realm": "salamanca-cartel",    "offsetWeeks": 16, "numberOfDays": 4, "notes": "Pool party at the hacienda — by invitation only." } ],
+    "Gus Fring":            [ { "realm": "los-pollos-fring-empire", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Children's hospital fundraiser — public-facing PR." } ],
+    "Mike Ehrmantraut":     [ { "realm": "los-pollos-fring-empire", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Granddaughter Kaylee's school recital — non-negotiable." } ],
+    "Lydia Rodarte-Quayle": [ { "realm": "los-pollos-fring-empire", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Hannover board summit — chamomile tea, no lemon." } ],
+    "Saul Goodman":         [ { "realm": "goodman-saul-better-call-saul", "offsetWeeks": 6,  "numberOfDays": 1, "notes": "Bar association seminar — mandatory CLE credit." } ],
+    "Kim Wexler":           [ { "realm": "goodman-saul-better-call-saul", "offsetWeeks": 10, "numberOfDays": 4, "notes": "Mesa Verde site visit — three branches in two days." } ],
+    "Chuck McGill":         [ { "realm": "goodman-saul-better-call-saul", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Electromagnetic hypersensitivity flare-up — house dark, no devices." } ]
+  }
+}

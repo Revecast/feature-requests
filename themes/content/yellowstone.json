@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "key": "Yellowstone",
+  "displayName": "Yellowstone",
+  "category": "Drama",
+  "emailDomain": "dutton-ranch.test",
+  "account": {
+    "name": "Yellowstone Dutton Ranch (Test Data)",
+    "accountNumber": "PSA-TEST-YELLOWSTONE"
+  },
+  "mailingAddress": {
+    "street": "1 Dutton Ranch Road",
+    "city": "Bozeman",
+    "state": "MT",
+    "postalCode": "59715",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Ranch Patriarch",                  "canonical": "Solution Architect",                      "description": "Holds the vision for the whole spread — designs the over-arching solution and protects the legacy." },
+    { "name": "Ranch Foreman",                    "canonical": "Project Manager",                         "description": "Runs the day-to-day on the ground — keeps the crew moving and the timeline honest." },
+    { "name": "Brand Inspector",                  "canonical": "Salesforce Administrator",                "description": "Steward of records, fields, layouts, and permission sets — every brand accounted for." },
+    { "name": "Ranch Hand Smith",                 "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features in the saddle shop." },
+    { "name": "Cattle Baron",                     "canonical": "Salesforce Practice Lead - USA",          "description": "Rules over all Stateside Salesforce craft — sets standards and guides the senior hands." },
+    { "name": "Trail Boss — Helena",              "canonical": "Salesforce Senior Consultant - India",    "description": "Leads the offshore drive — practiced craft on the long road of customer requirements." },
+    { "name": "Drover",                           "canonical": "Salesforce Consultant - India",           "description": "Rides discovery and configuration across the herd under the Trail Boss's eye." },
+    { "name": "Master of the Bridges",            "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — pipelines, callouts, and event grids." },
+    { "name": "Bridge Crew Lead",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the timber of API, middleware, and event flows under the Master's plan." },
+    { "name": "Bridge Apprentice",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling." },
+    { "name": "Livestock Inspector",              "canonical": "QA Engineer",                             "description": "Walks the pens before market — finds the lameness in the build before it reaches the buyer." },
+    { "name": "Brand Marketer",                   "canonical": "Marketing Practice Lead",                 "description": "Lifts the Yellowstone brand high — leads all marketing craft from Bozeman to the coasts." },
+    { "name": "Auctioneer",                       "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather buyers and convert them at ring side." },
+    { "name": "Rodeo Promoter",                   "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
+    { "name": "Ranch Bookkeeper",                 "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the Patriarch and the saddle shop." },
+    { "name": "Senior Ranch Hand Smith",          "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran builder — owns the toughest forge work and mentors the apprentices." },
+    { "name": "Greenhorn Drover",                 "canonical": "Junior Salesforce Consultant - India",    "description": "First saddle on the trail — learns configuration and discovery under the Drover's wing." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every faction starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "dutton-family-ranch",
+      "projectName": "Dutton Ranch — Legacy Operations CRM",
+      "shortName": "Dutton LOC",
+      "subAccountName": "Dutton Family Ranch",
+      "subAccountNumber": "PSA-TEST-YELLOWSTONE-DUTTON",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Big House Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Lodge", "isDefault": false, "billable": true, "children": [
+          { "name": "Family Council", "billable": true },
+          { "name": "Pasture Reconnaissance" , "billable": true }
+        ]},
+        { "name": "Build the Brand System", "isDefault": false, "billable": true, "children": [
+          { "name": "Heritage Ledger Build", "billable": true },
+          { "name": "Ranch Hand Onboarding Flow", "billable": true }
+        ]},
+        { "name": "Migrate the Cattle Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Brand Book Inventory", "billable": true },
+          { "name": "Tag Migration Script", "billable": true }
+        ]},
+        { "name": "Testing at the Train Station", "isDefault": false, "billable": true, "children": [
+          { "name": "End-of-Trail UAT", "billable": true },
+          { "name": "Disposal Drill", "billable": true }
+        ]},
+        { "name": "Training the Family", "isDefault": false, "billable": true, "children": [
+          { "name": "Heir Workshop", "billable": true },
+          { "name": "Patriarch's Briefing", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "bunkhouse-cowboys",
+      "projectName": "Bunkhouse Cowboys — Field Crew Mobile Platform",
+      "shortName": "Bunkhouse FCM",
+      "subAccountName": "Yellowstone Bunkhouse Crew",
+      "subAccountNumber": "PSA-TEST-YELLOWSTONE-BUNKHOUSE",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Bunkhouse Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery on the Range", "isDefault": false, "billable": true, "children": [
+          { "name": "Roundup Headcount", "billable": true },
+          { "name": "Tack Room Audit", "billable": true }
+        ]},
+        { "name": "Build the Saddle App", "isDefault": false, "billable": true, "children": [
+          { "name": "Mobile Wrangler UI", "billable": true },
+          { "name": "GPS Stirrup Integration", "billable": true }
+        ]},
+        { "name": "Migrate the Branded Herd", "isDefault": false, "billable": true, "children": [
+          { "name": "Yellowstone Brand Roll", "billable": true },
+          { "name": "Sale Barn Records Lift", "billable": true }
+        ]},
+        { "name": "Testing in the Pens", "isDefault": false, "billable": true, "children": [
+          { "name": "Bronc Stress Test", "billable": true },
+          { "name": "Cutting Pen UAT", "billable": true }
+        ]},
+        { "name": "Training the Hands", "isDefault": false, "billable": true, "children": [
+          { "name": "Greenhorn Bootcamp", "billable": true },
+          { "name": "Foreman's Field Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "broken-rock-reservation",
+      "projectName": "Broken Rock — Tribal Sovereignty Data Platform",
+      "shortName": "Broken Rock TSP",
+      "subAccountName": "Confederated Tribes of Broken Rock",
+      "subAccountNumber": "PSA-TEST-YELLOWSTONE-BROKENROCK",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Council Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery with the Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Tribal Council Listening", "billable": true },
+          { "name": "Land Boundary Survey", "billable": true }
+        ]},
+        { "name": "Build the Sovereignty Stack", "isDefault": false, "billable": true, "children": [
+          { "name": "Rights & Treaties Module", "billable": true },
+          { "name": "Casino Revenue Pipeline", "billable": true }
+        ]},
+        { "name": "Migrate the Enrollment Rolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Member Census Lift", "billable": true },
+          { "name": "Heritage Records Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Roundhouse", "isDefault": false, "billable": true, "children": [
+          { "name": "Council Chamber UAT", "billable": true },
+          { "name": "Audit Trail Drill", "billable": true }
+        ]},
+        { "name": "Training the Stewards", "isDefault": false, "billable": true, "children": [
+          { "name": "Council Aide Workshop", "billable": true },
+          { "name": "Chairman's Briefing", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "market-equities-rivals",
+      "projectName": "Market Equities — Resort Development CRM",
+      "shortName": "Market Equities RDC",
+      "subAccountName": "Market Equities LLC",
+      "subAccountNumber": "PSA-TEST-YELLOWSTONE-MARKETEQ",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Boardroom Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Due Diligence", "isDefault": false, "billable": true, "children": [
+          { "name": "Land Acquisition Analysis", "billable": true },
+          { "name": "Hostile Strategy Workshop", "billable": true }
+        ]},
+        { "name": "Build the Resort Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Reservation Platform", "billable": true },
+          { "name": "Investor Portal", "billable": true }
+        ]},
+        { "name": "Migrate the Holdings", "isDefault": false, "billable": true, "children": [
+          { "name": "Parcel Catalog Lift", "billable": true },
+          { "name": "Lease Records Migration", "billable": true }
+        ]},
+        { "name": "Testing in the Boardroom", "isDefault": false, "billable": true, "children": [
+          { "name": "Hostile Takeover UAT", "billable": true },
+          { "name": "Quarterly Earnings Drill", "billable": true }
+        ]},
+        { "name": "Training the Suits", "isDefault": false, "billable": true, "children": [
+          { "name": "Junior Associate Onboarding", "billable": true },
+          { "name": "Executive Briefing", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "dutton-family-ranch": [
+      { "fullName": "John Dutton",        "themedRole": "Ranch Patriarch" },
+      { "fullName": "Beth Dutton",        "themedRole": "Cattle Baron" },
+      { "fullName": "Jamie Dutton",       "themedRole": "Ranch Bookkeeper" },
+      { "fullName": "Kayce Dutton",       "themedRole": "Ranch Foreman" },
+      { "fullName": "Monica Dutton",      "themedRole": "Brand Inspector" },
+      { "fullName": "Tate Dutton",        "themedRole": "Greenhorn Drover" },
+      { "fullName": "Lee Dutton",         "themedRole": "Trail Boss — Helena" },
+      { "fullName": "Evelyn Dutton",      "themedRole": "Brand Marketer" }
+    ],
+    "bunkhouse-cowboys": [
+      { "fullName": "Rip Wheeler",        "themedRole": "Ranch Foreman" },
+      { "fullName": "Lloyd Pierce",       "themedRole": "Senior Ranch Hand Smith" },
+      { "fullName": "Jimmy Hurdstram",    "themedRole": "Greenhorn Drover" },
+      { "fullName": "Walker",             "themedRole": "Ranch Hand Smith" },
+      { "fullName": "Colby",              "themedRole": "Drover" },
+      { "fullName": "Teeter",             "themedRole": "Drover" },
+      { "fullName": "Ryan",               "themedRole": "Ranch Hand Smith" },
+      { "fullName": "Mia",                "themedRole": "Rodeo Promoter" },
+      { "fullName": "Laramie",            "themedRole": "Auctioneer" }
+    ],
+    "broken-rock-reservation": [
+      { "fullName": "Thomas Rainwater",   "themedRole": "Ranch Patriarch" },
+      { "fullName": "Mo Brings Plenty",   "themedRole": "Ranch Foreman" },
+      { "fullName": "Angela Blue Thunder","themedRole": "Ranch Bookkeeper" },
+      { "fullName": "Felix Long",         "themedRole": "Bridge Crew Lead" },
+      { "fullName": "Sam Stands Alone",   "themedRole": "Bridge Apprentice" },
+      { "fullName": "Wade Morrow",        "themedRole": "Livestock Inspector" }
+    ],
+    "market-equities-rivals": [
+      { "fullName": "Roarke Morris",      "themedRole": "Cattle Baron" },
+      { "fullName": "Caroline Warner",    "themedRole": "Ranch Patriarch" },
+      { "fullName": "Willa Hayes",        "themedRole": "Master of the Bridges" },
+      { "fullName": "Garrett Randall",    "themedRole": "Ranch Bookkeeper" },
+      { "fullName": "Riggins",            "themedRole": "Drover" },
+      { "fullName": "Terrell Riggins",    "themedRole": "Bridge Apprentice" },
+      { "fullName": "Senator Lynelle Perry","themedRole": "Brand Marketer" }
+    ]
+  },
+
+  "milestones": {
+    "dutton-family-ranch": [
+      { "name": "Branding Day Kickoff",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the herd gets the Y on the hip and the project gets the green light." },
+      { "name": "Saddle Up the Build",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff — apprentices in the saddle, smiths at the forge." },
+      { "name": "Family Dinner Review",        "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate — John convenes the family at the lodge for solution review." },
+      { "name": "Sale Barn Invoice",           "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: cattle sold, ledger settled." },
+      { "name": "Heritage Handover",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the brand book is digital and the legacy preserved." },
+      { "name": "Patriarch's Hand-off",        "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the next generation." }
+    ],
+    "bunkhouse-cowboys": [
+      { "name": "Bunkhouse Muster",            "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Rip calls the crew off the porch and out to the barn." },
+      { "name": "Ride Out to the Range",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: the crew is in the field with the new tooling." },
+      { "name": "Cutting Pen UAT",             "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: separate the keepers from the culls." },
+      { "name": "Sale Barn Go-Live",           "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: mobile platform live at the auction ring." },
+      { "name": "Back to the Bunkhouse",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: crew off the trail, boots by the door." },
+      { "name": "Trail Drive Final Invoice",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: every head accounted for, every hour billed." }
+    ],
+    "broken-rock-reservation": [
+      { "name": "Council Convenes",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Chairman Rainwater opens the council to begin." },
+      { "name": "Drum the Build to Life",      "type": "Operational", "offsetPct": 35,  "description": "Build: the sovereignty stack takes shape under tribal oversight." },
+      { "name": "Chairman's Audit",            "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Rainwater and Mo at the council hall." },
+      { "name": "Sovereignty Go-Live",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the platform serves the people, not the parking lot." },
+      { "name": "Roundhouse Close",            "type": "Operational", "offsetPct": 100, "description": "Project close: hyper-care wraps with a final ceremony." },
+      { "name": "Treaty Final Invoice",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Broken Rock — every dollar accounted to the council." }
+    ],
+    "market-equities-rivals": [
+      { "name": "Boardroom Greenlight",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: Caroline Warner approves the spend over a $14 cup of espresso." },
+      { "name": "Hostile Acquisition Build",   "type": "Operational", "offsetPct": 30,  "description": "Discovery: parcel data modelled, hostile strategy drafted." },
+      { "name": "Investor Roadshow",           "type": "Operational", "offsetPct": 55,  "description": "Build: the investor portal goes on tour from NYC to LA." },
+      { "name": "Quarterly Earnings Gate",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: numbers walked through with Roarke before the call." },
+      { "name": "Resort Ribbon Cutting",       "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the resort opens, champagne for the suits." },
+      { "name": "Final Equity Invoice",        "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Market Equities — wired before the close of business." }
+    ]
+  },
+
+  "daysOff": {
+    "John Dutton":        [ { "realm": "dutton-family-ranch",   "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Doctor's appointment in Bozeman — keeping it quiet from the kids." } ],
+    "Beth Dutton":        [ { "realm": "dutton-family-ranch",   "offsetWeeks": 12, "numberOfDays": 2, "notes": "Confronting an enemy in Salt Lake — personal day." } ],
+    "Kayce Dutton":       [ { "realm": "dutton-family-ranch",   "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Vision quest on the reservation with Monica and Tate." } ],
+    "Jamie Dutton":       [ { "realm": "dutton-family-ranch",   "offsetWeeks": 18, "numberOfDays": 2, "notes": "Attorney General campaign event in Helena." } ],
+    "Tate Dutton":        [ { "realm": "dutton-family-ranch",   "offsetWeeks": 6,  "numberOfDays": 5, "notes": "School week — math camp." } ],
+    "Rip Wheeler":        [ { "realm": "bunkhouse-cowboys",     "offsetWeeks": 10, "numberOfDays": 1, "notes": "Wedding ring shopping — don't ask." } ],
+    "Jimmy Hurdstram":    [ { "realm": "bunkhouse-cowboys",     "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Texas — 6666 Ranch detail; Mia's not happy about it." } ],
+    "Lloyd Pierce":       [ { "realm": "bunkhouse-cowboys",     "offsetWeeks": 14, "numberOfDays": 3, "notes": "Bar fight recovery — knee acting up again." } ],
+    "Teeter":             [ { "realm": "bunkhouse-cowboys",     "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Honky-tonk weekend in Livingston." } ],
+    "Walker":             [ { "realm": "bunkhouse-cowboys",     "offsetWeeks": 16, "numberOfDays": 2, "notes": "Recording session — laying down a new track." } ],
+    "Thomas Rainwater":   [ { "realm": "broken-rock-reservation","offsetWeeks": 10, "numberOfDays": 2, "notes": "Tribal gaming commission hearing in DC." } ],
+    "Mo Brings Plenty":   [ { "realm": "broken-rock-reservation","offsetWeeks": 12, "numberOfDays": 3, "notes": "Family ceremony — annual." } ],
+    "Angela Blue Thunder":[ { "realm": "broken-rock-reservation","offsetWeeks": 16, "numberOfDays": 4, "notes": "Strategy retreat — not bringing her phone." } ],
+    "Caroline Warner":    [ { "realm": "market-equities-rivals", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Park Avenue board meeting — first class only." } ],
+    "Roarke Morris":      [ { "realm": "market-equities-rivals", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Fly fishing on the Yellowstone — what could go wrong." } ]
+  }
+}

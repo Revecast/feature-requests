@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "key": "MadMen",
+  "displayName": "Mad Men",
+  "category": "Drama",
+  "emailDomain": "scdp.test",
+  "account": {
+    "name": "Madison Avenue Agencies (Test Data)",
+    "accountNumber": "PSA-TEST-MADMEN"
+  },
+  "mailingAddress": {
+    "street": "405 Madison Avenue, 23rd Floor",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10017",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Creative Director",            "canonical": "Solution Architect",                      "description": "The visionary at the top of the room — sketches the campaign architecture and protects the big idea." },
+    { "name": "Account Supervisor",           "canonical": "Project Manager",                         "description": "Wrangles the client, the timeline, and the team — keeps the trains running between the office and Madison Avenue." },
+    { "name": "Office Manager",               "canonical": "Salesforce Administrator",                "description": "Holds the keys to every desk drawer, file cabinet, and switchboard line — the operational backbone." },
+    { "name": "Senior Copywriter",            "canonical": "Salesforce Developer",                    "description": "Crafts the headlines and body copy — builds the campaign one Apex line and one tagline at a time." },
+    { "name": "Partner — New York",           "canonical": "Salesforce Practice Lead - USA",          "description": "Name on the door. Sets the standard for the firm and signs the biggest pitches." },
+    { "name": "Senior Art Director",          "canonical": "Salesforce Senior Consultant - India",    "description": "The trained hand on the layout pad — leads visual execution from storyboard to final mech." },
+    { "name": "Junior Art Director",          "canonical": "Salesforce Consultant - India",           "description": "Mounts the boards, paints the comps, and learns the craft under the senior's eye." },
+    { "name": "Media Director",               "canonical": "Integration Technical Architect - USA",   "description": "Architect of the buys — wires together print, radio, and television placements into one machine." },
+    { "name": "Media Planner",                "canonical": "Integration Senior Consultant - India",   "description": "Lays out the schedule, negotiates rates, builds the connective tissue between agency and outlets." },
+    { "name": "Junior Media Buyer",           "canonical": "Integration Consultant - India",          "description": "Books the spots, cuts the orders, learns the back-channels of the media trade." },
+    { "name": "Traffic Manager",              "canonical": "QA Engineer",                             "description": "Inspects every piece of work in and out of production — catches the typo before it hits the printer." },
+    { "name": "Head of Account Services",     "canonical": "Marketing Practice Lead",                 "description": "Senior steward of every client relationship — leads the agency's go-to-market story." },
+    { "name": "Account Executive",            "canonical": "Marketing Senior Consultant",             "description": "Day-to-day owner of the client — shepherds campaigns, status reports, and three-martini lunches." },
+    { "name": "Junior Account Executive",     "canonical": "Marketing Consultant",                    "description": "Shadows the AE, takes notes at every meeting, runs the deck back to the office." },
+    { "name": "Strategic Planner",            "canonical": "Business Analyst",                        "description": "Sits in the conference room and translates what the client said into what the client meant." },
+    { "name": "Head Copywriter",              "canonical": "Salesforce Senior Developer - USA",       "description": "Senior wordsmith — owns the brand voice and mentors the junior copy bench." },
+    { "name": "Junior Copywriter",            "canonical": "Junior Salesforce Consultant - India",    "description": "Pitches taglines into the wastebasket until one survives the Creative Director's pencil." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Realms map to the four agency eras across the show's run.",
+
+  "realms": [
+    {
+      "key": "sterling-cooper",
+      "projectName": "Sterling Cooper — Lucky Strike Brand Refresh",
+      "shortName": "SC Lucky",
+      "subAccountName": "Sterling Cooper",
+      "subAccountNumber": "PSA-TEST-MADMEN-STERLING-COOPER",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sterling Cooper Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Client Briefing", "isDefault": false, "billable": true, "children": [
+          { "name": "Lucky Strike Account Review", "billable": true },
+          { "name": "Smoking Habit Field Study", "billable": true },
+          { "name": "Brief from Mr. Cooper", "billable": true }
+        ]},
+        { "name": "Build the Campaign", "isDefault": false, "billable": true, "children": [
+          { "name": "It's Toasted Concepting", "billable": true },
+          { "name": "Print Layout Comps", "billable": true },
+          { "name": "Radio Spot Drafting", "billable": true }
+        ]},
+        { "name": "Migrate the Account Books", "isDefault": false, "billable": true, "children": [
+          { "name": "Rolodex Reconciliation", "billable": true },
+          { "name": "Estimate Folder Audit", "billable": true }
+        ]},
+        { "name": "Pitch at the Conference Table", "isDefault": false, "billable": true, "children": [
+          { "name": "Carousel Rehearsal", "billable": true },
+          { "name": "Boardroom Walkthrough", "billable": true }
+        ]},
+        { "name": "Training the Junior Bench", "isDefault": false, "billable": true, "children": [
+          { "name": "Copywriter Bullpen Workshop", "billable": true },
+          { "name": "Account Services Onboarding", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "sterling-cooper-draper-pryce",
+      "projectName": "Sterling Cooper Draper Pryce — Heinz Beans Launch",
+      "shortName": "SCDP Heinz",
+      "subAccountName": "Sterling Cooper Draper Pryce",
+      "subAccountNumber": "PSA-TEST-MADMEN-SCDP",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Pierre Hotel Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & New Business", "isDefault": false, "billable": true, "children": [
+          { "name": "Heinz Brand Discovery", "billable": true },
+          { "name": "Cold Call Audit", "billable": true },
+          { "name": "Lane's Financial Review", "billable": true }
+        ]},
+        { "name": "Build the Beans Campaign", "isDefault": false, "billable": true, "children": [
+          { "name": "Tagline Workshop", "billable": true },
+          { "name": "Storyboard Production", "billable": true },
+          { "name": "Television Spot Treatment", "billable": true }
+        ]},
+        { "name": "Migrate the Client Roster", "isDefault": false, "billable": true, "children": [
+          { "name": "Account Folder Transfer", "billable": true },
+          { "name": "Billing Ledger Migration", "billable": true }
+        ]},
+        { "name": "Pitch at the Pierre", "isDefault": false, "billable": true, "children": [
+          { "name": "Client Tasting Session", "billable": true },
+          { "name": "Boardroom Run-through", "billable": true }
+        ]},
+        { "name": "Training the New Hires", "isDefault": false, "billable": true, "children": [
+          { "name": "Bullpen Onboarding — Ginsberg & Rizzo", "billable": true },
+          { "name": "Secretary Pool Orientation", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "sterling-cooper-partners",
+      "projectName": "Sterling Cooper & Partners — Chevy Vega Integration",
+      "shortName": "SC&P Chevy",
+      "subAccountName": "Sterling Cooper & Partners",
+      "subAccountNumber": "PSA-TEST-MADMEN-SCP",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Time-Life Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Merger Sync", "isDefault": false, "billable": true, "children": [
+          { "name": "CGC Account Audit", "billable": true },
+          { "name": "Detroit Travel Discovery", "billable": true },
+          { "name": "Partner Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Vega Campaign", "isDefault": false, "billable": true, "children": [
+          { "name": "Concept Sprint with Chaough", "billable": true },
+          { "name": "Print & Television Mechs", "billable": true },
+          { "name": "Detroit Pitch Deck Build", "billable": true }
+        ]},
+        { "name": "Migrate Two Agencies into One", "isDefault": false, "billable": true, "children": [
+          { "name": "Combined Client Roster", "billable": true },
+          { "name": "Floor Plan & Desk Assignments", "billable": true }
+        ]},
+        { "name": "Testing in the Creative Lounge", "isDefault": false, "billable": true, "children": [
+          { "name": "Internal Concept Review", "billable": true },
+          { "name": "Focus Group Read-out", "billable": true }
+        ]},
+        { "name": "Training the Combined Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Cross-Agency Process Workshop", "billable": true },
+          { "name": "New Letterhead Rollout", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mccann-erickson-final",
+      "projectName": "McCann Erickson — Coca-Cola Global Brand Engagement",
+      "shortName": "McCann Coke",
+      "subAccountName": "McCann Erickson",
+      "subAccountNumber": "PSA-TEST-MADMEN-MCCANN",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "McCann Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Brand Immersion", "isDefault": false, "billable": true, "children": [
+          { "name": "Coca-Cola Heritage Review", "billable": true },
+          { "name": "Hilltop Concept Exploration", "billable": true },
+          { "name": "Hobart Stakeholder Interviews", "billable": true }
+        ]},
+        { "name": "Build the Hilltop Spot", "isDefault": false, "billable": true, "children": [
+          { "name": "Lyric & Jingle Composition", "billable": true },
+          { "name": "Storyboard & Casting", "billable": true },
+          { "name": "Production Coordination", "billable": true }
+        ]},
+        { "name": "Migrate Legacy SC&P Accounts", "isDefault": false, "billable": true, "children": [
+          { "name": "Client Roster Absorption", "billable": true },
+          { "name": "Creative Archive Transfer", "billable": true }
+        ]},
+        { "name": "Pitch on the 37th Floor", "isDefault": false, "billable": true, "children": [
+          { "name": "Global Client Boardroom Run", "billable": true },
+          { "name": "Final Concept Walkthrough", "billable": true }
+        ]},
+        { "name": "Training the McCann Floor", "isDefault": false, "billable": true, "children": [
+          { "name": "Cubicle Bench Onboarding", "billable": true },
+          { "name": "Corporate Process Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "sterling-cooper": [
+      { "fullName": "Don Draper",         "themedRole": "Creative Director" },
+      { "fullName": "Roger Sterling",     "themedRole": "Partner — New York" },
+      { "fullName": "Bert Cooper",        "themedRole": "Partner — New York" },
+      { "fullName": "Pete Campbell",      "themedRole": "Account Executive" },
+      { "fullName": "Joan Holloway",      "themedRole": "Office Manager" },
+      { "fullName": "Peggy Olson",        "themedRole": "Junior Copywriter" },
+      { "fullName": "Ken Cosgrove",       "themedRole": "Account Executive" },
+      { "fullName": "Harry Crane",        "themedRole": "Media Planner" },
+      { "fullName": "Salvatore Romano",   "themedRole": "Senior Art Director" }
+    ],
+    "sterling-cooper-draper-pryce": [
+      { "fullName": "Don Draper",         "themedRole": "Creative Director" },
+      { "fullName": "Roger Sterling",     "themedRole": "Partner — New York" },
+      { "fullName": "Lane Pryce",         "themedRole": "Head of Account Services" },
+      { "fullName": "Bert Cooper",        "themedRole": "Partner — New York" },
+      { "fullName": "Pete Campbell",      "themedRole": "Account Supervisor" },
+      { "fullName": "Peggy Olson",        "themedRole": "Senior Copywriter" },
+      { "fullName": "Joan Harris",        "themedRole": "Office Manager" },
+      { "fullName": "Megan Calvet",       "themedRole": "Junior Copywriter" },
+      { "fullName": "Stan Rizzo",         "themedRole": "Junior Art Director" },
+      { "fullName": "Michael Ginsberg",   "themedRole": "Junior Copywriter" }
+    ],
+    "sterling-cooper-partners": [
+      { "fullName": "Don Draper",         "themedRole": "Creative Director" },
+      { "fullName": "Ted Chaough",        "themedRole": "Creative Director" },
+      { "fullName": "Jim Cutler",         "themedRole": "Partner — New York" },
+      { "fullName": "Bob Benson",         "themedRole": "Account Executive" },
+      { "fullName": "Joan Harris",        "themedRole": "Head of Account Services" },
+      { "fullName": "Pete Campbell",      "themedRole": "Account Supervisor" },
+      { "fullName": "Peggy Olson",        "themedRole": "Head Copywriter" },
+      { "fullName": "Sally Draper",       "themedRole": "Junior Account Executive" },
+      { "fullName": "Megan Draper",       "themedRole": "Strategic Planner" }
+    ],
+    "mccann-erickson-final": [
+      { "fullName": "Don Draper",         "themedRole": "Creative Director" },
+      { "fullName": "Peggy Olson",        "themedRole": "Head Copywriter" },
+      { "fullName": "Joan Harris",        "themedRole": "Head of Account Services" },
+      { "fullName": "Roger Sterling",     "themedRole": "Partner — New York" },
+      { "fullName": "Pete Campbell",      "themedRole": "Account Supervisor" },
+      { "fullName": "Stan Rizzo",         "themedRole": "Senior Art Director" },
+      { "fullName": "Lou Avery",          "themedRole": "Creative Director" },
+      { "fullName": "Jim Hobart",         "themedRole": "Partner — New York" },
+      { "fullName": "Diana Bauer",        "themedRole": "Strategic Planner" }
+    ]
+  },
+
+  "milestones": {
+    "sterling-cooper": [
+      { "name": "Lucky Strike Briefing",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Bert and Roger green-light the brand refresh." },
+      { "name": "It's Toasted Concept Lock",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Don's tagline survives the first round of cuts." },
+      { "name": "Carousel Pitch Rehearsal",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: dry-run in the conference room." },
+      { "name": "Print Buy Confirmed",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: spreads booked in Life and Look magazines." },
+      { "name": "Campaign Goes to Print",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Lucky Strike refresh hits newsstands." },
+      { "name": "Hand-off to Account Services", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: account stewardship passed to Ken Cosgrove." }
+    ],
+    "sterling-cooper-draper-pryce": [
+      { "name": "Pierre Hotel Founding",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the new agency opens for business in a hotel suite." },
+      { "name": "Heinz Tagline Workshop",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: Peggy and Stan land on the beans concept." },
+      { "name": "Client Tasting Approval",      "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Heinz tastes the work and signs off." },
+      { "name": "Television Spot Airs",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Heinz spot runs in primetime." },
+      { "name": "Lane's Financial Reckoning",   "type": "Billing",     "offsetPct": 95,  "description": "Final invoice: the books are closed for the launch." },
+      { "name": "Awards Submission",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: campaign entered for the Clios." }
+    ],
+    "sterling-cooper-partners": [
+      { "name": "Merger Announcement",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: SCDP and CGC formally combine — new letterhead ordered." },
+      { "name": "Detroit Concept Sprint",       "type": "Operational", "offsetPct": 35,  "description": "Build: Don and Ted lock the Vega creative direction." },
+      { "name": "Partners' Strategic Review",   "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Jim Cutler and the partners." },
+      { "name": "Chevy Vega Pitch Day",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the campaign pitched to GM in Detroit." },
+      { "name": "IPO Filing",                   "type": "Operational", "offsetPct": 100, "description": "Project close: agency files to go public." },
+      { "name": "Final Phase Invoice",          "type": "Billing",     "offsetPct": 100, "description": "Final billing: the Vega engagement closed out." }
+    ],
+    "mccann-erickson-final": [
+      { "name": "Hobart Welcome Briefing",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: Jim Hobart welcomes the SC&P talent into McCann." },
+      { "name": "Hilltop Concept Reveal",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: Don sketches an idea about teaching the world to sing." },
+      { "name": "Jingle Composed & Recorded",   "type": "Operational", "offsetPct": 55,  "description": "Build: lyric and music finalized for the Coke spot." },
+      { "name": "Coca-Cola Final Approval",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: Atlanta signs off on the storyboards." },
+      { "name": "Hilltop Spot Premiere",        "type": "Delivery",    "offsetPct": 100, "description": "Go-Live: the new spot debuts on national television." },
+      { "name": "Final Engagement Invoice",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: McCann closes the engagement books." }
+    ]
+  },
+
+  "daysOff": {
+    "Don Draper":        [ { "realm": "sterling-cooper-draper-pryce", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Unplanned trip to California — visiting Anna." } ],
+    "Roger Sterling":    [ { "realm": "sterling-cooper",              "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery after the second heart attack — doctor's orders." } ],
+    "Joan Holloway":     [ { "realm": "sterling-cooper",              "offsetWeeks": 14, "numberOfDays": 4, "notes": "Maternity leave — short window between Greg's deployments." } ],
+    "Peggy Olson":       [ { "realm": "sterling-cooper-draper-pryce", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Personal time — undisclosed, do not page." } ],
+    "Pete Campbell":     [ { "realm": "sterling-cooper-partners",     "offsetWeeks": 10, "numberOfDays": 3, "notes": "House hunting in Cos Cob with Trudy." } ],
+    "Lane Pryce":        [ { "realm": "sterling-cooper-draper-pryce", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Trip back to London — family business." } ],
+    "Bert Cooper":       [ { "realm": "sterling-cooper",              "offsetWeeks": 10, "numberOfDays": 1, "notes": "Out — shoes off in the office, do not disturb." } ],
+    "Megan Calvet":      [ { "realm": "sterling-cooper-draper-pryce", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Acting class workshop — auditions in the city." } ],
+    "Stan Rizzo":        [ { "realm": "mccann-erickson-final",        "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Long weekend upstate — friend's place." } ],
+    "Ted Chaough":       [ { "realm": "sterling-cooper-partners",     "offsetWeeks": 12, "numberOfDays": 3, "notes": "Flying lessons — recertification at Teterboro." } ],
+    "Sally Draper":      [ { "realm": "sterling-cooper-partners",     "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Boarding school break — Miss Porter's." } ],
+    "Bob Benson":        [ { "realm": "sterling-cooper-partners",     "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Off-site with a Chevy executive — networking." } ],
+    "Lou Avery":         [ { "realm": "mccann-erickson-final",        "offsetWeeks": 10, "numberOfDays": 3, "notes": "Tokyo trip — pitching Scout's Honor to Hanna-Barbera." } ],
+    "Diana Bauer":       [ { "realm": "mccann-erickson-final",        "offsetWeeks": 14, "numberOfDays": 2, "notes": "Personal — visiting family in Wisconsin." } ],
+    "Harry Crane":       [ { "realm": "sterling-cooper",              "offsetWeeks": 16, "numberOfDays": 2, "notes": "Los Angeles television upfronts." } ]
+  }
+}
