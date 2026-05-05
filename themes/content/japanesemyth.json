@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "key": "JapaneseMyth",
+  "displayName": "Japanese (Shinto) Mythology",
+  "category": "Mythology",
+  "emailDomain": "takamagahara.test",
+  "account": {
+    "name": "Eight Million Kami (Test Data)",
+    "accountNumber": "PSA-TEST-JAPANESEMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Amanoiwato Cave Road",
+    "city": "Takachiho",
+    "state": "Miyazaki",
+    "postalCode": "882-1101",
+    "country": "Japan"
+  },
+
+  "roles": [
+    { "name": "Kannushi of the High Shrine",        "canonical": "Solution Architect",                      "description": "Chief priest of the design — keeper of the over-arching solution and its sacred lines." },
+    { "name": "Daimyō of Delivery",                 "canonical": "Project Manager",                         "description": "Lord of the project domain — marshals retainers, holds the timeline, and answers to the Emperor." },
+    { "name": "Keeper of the Torii",                "canonical": "Salesforce Administrator",                "description": "Guardian of the gate — tends fields, layouts, and permission sets between the sacred and profane." },
+    { "name": "Swordsmith of Sagami",               "canonical": "Salesforce Developer",                    "description": "Forges Apex and LWC blades, folded a thousand times in the fires of the platform." },
+    { "name": "Shōgun of the Western Shore",        "canonical": "Salesforce Practice Lead - USA",          "description": "Supreme commander of Salesforce craft in the Land of the Setting Sun — sets standards and guides the senior smiths." },
+    { "name": "Senior Onmyōji",                     "canonical": "Salesforce Senior Consultant - India",    "description": "Master diviner of customer requirements — reads the stars and the data with practiced art." },
+    { "name": "Apprentice Onmyōji",                 "canonical": "Salesforce Consultant - India",           "description": "Carries divination scrolls and configuration across the realm under the senior diviner's eye." },
+    { "name": "Bridge-Master of Uji",               "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — APIs, events, callouts." },
+    { "name": "Senior Bridge-Builder of Uji",       "canonical": "Integration Senior Consultant - India",   "description": "Lays the cypress beams of middleware and message flow under the Bridge-Master's plan." },
+    { "name": "Apprentice Bridge-Builder",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, and the careful patterns of error handling." },
+    { "name": "Tea Master of Quality",              "canonical": "QA Engineer",                             "description": "Tends the cha-no-yu of the build — finds the bitterness in the brew before it reaches the Emperor." },
+    { "name": "Herald of the Imperial Court",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the Imperial banner for product and message — leads all marketing craft." },
+    { "name": "Senior Court Poet",                  "canonical": "Marketing Senior Consultant",             "description": "Composes waka and campaign strategy — sounds the call across the provinces." },
+    { "name": "Court Poet",                         "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ink." },
+    { "name": "Council Scribe of Heian-kyō",        "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the courtly craft of design." },
+    { "name": "Master Swordsmith of Yamato",        "canonical": "Salesforce Senior Developer - USA",       "description": "Elder smith of the western forge — reviews every blade before it leaves the anvil." },
+    { "name": "Junior Onmyōji",                     "canonical": "Junior Salesforce Consultant - India",    "description": "Newest student of divination — first year on the path of the platform." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "kami-of-takamagahara",
+      "projectName": "Takamagahara — Heavenly Plain Stewardship CRM",
+      "shortName": "Takamagahara CRM",
+      "subAccountName": "Heavenly Plain of Takamagahara",
+      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-KAMIOFTAKAMAGAHARA",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Amanoiwato Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Divination", "isDefault": false, "billable": true, "children": [
+          { "name": "Council at the Heavenly River", "billable": true },
+          { "name": "Sun-cave Reconnaissance", "billable": true },
+          { "name": "Strategy of the Eight Million", "billable": true }
+        ]},
+        { "name": "Forge the Three Sacred Treasures", "isDefault": false, "billable": true, "children": [
+          { "name": "Mirror of Yata Polishing", "billable": true },
+          { "name": "Sword of Kusanagi Forging", "billable": true },
+          { "name": "Magatama Bead Stringing", "billable": true }
+        ]},
+        { "name": "Migrate the Heavenly Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Norito Inventory", "billable": true },
+          { "name": "Kojiki Translation", "billable": true }
+        ]},
+        { "name": "Testing at Ame-no-Yasukawara", "isDefault": false, "billable": true, "children": [
+          { "name": "Storm Drill (UAT)", "billable": true },
+          { "name": "Eclipse Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Heavenly Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Kami Onboarding Rite", "billable": true },
+          { "name": "Amaterasu's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "yokai-and-bakemono",
+      "projectName": "Hyakki Yagyō — Night Parade Surveillance Build",
+      "shortName": "Hyakki SCR",
+      "subAccountName": "Realm of the Hundred Demons",
+      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-YOKAIANDBAKEMONO",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Mountain Path Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Haunting", "isDefault": false, "billable": true, "children": [
+          { "name": "Tengu Mountain Survey", "billable": true },
+          { "name": "Kappa River Reconnaissance", "billable": true },
+          { "name": "Strategy by Lantern Light", "billable": true }
+        ]},
+        { "name": "Build the Mischief Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Shape-shift Foundations", "billable": true },
+          { "name": "Trickery Tooling", "billable": true },
+          { "name": "Charm-ward Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Bestiary", "isDefault": false, "billable": true, "children": [
+          { "name": "Yokai Census", "billable": true },
+          { "name": "Folk-tale Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Crossroads", "isDefault": false, "billable": true, "children": [
+          { "name": "Midnight Patrol Drill", "billable": true },
+          { "name": "Possession Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Bakemono", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Spook Onboarding", "billable": true },
+          { "name": "Master of Disguise Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "imperial-line-and-heroes",
+      "projectName": "Yamato Court — Imperial Logistics Platform",
+      "shortName": "Yamato ILP",
+      "subAccountName": "Imperial House of Yamato",
+      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-IMPERIALLINEANDHEROES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Heian-kyō Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Imperial Audience", "isDefault": false, "billable": true, "children": [
+          { "name": "Provincial Survey", "billable": true },
+          { "name": "Samurai Headcount", "billable": true },
+          { "name": "Strategy with the Emperor", "billable": true }
+        ]},
+        { "name": "Forge the Imperial Regalia", "isDefault": false, "billable": true, "children": [
+          { "name": "Armor Plating Construction", "billable": true },
+          { "name": "Naginata Forging", "billable": true },
+          { "name": "War-Banner Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Chronicles", "isDefault": false, "billable": true, "children": [
+          { "name": "Heike Roll Call", "billable": true },
+          { "name": "Provisioning Caravan", "billable": true }
+        ]},
+        { "name": "Testing at Dan-no-Ura", "isDefault": false, "billable": true, "children": [
+          { "name": "Naval Defense Drill", "billable": true },
+          { "name": "Cavalry Charge Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Samurai", "isDefault": false, "billable": true, "children": [
+          { "name": "Bushidō Foundations", "billable": true },
+          { "name": "Shōgun's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "seven-lucky-gods-and-folk-deities",
+      "projectName": "Takarabune — Treasure Ship Mirror Analytics",
+      "shortName": "Takarabune MAI",
+      "subAccountName": "Guild of the Seven Lucky Gods",
+      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-SEVENLUCKYGODSANDFOLKDEITIES",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Treasure Ship Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Fortune Telling", "isDefault": false, "billable": true, "children": [
+          { "name": "Lucky Charm Calibration", "billable": true },
+          { "name": "Future-state Vision", "billable": true },
+          { "name": "Council of the Seven", "billable": true }
+        ]},
+        { "name": "Build the Treasure Hold", "isDefault": false, "billable": true, "children": [
+          { "name": "Daikoku's Mallet Crafting", "billable": true },
+          { "name": "Ebisu's Fishing Rod Assembly", "billable": true },
+          { "name": "Hotei's Sack Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Blessings", "isDefault": false, "billable": true, "children": [
+          { "name": "Ema Plaque Catalog", "billable": true },
+          { "name": "Omikuji Recording", "billable": true }
+        ]},
+        { "name": "Testing the Lucky Cargo", "isDefault": false, "billable": true, "children": [
+          { "name": "Sea Worthiness Trial", "billable": true },
+          { "name": "Treasure Inventory Verification", "billable": true }
+        ]},
+        { "name": "Training the Acolytes", "isDefault": false, "billable": true, "children": [
+          { "name": "Benzaiten's Biwa Refresh", "billable": true },
+          { "name": "Fukurokuju's Wisdom Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "kami-of-takamagahara": [
+      { "fullName": "Amaterasu",          "themedRole": "Kannushi of the High Shrine" },
+      { "fullName": "Susanoo",            "themedRole": "Daimyō of Delivery" },
+      { "fullName": "Tsukuyomi",          "themedRole": "Senior Onmyōji" },
+      { "fullName": "Izanagi",            "themedRole": "Shōgun of the Western Shore" },
+      { "fullName": "Izanami",            "themedRole": "Council Scribe of Heian-kyō" },
+      { "fullName": "Inari",              "themedRole": "Keeper of the Torii" },
+      { "fullName": "Hachiman",           "themedRole": "Master Swordsmith of Yamato" },
+      { "fullName": "Konohanasakuya",     "themedRole": "Tea Master of Quality" }
+    ],
+    "yokai-and-bakemono": [
+      { "fullName": "Tengu",              "themedRole": "Kannushi of the High Shrine" },
+      { "fullName": "Kappa",              "themedRole": "Apprentice Bridge-Builder" },
+      { "fullName": "Kitsune",            "themedRole": "Senior Onmyōji" },
+      { "fullName": "Tanuki",             "themedRole": "Court Poet" },
+      { "fullName": "Oni",                "themedRole": "Daimyō of Delivery" },
+      { "fullName": "Yuki-onna",          "themedRole": "Tea Master of Quality" },
+      { "fullName": "Nurarihyon",         "themedRole": "Shōgun of the Western Shore" },
+      { "fullName": "Bakeneko",           "themedRole": "Junior Onmyōji" }
+    ],
+    "imperial-line-and-heroes": [
+      { "fullName": "Emperor Jimmu",      "themedRole": "Shōgun of the Western Shore" },
+      { "fullName": "Yamato Takeru",      "themedRole": "Daimyō of Delivery" },
+      { "fullName": "Empress Jingu",      "themedRole": "Herald of the Imperial Court" },
+      { "fullName": "Tomoe Gozen",        "themedRole": "Swordsmith of Sagami" },
+      { "fullName": "Minamoto no Yoshitsune","themedRole": "Bridge-Master of Uji" },
+      { "fullName": "Benkei",             "themedRole": "Senior Bridge-Builder of Uji" },
+      { "fullName": "Momotaro",           "themedRole": "Apprentice Onmyōji" },
+      { "fullName": "Kintaro",            "themedRole": "Junior Onmyōji" }
+    ],
+    "seven-lucky-gods-and-folk-deities": [
+      { "fullName": "Ebisu",              "themedRole": "Kannushi of the High Shrine" },
+      { "fullName": "Daikokuten",         "themedRole": "Daimyō of Delivery" },
+      { "fullName": "Bishamonten",        "themedRole": "Master Swordsmith of Yamato" },
+      { "fullName": "Benzaiten",          "themedRole": "Senior Court Poet" },
+      { "fullName": "Fukurokuju",         "themedRole": "Council Scribe of Heian-kyō" },
+      { "fullName": "Jurojin",            "themedRole": "Senior Onmyōji" },
+      { "fullName": "Hotei",              "themedRole": "Court Poet" },
+      { "fullName": "Kannon",             "themedRole": "Tea Master of Quality" }
+    ]
+  },
+
+  "milestones": {
+    "kami-of-takamagahara": [
+      { "name": "Open the Heavenly Cave",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Amaterasu emerges from Amanoiwato and light returns to the project." },
+      { "name": "Forge Kusanagi-no-Tsurugi",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the grass-cutting sword pulled from Yamata-no-Orochi's tail." },
+      { "name": "Audience at the High Plain",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: review with the council of the eight million kami." },
+      { "name": "Tribute to Susanoo",           "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: offerings sent to the Storm God's hall." },
+      { "name": "Descent of Ninigi",            "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the heavenly grandson descends to rule the islands." },
+      { "name": "Shrine Hand-off",              "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: shrine stewardship passed to the kannushi." }
+    ],
+    "yokai-and-bakemono": [
+      { "name": "Lantern Lighting",             "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: paper lanterns lit along the mountain path." },
+      { "name": "Hyakki Yagyō Procession",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: the Night Parade of One Hundred Demons takes the road." },
+      { "name": "Crossroads Trial",             "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the road of the crossroads holds against mortal travelers." },
+      { "name": "Charm-ward Activation",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: ofuda hung at every gate." },
+      { "name": "Return to the Mountain",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the yokai retreat to their wild places." },
+      { "name": "Tribute of Cucumbers",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: kappa tribute paid in cucumbers and sake." }
+    ],
+    "imperial-line-and-heroes": [
+      { "name": "Imperial Audience",            "type": "Gate",        "offsetPct": 10,  "description": "Discovery: presented to the Chrysanthemum Throne." },
+      { "name": "Forge the Imperial Regalia",   "type": "Operational", "offsetPct": 35,  "description": "Build: Mirror, Sword, and Jewel readied for the new Emperor." },
+      { "name": "Shōgun's Audit",               "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the military commander himself." },
+      { "name": "Battle of Dan-no-Ura",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: decisive engagement at the western straits." },
+      { "name": "Court Returns to Kyōto",       "type": "Operational", "offsetPct": 100, "description": "Project close: the Imperial Court returns to the capital." },
+      { "name": "Final Tribute",                "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Imperial Treasury." }
+    ],
+    "seven-lucky-gods-and-folk-deities": [
+      { "name": "Council on the Treasure Ship", "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council aboard the Takarabune at New Year's tide." },
+      { "name": "Cast the Lucky Net",           "type": "Operational", "offsetPct": 30,  "description": "Discovery: Ebisu casts his net for the first reports." },
+      { "name": "Strike the Mallet of Plenty",  "type": "Operational", "offsetPct": 55,  "description": "Build: Daikoku swings the mallet — dashboards stamped from gold." },
+      { "name": "Gift-Giving at the Pier",      "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: gifts of the Seven distributed to each crew member." },
+      { "name": "Sailing the Treasure Home",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the Takarabune docks at the harbor of fortune." },
+      { "name": "Final Recompense",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Guild of the Seven Lucky Gods." }
+    ]
+  },
+
+  "daysOff": {
+    "Amaterasu":            [ { "realm": "kami-of-takamagahara", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Retreat into the Amanoiwato cave — the world goes dark." } ],
+    "Susanoo":              [ { "realm": "kami-of-takamagahara", "offsetWeeks": 12, "numberOfDays": 4, "notes": "Banished to Izumo to slay Yamata-no-Orochi — pre-arranged." } ],
+    "Tsukuyomi":            [ { "realm": "kami-of-takamagahara", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Night-shift moon duty — never speaks to his sister anyway." } ],
+    "Inari":                [ { "realm": "kami-of-takamagahara", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Rice harvest blessing tour — quarterly visit to all 30,000 shrines." } ],
+    "Kitsune":              [ { "realm": "yokai-and-bakemono",   "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Nine-tail molting season — cannot be seen in current state." } ],
+    "Tengu":                [ { "realm": "yokai-and-bakemono",   "offsetWeeks": 10, "numberOfDays": 2, "notes": "Mountain ascetic training with yamabushi at Mount Kurama." } ],
+    "Yuki-onna":            [ { "realm": "yokai-and-bakemono",   "offsetWeeks": 16, "numberOfDays": 4, "notes": "Off-season — melts above 5°C, returns when snow falls again." } ],
+    "Tanuki":               [ { "realm": "yokai-and-bakemono",   "offsetWeeks": 14, "numberOfDays": 1, "notes": "Sake brewery festival — purely for inventory inspection purposes." } ],
+    "Yamato Takeru":        [ { "realm": "imperial-line-and-heroes", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Eastern campaign — pacifying the Emishi tribes." } ],
+    "Tomoe Gozen":          [ { "realm": "imperial-line-and-heroes", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Naginata championship at the Genpei tournament." } ],
+    "Benkei":               [ { "realm": "imperial-line-and-heroes", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Standing watch on Gojō Bridge — refuses to sit down even off-duty." } ],
+    "Momotaro":             [ { "realm": "imperial-line-and-heroes", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Onigashima expedition with the dog, monkey, and pheasant." } ],
+    "Ebisu":                [ { "realm": "seven-lucky-gods-and-folk-deities", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Annual fishing tournament — patron's obligation." } ],
+    "Hotei":                [ { "realm": "seven-lucky-gods-and-folk-deities", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Sack restocking — gifts for all the children of the village." } ],
+    "Benzaiten":            [ { "realm": "seven-lucky-gods-and-folk-deities", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Biwa recital at Enoshima Shrine — annual." } ]
+  }
+}

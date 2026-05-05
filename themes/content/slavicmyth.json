@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "key": "SlavicMyth",
+  "displayName": "Slavic Mythology",
+  "category": "Mythology",
+  "emailDomain": "rod-iriy.test",
+  "account": {
+    "name": "Pantheon of Rod and Iriy (Test Data)",
+    "accountNumber": "PSA-TEST-SLAVICMYTH"
+  },
+  "mailingAddress": {
+    "street": "Sacred Oak Grove, Bear Path 12",
+    "city": "Kyiv",
+    "state": "Rus'",
+    "postalCode": "01001",
+    "country": "Slavic Lands"
+  },
+
+  "roles": [
+    { "name": "Volkhv of the Sacred Grove",        "canonical": "Solution Architect",                   "description": "Eldest priest-seer who reads the runes of the platform and shapes the over-arching design." },
+    { "name": "Voivode of the Druzhina",           "canonical": "Project Manager",                      "description": "War-leader of the delivery band — keeps the timeline, the shields, and the prince's promises." },
+    { "name": "Keeper of the Iriy Records",        "canonical": "Salesforce Administrator",             "description": "Steward of the heavenly ledgers — fields, layouts, permissions and the names of every soul." },
+    { "name": "Smith of Svarog's Forge",           "canonical": "Salesforce Developer",                 "description": "Hammers Apex and LWC at the celestial anvil where the sun was first hammered out." },
+    { "name": "Knyaz of the Western Druzhina",     "canonical": "Salesforce Practice Lead - USA",       "description": "Prince of the western host — sets the standards and trains the senior smiths of the realm." },
+    { "name": "Bogatyr of the Eastern Steppe",     "canonical": "Salesforce Senior Consultant - India", "description": "Veteran champion who patrols the borders of customer requirements with seasoned skill." },
+    { "name": "Otrok of the Eastern Steppe",       "canonical": "Salesforce Consultant - India",        "description": "Young squire of the steppe — carries discovery and configuration under the bogatyr's eye." },
+    { "name": "Bridge-Smith of Kalinov Most",      "canonical": "Integration Technical Architect - USA","description": "Architect of the great bridge of Kalinov — designer of every span between Salesforce and the world below." },
+    { "name": "Wright of Kalinov Most",            "canonical": "Integration Senior Consultant - India","description": "Lays the planks of API, middleware, and event flows under the Bridge-Smith's plan." },
+    { "name": "Apprentice of Kalinov Most",        "canonical": "Integration Consultant - India",       "description": "Learns the craft of integration — webhooks, batches, callouts and the careful charms of error handling." },
+    { "name": "Healer of the Rusalka Pools",       "canonical": "QA Engineer",                          "description": "Tends the wounded build — finds curses, broken charms and ill omens before the prince ever sees them." },
+    { "name": "Skomorokh-in-Chief",                "canonical": "Marketing Practice Lead",              "description": "Master of the wandering players — leads the heralds, the songs, and every banner of the brand." },
+    { "name": "Bayan of the Princely Hall",        "canonical": "Marketing Senior Consultant",          "description": "Court bard — strategist of campaigns, weaver of byliny that summon customers to the gate." },
+    { "name": "Skomorokh of the Marketplace",      "canonical": "Marketing Consultant",                 "description": "Carries the campaign into the squares and steppe — content, creative and the daily ride." },
+    { "name": "Scribe of the Veche",               "canonical": "Business Analyst",                     "description": "Records the will of the people's assembly — translates between mortal Customer and the volkhv's design." },
+    { "name": "Master Smith of the Western Forge", "canonical": "Salesforce Senior Developer - USA",    "description": "Senior Numenorean smith of the west — forges the deepest customizations and mentors the apprentices." },
+    { "name": "Otrok of the Eastern Forge",        "canonical": "Junior Salesforce Consultant - India", "description": "Newest squire — learning the simple charms of declarative configuration before taking up Apex." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "chief-deities",
+      "projectName": "Chief Deities — Pantheon Modernization",
+      "shortName": "Iriy PM",
+      "subAccountName": "High Pantheon of Iriy",
+      "subAccountNumber": "PSA-TEST-SLAVICMYTH-CHIEFDEITIES",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Iriy Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Council at the World Tree", "isDefault": false, "billable": true, "children": [
+          { "name": "Roots of Veles", "billable": true },
+          { "name": "Branches of Perun", "billable": true },
+          { "name": "Crown of Svarog", "billable": true }
+        ]},
+        { "name": "Forging the Thunder-Axe", "isDefault": false, "billable": true, "children": [
+          { "name": "Anvil Foundation", "billable": true },
+          { "name": "Lightning Channelling", "billable": true },
+          { "name": "Hammer Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Sky-Roads", "isDefault": false, "billable": true, "children": [
+          { "name": "Solar Chariot Catalog", "billable": true },
+          { "name": "Wind-Path Re-routing", "billable": true }
+        ]},
+        { "name": "Trial by Storm", "isDefault": false, "billable": true, "children": [
+          { "name": "Thunder Drill (UAT)", "billable": true },
+          { "name": "Hailstorm Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Lesser Gods", "isDefault": false, "billable": true, "children": [
+          { "name": "Sky-Spirit Onboarding", "billable": true },
+          { "name": "Council Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "domestic-spirits",
+      "projectName": "Domestic Spirits — Hearth & Home Service Cloud",
+      "shortName": "Domovoi HSC",
+      "subAccountName": "Brotherhood of the Hearth",
+      "subAccountNumber": "PSA-TEST-SLAVICMYTH-DOMESTICSPIRITS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Hearth Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Izba", "isDefault": false, "billable": true, "children": [
+          { "name": "Stove-Corner Survey", "billable": true },
+          { "name": "Bathhouse Inspection", "billable": true },
+          { "name": "Field & Forest Walk", "billable": true }
+        ]},
+        { "name": "Build the Stove & Threshold", "isDefault": false, "billable": true, "children": [
+          { "name": "Stove Foundation", "billable": true },
+          { "name": "Threshold Carving", "billable": true },
+          { "name": "Roof-Beam Blessing", "billable": true }
+        ]},
+        { "name": "Migrate the Household Charms", "isDefault": false, "billable": true, "children": [
+          { "name": "Old Charm Inventory", "billable": true },
+          { "name": "Spirit Re-binding", "billable": true }
+        ]},
+        { "name": "Testing in the Bannik's Bath", "isDefault": false, "billable": true, "children": [
+          { "name": "Steam Stress Trial", "billable": true },
+          { "name": "Threshold Charm Verification", "billable": true }
+        ]},
+        { "name": "Training the New Householders", "isDefault": false, "billable": true, "children": [
+          { "name": "Hearth-Keeping Basics", "billable": true },
+          { "name": "Spirit Etiquette Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "heroes-and-bogatyrs",
+      "projectName": "Heroes & Bogatyrs — Druzhina Mobilization Platform",
+      "shortName": "Bogatyr DMP",
+      "subAccountName": "Druzhina of Kyiv",
+      "subAccountNumber": "PSA-TEST-SLAVICMYTH-HEROESANDBOGATYRS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Druzhina Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Bylina", "isDefault": false, "billable": true, "children": [
+          { "name": "Steppe Reconnaissance", "billable": true },
+          { "name": "Roll Call at Kyiv", "billable": true },
+          { "name": "Strategy with Vladimir", "billable": true }
+        ]},
+        { "name": "Forge the Heroic Arms", "isDefault": false, "billable": true, "children": [
+          { "name": "Sword & Mace Smithing", "billable": true },
+          { "name": "Mail-Coat Riveting", "billable": true },
+          { "name": "Banner Embroidery", "billable": true }
+        ]},
+        { "name": "Migrate the Hero Rolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Bylina Manuscript Catalog", "billable": true },
+          { "name": "Provision Cart Inventory", "billable": true }
+        ]},
+        { "name": "Trial at the Steppe Frontier", "isDefault": false, "billable": true, "children": [
+          { "name": "Single Combat Drill (UAT)", "billable": true },
+          { "name": "Tatar Raid Stress Test", "billable": true }
+        ]},
+        { "name": "Training the New Bogatyrs", "isDefault": false, "billable": true, "children": [
+          { "name": "Otrok Foundations", "billable": true },
+          { "name": "Voivode's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "underworld-monsters",
+      "projectName": "Underworld Monsters — Nav Containment System",
+      "shortName": "Nav NCS",
+      "subAccountName": "Realm of Nav",
+      "subAccountNumber": "PSA-TEST-SLAVICMYTH-UNDERWORLDMONSTERS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Hut-on-Chicken-Legs Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Dark Forest", "isDefault": false, "billable": true, "children": [
+          { "name": "Bone-Fence Survey", "billable": true },
+          { "name": "Cauldron Diagnostics", "billable": true },
+          { "name": "Yaga's Council", "billable": true }
+        ]},
+        { "name": "Forge the Death-Needle Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Egg-within-Duck Casing", "billable": true },
+          { "name": "Oak-Tree Root Vault", "billable": true },
+          { "name": "Iron-Chest Reinforcement", "billable": true }
+        ]},
+        { "name": "Migrate the Cursed Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Plague Ledger Audit", "billable": true },
+          { "name": "Lost Soul Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Three-Headed Dragon", "isDefault": false, "billable": true, "children": [
+          { "name": "Fire-Breath Containment Drill", "billable": true },
+          { "name": "Kalinov Bridge Stress", "billable": true }
+        ]},
+        { "name": "Training the Wardens of Nav", "isDefault": false, "billable": true, "children": [
+          { "name": "Mortar-and-Pestle Refresher", "billable": true },
+          { "name": "Death-Charm Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "chief-deities": [
+      { "fullName": "Perun",       "themedRole": "Knyaz of the Western Druzhina" },
+      { "fullName": "Veles",       "themedRole": "Volkhv of the Sacred Grove" },
+      { "fullName": "Svarog",      "themedRole": "Smith of Svarog's Forge" },
+      { "fullName": "Dazhbog",     "themedRole": "Bogatyr of the Eastern Steppe" },
+      { "fullName": "Stribog",     "themedRole": "Skomorokh-in-Chief" },
+      { "fullName": "Mokosh",      "themedRole": "Keeper of the Iriy Records" },
+      { "fullName": "Lada",        "themedRole": "Bayan of the Princely Hall" },
+      { "fullName": "Khors",       "themedRole": "Otrok of the Eastern Steppe" },
+      { "fullName": "Simargl",     "themedRole": "Healer of the Rusalka Pools" },
+      { "fullName": "Belobog",     "themedRole": "Voivode of the Druzhina" },
+      { "fullName": "Chernobog",   "themedRole": "Scribe of the Veche" }
+    ],
+    "domestic-spirits": [
+      { "fullName": "Domovoi",     "themedRole": "Voivode of the Druzhina" },
+      { "fullName": "Bannik",      "themedRole": "Healer of the Rusalka Pools" },
+      { "fullName": "Dvorovoi",    "themedRole": "Otrok of the Eastern Steppe" },
+      { "fullName": "Polevoi",     "themedRole": "Bogatyr of the Eastern Steppe" },
+      { "fullName": "Leshy",       "themedRole": "Volkhv of the Sacred Grove" },
+      { "fullName": "Vodyanoy",    "themedRole": "Bridge-Smith of Kalinov Most" },
+      { "fullName": "Rusalka",     "themedRole": "Wright of Kalinov Most" },
+      { "fullName": "Vila",        "themedRole": "Bayan of the Princely Hall" },
+      { "fullName": "Kikimora",    "themedRole": "Otrok of the Eastern Forge" },
+      { "fullName": "Bagiennik",   "themedRole": "Apprentice of Kalinov Most" },
+      { "fullName": "Likho",       "themedRole": "Skomorokh of the Marketplace" }
+    ],
+    "heroes-and-bogatyrs": [
+      { "fullName": "Ilya Muromets",          "themedRole": "Knyaz of the Western Druzhina" },
+      { "fullName": "Dobrynya Nikitich",      "themedRole": "Voivode of the Druzhina" },
+      { "fullName": "Alyosha Popovich",       "themedRole": "Bogatyr of the Eastern Steppe" },
+      { "fullName": "Vasily Buslayev",        "themedRole": "Otrok of the Eastern Steppe" },
+      { "fullName": "Volga Svyatoslavich",    "themedRole": "Volkhv of the Sacred Grove" },
+      { "fullName": "Mikula Selyaninovich",   "themedRole": "Smith of Svarog's Forge" },
+      { "fullName": "Sviatogor",              "themedRole": "Master Smith of the Western Forge" },
+      { "fullName": "Sadko",                  "themedRole": "Bayan of the Princely Hall" },
+      { "fullName": "Princess Marya Morevna", "themedRole": "Scribe of the Veche" }
+    ],
+    "underworld-monsters": [
+      { "fullName": "Baba Yaga",         "themedRole": "Volkhv of the Sacred Grove" },
+      { "fullName": "Koschei the Deathless","themedRole": "Knyaz of the Western Druzhina" },
+      { "fullName": "Zmey Gorynych",     "themedRole": "Bridge-Smith of Kalinov Most" },
+      { "fullName": "Likho",             "themedRole": "Skomorokh of the Marketplace" },
+      { "fullName": "Chuma",             "themedRole": "Healer of the Rusalka Pools" },
+      { "fullName": "Polevik",           "themedRole": "Otrok of the Eastern Steppe" },
+      { "fullName": "Yaga Sister Sestritsa","themedRole": "Wright of Kalinov Most" },
+      { "fullName": "Marzanna",          "themedRole": "Scribe of the Veche" },
+      { "fullName": "Zhiva",             "themedRole": "Bayan of the Princely Hall" }
+    ]
+  },
+
+  "milestones": {
+    "chief-deities": [
+      { "name": "Council at the World Tree",      "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the gods convene at the roots of the World Oak." },
+      { "name": "Striking of the Thunder-Axe",    "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Perun's axe struck against Svarog's anvil — the first lightning falls." },
+      { "name": "Audience in Iriy",               "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review in the heavenly garden." },
+      { "name": "Veles' Cattle-Tally",            "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the underworld god counts every herd of progress." },
+      { "name": "Crowning of Dazhbog",            "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the sun-god takes his throne and rides across the new sky." },
+      { "name": "Mokosh's Hand-off",              "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the mother-goddess weaves the project into the great fate-loom." }
+    ],
+    "domestic-spirits": [
+      { "name": "Blessing of the Threshold",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: salt and bread laid upon the doorstep of the new izba." },
+      { "name": "Lighting of the Hearth-Fire",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: the stove kindled — the Domovoi takes up residence." },
+      { "name": "Bannik's Bathhouse Inspection",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the bath-spirit's three knocks must come back true." },
+      { "name": "Field-Walk with the Polevoi",    "type": "Operational", "offsetPct": 75,  "description": "Pre-launch walk-through: every furrow blessed, every charm in place." },
+      { "name": "Housewarming Feast",             "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the household celebrates — stove lit, spirits fed, doors thrown open." },
+      { "name": "Final Hearth-Tithe",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice: a bowl of porridge and a coin left for the Domovoi." }
+    ],
+    "heroes-and-bogatyrs": [
+      { "name": "Muster at Kyiv",                 "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the bogatyrs assemble at Prince Vladimir's court." },
+      { "name": "Ride to the Steppe Frontier",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: the druzhina rides east to meet the threat." },
+      { "name": "Single Combat with Sokolnik",    "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: champion-versus-champion — the build holds against the strongest blow." },
+      { "name": "Slaying of Solovei the Brigand", "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Ilya Muromets binds the whistling robber and clears the road." },
+      { "name": "Triumphal Return to Kyiv",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the heroes return, songs sung, banners raised." },
+      { "name": "Bylina at the Princely Feast",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Bayan strums the gusli and recounts every deed for payment." }
+    ],
+    "underworld-monsters": [
+      { "name": "Crossing of Kalinov Bridge",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: project scope crosses into the realm of Nav." },
+      { "name": "Forging Koschei's Death-Needle", "type": "Operational", "offsetPct": 35,  "description": "Build: the secret of every safeguard hidden — egg in duck, duck in hare, hare in chest." },
+      { "name": "Audit by Baba Yaga",             "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the witch in the hut on chicken legs." },
+      { "name": "Three-Headed Dragon Subdued",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Zmey Gorynych contained — every head accounted for in the runbook." },
+      { "name": "Marzanna Drowned in the River",  "type": "Operational", "offsetPct": 100, "description": "Project close: the winter-witch effigy cast into the river — the cursed system retired." },
+      { "name": "Final Tribute to Nav",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the underworld — paid in coin, not in souls." }
+    ]
+  },
+
+  "daysOff": {
+    "Perun":               [ { "realm": "chief-deities",       "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Thunder-axe re-tempering at Svarog's forge — quarterly." } ],
+    "Veles":               [ { "realm": "chief-deities",       "offsetWeeks": 12, "numberOfDays": 4, "notes": "Descent to the underworld to count the cattle of the dead." } ],
+    "Mokosh":              [ { "realm": "chief-deities",       "offsetWeeks": 18, "numberOfDays": 2, "notes": "Re-warping the loom of fate — strands tangled again." } ],
+    "Dazhbog":             [ { "realm": "chief-deities",       "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Solar eclipse — chariot in the workshop." } ],
+    "Domovoi":             [ { "realm": "domestic-spirits",    "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Stove cleaning — refusing to work until the household sweeps the corner." } ],
+    "Bannik":              [ { "realm": "domestic-spirits",    "offsetWeeks": 10, "numberOfDays": 3, "notes": "Sauna deep-clean — the third bath of the night must be his alone." } ],
+    "Leshy":               [ { "realm": "domestic-spirits",    "offsetWeeks": 16, "numberOfDays": 5, "notes": "Forest census — counts every wolf and mushroom personally." } ],
+    "Rusalka":             [ { "realm": "domestic-spirits",    "offsetWeeks": 14, "numberOfDays": 2, "notes": "Rusalka Week — combing hair on the riverbank, do not approach." } ],
+    "Ilya Muromets":       [ { "realm": "heroes-and-bogatyrs", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Pilgrimage to the Caves of Kyiv — annual penance." } ],
+    "Dobrynya Nikitich":   [ { "realm": "heroes-and-bogatyrs", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Visiting his mother in Ryazan — she insists." } ],
+    "Sadko":               [ { "realm": "heroes-and-bogatyrs", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Underwater command performance for the Sea Tsar." } ],
+    "Baba Yaga":           [ { "realm": "underworld-monsters", "offsetWeeks": 5,  "numberOfDays": 3, "notes": "Hut maintenance — chicken legs need re-shoeing." } ],
+    "Koschei the Deathless":[ { "realm": "underworld-monsters","offsetWeeks": 10, "numberOfDays": 2, "notes": "Re-hiding the death-needle — last spot was getting obvious." } ],
+    "Zmey Gorynych":       [ { "realm": "underworld-monsters", "offsetWeeks": 14, "numberOfDays": 1, "notes": "Middle head has a sore throat — cannot breathe fire." } ],
+    "Marzanna":            [ { "realm": "underworld-monsters", "offsetWeeks": 18, "numberOfDays": 4, "notes": "Winter recess — frost duties suspended until the equinox." } ]
+  }
+}

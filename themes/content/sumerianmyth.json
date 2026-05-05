@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "key": "SumerianMyth",
+  "displayName": "Sumerian / Mesopotamian Mythology",
+  "category": "Mythology",
+  "emailDomain": "eridu.test",
+  "account": {
+    "name": "Pantheon of Sumer (Test Data)",
+    "accountNumber": "PSA-TEST-SUMERIANMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Ziggurat Way, Eanna District",
+    "city": "Uruk",
+    "state": "Sumer",
+    "postalCode": "EDIN-3100",
+    "country": "Mesopotamia"
+  },
+
+  "roles": [
+    { "name": "Keeper of the Me",                 "canonical": "Solution Architect",                  "description": "Guardian of the divine decrees (the Me) — designs the over-arching solution and preserves its integrity across the realms." },
+    { "name": "Ensí of the Project",              "canonical": "Project Manager",                     "description": "City-governor of delivery — marshals the workers, holds the timeline, and reports to the gods of the council." },
+    { "name": "Tablet-House Scribe",              "canonical": "Salesforce Administrator",            "description": "Steward of the cuneiform records — fields, layouts, and permission sets etched into the clay." },
+    { "name": "Bronze-smith of Eridu",            "canonical": "Salesforce Developer",                "description": "Forges Apex, LWC, and platform features at the great workshops of Enki." },
+    { "name": "High Priest of E-kur",             "canonical": "Salesforce Practice Lead - USA",      "description": "Captain over all Salesforce craft of the western temples — sets standards and guides the senior priests." },
+    { "name": "Priest of the Eanna",              "canonical": "Salesforce Senior Consultant - India","description": "Practiced servant of Inanna's temple — patrols the borders of customer requirements with seasoned skill." },
+    { "name": "Acolyte of Inanna",                "canonical": "Salesforce Consultant - India",       "description": "Carries discovery and configuration through the city under the senior priest's eye." },
+    { "name": "Bridge-Master of the Tigris",      "canonical": "Integration Technical Architect - USA","description": "Architect of the great spans between Salesforce and the realms beyond the rivers." },
+    { "name": "Canal-Builder of Lagash",          "canonical": "Integration Senior Consultant - India","description": "Lays the conduits of API, middleware, and event flows under the Bridge-Master's plan." },
+    { "name": "Apprentice Canal-Digger",          "canonical": "Integration Consultant - India",      "description": "Learns the craft of integration — webhooks, batch, callouts, and the patterns of Mesopotamian water-flow." },
+    { "name": "Augur of the Bārû",                "canonical": "QA Engineer",                         "description": "Diviner who reads the omens — finds the maladies in the build before they reach the king." },
+    { "name": "Herald of the Ziggurat",           "canonical": "Marketing Practice Lead",             "description": "Lifts the banner and the trumpet from the temple summit — leads all marketing craft of the realm." },
+    { "name": "Singer of the Hymns",              "canonical": "Marketing Senior Consultant",         "description": "Strategist of campaigns — composes the songs that gather and convert the faithful." },
+    { "name": "Carrier of the Standard",          "canonical": "Marketing Consultant",                "description": "Carries the Standard of Ur into the field — content, creative, and the daily procession." },
+    { "name": "Council Scribe of Nippur",         "canonical": "Business Analyst",                    "description": "Records what is needed and what is promised — translates between mortal customer and the divine craft of design." },
+    { "name": "Master Builder of Babylon",        "canonical": "Salesforce Senior Developer - USA",   "description": "Senior architect of the great walls — leads complex Apex and platform builds in the western capital." },
+    { "name": "Novice of the Tablet-House",       "canonical": "Junior Salesforce Consultant - India","description": "Newest student of the edubba — learns configuration, declarative craft, and the ways of the senior scribes." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "anunnaki-chief-gods",
+      "projectName": "Anunnaki — Divine Council CRM Rollout",
+      "shortName": "Anunnaki DC",
+      "subAccountName": "Council of the Anunnaki",
+      "subAccountNumber": "PSA-TEST-SUMERIANMYTH-ANUNNAKI",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "E-kur Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Decreeing the Me", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Fifty", "billable": true },
+          { "name": "Inscribing the Tablets of Destiny", "billable": true }
+        ]},
+        { "name": "Raising the Ziggurat", "isDefault": false, "billable": true, "children": [
+          { "name": "Foundation Bricks of Nippur", "billable": true },
+          { "name": "Shrine of An at the Summit", "billable": true }
+        ]},
+        { "name": "Migrating the Sky-Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Star-Chart Inventory", "billable": true },
+          { "name": "Lunar Calendar Translation", "billable": true }
+        ]},
+        { "name": "Trial Before the Gods", "isDefault": false, "billable": true, "children": [
+          { "name": "Judgement of Utu (UAT)", "billable": true },
+          { "name": "Storm Stress of Enlil", "billable": true }
+        ]},
+        { "name": "Anointing the Priests", "isDefault": false, "billable": true, "children": [
+          { "name": "Novice Initiation", "billable": true },
+          { "name": "High Priest's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "creators-and-water-gods",
+      "projectName": "Apsu & Tiamat — Primordial Waters Platform",
+      "shortName": "Apsu PWP",
+      "subAccountName": "Primordial Waters Coalition",
+      "subAccountNumber": "PSA-TEST-SUMERIANMYTH-CREATORS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Apsu Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Deep", "isDefault": false, "billable": true, "children": [
+          { "name": "Sounding the Salt Sea", "billable": true },
+          { "name": "Mapping the Freshwater Springs", "billable": true }
+        ]},
+        { "name": "Forging the Enuma Elish", "isDefault": false, "billable": true, "children": [
+          { "name": "Tablet I — Origin of Things", "billable": true },
+          { "name": "Tablet IV — Marduk's Ascent", "billable": true }
+        ]},
+        { "name": "Migrating the Cosmic Order", "isDefault": false, "billable": true, "children": [
+          { "name": "Heaven from Tiamat's Half", "billable": true },
+          { "name": "Earth from the Lower Half", "billable": true }
+        ]},
+        { "name": "Trial of the Fifty Names", "isDefault": false, "billable": true, "children": [
+          { "name": "Naming Marduk's Powers", "billable": true },
+          { "name": "Council Ratification", "billable": true }
+        ]},
+        { "name": "Training the Igigi", "isDefault": false, "billable": true, "children": [
+          { "name": "Lesser Gods' Onboarding", "billable": true },
+          { "name": "Damkina's Mentoring Circle", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "gilgamesh-and-heroes",
+      "projectName": "Uruk Heroes — Epic Quest Delivery",
+      "shortName": "Uruk EQD",
+      "subAccountName": "Heroes of Uruk Guild",
+      "subAccountNumber": "PSA-TEST-SUMERIANMYTH-HEROES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Eanna Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Wild Lands", "isDefault": false, "billable": true, "children": [
+          { "name": "Steppe Reconnaissance", "billable": true },
+          { "name": "Shamhat's Civilising Outreach", "billable": true }
+        ]},
+        { "name": "Building the Walls of Uruk", "isDefault": false, "billable": true, "children": [
+          { "name": "Brick-firing at the Kiln", "billable": true },
+          { "name": "Rampart Engineering", "billable": true }
+        ]},
+        { "name": "Quest to the Cedar Forest", "isDefault": false, "billable": true, "children": [
+          { "name": "Felling Humbaba's Pines", "billable": true },
+          { "name": "Trophy Cataloguing", "billable": true }
+        ]},
+        { "name": "Trial Beyond the Mashu", "isDefault": false, "billable": true, "children": [
+          { "name": "Scorpion-Gate Stress Test", "billable": true },
+          { "name": "Plant of Youth UAT", "billable": true }
+        ]},
+        { "name": "Training the Watchmen", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Onboarding at the Gate", "billable": true },
+          { "name": "Captain's Manual of Uruk", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "underworld-and-monsters",
+      "projectName": "Kur — Underworld Surveillance Build",
+      "shortName": "Kur USB",
+      "subAccountName": "Realm of Kur",
+      "subAccountNumber": "PSA-TEST-SUMERIANMYTH-UNDERWORLD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Ganzir Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Seven Gates", "isDefault": false, "billable": true, "children": [
+          { "name": "Gate Inventory & Tolls", "billable": true },
+          { "name": "Galla Demon Reconnaissance", "billable": true }
+        ]},
+        { "name": "Building the Dark Palace", "isDefault": false, "billable": true, "children": [
+          { "name": "Throne of Ereshkigal", "billable": true },
+          { "name": "Pazuzu Wind-Wards", "billable": true }
+        ]},
+        { "name": "Migrating the Shades", "isDefault": false, "billable": true, "children": [
+          { "name": "Roll-call of the Dead", "billable": true },
+          { "name": "Dust-and-Clay Provisioning", "billable": true }
+        ]},
+        { "name": "Trial of the Bull of Heaven", "isDefault": false, "billable": true, "children": [
+          { "name": "Anzu Storm Pen-test", "billable": true },
+          { "name": "Asag Plague Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Galla", "isDefault": false, "billable": true, "children": [
+          { "name": "Demon Conscription", "billable": true },
+          { "name": "Namtar's Fate-Manual", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "anunnaki-chief-gods": [
+      { "fullName": "An",           "themedRole": "Keeper of the Me" },
+      { "fullName": "Enlil",        "themedRole": "High Priest of E-kur" },
+      { "fullName": "Enki",         "themedRole": "Master Builder of Babylon" },
+      { "fullName": "Ninhursag",    "themedRole": "Council Scribe of Nippur" },
+      { "fullName": "Nanna Sin",    "themedRole": "Bridge-Master of the Tigris" },
+      { "fullName": "Utu Shamash",  "themedRole": "Augur of the Bārû" },
+      { "fullName": "Inanna Ishtar","themedRole": "Herald of the Ziggurat" },
+      { "fullName": "Ningal",       "themedRole": "Tablet-House Scribe" }
+    ],
+    "creators-and-water-gods": [
+      { "fullName": "Tiamat",       "themedRole": "Keeper of the Me" },
+      { "fullName": "Apsu",         "themedRole": "High Priest of E-kur" },
+      { "fullName": "Marduk",       "themedRole": "Ensí of the Project" },
+      { "fullName": "Mummu",        "themedRole": "Council Scribe of Nippur" },
+      { "fullName": "Lahmu",        "themedRole": "Canal-Builder of Lagash" },
+      { "fullName": "Lahamu",       "themedRole": "Apprentice Canal-Digger" },
+      { "fullName": "Anshar",       "themedRole": "Bridge-Master of the Tigris" },
+      { "fullName": "Kishar",       "themedRole": "Singer of the Hymns" },
+      { "fullName": "Nammu",        "themedRole": "Bronze-smith of Eridu" },
+      { "fullName": "Damkina",      "themedRole": "Novice of the Tablet-House" }
+    ],
+    "gilgamesh-and-heroes": [
+      { "fullName": "Gilgamesh",    "themedRole": "Ensí of the Project" },
+      { "fullName": "Enkidu",       "themedRole": "Bronze-smith of Eridu" },
+      { "fullName": "Shamhat",      "themedRole": "Singer of the Hymns" },
+      { "fullName": "Ninsun",       "themedRole": "Council Scribe of Nippur" },
+      { "fullName": "Lugalbanda",   "themedRole": "Master Builder of Babylon" },
+      { "fullName": "Humbaba",      "themedRole": "Augur of the Bārû" },
+      { "fullName": "Utnapishtim",  "themedRole": "Keeper of the Me" },
+      { "fullName": "Atrahasis",    "themedRole": "Priest of the Eanna" },
+      { "fullName": "Etana",        "themedRole": "Carrier of the Standard" },
+      { "fullName": "Adapa",        "themedRole": "Acolyte of Inanna" }
+    ],
+    "underworld-and-monsters": [
+      { "fullName": "Ereshkigal",   "themedRole": "Keeper of the Me" },
+      { "fullName": "Nergal",       "themedRole": "Ensí of the Project" },
+      { "fullName": "Namtar",       "themedRole": "Council Scribe of Nippur" },
+      { "fullName": "Galla Demons", "themedRole": "Carrier of the Standard" },
+      { "fullName": "Pazuzu",       "themedRole": "Bridge-Master of the Tigris" },
+      { "fullName": "Lamashtu",     "themedRole": "Augur of the Bārû" },
+      { "fullName": "Asag",         "themedRole": "Canal-Builder of Lagash" },
+      { "fullName": "Bull of Heaven","themedRole": "Apprentice Canal-Digger" },
+      { "fullName": "Anzu",         "themedRole": "Acolyte of Inanna" },
+      { "fullName": "Lilith Lilitu","themedRole": "Tablet-House Scribe" }
+    ]
+  },
+
+  "milestones": {
+    "anunnaki-chief-gods": [
+      { "name": "Convening of the Fifty",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the great gods convene at E-kur." },
+      { "name": "Tablets of Destiny Drafted", "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the divine decrees are inscribed in clay." },
+      { "name": "Audience at Nippur",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: solution review with Enlil's council." },
+      { "name": "Inanna's Procession",        "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the goddess parades the deliverables through Uruk." },
+      { "name": "Anointing of the King",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: kingship descends from heaven." },
+      { "name": "Hand-off to Utu",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the sun-god of justice." }
+    ],
+    "creators-and-water-gods": [
+      { "name": "Mingling of the Waters",     "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Apsu and Tiamat commingle to begin all things." },
+      { "name": "Marduk Takes Up Arms",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: Marduk forges the four winds and the storm-bow." },
+      { "name": "Splitting of Tiamat",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: heaven and earth are separated and accepted." },
+      { "name": "Fifty Names Bestowed",       "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Marduk receives his fifty names of power." },
+      { "name": "Esagila Dedicated",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the temple in Babylon is consecrated." },
+      { "name": "Final Tribute of the Igigi", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the lesser gods deliver their tribute." }
+    ],
+    "gilgamesh-and-heroes": [
+      { "name": "Two-Thirds God Onboarded",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery: Gilgamesh accepts the quest charter at Uruk." },
+      { "name": "Enkidu Joins the Fellowship","type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the wild man is civilised and joins the team." },
+      { "name": "Slaying of Humbaba",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the cedar-forest guardian is defeated." },
+      { "name": "Fall of the Bull of Heaven", "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Inanna's bull is brought down at Uruk." },
+      { "name": "Return from Utnapishtim",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Gilgamesh returns from the survivor of the flood." },
+      { "name": "Inscribing the Walls",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the deeds carved into Uruk's brickwork." }
+    ],
+    "underworld-and-monsters": [
+      { "name": "Opening of the First Gate",  "type": "Gate",        "offsetPct": 10,  "description": "Discovery: descent begins; first gate of Kur unlatched." },
+      { "name": "Ereshkigal's Decree",        "type": "Operational", "offsetPct": 35,  "description": "Build: the queen of Kur signs off the surveillance plan." },
+      { "name": "Galla Demon Audit",          "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the demon escorts of the Underworld." },
+      { "name": "Nergal Crowned Consort",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Nergal seated beside Ereshkigal; system fully operational." },
+      { "name": "Sealing of the Seven Gates", "type": "Operational", "offsetPct": 100, "description": "Project close: all gates barred; surveillance suspended." },
+      { "name": "Final Toll Collected",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the keepers of the gates." }
+    ]
+  },
+
+  "daysOff": {
+    "Inanna Ishtar":  [ { "realm": "anunnaki-chief-gods",     "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Descent into Kur — quarterly underworld pilgrimage." } ],
+    "Enki":           [ { "realm": "anunnaki-chief-gods",     "offsetWeeks": 14, "numberOfDays": 3, "notes": "Retreat to the Apsu — wisdom-renewal at Eridu." } ],
+    "Enlil":          [ { "realm": "anunnaki-chief-gods",     "offsetWeeks": 18, "numberOfDays": 2, "notes": "Storm-tending duties over the Zagros." } ],
+    "Utu Shamash":    [ { "realm": "anunnaki-chief-gods",     "offsetWeeks": 4,  "numberOfDays": 1, "notes": "Annual eclipse — court closed for the day." } ],
+    "Marduk":         [ { "realm": "creators-and-water-gods", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Esagila renovation week in Babylon." } ],
+    "Tiamat":         [ { "realm": "creators-and-water-gods", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Salt-sea recalibration after the splitting." } ],
+    "Damkina":        [ { "realm": "creators-and-water-gods", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Maternity leave — care of the young Marduk." } ],
+    "Gilgamesh":      [ { "realm": "gilgamesh-and-heroes",    "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Quest for the Plant of Youth — extended absence." } ],
+    "Enkidu":         [ { "realm": "gilgamesh-and-heroes",    "offsetWeeks": 10, "numberOfDays": 3, "notes": "Convalescence after the Bull of Heaven." } ],
+    "Ninsun":         [ { "realm": "gilgamesh-and-heroes",    "offsetWeeks": 14, "numberOfDays": 2, "notes": "Maternal counsel-day with Gilgamesh." } ],
+    "Utnapishtim":    [ { "realm": "gilgamesh-and-heroes",    "offsetWeeks": 18, "numberOfDays": 4, "notes": "Flood-anniversary observance at Dilmun." } ],
+    "Ereshkigal":     [ { "realm": "underworld-and-monsters", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Mourning rites for Gugalanna." } ],
+    "Nergal":         [ { "realm": "underworld-and-monsters", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Plague-season inspection of the upper world." } ],
+    "Pazuzu":         [ { "realm": "underworld-and-monsters", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Wind-season — driving Lamashtu from the rivers." } ],
+    "Lilith Lilitu":  [ { "realm": "underworld-and-monsters", "offsetWeeks": 4,  "numberOfDays": 1, "notes": "Night-watch duties — recovering by day." } ]
+  }
+}

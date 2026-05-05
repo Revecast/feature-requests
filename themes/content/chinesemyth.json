@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "key": "ChineseMyth",
+  "displayName": "Chinese Mythology",
+  "category": "Mythology",
+  "emailDomain": "zhongguo-shenhua.test",
+  "account": {
+    "name": "Celestial Bureaucracy (Test Data)",
+    "accountNumber": "PSA-TEST-CHINESEMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Cloud Terrace, Mount Kunlun",
+    "city": "Tianting (Heavenly Court)",
+    "state": "Nine Heavens",
+    "postalCode": "00081",
+    "country": "Middle Kingdom"
+  },
+
+  "roles": [
+    { "name": "Sanqing Architect of the Dao",        "canonical": "Solution Architect",                      "description": "Master of the Three Pure Ones' wisdom — architects the over-arching celestial solution and watches over its harmony." },
+    { "name": "Marshal of the Heavenly Host",        "canonical": "Project Manager",                         "description": "Marshals the immortal warriors of delivery, holds the timeline, and answers to the Jade Emperor." },
+    { "name": "Keeper of the Jade Registry",         "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets in the celestial ledgers." },
+    { "name": "Master Smith of the Furnace",         "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features in Laojun's eight-trigram crucible." },
+    { "name": "Star Lord of the Western Heaven",     "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all senior Salesforce craft — sets standards and guides the senior immortals." },
+    { "name": "Veteran Cloud-Walking Immortal",      "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced cultivation craft." },
+    { "name": "Junior Cloud-Walking Disciple",       "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the senior immortal's eye." },
+    { "name": "Architect of the Magpie Bridge",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the Milky Way." },
+    { "name": "Builder of the Magpie Bridge",        "canonical": "Integration Senior Consultant - India",   "description": "Lays the planks of API, middleware, and event flows under the Bridge Architect's plan." },
+    { "name": "Apprentice Bridge Crow",              "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the celestial patterns of error handling." },
+    { "name": "Medicine Spirit of Penglai",          "canonical": "QA Engineer",                             "description": "Tends the wounded scripts and the weary stack — finds the maladies in the build before they reach the Emperor." },
+    { "name": "Herald of the Phoenix Banner",        "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the bronze bell for product and message — leads all marketing craft." },
+    { "name": "Strategist of the Bagua Drum",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the celestial drum to gather and convert." },
+    { "name": "Banner-Bearer of the Vermilion Bird", "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the four cardinal kingdoms — content, creative, and daily ritual." },
+    { "name": "Scribe of the Veritable Records",     "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the immortal craft of design." },
+    { "name": "Sage Daoshi of the Inner Alchemy",    "canonical": "Salesforce Senior Developer - USA",       "description": "Legendary cultivation-class developer — handles the deepest, most senior platform work." },
+    { "name": "Newly-Ascended Xian",                 "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh from mortal cultivation — picks up configuration and discovery work under senior guidance." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "jade-emperor-court",
+      "projectName": "Jade Emperor's Court — Heavenly Bureau Modernization",
+      "shortName": "Tianting HBM",
+      "subAccountName": "Court of the Jade Emperor",
+      "subAccountNumber": "PSA-TEST-CHINESEMYTH-JADECOURT",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Lingxiao Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Heavenly Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Peach Banquet Census", "billable": true },
+          { "name": "Field Survey — Mount Hua", "billable": true }
+        ]},
+        { "name": "Build the Cloud Palace", "isDefault": false, "billable": true, "children": [
+          { "name": "Pillar of the South Heaven Gate", "billable": true },
+          { "name": "Throne Room Foundations", "billable": true }
+        ]},
+        { "name": "Migrate the Celestial Registry", "isDefault": false, "billable": true, "children": [
+          { "name": "Jade Scroll Inventory", "billable": true },
+          { "name": "Bronze-tablet Translation", "billable": true }
+        ]},
+        { "name": "Testing at Flower-Fruit Mountain", "isDefault": false, "billable": true, "children": [
+          { "name": "Monkey King Stress Test", "billable": true },
+          { "name": "Heavenly Army UAT Drill", "billable": true }
+        ]},
+        { "name": "Training the Celestial Guard", "isDefault": false, "billable": true, "children": [
+          { "name": "Erlang Shen's Workshop", "billable": true },
+          { "name": "Nezha's Wind-Wheel Onboarding", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "eight-immortals",
+      "projectName": "Eight Immortals — Crossing the Sea Logistics Platform",
+      "shortName": "Baxian CSLP",
+      "subAccountName": "Order of the Eight Immortals",
+      "subAccountNumber": "PSA-TEST-CHINESEMYTH-EIGHTIMMORTALS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Penglai Pavilion Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Treasure Inventory", "isDefault": false, "billable": true, "children": [
+          { "name": "Magic Item Audit", "billable": true },
+          { "name": "Sea Crossing Survey", "billable": true }
+        ]},
+        { "name": "Build the Crossing Vessels", "isDefault": false, "billable": true, "children": [
+          { "name": "Lü Dongbin's Sword Forging", "billable": true },
+          { "name": "Han Xiangzi's Flute Tuning", "billable": true },
+          { "name": "Tieguai Li's Gourd Crafting", "billable": true }
+        ]},
+        { "name": "Migrate the Elixir Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Cinnabar Ledger Conversion", "billable": true },
+          { "name": "Peach Tree Catalog", "billable": true }
+        ]},
+        { "name": "Testing at the Eastern Sea", "isDefault": false, "billable": true, "children": [
+          { "name": "Dragon King Negotiation Drill", "billable": true },
+          { "name": "Wave Crossing Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Disciples", "isDefault": false, "billable": true, "children": [
+          { "name": "Cultivation Foundations", "billable": true },
+          { "name": "Magu's Longevity Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "dragons-and-creators",
+      "projectName": "Dragons & Creators — Primordial Schema Build",
+      "shortName": "Pangu PSB",
+      "subAccountName": "Order of the Primordial Creators",
+      "subAccountNumber": "PSA-TEST-CHINESEMYTH-DRAGONSCREATORS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 24,
+      "workstreams": [
+        { "name": "Kunlun Summit Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cosmic Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Pangu's Axe Stroke Mapping", "billable": true },
+          { "name": "Five Elements Census", "billable": true },
+          { "name": "Yin-Yang Strategy Council", "billable": true }
+        ]},
+        { "name": "Build the Heavens & Earth", "isDefault": false, "billable": true, "children": [
+          { "name": "Sky Pillar Forging — Nüwa", "billable": true },
+          { "name": "Mountain Foundation Carving", "billable": true },
+          { "name": "Riverbed Channel Routing", "billable": true }
+        ]},
+        { "name": "Migrate the Bagua Trigrams", "isDefault": false, "billable": true, "children": [
+          { "name": "Fuxi's Trigram Catalog", "billable": true },
+          { "name": "Shennong's Herbal Conversion", "billable": true }
+        ]},
+        { "name": "Testing the Four Symbols", "isDefault": false, "billable": true, "children": [
+          { "name": "Azure Dragon East-Gate Drill", "billable": true },
+          { "name": "White Tiger West-Gate Drill", "billable": true }
+        ]},
+        { "name": "Training the Yellow Emperor's Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Tribal Chieftain Onboarding", "billable": true },
+          { "name": "Yinglong's Rain-Calling Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "underworld-and-folk-deities",
+      "projectName": "Underworld & Folk Deities — Diyu Records Migration",
+      "shortName": "Diyu DRM",
+      "subAccountName": "Ten Courts of Diyu",
+      "subAccountNumber": "PSA-TEST-CHINESEMYTH-UNDERWORLD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 22,
+      "workstreams": [
+        { "name": "Naihe Bridge Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Soul Census", "isDefault": false, "billable": true, "children": [
+          { "name": "Heibai Wuchang Patrol Survey", "billable": true },
+          { "name": "Niutou & Mamian Roll Call", "billable": true },
+          { "name": "Ten Kings' Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Ten Courts", "isDefault": false, "billable": true, "children": [
+          { "name": "Yanluo Wang's Tribunal Hall", "billable": true },
+          { "name": "Mirror of Retribution Calibration", "billable": true },
+          { "name": "Wheel of Reincarnation Assembly", "billable": true }
+        ]},
+        { "name": "Migrate the Karma Ledger", "isDefault": false, "billable": true, "children": [
+          { "name": "Soul Manifest Conversion", "billable": true },
+          { "name": "Meng Po's Soup Recipe Archive", "billable": true }
+        ]},
+        { "name": "Testing the Folk Shrines", "isDefault": false, "billable": true, "children": [
+          { "name": "Mazu Coastal Beacon Trial", "billable": true },
+          { "name": "Chang'e Lunar Sync Test", "billable": true }
+        ]},
+        { "name": "Training the Mortal Devotees", "isDefault": false, "billable": true, "children": [
+          { "name": "Temple Keeper Onboarding", "billable": true },
+          { "name": "Festival Ritual Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "jade-emperor-court": [
+      { "fullName": "Yu Huang the Jade Emperor",     "themedRole": "Star Lord of the Western Heaven" },
+      { "fullName": "Wangmu Niangniang",             "themedRole": "Marshal of the Heavenly Host" },
+      { "fullName": "Sanqing the Three Pure Ones",   "themedRole": "Sanqing Architect of the Dao" },
+      { "fullName": "Sun Wukong",                    "themedRole": "Master Smith of the Furnace" },
+      { "fullName": "Zhu Bajie",                     "themedRole": "Junior Cloud-Walking Disciple" },
+      { "fullName": "Sha Wujing",                    "themedRole": "Veteran Cloud-Walking Immortal" },
+      { "fullName": "Erlang Shen",                   "themedRole": "Architect of the Magpie Bridge" },
+      { "fullName": "Nezha",                         "themedRole": "Newly-Ascended Xian" }
+    ],
+    "eight-immortals": [
+      { "fullName": "Lü Dongbin",                    "themedRole": "Sage Daoshi of the Inner Alchemy" },
+      { "fullName": "Han Zhongli",                   "themedRole": "Sanqing Architect of the Dao" },
+      { "fullName": "Zhang Guolao",                  "themedRole": "Scribe of the Veritable Records" },
+      { "fullName": "Han Xiangzi",                   "themedRole": "Strategist of the Bagua Drum" },
+      { "fullName": "Cao Guojiu",                    "themedRole": "Marshal of the Heavenly Host" },
+      { "fullName": "Lan Caihe",                     "themedRole": "Banner-Bearer of the Vermilion Bird" },
+      { "fullName": "He Xiangu",                     "themedRole": "Medicine Spirit of Penglai" },
+      { "fullName": "Tieguai Li",                    "themedRole": "Builder of the Magpie Bridge" },
+      { "fullName": "Magu",                          "themedRole": "Herald of the Phoenix Banner" },
+      { "fullName": "Shoulao",                       "themedRole": "Keeper of the Jade Registry" }
+    ],
+    "dragons-and-creators": [
+      { "fullName": "Pangu",                         "themedRole": "Sanqing Architect of the Dao" },
+      { "fullName": "Nüwa",                          "themedRole": "Master Smith of the Furnace" },
+      { "fullName": "Fuxi",                          "themedRole": "Scribe of the Veritable Records" },
+      { "fullName": "Shennong",                      "themedRole": "Medicine Spirit of Penglai" },
+      { "fullName": "Huangdi the Yellow Emperor",    "themedRole": "Star Lord of the Western Heaven" },
+      { "fullName": "Yinglong the Responding Dragon","themedRole": "Architect of the Magpie Bridge" },
+      { "fullName": "Azure Dragon of the East",      "themedRole": "Veteran Cloud-Walking Immortal" },
+      { "fullName": "Vermilion Bird of the South",   "themedRole": "Apprentice Bridge Crow" }
+    ],
+    "underworld-and-folk-deities": [
+      { "fullName": "Yanluo Wang",                   "themedRole": "Sanqing Architect of the Dao" },
+      { "fullName": "Meng Po",                       "themedRole": "Medicine Spirit of Penglai" },
+      { "fullName": "Heibai Wuchang",                "themedRole": "Junior Cloud-Walking Disciple" },
+      { "fullName": "Niutou and Mamian",             "themedRole": "Builder of the Magpie Bridge" },
+      { "fullName": "Mazu the Sea Goddess",          "themedRole": "Marshal of the Heavenly Host" },
+      { "fullName": "Chang'e the Moon Goddess",      "themedRole": "Keeper of the Jade Registry" },
+      { "fullName": "Houyi the Archer",              "themedRole": "Sage Daoshi of the Inner Alchemy" }
+    ]
+  },
+
+  "milestones": {
+    "jade-emperor-court": [
+      { "name": "Convene the Heavenly Court",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — bells rung at the South Heaven Gate." },
+      { "name": "Forge the Ruyi Jingu Bang",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the Monkey King's staff reforged for the road ahead." },
+      { "name": "Audience at Lingxiao Hall",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review with the Jade Emperor's council." },
+      { "name": "Peach Banquet Phase Invoice",       "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feast of immortal peaches served." },
+      { "name": "Coronation of Order",               "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the celestial bureaucracy returns to harmony." },
+      { "name": "Hand-off to Wangmu",                "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the Queen Mother." }
+    ],
+    "eight-immortals": [
+      { "name": "Gathering at Penglai",              "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Eight assemble on the immortal isle." },
+      { "name": "Cross the Eastern Sea",             "type": "Operational", "offsetPct": 30,  "description": "Build phase: each immortal deploys their magic treasure." },
+      { "name": "Dragon King's Acceptance",          "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: peace treaty with the Dragon King of the East Sea." },
+      { "name": "Festival of Magu",                  "type": "Billing",     "offsetPct": 75,  "description": "Phase invoice: longevity festival sponsorship cleared." },
+      { "name": "Return to Penglai",                 "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the immortals return triumphant with the new platform." },
+      { "name": "Eternal Banquet Hand-off",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the immortal banquet resumes." }
+    ],
+    "dragons-and-creators": [
+      { "name": "Pangu's First Stroke",              "type": "Gate",        "offsetPct": 10,  "description": "Discovery: heaven and earth separated, scope finalized." },
+      { "name": "Nüwa Patches the Sky",              "type": "Operational", "offsetPct": 35,  "description": "Build: the five-coloured stones forged into the platform." },
+      { "name": "Yellow Emperor's Audit",            "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Huangdi himself at Mount Kunlun." },
+      { "name": "Yinglong Calls the Rain",           "type": "Billing",     "offsetPct": 75,  "description": "Phase invoice trigger: the rain-bringer signs the bill." },
+      { "name": "Four Symbols Activation",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Azure Dragon, White Tiger, Vermilion Bird, Black Tortoise stand watch." },
+      { "name": "Bagua Final Reckoning",             "type": "Operational", "offsetPct": 100, "description": "Project close: the trigrams aligned and handed to Fuxi." }
+    ],
+    "underworld-and-folk-deities": [
+      { "name": "Council of the Ten Kings",          "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the First Court of Diyu." },
+      { "name": "Drink Meng Po's Soup",              "type": "Operational", "offsetPct": 30,  "description": "Discovery close: prior-state forgotten, future-state mapped." },
+      { "name": "Weave the Karma Ledger",            "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards woven from the threads of merit and demerit." },
+      { "name": "Mazu's Coastal Acceptance",         "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: blessings from the sea goddess at every port." },
+      { "name": "Chang'e Lunar Go-Live",             "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live + handoff: the moon goddess illuminates the new system." },
+      { "name": "Final Recompense at Naihe Bridge",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: tally settled before the bridge of forgetfulness." }
+    ]
+  },
+
+  "daysOff": {
+    "Sun Wukong":               [ { "realm": "jade-emperor-court",         "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Trapped under Five Elements Mountain — annual penance week." } ],
+    "Zhu Bajie":                [ { "realm": "jade-emperor-court",         "offsetWeeks": 12, "numberOfDays": 2, "notes": "Gao Village family visit — feast schedule conflict." } ],
+    "Nezha":                    [ { "realm": "jade-emperor-court",         "offsetWeeks": 18, "numberOfDays": 1, "notes": "Wind-Fire Wheels at the celestial repair shop." } ],
+    "Erlang Shen":              [ { "realm": "jade-emperor-court",         "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Hunting expedition with the Howling Celestial Dog." } ],
+    "Lü Dongbin":               [ { "realm": "eight-immortals",            "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Sword maintenance — quarterly cinnabar polishing." } ],
+    "He Xiangu":                [ { "realm": "eight-immortals",            "offsetWeeks": 14, "numberOfDays": 3, "notes": "Lotus pond meditation retreat." } ],
+    "Magu":                     [ { "realm": "eight-immortals",            "offsetWeeks": 20, "numberOfDays": 5, "notes": "Hosting the Longevity Festival — every sixty years." } ],
+    "Tieguai Li":               [ { "realm": "eight-immortals",            "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Iron crutch repair at the celestial smithy." } ],
+    "Nüwa":                     [ { "realm": "dragons-and-creators",       "offsetWeeks": 10, "numberOfDays": 3, "notes": "Sky-patching maintenance — Mount Buzhou collapse follow-up." } ],
+    "Shennong":                 [ { "realm": "dragons-and-creators",       "offsetWeeks": 14, "numberOfDays": 4, "notes": "Tasting one hundred herbs — recovery week." } ],
+    "Huangdi the Yellow Emperor":[{ "realm": "dragons-and-creators",       "offsetWeeks": 18, "numberOfDays": 2, "notes": "Audience with the Yellow River dragons." } ],
+    "Chang'e the Moon Goddess": [ { "realm": "underworld-and-folk-deities","offsetWeeks": 8,  "numberOfDays": 3, "notes": "Mid-Autumn Festival lunar duties." } ],
+    "Houyi the Archer":         [ { "realm": "underworld-and-folk-deities","offsetWeeks": 12, "numberOfDays": 2, "notes": "Annual sun-shooting practice — nine remaining suns." } ],
+    "Mazu the Sea Goddess":     [ { "realm": "underworld-and-folk-deities","offsetWeeks": 16, "numberOfDays": 4, "notes": "Coastal pilgrimage — blessing the fishing fleets." } ],
+    "Meng Po":                  [ { "realm": "underworld-and-folk-deities","offsetWeeks": 4,  "numberOfDays": 1, "notes": "Soup cauldron deep-clean and herb restock." } ]
+  }
+}

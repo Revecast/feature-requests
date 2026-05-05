@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "key": "NativeAmericanSpirits",
+  "displayName": "Native American Spirits",
+  "category": "Mythology",
+  "emailDomain": "turtle-island.test",
+  "account": {
+    "name": "Spirits of Turtle Island (Test Data)",
+    "accountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS"
+  },
+  "mailingAddress": {
+    "street": "1 Council Fire Way",
+    "city": "Turtle Island",
+    "state": "SD",
+    "postalCode": "57000",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Vision-Keeper",                    "canonical": "Solution Architect",                      "description": "Holder of the long sight — designs the over-arching solution and tends the integrity of every realm's pattern." },
+    { "name": "Council Chief",                    "canonical": "Project Manager",                         "description": "Carries the talking stick — convenes the council, holds the timeline, and answers to the elders." },
+    { "name": "Keeper of the Wampum",             "canonical": "Salesforce Administrator",                "description": "Steward of the record-belts — guards layouts, fields, sharing, and the woven memory of the people." },
+    { "name": "Pipe-Carver of the Stone",         "canonical": "Salesforce Developer",                    "description": "Shapes Apex, LWC, and platform craft from the red stone of the quarry." },
+    { "name": "Elder of the Western Sky",         "canonical": "Salesforce Practice Lead - USA",          "description": "Senior wisdom-keeper for all Salesforce craft — sets the standards and mentors the carvers." },
+    { "name": "Trail-Tracker of the Eastern Wood","canonical": "Salesforce Senior Consultant - India",    "description": "Reads the customer's tracks with practiced eye — patrols the borders of requirements." },
+    { "name": "Scout of the Long Grass",          "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration into the field under the Trail-Tracker's eye." },
+    { "name": "Bridge-Builder of the Two Rivers", "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the worlds beyond." },
+    { "name": "Canoe-Wright of the Great Lakes",  "canonical": "Integration Senior Consultant - India",   "description": "Hews the cedar of APIs, middleware, and event flows under the Bridge-Builder's plan." },
+    { "name": "Apprentice Canoe-Wright",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the patient art of error handling." },
+    { "name": "Medicine Tester",                  "canonical": "QA Engineer",                             "description": "Tastes every brew before it reaches the lodge — hunts maladies in the build before the people drink." },
+    { "name": "Drum-Keeper of the Powwow",        "canonical": "Marketing Practice Lead",                 "description": "Lifts the great drum and the eagle feather — leads all marketing craft and message." },
+    { "name": "Singer of the Songlines",          "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — composes the songs that gather the people to the fire." },
+    { "name": "Dancer of the Round",              "canonical": "Marketing Consultant",                    "description": "Carries the song into the round dance — content, creative, and the daily step." },
+    { "name": "Story-Listener of the Lodge",      "canonical": "Business Analyst",                        "description": "Records what the elders need and what the council promises — translates between people and craft." },
+    { "name": "Master Pipe-Carver of the Quarry", "canonical": "Salesforce Senior Developer - USA",       "description": "Senior carver of platform stone — leads the deep build and mentors the apprentices." },
+    { "name": "Apprentice of the Long Grass",     "canonical": "Junior Salesforce Consultant - India",    "description": "Learns the trail under the Scout — first configurations, first reports, first listening." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Four realms span four distinct culture areas — Plains, Pacific Northwest, Southwest (Pueblo/Navajo), and Eastern Woodlands — each treated with respect for the distinct nations within it.",
+
+  "realms": [
+    {
+      "key": "great-plains-spirits",
+      "projectName": "Great Plains — Council of the Sacred Hoop",
+      "shortName": "Plains CSH",
+      "subAccountName": "Great Plains Spirits Council",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-GREATPLAINS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sacred Hoop Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery on the Open Plains", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of Wakan Tanka", "billable": true },
+          { "name": "Buffalo Trail Survey", "billable": true }
+        ]},
+        { "name": "Raise the Lodge Poles", "isDefault": false, "billable": true, "children": [
+          { "name": "Tipi Foundation Stones", "billable": true },
+          { "name": "Lodge Pole Selection", "billable": true }
+        ]},
+        { "name": "Migrate the Star Stories", "isDefault": false, "billable": true, "children": [
+          { "name": "Winter Count Inventory", "billable": true },
+          { "name": "Star Map Translation", "billable": true }
+        ]},
+        { "name": "Testing on the Sun Dance Ground", "isDefault": false, "billable": true, "children": [
+          { "name": "Sun Dance Trial (UAT)", "billable": true },
+          { "name": "Thunder Drill Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Akicita", "isDefault": false, "billable": true, "children": [
+          { "name": "Warrior Society Onboarding", "billable": true },
+          { "name": "Pipe-Holder Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pacific-northwest-spirits",
+      "projectName": "Pacific Northwest — Cedar Longhouse Platform",
+      "shortName": "PNW CLP",
+      "subAccountName": "Pacific Northwest Spirits Longhouse",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-PACIFICNORTHWEST",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Longhouse Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Cedar Mist", "isDefault": false, "billable": true, "children": [
+          { "name": "Raven's Reconnaissance", "billable": true },
+          { "name": "Tideline Headcount", "billable": true }
+        ]},
+        { "name": "Carve the Totem Poles", "isDefault": false, "billable": true, "children": [
+          { "name": "Cedar Selection at Tideline", "billable": true },
+          { "name": "Crest Figure Carving", "billable": true }
+        ]},
+        { "name": "Migrate the Potlatch Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Copper Shield Inventory", "billable": true },
+          { "name": "Gift-Giving Ledger", "billable": true }
+        ]},
+        { "name": "Testing on the Salmon Run", "isDefault": false, "billable": true, "children": [
+          { "name": "Weir Strength Trial", "billable": true },
+          { "name": "Canoe Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Mask Dancers", "isDefault": false, "billable": true, "children": [
+          { "name": "Hamatsa Initiation", "billable": true },
+          { "name": "Storyteller's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "southwestern-pueblo-and-navajo-spirits",
+      "projectName": "Southwest — Kiva Knowledge Migration",
+      "shortName": "SW Kiva",
+      "subAccountName": "Southwestern Pueblo & Navajo Spirits",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-SOUTHWEST",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Kiva Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Sandpainting", "isDefault": false, "billable": true, "children": [
+          { "name": "Spider Woman's Loom Mapping", "billable": true },
+          { "name": "Mesa Top Survey", "billable": true }
+        ]},
+        { "name": "Weave the Holy Patterns", "isDefault": false, "billable": true, "children": [
+          { "name": "Sandpainting Foundation", "billable": true },
+          { "name": "Loom Warp Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Origin Stories", "isDefault": false, "billable": true, "children": [
+          { "name": "Emergence Story Catalog", "billable": true },
+          { "name": "Chant Recording", "billable": true }
+        ]},
+        { "name": "Testing in the Fourth World", "isDefault": false, "billable": true, "children": [
+          { "name": "Hero Twins Trial", "billable": true },
+          { "name": "Monster Slayer Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Kachina Dancers", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiate Onboarding", "billable": true },
+          { "name": "Mask-Carver's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "eastern-woodlands-spirits",
+      "projectName": "Eastern Woodlands — Longhouse Confederacy CRM",
+      "shortName": "EW Confederacy",
+      "subAccountName": "Eastern Woodlands Confederacy",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-EASTERNWOODLANDS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Council Fire Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery by the Council Fire", "isDefault": false, "billable": true, "children": [
+          { "name": "Sky Woman's Vision Council", "billable": true },
+          { "name": "Birch Bark Reconnaissance", "billable": true }
+        ]},
+        { "name": "Build the Wampum Belt", "isDefault": false, "billable": true, "children": [
+          { "name": "Shell Bead Foundation", "billable": true },
+          { "name": "Belt Pattern Weaving", "billable": true }
+        ]},
+        { "name": "Migrate the Great Law", "isDefault": false, "billable": true, "children": [
+          { "name": "Hiawatha Belt Inventory", "billable": true },
+          { "name": "Confederacy Treaty Translation", "billable": true }
+        ]},
+        { "name": "Testing on the Long Trail", "isDefault": false, "billable": true, "children": [
+          { "name": "Snowshoe Endurance Drill", "billable": true },
+          { "name": "Canoe Portage Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Faithkeepers", "isDefault": false, "billable": true, "children": [
+          { "name": "Clan Mother Onboarding", "billable": true },
+          { "name": "Pipe-Carrier Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "great-plains-spirits": [
+      { "fullName": "Wakan Tanka",                "themedRole": "Vision-Keeper" },
+      { "fullName": "White Buffalo Calf Woman",   "themedRole": "Elder of the Western Sky" },
+      { "fullName": "Whope",                      "themedRole": "Council Chief" },
+      { "fullName": "Hanwi",                      "themedRole": "Story-Listener of the Lodge" },
+      { "fullName": "Wakinyan",                   "themedRole": "Drum-Keeper of the Powwow" },
+      { "fullName": "Tatanka",                    "themedRole": "Trail-Tracker of the Eastern Wood" },
+      { "fullName": "Inyan",                      "themedRole": "Pipe-Carver of the Stone" },
+      { "fullName": "Iktomi",                     "themedRole": "Scout of the Long Grass" }
+    ],
+    "pacific-northwest-spirits": [
+      { "fullName": "Raven",                      "themedRole": "Vision-Keeper" },
+      { "fullName": "Gonakadet",                  "themedRole": "Elder of the Western Sky" },
+      { "fullName": "Sisiutl",                    "themedRole": "Bridge-Builder of the Two Rivers" },
+      { "fullName": "Thunderbird of the Pacific", "themedRole": "Drum-Keeper of the Powwow" },
+      { "fullName": "Coyote of the Coast",        "themedRole": "Scout of the Long Grass" },
+      { "fullName": "Kushtaka",                   "themedRole": "Trail-Tracker of the Eastern Wood" },
+      { "fullName": "Bukwus",                     "themedRole": "Medicine Tester" },
+      { "fullName": "Dzunukwa",                   "themedRole": "Singer of the Songlines" }
+    ],
+    "southwestern-pueblo-and-navajo-spirits": [
+      { "fullName": "Spider Woman",               "themedRole": "Vision-Keeper" },
+      { "fullName": "Changing Woman",             "themedRole": "Council Chief" },
+      { "fullName": "Talking God",                "themedRole": "Elder of the Western Sky" },
+      { "fullName": "First Man",                  "themedRole": "Master Pipe-Carver of the Quarry" },
+      { "fullName": "First Woman",                "themedRole": "Keeper of the Wampum" },
+      { "fullName": "Naayéé' Neezghání",          "themedRole": "Canoe-Wright of the Great Lakes" },
+      { "fullName": "Tóbájíshchíní",              "themedRole": "Apprentice Canoe-Wright" },
+      { "fullName": "Mą'ii the Coyote",           "themedRole": "Apprentice of the Long Grass" }
+    ],
+    "eastern-woodlands-spirits": [
+      { "fullName": "Manitou",                    "themedRole": "Vision-Keeper" },
+      { "fullName": "Sky Woman",                  "themedRole": "Elder of the Western Sky" },
+      { "fullName": "Glooscap",                   "themedRole": "Council Chief" },
+      { "fullName": "Deganawida",                 "themedRole": "Story-Listener of the Lodge" },
+      { "fullName": "Hiawatha",                   "themedRole": "Singer of the Songlines" },
+      { "fullName": "Nanabozho",                  "themedRole": "Dancer of the Round" },
+      { "fullName": "Mishipeshu",                 "themedRole": "Bridge-Builder of the Two Rivers" },
+      { "fullName": "Mooin the Bear",             "themedRole": "Trail-Tracker of the Eastern Wood" }
+    ]
+  },
+
+  "milestones": {
+    "great-plains-spirits": [
+      { "name": "Calling of the Sacred Pipe",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — White Buffalo Calf Woman delivers the pipe to the council." },
+      { "name": "Raising the Sun Dance Pole",     "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the cottonwood is cut and raised in the centre of the arbour." },
+      { "name": "Council at the Black Hills",     "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: elders meet at Pahá Sápa to review the work." },
+      { "name": "Buffalo Hunt Provisioning",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the herd brought in, the camp resupplied." },
+      { "name": "Return of the White Buffalo",    "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the white buffalo calf walks the plains again." },
+      { "name": "Closing of the Hoop",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the sacred hoop completed and the camp moves on." }
+    ],
+    "pacific-northwest-spirits": [
+      { "name": "Raven Steals the Light",         "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off: the daylight box opened, the work made visible." },
+      { "name": "Felling the Cedar",              "type": "Operational", "offsetPct": 30,  "description": "Build phase: the great cedar selected and brought down with prayer." },
+      { "name": "Potlatch Acceptance",            "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the gifts laid out, the people witness and accept." },
+      { "name": "Raising of the Totem",           "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the pole raised before the longhouse." },
+      { "name": "Closing of the Salmon Season",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the weirs taken down, the river thanked." },
+      { "name": "Final Copper Breaking",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the copper shield broken in honour of the work." }
+    ],
+    "southwestern-pueblo-and-navajo-spirits": [
+      { "name": "Emergence into the Glittering World","type": "Gate",    "offsetPct": 10,  "description": "Discovery: the people emerge into the Fifth World, the work begins." },
+      { "name": "Spider Woman Strings the Loom",  "type": "Operational", "offsetPct": 35,  "description": "Build: the warp threads laid by Na'ashjé'ii Asdzáá herself." },
+      { "name": "Council of the Holy People",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Diyin Dine'é at the kiva." },
+      { "name": "Hero Twins' Victory",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Naayéé' Neezghání and Tóbájíshchíní defeat the monsters; the platform stands." },
+      { "name": "Sandpainting Erased",            "type": "Operational", "offsetPct": 100, "description": "Project close: the healing sandpainting brushed away, the patient whole." },
+      { "name": "Final Corn Pollen Blessing",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: corn pollen offered along the four directions." }
+    ],
+    "eastern-woodlands-spirits": [
+      { "name": "Sky Woman Falls",                "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: the world begins on Turtle's back, the council convenes." },
+      { "name": "Planting of the Three Sisters",  "type": "Operational", "offsetPct": 30,  "description": "Discovery: corn, beans, and squash planted in one mound — the data model laid." },
+      { "name": "Weaving the Hiawatha Belt",      "type": "Operational", "offsetPct": 55,  "description": "Build: the wampum belt of the Five Nations woven, link by link." },
+      { "name": "Great Law Acceptance",           "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the Great Law of Peace read aloud and accepted by all clans." },
+      { "name": "Lighting of the Council Fire",   "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the fire at Onondaga lit; the confederacy stands." },
+      { "name": "Final Tobacco Offering",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: tobacco given to the fire in thanks for the work." }
+    ]
+  },
+
+  "daysOff": {
+    "Wakan Tanka":               [ { "realm": "great-plains-spirits", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Retreat to the Spirit World — the Great Mystery cannot be reached." } ],
+    "White Buffalo Calf Woman":  [ { "realm": "great-plains-spirits", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Walking the four directions — pipe-blessing pilgrimage." } ],
+    "Iktomi":                    [ { "realm": "great-plains-spirits", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Mischief at the neighbouring camp — best left unexplained." } ],
+    "Tatanka":                   [ { "realm": "great-plains-spirits", "offsetWeeks": 18, "numberOfDays": 4, "notes": "Annual buffalo migration — running with the herd." } ],
+    "Raven":                     [ { "realm": "pacific-northwest-spirits", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Off stealing the sun again — back when the trick is done." } ],
+    "Coyote of the Coast":       [ { "realm": "pacific-northwest-spirits", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Wandering the trickster trail — destination unknown." } ],
+    "Dzunukwa":                  [ { "realm": "pacific-northwest-spirits", "offsetWeeks": 10, "numberOfDays": 4, "notes": "Deep forest hibernation — do not wake her." } ],
+    "Spider Woman":              [ { "realm": "southwestern-pueblo-and-navajo-spirits", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Loom maintenance — restringing the threads of the world." } ],
+    "Changing Woman":            [ { "realm": "southwestern-pueblo-and-navajo-spirits", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Seasonal renewal ceremony — returning as a young woman again." } ],
+    "Mą'ii the Coyote":          [ { "realm": "southwestern-pueblo-and-navajo-spirits", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Off causing trouble at the Hero Twins' camp — back when scolded." } ],
+    "Sky Woman":                 [ { "realm": "eastern-woodlands-spirits", "offsetWeeks": 4,  "numberOfDays": 3, "notes": "Tending the Tree of Light in the Sky World." } ],
+    "Glooscap":                  [ { "realm": "eastern-woodlands-spirits", "offsetWeeks": 10, "numberOfDays": 4, "notes": "Paddling the stone canoe along the Bay of Fundy." } ],
+    "Nanabozho":                 [ { "realm": "eastern-woodlands-spirits", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Hare-trickster errand — usually involves a borrowed canoe." } ],
+    "Mooin the Bear":            [ { "realm": "eastern-woodlands-spirits", "offsetWeeks": 18, "numberOfDays": 5, "notes": "Winter den — do not disturb until the maple sap rises." } ]
+  }
+}

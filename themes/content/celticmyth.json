@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "key": "CelticMyth",
+  "displayName": "Celtic / Irish Mythology",
+  "category": "Mythology",
+  "emailDomain": "tir-na-nog.test",
+  "account": {
+    "name": "Isle of Ériu (Test Data)",
+    "accountNumber": "PSA-TEST-CELTICMYTH"
+  },
+  "mailingAddress": {
+    "street": "Hill of Tara, Royal Seat of the High Kings",
+    "city": "Tara",
+    "state": "County Meath",
+    "postalCode": "C15 XR2D",
+    "country": "Ireland"
+  },
+
+  "roles": [
+    { "name": "Druid Loremaster",                 "canonical": "Solution Architect",                  "description": "Keeper of the deep lore — designs the great solution and divines its shape from the ogham staves." },
+    { "name": "Rí of the Hosting",                "canonical": "Project Manager",                     "description": "King of the war-band — calls the muster, holds the timeline, and answers to the High King." },
+    { "name": "Brehon Scribe",                    "canonical": "Salesforce Administrator",            "description": "Steward of the Brehon Laws — keeps records, layouts, and the right of every tribe." },
+    { "name": "Goibniu the Smith",                "canonical": "Salesforce Developer",                "description": "Forges Apex and LWC at the divine smithy — the weapons of the platform." },
+    { "name": "Ard-Druid of the West",            "canonical": "Salesforce Practice Lead - USA",      "description": "High Druid over all Salesforce craft — sets the geasa and guides the senior smiths." },
+    { "name": "Senior Bard of the Court",         "canonical": "Salesforce Senior Consultant - India","description": "Practiced bard who walks the borderlands of requirements and song with skill." },
+    { "name": "Apprentice Bard",                  "canonical": "Salesforce Consultant - India",      "description": "Learns the meters and the ogham — carries discovery and configuration under the Senior Bard's eye." },
+    { "name": "Master Bridge-Builder of the Boyne","canonical": "Integration Technical Architect - USA","description": "Architect of the great spans across rivers — designs all integrations between Salesforce and the otherworld." },
+    { "name": "Senior Causeway Engineer",         "canonical": "Integration Senior Consultant - India","description": "Lays the standing stones of API, middleware, and event flows under the Master Bridge-Builder's plan." },
+    { "name": "Apprentice Causeway Engineer",     "canonical": "Integration Consultant - India",     "description": "Learns the craft of crossings — webhooks, batch, callouts, and the patient patterns of error handling." },
+    { "name": "Healer of the Tuath",              "canonical": "QA Engineer",                         "description": "Tends the wounded and weary like Dian Cécht at the Well of Sláine — finds the maladies before the king sees them." },
+    { "name": "High Filidh of Renown",            "canonical": "Marketing Practice Lead",             "description": "Master poet of the court — leads all marketing craft and lifts the praise-songs of the tribe." },
+    { "name": "Senior Filidh",                    "canonical": "Marketing Senior Consultant",         "description": "Strategist of campaigns — composes the great satires and eulogies that shape opinion." },
+    { "name": "Court Filidh",                     "canonical": "Marketing Consultant",                "description": "Carries the campaign through the rath and the dún — content, creative, and the daily verse." },
+    { "name": "Council Ollamh of Tara",           "canonical": "Business Analyst",                    "description": "Records what is needed and what is sworn — translates between the chieftains and the druidic craft of design." },
+    { "name": "Master Smith of Falias",           "canonical": "Salesforce Senior Developer - USA",   "description": "Senior forger of the four treasures — leads the most complex Apex and platform builds." },
+    { "name": "Novice Bard of Eire",              "canonical": "Junior Salesforce Consultant - India","description": "First-year apprentice at the bardic school — learning the modes and the cadence of the platform." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "tuatha-de-danann",
+      "projectName": "Tuatha Dé Danann — Four Treasures Platform",
+      "shortName": "TDD 4T",
+      "subAccountName": "Tuatha Dé Danann",
+      "subAccountNumber": "PSA-TEST-CELTICMYTH-TUATHADEDANANN",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Cauldron of the Dagda Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Sídhe Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council at Brú na Bóinne", "billable": true },
+          { "name": "Reconnaissance of Falias", "billable": true },
+          { "name": "Strategy of Lugh", "billable": true }
+        ]},
+        { "name": "Forging the Four Treasures", "isDefault": false, "billable": true, "children": [
+          { "name": "Stone of Fal Foundation", "billable": true },
+          { "name": "Spear of Lugh Calibration", "billable": true },
+          { "name": "Sword of Nuada Tempering", "billable": true }
+        ]},
+        { "name": "Migrate the Lore of the Tuath", "isDefault": false, "billable": true, "children": [
+          { "name": "Ogham Stave Inventory", "billable": true },
+          { "name": "Druidic Manuscript Translation", "billable": true }
+        ]},
+        { "name": "Testing at Mag Tuired", "isDefault": false, "billable": true, "children": [
+          { "name": "Battle Drill (UAT)", "billable": true },
+          { "name": "Cauldron Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Aes Dána", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Initiation", "billable": true },
+          { "name": "Druid's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "fomorians-enemies",
+      "projectName": "Fomorians — Tower of Conand Surveillance Build",
+      "shortName": "Fomor TCS",
+      "subAccountName": "Fomorian Host of Tory",
+      "subAccountNumber": "PSA-TEST-CELTICMYTH-FOMORIANSENEMIES",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Tory Island Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Tribute", "isDefault": false, "billable": true, "children": [
+          { "name": "Tribute Census of Eire", "billable": true },
+          { "name": "Coastal Reconnaissance", "billable": true },
+          { "name": "Strategy with Bres", "billable": true }
+        ]},
+        { "name": "Build Balor's Evil Eye", "isDefault": false, "billable": true, "children": [
+          { "name": "Tower Foundation Stones", "billable": true },
+          { "name": "Eye-Lid Hoist Mechanism", "billable": true },
+          { "name": "Surveillance Network Wiring", "billable": true }
+        ]},
+        { "name": "Migrate the Sea-Host", "isDefault": false, "billable": true, "children": [
+          { "name": "Fomorian Roll Call", "billable": true },
+          { "name": "Curragh Fleet Inventory", "billable": true }
+        ]},
+        { "name": "Testing at Conand's Tower", "isDefault": false, "billable": true, "children": [
+          { "name": "Tower Defense Drill", "billable": true },
+          { "name": "Sea-Raid Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Sea-Raiders", "isDefault": false, "billable": true, "children": [
+          { "name": "Raider Conscription", "billable": true },
+          { "name": "Captain's Sea-Charter", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "ulster-cycle-heroes",
+      "projectName": "Ulster Cycle — Cattle Raid Logistics Platform",
+      "shortName": "Ulster CRP",
+      "subAccountName": "Red Branch of Emain Macha",
+      "subAccountNumber": "PSA-TEST-CELTICMYTH-ULSTERCYCLEHEROES",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Emain Macha Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Muster of the Red Branch", "isDefault": false, "billable": true, "children": [
+          { "name": "Cooley Herd Survey", "billable": true },
+          { "name": "Champion Headcount", "billable": true },
+          { "name": "Strategy with Conchobar", "billable": true }
+        ]},
+        { "name": "Build the Gáe Bulg", "isDefault": false, "billable": true, "children": [
+          { "name": "Spear-Shaft Forging", "billable": true },
+          { "name": "Barbed Head Calibration", "billable": true },
+          { "name": "Chariot Refit Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Hosts of Connacht", "isDefault": false, "billable": true, "children": [
+          { "name": "Cattle Roll Call", "billable": true },
+          { "name": "Provisioning Wagons", "billable": true }
+        ]},
+        { "name": "Testing at the Ford", "isDefault": false, "billable": true, "children": [
+          { "name": "Single Combat Drill", "billable": true },
+          { "name": "Riastradh Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Boy-Troop", "isDefault": false, "billable": true, "children": [
+          { "name": "Hurley & Sliotar Refresh", "billable": true },
+          { "name": "Champion's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "fenian-cycle-and-otherworld",
+      "projectName": "Fenian Cycle & Otherworld — Salmon of Knowledge Analytics",
+      "shortName": "Fianna SKA",
+      "subAccountName": "Fianna of Almu & the Aos Sí",
+      "subAccountNumber": "PSA-TEST-CELTICMYTH-FENIANCYCLEANDOTHERWORLD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Hill of Almu Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Salmon Gazing", "isDefault": false, "billable": true, "children": [
+          { "name": "Pool of Fec Calibration", "billable": true },
+          { "name": "Future-state Vision Quest", "billable": true },
+          { "name": "Council of Fionn", "billable": true }
+        ]},
+        { "name": "Build the Bruidhean Hall", "isDefault": false, "billable": true, "children": [
+          { "name": "Oak Beam Selection", "billable": true },
+          { "name": "Hall Construction", "billable": true },
+          { "name": "Hearth & Spit Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Lays of Oisín", "isDefault": false, "billable": true, "children": [
+          { "name": "Bardic Manuscript Catalog", "billable": true },
+          { "name": "Lay Recording at Tír na nÓg", "billable": true }
+        ]},
+        { "name": "Testing the Sídhe Mounds", "isDefault": false, "billable": true, "children": [
+          { "name": "Otherworld Threshold Trial", "billable": true },
+          { "name": "Geis Verification", "billable": true }
+        ]},
+        { "name": "Training the Fianna", "isDefault": false, "billable": true, "children": [
+          { "name": "Spear & Shield Refresh", "billable": true },
+          { "name": "Poetry & Lore Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "tuatha-de-danann": [
+      { "fullName": "The Dagda",          "themedRole": "Druid Loremaster" },
+      { "fullName": "Lugh Lámhfhada",     "themedRole": "Ard-Druid of the West" },
+      { "fullName": "Brigid",             "themedRole": "High Filidh of Renown" },
+      { "fullName": "Nuada Airgetlám",    "themedRole": "Rí of the Hosting" },
+      { "fullName": "Dian Cécht",         "themedRole": "Healer of the Tuath" },
+      { "fullName": "Goibniu",            "themedRole": "Goibniu the Smith" },
+      { "fullName": "Ogma",               "themedRole": "Council Ollamh of Tara" },
+      { "fullName": "Manannán mac Lir",   "themedRole": "Master Bridge-Builder of the Boyne" },
+      { "fullName": "The Morrigan",       "themedRole": "Senior Bard of the Court" },
+      { "fullName": "Aengus",             "themedRole": "Court Filidh" }
+    ],
+    "fomorians-enemies": [
+      { "fullName": "Balor of the Evil Eye","themedRole": "Druid Loremaster" },
+      { "fullName": "Cethlenn",           "themedRole": "Senior Filidh" },
+      { "fullName": "Bres",               "themedRole": "Rí of the Hosting" },
+      { "fullName": "Tethra",             "themedRole": "Master Bridge-Builder of the Boyne" },
+      { "fullName": "Indech",             "themedRole": "Brehon Scribe" },
+      { "fullName": "Elatha",             "themedRole": "Ard-Druid of the West" },
+      { "fullName": "Conand",             "themedRole": "Master Smith of Falias" },
+      { "fullName": "Domnu",              "themedRole": "Council Ollamh of Tara" },
+      { "fullName": "Octriallach",        "themedRole": "Apprentice Causeway Engineer" },
+      { "fullName": "Mörrigan-bound",     "themedRole": "Novice Bard of Eire" }
+    ],
+    "ulster-cycle-heroes": [
+      { "fullName": "Cú Chulainn",        "themedRole": "Goibniu the Smith" },
+      { "fullName": "Conchobar mac Nessa","themedRole": "Rí of the Hosting" },
+      { "fullName": "Fergus mac Róich",   "themedRole": "Ard-Druid of the West" },
+      { "fullName": "Conall Cernach",     "themedRole": "Master Smith of Falias" },
+      { "fullName": "Medb",               "themedRole": "High Filidh of Renown" },
+      { "fullName": "Ailill",             "themedRole": "Brehon Scribe" },
+      { "fullName": "Ferdiad",            "themedRole": "Senior Causeway Engineer" },
+      { "fullName": "Emer",               "themedRole": "Senior Bard of the Court" },
+      { "fullName": "Deirdre",            "themedRole": "Court Filidh" },
+      { "fullName": "Naoise",             "themedRole": "Apprentice Bard" },
+      { "fullName": "Cathbad",            "themedRole": "Druid Loremaster" }
+    ],
+    "fenian-cycle-and-otherworld": [
+      { "fullName": "Fionn mac Cumhaill", "themedRole": "Druid Loremaster" },
+      { "fullName": "Oisín",              "themedRole": "High Filidh of Renown" },
+      { "fullName": "Diarmuid Ua Duibhne","themedRole": "Master Smith of Falias" },
+      { "fullName": "Gráinne",            "themedRole": "Senior Filidh" },
+      { "fullName": "Caoilte",            "themedRole": "Apprentice Bard" },
+      { "fullName": "Sadhbh",             "themedRole": "Healer of the Tuath" },
+      { "fullName": "Niamh of Tír na nÓg","themedRole": "Master Bridge-Builder of the Boyne" },
+      { "fullName": "Salmon of Knowledge","themedRole": "Council Ollamh of Tara" },
+      { "fullName": "Aos Sí",             "themedRole": "Senior Bard of the Court" },
+      { "fullName": "Donn",               "themedRole": "Rí of the Hosting" }
+    ]
+  },
+
+  "milestones": {
+    "tuatha-de-danann": [
+      { "name": "Arrival in the Dark Cloud",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Tuath descend on Eire in the great mist." },
+      { "name": "Forging of the Four Treasures", "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: stone, spear, sword, and cauldron taken from the four cities." },
+      { "name": "First Battle of Mag Tuired",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: war against the Fir Bolg, Nuada loses his hand." },
+      { "name": "Silver Hand of Nuada",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Dian Cécht crafts the silver replacement." },
+      { "name": "Lugh Joins the Hall",           "type": "Operational", "offsetPct": 80,  "description": "All-skilled Samildánach takes his place at the council." },
+      { "name": "Second Battle of Mag Tuired",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the Tuath defeat the Fomorians; Lugh slays Balor." },
+      { "name": "Hand-off to the Sons of Míl",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Tuath retreat into the sídhe mounds." }
+    ],
+    "fomorians-enemies": [
+      { "name": "Levy of Tribute",               "type": "Gate",        "offsetPct": 5,   "description": "Discovery: tribute roll established across the four provinces." },
+      { "name": "Reign of Bres Begins",          "type": "Operational", "offsetPct": 25,  "description": "Build phase: half-Fomorian Bres takes the high kingship." },
+      { "name": "Satire of Cairbre",             "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Bres's stinginess provokes the first satire ever spoken in Eire." },
+      { "name": "Muster at Tory Island",         "type": "Operational", "offsetPct": 70,  "description": "Sea-host gathered under Balor's banner for the great battle." },
+      { "name": "Balor's Eye Opened",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: surveillance plane fully operational at Mag Tuired." },
+      { "name": "Eye Slain by Tathlum",          "type": "Operational", "offsetPct": 100, "description": "Project close: Lugh's sling-stone shuts the Evil Eye forever." },
+      { "name": "Final Reckoning at the Sea",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Fomorians driven beneath the waves." }
+    ],
+    "ulster-cycle-heroes": [
+      { "name": "Pillow Talk at Cruachan",       "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Medb and Ailill compare wealth, the Cattle Raid is conceived." },
+      { "name": "Muster of the Connacht Host",   "type": "Operational", "offsetPct": 25,  "description": "Build phase: the great army marches east toward Cooley." },
+      { "name": "Pangs of the Ulstermen",        "type": "Gate",        "offsetPct": 40,  "description": "Mid-project gate: Macha's curse leaves only Cú Chulainn standing." },
+      { "name": "Ford-Fight with Ferdiad",       "type": "Operational", "offsetPct": 65,  "description": "UAT phase: three days of single combat at Áth Fhirdiad." },
+      { "name": "Charge of the Red Branch",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Ulstermen rouse and break the Connacht host." },
+      { "name": "Death of the Brown Bull",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: Donn Cuailnge slays Finnbennach and dies of grief." },
+      { "name": "Settlement at Emain Macha",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: cattle accounted, honour-prices paid." }
+    ],
+    "fenian-cycle-and-otherworld": [
+      { "name": "Council at the Hill of Almu",   "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in Fionn's hall on the white hill of Leinster." },
+      { "name": "Salmon of Knowledge Caught",    "type": "Operational", "offsetPct": 30,  "description": "Discovery: the Salmon caught in the Pool of Fec, wisdom transferred to the thumb." },
+      { "name": "Pursuit of Diarmuid and Gráinne","type": "Operational","offsetPct": 55,  "description": "Build: dolmens raised across Eire as the lovers flee the Fianna." },
+      { "name": "Battle of Gabhra",              "type": "Gate",        "offsetPct": 75,  "description": "UAT acceptance: the Fianna fall at the great battle, only a handful walk away." },
+      { "name": "Oisín Returns from Tír na nÓg", "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live + handoff: three hundred years pass in a day, Oisín touches Eire and ages to dust." },
+      { "name": "Lays of the Fianna Recorded",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Saint Patrick records the Acallam na Senórach from Caoilte and Oisín." }
+    ]
+  },
+
+  "daysOff": {
+    "The Dagda":          [ { "realm": "tuatha-de-danann", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Stirring the Cauldron of Plenty — quarterly feast preparation." } ],
+    "Lugh Lámhfhada":     [ { "realm": "tuatha-de-danann", "offsetWeeks": 12, "numberOfDays": 5, "notes": "Lughnasadh games at Tailtiu — must preside personally." } ],
+    "Brigid":             [ { "realm": "tuatha-de-danann", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Imbolc fires lit at Kildare — annual obligation." } ],
+    "Nuada Airgetlám":    [ { "realm": "tuatha-de-danann", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Silver hand re-fitted by Dian Cécht — annual maintenance." } ],
+    "The Morrigan":       [ { "realm": "tuatha-de-danann", "offsetWeeks": 22, "numberOfDays": 3, "notes": "Washing armour at the ford — battlefield omen duty." } ],
+    "Balor of the Evil Eye":[ { "realm": "fomorians-enemies", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Eyelid hoist serviced — four men required to lift." } ],
+    "Bres":               [ { "realm": "fomorians-enemies", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Tribute audit at Tory — checking the rents from Eire." } ],
+    "Cú Chulainn":        [ { "realm": "ulster-cycle-heroes", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Cooling-down vats at Emain Macha — post-ríastrad recovery." } ],
+    "Conchobar mac Nessa":[ { "realm": "ulster-cycle-heroes", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Royal court of arbitration at Emain Macha — Brehon hearings." } ],
+    "Medb":               [ { "realm": "ulster-cycle-heroes", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Inventory of the white-horned bull Finnbennach." } ],
+    "Deirdre":            [ { "realm": "ulster-cycle-heroes", "offsetWeeks": 20, "numberOfDays": 1, "notes": "Mourning week — Sons of Uisneach memorial." } ],
+    "Fionn mac Cumhaill": [ { "realm": "fenian-cycle-and-otherworld", "offsetWeeks": 5,  "numberOfDays": 3, "notes": "Hunting at Slievenamon — Fianna initiation trials." } ],
+    "Oisín":              [ { "realm": "fenian-cycle-and-otherworld", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Riding to Tír na nÓg with Niamh — extended otherworld leave." } ],
+    "Diarmuid Ua Duibhne":[ { "realm": "fenian-cycle-and-otherworld", "offsetWeeks": 9,  "numberOfDays": 4, "notes": "Avoiding wild boars on Ben Bulben — geis-mandated rest." } ],
+    "Niamh of Tír na nÓg":[ { "realm": "fenian-cycle-and-otherworld", "offsetWeeks": 18, "numberOfDays": 2, "notes": "White horse re-shod at the otherworld smithy." } ]
+  }
+}

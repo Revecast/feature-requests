@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "key": "EgyptianMyth",
+  "displayName": "Egyptian Mythology",
+  "category": "Mythology",
+  "emailDomain": "kemet.test",
+  "account": {
+    "name": "Pantheons of Kemet (Test Data)",
+    "accountNumber": "PSA-TEST-EGYPTIANMYTH"
+  },
+
+  "mailingAddress": {
+    "street": "1 Avenue of Sphinxes",
+    "city": "Waset (Thebes)",
+    "state": "Upper Egypt",
+    "postalCode": "KMT-1550",
+    "country": "Kemet"
+  },
+
+  "roles": [
+    { "name": "Vizier of the Two Lands",         "canonical": "Solution Architect",                      "description": "Highest counsel of the pharaoh — designs the over-arching solution and watches over its integrity across both Upper and Lower Kemet." },
+    { "name": "Overseer of Works",               "canonical": "Project Manager",                         "description": "Marshals the masons of delivery, holds the inundation timeline, and answers to the temple steward." },
+    { "name": "Scribe of the House of Life",     "canonical": "Salesforce Administrator",                "description": "Steward of papyrus and seal — records, layouts, fields and permission sets." },
+    { "name": "Master Mason of Saqqara",         "canonical": "Salesforce Developer",                    "description": "Carves Apex, LWC, and platform features into the limestone of the platform." },
+    { "name": "High Priest of Heliopolis",       "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all sun-temple Salesforce craft — sets standards and guides the senior priests." },
+    { "name": "Priest of the Inner Sanctum",     "canonical": "Salesforce Senior Consultant - India",    "description": "Tends the holy of holies — practiced in the deep rites of customer requirement and configuration." },
+    { "name": "Acolyte of Ptah",                 "canonical": "Salesforce Consultant - India",           "description": "Carries out the daily devotions of discovery and configuration under the inner-sanctum priest's eye." },
+    { "name": "Bridge-builder of the Nile",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the cataracts." },
+    { "name": "Boatwright of the Solar Barque",  "canonical": "Integration Senior Consultant - India",   "description": "Lays the cedar planks of API, middleware, and event flows under the Bridge-builder's plan." },
+    { "name": "Apprentice Boatwright",           "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the Sobek patterns of error handling." },
+    { "name": "Healer of the Per-Ankh",          "canonical": "QA Engineer",                             "description": "Tends the wounded code and the weary build — finds the maladies before they reach the pharaoh." },
+    { "name": "Herald of Thoth",                 "canonical": "Marketing Practice Lead",                 "description": "Lifts the standard and the trumpet for product and message — leads all marketing craft." },
+    { "name": "Chanter of the Procession",       "canonical": "Marketing Senior Consultant",             "description": "Strategist of festivals — sounds the call to gather and convert the faithful." },
+    { "name": "Standard-Bearer of the Festival", "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily procession." },
+    { "name": "Lector Priest of Iunu",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the divine craft of design." },
+    { "name": "Master Embalmer of Anubis",       "canonical": "Salesforce Senior Developer - USA",       "description": "The most senior preserver of code — wraps complex platform features so they endure for eternity." },
+    { "name": "Novice Scribe of Khemenu",        "canonical": "Junior Salesforce Consultant - India",    "description": "Just past the apprenticeship — learns the hieroglyphs of declarative configuration." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every pantheon starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "ennead-of-heliopolis",
+      "projectName": "Ennead of Heliopolis — Creation Cycle CRM",
+      "shortName": "Ennead CCC",
+      "subAccountName": "Temple of Iunu (Ennead)",
+      "subAccountNumber": "PSA-TEST-EGYPTIANMYTH-ENNEAD",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Atum's Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Benben Stone", "isDefault": false, "billable": true, "children": [
+          { "name": "First Sunrise Council", "billable": true },
+          { "name": "Field Survey of Iunu", "billable": true },
+          { "name": "Cosmogony Drafting", "billable": true }
+        ]},
+        { "name": "Separating Sky and Earth", "isDefault": false, "billable": true, "children": [
+          { "name": "Shu's Air Foundation", "billable": true },
+          { "name": "Geb & Nut Schema Split", "billable": true },
+          { "name": "Pillar Hardening of the Heavens", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Papyrus Inventory", "billable": true },
+          { "name": "Hieroglyph Translation", "billable": true }
+        ]},
+        { "name": "Trial in the Hall of Ennead", "isDefault": false, "billable": true, "children": [
+          { "name": "Council UAT Tribunal", "billable": true },
+          { "name": "Inundation Stress Test", "billable": true }
+        ]},
+        { "name": "Investiture of the Priesthood", "isDefault": false, "billable": true, "children": [
+          { "name": "Acolyte Initiation", "billable": true },
+          { "name": "High Priest's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "ogdoad-of-hermopolis",
+      "projectName": "Ogdoad of Hermopolis — Primordial Waters Migration",
+      "shortName": "Ogdoad PWM",
+      "subAccountName": "Temple of Khemenu (Ogdoad)",
+      "subAccountNumber": "PSA-TEST-EGYPTIANMYTH-OGDOAD",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Khemenu Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Primeval Waters", "isDefault": false, "billable": true, "children": [
+          { "name": "Nun & Naunet Depth Sounding", "billable": true },
+          { "name": "Heh & Hauhet Infinity Survey", "billable": true },
+          { "name": "Strategy with the Eight", "billable": true }
+        ]},
+        { "name": "Build the Cosmic Egg", "isDefault": false, "billable": true, "children": [
+          { "name": "Shell Construction", "billable": true },
+          { "name": "Inner Yolk Forging", "billable": true },
+          { "name": "Lotus Bloom Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Hidden Names", "isDefault": false, "billable": true, "children": [
+          { "name": "Amun & Amaunet Roll Call", "billable": true },
+          { "name": "Kek & Kauket Provisioning", "billable": true }
+        ]},
+        { "name": "Testing the Eight Forces", "isDefault": false, "billable": true, "children": [
+          { "name": "Darkness Penetration Trial", "billable": true },
+          { "name": "Hidden Power Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Hermopolitan Priests", "isDefault": false, "billable": true, "children": [
+          { "name": "Eight-Fold Foundations", "billable": true },
+          { "name": "Khemenu Liturgical Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "solar-and-creator-gods",
+      "projectName": "Solar & Creator Gods — Daily Barque Operations",
+      "shortName": "Solar DBO",
+      "subAccountName": "Temple of the Solar Cult",
+      "subAccountNumber": "PSA-TEST-EGYPTIANMYTH-SOLAR",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Ra's Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Sunrise Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Khepri's Dawn Reconnaissance", "billable": true },
+          { "name": "Aten's Disk Telemetry", "billable": true },
+          { "name": "Creator's Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Solar Barque", "isDefault": false, "billable": true, "children": [
+          { "name": "Mandjet Day-Boat Forging", "billable": true },
+          { "name": "Mesektet Night-Boat Calibration", "billable": true },
+          { "name": "Atum's Twilight Rigging", "billable": true }
+        ]},
+        { "name": "Migrate the Creation Workforce", "isDefault": false, "billable": true, "children": [
+          { "name": "Khnum's Potter's Wheel Roll", "billable": true },
+          { "name": "Ptah's Craftsmen Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Heavenly Crossing", "isDefault": false, "billable": true, "children": [
+          { "name": "Sobek River Trial", "billable": true },
+          { "name": "Khonsu Lunar Sync Test", "billable": true }
+        ]},
+        { "name": "Training the Solar Priesthood", "isDefault": false, "billable": true, "children": [
+          { "name": "Thoth's Scribe Foundations", "billable": true },
+          { "name": "Horus the Elder's Falconer Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "duat-and-protector-gods",
+      "projectName": "Duat & Protector Gods — Underworld Audit Platform",
+      "shortName": "Duat UAP",
+      "subAccountName": "Necropolis & Protector Cult",
+      "subAccountNumber": "PSA-TEST-EGYPTIANMYTH-DUAT",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Anubis Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery in the Hall of Two Truths", "isDefault": false, "billable": true, "children": [
+          { "name": "Ma'at's Feather Calibration", "billable": true },
+          { "name": "Soul-state Vision", "billable": true },
+          { "name": "Anubis's Council", "billable": true }
+        ]},
+        { "name": "Build the Weighing Scales", "isDefault": false, "billable": true, "children": [
+          { "name": "Balance Beam Selection", "billable": true },
+          { "name": "Platform Construction", "billable": true },
+          { "name": "Heart-Counterweight Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Book of the Dead", "isDefault": false, "billable": true, "children": [
+          { "name": "Spell Catalog & Indexing", "billable": true },
+          { "name": "Funerary Inscription Recording", "billable": true }
+        ]},
+        { "name": "Testing the Devourer's Gate", "isDefault": false, "billable": true, "children": [
+          { "name": "Ammit Tensile Strength Trial", "billable": true },
+          { "name": "Sekhmet Wrath Verification", "billable": true }
+        ]},
+        { "name": "Training the Necropolis Guardians", "isDefault": false, "billable": true, "children": [
+          { "name": "Wepwawet Path-Opener Refresh", "billable": true },
+          { "name": "Bes & Tawaret Ward-Weaving Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "ennead-of-heliopolis": [
+      { "fullName": "Atum",        "themedRole": "Vizier of the Two Lands" },
+      { "fullName": "Shu",         "themedRole": "High Priest of Heliopolis" },
+      { "fullName": "Tefnut",      "themedRole": "Overseer of Works" },
+      { "fullName": "Geb",         "themedRole": "Master Mason of Saqqara" },
+      { "fullName": "Nut",         "themedRole": "Scribe of the House of Life" },
+      { "fullName": "Osiris",      "themedRole": "Vizier of the Two Lands" },
+      { "fullName": "Isis",        "themedRole": "Lector Priest of Iunu" },
+      { "fullName": "Set",         "themedRole": "Master Embalmer of Anubis" },
+      { "fullName": "Nephthys",    "themedRole": "Healer of the Per-Ankh" }
+    ],
+    "ogdoad-of-hermopolis": [
+      { "fullName": "Nun",         "themedRole": "Vizier of the Two Lands" },
+      { "fullName": "Naunet",      "themedRole": "Priest of the Inner Sanctum" },
+      { "fullName": "Heh",         "themedRole": "Bridge-builder of the Nile" },
+      { "fullName": "Hauhet",      "themedRole": "Boatwright of the Solar Barque" },
+      { "fullName": "Kek",         "themedRole": "Apprentice Boatwright" },
+      { "fullName": "Kauket",      "themedRole": "Novice Scribe of Khemenu" },
+      { "fullName": "Amun",        "themedRole": "High Priest of Heliopolis" },
+      { "fullName": "Amaunet",     "themedRole": "Acolyte of Ptah" }
+    ],
+    "solar-and-creator-gods": [
+      { "fullName": "Ra",                 "themedRole": "Vizier of the Two Lands" },
+      { "fullName": "Khepri",             "themedRole": "Overseer of Works" },
+      { "fullName": "Aten",               "themedRole": "Herald of Thoth" },
+      { "fullName": "Ptah",               "themedRole": "Master Mason of Saqqara" },
+      { "fullName": "Khnum",              "themedRole": "Master Embalmer of Anubis" },
+      { "fullName": "Sobek",              "themedRole": "Boatwright of the Solar Barque" },
+      { "fullName": "Khonsu",             "themedRole": "Chanter of the Procession" },
+      { "fullName": "Thoth",              "themedRole": "Scribe of the House of Life" },
+      { "fullName": "Horus the Elder",    "themedRole": "High Priest of Heliopolis" },
+      { "fullName": "Horus the Younger",  "themedRole": "Standard-Bearer of the Festival" },
+      { "fullName": "Anhur",              "themedRole": "Priest of the Inner Sanctum" }
+    ],
+    "duat-and-protector-gods": [
+      { "fullName": "Anubis",             "themedRole": "Master Embalmer of Anubis" },
+      { "fullName": "Ammit",              "themedRole": "Healer of the Per-Ankh" },
+      { "fullName": "Ma'at",              "themedRole": "Lector Priest of Iunu" },
+      { "fullName": "Apep",               "themedRole": "Apprentice Boatwright" },
+      { "fullName": "Sekhmet",            "themedRole": "Overseer of Works" },
+      { "fullName": "Bastet",             "themedRole": "Acolyte of Ptah" },
+      { "fullName": "Hathor",             "themedRole": "Chanter of the Procession" },
+      { "fullName": "Bes",                "themedRole": "Standard-Bearer of the Festival" },
+      { "fullName": "Tawaret",            "themedRole": "Healer of the Per-Ankh" },
+      { "fullName": "Wepwawet",           "themedRole": "Priest of the Inner Sanctum" },
+      { "fullName": "Serqet",             "themedRole": "Novice Scribe of Khemenu" },
+      { "fullName": "Selket",             "themedRole": "Acolyte of Ptah" }
+    ]
+  },
+
+  "milestones": {
+    "ennead-of-heliopolis": [
+      { "name": "First Sunrise Sign-off",    "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — Atum rises from the Nun on the primeval mound." },
+      { "name": "Separation of Sky & Earth", "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Shu lifts Nut from Geb to make space for the world." },
+      { "name": "Council of the Nine",       "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review with the full Ennead." },
+      { "name": "Murder & Resurrection of Osiris", "type": "Billing", "offsetPct": 70, "description": "Phase invoice trigger: Set's coup, Isis's reassembly — payment milestone." },
+      { "name": "Coronation of Horus",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the falcon-king takes the throne of the Two Lands." },
+      { "name": "Investiture Hand-off",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the new priesthood." }
+    ],
+    "ogdoad-of-hermopolis": [
+      { "name": "Sounding the Primeval Waters","type": "Gate",     "offsetPct": 5,   "description": "Project kickoff: the Eight surveyed in the chaos before time." },
+      { "name": "Cosmic Egg Laid",            "type": "Operational", "offsetPct": 30,  "description": "Build phase: the egg of creation set upon the mound." },
+      { "name": "Lotus Blooms",               "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the blue lotus opens — Ra emerges from within." },
+      { "name": "Hidden Names Revealed",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the eight true-names committed to the temple archive." },
+      { "name": "Eight Return to the Waters", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the Ogdoad sink back into Nun's depths." },
+      { "name": "Khemenu Final Reckoning",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the Hermopolitan tally-stone." }
+    ],
+    "solar-and-creator-gods": [
+      { "name": "Khepri Pushes the Dawn",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the scarab rolls the disk above the eastern horizon." },
+      { "name": "Forge the Solar Barque",     "type": "Operational", "offsetPct": 35,  "description": "Build: the Mandjet day-boat completed and rigged." },
+      { "name": "Ra's Solution Audit",        "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the sun-god at zenith." },
+      { "name": "Daily Crossing Activated",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the barque sails the heavens on a fixed cadence." },
+      { "name": "Aten Disk Goes Quiet",       "type": "Operational", "offsetPct": 100, "description": "Project close: solar telemetry suspended." },
+      { "name": "Solar Cult Tally",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Heliopolitan treasury." }
+    ],
+    "duat-and-protector-gods": [
+      { "name": "Anubis's Opening Council",   "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in the embalming chamber." },
+      { "name": "Weighing of the Heart",      "type": "Operational", "offsetPct": 30,  "description": "Discovery: audit logic modelled against Ma'at's feather." },
+      { "name": "Book of the Dead Inscribed", "type": "Operational", "offsetPct": 55,  "description": "Build: spell catalogue scribed onto the funerary papyrus." },
+      { "name": "Devourer's UAT Acceptance",  "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: only worthy hearts pass — Ammit waits below." },
+      { "name": "Field of Reeds Go-Live",     "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: souls cross safely into Aaru." },
+      { "name": "Necropolis Final Recompense","type": "Billing",     "offsetPct": 100, "description": "Final invoice from the protectors of the Duat." }
+    ]
+  },
+
+  "daysOff": {
+    "Osiris":     [ { "realm": "ennead-of-heliopolis",      "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Annual reassembly retreat — Isis gathering the fourteen pieces." } ],
+    "Isis":       [ { "realm": "ennead-of-heliopolis",      "offsetWeeks": 12, "numberOfDays": 3, "notes": "Wing-spread mourning vigil at Abydos." } ],
+    "Set":        [ { "realm": "ennead-of-heliopolis",      "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Desert hunt in the red lands — chasing Apep." } ],
+    "Nephthys":   [ { "realm": "ennead-of-heliopolis",      "offsetWeeks": 18, "numberOfDays": 2, "notes": "Funerary rites apprenticeship at Abydos." } ],
+    "Amun":       [ { "realm": "ogdoad-of-hermopolis",      "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Hidden-one's silent retreat — name not to be spoken." } ],
+    "Nun":        [ { "realm": "ogdoad-of-hermopolis",      "offsetWeeks": 14, "numberOfDays": 5, "notes": "Returning to the primeval waters for quarterly maintenance." } ],
+    "Ra":         [ { "realm": "solar-and-creator-gods",    "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Solar barque drydock — between night and day shifts." } ],
+    "Thoth":      [ { "realm": "solar-and-creator-gods",    "offsetWeeks": 10, "numberOfDays": 3, "notes": "Lunar accounting — month-end calendar reconciliation." } ],
+    "Khonsu":     [ { "realm": "solar-and-creator-gods",    "offsetWeeks": 16, "numberOfDays": 1, "notes": "Lunar eclipse observation duty." } ],
+    "Ptah":       [ { "realm": "solar-and-creator-gods",    "offsetWeeks": 12, "numberOfDays": 4, "notes": "Memphis workshop refit — anvils retempered." } ],
+    "Anubis":     [ { "realm": "duat-and-protector-gods",   "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Embalming chamber sterilisation — natron resupply." } ],
+    "Ma'at":      [ { "realm": "duat-and-protector-gods",   "offsetWeeks": 10, "numberOfDays": 2, "notes": "Feather inspection at the Hall of Two Truths." } ],
+    "Sekhmet":    [ { "realm": "duat-and-protector-gods",   "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Cooling-down at Philae — beer-and-pomegranate festival to soothe her wrath." } ],
+    "Bastet":     [ { "realm": "duat-and-protector-gods",   "offsetWeeks": 14, "numberOfDays": 3, "notes": "Bubastis cat-festival — the great procession down the Nile." } ],
+    "Hathor":     [ { "realm": "duat-and-protector-gods",   "offsetWeeks": 16, "numberOfDays": 2, "notes": "Dendera music festival — sistrum tuning." } ]
+  }
+}

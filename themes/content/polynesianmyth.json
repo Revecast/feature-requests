@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "key": "PolynesianMyth",
+  "displayName": "Polynesian / Hawaiian Mythology",
+  "category": "Mythology",
+  "emailDomain": "kumulipo.test",
+  "account": {
+    "name": "Kumulipo Pantheon (Test Data)",
+    "accountNumber": "PSA-TEST-POLYNESIANMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Halema'uma'u Crater Rim",
+    "city": "Volcano",
+    "state": "HI",
+    "postalCode": "96785",
+    "country": "USA"
+  },
+
+  "roles": [
+    { "name": "Kahuna of the Kumulipo",            "canonical": "Solution Architect",                      "description": "Keeper of the great chant of creation — designs the over-arching solution from sky to sea." },
+    { "name": "Konohiki of the Ahupua'a",          "canonical": "Project Manager",                         "description": "Land steward who marshals the people from mountain to reef and keeps the work flowing." },
+    { "name": "Keeper of the Heiau Records",       "canonical": "Salesforce Administrator",                "description": "Tends the sacred enclosure of fields, layouts, and permission sets." },
+    { "name": "Master Canoe-Builder of Hawaiki",   "canonical": "Salesforce Developer",                    "description": "Hews Apex and LWC from the koa tree — builds the vessels that carry the platform." },
+    { "name": "High Chief of the Western Isles",   "canonical": "Salesforce Practice Lead - USA",          "description": "Ali'i nui over all Salesforce craft — sets the kapu and guides the master builders." },
+    { "name": "Senior Navigator of the Star Paths","canonical": "Salesforce Senior Consultant - India",    "description": "Reads the swells and constellations of customer needs with practiced wayfinding." },
+    { "name": "Apprentice Wayfinder",              "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the open ocean under the Navigator's guidance." },
+    { "name": "Bridge-Builder of Mo'okini",        "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great causeways between Salesforce and the realms of Po and Ao." },
+    { "name": "Senior Reef-Mason",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the coral stones of API, middleware, and event flows beneath the Bridge-Builder's plan." },
+    { "name": "Apprentice Reef-Mason",             "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the fishhook patterns of error handling." },
+    { "name": "Healer of the Lapa'au",             "canonical": "QA Engineer",                             "description": "Walks the build with kahuna lapa'au herbs — finds the sickness before it reaches the chief." },
+    { "name": "Herald of the Pu Conch",            "canonical": "Marketing Practice Lead",                 "description": "Sounds the great conch shell — leads all marketing craft and lifts the message to the wind." },
+    { "name": "Chanter of the Mele",               "canonical": "Marketing Senior Consultant",             "description": "Composer of campaigns — weaves words and rhythm to gather and convert." },
+    { "name": "Hula Performer of the Halau",       "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the village — content, creative, and the daily dance." },
+    { "name": "Council Scribe of the Lua Pa'u",    "canonical": "Business Analyst",                        "description": "Records what the chiefs ask and what the kahuna promise — translates between Customer and craft." },
+    { "name": "Master Carver of the Ki'i",         "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the temple images — cuts the deepest Apex and LWC patterns from sacred wood." },
+    { "name": "Junior Wayfinder of Hokule'a",      "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh from the canoe school — assists with discovery, declarative builds, and learning the trade winds." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "creator-and-sky-gods",
+      "projectName": "Sky Realm — Pantheon Genesis Platform",
+      "shortName": "Sky Realm PGP",
+      "subAccountName": "Wakea's Sky Court",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-CREATOR-AND-SKY-GODS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Sky Court Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cosmic Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the Four", "billable": true },
+          { "name": "Survey of Po and Ao", "billable": true }
+        ]},
+        { "name": "Separating the Sky from Earth", "isDefault": false, "billable": true, "children": [
+          { "name": "Rangi-Papa Foundation", "billable": true },
+          { "name": "Pillar of Atea Raising", "billable": true }
+        ]},
+        { "name": "Migrating the Star Charts", "isDefault": false, "billable": true, "children": [
+          { "name": "Constellation Inventory", "billable": true },
+          { "name": "Wind-Compass Translation", "billable": true }
+        ]},
+        { "name": "Testing the Heavenly Vault", "isDefault": false, "billable": true, "children": [
+          { "name": "Trade-Wind Stress Test", "billable": true },
+          { "name": "Sky-Roof Drill (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Heavenly Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Akua Onboarding", "billable": true },
+          { "name": "Kahuna Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "pele-fire-and-volcano-deities",
+      "projectName": "Pele's Realm — Volcanic Eruption Response System",
+      "shortName": "Pele VERS",
+      "subAccountName": "Halema'uma'u Court",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-PELE-FIRE-AND-VOLCANO-DEITIES",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Halema'uma'u Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Lava Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Crater Reconnaissance", "billable": true },
+          { "name": "Sister-Goddess Council", "billable": true },
+          { "name": "Eruption Forecasting", "billable": true }
+        ]},
+        { "name": "Build the Lava Tubes", "isDefault": false, "billable": true, "children": [
+          { "name": "Magma Channel Forging", "billable": true },
+          { "name": "Fire Stick Tooling", "billable": true },
+          { "name": "Cinder-Cone Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Fire Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Eruption Chronicle Catalog", "billable": true },
+          { "name": "Chant of Pele Translation", "billable": true }
+        ]},
+        { "name": "Testing the Fire-Snow Truce", "isDefault": false, "billable": true, "children": [
+          { "name": "Mauna Kea Cold Test", "billable": true },
+          { "name": "Kilauea Heat Drill", "billable": true }
+        ]},
+        { "name": "Training the Fire-Sisters", "isDefault": false, "billable": true, "children": [
+          { "name": "Hi'iaka Apprentice Path", "billable": true },
+          { "name": "Hula Pele Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "maui-trickster-cycle",
+      "projectName": "Maui's Cycle — Hero Adventure Tracking Platform",
+      "shortName": "Maui HATP",
+      "subAccountName": "House of Hina",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-MAUI-TRICKSTER-CYCLE",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Fishhook Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Brotherly Plotting", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the Five Brothers", "billable": true },
+          { "name": "Reconnaissance with Hina", "billable": true },
+          { "name": "Strategy at the Hearth", "billable": true }
+        ]},
+        { "name": "Forging the Magic Fishhook", "isDefault": false, "billable": true, "children": [
+          { "name": "Jawbone Carving", "billable": true },
+          { "name": "Sennit Cord Braiding", "billable": true },
+          { "name": "Bait Selection (Alae Bird)", "billable": true }
+        ]},
+        { "name": "Migrating the Trickster Lore", "isDefault": false, "billable": true, "children": [
+          { "name": "Sun-Snare Field Notes", "billable": true },
+          { "name": "Island-Pulling Manuscripts", "billable": true }
+        ]},
+        { "name": "Testing the Eel-Slayer Trap", "isDefault": false, "billable": true, "children": [
+          { "name": "Tuna Lure Trial", "billable": true },
+          { "name": "Coconut-Tree Verification", "billable": true }
+        ]},
+        { "name": "Training the Five Brothers", "isDefault": false, "billable": true, "children": [
+          { "name": "Maui-mua Foundation Class", "billable": true },
+          { "name": "Brotherhood Field Drill", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "marine-and-underworld",
+      "projectName": "Marine & Underworld — Po Realm Records System",
+      "shortName": "Po Realm PRRS",
+      "subAccountName": "Court of Milu",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-MARINE-AND-UNDERWORLD",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Court of Milu Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Tide Reading", "isDefault": false, "billable": true, "children": [
+          { "name": "Reef Reconnaissance", "billable": true },
+          { "name": "Moon-Phase Survey", "billable": true },
+          { "name": "Council in the Deep", "billable": true }
+        ]},
+        { "name": "Build the Coral Causeway", "isDefault": false, "billable": true, "children": [
+          { "name": "Reef Foundation Stones", "billable": true },
+          { "name": "Shark-God Tower", "billable": true },
+          { "name": "Mo'o Spirit Channels", "billable": true }
+        ]},
+        { "name": "Migrate the Soul Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Underworld Roll Call", "billable": true },
+          { "name": "Fishing-Net Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Tidal Gates", "isDefault": false, "billable": true, "children": [
+          { "name": "King Tide Stress Test", "billable": true },
+          { "name": "Eclipse Drill (UAT)", "billable": true }
+        ]},
+        { "name": "Training the Reef Wardens", "isDefault": false, "billable": true, "children": [
+          { "name": "Fisherman Onboarding", "billable": true },
+          { "name": "Shark-Caller Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "creator-and-sky-gods": [
+      { "fullName": "Wakea",              "themedRole": "High Chief of the Western Isles" },
+      { "fullName": "Papahanaumoku",      "themedRole": "Konohiki of the Ahupua'a" },
+      { "fullName": "Kane",               "themedRole": "Kahuna of the Kumulipo" },
+      { "fullName": "Ku",                 "themedRole": "Master Canoe-Builder of Hawaiki" },
+      { "fullName": "Lono",               "themedRole": "Herald of the Pu Conch" },
+      { "fullName": "Kanaloa",            "themedRole": "Bridge-Builder of Mo'okini" },
+      { "fullName": "Atea",               "themedRole": "Senior Navigator of the Star Paths" },
+      { "fullName": "Tangaroa",           "themedRole": "Senior Reef-Mason" },
+      { "fullName": "Rangi",              "themedRole": "Council Scribe of the Lua Pa'u" },
+      { "fullName": "Papatuanuku",        "themedRole": "Keeper of the Heiau Records" }
+    ],
+    "pele-fire-and-volcano-deities": [
+      { "fullName": "Pele",               "themedRole": "High Chief of the Western Isles" },
+      { "fullName": "Hi'iaka",            "themedRole": "Apprentice Wayfinder" },
+      { "fullName": "Namakaokahai",       "themedRole": "Konohiki of the Ahupua'a" },
+      { "fullName": "Lonomakua",          "themedRole": "Master Canoe-Builder of Hawaiki" },
+      { "fullName": "Kapo",               "themedRole": "Hula Performer of the Halau" },
+      { "fullName": "Kamapua'a",          "themedRole": "Junior Wayfinder of Hokule'a" },
+      { "fullName": "Poli'ahu",           "themedRole": "Healer of the Lapa'au" },
+      { "fullName": "Lilinoe",            "themedRole": "Chanter of the Mele" }
+    ],
+    "maui-trickster-cycle": [
+      { "fullName": "Maui",               "themedRole": "Kahuna of the Kumulipo" },
+      { "fullName": "Hina",               "themedRole": "Council Scribe of the Lua Pa'u" },
+      { "fullName": "Tama-nui-a-rangi",   "themedRole": "High Chief of the Western Isles" },
+      { "fullName": "Maui-mua",           "themedRole": "Senior Navigator of the Star Paths" },
+      { "fullName": "Maui-roto",          "themedRole": "Apprentice Wayfinder" },
+      { "fullName": "Maui-taha",          "themedRole": "Junior Wayfinder of Hokule'a" },
+      { "fullName": "Maui-pae",           "themedRole": "Master Carver of the Ki'i" },
+      { "fullName": "Hinau",              "themedRole": "Hula Performer of the Halau" },
+      { "fullName": "Tuna",               "themedRole": "Healer of the Lapa'au" }
+    ],
+    "marine-and-underworld": [
+      { "fullName": "Milu",               "themedRole": "High Chief of the Western Isles" },
+      { "fullName": "Kanaloa",            "themedRole": "Konohiki of the Ahupua'a" },
+      { "fullName": "Kamohoali'i",        "themedRole": "Bridge-Builder of Mo'okini" },
+      { "fullName": "Ku'ula-kai",         "themedRole": "Senior Reef-Mason" },
+      { "fullName": "Lono-i-ka-ouli",     "themedRole": "Apprentice Reef-Mason" },
+      { "fullName": "Kanehoalani",        "themedRole": "Herald of the Pu Conch" },
+      { "fullName": "Hina-i-ka-malama",   "themedRole": "Chanter of the Mele" },
+      { "fullName": "Mo'o",               "themedRole": "Junior Wayfinder of Hokule'a" }
+    ]
+  },
+
+  "milestones": {
+    "creator-and-sky-gods": [
+      { "name": "Calling of the Kumulipo",     "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the great creation chant intoned across the heavens." },
+      { "name": "Separating Rangi from Papa",  "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: sky father lifted from earth mother to make space for light." },
+      { "name": "Council of the Four Gods",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: Kane, Ku, Lono, and Kanaloa convene in review." },
+      { "name": "Tribute from the Stars",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: star-charts delivered, ho'okupu offered." },
+      { "name": "Birth of the Hawaiian Isles", "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Wakea and Papa bring forth the islands one by one." },
+      { "name": "Hand-off to the Ali'i",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the high chiefs." }
+    ],
+    "pele-fire-and-volcano-deities": [
+      { "name": "Arrival from Kahiki",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: Pele's canoe lands at the Big Island." },
+      { "name": "Digging the Fire Pit",        "type": "Operational", "offsetPct": 30,  "description": "Build phase: Halema'uma'u crater excavated for the home fire." },
+      { "name": "Truce with Poli'ahu",         "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: fire and snow agree on the boundary at Mauna Kea." },
+      { "name": "Eruption of Kilauea",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the volcano blooms, lava flows reach the sea." },
+      { "name": "Hi'iaka's Hula",              "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the sister dances the new land into being." },
+      { "name": "Offering to Pele",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice: ohelo berries and gin tossed into the crater." }
+    ],
+    "maui-trickster-cycle": [
+      { "name": "Snaring the Sun",             "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Maui lassoes La so the days grow long enough for work." },
+      { "name": "Forging the Magic Hook",      "type": "Operational", "offsetPct": 35,  "description": "Build: the jawbone hook of Manaiakalani is bound with sennit." },
+      { "name": "Pulling Up the Islands",      "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the brothers — islands hauled from the deep." },
+      { "name": "Slaying the Eel Tuna",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Tuna defeated, coconut tree springs from his head." },
+      { "name": "Stealing Fire from the Alae", "type": "Operational", "offsetPct": 100, "description": "Project close: fire delivered to all mortals." },
+      { "name": "Reckoning at Hina's Hearth",  "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Maui returns home to Hina with the spoils." }
+    ],
+    "marine-and-underworld": [
+      { "name": "Council in the Deep",         "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council convened by Milu in the underworld court." },
+      { "name": "Casting the Sacred Net",      "type": "Operational", "offsetPct": 30,  "description": "Discovery: Ku'ula-kai's net cast for the first catch." },
+      { "name": "Building the Coral Causeway", "type": "Operational", "offsetPct": 55,  "description": "Build: reef stones laid from shore to shark-god's tower." },
+      { "name": "Blessing of Kamohoali'i",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: shark god's nod grants safe passage." },
+      { "name": "Crossing the Leina-a-ka'uhane","type": "Delivery",   "offsetPct": 100, "description": "Go-Live + handoff: souls leap from the cliff into Po." },
+      { "name": "Final Tribute to Milu",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the lord of the dead." }
+    ]
+  },
+
+  "daysOff": {
+    "Pele":             [ { "realm": "pele-fire-and-volcano-deities", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Travel between craters — Kilauea to Haleakala inspection." } ],
+    "Hi'iaka":          [ { "realm": "pele-fire-and-volcano-deities", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Errand to fetch Lohi'au from Kauai." } ],
+    "Poli'ahu":         [ { "realm": "pele-fire-and-volcano-deities", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Snow-mantle laundering atop Mauna Kea." } ],
+    "Maui":             [ { "realm": "maui-trickster-cycle",          "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Sun-snaring rope maintenance." } ],
+    "Hina":             [ { "realm": "maui-trickster-cycle",          "offsetWeeks": 14, "numberOfDays": 3, "notes": "Tapa-cloth beating festival on the moon." } ],
+    "Tuna":             [ { "realm": "maui-trickster-cycle",          "offsetWeeks": 4,  "numberOfDays": 1, "notes": "Eel migration — annual swim upriver." } ],
+    "Wakea":            [ { "realm": "creator-and-sky-gods",          "offsetWeeks": 10, "numberOfDays": 2, "notes": "Sky-roof inspection — quarterly." } ],
+    "Kane":             [ { "realm": "creator-and-sky-gods",          "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Freshwater spring blessing tour." } ],
+    "Lono":             [ { "realm": "creator-and-sky-gods",          "offsetWeeks": 18, "numberOfDays": 5, "notes": "Makahiki season — peace, games, and harvest." } ],
+    "Kanaloa":          [ { "realm": "marine-and-underworld",         "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Deep-sea voyage to inspect octopus garden." } ],
+    "Milu":             [ { "realm": "marine-and-underworld",         "offsetWeeks": 12, "numberOfDays": 2, "notes": "Underworld court adjournment — soul-counting." } ],
+    "Kamohoali'i":      [ { "realm": "marine-and-underworld",         "offsetWeeks": 16, "numberOfDays": 1, "notes": "Shark-form swim around Maui." } ],
+    "Hina-i-ka-malama": [ { "realm": "marine-and-underworld",         "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Lunar phase recalibration." } ]
+  }
+}

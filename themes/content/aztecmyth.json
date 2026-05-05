@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "key": "AztecMyth",
+  "displayName": "Aztec Mythology",
+  "category": "Mythology",
+  "emailDomain": "tenochtitlan.test",
+  "account": {
+    "name": "Mexica Pantheon (Test Data)",
+    "accountNumber": "PSA-TEST-AZTECMYTH"
+  },
+  "mailingAddress": {
+    "street": "Calzada de los Misterios 1325",
+    "city": "Tenochtitlan",
+    "state": "Anahuac",
+    "postalCode": "06000",
+    "country": "Mexico"
+  },
+
+  "roles": [
+    { "name": "Tlamatini (Sage of the Codex)",          "canonical": "Solution Architect",                    "description": "Knower of the painted books — designs the over-arching Salesforce solution and watches over its harmony with the cosmos." },
+    { "name": "Tlatoani of Delivery",                   "canonical": "Project Manager",                       "description": "Speaker-King of the project — marshals warriors of delivery, holds the calendar stone, and answers to the council." },
+    { "name": "Keeper of the Amoxtli",                  "canonical": "Salesforce Administrator",             "description": "Steward of the painted records — guardian of layouts, fields and permission sets in the great library." },
+    { "name": "Obsidian Smith of Tenochtitlan",         "canonical": "Salesforce Developer",                  "description": "Forges Apex, LWC, and platform features as one knaps obsidian into macuahuitl blades." },
+    { "name": "High Priest of the Templo Mayor",        "canonical": "Salesforce Practice Lead - USA",        "description": "Captain over all Salesforce craft — sets standards from atop the great pyramid and guides the senior smiths." },
+    { "name": "Eagle Warrior of the Codex",             "canonical": "Salesforce Senior Consultant - India",  "description": "Veteran of many campaigns — patrols the borders of customer requirements with the practiced eye of the cuauhtli." },
+    { "name": "Jaguar Scout of the Marches",            "canonical": "Salesforce Consultant - India",         "description": "Carries discovery and configuration across the realm under the Eagle Warrior's eye, swift and silent as the ocelotl." },
+    { "name": "Causeway Master of Tlatelolco",          "canonical": "Integration Technical Architect - USA", "description": "Architect of the great causeways spanning lake and city — joins Salesforce to the realms beyond." },
+    { "name": "Causeway Builder of Iztapalapa",         "canonical": "Integration Senior Consultant - India", "description": "Lays the stones of API, middleware, and event flows under the Causeway Master's plan." },
+    { "name": "Apprentice Causeway Builder",            "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — webhooks, batch, callouts and the Mexica patterns of error handling." },
+    { "name": "Healer of the Houses of Pulque",         "canonical": "QA Engineer",                           "description": "Tends the wounded build and the weary deploy — finds the maladies before they reach the tlatoani." },
+    { "name": "Herald of the Banners",                  "canonical": "Marketing Practice Lead",               "description": "Lifts the standard and the conch trumpet for product and message — leads all marketing craft." },
+    { "name": "Conch-Bearer of the Plaza",              "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the call across the Zócalo to gather and convert." },
+    { "name": "Banner-Bearer of the Causeway",          "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative, and the daily march." },
+    { "name": "Council Scribe of the Calmecac",         "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between mortal Customer and the priestly craft of design." },
+    { "name": "Master Carver of the Sun Stone",         "canonical": "Salesforce Senior Developer - USA",     "description": "Senior smith of the western pyramid — chisels the most intricate Apex glyphs and mentors the obsidian smiths." },
+    { "name": "Telpochcalli Initiate",                  "canonical": "Junior Salesforce Consultant - India",  "description": "Youth of the house of learning — cuts their first stones of configuration under the Jaguar Scout's tutelage." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "creator-and-sun-gods",
+      "projectName": "Creator & Sun Gods — Cosmogenesis CRM Rollout",
+      "shortName": "Sun Gods CCR",
+      "subAccountName": "Order of the Five Suns",
+      "subAccountNumber": "PSA-TEST-AZTECMYTH-CREATOR-AND-SUN-GODS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Omeyocan Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council of Suns", "isDefault": false, "billable": true, "children": [
+          { "name": "Council at Teotihuacan", "billable": true },
+          { "name": "Field Reconnaissance — Tollan", "billable": true },
+          { "name": "Strategy Drafting at Omeyocan", "billable": true }
+        ]},
+        { "name": "Forging the Fifth Sun", "isDefault": false, "billable": true, "children": [
+          { "name": "Bonfire Foundation", "billable": true },
+          { "name": "Self-Immolation Tooling", "billable": true },
+          { "name": "Solar Disc Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Heavens", "isDefault": false, "billable": true, "children": [
+          { "name": "Star-Map Inventory", "billable": true },
+          { "name": "Codex Translation", "billable": true }
+        ]},
+        { "name": "Testing at the Smoking Mirror", "isDefault": false, "billable": true, "children": [
+          { "name": "Tezcatlipoca Drill (UAT)", "billable": true },
+          { "name": "Eclipse Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Quetzal Priesthood", "isDefault": false, "billable": true, "children": [
+          { "name": "Acolyte Onboarding", "billable": true },
+          { "name": "High Priest's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "agriculture-fertility-gods",
+      "projectName": "Agriculture & Fertility — Chinampa Logistics Platform",
+      "shortName": "Chinampa CLP",
+      "subAccountName": "Guild of the Tlaloque",
+      "subAccountNumber": "PSA-TEST-AZTECMYTH-AGRICULTURE-FERTILITY-GODS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Tlalocan Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Rain Augury", "isDefault": false, "billable": true, "children": [
+          { "name": "Lake Texcoco Survey", "billable": true },
+          { "name": "Maize Yield Headcount", "billable": true },
+          { "name": "Strategy with the Rain Lord", "billable": true }
+        ]},
+        { "name": "Build the Chinampas", "isDefault": false, "billable": true, "children": [
+          { "name": "Floating Garden Construction", "billable": true },
+          { "name": "Reed-Mat Weaving", "billable": true },
+          { "name": "Irrigation Channel Forging", "billable": true }
+        ]},
+        { "name": "Migrate the Harvest", "isDefault": false, "billable": true, "children": [
+          { "name": "Granary Roll Call", "billable": true },
+          { "name": "Provisioning Caravans", "billable": true }
+        ]},
+        { "name": "Testing the Rain Cycles", "isDefault": false, "billable": true, "children": [
+          { "name": "Storm Defense Drill", "billable": true },
+          { "name": "Drought Recovery Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Tlachiqueros", "isDefault": false, "billable": true, "children": [
+          { "name": "Maguey Tapping Foundations", "billable": true },
+          { "name": "Pulque Master's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "underworld-and-death",
+      "projectName": "Underworld & Death — Mictlan Surveillance Build",
+      "shortName": "Mictlan MSB",
+      "subAccountName": "Court of Mictlantecuhtli",
+      "subAccountNumber": "PSA-TEST-AZTECMYTH-UNDERWORLD-AND-DEATH",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Mictlan Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Soul Reconnaissance", "isDefault": false, "billable": true, "children": [
+          { "name": "Tzitzimitl Reconnaissance", "billable": true },
+          { "name": "Obsidian Mirror Polling", "billable": true },
+          { "name": "Death Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Nine Layers", "isDefault": false, "billable": true, "children": [
+          { "name": "Apanohuaia Crossing Forging", "billable": true },
+          { "name": "Itzehecayan Wind-Knife Calibration", "billable": true },
+          { "name": "Bone-Path Signal Network", "billable": true }
+        ]},
+        { "name": "Migrate the Departed", "isDefault": false, "billable": true, "children": [
+          { "name": "Cihuateteo Roll", "billable": true },
+          { "name": "Funerary Goods Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Star Demons", "isDefault": false, "billable": true, "children": [
+          { "name": "Eclipse Pen-test", "billable": true },
+          { "name": "Itzcuintli River Stress", "billable": true }
+        ]},
+        { "name": "Training the Tonalpouhque", "isDefault": false, "billable": true, "children": [
+          { "name": "Day-Sign Conscription", "billable": true },
+          { "name": "Diviner's Battle Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mortal-rulers-and-priests",
+      "projectName": "Mortal Rulers & Priests — Triple Alliance Analytics",
+      "shortName": "Alliance TAA",
+      "subAccountName": "Triple Alliance Council",
+      "subAccountNumber": "PSA-TEST-AZTECMYTH-MORTAL-RULERS-AND-PRIESTS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Tenochtitlan Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Tlatocan Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Codex Calibration", "billable": true },
+          { "name": "Future-state Vision of Nezahualcoyotl", "billable": true },
+          { "name": "Cihuacoatl's Council", "billable": true }
+        ]},
+        { "name": "Build the Templo Mayor", "isDefault": false, "billable": true, "children": [
+          { "name": "Pyramid Stone Selection", "billable": true },
+          { "name": "Twin Shrine Construction", "billable": true },
+          { "name": "Causeway Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Tribute Rolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Codex Mendoza Catalog", "billable": true },
+          { "name": "Tribute Ledger Recording", "billable": true }
+        ]},
+        { "name": "Testing the Macuahuitl", "isDefault": false, "billable": true, "children": [
+          { "name": "Obsidian Edge Trial", "billable": true },
+          { "name": "Flower War Verification", "billable": true }
+        ]},
+        { "name": "Training the Calmecac", "isDefault": false, "billable": true, "children": [
+          { "name": "Atlatl & Spear Refresh", "billable": true },
+          { "name": "Featherwork Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "creator-and-sun-gods": [
+      { "fullName": "Ometeotl",         "themedRole": "Tlamatini (Sage of the Codex)" },
+      { "fullName": "Tonacatecuhtli",   "themedRole": "High Priest of the Templo Mayor" },
+      { "fullName": "Tonacacihuatl",    "themedRole": "Council Scribe of the Calmecac" },
+      { "fullName": "Tezcatlipoca",     "themedRole": "Tlatoani of Delivery" },
+      { "fullName": "Quetzalcoatl",     "themedRole": "Tlamatini (Sage of the Codex)" },
+      { "fullName": "Huitzilopochtli",  "themedRole": "Eagle Warrior of the Codex" },
+      { "fullName": "Xipe Totec",       "themedRole": "Obsidian Smith of Tenochtitlan" },
+      { "fullName": "Tonatiuh",         "themedRole": "Master Carver of the Sun Stone" },
+      { "fullName": "Nanahuatzin",      "themedRole": "Telpochcalli Initiate" }
+    ],
+    "agriculture-fertility-gods": [
+      { "fullName": "Tlaloc",           "themedRole": "Tlatoani of Delivery" },
+      { "fullName": "Chalchiuhtlicue",  "themedRole": "Causeway Master of Tlatelolco" },
+      { "fullName": "Centeotl",         "themedRole": "Keeper of the Amoxtli" },
+      { "fullName": "Xochiquetzal",     "themedRole": "Herald of the Banners" },
+      { "fullName": "Xochipilli",       "themedRole": "Conch-Bearer of the Plaza" },
+      { "fullName": "Mayahuel",         "themedRole": "Banner-Bearer of the Causeway" },
+      { "fullName": "Patecatl",         "themedRole": "Healer of the Houses of Pulque" },
+      { "fullName": "Toci",             "themedRole": "Council Scribe of the Calmecac" },
+      { "fullName": "Coatlicue",        "themedRole": "High Priest of the Templo Mayor" },
+      { "fullName": "Itzpapalotl",      "themedRole": "Jaguar Scout of the Marches" }
+    ],
+    "underworld-and-death": [
+      { "fullName": "Mictlantecuhtli",  "themedRole": "Tlatoani of Delivery" },
+      { "fullName": "Mictecacihuatl",   "themedRole": "High Priest of the Templo Mayor" },
+      { "fullName": "Coyolxauhqui",     "themedRole": "Eagle Warrior of the Codex" },
+      { "fullName": "Tepeyollotl",      "themedRole": "Causeway Builder of Iztapalapa" },
+      { "fullName": "Cihuateteo",       "themedRole": "Jaguar Scout of the Marches" },
+      { "fullName": "Tzitzimitl",       "themedRole": "Apprentice Causeway Builder" },
+      { "fullName": "Ahuiateteo",       "themedRole": "Conch-Bearer of the Plaza" },
+      { "fullName": "Tonalpouhque",     "themedRole": "Council Scribe of the Calmecac" }
+    ],
+    "mortal-rulers-and-priests": [
+      { "fullName": "Acamapichtli",     "themedRole": "Tlamatini (Sage of the Codex)" },
+      { "fullName": "Moctezuma I",      "themedRole": "Tlatoani of Delivery" },
+      { "fullName": "Moctezuma II",     "themedRole": "High Priest of the Templo Mayor" },
+      { "fullName": "Cuauhtemoc",       "themedRole": "Eagle Warrior of the Codex" },
+      { "fullName": "Itzcoatl",         "themedRole": "Master Carver of the Sun Stone" },
+      { "fullName": "Ahuizotl",         "themedRole": "Causeway Master of Tlatelolco" },
+      { "fullName": "Tlacaelel",        "themedRole": "Council Scribe of the Calmecac" },
+      { "fullName": "Nezahualcoyotl",   "themedRole": "Banner-Bearer of the Causeway" },
+      { "fullName": "La Malinche",      "themedRole": "Telpochcalli Initiate" }
+    ]
+  },
+
+  "milestones": {
+    "creator-and-sun-gods": [
+      { "name": "Council at Omeyocan",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the dual creator approves the cosmos blueprint." },
+      { "name": "Lighting the New Fire",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the New Fire ceremony binds the next 52-year cycle." },
+      { "name": "Audience at Teotihuacan",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: the gods convene atop the Pyramid of the Sun." },
+      { "name": "Sacrifice of Nanahuatzin",   "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the humble god leaps into the bonfire and becomes the Fifth Sun." },
+      { "name": "Birth of the Fifth Sun",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Tonatiuh rises and begins his march across the heavens." },
+      { "name": "Quetzalcoatl's Hand-off",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the Feathered Serpent departs east, leaving stewardship to the priesthood." }
+    ],
+    "agriculture-fertility-gods": [
+      { "name": "Muster at Tlalocan",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Tlaloque assemble in the paradise of rain." },
+      { "name": "First Rains of the Season",  "type": "Operational", "offsetPct": 30,  "description": "Build phase: storms deployed across the chinampas." },
+      { "name": "Maize Harvest UAT",          "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: Centeotl certifies the yield." },
+      { "name": "Festival of Xochiquetzal",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: flower-crowned celebration in every chinampa." },
+      { "name": "Return to the Underworld",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the rain gods retreat for the dry season." },
+      { "name": "Tribute of Pulque",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice: jars of pulque rendered from Mayahuel's harvest." }
+    ],
+    "underworld-and-death": [
+      { "name": "The Bone Gate Opens",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery: surveillance plane online across the nine layers." },
+      { "name": "Forge the Obsidian Mirrors", "type": "Operational", "offsetPct": 35,  "description": "Build: the Tezcatlipoca mirror network deployed." },
+      { "name": "Mictlantecuhtli's Audit",    "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Lord of the Dead himself." },
+      { "name": "Mictlan Activation",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the underworld pipeline fully operational." },
+      { "name": "Souls Pass Through",         "type": "Operational", "offsetPct": 100, "description": "Project close: four years of soul migration scheduled." },
+      { "name": "Final Reckoning of Bones",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the bone palace." }
+    ],
+    "mortal-rulers-and-priests": [
+      { "name": "Council of Nezahualcoyotl",  "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in Texcoco's poet-king's court." },
+      { "name": "Gaze into the Codex",        "type": "Operational", "offsetPct": 30,  "description": "Discovery: reports modelled from the Codex Mendoza tribute rolls." },
+      { "name": "Weave the Featherwork Reports","type": "Operational","offsetPct": 55, "description": "Build: dashboards woven of quetzal-plume." },
+      { "name": "Crowning at Templo Mayor",   "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the new Tlatoani ascends the great pyramid." },
+      { "name": "Triumph of the Triple Alliance","type": "Delivery", "offsetPct": 100, "description": "Go-Live + handoff: Tenochtitlan, Texcoco and Tlacopan share the spoils." },
+      { "name": "Tribute Day Recompense",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Cihuacoatl's treasury." }
+    ]
+  },
+
+  "daysOff": {
+    "Quetzalcoatl":     [ { "realm": "creator-and-sun-gods",     "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Self-imposed exile — sailing east on a raft of serpents." } ],
+    "Tezcatlipoca":     [ { "realm": "creator-and-sun-gods",     "offsetWeeks": 12, "numberOfDays": 3, "notes": "Walking the night as a jaguar — cannot be reached." } ],
+    "Huitzilopochtli":  [ { "realm": "creator-and-sun-gods",     "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Daily war with the moon and stars — ceremonial recovery." } ],
+    "Nanahuatzin":      [ { "realm": "creator-and-sun-gods",     "offsetWeeks": 18, "numberOfDays": 5, "notes": "Recovery from the bonfire — convalescence at Teotihuacan." } ],
+    "Tlaloc":           [ { "realm": "agriculture-fertility-gods","offsetWeeks": 8,  "numberOfDays": 3, "notes": "Storm-brewing retreat in the eastern mountains." } ],
+    "Mayahuel":         [ { "realm": "agriculture-fertility-gods","offsetWeeks": 14, "numberOfDays": 2, "notes": "Maguey harvest at Tepoztlan — quarterly." } ],
+    "Xochiquetzal":     [ { "realm": "agriculture-fertility-gods","offsetWeeks": 6,  "numberOfDays": 1, "notes": "Flower festival preparations." } ],
+    "Coatlicue":        [ { "realm": "agriculture-fertility-gods","offsetWeeks": 16, "numberOfDays": 4, "notes": "Pilgrimage to Coatepec — the serpent mountain." } ],
+    "Mictlantecuhtli":  [ { "realm": "underworld-and-death",     "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Bone palace renovation — closed to visitors." } ],
+    "Mictecacihuatl":   [ { "realm": "underworld-and-death",     "offsetWeeks": 14, "numberOfDays": 3, "notes": "Día de los Muertos preparations — annual." } ],
+    "Coyolxauhqui":     [ { "realm": "underworld-and-death",     "offsetWeeks": 10, "numberOfDays": 2, "notes": "Reassembly at the foot of Templo Mayor." } ],
+    "Moctezuma II":     [ { "realm": "mortal-rulers-and-priests","offsetWeeks": 8,  "numberOfDays": 4, "notes": "Royal hunt at Chapultepec — birds and ocelotl." } ],
+    "Nezahualcoyotl":   [ { "realm": "mortal-rulers-and-priests","offsetWeeks": 12, "numberOfDays": 3, "notes": "Composing poetry at Texcotzingo gardens." } ],
+    "Tlacaelel":        [ { "realm": "mortal-rulers-and-priests","offsetWeeks": 16, "numberOfDays": 2, "notes": "Rewriting the histories — quarterly codex revision." } ],
+    "La Malinche":      [ { "realm": "mortal-rulers-and-priests","offsetWeeks": 4,  "numberOfDays": 2, "notes": "Translation duty in Cholula — diplomatic mission." } ]
+  }
+}

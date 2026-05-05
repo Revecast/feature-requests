@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "key": "RomanMyth",
+  "displayName": "Roman Mythology",
+  "category": "Mythology",
+  "emailDomain": "romana.test",
+  "account": {
+    "name": "Pantheon of Rome (Test Data)",
+    "accountNumber": "PSA-TEST-ROMANMYTH"
+  },
+  "mailingAddress": {
+    "street": "Via Sacra 1, Forum Romanum",
+    "city": "Roma",
+    "state": "Latium",
+    "postalCode": "00186",
+    "country": "Italia"
+  },
+
+  "roles": [
+    { "name": "Augur of the Capitoline",         "canonical": "Solution Architect",                      "description": "Reads the auspices of system design — interprets omens of architecture and consecrates the master plan." },
+    { "name": "Praetor of the Cohort",            "canonical": "Project Manager",                         "description": "Marshals the legion of delivery, holds the cursus honorum of the timeline, and reports to the Senate." },
+    { "name": "Aedile of the Records",            "canonical": "Salesforce Administrator",                "description": "Custodian of public works, fields, layouts, and permission sets — keeps the temple in order." },
+    { "name": "Vulcan's Smith",                   "canonical": "Salesforce Developer",                    "description": "Forges Apex and LWC at the anvil of Mount Etna — hammers raw requirements into platform craft." },
+    { "name": "Consul of the West",               "canonical": "Salesforce Practice Lead - USA",          "description": "Highest magistrate of the Salesforce craft — sets the laws of the practice and presides over the senior smiths." },
+    { "name": "Centurion of the Eastern Legion",  "canonical": "Salesforce Senior Consultant - India",    "description": "Commands a hundred — leads delivery of complex builds with the discipline of the legions." },
+    { "name": "Legionary of the Eastern Cohort",  "canonical": "Salesforce Consultant - India",           "description": "Marches in formation under the Centurion — carries configuration and discovery across the provinces." },
+    { "name": "Pontifex of the Bridges",          "canonical": "Integration Technical Architect - USA",   "description": "Builder of the great bridges — architect of the spans between Salesforce and the realms beyond." },
+    { "name": "Bridge-Builder of the Tiber",      "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Pontifex's design." },
+    { "name": "Apprentice Mason of the Aqueduct", "canonical": "Integration Consultant - India",          "description": "Learns the craft of channels and conduits — webhooks, batch, callouts and the patterns of Roman engineering." },
+    { "name": "Haruspex of the Build",            "canonical": "QA Engineer",                             "description": "Reads the entrails of the test run — divines defects from the omens before the build reaches the Forum." },
+    { "name": "Herald of the Forum",              "canonical": "Marketing Practice Lead",                 "description": "Lifts the standard and the cornu for the message — leads all marketing craft from the Rostra." },
+    { "name": "Orator of the Rostra",             "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call from the speaker's platform to gather and convert." },
+    { "name": "Crier of the Provinces",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride of the cursus publicus." },
+    { "name": "Scribe of the Senate",             "canonical": "Business Analyst",                        "description": "Records what the Senate decrees — translates between the Patrician customer and the artisans of the build." },
+    { "name": "Master Smith of the Forum",        "canonical": "Salesforce Senior Developer - USA",       "description": "Most senior of the Vulcan's smiths in the West — designs the deepest Apex and platform architectures." },
+    { "name": "Tiro of the Eastern Cohort",       "canonical": "Junior Salesforce Consultant - India",    "description": "Newly enlisted — apprentice in the legion learning configuration, flows, and the discipline of delivery." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "dii-consentes",
+      "projectName": "Dii Consentes — Olympian Council CRM",
+      "shortName": "Consentes OC",
+      "subAccountName": "Council of the Twelve Gods",
+      "subAccountNumber": "PSA-TEST-ROMANMYTH-DIICONSENTES",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Capitoline Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Augury", "isDefault": false, "billable": true, "children": [
+          { "name": "Reading the Auspices", "billable": true },
+          { "name": "Council of the Twelve" , "billable": true }
+        ]},
+        { "name": "Forge of Vulcan", "isDefault": false, "billable": true, "children": [
+          { "name": "Thunderbolt Tooling", "billable": true },
+          { "name": "Aegis Hardening", "billable": true }
+        ]},
+        { "name": "Migrate the Sacred Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Sibylline Book Inventory", "billable": true },
+          { "name": "Tablet Translation", "billable": true }
+        ]},
+        { "name": "Trials at the Capitoline", "isDefault": false, "billable": true, "children": [
+          { "name": "Olympian UAT", "billable": true },
+          { "name": "Pantheon Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Flamines", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiate Onboarding", "billable": true },
+          { "name": "Pontifex Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "state-and-household-gods",
+      "projectName": "State & Household Gods — Civic Hearth Platform",
+      "shortName": "Hearth CHP",
+      "subAccountName": "College of the Lares & Penates",
+      "subAccountNumber": "PSA-TEST-ROMANMYTH-STATEANDHOUSEHOLDGODS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Vesta Hearth Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Lustration", "isDefault": false, "billable": true, "children": [
+          { "name": "Household Census", "billable": true },
+          { "name": "Civic Boundary Survey", "billable": true }
+        ]},
+        { "name": "Build the Lararium", "isDefault": false, "billable": true, "children": [
+          { "name": "Shrine Construction", "billable": true },
+          { "name": "Genius Banner Workshop", "billable": true }
+        ]},
+        { "name": "Migrate the Hearth Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Penates Provisioning", "billable": true },
+          { "name": "Lares Roll Call", "billable": true }
+        ]},
+        { "name": "Trials at the Janus Gate", "isDefault": false, "billable": true, "children": [
+          { "name": "Two-faced UAT", "billable": true },
+          { "name": "Threshold Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Vestal Virgins", "isDefault": false, "billable": true, "children": [
+          { "name": "Hearth Tending Foundations", "billable": true },
+          { "name": "Pontifex Maximus Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "heroes-of-rome",
+      "projectName": "Heroes of Rome — Republic Loyalty CRM",
+      "shortName": "Heroes RLC",
+      "subAccountName": "Senate of the Founding Heroes",
+      "subAccountNumber": "PSA-TEST-ROMANMYTH-HEROESOFROME",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Palatine Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Founding", "isDefault": false, "billable": true, "children": [
+          { "name": "Seven Hills Reconnaissance", "billable": true },
+          { "name": "Senate Strategy Drafting", "billable": true }
+        ]},
+        { "name": "Build the Walls of the City", "isDefault": false, "billable": true, "children": [
+          { "name": "Pomerium Foundation Stones", "billable": true },
+          { "name": "Aqueduct Plumbing", "billable": true }
+        ]},
+        { "name": "Migrate the Plebeian Rolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Citizen Census", "billable": true },
+          { "name": "Tribune Inventory", "billable": true }
+        ]},
+        { "name": "Trials at the Pons Sublicius", "isDefault": false, "billable": true, "children": [
+          { "name": "Bridge Defense Drill", "billable": true },
+          { "name": "Forum Charge Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Legions", "isDefault": false, "billable": true, "children": [
+          { "name": "Recruit Conscription", "billable": true },
+          { "name": "Centurion's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "underworld-and-fates",
+      "projectName": "Underworld & Fates — Avernus Records System",
+      "shortName": "Avernus ARS",
+      "subAccountName": "Court of Pluto & the Parcae",
+      "subAccountNumber": "PSA-TEST-ROMANMYTH-UNDERWORLDANDFATES",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Avernus Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Threadspinning", "isDefault": false, "billable": true, "children": [
+          { "name": "Thread of Life Calibration", "billable": true },
+          { "name": "Council of the Three Fates", "billable": true }
+        ]},
+        { "name": "Build the Five Rivers", "isDefault": false, "billable": true, "children": [
+          { "name": "Styx Channel Construction", "billable": true },
+          { "name": "Lethe Memory Wipes", "billable": true }
+        ]},
+        { "name": "Migrate the Souls", "isDefault": false, "billable": true, "children": [
+          { "name": "Shade Manifest Catalog", "billable": true },
+          { "name": "Charon Ferry Inventory", "billable": true }
+        ]},
+        { "name": "Trials at the Gates of Dis", "isDefault": false, "billable": true, "children": [
+          { "name": "Cerberus Pen-test", "billable": true },
+          { "name": "Tartarus Stress Trial", "billable": true }
+        ]},
+        { "name": "Training the Furies", "isDefault": false, "billable": true, "children": [
+          { "name": "Vengeance Foundations", "billable": true },
+          { "name": "Erinyes Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "dii-consentes": [
+      { "fullName": "Jupiter",   "themedRole": "Augur of the Capitoline" },
+      { "fullName": "Juno",      "themedRole": "Consul of the West" },
+      { "fullName": "Neptune",   "themedRole": "Pontifex of the Bridges" },
+      { "fullName": "Minerva",   "themedRole": "Master Smith of the Forum" },
+      { "fullName": "Mars",      "themedRole": "Praetor of the Cohort" },
+      { "fullName": "Vulcan",    "themedRole": "Vulcan's Smith" },
+      { "fullName": "Mercury",   "themedRole": "Crier of the Provinces" }
+    ],
+    "state-and-household-gods": [
+      { "fullName": "Janus",     "themedRole": "Augur of the Capitoline" },
+      { "fullName": "Saturn",    "themedRole": "Consul of the West" },
+      { "fullName": "Vesta",     "themedRole": "Aedile of the Records" },
+      { "fullName": "Quirinus",  "themedRole": "Praetor of the Cohort" },
+      { "fullName": "Bellona",   "themedRole": "Centurion of the Eastern Legion" },
+      { "fullName": "Pomona",    "themedRole": "Herald of the Forum" },
+      { "fullName": "Faunus",    "themedRole": "Legionary of the Eastern Cohort" }
+    ],
+    "heroes-of-rome": [
+      { "fullName": "Aeneas",            "themedRole": "Augur of the Capitoline" },
+      { "fullName": "Romulus",           "themedRole": "Consul of the West" },
+      { "fullName": "Remus",             "themedRole": "Centurion of the Eastern Legion" },
+      { "fullName": "Numa Pompilius",    "themedRole": "Scribe of the Senate" },
+      { "fullName": "Horatius Cocles",   "themedRole": "Praetor of the Cohort" },
+      { "fullName": "Cincinnatus",       "themedRole": "Pontifex of the Bridges" },
+      { "fullName": "Brutus the Liberator","themedRole": "Orator of the Rostra" }
+    ],
+    "underworld-and-fates": [
+      { "fullName": "Pluto",      "themedRole": "Augur of the Capitoline" },
+      { "fullName": "Proserpina", "themedRole": "Consul of the West" },
+      { "fullName": "Orcus",      "themedRole": "Haruspex of the Build" },
+      { "fullName": "Dis Pater",  "themedRole": "Master Smith of the Forum" },
+      { "fullName": "Alecto",     "themedRole": "Bridge-Builder of the Tiber" },
+      { "fullName": "Megaera",    "themedRole": "Apprentice Mason of the Aqueduct" },
+      { "fullName": "Tisiphone",  "themedRole": "Tiro of the Eastern Cohort" }
+    ]
+  },
+
+  "milestones": {
+    "dii-consentes": [
+      { "name": "Council Convened on Olympus",   "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the twelve seats are filled and the auspices read." },
+      { "name": "Forging the Thunderbolts",      "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: Vulcan's forge lit beneath Etna." },
+      { "name": "Audience with Jupiter",         "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: solution review with the Father of Gods." },
+      { "name": "Triumph at the Capitoline",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: triumphal procession up the Capitoline Hill." },
+      { "name": "Consecration of the Temple",    "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the Temple of Jupiter Optimus Maximus consecrated." },
+      { "name": "Pax Deorum Hand-off",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: peace with the gods restored, stewardship handed to the priests." }
+    ],
+    "state-and-household-gods": [
+      { "name": "Lighting the Eternal Flame",    "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the Vestal flame relit in the Forum." },
+      { "name": "Opening the Gates of Janus",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: the doors of the Janus shrine thrown open." },
+      { "name": "Saturnalia Pause",              "type": "Gate",        "offsetPct": 55,  "description": "UAT gate: the world reverses, masters serve slaves, all is reviewed." },
+      { "name": "Dedication of the Lararium",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the household shrine is dedicated and the Penates installed." },
+      { "name": "Closing the Gates of Janus",    "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: peace declared, the Janus gates are shut." },
+      { "name": "Tribute to the Genius",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: offerings to the Genius of the household." }
+    ],
+    "heroes-of-rome": [
+      { "name": "Founding the City",             "type": "Gate",        "offsetPct": 5,   "description": "Discovery: Romulus traces the pomerium with the sacred plough." },
+      { "name": "Holding the Pons Sublicius",    "type": "Operational", "offsetPct": 30,  "description": "Build: Horatius and his two companions stand against the Etruscan host." },
+      { "name": "Mucius's Hand in the Fire",     "type": "Gate",        "offsetPct": 55,  "description": "Solution review: Mucius Scaevola proves Roman resolve before Porsenna." },
+      { "name": "Cincinnatus Returns to the Plough","type": "Delivery", "offsetPct": 90,  "description": "Go-Live: the dictator lays down power and returns to the farm." },
+      { "name": "Triumph in the Forum",          "type": "Operational", "offsetPct": 100, "description": "Project close: the laurel wreath bestowed in the Forum Romanum." },
+      { "name": "Senate's Final Decree",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice ratified by senatus consultum." }
+    ],
+    "underworld-and-fates": [
+      { "name": "Crossing the Styx",             "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: Charon ferries the project across the river of oaths." },
+      { "name": "Spinning the Thread",           "type": "Operational", "offsetPct": 30,  "description": "Discovery: Nona spins the thread of the project's life." },
+      { "name": "Measuring the Thread",          "type": "Operational", "offsetPct": 55,  "description": "Build: Decima measures the length of each release." },
+      { "name": "Judgement at the Throne of Pluto","type": "Gate",      "offsetPct": 80,  "description": "UAT acceptance: Pluto and Proserpina pass sentence on the build." },
+      { "name": "Cutting the Thread",            "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: Morta cuts the thread and the project is completed." },
+      { "name": "Coin for the Ferryman",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the obol placed beneath the tongue, paid to Charon." }
+    ]
+  },
+
+  "daysOff": {
+    "Jupiter":             [ { "realm": "dii-consentes", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Storm-making sabbatical above Mount Olympus." } ],
+    "Juno":                [ { "realm": "dii-consentes", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Matronalia preparations — annual matrons' festival." } ],
+    "Neptune":             [ { "realm": "dii-consentes", "offsetWeeks": 18, "numberOfDays": 4, "notes": "Trident maintenance and deep-sea retreat." } ],
+    "Vulcan":              [ { "realm": "dii-consentes", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Vulcanalia — annual forge cleansing at Etna." } ],
+    "Mercury":             [ { "realm": "dii-consentes", "offsetWeeks": 14, "numberOfDays": 1, "notes": "Wing-sandal repair — winged messenger downtime." } ],
+    "Vesta":               [ { "realm": "state-and-household-gods", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Vestalia — sacred hearth purification week." } ],
+    "Janus":               [ { "realm": "state-and-household-gods", "offsetWeeks": 16, "numberOfDays": 3, "notes": "New Year doorway rites — both faces in use." } ],
+    "Saturn":              [ { "realm": "state-and-household-gods", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Saturnalia — entire team observes, world inverts." } ],
+    "Faunus":              [ { "realm": "state-and-household-gods", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Lupercalia preparations in the Lupercal cave." } ],
+    "Romulus":             [ { "realm": "heroes-of-rome", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Quirinalia — observed by all founders of the city." } ],
+    "Cincinnatus":         [ { "realm": "heroes-of-rome", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Returned to the farm — ploughing the south field." } ],
+    "Horatius Cocles":     [ { "realm": "heroes-of-rome", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Bridge wound recovery — leg still smarts from the swim." } ],
+    "Pluto":               [ { "realm": "underworld-and-fates", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Annual realm audit with Proserpina." } ],
+    "Proserpina":          [ { "realm": "underworld-and-fates", "offsetWeeks": 16, "numberOfDays": 5, "notes": "Six months above ground with Ceres — contractually obligated." } ],
+    "Alecto":              [ { "realm": "underworld-and-fates", "offsetWeeks": 12, "numberOfDays": 1, "notes": "Whip re-braiding day — vengeance temporarily paused." } ]
+  }
+}

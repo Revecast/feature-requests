@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "key": "YorubaMyth",
+  "displayName": "Yoruba (African) Mythology",
+  "category": "Mythology",
+  "emailDomain": "ile-ife.test",
+  "account": {
+    "name": "Orisha Pantheon of Ile-Ife (Test Data)",
+    "accountNumber": "PSA-TEST-YORUBAMYTH"
+  },
+  "mailingAddress": {
+    "street": "1 Oduduwa Way, Enuwa Square",
+    "city": "Ile-Ife",
+    "state": "Osun",
+    "postalCode": "220005",
+    "country": "Nigeria"
+  },
+
+  "roles": [
+    { "name": "Babalawo of Ifa",                "canonical": "Solution Architect",                  "description": "Father of Secrets — diviner who reads the Odu and architects the destiny of the whole solution." },
+    { "name": "Oba of the Project",             "canonical": "Project Manager",                     "description": "King of the delivery court — holds the calendar, the treasury, and the word given to the Orisha." },
+    { "name": "Keeper of the Sacred Calabash",  "canonical": "Salesforce Administrator",            "description": "Guardian of the holy vessels — fields, layouts, profiles and permission sets are kept clean within." },
+    { "name": "Ogun's Forge-Smith",             "canonical": "Salesforce Developer",                "description": "Worker of iron in Ogun's smithy — forges Apex, LWC and platform craft with hammer and fire." },
+    { "name": "Olori Awo of Oyo",               "canonical": "Salesforce Practice Lead - USA",      "description": "Chief of the priesthood in the great northern city — sets standards across all Salesforce craft." },
+    { "name": "Senior Awo of Ile-Ife",          "canonical": "Salesforce Senior Consultant - India","description": "Senior diviner at the cradle of the world — leads delivery on the most sacred engagements." },
+    { "name": "Junior Awo of the Grove",        "canonical": "Salesforce Consultant - India",      "description": "Diviner-in-training under the elders — learns the Odu of configuration and discovery." },
+    { "name": "Bridge-Master of Eshu",          "canonical": "Integration Technical Architect - USA","description": "Architect of the crossroads — designs the spans where messages pass between worlds." },
+    { "name": "Senior Crossroads Builder",      "canonical": "Integration Senior Consultant - India","description": "Lays the stones of API, middleware, and event flows along Eshu's roads." },
+    { "name": "Apprentice of the Crossroads",   "canonical": "Integration Consultant - India",     "description": "Learns the craft of integration at the crossroads — webhooks, batch and the patterns of error handling." },
+    { "name": "Healer of Osanyin's Grove",      "canonical": "QA Engineer",                         "description": "Herbalist of the leafy realm — finds the maladies in the build before they reach the Oba." },
+    { "name": "Griot of the Pantheon",          "canonical": "Marketing Practice Lead",             "description": "Chief storyteller — keeps the praise-songs of brand and product alive across all the markets." },
+    { "name": "Drummer of the Bata",            "canonical": "Marketing Senior Consultant",         "description": "Senior drummer of Shango's bata — strategist of campaigns that summon and convert." },
+    { "name": "Praise-Singer of Oshun",         "canonical": "Marketing Consultant",                "description": "Singer of the river-goddess's beauty — content, creative, and the daily call to the marketplace." },
+    { "name": "Scribe of the Odu",              "canonical": "Business Analyst",                    "description": "Records the verses of the Odu Ifa — translates client need into the language of design." },
+    { "name": "Master Forger of Ogun",          "canonical": "Salesforce Senior Developer - USA",   "description": "Eldest of the smithy — forges the deepest, most senior Apex and platform work in iron and fire." },
+    { "name": "Acolyte of the Grove",           "canonical": "Junior Salesforce Consultant - India","description": "First-year initiate carrying the elders' tools and learning the simplest verses of the Odu." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every sphere starts at least one month in the past — past weeks get Time Entries, future weeks get Schedules. The four spheres represent distinct currents within the Orisha pantheon.",
+
+  "realms": [
+    {
+      "key": "supreme-creator-orishas",
+      "projectName": "Olodumare's Sphere — Cosmogony Records Platform",
+      "shortName": "Olodumare CRP",
+      "subAccountName": "House of the Supreme Creator Orishas",
+      "subAccountNumber": "PSA-TEST-YORUBAMYTH-SUPREMECREATORORISHAS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Olorun's Default Sky", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Crossroads", "isDefault": false, "billable": true, "children": [
+          { "name": "Eshu's Message Survey", "billable": true },
+          { "name": "Orunmila's Ifa Reading", "billable": true }
+        ]},
+        { "name": "Shaping the Clay of Humanity", "isDefault": false, "billable": true, "children": [
+          { "name": "Obatala's Modeling Bench", "billable": true },
+          { "name": "Breath-of-Life Configuration", "billable": true }
+        ]},
+        { "name": "Migrate the Cosmic Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Olokun's Deep-Ocean Records", "billable": true },
+          { "name": "Yemoja's River-Mouth Catalog", "billable": true }
+        ]},
+        { "name": "Testing on Aganju's Volcano", "isDefault": false, "billable": true, "children": [
+          { "name": "Lava-Flow Stress Test", "billable": true },
+          { "name": "Mountain Foundation UAT", "billable": true }
+        ]},
+        { "name": "Training the Awo Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Initiate Onboarding", "billable": true },
+          { "name": "Aje's Wealth Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "warrior-orishas",
+      "projectName": "Shango's Sphere — Thunder Operations Build",
+      "shortName": "Shango TOB",
+      "subAccountName": "Brotherhood of the Warrior Orishas",
+      "subAccountNumber": "PSA-TEST-YORUBAMYTH-WARRIORORISHAS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Oyo Default Banner", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & War Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Oshosi's Reconnaissance", "billable": true },
+          { "name": "Ogun's Iron Inventory", "billable": true },
+          { "name": "Shango's Strategy Court", "billable": true }
+        ]},
+        { "name": "Forging Ogun's Arsenal", "isDefault": false, "billable": true, "children": [
+          { "name": "Cutlass & Hoe Forging", "billable": true },
+          { "name": "Bow & Arrow Crafting", "billable": true },
+          { "name": "Iron Road Construction", "billable": true }
+        ]},
+        { "name": "Migrate the Hunters' Roster", "isDefault": false, "billable": true, "children": [
+          { "name": "Erinle's Riverside Roll Call", "billable": true },
+          { "name": "Provisioning the Hunt", "billable": true }
+        ]},
+        { "name": "Testing the Thunder Drums", "isDefault": false, "billable": true, "children": [
+          { "name": "Bata Drum Calibration", "billable": true },
+          { "name": "Lightning-Strike Drill", "billable": true }
+        ]},
+        { "name": "Training the Iron Brotherhood", "isDefault": false, "billable": true, "children": [
+          { "name": "Omolu's Healing Brigade", "billable": true },
+          { "name": "Osanyin's Herbal Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "feminine-orishas",
+      "projectName": "Oshun's Sphere — Riverine Customer Experience",
+      "shortName": "Oshun RCE",
+      "subAccountName": "Sisterhood of the Feminine Orishas",
+      "subAccountNumber": "PSA-TEST-YORUBAMYTH-FEMININEORISHAS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Osogbo Default Current", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery at the Sacred Grove", "isDefault": false, "billable": true, "children": [
+          { "name": "Oshun's Mirror Reading", "billable": true },
+          { "name": "Yemoja's River-Mouth Survey", "billable": true },
+          { "name": "Council of the Iyaami", "billable": true }
+        ]},
+        { "name": "Weaving the Beaded Necklaces", "isDefault": false, "billable": true, "children": [
+          { "name": "Brass & Honey Adornment", "billable": true },
+          { "name": "Indigo Dye Bath", "billable": true },
+          { "name": "Cowrie Shell Threading", "billable": true }
+        ]},
+        { "name": "Migrate the Ancestral Songs", "isDefault": false, "billable": true, "children": [
+          { "name": "Egungun Praise-Verse Catalog", "billable": true },
+          { "name": "Oba's Marriage-Ledger Migration", "billable": true }
+        ]},
+        { "name": "Testing the Storm Winds", "isDefault": false, "billable": true, "children": [
+          { "name": "Oya's Whirlwind Stress Test", "billable": true },
+          { "name": "Yewa's Stillness Verification", "billable": true }
+        ]},
+        { "name": "Training the Iyalode", "isDefault": false, "billable": true, "children": [
+          { "name": "Marketwomen's Foundations", "billable": true },
+          { "name": "Mayanja's Wisdom Circle", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "ifa-priesthood-and-mortal-heroes",
+      "projectName": "Oduduwa's Sphere — Founding Lineage Ledger",
+      "shortName": "Oduduwa FLL",
+      "subAccountName": "College of the Ifa Priesthood and Mortal Heroes",
+      "subAccountNumber": "PSA-TEST-YORUBAMYTH-IFAPRIESTHOODANDMORTALHEROES",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Ile-Ife Default Hearth", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Divination", "isDefault": false, "billable": true, "children": [
+          { "name": "Orunmila's Opele Casting", "billable": true },
+          { "name": "Babalawo Field Interviews", "billable": true },
+          { "name": "Iyalawo Wisdom Council", "billable": true }
+        ]},
+        { "name": "Build the Founding Walls", "isDefault": false, "billable": true, "children": [
+          { "name": "Oduduwa's Foundation Stones", "billable": true },
+          { "name": "Lamurudu's Migration Route", "billable": true },
+          { "name": "Akinba's Watchtower Build", "billable": true }
+        ]},
+        { "name": "Migrate the Royal Lineage", "isDefault": false, "billable": true, "children": [
+          { "name": "Crown-Prince Roll Call", "billable": true },
+          { "name": "Aganju's Throne Records", "billable": true }
+        ]},
+        { "name": "Testing at Moremi's Stream", "isDefault": false, "billable": true, "children": [
+          { "name": "Sacrifice-Acceptance UAT", "billable": true },
+          { "name": "Hero's Return Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the New Babalawo", "isDefault": false, "billable": true, "children": [
+          { "name": "Odu Memorisation Workshop", "billable": true },
+          { "name": "Sango's Royal Etiquette Course", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "supreme-creator-orishas": [
+      { "fullName": "Olodumare",      "themedRole": "Babalawo of Ifa" },
+      { "fullName": "Olorun",         "themedRole": "Olori Awo of Oyo" },
+      { "fullName": "Obatala",        "themedRole": "Oba of the Project" },
+      { "fullName": "Orunmila",       "themedRole": "Scribe of the Odu" },
+      { "fullName": "Eshu Elegba",    "themedRole": "Bridge-Master of Eshu" },
+      { "fullName": "Aganju",         "themedRole": "Master Forger of Ogun" },
+      { "fullName": "Olokun",         "themedRole": "Senior Awo of Ile-Ife" },
+      { "fullName": "Aje",            "themedRole": "Keeper of the Sacred Calabash" }
+    ],
+    "warrior-orishas": [
+      { "fullName": "Shango",         "themedRole": "Oba of the Project" },
+      { "fullName": "Ogun",           "themedRole": "Master Forger of Ogun" },
+      { "fullName": "Oshosi",         "themedRole": "Junior Awo of the Grove" },
+      { "fullName": "Erinle",         "themedRole": "Senior Crossroads Builder" },
+      { "fullName": "Omolu Babaluaye","themedRole": "Healer of Osanyin's Grove" },
+      { "fullName": "Osanyin",        "themedRole": "Healer of Osanyin's Grove" },
+      { "fullName": "Iya Mapo",       "themedRole": "Ogun's Forge-Smith" },
+      { "fullName": "Aja",            "themedRole": "Apprentice of the Crossroads" }
+    ],
+    "feminine-orishas": [
+      { "fullName": "Oshun",          "themedRole": "Praise-Singer of Oshun" },
+      { "fullName": "Yemoja",         "themedRole": "Griot of the Pantheon" },
+      { "fullName": "Oba",            "themedRole": "Scribe of the Odu" },
+      { "fullName": "Oya",            "themedRole": "Drummer of the Bata" },
+      { "fullName": "Yewa",           "themedRole": "Acolyte of the Grove" },
+      { "fullName": "Mayanja",        "themedRole": "Senior Awo of Ile-Ife" },
+      { "fullName": "Iyaami Aje",     "themedRole": "Olori Awo of Oyo" }
+    ],
+    "ifa-priesthood-and-mortal-heroes": [
+      { "fullName": "Orunmila",       "themedRole": "Babalawo of Ifa" },
+      { "fullName": "Oduduwa",        "themedRole": "Olori Awo of Oyo" },
+      { "fullName": "Moremi Ajasoro", "themedRole": "Oba of the Project" },
+      { "fullName": "Sango",          "themedRole": "Drummer of the Bata" },
+      { "fullName": "Lamurudu",       "themedRole": "Senior Crossroads Builder" },
+      { "fullName": "Akinba",         "themedRole": "Junior Awo of the Grove" },
+      { "fullName": "Aganju",         "themedRole": "Master Forger of Ogun" }
+    ]
+  },
+
+  "milestones": {
+    "supreme-creator-orishas": [
+      { "name": "Olodumare's Decree",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the Supreme One pronounces the project's purpose." },
+      { "name": "Obatala Shapes the Clay",   "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the first humans of the data model are moulded from white clay." },
+      { "name": "Eshu Opens the Crossroads", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: integrations sanctioned at the trickster's crossing." },
+      { "name": "Olokun's Tribute",          "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice: tribute to the deep-ocean lord for archive migration." },
+      { "name": "Breath of Life Released",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: Olorun breathes life into the production environment." },
+      { "name": "Calabash Sealed",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the sacred calabash sealed, custody passed to the priesthood." }
+    ],
+    "warrior-orishas": [
+      { "name": "Shango's Drums Sound",      "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the bata drums call the warriors to muster." },
+      { "name": "Ogun Forges the Tools",     "type": "Operational", "offsetPct": 30,  "description": "Build phase: iron tools struck on Ogun's anvil." },
+      { "name": "Oshosi's Hunt Succeeds",    "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the hunter brings home the quarry — defects flushed." },
+      { "name": "Lightning Strikes True",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Shango's lightning bolt finds its mark in production." },
+      { "name": "Omolu Heals the Camp",      "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the healer tends every warrior before they march home." },
+      { "name": "Spoils of War Distributed", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the brotherhood divides the tribute." }
+    ],
+    "feminine-orishas": [
+      { "name": "Oshun's River Rises",       "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the goddess of beauty blesses the engagement at the river bend." },
+      { "name": "Yemoja Births the Forms",   "type": "Operational", "offsetPct": 35,  "description": "Build: the mother of waters gives birth to the data structures." },
+      { "name": "Oya's Storm Tested",        "type": "Operational", "offsetPct": 55,  "description": "Build: the whirlwind goddess stress-tests the platform — wind and lightning." },
+      { "name": "Iyaami Council Accepts",    "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: the great mothers approve the build in solemn council." },
+      { "name": "Marketwomen Take the Stalls","type": "Delivery",   "offsetPct": 100, "description": "Go-Live: the iyalode open their stalls in the new marketplace." },
+      { "name": "Tribute to the Sisterhood", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: brass, honey and cowries to the river-goddesses." }
+    ],
+    "ifa-priesthood-and-mortal-heroes": [
+      { "name": "Opele Cast at Ile-Ife",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff divination: Orunmila casts the chain, the Odu is named." },
+      { "name": "Oduduwa Lays the Cornerstone","type": "Operational","offsetPct": 30, "description": "Discovery complete: the founder marks the four corners of the city." },
+      { "name": "Moremi Returns from Sacrifice","type": "Operational","offsetPct": 55,"description": "Build: the heroine returns from the Igbo with the secret of victory — the design baked in." },
+      { "name": "Babalawo Initiation",       "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: new initiates pronounce the Odu correctly — sign-off granted." },
+      { "name": "Coronation at Enuwa Square","type": "Delivery",    "offsetPct": 100, "description": "Go-Live: the new Ooni is crowned, the system enthroned in production." },
+      { "name": "Tribute to the College",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice: kola nuts, palm wine and gold to the Ifa college." }
+    ]
+  },
+
+  "daysOff": {
+    "Olodumare":      [ { "realm": "supreme-creator-orishas", "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Withdrawn to the upper sky — the Supreme One rarely intervenes directly." } ],
+    "Obatala":        [ { "realm": "supreme-creator-orishas", "offsetWeeks": 12, "numberOfDays": 2, "notes": "White-cloth cleansing rites — must abstain from palm wine for the duration." } ],
+    "Eshu Elegba":    [ { "realm": "supreme-creator-orishas", "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Travelling between the crossroads — unreachable by Slack." } ],
+    "Olokun":         [ { "realm": "supreme-creator-orishas", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Returning to the deep ocean for the seasonal census of the drowned." } ],
+    "Shango":         [ { "realm": "warrior-orishas",         "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Royal court at Oyo — the king cannot be summoned for tickets." } ],
+    "Ogun":           [ { "realm": "warrior-orishas",         "offsetWeeks": 14, "numberOfDays": 3, "notes": "Annual cleansing of the smithy — no iron struck for three days." } ],
+    "Oshosi":         [ { "realm": "warrior-orishas",         "offsetWeeks": 10, "numberOfDays": 4, "notes": "Long hunt in the Igbo forest — out of signal." } ],
+    "Omolu Babaluaye":[ { "realm": "warrior-orishas",         "offsetWeeks": 16, "numberOfDays": 2, "notes": "Tending a smallpox outbreak in a neighbouring village." } ],
+    "Oshun":          [ { "realm": "feminine-orishas",        "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Annual Osun-Osogbo festival — the river-goddess will not be moved." } ],
+    "Yemoja":         [ { "realm": "feminine-orishas",        "offsetWeeks": 12, "numberOfDays": 2, "notes": "Birthing rites at the river-mouth — closed to outsiders." } ],
+    "Oya":            [ { "realm": "feminine-orishas",        "offsetWeeks": 18, "numberOfDays": 1, "notes": "Whirlwind passing through Niger — best to stay indoors." } ],
+    "Yewa":           [ { "realm": "feminine-orishas",        "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Vow of chastity-week observance — silent retreat." } ],
+    "Orunmila":       [ { "realm": "ifa-priesthood-and-mortal-heroes", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Casting the Odu for the new year — undisturbed by request." } ],
+    "Moremi Ajasoro": [ { "realm": "ifa-priesthood-and-mortal-heroes", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Pilgrimage to the Esimirin stream — annual remembrance of her sacrifice." } ],
+    "Oduduwa":        [ { "realm": "ifa-priesthood-and-mortal-heroes", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Founder's commemoration at Enuwa Square — court business suspended." } ]
+  }
+}

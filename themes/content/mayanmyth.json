@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "key": "MayanMyth",
+  "displayName": "Mayan Mythology",
+  "category": "Mythology",
+  "emailDomain": "chichen-itza.test",
+  "account": {
+    "name": "Mayan Pantheon (Test Data)",
+    "accountNumber": "PSA-TEST-MAYANMYTH"
+  },
+  "mailingAddress": {
+    "street": "Plaza of the Thousand Columns",
+    "city": "Chichén Itzá",
+    "state": "Yucatán",
+    "postalCode": "97751",
+    "country": "Mexico"
+  },
+
+  "roles": [
+    { "name": "Day-Keeper of the Tzolk'in",        "canonical": "Solution Architect",                      "description": "Reader of the sacred 260-day count — designs the over-arching Salesforce solution and aligns it with the cosmic calendar." },
+    { "name": "Halach Uinic (True Man)",           "canonical": "Project Manager",                         "description": "Supreme commander of the city — marshals delivery, holds the timeline, answers to the council." },
+    { "name": "Keeper of the Codex",               "canonical": "Salesforce Administrator",                "description": "Steward of the bark-paper records — guards layouts, fields, and permission sets." },
+    { "name": "Stelae Carver",                     "canonical": "Salesforce Developer",                    "description": "Chisels Apex, LWC, and platform features into stone that lasts a baktun." },
+    { "name": "Ahau of the Western Cities",        "canonical": "Salesforce Practice Lead - USA",          "description": "Lord-king over all Salesforce craft in the western lowlands — sets standards and guides senior carvers." },
+    { "name": "Itz'at of Tikal",                   "canonical": "Salesforce Senior Consultant - India",    "description": "Wise sage of the great city — practiced in customer requirements and ceremonial design." },
+    { "name": "Acolyte of Palenque",               "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration through the temples under the Itz'at's eye." },
+    { "name": "Sacbé Master Builder",              "canonical": "Integration Technical Architect - USA",   "description": "Architect of the white roads — the great causeways between Salesforce and the realms beyond." },
+    { "name": "Sacbé Stone-layer",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the limestone of API, middleware, and event flows along the Master Builder's road." },
+    { "name": "Apprentice Causeway-builder",       "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the Mayan patterns of error handling." },
+    { "name": "Healer of the Temple",              "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds maladies in the offering before it reaches the altar." },
+    { "name": "Voice of the Conch",                "canonical": "Marketing Practice Lead",                 "description": "Sounds the great shell trumpet for product and message — leads all marketing craft." },
+    { "name": "Drummer of the Plaza",              "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — beats the rhythm that gathers the people to the temple steps." },
+    { "name": "Banner-Painter of Bonampak",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative, and the daily mural." },
+    { "name": "Scribe of the Popol Vuh",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the divine craft of design." },
+    { "name": "Master Stelae Carver of Copán",     "canonical": "Salesforce Senior Developer - USA",       "description": "Eldest of the western carvers — the most intricate Apex glyphs are her work." },
+    { "name": "Novice of the Cenote",              "canonical": "Junior Salesforce Consultant - India",    "description": "Apprentice drawn from the sacred well — learns the ways of declarative craft." }
+  ],
+
+  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+
+  "realms": [
+    {
+      "key": "creator-gods",
+      "projectName": "Creator Gods — Cosmic Order CRM Rollout",
+      "shortName": "Creators COR",
+      "subAccountName": "Council of the Creator Gods",
+      "subAccountNumber": "PSA-TEST-MAYANMYTH-CREATORGODS",
+      "windowOffsetWeeks": -16,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Heart of Sky Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Cosmic Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Council of the Skybearers", "billable": true },
+          { "name": "Survey of the Four Quarters", "billable": true },
+          { "name": "Calendar Alignment Drafting", "billable": true }
+        ]},
+        { "name": "Shape the World", "isDefault": false, "billable": true, "children": [
+          { "name": "Mountain Foundation Setting", "billable": true },
+          { "name": "Sea & Sky Calibration", "billable": true },
+          { "name": "Maize Field Cultivation", "billable": true }
+        ]},
+        { "name": "Migrate the First Peoples", "isDefault": false, "billable": true, "children": [
+          { "name": "Mud-Men Decommission", "billable": true },
+          { "name": "Wood-People Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Maize-Folk", "isDefault": false, "billable": true, "children": [
+          { "name": "Speech & Worship Drill", "billable": true },
+          { "name": "Storm Resilience Trial", "billable": true }
+        ]},
+        { "name": "Training the Priests", "isDefault": false, "billable": true, "children": [
+          { "name": "Acolyte Onboarding", "billable": true },
+          { "name": "High Priest's Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "popol-vuh-hero-twins",
+      "projectName": "Hero Twins — Underworld Conquest Platform",
+      "shortName": "Twins UCP",
+      "subAccountName": "House of the Hero Twins",
+      "subAccountNumber": "PSA-TEST-MAYANMYTH-POPOLVUHHEROTWINS",
+      "windowOffsetWeeks": -10,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Ballcourt Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Summons", "isDefault": false, "billable": true, "children": [
+          { "name": "Owl Messenger Reconnaissance", "billable": true },
+          { "name": "Father's Trail Survey", "billable": true },
+          { "name": "Grandmother's Strategy Session", "billable": true }
+        ]},
+        { "name": "Build the Ballgame", "isDefault": false, "billable": true, "children": [
+          { "name": "Rubber Ball Forging", "billable": true },
+          { "name": "Hip-Yoke & Gear Crafting", "billable": true },
+          { "name": "Stone Ring Carving", "billable": true }
+        ]},
+        { "name": "Migrate the Trials", "isDefault": false, "billable": true, "children": [
+          { "name": "House of Knives Inventory", "billable": true },
+          { "name": "House of Bats Catalog", "billable": true }
+        ]},
+        { "name": "Testing the Trickery", "isDefault": false, "billable": true, "children": [
+          { "name": "Self-Sacrifice Rehearsal", "billable": true },
+          { "name": "Resurrection Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Apprentices", "isDefault": false, "billable": true, "children": [
+          { "name": "Blowgun Foundations", "billable": true },
+          { "name": "Trickster's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "xibalba-underworld-lords",
+      "projectName": "Xibalba — Place of Fright Surveillance Build",
+      "shortName": "Xibalba PFS",
+      "subAccountName": "Lords of Xibalba",
+      "subAccountNumber": "PSA-TEST-MAYANMYTH-XIBALBAUNDERWORLDLORDS",
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "workstreams": [
+        { "name": "Place of Fright Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Death Rolls", "isDefault": false, "billable": true, "children": [
+          { "name": "Census of the Damned", "billable": true },
+          { "name": "Bone-Pile Audit", "billable": true },
+          { "name": "Dark Council Strategy", "billable": true }
+        ]},
+        { "name": "Build the Houses of Trial", "isDefault": false, "billable": true, "children": [
+          { "name": "House of Cold Construction", "billable": true },
+          { "name": "House of Jaguars Outfitting", "billable": true },
+          { "name": "House of Fire Calibration", "billable": true }
+        ]},
+        { "name": "Migrate the Suffering", "isDefault": false, "billable": true, "children": [
+          { "name": "Soul Roll Reconciliation", "billable": true },
+          { "name": "Torment Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Torments", "isDefault": false, "billable": true, "children": [
+          { "name": "Knife House Pen-test", "billable": true },
+          { "name": "Bat House Stress", "billable": true }
+        ]},
+        { "name": "Training the Demons", "isDefault": false, "billable": true, "children": [
+          { "name": "Conscript Demon Onboarding", "billable": true },
+          { "name": "Death Lord's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mayan-rulers-and-warriors",
+      "projectName": "Mayan Rulers — Royal Court Analytics Implementation",
+      "shortName": "Rulers RCA",
+      "subAccountName": "League of the Royal Houses",
+      "subAccountNumber": "PSA-TEST-MAYANMYTH-MAYANRULERSANDWARRIORS",
+      "windowOffsetWeeks": -4,
+      "windowDurationWeeks": 25,
+      "workstreams": [
+        { "name": "Royal Court Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Throne Audience", "isDefault": false, "billable": true, "children": [
+          { "name": "Stelae Inscription Review", "billable": true },
+          { "name": "Tribute-roll Survey", "billable": true },
+          { "name": "Council of the Ahau", "billable": true }
+        ]},
+        { "name": "Build the Royal Dashboards", "isDefault": false, "billable": true, "children": [
+          { "name": "Jade Mosaic Composition", "billable": true },
+          { "name": "Glyph Block Carving", "billable": true },
+          { "name": "Throne Room Display", "billable": true }
+        ]},
+        { "name": "Migrate the Dynasty", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Lineage Catalog", "billable": true },
+          { "name": "Tribute Ledger Conversion", "billable": true }
+        ]},
+        { "name": "Testing the Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Coronation Rehearsal", "billable": true },
+          { "name": "Diplomatic Envoy Trial", "billable": true }
+        ]},
+        { "name": "Training the Court", "isDefault": false, "billable": true, "children": [
+          { "name": "Heir Apparent Foundations", "billable": true },
+          { "name": "Royal Scribe Workshop", "billable": true }
+        ]}
+      ]
+    }
+  ],
+
+  "casting": {
+    "creator-gods": [
+      { "fullName": "Hunab Ku",       "themedRole": "Day-Keeper of the Tzolk'in" },
+      { "fullName": "Itzamna",        "themedRole": "Ahau of the Western Cities" },
+      { "fullName": "Ix Chel",        "themedRole": "Healer of the Temple" },
+      { "fullName": "Kukulkan",       "themedRole": "Halach Uinic (True Man)" },
+      { "fullName": "Tepeu",          "themedRole": "Scribe of the Popol Vuh" },
+      { "fullName": "Gucumatz",       "themedRole": "Itz'at of Tikal" },
+      { "fullName": "Hurakan",        "themedRole": "Stelae Carver" },
+      { "fullName": "Chaac",          "themedRole": "Voice of the Conch" },
+      { "fullName": "Yum Kaax",       "themedRole": "Acolyte of Palenque" }
+    ],
+    "popol-vuh-hero-twins": [
+      { "fullName": "Hunahpu",        "themedRole": "Halach Uinic (True Man)" },
+      { "fullName": "Xbalanque",      "themedRole": "Day-Keeper of the Tzolk'in" },
+      { "fullName": "Hun Hunahpu",    "themedRole": "Ahau of the Western Cities" },
+      { "fullName": "Vucub Hunahpu",  "themedRole": "Itz'at of Tikal" },
+      { "fullName": "Ixmucane",       "themedRole": "Scribe of the Popol Vuh" },
+      { "fullName": "Ixpiyacoc",      "themedRole": "Keeper of the Codex" },
+      { "fullName": "Vucub Caquix",   "themedRole": "Voice of the Conch" },
+      { "fullName": "Zipacna",        "themedRole": "Sacbé Master Builder" },
+      { "fullName": "Cabrakan",       "themedRole": "Sacbé Stone-layer" }
+    ],
+    "xibalba-underworld-lords": [
+      { "fullName": "One Death",      "themedRole": "Ahau of the Western Cities" },
+      { "fullName": "Seven Death",    "themedRole": "Halach Uinic (True Man)" },
+      { "fullName": "Flying Scab",    "themedRole": "Apprentice Causeway-builder" },
+      { "fullName": "Gathered Blood", "themedRole": "Keeper of the Codex" },
+      { "fullName": "Demon of Pus",   "themedRole": "Healer of the Temple" },
+      { "fullName": "Demon of Jaundice","themedRole": "Novice of the Cenote" },
+      { "fullName": "Bone Staff",     "themedRole": "Stelae Carver" },
+      { "fullName": "Skull Staff",    "themedRole": "Master Stelae Carver of Copán" },
+      { "fullName": "Sweepings Demon","themedRole": "Banner-Painter of Bonampak" },
+      { "fullName": "Stabbings Demon","themedRole": "Drummer of the Plaza" }
+    ],
+    "mayan-rulers-and-warriors": [
+      { "fullName": "Yax K'uk Mo'",            "themedRole": "Ahau of the Western Cities" },
+      { "fullName": "Pakal the Great",         "themedRole": "Halach Uinic (True Man)" },
+      { "fullName": "Yik'in Chan K'awiil",     "themedRole": "Itz'at of Tikal" },
+      { "fullName": "Lady Six Sky",            "themedRole": "Voice of the Conch" },
+      { "fullName": "K'inich Janaab' Pakal",   "themedRole": "Day-Keeper of the Tzolk'in" },
+      { "fullName": "Lady K'abel",             "themedRole": "Drummer of the Plaza" },
+      { "fullName": "Yax Pasaj Chan Yopaat",   "themedRole": "Master Stelae Carver of Copán" },
+      { "fullName": "Stormy Sky",              "themedRole": "Sacbé Master Builder" }
+    ]
+  },
+
+  "milestones": {
+    "creator-gods": [
+      { "name": "First Word in the Void",       "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — the creators speak the world into being." },
+      { "name": "Raising of the Sky",           "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the heavens lifted from the primordial sea." },
+      { "name": "Council at the World Tree",    "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: cosmic review at the ceiba's roots." },
+      { "name": "Maize Harvest Tribute",        "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: the first ears of corn offered." },
+      { "name": "Dawn of the Fifth Sun",        "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the new age begins, the world holds." },
+      { "name": "Hand-off to the Day-Keepers",  "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the calendar entrusted to the priests." }
+    ],
+    "popol-vuh-hero-twins": [
+      { "name": "Summons from Xibalba",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the owl messengers arrive at the ballcourt." },
+      { "name": "Descent of the Twisted Path",  "type": "Operational", "offsetPct": 30,  "description": "Build phase: the road into the underworld is mapped." },
+      { "name": "House of Bats Survived",       "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the trial of darkness passed." },
+      { "name": "Defeat of the Death Lords",    "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the twins triumph in the great ballcourt." },
+      { "name": "Ascent into the Sky",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the twins become sun and moon." },
+      { "name": "Father's Burial Tribute",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice: offerings laid at Hun Hunahpu's grave." }
+    ],
+    "xibalba-underworld-lords": [
+      { "name": "Opening of the Cenote Gate",   "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the underworld surveillance plane online." },
+      { "name": "Forge the Houses of Trial",    "type": "Operational", "offsetPct": 35,  "description": "Build: the six houses of torment commissioned." },
+      { "name": "One Death's Audit",            "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Lords of the underworld." },
+      { "name": "Bone Court Activation",        "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Xibalba fully operational, every soul accounted." },
+      { "name": "Cenote Closes",                "type": "Operational", "offsetPct": 100, "description": "Project close: the gate sealed until next conjuring." },
+      { "name": "Death Tribute Reckoning",      "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Lords of Death." }
+    ],
+    "mayan-rulers-and-warriors": [
+      { "name": "Coronation at Palenque",       "type": "Gate",        "offsetPct": 10,  "description": "Kickoff ceremony in the throne room of the Temple of Inscriptions." },
+      { "name": "Carving of the Stelae",        "type": "Operational", "offsetPct": 30,  "description": "Discovery: the lineage glyphs cut into limestone." },
+      { "name": "Weave the Tribute Dashboards", "type": "Operational", "offsetPct": 55,  "description": "Build: dashboards woven from jade and quetzal feathers." },
+      { "name": "Tribute-Bearers' Procession",  "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: vassal cities present their offerings." },
+      { "name": "Dedication of the Temple",     "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the new pyramid consecrated." },
+      { "name": "Royal Treasury Settlement",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice paid in jade, cacao, and obsidian." }
+    ]
+  },
+
+  "daysOff": {
+    "Hunab Ku":              [ { "realm": "creator-gods",              "offsetWeeks": 4,  "numberOfDays": 5, "notes": "Withdrawal beyond the thirteen heavens — quarterly contemplation." } ],
+    "Itzamna":               [ { "realm": "creator-gods",              "offsetWeeks": 12, "numberOfDays": 3, "notes": "Tour of the celestial libraries — knowledge audit." } ],
+    "Ix Chel":               [ { "realm": "creator-gods",              "offsetWeeks": 18, "numberOfDays": 2, "notes": "Pilgrimage to Cozumel — moon ceremony for midwives." } ],
+    "Kukulkan":              [ { "realm": "creator-gods",              "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Equinox descent at Chichén Itzá — twice-yearly serpent appearance." } ],
+    "Chaac":                 [ { "realm": "creator-gods",              "offsetWeeks": 14, "numberOfDays": 2, "notes": "Rain-bringing tour of the four quarters." } ],
+    "Hunahpu":               [ { "realm": "popol-vuh-hero-twins",      "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery from the House of Bats — head reattachment leave." } ],
+    "Xbalanque":             [ { "realm": "popol-vuh-hero-twins",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Visit to Grandmother Ixmucane — overdue meal." } ],
+    "Ixmucane":              [ { "realm": "popol-vuh-hero-twins",      "offsetWeeks": 16, "numberOfDays": 4, "notes": "Maize-grinding ceremony — sacred to the grandmother." } ],
+    "Vucub Caquix":          [ { "realm": "popol-vuh-hero-twins",      "offsetWeeks": 4,  "numberOfDays": 1, "notes": "Dental work — jeweled teeth maintenance." } ],
+    "One Death":             [ { "realm": "xibalba-underworld-lords", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Annual Death Lords' retreat — strategic planning at the Bone Court." } ],
+    "Seven Death":           [ { "realm": "xibalba-underworld-lords", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Inspection tour of the six Houses of Trial." } ],
+    "Demon of Pus":          [ { "realm": "xibalba-underworld-lords", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Festering convalescence — annual maintenance." } ],
+    "Pakal the Great":       [ { "realm": "mayan-rulers-and-warriors", "offsetWeeks": 10, "numberOfDays": 4, "notes": "Sarcophagus inspection — Temple of Inscriptions audit." } ],
+    "Lady Six Sky":          [ { "realm": "mayan-rulers-and-warriors", "offsetWeeks": 16, "numberOfDays": 3, "notes": "State visit to Naranjo — diplomatic mission." } ],
+    "Yax K'uk Mo'":          [ { "realm": "mayan-rulers-and-warriors", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Founder's pilgrimage to Copán — annual remembrance." } ]
+  }
+}
