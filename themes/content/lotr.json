@@ -60,6 +60,14 @@
           { "themedRole": "Scout of the Northern Marches","quantity": 900, "unitPrice": 100 }
         ]
       },
+      "invoices": [
+        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-GONDOR-001",
+          "lines": [ { "lineType": "Time and Materials", "amount": 95000 } ] },
+        { "issuedOffsetWeeks": 8,  "status": "Paid",     "number": "INV-GONDOR-002",
+          "lines": [ { "lineType": "Time and Materials", "amount": 110000 } ] },
+        { "issuedOffsetWeeks": 12, "status": "Invoiced", "number": "INV-GONDOR-003",
+          "lines": [ { "lineType": "Time and Materials", "amount": 88000 } ] }
+      ],
       "workstreams": [
         { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
@@ -118,6 +126,12 @@
         { "name": "Beacon Tested",        "offsetWeeks": 16, "amount": 100000, "status": "In Progress" },
         { "name": "Cavalry Trained",      "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
         { "name": "Go-Live at Edoras",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 5,  "status": "Paid", "number": "INV-ROHAN-001",
+          "lines": [ { "lineType": "Milestone", "amount": 80000 } ] },
+        { "issuedOffsetWeeks": 10, "status": "Paid", "number": "INV-ROHAN-002",
+          "lines": [ { "lineType": "Milestone", "amount": 120000 } ] }
       ],
       "workstreams": [
         { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
@@ -180,6 +194,12 @@
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 63333.33 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 63333.33 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 63333.35 }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 0, "status": "Paid", "number": "INV-MORDOR-001",
+          "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 } ] },
+        { "issuedOffsetWeeks": 4, "status": "Paid", "number": "INV-MORDOR-002",
+          "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 } ] }
       ],
       "workstreams": [
         { "name": "Barad-dûr Default", "isDefault": true, "billable": false, "children": [] },
@@ -335,6 +355,15 @@
         { "lineType": "Drawdown",   "plannedOffsetWeeks":  20, "amount":  -80000 },
         { "lineType": "Drawdown",   "plannedOffsetWeeks":  25, "amount":  -80000 }
       ],
+      "invoices": [
+        { "issuedOffsetWeeks": -10, "status": "Paid", "number": "INV-MIRKWOOD-PREPAY",
+          "lines": [ { "lineType": "Prepayment", "amount": 480000 } ] },
+        { "issuedOffsetWeeks":   0, "status": "Paid", "number": "INV-MIRKWOOD-DRAW-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 80000 },
+            { "lineType": "Drawdown",           "amount": -80000 }
+          ] }
+      ],
       "workstreams": [
         { "name": "Thranduil's Hall Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
@@ -389,6 +418,18 @@
         { "name": "Build (Historical)",       "offsetWeeks": 24, "amount": 250000, "status": "Completed" },
         { "name": "Test (Historical)",        "offsetWeeks": 32, "amount": 170000, "status": "Completed" },
         { "name": "Go-Live at Erebor",        "offsetWeeks": 38, "amount": 200000, "status": "Completed" }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks":  9, "status": "Paid", "number": "INV-EREBOR-001",
+          "lines": [ { "lineType": "Milestone", "amount": 120000 } ] },
+        { "issuedOffsetWeeks": 17, "status": "Paid", "number": "INV-EREBOR-002",
+          "lines": [ { "lineType": "Milestone", "amount": 150000 } ] },
+        { "issuedOffsetWeeks": 25, "status": "Paid", "number": "INV-EREBOR-003",
+          "lines": [ { "lineType": "Milestone", "amount": 250000 } ] },
+        { "issuedOffsetWeeks": 33, "status": "Paid", "number": "INV-EREBOR-004",
+          "lines": [ { "lineType": "Milestone", "amount": 170000 } ] },
+        { "issuedOffsetWeeks": 39, "status": "Paid", "number": "INV-EREBOR-005",
+          "lines": [ { "lineType": "Milestone", "amount": 200000 } ] }
       ],
       "workstreams": [
         { "name": "Mountain Hall Default", "isDefault": true, "billable": false, "children": [] },
