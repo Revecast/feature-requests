@@ -40,6 +40,8 @@
       "subAccountNumber": "PSA-TEST-LOTR-GONDOR",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
+      "projectType": "External Project",
+      "opportunity": { "amount": 750000 },
       "workstreams": [
         { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
@@ -74,6 +76,8 @@
       "subAccountNumber": "PSA-TEST-LOTR-ROHAN",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
+      "projectType": "External Project",
+      "opportunity": { "amount": 520000 },
       "workstreams": [
         { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Muster", "isDefault": false, "billable": true, "children": [
@@ -106,6 +110,8 @@
       "shortName": "Mordor DTS",
       "subAccountName": "Realm of Mordor",
       "subAccountNumber": "PSA-TEST-LOTR-MORDOR",
+      "projectType": "Managed Services",
+      "opportunity": { "amount": 380000 },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -140,6 +146,7 @@
       "shortName": "Lórien MAI",
       "subAccountName": "Lothlórien",
       "subAccountNumber": "PSA-TEST-LOTR-LOTHLORIEN",
+      "projectType": "Internal Project",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
