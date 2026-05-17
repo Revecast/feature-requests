@@ -112,6 +112,13 @@
           { "themedRole": "Scout of the Northern Marches","quantity": 1200,"unitPrice": 100 }
         ]
       },
+      "milestones": [
+        { "name": "Discovery Complete",   "offsetWeeks": 4,  "amount": 80000,  "status": "Completed" },
+        { "name": "Riders Mustered",      "offsetWeeks": 10, "amount": 120000, "status": "Completed" },
+        { "name": "Beacon Tested",        "offsetWeeks": 16, "amount": 100000, "status": "In Progress" },
+        { "name": "Cavalry Trained",      "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
+        { "name": "Go-Live at Edoras",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+      ],
       "workstreams": [
         { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Muster", "isDefault": false, "billable": true, "children": [
@@ -166,6 +173,14 @@
       },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
+      "forecastLines": [
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 63333.35 }
+      ],
       "workstreams": [
         { "name": "Barad-dûr Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Spies", "isDefault": false, "billable": true, "children": [
@@ -255,6 +270,11 @@
           { "themedRole": "Scout of the Northern Marches","quantity": 1000,"unitPrice": 100 }
         ]
       },
+      "milestones": [
+        { "name": "Forge Built",         "offsetWeeks": 10, "amount": 100000, "status": "In Progress" },
+        { "name": "First Production",    "offsetWeeks": 18, "amount": 110000, "status": "Not Started" },
+        { "name": "Final Acceptance",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+      ],
       "workstreams": [
         { "name": "Orthanc Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Surveying", "isDefault": false, "billable": true, "children": [
@@ -306,6 +326,15 @@
           { "themedRole": "Scout of the Northern Marches","quantity": 1000,"unitPrice": 100 }
         ]
       },
+      "forecastLines": [
+        { "lineType": "Prepayment", "plannedOffsetWeeks": -10, "amount":  480000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":   0, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":   5, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  10, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  15, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  20, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  25, "amount":  -80000 }
+      ],
       "workstreams": [
         { "name": "Thranduil's Hall Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
@@ -354,6 +383,13 @@
           { "themedRole": "Scout of the Northern Marches","quantity": 1500,"unitPrice": 100 }
         ]
       },
+      "milestones": [
+        { "name": "Discovery (Historical)",   "offsetWeeks": 8,  "amount": 120000, "status": "Completed" },
+        { "name": "Design (Historical)",      "offsetWeeks": 16, "amount": 150000, "status": "Completed" },
+        { "name": "Build (Historical)",       "offsetWeeks": 24, "amount": 250000, "status": "Completed" },
+        { "name": "Test (Historical)",        "offsetWeeks": 32, "amount": 170000, "status": "Completed" },
+        { "name": "Go-Live at Erebor",        "offsetWeeks": 38, "amount": 200000, "status": "Completed" }
+      ],
       "workstreams": [
         { "name": "Mountain Hall Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Reclamation", "isDefault": false, "billable": true, "children": [
