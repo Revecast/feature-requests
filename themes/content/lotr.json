@@ -41,6 +41,7 @@
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "projectType": "External Project",
+      "billingModel": "TM",
       "opportunity": {
         "amount": 750000,
         "allocationProfile": {
@@ -50,8 +51,23 @@
             { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
             { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
           ]
-        }
+        },
+        "products": [
+          { "themedRole": "Captain of the Guard",        "quantity": 600,  "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",      "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches","quantity": 900, "unitPrice": 100 }
+        ]
       },
+      "invoices": [
+        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-GONDOR-001",
+          "lines": [ { "lineType": "Time and Materials", "amount": 95000 } ] },
+        { "issuedOffsetWeeks": 8,  "status": "Paid",     "number": "INV-GONDOR-002",
+          "lines": [ { "lineType": "Time and Materials", "amount": 110000 } ] },
+        { "issuedOffsetWeeks": 12, "status": "Invoiced", "number": "INV-GONDOR-003",
+          "lines": [ { "lineType": "Time and Materials", "amount": 88000 } ] }
+      ],
       "workstreams": [
         { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
@@ -87,6 +103,7 @@
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "projectType": "External Project",
+      "billingModel": "Milestone",
       "opportunity": {
         "amount": 520000,
         "allocationProfile": {
@@ -94,8 +111,28 @@
           "segments": [
             { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
           ]
-        }
+        },
+        "products": [
+          { "themedRole": "Captain of the Guard",        "quantity": 400,  "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",      "quantity": 1000, "unitPrice": 200 },
+          { "themedRole": "Loremaster",                  "quantity": 100,  "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 600,  "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches","quantity": 1200,"unitPrice": 100 }
+        ]
       },
+      "milestones": [
+        { "name": "Discovery Complete",   "offsetWeeks": 4,  "amount": 80000,  "status": "Completed" },
+        { "name": "Riders Mustered",      "offsetWeeks": 10, "amount": 120000, "status": "Completed" },
+        { "name": "Beacon Tested",        "offsetWeeks": 16, "amount": 100000, "status": "In Progress" },
+        { "name": "Cavalry Trained",      "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
+        { "name": "Go-Live at Edoras",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 5,  "status": "Paid", "number": "INV-ROHAN-001",
+          "lines": [ { "lineType": "Milestone", "amount": 80000 } ] },
+        { "issuedOffsetWeeks": 10, "status": "Paid", "number": "INV-ROHAN-002",
+          "lines": [ { "lineType": "Milestone", "amount": 120000 } ] }
+      ],
       "workstreams": [
         { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Muster", "isDefault": false, "billable": true, "children": [
@@ -129,6 +166,7 @@
       "subAccountName": "Realm of Mordor",
       "subAccountNumber": "PSA-TEST-LOTR-MORDOR",
       "projectType": "Managed Services",
+      "billingModel": "Retainer",
       "opportunity": {
         "amount": 380000,
         "allocationProfile": {
@@ -138,10 +176,31 @@
             { "order": 2, "startPct": 33, "endPct": 66,  "revenuePct": 30 },
             { "order": 3, "startPct": 66, "endPct": 100, "revenuePct": 50 }
           ]
-        }
+        },
+        "products": [
+          { "themedRole": "Captain of the Guard",        "quantity": 300, "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",      "quantity": 700, "unitPrice": 200 },
+          { "themedRole": "Loremaster",                  "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 500, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches","quantity": 750,"unitPrice": 100 }
+        ]
       },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
+      "forecastLines": [
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 63333.35 }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 0, "status": "Paid", "number": "INV-MORDOR-001",
+          "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 } ] },
+        { "issuedOffsetWeeks": 4, "status": "Paid", "number": "INV-MORDOR-002",
+          "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 } ] }
+      ],
       "workstreams": [
         { "name": "Barad-dûr Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Spies", "isDefault": false, "billable": true, "children": [
@@ -175,6 +234,7 @@
       "subAccountName": "Lothlórien",
       "subAccountNumber": "PSA-TEST-LOTR-LOTHLORIEN",
       "projectType": "Internal Project",
+      "billingModel": "Internal",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -200,6 +260,200 @@
         { "name": "Training the Galadhrim", "isDefault": false, "billable": true, "children": [
           { "name": "Bow & Arrow Refresh", "billable": true },
           { "name": "Cloak Weaving Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "isengard",
+      "projectName": "Isengard — Industrial Forge Modernization",
+      "shortName": "Isengard IFM",
+      "subAccountName": "Tower of Isengard",
+      "subAccountNumber": "PSA-TEST-LOTR-ISENGARD",
+      "windowOffsetWeeks": -8,
+      "windowDurationWeeks": 28,
+      "projectType": "External Project",
+      "billingModel": "Mixed",
+      "opportunity": {
+        "amount": 620000,
+        "allocationProfile": {
+          "name": "Isengard Mixed Phased",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 40,  "revenuePct": 50 },
+            { "order": 2, "startPct": 40, "endPct": 100, "revenuePct": 50 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Captain of the Guard",        "quantity": 500,  "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",      "quantity": 1200, "unitPrice": 200 },
+          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 800,  "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches","quantity": 1000,"unitPrice": 100 }
+        ]
+      },
+      "milestones": [
+        { "name": "Forge Built",         "offsetWeeks": 10, "amount": 100000, "status": "In Progress" },
+        { "name": "First Production",    "offsetWeeks": 18, "amount": 110000, "status": "Not Started" },
+        { "name": "Final Acceptance",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+      ],
+      "workstreams": [
+        { "name": "Orthanc Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Surveying", "isDefault": false, "billable": true, "children": [
+          { "name": "Pit Excavation Survey", "billable": true },
+          { "name": "Forge Capacity Audit", "billable": true }
+        ]},
+        { "name": "Build the Forges", "isDefault": false, "billable": true, "children": [
+          { "name": "Furnace Construction", "billable": true },
+          { "name": "Bellows Engineering", "billable": true },
+          { "name": "Iron Stockpile Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Workforce", "isDefault": false, "billable": true, "children": [
+          { "name": "Uruk Battalion Onboarding", "billable": true },
+          { "name": "Goblin Foreman Training", "billable": true }
+        ]},
+        { "name": "Testing the Output", "isDefault": false, "billable": true, "children": [
+          { "name": "Weapon Forge Drill", "billable": true },
+          { "name": "Quality Inspection", "billable": true }
+        ]},
+        { "name": "Training the Captains", "isDefault": false, "billable": true, "children": [
+          { "name": "Foreman Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "mirkwood",
+      "projectName": "Mirkwood — Woodland Realm Portal",
+      "shortName": "Mirkwood WRP",
+      "subAccountName": "Woodland Realm of Mirkwood",
+      "subAccountNumber": "PSA-TEST-LOTR-MIRKWOOD",
+      "windowOffsetWeeks": -12,
+      "windowDurationWeeks": 30,
+      "projectType": "External Project",
+      "billingModel": "Prepayment",
+      "opportunity": {
+        "amount": 480000,
+        "allocationProfile": {
+          "name": "Mirkwood Drawdown Front-loaded",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 50,  "revenuePct": 70 },
+            { "order": 2, "startPct": 50, "endPct": 100, "revenuePct": 30 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Captain of the Guard",        "quantity": 400,  "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",      "quantity": 900,  "unitPrice": 200 },
+          { "themedRole": "Loremaster",                  "quantity": 100,  "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 600,  "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches","quantity": 1000,"unitPrice": 100 }
+        ]
+      },
+      "forecastLines": [
+        { "lineType": "Prepayment", "plannedOffsetWeeks": -10, "amount":  480000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":   0, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":   5, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  10, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  15, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  20, "amount":  -80000 },
+        { "lineType": "Drawdown",   "plannedOffsetWeeks":  25, "amount":  -80000 }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": -10, "status": "Paid", "number": "INV-MIRKWOOD-PREPAY",
+          "lines": [ { "lineType": "Prepayment", "amount": 480000 } ] },
+        { "issuedOffsetWeeks":   0, "status": "Paid", "number": "INV-MIRKWOOD-DRAW-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 80000 },
+            { "lineType": "Drawdown",           "amount": -80000 }
+          ] }
+      ],
+      "workstreams": [
+        { "name": "Thranduil's Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
+          { "name": "Wood-Elf Requirements", "billable": true },
+          { "name": "Spider-Threat Assessment", "billable": true }
+        ]},
+        { "name": "Build the Portal", "isDefault": false, "billable": true, "children": [
+          { "name": "Enchanted Gate Construction", "billable": true },
+          { "name": "Forest Path Mapping", "billable": true }
+        ]},
+        { "name": "Migrate the Caverns", "isDefault": false, "billable": true, "children": [
+          { "name": "Wine Cellar Inventory", "billable": true },
+          { "name": "Treasure Vault Catalog", "billable": true }
+        ]},
+        { "name": "Testing the Wards", "isDefault": false, "billable": true, "children": [
+          { "name": "Enchantment Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Sentinels", "isDefault": false, "billable": true, "children": [
+          { "name": "Bow Practice Workshop", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "erebor",
+      "projectName": "Erebor — Lonely Mountain Historical Implementation",
+      "shortName": "Erebor LMHI",
+      "subAccountName": "Lonely Mountain (Erebor)",
+      "subAccountNumber": "PSA-TEST-LOTR-EREBOR",
+      "windowOffsetWeeks": -52,
+      "windowDurationWeeks": 40,
+      "projectType": "External Project",
+      "billingModel": "Historical",
+      "opportunity": {
+        "amount": 890000,
+        "allocationProfile": {
+          "name": "Erebor Historical Even",
+          "segments": [
+            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Captain of the Guard",        "quantity": 700,  "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",      "quantity": 1800, "unitPrice": 200 },
+          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches","quantity": 1500,"unitPrice": 100 }
+        ]
+      },
+      "milestones": [
+        { "name": "Discovery (Historical)",   "offsetWeeks": 8,  "amount": 120000, "status": "Completed" },
+        { "name": "Design (Historical)",      "offsetWeeks": 16, "amount": 150000, "status": "Completed" },
+        { "name": "Build (Historical)",       "offsetWeeks": 24, "amount": 250000, "status": "Completed" },
+        { "name": "Test (Historical)",        "offsetWeeks": 32, "amount": 170000, "status": "Completed" },
+        { "name": "Go-Live at Erebor",        "offsetWeeks": 38, "amount": 200000, "status": "Completed" }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks":  9, "status": "Paid", "number": "INV-EREBOR-001",
+          "lines": [ { "lineType": "Milestone", "amount": 120000 } ] },
+        { "issuedOffsetWeeks": 17, "status": "Paid", "number": "INV-EREBOR-002",
+          "lines": [ { "lineType": "Milestone", "amount": 150000 } ] },
+        { "issuedOffsetWeeks": 25, "status": "Paid", "number": "INV-EREBOR-003",
+          "lines": [ { "lineType": "Milestone", "amount": 250000 } ] },
+        { "issuedOffsetWeeks": 33, "status": "Paid", "number": "INV-EREBOR-004",
+          "lines": [ { "lineType": "Milestone", "amount": 170000 } ] },
+        { "issuedOffsetWeeks": 39, "status": "Paid", "number": "INV-EREBOR-005",
+          "lines": [ { "lineType": "Milestone", "amount": 200000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Mountain Hall Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Reclamation", "isDefault": false, "billable": true, "children": [
+          { "name": "Dragon Damage Assessment", "billable": true },
+          { "name": "Treasure Hoard Inventory", "billable": true },
+          { "name": "Heir Lineage Verification", "billable": true }
+        ]},
+        { "name": "Build the Halls", "isDefault": false, "billable": true, "children": [
+          { "name": "Throne Room Reconstruction", "billable": true },
+          { "name": "Forge Restoration", "billable": true },
+          { "name": "Defense Gate Reinforcement", "billable": true }
+        ]},
+        { "name": "Migrate the Clans", "isDefault": false, "billable": true, "children": [
+          { "name": "Iron Hills Repatriation", "billable": true },
+          { "name": "Blue Mountains Outreach", "billable": true }
+        ]},
+        { "name": "Testing the Defenses", "isDefault": false, "billable": true, "children": [
+          { "name": "Battle of Five Armies Drill", "billable": true },
+          { "name": "Gate Siege Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Heirs", "isDefault": false, "billable": true, "children": [
+          { "name": "Royal Court Workshop", "billable": true },
+          { "name": "Negotiation with Men of Dale", "billable": true }
         ]}
       ]
     }
@@ -241,6 +495,31 @@
       { "fullName": "Legolas",        "themedRole": "Scout of the Northern Marches" },
       { "fullName": "Glorfindel",     "themedRole": "Bridge-Master of Khazad-dûm" },
       { "fullName": "Bilbo Baggins",  "themedRole": "Council Scribe of Rivendell" }
+    ],
+    "isengard": [
+      { "fullName": "Saruman the White","themedRole": "Loremaster" },
+      { "fullName": "Lurtz",          "themedRole": "Captain of the Guard" },
+      { "fullName": "Ugluk",          "themedRole": "Ranger of Ithilien" },
+      { "fullName": "Sharku",         "themedRole": "Scout of the Northern Marches" },
+      { "fullName": "Mauhur",         "themedRole": "Master Smith of Erebor" },
+      { "fullName": "Snaga",          "themedRole": "Council Scribe of Rivendell" }
+    ],
+    "mirkwood": [
+      { "fullName": "Thranduil",      "themedRole": "Loremaster" },
+      { "fullName": "Tauriel",        "themedRole": "Captain of the Guard" },
+      { "fullName": "Beorn",          "themedRole": "Bridge-Master of Khazad-dûm" },
+      { "fullName": "Sylvebert",      "themedRole": "Ranger of Ithilien" },
+      { "fullName": "Galion",         "themedRole": "Keeper of the Books" },
+      { "fullName": "Daeron",         "themedRole": "Healer of the Houses" }
+    ],
+    "erebor": [
+      { "fullName": "Thorin Oakenshield","themedRole": "Loremaster" },
+      { "fullName": "Balin son of Fundin","themedRole": "Steward of the West" },
+      { "fullName": "Dwalin",         "themedRole": "Captain of the Guard" },
+      { "fullName": "Gloin",          "themedRole": "Master Smith of Erebor" },
+      { "fullName": "Bifur",          "themedRole": "Bridge-builder of Khazad-dûm" },
+      { "fullName": "Dori",           "themedRole": "Healer of the Houses" },
+      { "fullName": "Ori",            "themedRole": "Council Scribe of Rivendell" }
     ]
   },
 
