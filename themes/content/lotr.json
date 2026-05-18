@@ -41,7 +41,17 @@
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "projectType": "External Project",
-      "opportunity": { "amount": 750000 },
+      "opportunity": {
+        "amount": 750000,
+        "allocationProfile": {
+          "name": "Gondor Stewardship Ramp",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 40 },
+            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
+            { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
+          ]
+        }
+      },
       "workstreams": [
         { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
@@ -77,7 +87,15 @@
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "projectType": "External Project",
-      "opportunity": { "amount": 520000 },
+      "opportunity": {
+        "amount": 520000,
+        "allocationProfile": {
+          "name": "Rohan Cavalry Flat",
+          "segments": [
+            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+          ]
+        }
+      },
       "workstreams": [
         { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Muster", "isDefault": false, "billable": true, "children": [
@@ -111,7 +129,17 @@
       "subAccountName": "Realm of Mordor",
       "subAccountNumber": "PSA-TEST-LOTR-MORDOR",
       "projectType": "Managed Services",
-      "opportunity": { "amount": 380000 },
+      "opportunity": {
+        "amount": 380000,
+        "allocationProfile": {
+          "name": "Mordor Surveillance Back-loaded",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 33,  "revenuePct": 20 },
+            { "order": 2, "startPct": 33, "endPct": 66,  "revenuePct": 30 },
+            { "order": 3, "startPct": 66, "endPct": 100, "revenuePct": 50 }
+          ]
+        }
+      },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
