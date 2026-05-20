@@ -392,7 +392,7 @@
       "shortName": "Erebor LMHI",
       "subAccountName": "Lonely Mountain (Erebor)",
       "subAccountNumber": "PSA-TEST-LOTR-EREBOR",
-      "windowOffsetWeeks": -52,
+      "windowOffsetWeeks": -36,
       "windowDurationWeeks": 40,
       "projectType": "External Project",
       "billingModel": "Historical",
@@ -417,7 +417,7 @@
         { "name": "Design (Historical)",      "offsetWeeks": 16, "amount": 150000, "status": "Completed" },
         { "name": "Build (Historical)",       "offsetWeeks": 24, "amount": 250000, "status": "Completed" },
         { "name": "Test (Historical)",        "offsetWeeks": 32, "amount": 170000, "status": "Completed" },
-        { "name": "Go-Live at Erebor",        "offsetWeeks": 38, "amount": 200000, "status": "Completed" }
+        { "name": "Go-Live at Erebor",        "offsetWeeks": 36, "amount": 200000, "status": "Completed" }
       ],
       "invoices": [
         { "issuedOffsetWeeks":  9, "status": "Paid", "number": "INV-EREBOR-001",
@@ -428,7 +428,7 @@
           "lines": [ { "lineType": "Milestone", "amount": 250000 } ] },
         { "issuedOffsetWeeks": 33, "status": "Paid", "number": "INV-EREBOR-004",
           "lines": [ { "lineType": "Milestone", "amount": 170000 } ] },
-        { "issuedOffsetWeeks": 39, "status": "Paid", "number": "INV-EREBOR-005",
+        { "issuedOffsetWeeks": 37, "status": "Paid", "number": "INV-EREBOR-005",
           "lines": [ { "lineType": "Milestone", "amount": 200000 } ] }
       ],
       "workstreams": [
@@ -456,6 +456,53 @@
           { "name": "Negotiation with Men of Dale", "billable": true }
         ]}
       ]
+    },
+    {
+      "key": "rivendell",
+      "projectName": "Rivendell — Council Records Modernization",
+      "shortName": "Rivendell CRM",
+      "subAccountName": "House of Elrond (Rivendell)",
+      "subAccountNumber": "PSA-TEST-LOTR-RIVENDELL",
+      "windowOffsetWeeks": 6,
+      "windowDurationWeeks": 24,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "openOpp": true,
+      "opportunity": {
+        "stage": "Negotiation/Review",
+        "closeDateDaysFromToday": 30,
+        "amount": 480000,
+        "products": [
+          { "themedRole": "Council Scribe of Rivendell", "quantity": 800,  "unitPrice": 180 },
+          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
+          { "themedRole": "Keeper of the Books",         "quantity": 1000, "unitPrice": 150 },
+          { "themedRole": "Healer of the Houses",        "quantity": 400,  "unitPrice": 120 }
+        ]
+      }
+    },
+    {
+      "key": "helmsdeep",
+      "projectName": "Helm's Deep — Fortress Operations Platform",
+      "shortName": "Helm's Deep FOP",
+      "subAccountName": "Hornburg at Helm's Deep",
+      "subAccountNumber": "PSA-TEST-LOTR-HELMSDEEP",
+      "windowOffsetWeeks": 10,
+      "windowDurationWeeks": 30,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "openOpp": true,
+      "opportunity": {
+        "stage": "Proposal/Price Quote",
+        "closeDateDaysFromToday": 60,
+        "amount": 825000,
+        "products": [
+          { "themedRole": "Captain of the Guard",          "quantity": 800,  "unitPrice": 200 },
+          { "themedRole": "Master Smith of Erebor",        "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Bridge-Master of Khazad-dûm",   "quantity": 400,  "unitPrice": 280 },
+          { "themedRole": "Bridge-builder of Khazad-dûm",  "quantity": 1200, "unitPrice": 140 },
+          { "themedRole": "Ranger of Ithilien",            "quantity": 600,  "unitPrice": 160 }
+        ]
+      }
     }
   ],
 
