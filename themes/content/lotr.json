@@ -44,6 +44,8 @@
       "billingModel": "TM",
       "opportunity": {
         "amount": 750000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
         "allocationProfile": {
           "name": "Gondor Stewardship Ramp",
           "segments": [
@@ -106,6 +108,8 @@
       "billingModel": "Milestone",
       "opportunity": {
         "amount": 520000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
         "allocationProfile": {
           "name": "Rohan Cavalry Flat",
           "segments": [
@@ -169,6 +173,8 @@
       "billingModel": "Retainer",
       "opportunity": {
         "amount": 380000,
+        "paymentTerms": "Net 60",
+        "prePaymentAmount": 0,
         "allocationProfile": {
           "name": "Mordor Surveillance Back-loaded",
           "segments": [
@@ -275,6 +281,8 @@
       "billingModel": "Mixed",
       "opportunity": {
         "amount": 620000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
         "allocationProfile": {
           "name": "Isengard Mixed Phased",
           "segments": [
@@ -331,6 +339,8 @@
       "billingModel": "Prepayment",
       "opportunity": {
         "amount": 480000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 480000,
         "allocationProfile": {
           "name": "Mirkwood Drawdown Front-loaded",
           "segments": [
@@ -398,6 +408,8 @@
       "billingModel": "Historical",
       "opportunity": {
         "amount": 890000,
+        "paymentTerms": "Net 60",
+        "prePaymentAmount": 0,
         "allocationProfile": {
           "name": "Erebor Historical Even",
           "segments": [
@@ -472,6 +484,8 @@
         "stage": "Negotiation/Review",
         "closeDateDaysFromToday": 30,
         "amount": 480000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
         "products": [
           { "themedRole": "Council Scribe of Rivendell", "quantity": 800,  "unitPrice": 180 },
           { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
@@ -495,6 +509,8 @@
         "stage": "Proposal/Price Quote",
         "closeDateDaysFromToday": 60,
         "amount": 825000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
         "products": [
           { "themedRole": "Captain of the Guard",          "quantity": 800,  "unitPrice": 200 },
           { "themedRole": "Master Smith of Erebor",        "quantity": 1500, "unitPrice": 200 },
@@ -515,7 +531,10 @@
       { "fullName": "Beregond",       "themedRole": "Ranger of Ithilien" },
       { "fullName": "Peregrin Took",  "themedRole": "Healer of the Houses" },
       { "fullName": "Gandalf the Grey","themedRole": "Loremaster" },
-      { "fullName": "Mark Coburn",    "themedRole": "Loremaster" }
+      { "fullName": "Mark Coburn",    "themedRole": "Loremaster" },
+      { "fullName": "Findegil",       "themedRole": "Keeper of the Books" },
+      { "fullName": "Telchar",        "themedRole": "Master Smith of Erebor" },
+      { "fullName": "Mablung",        "themedRole": "Scout of the Northern Marches" }
     ],
     "rohan": [
       { "fullName": "Théoden",        "themedRole": "Loremaster" },
@@ -524,7 +543,10 @@
       { "fullName": "Gríma Wormtongue","themedRole": "Council Scribe of Rivendell" },
       { "fullName": "Meriadoc Brandybuck","themedRole": "Healer of the Houses" },
       { "fullName": "Treebeard",      "themedRole": "Trumpeter of the Citadel" },
-      { "fullName": "Frodo Baggins",  "themedRole": "Captain of the Guard" }
+      { "fullName": "Frodo Baggins",  "themedRole": "Captain of the Guard" },
+      { "fullName": "Háma",           "themedRole": "Keeper of the Books" },
+      { "fullName": "Narvi",          "themedRole": "Master Smith of Erebor" },
+      { "fullName": "Halbarad",       "themedRole": "Scout of the Northern Marches" }
     ],
     "mordor": [
       { "fullName": "Sauron",         "themedRole": "Loremaster" },
@@ -532,7 +554,9 @@
       { "fullName": "Sméagol Gollum", "themedRole": "Scout of the Northern Marches" },
       { "fullName": "Gríma Wormtongue","themedRole": "Council Scribe of Rivendell" },
       { "fullName": "Radagast",       "themedRole": "Healer of the Houses" },
-      { "fullName": "Samwise Gamgee", "themedRole": "Captain of the Guard" }
+      { "fullName": "Samwise Gamgee", "themedRole": "Captain of the Guard" },
+      { "fullName": "Gothmog",        "themedRole": "Keeper of the Books" },
+      { "fullName": "Mîm",            "themedRole": "Master Smith of Erebor" }
     ],
     "lothlorien": [
       { "fullName": "Galadriel",      "themedRole": "Loremaster" },
@@ -549,7 +573,8 @@
       { "fullName": "Ugluk",          "themedRole": "Ranger of Ithilien" },
       { "fullName": "Sharku",         "themedRole": "Scout of the Northern Marches" },
       { "fullName": "Mauhur",         "themedRole": "Master Smith of Erebor" },
-      { "fullName": "Snaga",          "themedRole": "Council Scribe of Rivendell" }
+      { "fullName": "Snaga",          "themedRole": "Council Scribe of Rivendell" },
+      { "fullName": "Pengolodh",      "themedRole": "Keeper of the Books" }
     ],
     "mirkwood": [
       { "fullName": "Thranduil",      "themedRole": "Loremaster" },
@@ -557,7 +582,9 @@
       { "fullName": "Beorn",          "themedRole": "Bridge-Master of Khazad-dûm" },
       { "fullName": "Sylvebert",      "themedRole": "Ranger of Ithilien" },
       { "fullName": "Galion",         "themedRole": "Keeper of the Books" },
-      { "fullName": "Daeron",         "themedRole": "Healer of the Houses" }
+      { "fullName": "Daeron",         "themedRole": "Healer of the Houses" },
+      { "fullName": "Nori",           "themedRole": "Master Smith of Erebor" },
+      { "fullName": "Anborn",         "themedRole": "Scout of the Northern Marches" }
     ],
     "erebor": [
       { "fullName": "Thorin Oakenshield","themedRole": "Loremaster" },
@@ -566,7 +593,9 @@
       { "fullName": "Gloin",          "themedRole": "Master Smith of Erebor" },
       { "fullName": "Bifur",          "themedRole": "Bridge-builder of Khazad-dûm" },
       { "fullName": "Dori",           "themedRole": "Healer of the Houses" },
-      { "fullName": "Ori",            "themedRole": "Council Scribe of Rivendell" }
+      { "fullName": "Ori",            "themedRole": "Council Scribe of Rivendell" },
+      { "fullName": "Bombur",         "themedRole": "Keeper of the Books" },
+      { "fullName": "Borondir",       "themedRole": "Scout of the Northern Marches" }
     ]
   },
 
