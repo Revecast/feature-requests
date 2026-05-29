@@ -29,6 +29,36 @@
     "erebor":     "Knowledge & Training"
   },
 
+  "pipelineAccounts": [
+    { "key": "breeland",   "accountNumber": "PSA-PIPELINE-LOTR-BREELAND",   "name": "Bree-land Trading Co." },
+    { "key": "shire",      "accountNumber": "PSA-PIPELINE-LOTR-SHIRE",      "name": "Shire Confederation" },
+    { "key": "dale",       "accountNumber": "PSA-PIPELINE-LOTR-DALE",       "name": "Kingdom of Dale" },
+    { "key": "laketown",   "accountNumber": "PSA-PIPELINE-LOTR-LAKETOWN",   "name": "Lake-town Merchants Guild" },
+    { "key": "lothcouncil","accountNumber": "PSA-PIPELINE-LOTR-LOTHCOUNCIL","name": "Lothlórien Council Advisory" }
+  ],
+
+  "pipelineOpportunities": [
+    { "extIdSlug": "breeland-discovery",             "accountKey": "breeland",    "name": "Bree-land Discovery Engagement",          "stage": "Qualification",        "amount": 220000,  "daysFromToday": 45,  "forecastCategory": "Pipeline",  "probability": 20 },
+    { "extIdSlug": "breeland-storefront-mod",        "accountKey": "breeland",    "name": "Bree-land Storefront Modernization",      "stage": "Needs Analysis",       "amount": 380000,  "daysFromToday": 60,  "forecastCategory": "Pipeline",  "probability": 30 },
+    { "extIdSlug": "breeland-loyalty-platform",      "accountKey": "breeland",    "name": "Bree-land Crossroads Loyalty Platform",   "stage": "Prospecting",          "amount": 150000,  "daysFromToday": 90,  "forecastCategory": "Pipeline",  "probability": 10 },
+
+    { "extIdSlug": "shire-implementation",           "accountKey": "shire",       "name": "Shire Implementation",                    "stage": "Proposal/Price Quote", "amount": 580000,  "daysFromToday": 75,  "forecastCategory": "Best Case", "probability": 60 },
+    { "extIdSlug": "shire-hobbithole-records",       "accountKey": "shire",       "name": "Shire Hobbit-Hole Records Modernization", "stage": "Negotiation/Review",   "amount": 720000,  "daysFromToday": 30,  "forecastCategory": "Commit",    "probability": 80 },
+    { "extIdSlug": "shire-agriculture-forecast",     "accountKey": "shire",       "name": "Shire Agricultural Co-op Forecasting",    "stage": "Qualification",        "amount": 310000,  "daysFromToday": 100, "forecastCategory": "Pipeline",  "probability": 25 },
+    { "extIdSlug": "shire-bagend-platform",          "accountKey": "shire",       "name": "Shire Bag-End Platform Discovery",        "stage": "Value Proposition",    "amount": 440000,  "daysFromToday": 60,  "forecastCategory": "Best Case", "probability": 45 },
+
+    { "extIdSlug": "dale-trade-restoration",         "accountKey": "dale",        "name": "Dale Trade Restoration Implementation",   "stage": "Proposal/Price Quote", "amount": 920000,  "daysFromToday": 45,  "forecastCategory": "Best Case", "probability": 55 },
+    { "extIdSlug": "dale-crown-treasury",            "accountKey": "dale",        "name": "Dale Crown Treasury Migration",           "stage": "Needs Analysis",       "amount": 510000,  "daysFromToday": 75,  "forecastCategory": "Pipeline",  "probability": 30 },
+    { "extIdSlug": "dale-kings-court",               "accountKey": "dale",        "name": "Dale King's Court Integration",           "stage": "Qualification",        "amount": 260000,  "daysFromToday": 105, "forecastCategory": "Pipeline",  "probability": 20 },
+
+    { "extIdSlug": "laketown-merchant-guild-ops",    "accountKey": "laketown",    "name": "Lake-town Merchant Guild Operations",     "stage": "Negotiation/Review",   "amount": 1100000, "daysFromToday": 20,  "forecastCategory": "Commit",    "probability": 85 },
+    { "extIdSlug": "laketown-longlake-logistics",    "accountKey": "laketown",    "name": "Lake-town Long Lake Logistics Roll-out",  "stage": "Value Proposition",    "amount": 670000,  "daysFromToday": 75,  "forecastCategory": "Best Case", "probability": 50 },
+    { "extIdSlug": "laketown-esgaroth-hub",          "accountKey": "laketown",    "name": "Lake-town Esgaroth Commercial Hub",       "stage": "Prospecting",          "amount": 200000,  "daysFromToday": 120, "forecastCategory": "Pipeline",  "probability": 10 },
+
+    { "extIdSlug": "lothcouncil-advisory",           "accountKey": "lothcouncil", "name": "Lothlórien Council Advisory Engagement",  "stage": "Needs Analysis",       "amount": 480000,  "daysFromToday": 60,  "forecastCategory": "Best Case", "probability": 40 },
+    { "extIdSlug": "lothcouncil-mirror-insights",    "accountKey": "lothcouncil", "name": "Lothlórien Mirror-of-Galadriel Insights", "stage": "Qualification",        "amount": 290000,  "daysFromToday": 90,  "forecastCategory": "Pipeline",  "probability": 25 }
+  ],
+
   "roles": [
     { "name": "Loremaster",                       "canonical": "Solution Architect",                      "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
     { "name": "Captain of the Guard",             "canonical": "Project Manager",                         "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
