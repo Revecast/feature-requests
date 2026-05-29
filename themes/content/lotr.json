@@ -9,6 +9,26 @@
     "accountNumber": "PSA-TEST-LOTR"
   },
 
+  "serviceLines": [
+    { "name": "Strategy & Advisory",   "description": "Stewardship-tier strategic engagements. Discovery, roadmaps, executive advisory." },
+    { "name": "Implementation",        "description": "Build + delivery teams. Greenfield platforms, integrations, migrations." },
+    { "name": "Managed Services",      "description": "Long-running operational engagements. Retainer-style ongoing support." },
+    { "name": "Data & Analytics",      "description": "Insight engagements. BI, dashboards, model validation." },
+    { "name": "Knowledge & Training",  "description": "Enablement engagements. Training delivery, knowledge transfer, documentation." }
+  ],
+
+  "realmServiceLineMap": {
+    "gondor":     "Strategy & Advisory",
+    "rivendell":  "Strategy & Advisory",
+    "rohan":      "Implementation",
+    "helmsdeep":  "Implementation",
+    "mordor":     "Managed Services",
+    "isengard":   "Managed Services",
+    "lothlorien": "Data & Analytics",
+    "mirkwood":   "Data & Analytics",
+    "erebor":     "Knowledge & Training"
+  },
+
   "roles": [
     { "name": "Loremaster",                       "canonical": "Solution Architect",                      "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
     { "name": "Captain of the Guard",             "canonical": "Project Manager",                         "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
