@@ -38,45 +38,33 @@
   ],
 
   "pipelineOpportunities": [
-    { "extIdSlug": "breeland-discovery",             "accountKey": "breeland",    "name": "Bree-land Discovery Engagement",          "stage": "Qualification",        "amount": 220000,  "daysFromToday": 45,  "forecastCategory": "Pipeline",  "probability": 20 },
-    { "extIdSlug": "breeland-storefront-mod",        "accountKey": "breeland",    "name": "Bree-land Storefront Modernization",      "stage": "Needs Analysis",       "amount": 380000,  "daysFromToday": 60,  "forecastCategory": "Pipeline",  "probability": 30 },
-    { "extIdSlug": "breeland-loyalty-platform",      "accountKey": "breeland",    "name": "Bree-land Crossroads Loyalty Platform",   "stage": "Prospecting",          "amount": 150000,  "daysFromToday": 90,  "forecastCategory": "Pipeline",  "probability": 10 },
+    { "extIdSlug": "shire-hobbithole-records", "accountKey": "shire", "name": "Shire Hobbit-Hole Records Modernization", "stage": "Negotiation/Review", "amount": 1800000, "daysFromToday": 30, "forecastCategory": "Commit", "probability": 80, "durationWeeks": 78, "billingModel": "Milestone", "serviceLineKey": "Implementation", "startOffsetDays": 21 },
 
-    { "extIdSlug": "shire-implementation",           "accountKey": "shire",       "name": "Shire Implementation",                    "stage": "Proposal/Price Quote", "amount": 580000,  "daysFromToday": 75,  "forecastCategory": "Best Case", "probability": 60 },
-    { "extIdSlug": "shire-hobbithole-records",       "accountKey": "shire",       "name": "Shire Hobbit-Hole Records Modernization", "stage": "Negotiation/Review",   "amount": 720000,  "daysFromToday": 30,  "forecastCategory": "Commit",    "probability": 80 },
-    { "extIdSlug": "shire-agriculture-forecast",     "accountKey": "shire",       "name": "Shire Agricultural Co-op Forecasting",    "stage": "Qualification",        "amount": 310000,  "daysFromToday": 100, "forecastCategory": "Pipeline",  "probability": 25 },
-    { "extIdSlug": "shire-bagend-platform",          "accountKey": "shire",       "name": "Shire Bag-End Platform Discovery",        "stage": "Value Proposition",    "amount": 440000,  "daysFromToday": 60,  "forecastCategory": "Best Case", "probability": 45 },
+    { "extIdSlug": "laketown-merchant-guild-ops", "accountKey": "laketown", "name": "Lake-town Merchant Guild Operations", "stage": "Negotiation/Review", "amount": 2500000, "daysFromToday": 20, "forecastCategory": "Commit", "probability": 85, "durationWeeks": 78, "billingModel": "Drawdown", "serviceLineKey": "Managed Services", "startOffsetDays": 14 },
 
-    { "extIdSlug": "dale-trade-restoration",         "accountKey": "dale",        "name": "Dale Trade Restoration Implementation",   "stage": "Proposal/Price Quote", "amount": 920000,  "daysFromToday": 45,  "forecastCategory": "Best Case", "probability": 55 },
-    { "extIdSlug": "dale-crown-treasury",            "accountKey": "dale",        "name": "Dale Crown Treasury Migration",           "stage": "Needs Analysis",       "amount": 510000,  "daysFromToday": 75,  "forecastCategory": "Pipeline",  "probability": 30 },
-    { "extIdSlug": "dale-kings-court",               "accountKey": "dale",        "name": "Dale King's Court Integration",           "stage": "Qualification",        "amount": 260000,  "daysFromToday": 105, "forecastCategory": "Pipeline",  "probability": 20 },
+    { "extIdSlug": "dale-trade-restoration", "accountKey": "dale", "name": "Dale Trade Restoration Implementation", "stage": "Proposal/Price Quote", "amount": 1200000, "daysFromToday": 45, "forecastCategory": "Best Case", "probability": 60, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "Implementation", "startOffsetDays": 21 },
 
-    { "extIdSlug": "laketown-merchant-guild-ops",    "accountKey": "laketown",    "name": "Lake-town Merchant Guild Operations",     "stage": "Negotiation/Review",   "amount": 1100000, "daysFromToday": 20,  "forecastCategory": "Commit",    "probability": 85 },
-    { "extIdSlug": "laketown-longlake-logistics",    "accountKey": "laketown",    "name": "Lake-town Long Lake Logistics Roll-out",  "stage": "Value Proposition",    "amount": 670000,  "daysFromToday": 75,  "forecastCategory": "Best Case", "probability": 50 },
-    { "extIdSlug": "laketown-esgaroth-hub",          "accountKey": "laketown",    "name": "Lake-town Esgaroth Commercial Hub",       "stage": "Prospecting",          "amount": 200000,  "daysFromToday": 120, "forecastCategory": "Pipeline",  "probability": 10 },
+    { "extIdSlug": "lothcouncil-advisory-retainer", "accountKey": "lothcouncil", "name": "Lothlórien Council Advisory Retainer", "stage": "Proposal/Price Quote", "amount": 1200000, "daysFromToday": 50, "forecastCategory": "Best Case", "probability": 65, "durationWeeks": 52, "billingModel": "Retainer", "serviceLineKey": "Strategy & Advisory", "startOffsetDays": 14 },
 
-    { "extIdSlug": "lothcouncil-advisory",           "accountKey": "lothcouncil", "name": "Lothlórien Council Advisory Engagement",  "stage": "Needs Analysis",       "amount": 480000,  "daysFromToday": 60,  "forecastCategory": "Best Case", "probability": 40 },
-    { "extIdSlug": "lothcouncil-mirror-insights",    "accountKey": "lothcouncil", "name": "Lothlórien Mirror-of-Galadriel Insights", "stage": "Qualification",        "amount": 290000,  "daysFromToday": 90,  "forecastCategory": "Pipeline",  "probability": 25 }
+    { "extIdSlug": "shire-bagend-platform", "accountKey": "shire", "name": "Shire Bag-End Platform Build", "stage": "Value Proposition", "amount": 750000, "daysFromToday": 60, "forecastCategory": "Best Case", "probability": 45, "durationWeeks": 39, "billingModel": "Milestone", "serviceLineKey": "Implementation", "startOffsetDays": 30 },
+
+    { "extIdSlug": "laketown-longlake-logistics", "accountKey": "laketown", "name": "Lake-town Long Lake Logistics Roll-out", "stage": "Value Proposition", "amount": 1200000, "daysFromToday": 75, "forecastCategory": "Best Case", "probability": 50, "durationWeeks": 52, "billingModel": "Prepayment", "serviceLineKey": "Implementation", "startOffsetDays": 30 },
+
+    { "extIdSlug": "dale-crown-treasury", "accountKey": "dale", "name": "Dale Crown Treasury Migration", "stage": "Needs Analysis", "amount": 500000, "daysFromToday": 75, "forecastCategory": "Pipeline", "probability": 30, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "Data & Analytics", "startOffsetDays": 21 },
+
+    { "extIdSlug": "breeland-storefront-mod", "accountKey": "breeland", "name": "Bree-land Storefront Modernization", "stage": "Needs Analysis", "amount": 750000, "daysFromToday": 60, "forecastCategory": "Pipeline", "probability": 35, "durationWeeks": 39, "billingModel": "Milestone", "serviceLineKey": "Implementation", "startOffsetDays": 30 },
+    { "extIdSlug": "breeland-discovery", "accountKey": "breeland", "name": "Bree-land Discovery Engagement", "stage": "Qualification", "amount": 300000, "daysFromToday": 90, "forecastCategory": "Pipeline", "probability": 20, "durationWeeks": 17, "serviceLineKey": "Strategy & Advisory" },
+
+    { "extIdSlug": "lothcouncil-mirror-insights", "accountKey": "lothcouncil", "name": "Lothlórien Mirror-of-Galadriel Insights", "stage": "Prospecting", "amount": 500000, "daysFromToday": 105, "forecastCategory": "Pipeline", "probability": 10, "durationWeeks": 26, "serviceLineKey": "Data & Analytics" }
   ],
 
   "roles": [
-    { "name": "Loremaster",                       "canonical": "Solution Architect",                      "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
-    { "name": "Captain of the Guard",             "canonical": "Project Manager",                         "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
-    { "name": "Keeper of the Books",              "canonical": "Salesforce Administrator",                "description": "Steward of records, layouts, fields and permission sets." },
-    { "name": "Master Smith of Erebor",           "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features at the deep delvings." },
-    { "name": "Steward of the West",              "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Numenorean Salesforce craft — sets standards and guides the senior smiths." },
-    { "name": "Ranger of Ithilien",               "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced craft." },
-    { "name": "Scout of the Northern Marches",    "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the Ranger's eye." },
-    { "name": "Bridge-Master of Khazad-dûm",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond." },
-    { "name": "Bridge-builder of Khazad-dûm",     "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Bridge-Master's plan." },
-    { "name": "Apprentice Bridge-builder",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the dwarvish patterns of error handling." },
-    { "name": "Watcher of the Palantíri",         "canonical": "Principal Integration Engineer - India",  "description": "Master of the seeing-stones — observability, queueing, and the most senior integration challenges." },
-    { "name": "Herald of the King",               "canonical": "Marketing Practice Lead - India",         "description": "Lifts the banner and the trumpet for product and message — leads all marketing craft." },
-    { "name": "Trumpeter of the Citadel",         "canonical": "Marketing Senior Consultant - India",     "description": "Strategist of campaigns — sounds the call to gather and convert." },
-    { "name": "Banner-Bearer of Rohan",           "canonical": "Marketing Consultant - India",            "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
-    { "name": "Council Scribe of Rivendell",      "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the elvish craft of design." },
-    { "name": "Healer of the Houses",             "canonical": "Quality Assurance (QA) Engineer",         "description": "Tends the wounded and the weary — finds the maladies in the build before they reach the King." },
-    { "name": "Weaver of the Mithril Threads",    "canonical": "Node Backend Dev - India",                "description": "Spins the fine, strong fabric of services, jobs, and the Node enchantments behind the Salesforce facade." }
+    { "name": "Loremaster (SA)",                    "canonical": "Solution Architect",                   "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
+    { "name": "Captain of the Guard (PM)",          "canonical": "Project Manager",                      "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
+    { "name": "Ranger of Ithilien (SCC)",           "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft." },
+    { "name": "Scout of the Northern Marches (CC)", "canonical": "Salesforce Consultant - India",        "description": "Carries discovery and configuration across the realm under the Ranger's eye." },
+    { "name": "Council Scribe of Rivendell (BA)",   "canonical": "Business Analyst",                     "description": "Records what is needed and what is promised — translates between mortal Customer and the elvish craft of design." },
+    { "name": "Trumpeter of the Citadel (SMCC)",    "canonical": "Marketing Senior Consultant - India",  "description": "Strategist of campaigns — sounds the call to gather and convert." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -574,77 +562,77 @@
 
   "casting": {
     "gondor": [
-      { "fullName": "Aragorn",        "themedRole": "Loremaster" },
-      { "fullName": "Boromir",        "themedRole": "Steward of the West" },
-      { "fullName": "Faramir",        "themedRole": "Captain of the Guard" },
-      { "fullName": "Denethor",       "themedRole": "Council Scribe of Rivendell" },
-      { "fullName": "Beregond",       "themedRole": "Ranger of Ithilien" },
-      { "fullName": "Peregrin Took",  "themedRole": "Healer of the Houses" },
-      { "fullName": "Gandalf the Grey","themedRole": "Loremaster" },
-      { "fullName": "Findegil",       "themedRole": "Keeper of the Books" },
-      { "fullName": "Telchar",        "themedRole": "Master Smith of Erebor" },
-      { "fullName": "Mablung",        "themedRole": "Scout of the Northern Marches" }
+      { "fullName": "Aragorn",             "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Boromir",             "themedRole": "Loremaster (SA)" },
+      { "fullName": "Faramir",             "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Denethor",            "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Beregond",            "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Peregrin Took",       "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Gandalf the Grey",    "themedRole": "Loremaster (SA)" },
+      { "fullName": "Findegil",            "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Telchar",             "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Mablung",             "themedRole": "Loremaster (SA)" }
     ],
     "rohan": [
-      { "fullName": "Théoden",        "themedRole": "Loremaster" },
-      { "fullName": "Éomer",          "themedRole": "Captain of the Guard" },
-      { "fullName": "Éowyn",          "themedRole": "Herald of the King" },
-      { "fullName": "Gríma Wormtongue","themedRole": "Council Scribe of Rivendell" },
-      { "fullName": "Meriadoc Brandybuck","themedRole": "Healer of the Houses" },
-      { "fullName": "Treebeard",      "themedRole": "Trumpeter of the Citadel" },
-      { "fullName": "Frodo Baggins",  "themedRole": "Captain of the Guard" },
-      { "fullName": "Háma",           "themedRole": "Keeper of the Books" },
-      { "fullName": "Narvi",          "themedRole": "Master Smith of Erebor" },
-      { "fullName": "Halbarad",       "themedRole": "Scout of the Northern Marches" }
+      { "fullName": "Théoden",             "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Éomer",               "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Éowyn",               "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Gríma Wormtongue",    "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Meriadoc Brandybuck", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Treebeard",           "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Frodo Baggins",       "themedRole": "Loremaster (SA)" },
+      { "fullName": "Háma",                "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Narvi",               "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Halbarad",            "themedRole": "Captain of the Guard (PM)" }
     ],
     "mordor": [
-      { "fullName": "Sauron",         "themedRole": "Loremaster" },
-      { "fullName": "Saruman the White","themedRole": "Steward of the West" },
-      { "fullName": "Sméagol Gollum", "themedRole": "Scout of the Northern Marches" },
-      { "fullName": "Gríma Wormtongue","themedRole": "Council Scribe of Rivendell" },
-      { "fullName": "Radagast",       "themedRole": "Healer of the Houses" },
-      { "fullName": "Samwise Gamgee", "themedRole": "Captain of the Guard" },
-      { "fullName": "Gothmog",        "themedRole": "Keeper of the Books" },
-      { "fullName": "Mîm",            "themedRole": "Master Smith of Erebor" }
+      { "fullName": "Sauron",              "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Saruman the White",   "themedRole": "Loremaster (SA)" },
+      { "fullName": "Sméagol Gollum",      "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Gríma Wormtongue",    "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Radagast",            "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Samwise Gamgee",      "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Gothmog",             "themedRole": "Loremaster (SA)" },
+      { "fullName": "Mîm",                 "themedRole": "Trumpeter of the Citadel (SMCC)" }
     ],
     "lothlorien": [
-      { "fullName": "Galadriel",      "themedRole": "Loremaster" },
-      { "fullName": "Celeborn",       "themedRole": "Steward of the West" },
-      { "fullName": "Elrond",         "themedRole": "Captain of the Guard" },
-      { "fullName": "Arwen",          "themedRole": "Ranger of Ithilien" },
-      { "fullName": "Legolas",        "themedRole": "Scout of the Northern Marches" },
-      { "fullName": "Glorfindel",     "themedRole": "Bridge-Master of Khazad-dûm" },
-      { "fullName": "Bilbo Baggins",  "themedRole": "Council Scribe of Rivendell" }
+      { "fullName": "Galadriel",           "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Celeborn",            "themedRole": "Loremaster (SA)" },
+      { "fullName": "Elrond",              "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Arwen",               "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Legolas",             "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Glorfindel",          "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Bilbo Baggins",       "themedRole": "Loremaster (SA)" }
     ],
     "isengard": [
-      { "fullName": "Saruman the White","themedRole": "Loremaster" },
-      { "fullName": "Lurtz",          "themedRole": "Captain of the Guard" },
-      { "fullName": "Ugluk",          "themedRole": "Ranger of Ithilien" },
-      { "fullName": "Sharku",         "themedRole": "Scout of the Northern Marches" },
-      { "fullName": "Mauhur",         "themedRole": "Master Smith of Erebor" },
-      { "fullName": "Snaga",          "themedRole": "Council Scribe of Rivendell" },
-      { "fullName": "Pengolodh",      "themedRole": "Keeper of the Books" }
+      { "fullName": "Saruman the White",   "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Lurtz",               "themedRole": "Loremaster (SA)" },
+      { "fullName": "Ugluk",               "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Sharku",              "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Mauhur",              "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Snaga",               "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Pengolodh",           "themedRole": "Loremaster (SA)" }
     ],
     "mirkwood": [
-      { "fullName": "Thranduil",      "themedRole": "Loremaster" },
-      { "fullName": "Tauriel",        "themedRole": "Captain of the Guard" },
-      { "fullName": "Beorn",          "themedRole": "Bridge-Master of Khazad-dûm" },
-      { "fullName": "Sylvebert",      "themedRole": "Ranger of Ithilien" },
-      { "fullName": "Galion",         "themedRole": "Keeper of the Books" },
-      { "fullName": "Daeron",         "themedRole": "Healer of the Houses" },
-      { "fullName": "Nori",           "themedRole": "Master Smith of Erebor" },
-      { "fullName": "Anborn",         "themedRole": "Scout of the Northern Marches" }
+      { "fullName": "Thranduil",           "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Tauriel",             "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Beorn",               "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Sylvebert",           "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Galion",              "themedRole": "Loremaster (SA)" },
+      { "fullName": "Daeron",              "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Nori",                "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Anborn",              "themedRole": "Loremaster (SA)" }
     ],
     "erebor": [
-      { "fullName": "Thorin Oakenshield","themedRole": "Loremaster" },
-      { "fullName": "Balin son of Fundin","themedRole": "Steward of the West" },
-      { "fullName": "Dwalin",         "themedRole": "Captain of the Guard" },
-      { "fullName": "Gloin",          "themedRole": "Master Smith of Erebor" },
-      { "fullName": "Bifur",          "themedRole": "Bridge-builder of Khazad-dûm" },
-      { "fullName": "Dori",           "themedRole": "Healer of the Houses" },
-      { "fullName": "Ori",            "themedRole": "Council Scribe of Rivendell" },
-      { "fullName": "Bombur",         "themedRole": "Keeper of the Books" },
-      { "fullName": "Borondir",       "themedRole": "Scout of the Northern Marches" }
+      { "fullName": "Thorin Oakenshield",  "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Balin son of Fundin", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Dwalin",              "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Gloin",               "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Bifur",               "themedRole": "Loremaster (SA)" },
+      { "fullName": "Dori",                "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Ori",                 "themedRole": "Loremaster (SA)" },
+      { "fullName": "Bombur",              "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Borondir",            "themedRole": "Scout of the Northern Marches (CC)" }
     ]
   },
 
