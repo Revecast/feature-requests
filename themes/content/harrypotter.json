@@ -1,285 +1,715 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "key": "HarryPotter",
   "displayName": "Harry Potter",
   "category": "Sci-Fi / Fantasy",
-  "emailDomain": "hogwarts.test",
+  "emailDomain": "hogwarts-wizarding.test",
+  "tagline": "Wizarding-world operations — Hogwarts to the Ministry of Magic",
+  "bestFor": [
+    "Forecasting walk-throughs",
+    "Pipeline depth (5 accounts / 11 opportunities)",
+    "Every billing model represented end-to-end",
+    "Multi-realm staffing + capacity demos"
+  ],
+  "capabilities": {
+    "forecasting": true,
+    "pipeline": true,
+    "billingVariety": true,
+    "timerDemos": true,
+    "setupWalkthroughs": true,
+    "brandRecognition": true
+  },
   "account": {
-    "name": "Wizarding World (Test Data)",
+    "name": "Hogwarts School of Witchcraft & Wizardry (Test Data)",
     "accountNumber": "PSA-TEST-HARRYPOTTER"
   },
-  "mailingAddress": {
-    "street": "Hogwarts Castle, Black Lake Road",
-    "city": "Hogsmeade",
-    "state": "Highlands",
-    "postalCode": "HW1 9 3/4",
-    "country": "Scotland"
-  },
 
-  "roles": [
-    { "name": "Master of the Restricted Section",     "canonical": "Solution Architect",                     "description": "Keeper of the deepest magical lore — designs the over-arching Salesforce solution and guards its arcane integrity." },
-    { "name": "Head of House",                        "canonical": "Project Manager",                        "description": "Marshals the cohort of delivery, holds the timetable, and answers to the Headmaster." },
-    { "name": "Keeper of the Sorting Hat",            "canonical": "Salesforce Administrator",               "description": "Steward of records, layouts, fields, and permission sets — sorts every user into the right house." },
-    { "name": "Wandmaker of Diagon Alley",            "canonical": "Salesforce Developer",                   "description": "Forges Apex, LWC, and platform spells in the workshop behind the curtain." },
-    { "name": "Wandmaker Master — Ollivander's",      "canonical": "Salesforce Senior Developer - USA",      "description": "Most senior wandmaker in the West — sets the bar for craft and mentors the apprentices." },
-    { "name": "Auror Captain — Ministry HQ",          "canonical": "Salesforce Practice Lead - USA",         "description": "Captain over all Western Salesforce craft — sets standards and guides the senior consultants." },
-    { "name": "Senior Auror of the Eastern Office",   "canonical": "Salesforce Senior Consultant - India",   "description": "Patrols the borders of customer requirements with practiced wand-work." },
-    { "name": "Auror Trainee",                        "canonical": "Salesforce Consultant - India",          "description": "Carries discovery and configuration across the realm under the Senior Auror's eye." },
-    { "name": "Apprentice of the Wand",               "canonical": "Junior Salesforce Consultant - India",   "description": "Just out of Hogwarts — learns charms, spells, and config under close mentorship." },
-    { "name": "Floo Network Architect",               "canonical": "Integration Technical Architect - USA",  "description": "Architect of the great hearth-to-hearth conduits between Salesforce and the realms beyond." },
-    { "name": "Apparition Engineer",                  "canonical": "Integration Senior Consultant - India",  "description": "Lays the runes of API, middleware, and event flows under the Floo Architect's plan." },
-    { "name": "Owl Post Courier",                     "canonical": "Integration Consultant - India",         "description": "Learns the craft of integration — webhooks, batch, callouts, and the dependable owl-bound parcels." },
-    { "name": "Potions Master",                       "canonical": "QA Engineer",                            "description": "Brews the testing regimens — finds the imperfections in the cauldron before the elixir leaves the dungeon." },
-    { "name": "Quidditch Commentator-in-Chief",       "canonical": "Marketing Practice Lead",                "description": "Lifts the megaphone for the product and message — leads all marketing craft across the pitch." },
-    { "name": "Daily Prophet Lead Reporter",          "canonical": "Marketing Senior Consultant",            "description": "Strategist of campaigns — sounds the call from front-page headlines to gather and convert." },
-    { "name": "Witch Weekly Columnist",               "canonical": "Marketing Consultant",                   "description": "Carries the campaign forward into the field — content, creative, and the weekly column." },
-    { "name": "Order of the Phoenix Scribe",          "canonical": "Business Analyst",                       "description": "Records what is needed and what is promised — translates between mortal Customer and the wizarding craft of design." }
+  "serviceLines": [
+    { "name": "HP: Strategy & Advisory",   "description": "Headmaster-tier strategic engagements. Discovery, roadmaps, executive advisory." },
+    { "name": "HP: Implementation",        "description": "Build + delivery houses. Greenfield platforms, integrations, migrations." },
+    { "name": "HP: Managed Services",      "description": "Long-running operational engagements. Retainer-style ongoing support." },
+    { "name": "HP: Data & Analytics",      "description": "Insight engagements. BI, dashboards, time-turner archive analysis." },
+    { "name": "HP: Knowledge & Training",  "description": "Enablement engagements. Curriculum delivery, knowledge transfer, documentation." }
   ],
 
-  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+  "realmServiceLineMap": {
+    "hogwarts-castle":         "HP: Strategy & Advisory",
+    "gringotts-bank":          "HP: Strategy & Advisory",
+    "chamber-of-secrets":      "HP: Implementation",
+    "quidditch-stadium":       "HP: Implementation",
+    "ministry-of-magic":       "HP: Managed Services",
+    "forbidden-forest":        "HP: Managed Services",
+    "department-of-mysteries": "HP: Data & Analytics",
+    "diagon-alley":            "HP: Data & Analytics",
+    "wizarding-academy":       "HP: Knowledge & Training"
+  },
+
+  "pipelineAccounts": [
+    { "key": "durmstrang",   "accountNumber": "PSA-PIPELINE-HP-DURMSTRANG",   "name": "Durmstrang Institute" },
+    { "key": "beauxbatons",  "accountNumber": "PSA-PIPELINE-HP-BEAUXBATONS",  "name": "Beauxbatons Academy" },
+    { "key": "stmungos",     "accountNumber": "PSA-PIPELINE-HP-STMUNGOS",     "name": "St Mungo's Hospital" },
+    { "key": "dailyprophet", "accountNumber": "PSA-PIPELINE-HP-DAILYPROPHET", "name": "The Daily Prophet Publishing" },
+    { "key": "gringottscorp","accountNumber": "PSA-PIPELINE-HP-GRINGOTTSCORP","name": "Gringotts International Holdings" }
+  ],
+
+  "pipelineOpportunities": [
+    { "extIdSlug": "durmstrang-curriculum-platform",     "accountKey": "durmstrang",  "name": "Durmstrang Curriculum Platform",          "stage": "Negotiation/Review",   "amount": 2150000, "daysFromToday": 30,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "HP: Data & Analytics",     "startOffsetDays": 21 },
+    { "extIdSlug": "beauxbatons-portal-rollout",         "accountKey": "beauxbatons", "name": "Beauxbatons Student Portal Rollout",      "stage": "Proposal/Price Quote", "amount": 1780000, "daysFromToday": 45,  "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "HP: Implementation",       "startOffsetDays": 21 },
+    { "extIdSlug": "stmungos-records-modernization",     "accountKey": "stmungos",    "name": "St Mungo's Patient Records Modernization","stage": "Negotiation/Review",   "amount": 1340000, "daysFromToday": 60,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "HP: Strategy & Advisory",  "startOffsetDays": 21 },
+    { "extIdSlug": "dailyprophet-archive-platform",      "accountKey": "dailyprophet","name": "Daily Prophet Archive Platform",          "stage": "Value Proposition",    "amount": 960000,  "daysFromToday": 90,  "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "HP: Implementation",       "startOffsetDays": 21 },
+    { "extIdSlug": "gringottscorp-vault-security",       "accountKey": "gringottscorp","name": "Gringotts International Vault Security", "stage": "Value Proposition",    "amount": 740000,  "daysFromToday": 120, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "HP: Managed Services",     "startOffsetDays": 21 },
+    { "extIdSlug": "beauxbatons-training-program",       "accountKey": "beauxbatons", "name": "Beauxbatons Faculty Training Program",    "stage": "Proposal/Price Quote", "amount": 605000,  "daysFromToday": 150, "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "HP: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "stmungos-pos-replacement",           "accountKey": "stmungos",    "name": "St Mungo's Ward POS Replacement",         "stage": "Value Proposition",    "amount": 500000,  "daysFromToday": 180, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "HP: Implementation",       "startOffsetDays": 21 },
+    { "extIdSlug": "durmstrang-archive-portal",          "accountKey": "durmstrang",  "name": "Durmstrang Library Archive Portal",       "stage": "Value Proposition",    "amount": 440000,  "daysFromToday": 210, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "HP: Strategy & Advisory",  "startOffsetDays": 21 },
+    { "extIdSlug": "dailyprophet-circulation-analytics", "accountKey": "dailyprophet","name": "Daily Prophet Circulation Analytics",     "stage": "Qualification",        "amount": 355000,  "daysFromToday": 240, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 17,                                    "serviceLineKey": "HP: Data & Analytics",     "startOffsetDays": 21 },
+    { "extIdSlug": "gringottscorp-mobile-vault",         "accountKey": "gringottscorp","name": "Gringotts Mobile Vault Engagement",      "stage": "Needs Analysis",       "amount": 295000,  "daysFromToday": 270, "forecastCategory": "Pipeline",  "probability": 60, "durationWeeks": 17,                                    "serviceLineKey": "HP: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "beauxbatons-records-digitization",   "accountKey": "beauxbatons", "name": "Beauxbatons Records Digitization",        "stage": "Qualification",        "amount": 275000,  "daysFromToday": 300, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 16,                                    "serviceLineKey": "HP: Knowledge & Training", "startOffsetDays": 21 }
+  ],
+
+  "roles": [
+    { "name": "Hogwarts Headmaster (SA)",              "canonical": "Solution Architect",                   "description": "Keeper of the school's deep magic — designs the over-arching solution and watches over its integrity." },
+    { "name": "Head of House (PM)",                    "canonical": "Project Manager",                      "description": "Marshals the prefects of delivery, holds the timeline, and answers to the Headmaster." },
+    { "name": "Senior Auror (SCC)",                    "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft — leads the build phase." },
+    { "name": "Apprentice Wizard (CC)",                "canonical": "Salesforce Consultant - India",        "description": "Carries discovery and configuration across the realm under the senior wand's eye." },
+    { "name": "Daily Prophet Scribe (BA)",             "canonical": "Business Analyst",                     "description": "Records what is needed and what is promised — translates between mortal customer and the wizarding craft." },
+    { "name": "Hogsmeade Crier (SMCC)",                "canonical": "Marketing Senior Consultant - India",  "description": "Strategist of campaigns — sounds the call to gather and convert across the wizarding villages." }
+  ],
+
+  "_realmNotes": "Harry Potter realms span the wizarding world: Hogwarts operations (hogwarts-castle, chamber-of-secrets, quidditch-stadium), Ministry + Diagon (ministry-of-magic, diagon-alley, gringotts-bank), magical creature + secret arts (forbidden-forest, department-of-mysteries), and apprentice training (wizarding-academy as pre-sales).",
 
   "realms": [
     {
-      "key": "gryffindor",
-      "projectName": "Gryffindor — Defence Against the Dark Arts CRM",
-      "shortName": "Gryffindor DADA",
-      "subAccountName": "House of Gryffindor",
-      "subAccountNumber": "PSA-TEST-HARRYPOTTER-GRYFFINDOR",
+      "key": "hogwarts-castle",
+      "projectName": "Hogwarts Castle — Curriculum Platform Rollout",
+      "shortName": "Hogwarts CPR",
+      "subAccountName": "Hogwarts Castle Operations",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-HOGWARTS",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "opportunity": {
+        "amount": 780000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Hogwarts Ramp",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 40 },
+            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
+            { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 600,  "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 200,  "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 900,  "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-HOGWARTS-001", "lines": [ { "lineType": "Time and Materials", "amount": 97000 } ] },
+        { "issuedOffsetWeeks": 8,  "status": "Paid",     "number": "INV-HOGWARTS-002", "lines": [ { "lineType": "Time and Materials", "amount": 113000 } ] },
+        { "issuedOffsetWeeks": 12, "status": "Invoiced", "number": "INV-HOGWARTS-003", "lines": [ { "lineType": "Time and Materials", "amount": 90000 } ] }
+      ],
       "workstreams": [
-        { "name": "Common Room Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Great Hall Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Sorting", "isDefault": false, "billable": true, "children": [
-          { "name": "Sorting Hat Interviews", "billable": true },
-          { "name": "Marauder's Map Survey", "billable": true },
-          { "name": "Strategy with the Headmaster", "billable": true }
+          { "name": "Sorting Hat Calibration", "billable": true },
+          { "name": "House Council", "billable": true },
+          { "name": "Curriculum Drafting", "billable": true }
         ]},
-        { "name": "Build the DA", "isDefault": false, "billable": true, "children": [
-          { "name": "Room of Requirement Setup", "billable": true },
-          { "name": "Defensive Spell Library", "billable": true },
-          { "name": "Patronus Configuration", "billable": true }
+        { "name": "Build the Common Rooms", "isDefault": false, "billable": true, "children": [
+          { "name": "Gryffindor Tower Foundation", "billable": true },
+          { "name": "Slytherin Dungeon Hardening", "billable": true },
+          { "name": "Ravenclaw Library Calibration", "billable": true }
         ]},
         { "name": "Migrate the Hogwarts Records", "isDefault": false, "billable": true, "children": [
-          { "name": "House Point Ledger", "billable": true },
-          { "name": "Quidditch Roster Migration", "billable": true }
+          { "name": "Student Roll Digitization", "billable": true },
+          { "name": "OWLs Archive Translation", "billable": true }
         ]},
-        { "name": "Testing on the Pitch", "isDefault": false, "billable": true, "children": [
-          { "name": "Triwizard Trial", "billable": true },
-          { "name": "Forbidden Forest Stress Test", "billable": true }
+        { "name": "Testing the Spells", "isDefault": false, "billable": true, "children": [
+          { "name": "DADA Drill UAT", "billable": true },
+          { "name": "Potions Stress Test", "billable": true }
         ]},
-        { "name": "Training the Lions", "isDefault": false, "billable": true, "children": [
-          { "name": "First-Year Onboarding", "billable": true },
-          { "name": "Prefect's Workshop", "billable": true }
+        { "name": "Training the Prefects", "isDefault": false, "billable": true, "children": [
+          { "name": "Prefect Onboarding", "billable": true },
+          { "name": "Head of House Workshop", "billable": true }
         ]}
       ]
     },
     {
-      "key": "slytherin-death-eaters",
-      "projectName": "Slytherin — Dark Mark Surveillance Build",
-      "shortName": "Slytherin DMS",
-      "subAccountName": "House of Slytherin & the Death Eaters",
-      "subAccountNumber": "PSA-TEST-HARRYPOTTER-SLYTHERIN-DEATH-EATERS",
+      "key": "chamber-of-secrets",
+      "projectName": "Chamber of Secrets — Basilisk Decommissioning",
+      "shortName": "Chamber BD",
+      "subAccountName": "Chamber of Secrets Operations",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-CHAMBER",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
+      "projectType": "External Project",
+      "billingModel": "Milestone",
+      "opportunity": {
+        "amount": 560000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Chamber Decom Flat",
+          "segments": [
+            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 400,  "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 1000, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 100,  "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 600,  "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 1200, "unitPrice": 100 }
+        ]
+      },
+      "milestones": [
+        { "name": "Chamber Located",          "offsetWeeks": 4,  "amount": 95000,  "status": "Completed" },
+        { "name": "Parseltongue Verified",    "offsetWeeks": 10, "amount": 135000, "status": "Completed" },
+        { "name": "Basilisk Subdued",         "offsetWeeks": 16, "amount": 110000, "status": "In Progress" },
+        { "name": "Diary Destroyed",          "offsetWeeks": 22, "amount": 125000, "status": "Not Started" },
+        { "name": "Chamber Sealed",           "offsetWeeks": 26, "amount": 95000,  "status": "Not Started" }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 5,  "status": "Paid", "number": "INV-CHAMBER-001", "lines": [ { "lineType": "Milestone", "amount": 95000 } ] },
+        { "issuedOffsetWeeks": 10, "status": "Paid", "number": "INV-CHAMBER-002", "lines": [ { "lineType": "Milestone", "amount": 135000 } ] }
+      ],
       "workstreams": [
-        { "name": "Dungeon Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Whispers", "isDefault": false, "billable": true, "children": [
-          { "name": "Slug Club Reconnaissance", "billable": true },
-          { "name": "Pensieve Memory Polling", "billable": true },
-          { "name": "Dark Council Strategy", "billable": true }
+        { "name": "Chamber Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Investigation", "isDefault": false, "billable": true, "children": [
+          { "name": "Moaning Myrtle Interview", "billable": true },
+          { "name": "Petrified Victim Mapping", "billable": true },
+          { "name": "Headmaster Briefing", "billable": true }
         ]},
-        { "name": "Build the Dark Mark Network", "isDefault": false, "billable": true, "children": [
-          { "name": "Tattoo Glyph Forging", "billable": true },
-          { "name": "Apparition Beacon Calibration", "billable": true },
-          { "name": "Snake-Tongue Signal Layer", "billable": true }
+        { "name": "Build the Recovery Team", "isDefault": false, "billable": true, "children": [
+          { "name": "Sword of Gryffindor Retrieval", "billable": true },
+          { "name": "Phoenix Tear Stockpiling", "billable": true },
+          { "name": "Snake-Skin Cleanup", "billable": true }
         ]},
-        { "name": "Migrate the Pure-Blood Registry", "isDefault": false, "billable": true, "children": [
-          { "name": "Sacred Twenty-Eight Roll", "billable": true },
-          { "name": "Vault 713 Inventory", "billable": true }
+        { "name": "Migrate the Riddle Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Slytherin Heir Roster", "billable": true },
+          { "name": "Diary Forensics", "billable": true }
         ]},
-        { "name": "Testing the Unforgivables", "isDefault": false, "billable": true, "children": [
-          { "name": "Imperius Pen-test", "billable": true },
-          { "name": "Crucio Stress Trial", "billable": true }
+        { "name": "Testing the Counter-Curse", "isDefault": false, "billable": true, "children": [
+          { "name": "Basilisk Venom Antidote Drill", "billable": true },
+          { "name": "Memory Charm Rehearsal", "billable": true }
         ]},
-        { "name": "Training the Initiates", "isDefault": false, "billable": true, "children": [
-          { "name": "Recruit Branding", "billable": true },
-          { "name": "Inner Circle Manual", "billable": true }
-        ]}
-      ]
-    },
-    {
-      "key": "hogwarts-staff-order-of-the-phoenix",
-      "projectName": "Hogwarts Staff — Order of the Phoenix Operations Hub",
-      "shortName": "Order Ops",
-      "subAccountName": "Order of the Phoenix",
-      "subAccountNumber": "PSA-TEST-HARRYPOTTER-HOGWARTS-STAFF-ORDER-OF-THE-PHOENIX",
-      "windowOffsetWeeks": -6,
-      "windowDurationWeeks": 26,
-      "workstreams": [
-        { "name": "Grimmauld Place Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
-          { "name": "Order Reconnaissance", "billable": true },
-          { "name": "Pensieve Memory Review", "billable": true },
-          { "name": "Strategy with Dumbledore", "billable": true }
-        ]},
-        { "name": "Build the Watchful Eye", "isDefault": false, "billable": true, "children": [
-          { "name": "Mad-Eye's Foe-Glass Setup", "billable": true },
-          { "name": "Patronus Messenger Network", "billable": true },
-          { "name": "Fidelius Charm Configuration", "billable": true }
-        ]},
-        { "name": "Migrate the Order Archives", "isDefault": false, "billable": true, "children": [
-          { "name": "Black Family Tree Migration", "billable": true },
-          { "name": "Phoenix Roster", "billable": true }
-        ]},
-        { "name": "Testing at the Department of Mysteries", "isDefault": false, "billable": true, "children": [
-          { "name": "Hall of Prophecy Drill", "billable": true },
-          { "name": "Veil Chamber Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Order", "isDefault": false, "billable": true, "children": [
-          { "name": "New Member Initiation", "billable": true },
-          { "name": "Auror Field Manual", "billable": true }
+        { "name": "Training the Defense Team", "isDefault": false, "billable": true, "children": [
+          { "name": "DADA Foundations", "billable": true },
+          { "name": "Head Auror's Manual", "billable": true }
         ]}
       ]
     },
     {
       "key": "ministry-of-magic",
-      "projectName": "Ministry of Magic — Magical Records Modernization",
-      "shortName": "Ministry MRM",
-      "subAccountName": "Ministry of Magic",
-      "subAccountNumber": "PSA-TEST-HARRYPOTTER-MINISTRY-OF-MAGIC",
+      "projectName": "Ministry of Magic — Long-term Records Watch",
+      "shortName": "Ministry LRW",
+      "subAccountName": "Ministry of Magic Operations",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-MINISTRY",
+      "projectType": "Managed Services",
+      "billingModel": "Retainer",
+      "opportunity": {
+        "amount": 410000,
+        "paymentTerms": "Net 60",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Ministry Watch Back-loaded",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 33,  "revenuePct": 20 },
+            { "order": 2, "startPct": 33, "endPct": 66,  "revenuePct": 30 },
+            { "order": 3, "startPct": 66, "endPct": 100, "revenuePct": 50 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 300, "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 700, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 500, "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 750, "unitPrice": 100 }
+        ]
+      },
+      "windowOffsetWeeks": -6,
+      "windowDurationWeeks": 26,
+      "forecastLines": [
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 68333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 68333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 68333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 68333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 68333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 68333.35 }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 0, "status": "Paid", "number": "INV-MINISTRY-001", "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 68333.33 } ] },
+        { "issuedOffsetWeeks": 4, "status": "Paid", "number": "INV-MINISTRY-002", "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 68333.33 } ] }
+      ],
+      "workstreams": [
+        { "name": "Atrium Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Floo Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Floo Network Mapping", "billable": true },
+          { "name": "Auror Office Roster Review", "billable": true },
+          { "name": "Minister's Council", "billable": true }
+        ]},
+        { "name": "Build the Defense Grid", "isDefault": false, "billable": true, "children": [
+          { "name": "Dementor Cordon Setup", "billable": true },
+          { "name": "Anti-Apparition Wards", "billable": true },
+          { "name": "Magical Identity Mesh", "billable": true }
+        ]},
+        { "name": "Migrate the Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Auror Case File Roll", "billable": true },
+          { "name": "Magical Creature Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Defenses", "isDefault": false, "billable": true, "children": [
+          { "name": "Death Eater Drill", "billable": true },
+          { "name": "Floo Network Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Aurors", "isDefault": false, "billable": true, "children": [
+          { "name": "Auror Recruit Foundations", "billable": true },
+          { "name": "Head Auror's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "wizarding-academy",
+      "projectName": "Wizarding Academy — Apprentice Curriculum Revival",
+      "shortName": "Academy ACR",
+      "subAccountName": "Wizarding Academy",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-ACADEMY",
+      "projectType": "Internal Project",
+      "billingModel": "Internal",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
-        { "name": "Atrium Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Inquiry", "isDefault": false, "billable": true, "children": [
-          { "name": "Wizengamot Hearings", "billable": true },
-          { "name": "Department Survey", "billable": true },
-          { "name": "Minister's Council", "billable": true }
+        { "name": "Academy Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Apprentice Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Apprentice Aptitude Calibration", "billable": true },
+          { "name": "Future-state Visioning", "billable": true },
+          { "name": "Master's Council", "billable": true }
         ]},
-        { "name": "Build the Magical Registry", "isDefault": false, "billable": true, "children": [
-          { "name": "Trace Charm Foundation", "billable": true },
-          { "name": "Improper Use of Magic Pipeline", "billable": true },
-          { "name": "Underage Sorcery Triggers", "billable": true }
+        { "name": "Build the Training Halls", "isDefault": false, "billable": true, "children": [
+          { "name": "Practice Duelling Pitch", "billable": true },
+          { "name": "Potion Lab Setup", "billable": true },
+          { "name": "Charms Classroom Outfitting", "billable": true }
         ]},
-        { "name": "Migrate the Floo Network Records", "isDefault": false, "billable": true, "children": [
-          { "name": "Hearth Address Catalog", "billable": true },
-          { "name": "Portkey Inventory", "billable": true }
+        { "name": "Migrate the Spell Archives", "isDefault": false, "billable": true, "children": [
+          { "name": "Historic Spell Inventory", "billable": true },
+          { "name": "Defensive Charm Archive", "billable": true }
         ]},
-        { "name": "Testing at the Department of Mysteries", "isDefault": false, "billable": true, "children": [
-          { "name": "Time-Turner Regression", "billable": true },
-          { "name": "Brain Room Memory Trial", "billable": true }
+        { "name": "Testing the Apprentices", "isDefault": false, "billable": true, "children": [
+          { "name": "OWL Mock Exam", "billable": true },
+          { "name": "Patronus Charm UAT", "billable": true }
         ]},
-        { "name": "Training the Civil Service", "isDefault": false, "billable": true, "children": [
-          { "name": "Junior Undersecretary Onboarding", "billable": true },
-          { "name": "Department Head Workshop", "billable": true }
+        { "name": "Training the Masters", "isDefault": false, "billable": true, "children": [
+          { "name": "Master Teaching Foundations", "billable": true },
+          { "name": "Headmistress's Manual", "billable": true }
+        ]}
+      ],
+      "openOpp": true,
+      "openOpportunity": {
+        "name": "Wizarding Academy — Apprentice Revival Opportunity",
+        "stage": "Proposal/Price Quote",
+        "closeDateDaysFromToday": 30,
+        "amount": 540000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 500,  "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 1200, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 300,  "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 700,  "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 1000, "unitPrice": 100 }
+        ]
+      }
+    },
+    {
+      "key": "diagon-alley",
+      "projectName": "Diagon Alley — Wand-shop Network Rollout",
+      "shortName": "Diagon WNR",
+      "subAccountName": "Diagon Alley Commerce District",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-DIAGON",
+      "windowOffsetWeeks": -20,
+      "windowDurationWeeks": 30,
+      "projectType": "External Project",
+      "billingModel": "Prepayment",
+      "opportunity": {
+        "amount": 530000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 265000,
+        "allocationProfile": {
+          "name": "Diagon Front-loaded",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 60 },
+            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 30 },
+            { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 10 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 800, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 150, "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 600, "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 900, "unitPrice": 100 }
+        ]
+      },
+      "prepayments": [
+        { "amount": 265000, "appliedOffsetWeeks": 0, "notes": "Up-front galleon escrow on contract signature." }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 6,  "status": "Paid",     "number": "INV-DIAGON-001", "lines": [ { "lineType": "Prepayment Draw", "amount": 158000 } ] },
+        { "issuedOffsetWeeks": 14, "status": "Invoiced", "number": "INV-DIAGON-002", "lines": [ { "lineType": "Prepayment Draw", "amount": 107000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Wand-shop Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Market Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Wand Core Inventory Audit", "billable": true },
+          { "name": "Customer Footfall Mapping", "billable": true }
+        ]},
+        { "name": "Build the Commerce Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Ollivander's Tribute Setup", "billable": true },
+          { "name": "Florean Fortescue's Refit", "billable": true },
+          { "name": "Weasleys' Wizard Wheezes Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Galleon Ledgers", "isDefault": false, "billable": true, "children": [
+          { "name": "Galleon Transaction Digitization", "billable": true },
+          { "name": "Loyalty Tab Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Commerce Engine", "isDefault": false, "billable": true, "children": [
+          { "name": "Wand Selection Drill", "billable": true },
+          { "name": "Black Market Stress Test", "billable": true }
+        ]},
+        { "name": "Training the Shop-keepers", "isDefault": false, "billable": true, "children": [
+          { "name": "Customer Service Foundations", "billable": true },
+          { "name": "Diagon Alley Manager's Manual", "billable": true }
         ]}
       ]
+    },
+    {
+      "key": "forbidden-forest",
+      "projectName": "Forbidden Forest — Magical Creature Census",
+      "shortName": "Forest MCC",
+      "subAccountName": "Forbidden Forest Operations",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-FOREST",
+      "windowOffsetWeeks": -18,
+      "windowDurationWeeks": 28,
+      "projectType": "External Project",
+      "billingModel": "Mixed",
+      "opportunity": {
+        "amount": 680000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Forest Mixed Curve",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 40,  "revenuePct": 35 },
+            { "order": 2, "startPct": 40, "endPct": 80,  "revenuePct": 45 },
+            { "order": 3, "startPct": 80, "endPct": 100, "revenuePct": 20 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 500,  "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 1100, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 150,  "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 800,  "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 1300, "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": 5,  "status": "Paid",     "number": "INV-FOREST-001", "lines": [ { "lineType": "Time and Materials", "amount": 72000 }, { "lineType": "Milestone", "amount": 32000 } ] },
+        { "issuedOffsetWeeks": 13, "status": "Paid",     "number": "INV-FOREST-002", "lines": [ { "lineType": "Time and Materials", "amount": 87000 } ] },
+        { "issuedOffsetWeeks": 20, "status": "Invoiced", "number": "INV-FOREST-003", "lines": [ { "lineType": "Milestone", "amount": 63000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Hagrid's Hut Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Creature Census", "isDefault": false, "billable": true, "children": [
+          { "name": "Centaur Council Census", "billable": true },
+          { "name": "Acromantula Colony Mapping", "billable": true }
+        ]},
+        { "name": "Build the Census Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Tracking Charm Calibration", "billable": true },
+          { "name": "Hippogriff Pasture Setup", "billable": true }
+        ]},
+        { "name": "Migrate the Creature Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Beast Classification Roll", "billable": true },
+          { "name": "Care of Magical Creatures Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Field Surveys", "isDefault": false, "billable": true, "children": [
+          { "name": "Unicorn Encounter Drill", "billable": true },
+          { "name": "Spider Burrow UAT", "billable": true }
+        ]},
+        { "name": "Training the Surveyors", "isDefault": false, "billable": true, "children": [
+          { "name": "Field Magizoology Onboarding", "billable": true },
+          { "name": "Care of Creatures Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "department-of-mysteries",
+      "projectName": "Department of Mysteries — Time-Turner Archives",
+      "shortName": "DoM Archives",
+      "subAccountName": "Department of Mysteries Archives",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-MYSTERIES",
+      "windowOffsetWeeks": -52,
+      "windowDurationWeeks": 40,
+      "projectType": "External Project",
+      "billingModel": "Historical",
+      "opportunity": {
+        "amount": 960000,
+        "paymentTerms": "Net 60",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Mysteries Historical Even",
+          "segments": [
+            { "order": 1, "startPct": 0,   "endPct": 50,  "revenuePct": 50 },
+            { "order": 2, "startPct": 50,  "endPct": 100, "revenuePct": 50 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 800,  "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 1700, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 250,  "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 1300, "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 1800, "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": -48, "status": "Paid", "number": "INV-MYSTERIES-001", "lines": [ { "lineType": "Time and Materials", "amount": 123000 } ] },
+        { "issuedOffsetWeeks": -36, "status": "Paid", "number": "INV-MYSTERIES-002", "lines": [ { "lineType": "Time and Materials", "amount": 138000 } ] },
+        { "issuedOffsetWeeks": -22, "status": "Paid", "number": "INV-MYSTERIES-003", "lines": [ { "lineType": "Time and Materials", "amount": 148000 } ] },
+        { "issuedOffsetWeeks": -8,  "status": "Paid", "number": "INV-MYSTERIES-004", "lines": [ { "lineType": "Time and Materials", "amount": 163000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Time Room Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Prophecy Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Hall of Prophecies Indexing", "billable": true },
+          { "name": "Time-Turner Inventory", "billable": true }
+        ]},
+        { "name": "Build the Recovery Vaults", "isDefault": false, "billable": true, "children": [
+          { "name": "Vault Foundation Charm Work", "billable": true },
+          { "name": "Memory Charm Stabilizer", "billable": true }
+        ]},
+        { "name": "Migrate the Mystery Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Prophecy Sphere Digitization", "billable": true },
+          { "name": "Death Veil Cross-reference", "billable": true }
+        ]},
+        { "name": "Testing the Data Quality", "isDefault": false, "billable": true, "children": [
+          { "name": "Memory Drift Check", "billable": true },
+          { "name": "Prophecy Decryption UAT", "billable": true }
+        ]},
+        { "name": "Training the Unspeakables", "isDefault": false, "billable": true, "children": [
+          { "name": "Unspeakable Foundations", "billable": true },
+          { "name": "Chief Unspeakable's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "gringotts-bank",
+      "projectName": "Gringotts Bank — Vault Modernization",
+      "shortName": "Gringotts VM",
+      "subAccountName": "Gringotts Wizarding Bank",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-GRINGOTTS",
+      "windowOffsetWeeks": -8,
+      "windowDurationWeeks": 24,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "opportunity": {
+        "amount": 515000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Gringotts Flat",
+          "segments": [
+            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 900, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 700, "unitPrice": 150 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 800, "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-GRINGOTTS-001", "lines": [ { "lineType": "Time and Materials", "amount": 77000 } ] },
+        { "issuedOffsetWeeks": 9,  "status": "Invoiced", "number": "INV-GRINGOTTS-002", "lines": [ { "lineType": "Time and Materials", "amount": 82000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Gringotts Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Vault Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Goblin Council Survey", "billable": true },
+          { "name": "Vault Inventory Caucus", "billable": true },
+          { "name": "Council with the Manager", "billable": true }
+        ]},
+        { "name": "Build the Vault Security", "isDefault": false, "billable": true, "children": [
+          { "name": "Dragon Roost Calibration", "billable": true },
+          { "name": "Anti-Imperius Mesh", "billable": true }
+        ]},
+        { "name": "Migrate the Account Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Vault Holder Roll Call", "billable": true },
+          { "name": "Galleon Reserve Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Security", "isDefault": false, "billable": true, "children": [
+          { "name": "Vault Breach Drill", "billable": true },
+          { "name": "Goblin Override Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Goblins", "isDefault": false, "billable": true, "children": [
+          { "name": "Customer Service Foundations", "billable": true },
+          { "name": "Chief Cashier's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "quidditch-stadium",
+      "projectName": "Quidditch Stadium — Hogwarts Cup Modernization",
+      "shortName": "Quidditch SM",
+      "subAccountName": "Hogwarts Quidditch Stadium",
+      "subAccountNumber": "PSA-TEST-HARRYPOTTER-QUIDDITCH",
+      "windowOffsetWeeks": -2,
+      "windowDurationWeeks": 30,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "openOpp": false,
+      "opportunity": {
+        "stage": "Closed Won",
+        "closeDateDaysFromToday": -7,
+        "amount": 865000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
+        "products": [
+          { "themedRole": "Head of House",          "quantity": 800,  "unitPrice": 200 },
+          { "themedRole": "Senior Auror",           "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Hogwarts Headmaster",    "quantity": 400,  "unitPrice": 280 },
+          { "themedRole": "Daily Prophet Scribe",   "quantity": 1200, "unitPrice": 140 },
+          { "themedRole": "Apprentice Wizard",      "quantity": 600,  "unitPrice": 160 }
+        ]
+      }
     }
   ],
 
   "casting": {
-    "gryffindor": [
-      { "fullName": "Harry Potter",         "themedRole": "Head of House" },
-      { "fullName": "Hermione Granger",     "themedRole": "Master of the Restricted Section" },
-      { "fullName": "Ron Weasley",          "themedRole": "Auror Trainee" },
-      { "fullName": "Ginny Weasley",        "themedRole": "Senior Auror of the Eastern Office" },
-      { "fullName": "Neville Longbottom",   "themedRole": "Potions Master" },
-      { "fullName": "Fred Weasley",         "themedRole": "Witch Weekly Columnist" },
-      { "fullName": "George Weasley",       "themedRole": "Daily Prophet Lead Reporter" },
-      { "fullName": "Dean Thomas",          "themedRole": "Apprentice of the Wand" },
-      { "fullName": "Seamus Finnigan",      "themedRole": "Apparition Engineer" },
-      { "fullName": "Lavender Brown",       "themedRole": "Order of the Phoenix Scribe" },
-      { "fullName": "Parvati Patil",        "themedRole": "Quidditch Commentator-in-Chief" },
-      { "fullName": "Oliver Wood",          "themedRole": "Auror Captain — Ministry HQ" },
-      { "fullName": "Cormac McLaggen",      "themedRole": "Owl Post Courier" }
+    "hogwarts-castle": [
+      { "fullName": "Albus Dumbledore",       "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Minerva McGonagall",     "themedRole": "Head of House (PM)" },
+      { "fullName": "Severus Snape",          "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Harry Potter",           "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Hermione Granger",       "themedRole": "Daily Prophet Scribe (BA)" },
+      { "fullName": "Ron Weasley",            "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Rubeus Hagrid",          "themedRole": "Hogsmeade Crier (SMCC)" },
+      { "fullName": "Filius Flitwick",        "themedRole": "Head of House (PM)" }
     ],
-    "slytherin-death-eaters": [
-      { "fullName": "Voldemort",            "themedRole": "Master of the Restricted Section" },
-      { "fullName": "Lucius Malfoy",        "themedRole": "Auror Captain — Ministry HQ" },
-      { "fullName": "Severus Snape",        "themedRole": "Wandmaker Master — Ollivander's" },
-      { "fullName": "Bellatrix Lestrange",  "themedRole": "Head of House" },
-      { "fullName": "Draco Malfoy",         "themedRole": "Auror Trainee" },
-      { "fullName": "Regulus Black",        "themedRole": "Order of the Phoenix Scribe" },
-      { "fullName": "Theodore Nott",        "themedRole": "Apparition Engineer" },
-      { "fullName": "Pansy Parkinson",      "themedRole": "Witch Weekly Columnist" },
-      { "fullName": "Crabbe",               "themedRole": "Owl Post Courier" },
-      { "fullName": "Goyle",                "themedRole": "Apprentice of the Wand" }
-    ],
-    "hogwarts-staff-order-of-the-phoenix": [
-      { "fullName": "Albus Dumbledore",     "themedRole": "Master of the Restricted Section" },
-      { "fullName": "Minerva McGonagall",   "themedRole": "Head of House" },
-      { "fullName": "Hagrid",               "themedRole": "Owl Post Courier" },
-      { "fullName": "Sirius Black",         "themedRole": "Senior Auror of the Eastern Office" },
-      { "fullName": "Remus Lupin",          "themedRole": "Wandmaker of Diagon Alley" },
-      { "fullName": "Nymphadora Tonks",     "themedRole": "Auror Trainee" },
-      { "fullName": "Mad-Eye Moody",        "themedRole": "Floo Network Architect" },
-      { "fullName": "Kingsley Shacklebolt", "themedRole": "Auror Captain — Ministry HQ" },
-      { "fullName": "Molly Weasley",        "themedRole": "Keeper of the Sorting Hat" },
-      { "fullName": "Arthur Weasley",       "themedRole": "Apparition Engineer" }
+    "chamber-of-secrets": [
+      { "fullName": "Harry Potter",           "themedRole": "Head of House (PM)" },
+      { "fullName": "Hermione Granger",       "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Ron Weasley",            "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Gilderoy Lockhart",      "themedRole": "Hogsmeade Crier (SMCC)" },
+      { "fullName": "Albus Dumbledore",       "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Ginny Weasley",          "themedRole": "Daily Prophet Scribe (BA)" },
+      { "fullName": "Tom Riddle",             "themedRole": "Head of House (PM)" }
     ],
     "ministry-of-magic": [
-      { "fullName": "Cornelius Fudge",      "themedRole": "Master of the Restricted Section" },
-      { "fullName": "Rufus Scrimgeour",     "themedRole": "Auror Captain — Ministry HQ" },
-      { "fullName": "Dolores Umbridge",     "themedRole": "Head of House" },
-      { "fullName": "Percy Weasley",        "themedRole": "Order of the Phoenix Scribe" },
-      { "fullName": "Pius Thicknesse",      "themedRole": "Floo Network Architect" },
-      { "fullName": "Madam Bones",          "themedRole": "Senior Auror of the Eastern Office" },
-      { "fullName": "Yaxley",               "themedRole": "Apparition Engineer" },
-      { "fullName": "Barty Crouch Sr.",     "themedRole": "Wandmaker Master — Ollivander's" },
-      { "fullName": "Ludo Bagman",          "themedRole": "Quidditch Commentator-in-Chief" }
+      { "fullName": "Cornelius Fudge",        "themedRole": "Head of House (PM)" },
+      { "fullName": "Alastor Moody",          "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Kingsley Shacklebolt",   "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Nymphadora Tonks",       "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Arthur Weasley",         "themedRole": "Daily Prophet Scribe (BA)" },
+      { "fullName": "Percy Weasley",          "themedRole": "Hogsmeade Crier (SMCC)" },
+      { "fullName": "Dolores Umbridge",       "themedRole": "Head of House (PM)" }
+    ],
+    "wizarding-academy": [
+      { "fullName": "Albus Dumbledore",       "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Minerva McGonagall",     "themedRole": "Head of House (PM)" },
+      { "fullName": "Filius Flitwick",        "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Pomona Sprout",          "themedRole": "Apprentice Wizard (CC)" }
+    ],
+    "diagon-alley": [
+      { "fullName": "Garrick Ollivander",     "themedRole": "Head of House (PM)" },
+      { "fullName": "Florean Fortescue",      "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Fred Weasley",           "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "George Weasley",         "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Madam Malkin",           "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Stan Shunpike",          "themedRole": "Hogsmeade Crier (SMCC)" },
+      { "fullName": "Rubeus Hagrid",          "themedRole": "Daily Prophet Scribe (BA)" }
+    ],
+    "forbidden-forest": [
+      { "fullName": "Rubeus Hagrid",          "themedRole": "Head of House (PM)" },
+      { "fullName": "Firenze",                "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Aragog",                 "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Bane",                   "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Ronan",                  "themedRole": "Daily Prophet Scribe (BA)" },
+      { "fullName": "Buckbeak",               "themedRole": "Hogsmeade Crier (SMCC)" },
+      { "fullName": "Magorian",               "themedRole": "Head of House (PM)" }
+    ],
+    "department-of-mysteries": [
+      { "fullName": "Sirius Black",           "themedRole": "Head of House (PM)" },
+      { "fullName": "Remus Lupin",            "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Alastor Moody",          "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Nymphadora Tonks",       "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Kingsley Shacklebolt",   "themedRole": "Daily Prophet Scribe (BA)" },
+      { "fullName": "Bellatrix Lestrange",    "themedRole": "Hogsmeade Crier (SMCC)" },
+      { "fullName": "Lucius Malfoy",          "themedRole": "Head of House (PM)" }
+    ],
+    "gringotts-bank": [
+      { "fullName": "Griphook",               "themedRole": "Head of House (PM)" },
+      { "fullName": "Bogrod",                 "themedRole": "Senior Auror (SCC)" },
+      { "fullName": "Bill Weasley",           "themedRole": "Hogwarts Headmaster (SA)" },
+      { "fullName": "Fleur Delacour",         "themedRole": "Apprentice Wizard (CC)" },
+      { "fullName": "Ragnok",                 "themedRole": "Daily Prophet Scribe (BA)" },
+      { "fullName": "Gornuk",                 "themedRole": "Hogsmeade Crier (SMCC)" }
     ]
   },
 
   "milestones": {
-    "gryffindor": [
-      { "name": "Sorting Ceremony",          "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — first-years sorted, scope confirmed at the Welcome Feast." },
-      { "name": "Forge the Sword of Gryffindor","type": "Operational","offsetPct": 25, "description": "Build kickoff: the goblin-wrought blade returns to the House." },
-      { "name": "Triwizard Champion Selection","type": "Gate",       "offsetPct": 50,  "description": "Mid-project gate: the Goblet of Fire reviews the build." },
-      { "name": "Battle of the Astronomy Tower","type": "Billing",   "offsetPct": 70,  "description": "Phase invoice trigger: defensive lines tested under fire." },
-      { "name": "Battle of Hogwarts Victory","type": "Delivery",     "offsetPct": 95,  "description": "Go-Live: Voldemort defeated, the castle restored." },
-      { "name": "End-of-Year Feast",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: house cup awarded, hand-off to the next year." }
+    "hogwarts-castle": [
+      { "name": "Sorting Ceremony",             "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — students sorted into houses." },
+      { "name": "Term Begins",                  "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: curriculum live, classrooms warded." },
+      { "name": "Halloween Feast",              "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: ceremonial review." },
+      { "name": "End-of-Year Exams",            "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: OWLs and NEWTs." },
+      { "name": "End-of-Year Feast",            "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: house cup awarded." },
+      { "name": "Summer Break Handoff",         "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: castle stewards take over." }
     ],
-    "slytherin-death-eaters": [
-      { "name": "The Dark Lord Returns",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: the Dark Mark burns again at the Quidditch World Cup." },
-      { "name": "Forge the Horcruxes",       "type": "Operational", "offsetPct": 30,  "description": "Build: the seven anchors of the soul deployed across the kingdom." },
-      { "name": "Audit at Malfoy Manor",     "type": "Gate",        "offsetPct": 55,  "description": "Solution review with the Dark Lord himself in the drawing room." },
-      { "name": "Storming the Ministry",     "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Ministry falls, the regime takes hold." },
-      { "name": "The Dark Mark Fades",       "type": "Operational", "offsetPct": 100, "description": "Project close: the Dark Lord vanquished, the network goes dark." },
-      { "name": "Final Reckoning at Gringotts","type": "Billing",   "offsetPct": 100, "description": "Final invoice: Gringotts vault closed by the goblins." }
-    ],
-    "hogwarts-staff-order-of-the-phoenix": [
-      { "name": "Reconvene at Grimmauld Place","type": "Gate",      "offsetPct": 5,   "description": "Project kickoff: the Order reassembles at Headquarters." },
-      { "name": "Fidelius Charm Cast",       "type": "Operational", "offsetPct": 30,  "description": "Build phase: the Secret-Keeper seals headquarters from prying eyes." },
-      { "name": "Battle of the Department of Mysteries","type": "Gate","offsetPct": 60, "description": "UAT gate: the prophecy retrieved, the Order survives the night." },
-      { "name": "Dumbledore's Last Stand",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the Headmaster's sacrifice activates the long plan." },
-      { "name": "Hogwarts Reopens",          "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the castle reopens to a new generation." },
-      { "name": "Funeral at the White Tomb", "type": "Billing",     "offsetPct": 100, "description": "Final invoice: Dumbledore laid to rest by the lake." }
+    "chamber-of-secrets": [
+      { "name": "Chamber Discovered",           "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: the entrance is located." },
+      { "name": "Basilisk Confirmed",           "type": "Operational", "offsetPct": 30,  "description": "Build phase: creature identified, plan drafted." },
+      { "name": "Sword of Gryffindor Drawn",    "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: weapon retrieved from the hat." },
+      { "name": "Basilisk Defeated",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: chamber threat eliminated." },
+      { "name": "Diary Destroyed",              "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: horcrux fragment neutralized." },
+      { "name": "Final Billing",                "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the chamber operation." }
     ],
     "ministry-of-magic": [
-      { "name": "Wizengamot Hearing Convened","type": "Gate",       "offsetPct": 10,  "description": "Kickoff: the high court approves the modernization charter." },
-      { "name": "Department of Mysteries Audit","type": "Operational","offsetPct": 30,"description": "Discovery: the Unspeakables scope the legacy artefacts." },
-      { "name": "Trace Charm Pipeline Live", "type": "Operational", "offsetPct": 55,  "description": "Build: the Trace fires across underage wand activity nationwide." },
-      { "name": "Educational Decree Twenty-Four","type": "Gate",    "offsetPct": 80,  "description": "UAT acceptance: Umbridge's decrees pass review." },
-      { "name": "New Minister Inaugurated",  "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the Minister takes the oath in the Atrium." },
-      { "name": "Final Recompense from the Treasury","type": "Billing","offsetPct":100,"description": "Final invoice paid by the Ministry treasury at Gringotts." }
+      { "name": "Atrium Sweep Complete",        "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Ministry perimeter audited." },
+      { "name": "Auror Office Hardened",        "type": "Operational", "offsetPct": 35,  "description": "Build: anti-curse wards live." },
+      { "name": "Minister's Review",            "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Minister." },
+      { "name": "Defense Grid Live",            "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Ministry fully defended." },
+      { "name": "Watch Stand-down",             "type": "Operational", "offsetPct": 100, "description": "Project close: retainer suspended." },
+      { "name": "Final Reckoning",              "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Ministry watch." }
+    ],
+    "diagon-alley": [
+      { "name": "Council with Ollivander",      "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council with the wand-maker." },
+      { "name": "Galleon Audit Complete",       "type": "Operational", "offsetPct": 30,  "description": "Discovery: shop ledgers modelled." },
+      { "name": "Commerce Network Live",        "type": "Operational", "offsetPct": 55,  "description": "Build: cross-shop tab system operational." },
+      { "name": "Diagon Acceptance",            "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: shop-keepers sign off." },
+      { "name": "Trade Network Live",           "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: network running." },
+      { "name": "Final Recompense",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Diagon Alley." }
     ]
   },
 
   "daysOff": {
-    "Harry Potter":         [ { "realm": "gryffindor", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery at St Mungo's — basilisk venom convalescence." } ],
-    "Hermione Granger":     [ { "realm": "gryffindor", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Library leave — research at the Hogwarts Restricted Section." } ],
-    "Ron Weasley":          [ { "realm": "gryffindor", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Burrow furlough — de-gnoming the garden for Mum." } ],
-    "Ginny Weasley":        [ { "realm": "gryffindor", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Holyhead Harpies tryouts." } ],
-    "Neville Longbottom":   [ { "realm": "gryffindor", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Greenhouse rotation — Mandrake repotting season." } ],
-    "Fred Weasley":         [ { "realm": "gryffindor", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Weasleys' Wizard Wheezes inventory weekend." } ],
-    "George Weasley":       [ { "realm": "gryffindor", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Diagon Alley shop refit." } ],
-    "Draco Malfoy":         [ { "realm": "slytherin-death-eaters", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Malfoy Manor — family obligations." } ],
-    "Severus Snape":        [ { "realm": "slytherin-death-eaters", "offsetWeeks": 10, "numberOfDays": 3, "notes": "Spinner's End — potions stockpile." } ],
-    "Bellatrix Lestrange":  [ { "realm": "slytherin-death-eaters", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Azkaban alumni reunion." } ],
-    "Albus Dumbledore":     [ { "realm": "hogwarts-staff-order-of-the-phoenix", "offsetWeeks": 8,  "numberOfDays": 4, "notes": "Pensieve archival — sorting old memories." } ],
-    "Minerva McGonagall":   [ { "realm": "hogwarts-staff-order-of-the-phoenix", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Animagus stretch — annual feline retreat." } ],
-    "Sirius Black":         [ { "realm": "hogwarts-staff-order-of-the-phoenix", "offsetWeeks": 6,  "numberOfDays": 5, "notes": "Lying low at Grimmauld Place — Order's orders." } ],
-    "Remus Lupin":          [ { "realm": "hogwarts-staff-order-of-the-phoenix", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Full moon recovery — Wolfsbane preparation." } ],
-    "Dolores Umbridge":     [ { "realm": "ministry-of-magic", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Kitten plate dusting — pink office refresh." } ]
+    "Harry Potter":          [ { "realm": "hogwarts-castle",        "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Burrow holiday — pre-arranged." } ],
+    "Hermione Granger":      [ { "realm": "hogwarts-castle",        "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Library closure — quarterly research day." } ],
+    "Ron Weasley":           [ { "realm": "chamber-of-secrets",     "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Family Quidditch game furlough." } ],
+    "Albus Dumbledore":      [ { "realm": "hogwarts-castle",        "offsetWeeks": 10, "numberOfDays": 4, "notes": "International Confederation of Wizards summit." } ],
+    "Minerva McGonagall":    [ { "realm": "hogwarts-castle",        "offsetWeeks": 12, "numberOfDays": 2, "notes": "Animagus registry refresh." } ],
+    "Severus Snape":         [ { "realm": "hogwarts-castle",        "offsetWeeks": 16, "numberOfDays": 3, "notes": "Potions ingredient gathering." } ],
+    "Rubeus Hagrid":         [ { "realm": "forbidden-forest",       "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Pumpkin patch harvest." } ],
+    "Sirius Black":          [ { "realm": "department-of-mysteries","offsetWeeks": 14, "numberOfDays": 4, "notes": "Grimmauld Place renovations." } ],
+    "Remus Lupin":           [ { "realm": "department-of-mysteries","offsetWeeks": 6,  "numberOfDays": 2, "notes": "Full moon recovery." } ],
+    "Alastor Moody":         [ { "realm": "ministry-of-magic",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Auror personal-safety refresher." } ],
+    "Kingsley Shacklebolt":  [ { "realm": "ministry-of-magic",      "offsetWeeks": 14, "numberOfDays": 5, "notes": "Order of the Phoenix retreat." } ],
+    "Bill Weasley":          [ { "realm": "gringotts-bank",         "offsetWeeks": 12, "numberOfDays": 3, "notes": "Curse-breaker conference in Egypt." } ],
+    "Fleur Delacour":        [ { "realm": "gringotts-bank",         "offsetWeeks": 16, "numberOfDays": 4, "notes": "Beauxbatons alumna gathering." } ],
+    "Nymphadora Tonks":      [ { "realm": "ministry-of-magic",      "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Metamorphmagus calibration day." } ]
   }
 }
