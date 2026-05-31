@@ -1,9 +1,24 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "key": "StrangerThings",
   "displayName": "Stranger Things",
   "category": "Sci-Fi / Fantasy",
   "emailDomain": "hawkins-indiana.test",
+  "tagline": "Compact starter dataset — fast to seed, easy to navigate",
+  "bestFor": [
+    "First-time wizard run",
+    "Brand-recognition demos",
+    "Quick reset / re-seed cycles",
+    "Billing variety on a smaller footprint"
+  ],
+  "capabilities": {
+    "forecasting": true,
+    "pipeline": true,
+    "billingVariety": true,
+    "timerDemos": true,
+    "setupWalkthroughs": true,
+    "brandRecognition": true
+  },
   "account": {
     "name": "Hawkins, Indiana (Test Data)",
     "accountNumber": "PSA-TEST-STRANGERTHINGS"

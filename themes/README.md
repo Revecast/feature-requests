@@ -64,3 +64,30 @@ Add a new category by simply using a new `category` value in a manifest entry.
 - `implemented: false` — Theme appears in the picker but Step 2 will show "content authoring forthcoming". User can pick it but won't see contacts created.
 
 Today (Phase A): 7 themes implemented (the original Apex set). All others are placeholders awaiting Phase E content.
+
+## Body schema — v2 picker fields (added 2026-05-31)
+
+Bodies bumped to `schema_version: 2` add three top-level fields the new card-based picker (`psaWizardStepThemeCard`) reads. v1 bodies still work — the picker degrades gracefully when a field is absent.
+
+| Field | Type | Purpose |
+| --- | --- | --- |
+| `tagline` | string (≤80 chars) | One-line subhead under `displayName` on the picker card |
+| `bestFor` | string[] (3–5 items) | Bulleted "what this dataset is great for" list on the card and in the comparison matrix |
+| `capabilities` | object<string, boolean> | Fixed taxonomy — drives the comparison matrix checkmarks |
+
+### Capability taxonomy (fixed set)
+
+| Key | Meaning |
+| --- | --- |
+| `forecasting` | Has enough scheduled Project Schedule + Forecast Schedule volume to demo the Org Forecast surface |
+| `pipeline` | Ships a meaningful set of `pipelineAccounts` + `pipelineOpportunities` (open pipeline, not just closed-won) |
+| `billingVariety` | Realms cover every billing model (T&M, Fixed Fee, Drawdown, Subscription, etc.) |
+| `timerDemos` | Casting + projects sized for the time-tracker + idle-detection demos |
+| `setupWalkthroughs` | Suitable as the canonical "first wizard run" walkthrough |
+| `brandRecognition` | Theme is broadly recognizable to a non-niche audience (Stranger Things, LOTR, Star Wars, etc.) |
+
+Add new capability keys by amending this README and the matrix-rendering LWC at the same time. The wizard's comparison-matrix LWC reads this same taxonomy — drift will hide capabilities from the matrix.
+
+### Author guidance for `bestFor`
+
+3–5 short items, each a *demo scenario* (not a feature). Good: "Forecasting walk-throughs", "First-time wizard run". Bad: "Has 6 roles", "Includes pipeline data".
