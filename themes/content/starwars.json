@@ -1,275 +1,716 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "key": "StarWars",
   "displayName": "Star Wars",
   "category": "Sci-Fi / Fantasy",
-  "emailDomain": "galaxy-far-away.test",
+  "emailDomain": "rebel-alliance.test",
+  "tagline": "Galactic-scale operations — Rebel command to bounty hunter ops",
+  "bestFor": [
+    "Forecasting walk-throughs",
+    "Pipeline depth (5 accounts / 11 opportunities)",
+    "Every billing model represented end-to-end",
+    "Multi-realm staffing + capacity demos"
+  ],
+  "capabilities": {
+    "forecasting": true,
+    "pipeline": true,
+    "billingVariety": true,
+    "timerDemos": true,
+    "setupWalkthroughs": true,
+    "brandRecognition": true
+  },
   "account": {
-    "name": "Galaxy Far, Far Away (Test Data)",
+    "name": "Rebel Alliance Galactic HQ (Test Data)",
     "accountNumber": "PSA-TEST-STARWARS"
   },
-  "mailingAddress": {
-    "street": "1138 Mos Eisley Spaceport, Docking Bay 94",
-    "city": "Mos Eisley",
-    "state": "Tatooine",
-    "postalCode": "TAT-3263827",
-    "country": "Outer Rim Territories"
-  },
 
-  "roles": [
-    { "name": "Jedi Master Architect",            "canonical": "Solution Architect",                      "description": "Sees the whole of the Force and shapes the over-arching Salesforce solution accordingly." },
-    { "name": "Rebel Cell Commander",             "canonical": "Project Manager",                         "description": "Marshals the squadron of delivery, holds the timeline, and reports to High Command." },
-    { "name": "Astromech Operator",               "canonical": "Salesforce Administrator",                "description": "Trusty steward of records, layouts, fields, and permission sets — never far from a console." },
-    { "name": "Lightsaber Smith of Ilum",         "canonical": "Salesforce Developer",                    "description": "Forges Apex, LWC, and platform features from kyber-grade craftsmanship." },
-    { "name": "High General — Coruscant Core",    "canonical": "Salesforce Practice Lead - USA",          "description": "Captain over all Core-world Salesforce craft — sets standards and guides the senior knights." },
-    { "name": "Jedi Knight of the Outer Rim",     "canonical": "Salesforce Senior Consultant - India",    "description": "Patrols the borders of customer requirements with practiced craft and a steady blade." },
-    { "name": "Padawan Learner",                  "canonical": "Salesforce Consultant - India",           "description": "Carries discovery and configuration across the realm under the Knight's guidance." },
-    { "name": "Hyperspace Lane Architect",        "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great hyperlanes between Salesforce and the systems beyond." },
-    { "name": "Hyperspace Navigator",             "canonical": "Integration Senior Consultant - India",   "description": "Plots APIs, middleware, and event flows along the lanes the Architect has charted." },
-    { "name": "Astrogation Apprentice",           "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the smuggler's patterns of error handling." },
-    { "name": "Sentinel of the Order",            "canonical": "QA Engineer",                             "description": "Tests the build before it reaches the Senate — finds maladies in the Force of the codebase." },
-    { "name": "Holonet Broadcast Lead",           "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner across a thousand worlds — leads all marketing craft and message." },
-    { "name": "Holonet Strategist",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call across the Holonet to gather and convert." },
-    { "name": "Holonet Field Correspondent",      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily broadcast." },
-    { "name": "Senate Records Scribe",            "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between client Senator and the Order's craft." },
-    { "name": "Master Lightsaber Forger",         "canonical": "Salesforce Senior Developer - USA",       "description": "Master craftsman of the deepest platform features — mentor to the Smiths of Ilum." },
-    { "name": "Youngling Codewright",             "canonical": "Junior Salesforce Consultant - India",    "description": "Learns the basics of declarative craft in the temple before facing the trials." }
+  "serviceLines": [
+    { "name": "SW: Strategy & Advisory",   "description": "Council-tier strategic engagements. Discovery, roadmaps, executive advisory." },
+    { "name": "SW: Implementation",        "description": "Build + delivery squadrons. Greenfield platforms, integrations, migrations." },
+    { "name": "SW: Managed Services",      "description": "Long-running operational engagements. Retainer-style ongoing support." },
+    { "name": "SW: Data & Analytics",      "description": "Insight engagements. BI, dashboards, archive recovery." },
+    { "name": "SW: Knowledge & Training",  "description": "Enablement engagements. Training delivery, Jedi knowledge transfer, documentation." }
   ],
 
-  "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
+  "realmServiceLineMap": {
+    "yavin-base":         "SW: Strategy & Advisory",
+    "coruscant-senate":   "SW: Strategy & Advisory",
+    "endor-shield":       "SW: Implementation",
+    "kashyyyk-shipyard":  "SW: Implementation",
+    "hoth-watch":         "SW: Managed Services",
+    "mos-eisley-cantina": "SW: Managed Services",
+    "death-star-archives":"SW: Data & Analytics",
+    "bespin-cloud":       "SW: Data & Analytics",
+    "dagobah-academy":    "SW: Knowledge & Training"
+  },
+
+  "pipelineAccounts": [
+    { "key": "tatooine",   "accountNumber": "PSA-PIPELINE-STARWARS-TATOOINE",   "name": "Tatooine Moisture Farm Co-op" },
+    { "key": "naboo",      "accountNumber": "PSA-PIPELINE-STARWARS-NABOO",      "name": "Naboo Royal House" },
+    { "key": "outerrim",   "accountNumber": "PSA-PIPELINE-STARWARS-OUTERRIM",   "name": "Outer Rim Mining Consortium" },
+    { "key": "hutt",       "accountNumber": "PSA-PIPELINE-STARWARS-HUTT",       "name": "Hutt Cartel Trading Co." },
+    { "key": "republic",   "accountNumber": "PSA-PIPELINE-STARWARS-REPUBLIC",   "name": "Old Republic Heritage Society" }
+  ],
+
+  "pipelineOpportunities": [
+    { "extIdSlug": "naboo-royal-records-platform",       "accountKey": "naboo",     "name": "Naboo Royal Records Platform",            "stage": "Negotiation/Review",   "amount": 2100000, "daysFromToday": 30,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "SW: Data & Analytics",     "startOffsetDays": 21 },
+    { "extIdSlug": "outerrim-mining-portal",             "accountKey": "outerrim",  "name": "Outer Rim Mining Portal Rollout",         "stage": "Proposal/Price Quote", "amount": 1750000, "daysFromToday": 45,  "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "SW: Implementation",       "startOffsetDays": 21 },
+    { "extIdSlug": "tatooine-moisture-coop-modernization","accountKey": "tatooine", "name": "Tatooine Moisture Co-op Modernization",   "stage": "Negotiation/Review",   "amount": 1320000, "daysFromToday": 60,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "SW: Strategy & Advisory",  "startOffsetDays": 21 },
+    { "extIdSlug": "hutt-cartel-treasury-migration",     "accountKey": "hutt",      "name": "Hutt Cartel Treasury Migration",          "stage": "Value Proposition",    "amount": 950000,  "daysFromToday": 90,  "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "SW: Implementation",       "startOffsetDays": 21 },
+    { "extIdSlug": "naboo-security-mesh",                "accountKey": "naboo",     "name": "Naboo Security Mesh Implementation",      "stage": "Value Proposition",    "amount": 740000,  "daysFromToday": 120, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "SW: Managed Services",     "startOffsetDays": 21 },
+    { "extIdSlug": "republic-heritage-training",         "accountKey": "republic",  "name": "Old Republic Heritage Training Program",  "stage": "Proposal/Price Quote", "amount": 620000,  "daysFromToday": 150, "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "SW: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "outerrim-pos-replacement",           "accountKey": "outerrim",  "name": "Outer Rim Outpost POS Replacement",       "stage": "Value Proposition",    "amount": 510000,  "daysFromToday": 180, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "SW: Implementation",       "startOffsetDays": 21 },
+    { "extIdSlug": "tatooine-spaceport-portal",          "accountKey": "tatooine",  "name": "Tatooine Spaceport Portal Discovery",     "stage": "Value Proposition",    "amount": 440000,  "daysFromToday": 210, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "SW: Strategy & Advisory",  "startOffsetDays": 21 },
+    { "extIdSlug": "hutt-bounty-ledger-analytics",       "accountKey": "hutt",      "name": "Hutt Bounty Ledger Analytics",            "stage": "Qualification",        "amount": 360000,  "daysFromToday": 240, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 17,                                    "serviceLineKey": "SW: Data & Analytics",     "startOffsetDays": 21 },
+    { "extIdSlug": "republic-mobile-archive",            "accountKey": "republic",  "name": "Old Republic Mobile Archive Engagement",  "stage": "Needs Analysis",       "amount": 290000,  "daysFromToday": 270, "forecastCategory": "Pipeline",  "probability": 60, "durationWeeks": 17,                                    "serviceLineKey": "SW: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "naboo-archive-digitization",         "accountKey": "naboo",     "name": "Naboo Court Archive Digitization",        "stage": "Qualification",        "amount": 270000,  "daysFromToday": 300, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 16,                                    "serviceLineKey": "SW: Knowledge & Training", "startOffsetDays": 21 }
+  ],
+
+  "roles": [
+    { "name": "Jedi Master (SA)",                       "canonical": "Solution Architect",                   "description": "Knower of the Force — designs the over-arching solution and watches over its integrity." },
+    { "name": "Rebel Commander (PM)",                   "canonical": "Project Manager",                      "description": "Marshals the squadrons of delivery, holds the timeline, and answers to Mon Mothma." },
+    { "name": "Senior Pilot (SCC)",                     "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft — flies lead in the build phase." },
+    { "name": "Wingman (CC)",                           "canonical": "Salesforce Consultant - India",        "description": "Carries discovery and configuration across the realm under the senior pilot's wing." },
+    { "name": "Intelligence Officer (BA)",              "canonical": "Business Analyst",                     "description": "Records what is needed and what is promised — translates between the customer and the engineering hangar." },
+    { "name": "Senate Diplomat (SMCC)",                 "canonical": "Marketing Senior Consultant - India",  "description": "Strategist of campaigns — sounds the call to gather and convert across the Galactic Senate." }
+  ],
+
+  "_realmNotes": "Star Wars realms span the major arcs: Rebellion command (yavin-base, hoth-watch, coruscant-senate), Imperial decommissioning (endor-shield, death-star-archives), economic ops (mos-eisley-cantina, bespin-cloud, kashyyyk-shipyard), and Jedi training revival (dagobah-academy). Pre-sales is dagobah-academy (Internal billing). windowOffsetWeeks negative — past weeks get Time Entries, future weeks get Schedules.",
 
   "realms": [
     {
-      "key": "rebel-alliance-resistance",
-      "projectName": "Rebel Alliance — Yavin Command CRM Rollout",
-      "shortName": "Rebel YCC",
-      "subAccountName": "Rebel Alliance & The Resistance",
-      "subAccountNumber": "PSA-TEST-STARWARS-REBEL-ALLIANCE-RESISTANCE",
+      "key": "yavin-base",
+      "projectName": "Yavin Base — Rebel Command Stand-up",
+      "shortName": "Yavin RCS",
+      "subAccountName": "Yavin Base Operations",
+      "subAccountNumber": "PSA-TEST-STARWARS-YAVIN",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "opportunity": {
+        "amount": 760000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Yavin Command Ramp",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 40 },
+            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
+            { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 600,  "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 200,  "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 900,  "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-YAVIN-001", "lines": [ { "lineType": "Time and Materials", "amount": 95000 } ] },
+        { "issuedOffsetWeeks": 8,  "status": "Paid",     "number": "INV-YAVIN-002", "lines": [ { "lineType": "Time and Materials", "amount": 110000 } ] },
+        { "issuedOffsetWeeks": 12, "status": "Invoiced", "number": "INV-YAVIN-003", "lines": [ { "lineType": "Time and Materials", "amount": 88000 } ] }
+      ],
       "workstreams": [
-        { "name": "Yavin Base Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Command Center Default", "isDefault": true, "billable": false, "children": [] },
         { "name": "Discovery & Briefing", "isDefault": false, "billable": true, "children": [
-          { "name": "War Room Briefing", "billable": true },
-          { "name": "Death Star Plan Review", "billable": true }
+          { "name": "War Room Council", "billable": true },
+          { "name": "Recon Sortie — Outer Rim", "billable": true },
+          { "name": "Strategy Drafting", "billable": true }
         ]},
-        { "name": "Build the Rogue Squadron", "isDefault": false, "billable": true, "children": [
-          { "name": "X-Wing Provisioning", "billable": true },
-          { "name": "Targeting Computer Calibration", "billable": true }
+        { "name": "Build the Hangar Bay", "isDefault": false, "billable": true, "children": [
+          { "name": "Hangar Foundation Plating", "billable": true },
+          { "name": "Comm Relay Calibration", "billable": true },
+          { "name": "Targeting Computer Hardening", "billable": true }
         ]},
-        { "name": "Migrate the Cell Networks", "isDefault": false, "billable": true, "children": [
-          { "name": "Cell Roster Consolidation", "billable": true },
-          { "name": "Encrypted Comms Cutover", "billable": true }
+        { "name": "Migrate the Intelligence", "isDefault": false, "billable": true, "children": [
+          { "name": "Datapad Inventory", "billable": true },
+          { "name": "Holocron Translation", "billable": true }
         ]},
-        { "name": "Trench Run UAT", "isDefault": false, "billable": true, "children": [
-          { "name": "Exhaust Port Targeting Drill", "billable": true },
-          { "name": "TIE Fighter Evasion Test", "billable": true }
+        { "name": "Testing the Defenses", "isDefault": false, "billable": true, "children": [
+          { "name": "X-Wing UAT Drill", "billable": true },
+          { "name": "Trench Run Stress Test", "billable": true }
         ]},
-        { "name": "Training the Pilots", "isDefault": false, "billable": true, "children": [
-          { "name": "Flight Academy Onboarding", "billable": true },
-          { "name": "Squadron Leader Workshop", "billable": true }
+        { "name": "Training the Squadrons", "isDefault": false, "billable": true, "children": [
+          { "name": "Pilot Onboarding", "billable": true },
+          { "name": "Commander's Workshop", "billable": true }
         ]}
       ]
     },
     {
-      "key": "galactic-empire-first-order",
-      "projectName": "Galactic Empire — Imperial Surveillance Build",
-      "shortName": "Empire ISB",
-      "subAccountName": "Galactic Empire & The First Order",
-      "subAccountNumber": "PSA-TEST-STARWARS-GALACTIC-EMPIRE-FIRST-ORDER",
+      "key": "endor-shield",
+      "projectName": "Endor — Shield Generator Decommissioning",
+      "shortName": "Endor SGD",
+      "subAccountName": "Endor Forest Moon Operations",
+      "subAccountNumber": "PSA-TEST-STARWARS-ENDOR",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
+      "projectType": "External Project",
+      "billingModel": "Milestone",
+      "opportunity": {
+        "amount": 540000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Endor Shield Flat",
+          "segments": [
+            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 400,  "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 1000, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 100,  "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 600,  "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 1200, "unitPrice": 100 }
+        ]
+      },
+      "milestones": [
+        { "name": "Recon Complete",       "offsetWeeks": 4,  "amount": 90000,  "status": "Completed" },
+        { "name": "Ewok Alliance",        "offsetWeeks": 10, "amount": 130000, "status": "Completed" },
+        { "name": "Bunker Breach Tested", "offsetWeeks": 16, "amount": 100000, "status": "In Progress" },
+        { "name": "Strike Team Trained",  "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
+        { "name": "Shield Down",          "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 5,  "status": "Paid", "number": "INV-ENDOR-001", "lines": [ { "lineType": "Milestone", "amount": 90000 } ] },
+        { "issuedOffsetWeeks": 10, "status": "Paid", "number": "INV-ENDOR-002", "lines": [ { "lineType": "Milestone", "amount": 130000 } ] }
+      ],
       "workstreams": [
-        { "name": "Coruscant Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Imperial Survey", "isDefault": false, "billable": true, "children": [
-          { "name": "ISB Reconnaissance", "billable": true },
-          { "name": "Probe Droid Telemetry", "billable": true }
+        { "name": "Forest Moon Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Recon", "isDefault": false, "billable": true, "children": [
+          { "name": "Sanctuary Moon Survey", "billable": true },
+          { "name": "Imperial Garrison Mapping", "billable": true },
+          { "name": "Tactical Plan with the General", "billable": true }
         ]},
-        { "name": "Build the Death Star", "isDefault": false, "billable": true, "children": [
-          { "name": "Superlaser Calibration", "billable": true },
-          { "name": "Reactor Core Hardening", "billable": true }
+        { "name": "Build the Strike Team", "isDefault": false, "billable": true, "children": [
+          { "name": "Catwalk Path Clearing", "billable": true },
+          { "name": "Detonator Pack Forging", "billable": true },
+          { "name": "Comlink Network Setup", "billable": true }
         ]},
-        { "name": "Migrate the Star Fleet", "isDefault": false, "billable": true, "children": [
-          { "name": "Star Destroyer Roster", "billable": true },
-          { "name": "Stormtrooper Legion Inventory", "billable": true }
+        { "name": "Migrate the Garrison Data", "isDefault": false, "billable": true, "children": [
+          { "name": "Imperial Roster Capture", "billable": true },
+          { "name": "Bunker Schematic Inventory", "billable": true }
         ]},
-        { "name": "Hoth Assault UAT", "isDefault": false, "billable": true, "children": [
-          { "name": "AT-AT Walker Stress Test", "billable": true },
-          { "name": "Shield Generator Pen-test", "billable": true }
+        { "name": "Testing the Breach Plan", "isDefault": false, "billable": true, "children": [
+          { "name": "Speeder Bike Drill", "billable": true },
+          { "name": "Ewok Trap Rehearsal", "billable": true }
         ]},
-        { "name": "Training the Stormtroopers", "isDefault": false, "billable": true, "children": [
-          { "name": "Academy Conscription Track", "billable": true },
-          { "name": "Officer Conditioning Manual", "billable": true }
+        { "name": "Training the Strike Team", "isDefault": false, "billable": true, "children": [
+          { "name": "Pathfinder Foundations", "billable": true },
+          { "name": "Commando's Manual", "billable": true }
         ]}
       ]
     },
     {
-      "key": "jedi-order",
-      "projectName": "Jedi Order — Temple Knowledge Archive Migration",
-      "shortName": "Jedi TKA",
-      "subAccountName": "The Jedi Order",
-      "subAccountNumber": "PSA-TEST-STARWARS-JEDI-ORDER",
+      "key": "hoth-watch",
+      "projectName": "Hoth — Echo Base Long-term Watch",
+      "shortName": "Hoth ELW",
+      "subAccountName": "Hoth Echo Base Operations",
+      "subAccountNumber": "PSA-TEST-STARWARS-HOTH",
+      "projectType": "Managed Services",
+      "billingModel": "Retainer",
+      "opportunity": {
+        "amount": 395000,
+        "paymentTerms": "Net 60",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Hoth Watch Back-loaded",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 33,  "revenuePct": 20 },
+            { "order": 2, "startPct": 33, "endPct": 66,  "revenuePct": 30 },
+            { "order": 3, "startPct": 66, "endPct": 100, "revenuePct": 50 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 300, "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 700, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 500, "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 750, "unitPrice": 100 }
+        ]
+      },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
+      "forecastLines": [
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 65833.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 65833.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 65833.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 65833.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 65833.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 65833.35 }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 0, "status": "Paid", "number": "INV-HOTH-001", "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 65833.33 } ] },
+        { "issuedOffsetWeeks": 4, "status": "Paid", "number": "INV-HOTH-002", "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 65833.33 } ] }
+      ],
       "workstreams": [
-        { "name": "Temple Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Council Meditation", "isDefault": false, "billable": true, "children": [
-          { "name": "High Council Convocation", "billable": true },
-          { "name": "Force Vision Transcription", "billable": true }
+        { "name": "Echo Base Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Probe Scan", "isDefault": false, "billable": true, "children": [
+          { "name": "Probe Droid Sweep", "billable": true },
+          { "name": "Ion Cannon Polling", "billable": true },
+          { "name": "High Command Strategy", "billable": true }
         ]},
-        { "name": "Build the Holocron Vault", "isDefault": false, "billable": true, "children": [
-          { "name": "Holocron Encoding", "billable": true },
-          { "name": "Archive Index Crystals", "billable": true }
+        { "name": "Build the Defense Grid", "isDefault": false, "billable": true, "children": [
+          { "name": "Trench Foundation Excavation", "billable": true },
+          { "name": "Shield Generator Calibration", "billable": true },
+          { "name": "Power Distribution Network", "billable": true }
         ]},
-        { "name": "Migrate the Archives", "isDefault": false, "billable": true, "children": [
-          { "name": "Jocasta's Catalog Sweep", "billable": true },
-          { "name": "Padawan Records Transfer", "billable": true }
+        { "name": "Migrate the Operations", "isDefault": false, "billable": true, "children": [
+          { "name": "Rogue Squadron Roll", "billable": true },
+          { "name": "Snowspeeder Inventory", "billable": true }
         ]},
-        { "name": "Trials of Knighthood UAT", "isDefault": false, "billable": true, "children": [
-          { "name": "Trial of Skill", "billable": true },
-          { "name": "Trial of the Spirit", "billable": true }
+        { "name": "Testing the Wampa Defenses", "isDefault": false, "billable": true, "children": [
+          { "name": "Perimeter Pen-test", "billable": true },
+          { "name": "Tauntaun Endurance Stress", "billable": true }
         ]},
-        { "name": "Training the Younglings", "isDefault": false, "billable": true, "children": [
-          { "name": "Initiate Lightsaber Forms", "billable": true },
-          { "name": "Master's Wisdom Workshop", "billable": true }
+        { "name": "Training the Watchers", "isDefault": false, "billable": true, "children": [
+          { "name": "Cold-Weather Conscription", "billable": true },
+          { "name": "Watch Captain's Manual", "billable": true }
         ]}
       ]
     },
     {
-      "key": "mandalorians-bounty-hunters",
-      "projectName": "Mandalorians — Beskar Bounty Tracking Platform",
-      "shortName": "Mando BBT",
-      "subAccountName": "Mandalorians & Bounty Hunters Guild",
-      "subAccountNumber": "PSA-TEST-STARWARS-MANDALORIANS-BOUNTY-HUNTERS",
+      "key": "dagobah-academy",
+      "projectName": "Dagobah — Jedi Academy Revival",
+      "shortName": "Dagobah JAR",
+      "subAccountName": "Dagobah",
+      "subAccountNumber": "PSA-TEST-STARWARS-DAGOBAH",
+      "projectType": "Internal Project",
+      "billingModel": "Internal",
       "windowOffsetWeeks": -4,
-      "windowDurationWeeks": 24,
+      "windowDurationWeeks": 25,
       "workstreams": [
-        { "name": "Nevarro Covert Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Bounty Puck Triage", "isDefault": false, "billable": true, "children": [
-          { "name": "Guild Puck Intake", "billable": true },
-          { "name": "Quarry Lore Research", "billable": true }
+        { "name": "Swamp Hut Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Force Meditation", "isDefault": false, "billable": true, "children": [
+          { "name": "Force Sensitivity Calibration", "billable": true },
+          { "name": "Future-state Visioning", "billable": true },
+          { "name": "Master's Council", "billable": true }
         ]},
-        { "name": "Forge the Beskar Platform", "isDefault": false, "billable": true, "children": [
-          { "name": "Beskar Ingot Smelting", "billable": true },
-          { "name": "Armorer's Forge Tooling", "billable": true }
+        { "name": "Build the Training Course", "isDefault": false, "billable": true, "children": [
+          { "name": "Vine Climbing Frame", "billable": true },
+          { "name": "Stone Lift Apparatus", "billable": true },
+          { "name": "Reflection Cave Setup", "billable": true }
         ]},
-        { "name": "Migrate the Guild Ledgers", "isDefault": false, "billable": true, "children": [
-          { "name": "Credit Reconciliation", "billable": true },
-          { "name": "Carbonite Asset Inventory", "billable": true }
+        { "name": "Migrate the Holocrons", "isDefault": false, "billable": true, "children": [
+          { "name": "Ancient Holocron Inventory", "billable": true },
+          { "name": "Lightsaber Form Archive", "billable": true }
         ]},
-        { "name": "Tracking Run UAT", "isDefault": false, "billable": true, "children": [
-          { "name": "Sarlacc Pit Pen-test", "billable": true },
-          { "name": "Slave I Pursuit Drill", "billable": true }
+        { "name": "Testing the Apprentice", "isDefault": false, "billable": true, "children": [
+          { "name": "X-Wing Lifting Trial", "billable": true },
+          { "name": "Cave Vision UAT", "billable": true }
         ]},
-        { "name": "Training the Foundlings", "isDefault": false, "billable": true, "children": [
-          { "name": "Creed Onboarding", "billable": true },
-          { "name": "Whistling Birds Workshop", "billable": true }
+        { "name": "Training the Padawans", "isDefault": false, "billable": true, "children": [
+          { "name": "Force Push Foundations", "billable": true },
+          { "name": "Master Yoda's Manual", "billable": true }
+        ]}
+      ],
+      "openOpp": true,
+      "openOpportunity": {
+        "name": "Dagobah — Jedi Academy Revival Opportunity",
+        "stage": "Proposal/Price Quote",
+        "closeDateDaysFromToday": 30,
+        "amount": 520000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 500,  "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 1200, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 300,  "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 700,  "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 1000, "unitPrice": 100 }
+        ]
+      }
+    },
+    {
+      "key": "bespin-cloud",
+      "projectName": "Bespin — Cloud City Trade Hub",
+      "shortName": "Bespin CCT",
+      "subAccountName": "Bespin Cloud City",
+      "subAccountNumber": "PSA-TEST-STARWARS-BESPIN",
+      "windowOffsetWeeks": -20,
+      "windowDurationWeeks": 30,
+      "projectType": "External Project",
+      "billingModel": "Prepayment",
+      "opportunity": {
+        "amount": 510000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 250000,
+        "allocationProfile": {
+          "name": "Bespin Cloud Front-loaded",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 60 },
+            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 30 },
+            { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 10 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 800, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 150, "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 600, "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 900, "unitPrice": 100 }
+        ]
+      },
+      "prepayments": [
+        { "amount": 250000, "appliedOffsetWeeks": 0, "notes": "Up-front carbonite escrow on contract signature." }
+      ],
+      "invoices": [
+        { "issuedOffsetWeeks": 6,  "status": "Paid",     "number": "INV-BESPIN-001", "lines": [ { "lineType": "Prepayment Draw", "amount": 150000 } ] },
+        { "issuedOffsetWeeks": 14, "status": "Invoiced", "number": "INV-BESPIN-002", "lines": [ { "lineType": "Prepayment Draw", "amount": 100000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Cloud City Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Market Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Tibanna Gas Yield Audit", "billable": true },
+          { "name": "Trade Lane Mapping", "billable": true }
+        ]},
+        { "name": "Build the Trade Hub", "isDefault": false, "billable": true, "children": [
+          { "name": "Platform 327 Foundation", "billable": true },
+          { "name": "Cargo Bay Outfitting", "billable": true },
+          { "name": "Casino Floor Layout", "billable": true }
+        ]},
+        { "name": "Migrate the Customs Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Manifest Digitization", "billable": true },
+          { "name": "Duty Ledger Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Repulsorlifts", "isDefault": false, "billable": true, "children": [
+          { "name": "Platform Sway UAT", "billable": true },
+          { "name": "Tibanna Pressure Test", "billable": true }
+        ]},
+        { "name": "Training the Floor Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Customs Onboarding", "billable": true },
+          { "name": "Administrator's Manual", "billable": true }
         ]}
       ]
+    },
+    {
+      "key": "mos-eisley-cantina",
+      "projectName": "Mos Eisley — Cantina Trade Network",
+      "shortName": "Mos Eisley CTN",
+      "subAccountName": "Mos Eisley Trade District",
+      "subAccountNumber": "PSA-TEST-STARWARS-MOSEISLEY",
+      "windowOffsetWeeks": -18,
+      "windowDurationWeeks": 28,
+      "projectType": "External Project",
+      "billingModel": "Mixed",
+      "opportunity": {
+        "amount": 660000,
+        "paymentTerms": "Net 30",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Mos Eisley Mixed Curve",
+          "segments": [
+            { "order": 1, "startPct": 0,  "endPct": 40,  "revenuePct": 35 },
+            { "order": 2, "startPct": 40, "endPct": 80,  "revenuePct": 45 },
+            { "order": 3, "startPct": 80, "endPct": 100, "revenuePct": 20 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 500,  "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 1100, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 150,  "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 800,  "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 1300, "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": 5,  "status": "Paid",     "number": "INV-MOSEISLEY-001", "lines": [ { "lineType": "Time and Materials", "amount": 70000 }, { "lineType": "Milestone", "amount": 30000 } ] },
+        { "issuedOffsetWeeks": 13, "status": "Paid",     "number": "INV-MOSEISLEY-002", "lines": [ { "lineType": "Time and Materials", "amount": 85000 } ] },
+        { "issuedOffsetWeeks": 20, "status": "Invoiced", "number": "INV-MOSEISLEY-003", "lines": [ { "lineType": "Milestone", "amount": 60000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Cantina Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Smuggler Census", "isDefault": false, "billable": true, "children": [
+          { "name": "Bounty Hunter Headcount", "billable": true },
+          { "name": "Cargo Routing Survey", "billable": true }
+        ]},
+        { "name": "Build the Trade Network", "isDefault": false, "billable": true, "children": [
+          { "name": "Loading Dock Modernization", "billable": true },
+          { "name": "Comms Booth Encryption", "billable": true }
+        ]},
+        { "name": "Migrate the Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Bounty Ledger Roll", "billable": true },
+          { "name": "Cantina Tab Reconciliation", "billable": true }
+        ]},
+        { "name": "Testing the Patrons", "isDefault": false, "billable": true, "children": [
+          { "name": "Bar-fight Drill", "billable": true },
+          { "name": "ID Checkpoint UAT", "billable": true }
+        ]},
+        { "name": "Training the Staff", "isDefault": false, "billable": true, "children": [
+          { "name": "Service Onboarding", "billable": true },
+          { "name": "Manager's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "death-star-archives",
+      "projectName": "Death Star — Archive Recovery Project",
+      "shortName": "DS Archives",
+      "subAccountName": "Death Star Archives Recovery",
+      "subAccountNumber": "PSA-TEST-STARWARS-DEATHSTAR",
+      "windowOffsetWeeks": -52,
+      "windowDurationWeeks": 40,
+      "projectType": "External Project",
+      "billingModel": "Historical",
+      "opportunity": {
+        "amount": 940000,
+        "paymentTerms": "Net 60",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Death Star Historical Even",
+          "segments": [
+            { "order": 1, "startPct": 0,   "endPct": 50,  "revenuePct": 50 },
+            { "order": 2, "startPct": 50,  "endPct": 100, "revenuePct": 50 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 800,  "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 1700, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 250,  "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 1300, "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 1800, "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": -48, "status": "Paid", "number": "INV-DEATHSTAR-001", "lines": [ { "lineType": "Time and Materials", "amount": 120000 } ] },
+        { "issuedOffsetWeeks": -36, "status": "Paid", "number": "INV-DEATHSTAR-002", "lines": [ { "lineType": "Time and Materials", "amount": 135000 } ] },
+        { "issuedOffsetWeeks": -22, "status": "Paid", "number": "INV-DEATHSTAR-003", "lines": [ { "lineType": "Time and Materials", "amount": 145000 } ] },
+        { "issuedOffsetWeeks": -8,  "status": "Paid", "number": "INV-DEATHSTAR-004", "lines": [ { "lineType": "Time and Materials", "amount": 160000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Archive Vault Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Wreckage Survey", "isDefault": false, "billable": true, "children": [
+          { "name": "Endor Debris Mapping", "billable": true },
+          { "name": "Salvage Manifest Review", "billable": true }
+        ]},
+        { "name": "Build the Recovery Bays", "isDefault": false, "billable": true, "children": [
+          { "name": "Bay Foundation Plating", "billable": true },
+          { "name": "Decontamination Chambers", "billable": true }
+        ]},
+        { "name": "Migrate the Imperial Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Personnel File Digitization", "billable": true },
+          { "name": "Schematic Cross-reference", "billable": true }
+        ]},
+        { "name": "Testing the Data Quality", "isDefault": false, "billable": true, "children": [
+          { "name": "Reading Frame Drift Check", "billable": true },
+          { "name": "Imperial Cipher Decryption UAT", "billable": true }
+        ]},
+        { "name": "Training the Archivists", "isDefault": false, "billable": true, "children": [
+          { "name": "Holocron Handling Foundations", "billable": true },
+          { "name": "Chief Archivist's Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "coruscant-senate",
+      "projectName": "Coruscant — Senate Strategic Review",
+      "shortName": "Coruscant SSR",
+      "subAccountName": "Coruscant Senate District",
+      "subAccountNumber": "PSA-TEST-STARWARS-CORUSCANT",
+      "windowOffsetWeeks": -8,
+      "windowDurationWeeks": 24,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "opportunity": {
+        "amount": 495000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
+        "allocationProfile": {
+          "name": "Coruscant Senate Flat",
+          "segments": [
+            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+          ]
+        },
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 900, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Intelligence Officer", "quantity": 700, "unitPrice": 150 },
+          { "themedRole": "Wingman",              "quantity": 800, "unitPrice": 100 }
+        ]
+      },
+      "invoices": [
+        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-CORUSCANT-001", "lines": [ { "lineType": "Time and Materials", "amount": 75000 } ] },
+        { "issuedOffsetWeeks": 9,  "status": "Invoiced", "number": "INV-CORUSCANT-002", "lines": [ { "lineType": "Time and Materials", "amount": 80000 } ] }
+      ],
+      "workstreams": [
+        { "name": "Senate Chamber Default", "isDefault": true, "billable": false, "children": [] },
+        { "name": "Discovery & Policy Audit", "isDefault": false, "billable": true, "children": [
+          { "name": "Senatorial Survey", "billable": true },
+          { "name": "Trade Federation Caucus", "billable": true },
+          { "name": "Strategy with the Chancellor", "billable": true }
+        ]},
+        { "name": "Build the Voting Platform", "isDefault": false, "billable": true, "children": [
+          { "name": "Repulsor Pod Calibration", "billable": true },
+          { "name": "Senate Broadcast Network", "billable": true }
+        ]},
+        { "name": "Migrate the Voting Records", "isDefault": false, "billable": true, "children": [
+          { "name": "Senator Roll Call", "billable": true },
+          { "name": "Bill Inventory", "billable": true }
+        ]},
+        { "name": "Testing the Quorum", "isDefault": false, "billable": true, "children": [
+          { "name": "Vote Cast Drill", "billable": true },
+          { "name": "Filibuster Stress Rehearsal", "billable": true }
+        ]},
+        { "name": "Training the Aides", "isDefault": false, "billable": true, "children": [
+          { "name": "Senate Page Foundations", "billable": true },
+          { "name": "Chief of Staff Manual", "billable": true }
+        ]}
+      ]
+    },
+    {
+      "key": "kashyyyk-shipyard",
+      "projectName": "Kashyyyk — Shipyard Modernization",
+      "shortName": "Kashyyyk SM",
+      "subAccountName": "Kashyyyk Shipyards",
+      "subAccountNumber": "PSA-TEST-STARWARS-KASHYYYK",
+      "windowOffsetWeeks": -2,
+      "windowDurationWeeks": 30,
+      "projectType": "External Project",
+      "billingModel": "TM",
+      "openOpp": false,
+      "opportunity": {
+        "stage": "Closed Won",
+        "closeDateDaysFromToday": -7,
+        "amount": 840000,
+        "paymentTerms": "Net 45",
+        "prePaymentAmount": 0,
+        "products": [
+          { "themedRole": "Rebel Commander",      "quantity": 800,  "unitPrice": 200 },
+          { "themedRole": "Senior Pilot",         "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Jedi Master",          "quantity": 400,  "unitPrice": 280 },
+          { "themedRole": "Intelligence Officer", "quantity": 1200, "unitPrice": 140 },
+          { "themedRole": "Wingman",              "quantity": 600,  "unitPrice": 160 }
+        ]
+      }
     }
   ],
 
   "casting": {
-    "rebel-alliance-resistance": [
-      { "fullName": "Mon Mothma",         "themedRole": "High General — Coruscant Core" },
-      { "fullName": "Leia Organa",        "themedRole": "Rebel Cell Commander" },
-      { "fullName": "Luke Skywalker",     "themedRole": "Jedi Master Architect" },
-      { "fullName": "Han Solo",           "themedRole": "Hyperspace Lane Architect" },
-      { "fullName": "Chewbacca",          "themedRole": "Lightsaber Smith of Ilum" },
-      { "fullName": "Lando Calrissian",   "themedRole": "Holonet Broadcast Lead" },
-      { "fullName": "Wedge Antilles",     "themedRole": "Jedi Knight of the Outer Rim" },
-      { "fullName": "Admiral Ackbar",     "themedRole": "Sentinel of the Order" },
-      { "fullName": "Poe Dameron",        "themedRole": "Padawan Learner" },
-      { "fullName": "Finn",               "themedRole": "Astromech Operator" },
-      { "fullName": "Rey",                "themedRole": "Youngling Codewright" }
+    "yavin-base": [
+      { "fullName": "Princess Leia Organa",  "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Obi-Wan Kenobi",        "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Luke Skywalker",        "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Wedge Antilles",        "themedRole": "Wingman (CC)" },
+      { "fullName": "General Dodonna",       "themedRole": "Intelligence Officer (BA)" },
+      { "fullName": "C-3PO",                 "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "R2-D2",                 "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Mon Mothma",            "themedRole": "Senate Diplomat (SMCC)" }
     ],
-    "galactic-empire-first-order": [
-      { "fullName": "Emperor Palpatine",  "themedRole": "High General — Coruscant Core" },
-      { "fullName": "Darth Vader",        "themedRole": "Jedi Master Architect" },
-      { "fullName": "Grand Moff Tarkin",  "themedRole": "Rebel Cell Commander" },
-      { "fullName": "General Hux",        "themedRole": "Holonet Broadcast Lead" },
-      { "fullName": "Kylo Ren",           "themedRole": "Master Lightsaber Forger" },
-      { "fullName": "Captain Phasma",     "themedRole": "Sentinel of the Order" },
-      { "fullName": "Director Krennic",   "themedRole": "Hyperspace Lane Architect" },
-      { "fullName": "Admiral Thrawn",     "themedRole": "Senate Records Scribe" },
-      { "fullName": "Snoke",              "themedRole": "Jedi Master Architect" }
+    "endor-shield": [
+      { "fullName": "Han Solo",              "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Chewbacca",             "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Princess Leia Organa",  "themedRole": "Intelligence Officer (BA)" },
+      { "fullName": "Wicket W. Warrick",     "themedRole": "Wingman (CC)" },
+      { "fullName": "Chief Chirpa",          "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Lando Calrissian",      "themedRole": "Senate Diplomat (SMCC)" },
+      { "fullName": "Logray",                "themedRole": "Rebel Commander (PM)" }
     ],
-    "jedi-order": [
-      { "fullName": "Yoda",               "themedRole": "Jedi Master Architect" },
-      { "fullName": "Obi-Wan Kenobi",     "themedRole": "High General — Coruscant Core" },
-      { "fullName": "Mace Windu",         "themedRole": "Master Lightsaber Forger" },
-      { "fullName": "Qui-Gon Jinn",       "themedRole": "Jedi Knight of the Outer Rim" },
-      { "fullName": "Anakin Skywalker",   "themedRole": "Lightsaber Smith of Ilum" },
-      { "fullName": "Ahsoka Tano",        "themedRole": "Padawan Learner" },
-      { "fullName": "Plo Koon",           "themedRole": "Hyperspace Navigator" },
-      { "fullName": "Ki-Adi-Mundi",       "themedRole": "Senate Records Scribe" },
-      { "fullName": "Kit Fisto",          "themedRole": "Astrogation Apprentice" },
-      { "fullName": "Luminara Unduli",    "themedRole": "Holonet Strategist" }
+    "hoth-watch": [
+      { "fullName": "General Rieekan",       "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Luke Skywalker",        "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Princess Leia Organa",  "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Han Solo",              "themedRole": "Wingman (CC)" },
+      { "fullName": "Wedge Antilles",        "themedRole": "Intelligence Officer (BA)" },
+      { "fullName": "Toryn Farr",            "themedRole": "Senate Diplomat (SMCC)" },
+      { "fullName": "Major Bren Derlin",     "themedRole": "Rebel Commander (PM)" }
     ],
-    "mandalorians-bounty-hunters": [
-      { "fullName": "Boba Fett",          "themedRole": "Jedi Knight of the Outer Rim" },
-      { "fullName": "Jango Fett",         "themedRole": "Master Lightsaber Forger" },
-      { "fullName": "Din Djarin (the Mandalorian)", "themedRole": "Rebel Cell Commander" },
-      { "fullName": "Bo-Katan Kryze",     "themedRole": "High General — Coruscant Core" },
-      { "fullName": "Greef Karga",        "themedRole": "Holonet Field Correspondent" },
-      { "fullName": "Cara Dune",          "themedRole": "Sentinel of the Order" },
-      { "fullName": "IG-11",              "themedRole": "Astromech Operator" },
-      { "fullName": "Cad Bane",           "themedRole": "Padawan Learner" },
-      { "fullName": "Aurra Sing",         "themedRole": "Astrogation Apprentice" },
-      { "fullName": "Embo",               "themedRole": "Youngling Codewright" }
+    "dagobah-academy": [
+      { "fullName": "Master Yoda",           "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Luke Skywalker",        "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Obi-Wan Kenobi",        "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "R2-D2",                 "themedRole": "Wingman (CC)" }
+    ],
+    "bespin-cloud": [
+      { "fullName": "Lando Calrissian",      "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Lobot",                 "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Han Solo",              "themedRole": "Intelligence Officer (BA)" },
+      { "fullName": "Princess Leia Organa",  "themedRole": "Wingman (CC)" },
+      { "fullName": "Chewbacca",             "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Willrow Hood",          "themedRole": "Senate Diplomat (SMCC)" },
+      { "fullName": "C-3PO",                 "themedRole": "Rebel Commander (PM)" }
+    ],
+    "mos-eisley-cantina": [
+      { "fullName": "Han Solo",              "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Chewbacca",             "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Obi-Wan Kenobi",        "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Luke Skywalker",        "themedRole": "Wingman (CC)" },
+      { "fullName": "Greedo",                "themedRole": "Intelligence Officer (BA)" },
+      { "fullName": "Wuher",                 "themedRole": "Senate Diplomat (SMCC)" },
+      { "fullName": "Figrin D'an",           "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Ponda Baba",            "themedRole": "Senior Pilot (SCC)" }
+    ],
+    "death-star-archives": [
+      { "fullName": "Jyn Erso",              "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Cassian Andor",         "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Bodhi Rook",            "themedRole": "Wingman (CC)" },
+      { "fullName": "Chirrut Imwe",          "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Baze Malbus",           "themedRole": "Intelligence Officer (BA)" },
+      { "fullName": "K-2SO",                 "themedRole": "Senate Diplomat (SMCC)" },
+      { "fullName": "Mon Mothma",            "themedRole": "Rebel Commander (PM)" }
+    ],
+    "coruscant-senate": [
+      { "fullName": "Mon Mothma",            "themedRole": "Rebel Commander (PM)" },
+      { "fullName": "Bail Organa",           "themedRole": "Senate Diplomat (SMCC)" },
+      { "fullName": "Princess Leia Organa",  "themedRole": "Senior Pilot (SCC)" },
+      { "fullName": "Padme Amidala",         "themedRole": "Jedi Master (SA)" },
+      { "fullName": "Riyo Chuchi",           "themedRole": "Wingman (CC)" },
+      { "fullName": "Onaconda Farr",         "themedRole": "Intelligence Officer (BA)" }
     ]
   },
 
   "milestones": {
-    "rebel-alliance-resistance": [
-      { "name": "Briefing on Yavin IV",      "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — plans reviewed in the Massassi temple war room." },
-      { "name": "Stealing the Death Star Plans","type": "Operational","offsetPct": 25,"description": "Build kickoff: data exfiltrated from the Imperial vault on Scarif." },
-      { "name": "Battle of Hoth Withdrawal", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: tactical retreat to regroup the cells." },
-      { "name": "Endor Shield Bunker Strike","type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: ground assault clears the deflector shield." },
-      { "name": "Death Star Trench Run",     "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the exhaust port hit, the station destroyed." },
-      { "name": "Medal Ceremony at Yavin",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: heroes decorated, alliance hand-off complete." }
+    "yavin-base": [
+      { "name": "Briefing at Yavin",         "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — squadron commanders briefed in the war room." },
+      { "name": "X-Wings Provisioned",       "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: starfighter wing fully outfitted and parked in the hangar." },
+      { "name": "Council with Mon Mothma",   "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: command review with Mon Mothma's council." },
+      { "name": "Trench Run Diversion",      "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feint at the exhaust port." },
+      { "name": "Death Star Destroyed",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the station goes up in a flash." },
+      { "name": "Medal Ceremony",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ceremonial handoff." }
     ],
-    "galactic-empire-first-order": [
-      { "name": "Order 66 Issued",           "type": "Gate",        "offsetPct": 10,  "description": "Discovery: kill-switch executed across the Republic." },
-      { "name": "Construction of Death Star","type": "Operational", "offsetPct": 35,  "description": "Build: the battle station's reactor brought online." },
-      { "name": "Vader's Project Audit",     "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Lord of the Sith himself — apology accepted, or not." },
-      { "name": "Starkiller Base Activation","type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the First Order's superweapon fires on the Hosnian system." },
-      { "name": "Imperial Remnant Stand-down","type": "Operational","offsetPct": 100, "description": "Project close: garrison forces stood down across the sector." },
-      { "name": "Final Tribute to the Emperor","type": "Billing",   "offsetPct": 100, "description": "Final invoice rendered to the Imperial Treasury." }
+    "endor-shield": [
+      { "name": "Recon at Endor",            "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: strike team drops to the forest moon." },
+      { "name": "Ewok Alliance Forged",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: local allies recruited and briefed." },
+      { "name": "Bunker Breached",           "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: shield bunker entry confirmed." },
+      { "name": "Shield Down",               "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: forest moon shield generator destroyed." },
+      { "name": "Return to Yavin",           "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: strike team extracted." },
+      { "name": "Final Billing",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Endor operations." }
     ],
-    "jedi-order": [
-      { "name": "Convocation of the High Council","type": "Gate",   "offsetPct": 5,   "description": "Discovery sign-off — twelve masters in session at the Coruscant temple." },
-      { "name": "Crystal Gathering on Ilum", "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: kyber crystals harvested for new lightsabers." },
-      { "name": "Padawan Trials of Initiate","type": "Gate",        "offsetPct": 55,  "description": "Mid-project gate: younglings face the trials of the Bear Clan." },
-      { "name": "Sith Threat Assessment",    "type": "Billing",     "offsetPct": 75,  "description": "Phase invoice trigger: dark side disturbance investigation funded." },
-      { "name": "Knighthood Ceremony",       "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: padawan braids cut, the new Jedi Knights take their vows." },
-      { "name": "Archive Hand-off to Jocasta","type": "Operational","offsetPct": 100, "description": "Hyper-care close: Chief Librarian Jocasta Nu accepts the migrated archives." }
+    "hoth-watch": [
+      { "name": "Probe Sweep Complete",      "type": "Gate",        "offsetPct": 10,  "description": "Discovery: perimeter probe scan complete." },
+      { "name": "Echo Base Hardened",        "type": "Operational", "offsetPct": 35,  "description": "Build: ion cannon + shield grid operational." },
+      { "name": "High Command Review",       "type": "Gate",        "offsetPct": 60,  "description": "Solution review with Rebel high command." },
+      { "name": "Defense Grid Live",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Echo Base fully defended." },
+      { "name": "Evacuation Stand-down",     "type": "Operational", "offsetPct": 100, "description": "Project close: watch suspended." },
+      { "name": "Final Reckoning",           "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Echo Base." }
     ],
-    "mandalorians-bounty-hunters": [
-      { "name": "Covert Reveal on Nevarro",  "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the covert opens its doors to the Guild." },
-      { "name": "Beskar Forging Begins",     "type": "Operational", "offsetPct": 30,  "description": "Build: the Armorer fires the forge, ingots smelted into armor." },
-      { "name": "Carbon-Freezing on Bespin", "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: high-value asset preserved for transport." },
-      { "name": "Sarlacc Pit Recovery",      "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: bounty extracted from the pit of Carkoon, system live." },
-      { "name": "Foundling Returned to Clan","type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the foundling delivered, This Is The Way." },
-      { "name": "Guild Credit Settlement",   "type": "Billing",     "offsetPct": 100, "description": "Final invoice: bounty credits settled with the Guild." }
+    "bespin-cloud": [
+      { "name": "Council with Lando",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council on Platform 327." },
+      { "name": "Tibanna Audit Complete",    "type": "Operational", "offsetPct": 30,  "description": "Discovery: gas mining yields modelled." },
+      { "name": "Carbonite Bay Installed",   "type": "Operational", "offsetPct": 55,  "description": "Build: freezing chamber operational." },
+      { "name": "Cloud City Acceptance",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: platform sway tolerances signed off." },
+      { "name": "Trade Hub Live",            "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: trade hub running." },
+      { "name": "Final Recompense",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Cloud City." }
     ]
   },
 
   "daysOff": {
-    "Luke Skywalker":     [ { "realm": "rebel-alliance-resistance", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Jedi training on Dagobah with Master Yoda." } ],
-    "Han Solo":           [ { "realm": "rebel-alliance-resistance", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Settling a debt with Jabba — back when the credits clear." } ],
-    "Leia Organa":        [ { "realm": "rebel-alliance-resistance", "offsetWeeks": 16, "numberOfDays": 2, "notes": "Diplomatic mission to Alderaan refugees on Naboo." } ],
-    "Chewbacca":          [ { "realm": "rebel-alliance-resistance", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Life Day with the family on Kashyyyk." } ],
-    "Lando Calrissian":   [ { "realm": "rebel-alliance-resistance", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Cloud City quarterly board meeting." } ],
-    "Darth Vader":        [ { "realm": "galactic-empire-first-order", "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Bacta tank maintenance — life-support overhaul." } ],
-    "Emperor Palpatine":  [ { "realm": "galactic-empire-first-order", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Senate dissolution paperwork on Coruscant." } ],
-    "Kylo Ren":           [ { "realm": "galactic-empire-first-order", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Helmet repair after another tantrum." } ],
-    "Yoda":               [ { "realm": "jedi-order", "offsetWeeks": 10, "numberOfDays": 5, "notes": "Meditation retreat in the Dagobah swamp." } ],
-    "Obi-Wan Kenobi":     [ { "realm": "jedi-order", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Watching over a moisture farm on Tatooine — long-term assignment." } ],
-    "Anakin Skywalker":   [ { "realm": "jedi-order", "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Visit to Mom on Tatooine — long overdue." } ],
-    "Ahsoka Tano":        [ { "realm": "jedi-order", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Walking out of the temple — needs space to think." } ],
-    "Boba Fett":          [ { "realm": "mandalorians-bounty-hunters", "offsetWeeks": 8,  "numberOfDays": 3, "notes": "Climbing out of the Sarlacc pit — recovery time." } ],
-    "Din Djarin (the Mandalorian)": [ { "realm": "mandalorians-bounty-hunters", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Escorting Grogu to the Jedi — diplomatic detour." } ],
-    "Bo-Katan Kryze":     [ { "realm": "mandalorians-bounty-hunters", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Reclaiming Mandalore — quarterly campaign planning." } ]
+    "Princess Leia Organa": [ { "realm": "yavin-base",         "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Alderaan memorial — pre-arranged." } ],
+    "Luke Skywalker":       [ { "realm": "dagobah-academy",    "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Training under Master Yoda — convalescence." } ],
+    "Han Solo":             [ { "realm": "mos-eisley-cantina", "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Jabba debt negotiation furlough." } ],
+    "Obi-Wan Kenobi":       [ { "realm": "mos-eisley-cantina", "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Desert hermitage — quarterly meditation." } ],
+    "Chewbacca":            [ { "realm": "endor-shield",       "offsetWeeks": 12, "numberOfDays": 2, "notes": "Kashyyyk family visit." } ],
+    "Lando Calrissian":     [ { "realm": "bespin-cloud",       "offsetWeeks": 10, "numberOfDays": 2, "notes": "Cloud City administrator duties — quarterly." } ],
+    "Mon Mothma":           [ { "realm": "coruscant-senate",   "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Senate caucus retreat." } ],
+    "Wedge Antilles":       [ { "realm": "hoth-watch",         "offsetWeeks": 14, "numberOfDays": 5, "notes": "Rogue Squadron leave — pre-arranged." } ],
+    "Master Yoda":          [ { "realm": "dagobah-academy",    "offsetWeeks": 10, "numberOfDays": 2, "notes": "Force meditation — quarterly." } ],
+    "Jyn Erso":             [ { "realm": "death-star-archives","offsetWeeks": 16, "numberOfDays": 1, "notes": "Archive cross-reference day off." } ],
+    "Cassian Andor":        [ { "realm": "death-star-archives","offsetWeeks": 8,  "numberOfDays": 5, "notes": "Intelligence sabbatical." } ],
+    "Bail Organa":          [ { "realm": "coruscant-senate",   "offsetWeeks": 12, "numberOfDays": 3, "notes": "Alderaan diplomatic visit." } ],
+    "Padme Amidala":        [ { "realm": "coruscant-senate",   "offsetWeeks": 16, "numberOfDays": 4, "notes": "Naboo state visit — semi-annual." } ],
+    "C-3PO":                [ { "realm": "yavin-base",         "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Scheduled maintenance window." } ]
   }
 }
