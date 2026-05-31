@@ -252,14 +252,8 @@
       "billingModel": "Internal",
       "opportunity": {
         "amount": 0,
-        "paymentTerms": "Internal",
+        "paymentTerms": "None",
         "prePaymentAmount": 0,
-        "allocationProfile": {
-          "name": "Upside Down Internal Flat",
-          "segments": [
-            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
-          ]
-        },
         "products": [
           { "themedRole": "Dungeon Master (SA)",                 "quantity": 240, "unitPrice": 0 },
           { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 600, "unitPrice": 0 },
@@ -304,12 +298,13 @@
       "billingModel": "Prepayment",
       "opportunity": {
         "amount": 510000,
-        "paymentTerms": "Prepaid",
+        "paymentTerms": "Net 45",
         "prePaymentAmount": 510000,
         "allocationProfile": {
-          "name": "Starcourt Prepaid Flat",
+          "name": "Starcourt Drawdown Front-loaded",
           "segments": [
-            { "order": 1, "startPct": 0, "endPct": 100, "revenuePct": 100 }
+            { "order": 1, "startPct": 0,  "endPct": 50,  "revenuePct": 70 },
+            { "order": 2, "startPct": 50, "endPct": 100, "revenuePct": 30 }
           ]
         },
         "products": [
