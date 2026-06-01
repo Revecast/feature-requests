@@ -1,9 +1,24 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "key": "LOTR",
   "displayName": "Lord of the Rings",
   "category": "Sci-Fi / Fantasy",
   "emailDomain": "middle-earth.test",
+  "tagline": "The full finance stack — deep pipeline, every billing model",
+  "bestFor": [
+    "Forecasting walk-throughs",
+    "Pipeline depth (5 accounts / 11 opportunities)",
+    "Every billing model represented end-to-end",
+    "Multi-realm staffing + capacity demos"
+  ],
+  "capabilities": {
+    "forecasting": true,
+    "pipeline": true,
+    "billingVariety": true,
+    "timerDemos": true,
+    "setupWalkthroughs": true,
+    "brandRecognition": true
+  },
   "account": {
     "name": "Fellowship of the Ring (Test Data)",
     "accountNumber": "PSA-TEST-LOTR"
