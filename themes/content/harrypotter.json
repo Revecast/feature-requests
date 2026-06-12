@@ -711,5 +711,147 @@
     "Bill Weasley":          [ { "realm": "gringotts-bank",         "offsetWeeks": 12, "numberOfDays": 3, "notes": "Curse-breaker conference in Egypt." } ],
     "Fleur Delacour":        [ { "realm": "gringotts-bank",         "offsetWeeks": 16, "numberOfDays": 4, "notes": "Beauxbatons alumna gathering." } ],
     "Nymphadora Tonks":      [ { "realm": "ministry-of-magic",      "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Metamorphmagus calibration day." } ]
-  }
+  },
+  "tasks": [
+    {
+      "name": "Gather at the Great Hall",
+      "type": "External Project",
+      "phase": "Kick-Off",
+      "dueOffset": 2,
+      "description": "Run the kickoff workshop and align on scope, roles, and timeline."
+    },
+    {
+      "name": "Research in the Restricted Section",
+      "type": "External Project",
+      "phase": "Discovery",
+      "dueOffset": 5,
+      "description": "Gather and document requirements with the client stakeholders."
+    },
+    {
+      "name": "Brew the Plan",
+      "type": "External Project",
+      "phase": "Design",
+      "dueOffset": 12,
+      "description": "Produce the solution design and review it with the client."
+    },
+    {
+      "name": "Cast the Spells",
+      "type": "External Project",
+      "phase": "Build",
+      "dueOffset": 20,
+      "description": "Build and configure the solution per the approved design."
+    },
+    {
+      "name": "O.W.L. Examinations",
+      "type": "External Project",
+      "phase": "UAT",
+      "dueOffset": 35,
+      "description": "Run user acceptance testing and triage the feedback."
+    },
+    {
+      "name": "The Battle of Hogwarts",
+      "type": "External Project",
+      "phase": "Go-Live",
+      "dueOffset": 45,
+      "description": "Execute the go-live cutover and confirm production readiness."
+    },
+    {
+      "name": "Establish the Order",
+      "type": "Managed Services",
+      "phase": "Setup",
+      "dueOffset": 0,
+      "description": "Stand up the managed-service environment and runbooks."
+    },
+    {
+      "name": "Convene the Order of the Phoenix",
+      "type": "Managed Services",
+      "phase": "Kick-Off",
+      "dueOffset": 2,
+      "description": "Hold the service kickoff and confirm SLAs and escalation paths."
+    },
+    {
+      "name": "Charm the Wards",
+      "type": "Managed Services",
+      "phase": "Build",
+      "dueOffset": 14,
+      "description": "Implement monitoring, automation, and support processes."
+    },
+    {
+      "name": "Pass the Headmaster's Wand",
+      "type": "Managed Services",
+      "phase": "Go-Live",
+      "dueOffset": 25,
+      "description": "Transition the service into active management."
+    },
+    {
+      "name": "Meeting in the Headmaster's Office",
+      "type": "Managed Services",
+      "phase": "Hypercare",
+      "dueOffset": 30,
+      "description": "Stabilize the service and review the first support cycle."
+    },
+    {
+      "name": "Form Dumbledore's Army",
+      "type": "Internal Project",
+      "phase": "Kick-Off",
+      "dueOffset": 2,
+      "description": "Kick off the initiative and confirm goals and owners."
+    },
+    {
+      "name": "Consult the Library",
+      "type": "Internal Project",
+      "phase": "Discovery",
+      "dueOffset": 5,
+      "description": "Assess the current state and define success criteria."
+    },
+    {
+      "name": "Plan in the Room of Requirement",
+      "type": "Internal Project",
+      "phase": "Design",
+      "dueOffset": 10,
+      "description": "Draft the approach and circulate it for internal review."
+    },
+    {
+      "name": "The Quest",
+      "type": "Internal Project",
+      "phase": "Build",
+      "dueOffset": 18,
+      "description": "Execute the work and track progress to plan."
+    },
+    {
+      "name": "Lift the Enchantment",
+      "type": "Internal Project",
+      "phase": "Go-Live",
+      "dueOffset": 30,
+      "description": "Roll out internally and communicate the change."
+    },
+    {
+      "name": "A Word with Dumbledore",
+      "type": "Individual Project",
+      "phase": "Kick-Off",
+      "dueOffset": 1,
+      "description": "Align with the stakeholder on scope and deadline."
+    },
+    {
+      "name": "Owl from the Ministry",
+      "type": "Individual Project",
+      "phase": "Discovery",
+      "dueOffset": 3,
+      "description": "Capture the requirements for the deliverable."
+    },
+    {
+      "name": "Complete the Task",
+      "type": "Individual Project",
+      "phase": "Build",
+      "dueOffset": 7,
+      "description": "Complete the deliverable."
+    },
+    {
+      "name": "Report to the Headmaster",
+      "type": "Individual Project",
+      "phase": "Go-Live",
+      "dueOffset": 12,
+      "description": "Deliver and review the work with the stakeholder."
+    }
+  ]
 }

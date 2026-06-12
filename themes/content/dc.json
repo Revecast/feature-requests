@@ -261,5 +261,147 @@
     "Beast Boy":         [ { "realm": "teen-titans",    "offsetWeeks": 8,  "numberOfDays": 1, "notes": "Vegan food festival — promotional appearance." } ],
     "Harley Quinn":      [ { "realm": "suicide-squad",  "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Coney Island roller-derby tournament." } ],
     "Deadshot":          [ { "realm": "suicide-squad",  "offsetWeeks": 10, "numberOfDays": 3, "notes": "Court-supervised visit with Zoe." } ]
-  }
+  },
+  "tasks": [
+    {
+      "name": "Summon the Justice League",
+      "type": "External Project",
+      "phase": "Kick-Off",
+      "dueOffset": 2,
+      "description": "Run the kickoff workshop and align on scope, roles, and timeline."
+    },
+    {
+      "name": "Investigate from the Batcave",
+      "type": "External Project",
+      "phase": "Discovery",
+      "dueOffset": 5,
+      "description": "Gather and document requirements with the client stakeholders."
+    },
+    {
+      "name": "Plans on the Watchtower",
+      "type": "External Project",
+      "phase": "Design",
+      "dueOffset": 12,
+      "description": "Produce the solution design and review it with the client."
+    },
+    {
+      "name": "Forge the Plan",
+      "type": "External Project",
+      "phase": "Build",
+      "dueOffset": 20,
+      "description": "Build and configure the solution per the approved design."
+    },
+    {
+      "name": "Test in the Fortress of Solitude",
+      "type": "External Project",
+      "phase": "UAT",
+      "dueOffset": 35,
+      "description": "Run user acceptance testing and triage the feedback."
+    },
+    {
+      "name": "Defend Metropolis",
+      "type": "External Project",
+      "phase": "Go-Live",
+      "dueOffset": 45,
+      "description": "Execute the go-live cutover and confirm production readiness."
+    },
+    {
+      "name": "Raise the Watchtower",
+      "type": "Managed Services",
+      "phase": "Setup",
+      "dueOffset": 0,
+      "description": "Stand up the managed-service environment and runbooks."
+    },
+    {
+      "name": "Sound the Bat-Signal",
+      "type": "Managed Services",
+      "phase": "Kick-Off",
+      "dueOffset": 2,
+      "description": "Hold the service kickoff and confirm SLAs and escalation paths."
+    },
+    {
+      "name": "Wire the Batcomputer",
+      "type": "Managed Services",
+      "phase": "Build",
+      "dueOffset": 14,
+      "description": "Implement monitoring, automation, and support processes."
+    },
+    {
+      "name": "Pass the Cape",
+      "type": "Managed Services",
+      "phase": "Go-Live",
+      "dueOffset": 25,
+      "description": "Transition the service into active management."
+    },
+    {
+      "name": "League Debrief",
+      "type": "Managed Services",
+      "phase": "Hypercare",
+      "dueOffset": 30,
+      "description": "Stabilize the service and review the first support cycle."
+    },
+    {
+      "name": "Assemble the League",
+      "type": "Internal Project",
+      "phase": "Kick-Off",
+      "dueOffset": 2,
+      "description": "Kick off the initiative and confirm goals and owners."
+    },
+    {
+      "name": "Detective Work",
+      "type": "Internal Project",
+      "phase": "Discovery",
+      "dueOffset": 5,
+      "description": "Assess the current state and define success criteria."
+    },
+    {
+      "name": "Strategy in the Hall of Justice",
+      "type": "Internal Project",
+      "phase": "Design",
+      "dueOffset": 10,
+      "description": "Draft the approach and circulate it for internal review."
+    },
+    {
+      "name": "The Patrol",
+      "type": "Internal Project",
+      "phase": "Build",
+      "dueOffset": 18,
+      "description": "Execute the work and track progress to plan."
+    },
+    {
+      "name": "Protect the City",
+      "type": "Internal Project",
+      "phase": "Go-Live",
+      "dueOffset": 30,
+      "description": "Roll out internally and communicate the change."
+    },
+    {
+      "name": "A Case for the Dark Knight",
+      "type": "Individual Project",
+      "phase": "Kick-Off",
+      "dueOffset": 1,
+      "description": "Align with the stakeholder on scope and deadline."
+    },
+    {
+      "name": "Gather the Clues",
+      "type": "Individual Project",
+      "phase": "Discovery",
+      "dueOffset": 3,
+      "description": "Capture the requirements for the deliverable."
+    },
+    {
+      "name": "Close the Case",
+      "type": "Individual Project",
+      "phase": "Build",
+      "dueOffset": 7,
+      "description": "Complete the deliverable."
+    },
+    {
+      "name": "Report to the Commissioner",
+      "type": "Individual Project",
+      "phase": "Go-Live",
+      "dueOffset": 12,
+      "description": "Deliver and review the work with the stakeholder."
+    }
+  ]
 }
