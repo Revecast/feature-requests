@@ -72,11 +72,7 @@
         "Manufacturing",
         "Technology",
         "Consumer Goods",
-        "Other",
-        "Back-End",
-        "Data Cloud",
-        "Marketing Cloud",
-        "Tableau"
+        "Other"
       ]
     },
     {
@@ -150,8 +146,7 @@
         "Pending",
         "Evaluating",
         "Updated",
-        "Not Needed",
-        "Pending - default"
+        "Not Needed"
       ]
     },
     {
@@ -371,8 +366,7 @@
       "expected": [
         "Do Not Create Project Schedules Only",
         "Do Not Create Forecast Schedules Only",
-        "Do Not Create either Schedules",
-        "Delete Related Data"
+        "Do Not Create either Schedules"
       ]
     },
     {
