@@ -35,9 +35,39 @@ Public; no auth required. Apex caches the result in Platform Cache for 1 hour.
 ## Adding a new theme
 
 1. Add an entry to `manifest.json`. Required fields: `key`, `displayName`, `category`, `implemented` (false until step 2 also wires up), `featured`, `body`.
-2. (Optional, for Phase E) Add the content body at `themes/content/<key>.json`. Schema TBD; the wizard's Phase A only consumes the manifest.
+2. (Optional, for Phase E) Add the content body at `themes/content/<key>.json`. The body holds the per-section content the wizard's later steps consume — `roles`, `realms`, `casting`, `milestones`, `daysOff`, and `tasks` (see below).
 3. Open a PR. CI will validate JSON syntax.
 4. Merge → orgs see the new theme on their next manifest refresh.
+
+## Project Tasks (`tasks[]`)
+
+The wizard's **Project Tasks** step seeds a starter library of `Template Project Task` records (the templates the *Create Project Tasks* action on a Project pulls from). Like every other body section, it's content-driven: add a `tasks` array to a theme body and that theme seeds those tasks. A theme with no `tasks` section simply seeds nothing on that step — so you can add task sets to more themes over time, by PR, with no Salesforce release.
+
+Each entry:
+
+```json
+"tasks": [
+  {
+    "name": "Convene the Council of Elrond",
+    "type": "External Project",
+    "phase": "Kick-Off",
+    "dueOffset": 2,
+    "description": "Run the kickoff workshop and align on scope, roles, and timeline."
+  }
+]
+```
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `name` | yes | The template task's name — flavor it in-universe (this is what makes it themed). |
+| `type` | yes | Project Type the template applies to. Must be a value of the **Project_Type** global value set: `External Project`, `Managed Services`, `Internal Project`, `Individual Project`. |
+| `phase` | recommended | A value of the **Project_Phase** global value set: `Setup`, `Kick-Off`, `Discovery`, `Design`, `Build`, `UAT`, `Go-Live`, `Hypercare`. |
+| `dueOffset` | recommended | Whole days after the project's Kick-Off Date that the created task is due (`0` = on kick-off). |
+| `description` | optional | Copied to the created task; keep it generic/instructional — the `name` carries the theme. |
+
+Seeded tasks are created as `Sub_Type = Project Task`, `Status = Active`. Dedupe is by `(type, name)`, so re-running the step (or re-merging) never creates duplicates. Convention: one task per `(type, phase)` milestone, ~20 per theme across the four types — but any count works.
+
+The 7 flagship themes (`lotr`, `marvel`, `dc`, `starwars`, `startrek`, `harrypotter`, `gameofthrones`) ship a full `tasks[]` set as the reference example.
 
 ## Categories
 
