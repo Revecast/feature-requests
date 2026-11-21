@@ -27,13 +27,13 @@
     { "name": "Vortex Bridge Architect",          "canonical": "Integration Technical Architect - USA",   "description": "Designer of the Eye-of-Harmony spans between Salesforce and worlds beyond — middleware and event flows." },
     { "name": "Riftwatcher of Cardiff",           "canonical": "Integration Senior Consultant - India",   "description": "Senior engineer guarding the Cardiff Rift — APIs, queues and inbound storms." },
     { "name": "Riftwatcher Apprentice",           "canonical": "Integration Consultant - India",          "description": "Learns the patterns of the Rift — webhooks, batches, callouts, and the right way to fail." },
-    { "name": "Medical Officer of the TARDIS",    "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds regenerations needed before the patient reaches the customer." },
+    { "name": "Medical Officer of the TARDIS",    "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded build — finds regenerations needed before the patient reaches the customer." },
     { "name": "Voice of the Shadow Proclamation", "canonical": "Marketing Practice Lead",                 "description": "Speaks for the cause across the galaxies — leads marketing strategy with proclamation-level authority." },
     { "name": "Herald of the Ood",                "canonical": "Marketing Senior Consultant",             "description": "Channels the song of campaigns — strategy, segmentation, and the long-form narrative." },
     { "name": "Psychic Paper Designer",           "canonical": "Marketing Consultant",                    "description": "Creates the artefact that says exactly what the audience needs to read — content, creative, daily run." },
     { "name": "Adipose Industries Analyst",       "canonical": "Business Analyst",                        "description": "Translates between mortal customer and Time Lord — captures requirements without losing weight." },
-    { "name": "Senior Sonic Engineer",            "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran of the workshop in Totter's Lane — owns the gnarly Apex, async, and platform internals." },
-    { "name": "Cloister Bell Initiate",           "canonical": "Junior Salesforce Consultant - India",    "description": "Newest aboard the TARDIS — runs the Cloister Bell checks and pairs on configuration." }
+    { "name": "Senior Sonic Engineer",            "canonical": "Salesforce Developer",       "description": "Veteran of the workshop in Totter's Lane — owns the gnarly Apex, async, and platform internals." },
+    { "name": "Cloister Bell Initiate",           "canonical": "Salesforce Consultant - India",    "description": "Newest aboard the TARDIS — runs the Cloister Bell checks and pairs on configuration." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every era starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

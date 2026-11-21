@@ -27,13 +27,13 @@
     { "name": "Bridge-Builder of the Two Rivers", "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the worlds beyond." },
     { "name": "Canoe-Wright of the Great Lakes",  "canonical": "Integration Senior Consultant - India",   "description": "Hews the cedar of APIs, middleware, and event flows under the Bridge-Builder's plan." },
     { "name": "Apprentice Canoe-Wright",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the patient art of error handling." },
-    { "name": "Medicine Tester",                  "canonical": "QA Engineer",                             "description": "Tastes every brew before it reaches the lodge — hunts maladies in the build before the people drink." },
+    { "name": "Medicine Tester",                  "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tastes every brew before it reaches the lodge — hunts maladies in the build before the people drink." },
     { "name": "Drum-Keeper of the Powwow",        "canonical": "Marketing Practice Lead",                 "description": "Lifts the great drum and the eagle feather — leads all marketing craft and message." },
     { "name": "Singer of the Songlines",          "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — composes the songs that gather the people to the fire." },
     { "name": "Dancer of the Round",              "canonical": "Marketing Consultant",                    "description": "Carries the song into the round dance — content, creative, and the daily step." },
     { "name": "Story-Listener of the Lodge",      "canonical": "Business Analyst",                        "description": "Records what the elders need and what the council promises — translates between people and craft." },
-    { "name": "Master Pipe-Carver of the Quarry", "canonical": "Salesforce Senior Developer - USA",       "description": "Senior carver of platform stone — leads the deep build and mentors the apprentices." },
-    { "name": "Apprentice of the Long Grass",     "canonical": "Junior Salesforce Consultant - India",    "description": "Learns the trail under the Scout — first configurations, first reports, first listening." }
+    { "name": "Master Pipe-Carver of the Quarry", "canonical": "Salesforce Developer",       "description": "Senior carver of platform stone — leads the deep build and mentors the apprentices." },
+    { "name": "Apprentice of the Long Grass",     "canonical": "Salesforce Consultant - India",    "description": "Learns the trail under the Scout — first configurations, first reports, first listening." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Four realms span four distinct culture areas — Plains, Pacific Northwest, Southwest (Pueblo/Navajo), and Eastern Woodlands — each treated with respect for the distinct nations within it.",
@@ -44,7 +44,7 @@
       "projectName": "Great Plains — Council of the Sacred Hoop",
       "shortName": "Plains CSH",
       "subAccountName": "Great Plains Spirits Council",
-      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-GREATPLAINS",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-GREATPLAI",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -76,7 +76,7 @@
       "projectName": "Pacific Northwest — Cedar Longhouse Platform",
       "shortName": "PNW CLP",
       "subAccountName": "Pacific Northwest Spirits Longhouse",
-      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-PACIFICNORTHWEST",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-PACIFICNO",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -140,7 +140,7 @@
       "projectName": "Eastern Woodlands — Longhouse Confederacy CRM",
       "shortName": "EW Confederacy",
       "subAccountName": "Eastern Woodlands Confederacy",
-      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-EASTERNWOODLANDS",
+      "subAccountNumber": "PSA-TEST-NATIVEAMERICANSPIRITS-EASTERNWO",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

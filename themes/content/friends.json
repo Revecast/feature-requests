@@ -27,13 +27,13 @@
     { "name": "Coffee Shop Architect",            "canonical": "Integration Technical Architect - USA",   "description": "Designs the espresso lines that connect every system — Central Perk's master plumber." },
     { "name": "Espresso Engineer",                "canonical": "Integration Senior Consultant - India",   "description": "Pulls the integration shots — APIs, middleware, events, all to spec." },
     { "name": "Barista in Training",              "canonical": "Integration Consultant - India",          "description": "Learning the integration craft — webhooks, batch jobs, and the foam art of error handling." },
-    { "name": "Quality Inspector at Mattress King","canonical": "QA Engineer",                            "description": "Tests every spring before a customer sleeps on it — finds the lumps before go-live." },
+    { "name": "Quality Inspector at Mattress King","canonical": "Quality Assurance (QA) Engineer",                            "description": "Tests every spring before a customer sleeps on it — finds the lumps before go-live." },
     { "name": "Head of Marketing at Ralph Lauren","canonical": "Marketing Practice Lead",                 "description": "Sets the brand voice — runs the marketing floor with poise and a tasteful scarf." },
     { "name": "Senior Stylist at Bloomingdale's", "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — pulls the right looks together season after season." },
     { "name": "Vogue Assistant",                  "canonical": "Marketing Consultant",                    "description": "Carries the campaigns into the field — content, creative, and the daily grind on Sixth Avenue." },
     { "name": "Data Processor at Chandler's Office","canonical": "Business Analyst",                     "description": "WENUS reports and weekly estimated net usage statistics — translates the business into the build." },
-    { "name": "Senior Sandwich Architect",        "canonical": "Salesforce Senior Developer - USA",       "description": "Oldest hand at the deli counter — owns the gnarliest Apex and the trickiest LWC." },
-    { "name": "Smelly Cat Intern",                "canonical": "Junior Salesforce Consultant - India",    "description": "Brand new on the scene — learning the chords of admin and config one off-key strum at a time." }
+    { "name": "Senior Sandwich Architect",        "canonical": "Salesforce Developer",       "description": "Oldest hand at the deli counter — owns the gnarliest Apex and the trickiest LWC." },
+    { "name": "Smelly Cat Intern",                "canonical": "Salesforce Consultant - India",    "description": "Brand new on the scene — learning the chords of admin and config one off-key strum at a time." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

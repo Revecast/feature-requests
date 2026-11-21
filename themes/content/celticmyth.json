@@ -27,13 +27,13 @@
     { "name": "Master Bridge-Builder of the Boyne","canonical": "Integration Technical Architect - USA","description": "Architect of the great spans across rivers — designs all integrations between Salesforce and the otherworld." },
     { "name": "Senior Causeway Engineer",         "canonical": "Integration Senior Consultant - India","description": "Lays the standing stones of API, middleware, and event flows under the Master Bridge-Builder's plan." },
     { "name": "Apprentice Causeway Engineer",     "canonical": "Integration Consultant - India",     "description": "Learns the craft of crossings — webhooks, batch, callouts, and the patient patterns of error handling." },
-    { "name": "Healer of the Tuath",              "canonical": "QA Engineer",                         "description": "Tends the wounded and weary like Dian Cécht at the Well of Sláine — finds the maladies before the king sees them." },
+    { "name": "Healer of the Tuath",              "canonical": "Quality Assurance (QA) Engineer",                         "description": "Tends the wounded and weary like Dian Cécht at the Well of Sláine — finds the maladies before the king sees them." },
     { "name": "High Filidh of Renown",            "canonical": "Marketing Practice Lead",             "description": "Master poet of the court — leads all marketing craft and lifts the praise-songs of the tribe." },
     { "name": "Senior Filidh",                    "canonical": "Marketing Senior Consultant",         "description": "Strategist of campaigns — composes the great satires and eulogies that shape opinion." },
     { "name": "Court Filidh",                     "canonical": "Marketing Consultant",                "description": "Carries the campaign through the rath and the dún — content, creative, and the daily verse." },
     { "name": "Council Ollamh of Tara",           "canonical": "Business Analyst",                    "description": "Records what is needed and what is sworn — translates between the chieftains and the druidic craft of design." },
-    { "name": "Master Smith of Falias",           "canonical": "Salesforce Senior Developer - USA",   "description": "Senior forger of the four treasures — leads the most complex Apex and platform builds." },
-    { "name": "Novice Bard of Eire",              "canonical": "Junior Salesforce Consultant - India","description": "First-year apprentice at the bardic school — learning the modes and the cadence of the platform." }
+    { "name": "Master Smith of Falias",           "canonical": "Salesforce Developer",   "description": "Senior forger of the four treasures — leads the most complex Apex and platform builds." },
+    { "name": "Novice Bard of Eire",              "canonical": "Salesforce Consultant - India","description": "First-year apprentice at the bardic school — learning the modes and the cadence of the platform." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -146,7 +146,7 @@
       "projectName": "Fenian Cycle & Otherworld — Salmon of Knowledge Analytics",
       "shortName": "Fianna SKA",
       "subAccountName": "Fianna of Almu & the Aos Sí",
-      "subAccountNumber": "PSA-TEST-CELTICMYTH-FENIANCYCLEANDOTHERWORLD",
+      "subAccountNumber": "PSA-TEST-CELTICMYTH-FENIANCYCLEANDOTHERW",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

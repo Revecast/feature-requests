@@ -27,13 +27,13 @@
     { "name": "Setubandha Architect (Bridge of the West)","canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — as Nala built the bridge to Lanka." },
     { "name": "Senior Setu Builder (Eastern Workshop)",  "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware and event flows under the Setubandha Architect's plan." },
     { "name": "Setu Apprentice",                         "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of resilient handling." },
-    { "name": "Vaidya of the Houses of Healing",         "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the rajya." },
+    { "name": "Vaidya of the Houses of Healing",         "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the rajya." },
     { "name": "Royal Herald (Marketing Acharya)",        "canonical": "Marketing Practice Lead",                 "description": "Sounds the conch and lifts the banner for the brand — leads all marketing craft." },
     { "name": "Senior Bard of the Court",                "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert." },
     { "name": "Court Bard",                              "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative and the daily yatra." },
     { "name": "Sutradhara (Council Scribe)",             "canonical": "Business Analyst",                        "description": "Holder of the thread — translates between mortal customer and the celestial craft of design." },
-    { "name": "Master Smith of Devalok",                 "canonical": "Salesforce Senior Developer - USA",       "description": "Most senior of forgers across the western seas — entrusted with the heaviest celestial weapons." },
-    { "name": "Brahmachari Apprentice",                  "canonical": "Junior Salesforce Consultant - India",    "description": "First-stage shishya — learns the asanas of Salesforce craft under careful supervision." }
+    { "name": "Master Smith of Devalok",                 "canonical": "Salesforce Developer",       "description": "Most senior of forgers across the western seas — entrusted with the heaviest celestial weapons." },
+    { "name": "Brahmachari Apprentice",                  "canonical": "Salesforce Consultant - India",    "description": "First-stage shishya — learns the asanas of Salesforce craft under careful supervision." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Names treated with respect — Hindu mythology is sacred to a billion-plus living people.",

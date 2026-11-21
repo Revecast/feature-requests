@@ -27,13 +27,13 @@
     { "name": "Bridge-Master of the Eunhasu",       "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans across the Milky Way — Salesforce to the realms beyond." },
     { "name": "Bridge-builder of the Eunhasu",      "canonical": "Integration Senior Consultant - India", "description": "Lays the stones of API, middleware and event flows under the Bridge-Master's plan." },
     { "name": "Apprentice of the Magpie Bridge",    "canonical": "Integration Consultant - India",        "description": "Learns the craft of webhooks, batch, callouts and the patterns of error handling on the Ojakgyo." },
-    { "name": "Eumyangsa Quality Inspector",        "canonical": "QA Engineer",                           "description": "Tests the harmony of yin and yang in every release — finds the maladies before they reach the throne." },
+    { "name": "Eumyangsa Quality Inspector",        "canonical": "Quality Assurance (QA) Engineer",                           "description": "Tests the harmony of yin and yang in every release — finds the maladies before they reach the throne." },
     { "name": "Pungmul Herald",                     "canonical": "Marketing Practice Lead",               "description": "Lifts the pungmul drum and the trumpet for product and message — leads all marketing craft." },
     { "name": "Pansori Storyteller",                "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the pansori chant to gather and convert." },
     { "name": "Janggu Drummer",                     "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative and the daily rhythm." },
     { "name": "Council Scribe of Seokguram",        "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between mortal customer and the carved grotto of design." },
-    { "name": "Senior Master Smith of Pohang",      "canonical": "Salesforce Senior Developer - USA",     "description": "Master of the great Pohang forges — owns the most critical Apex foundations and mentors the smiths of Gaya." },
-    { "name": "Sodang Apprentice",                  "canonical": "Junior Salesforce Consultant - India",  "description": "Sodang village-school newcomer — learns flows, layouts and reports under the Hwarang's wing." }
+    { "name": "Senior Master Smith of Pohang",      "canonical": "Salesforce Developer",     "description": "Master of the great Pohang forges — owns the most critical Apex foundations and mentors the smiths of Gaya." },
+    { "name": "Sodang Apprentice",                  "canonical": "Salesforce Consultant - India",  "description": "Sodang village-school newcomer — learns flows, layouts and reports under the Hwarang's wing." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

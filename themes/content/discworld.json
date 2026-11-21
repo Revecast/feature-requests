@@ -27,13 +27,13 @@
     { "name": "Postmaster General",                 "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — Neither rain nor snow nor gloom of night." },
     { "name": "Clacks Tower Engineer",              "canonical": "Integration Senior Consultant - India", "description": "Lays the stones of API, middleware, and event flows along the Grand Trunk." },
     { "name": "Apprentice Clacks Operator",         "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — semaphore towers, batch jobs, callouts, and the Smoking GNU patterns of error handling." },
-    { "name": "Igor of Quality",                    "canonical": "QA Engineer",                           "description": "Tendth the wounded and the weary — findth the maladieth in the build before they reach the Patrithian. Yeth, marthter." },
+    { "name": "Igor of Quality",                    "canonical": "Quality Assurance (QA) Engineer",                           "description": "Tendth the wounded and the weary — findth the maladieth in the build before they reach the Patrithian. Yeth, marthter." },
     { "name": "Town Crier",                         "canonical": "Marketing Practice Lead",               "description": "Lifts the bell and the trumpet for product and message — leads all marketing craft. Oyez! Oyez!" },
     { "name": "Editor of the Ankh-Morpork Times",   "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — The Truth Shall Make Ye Fret. Sounds the call to gather and convert." },
     { "name": "Reporter of the Times",              "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative, and the daily edition." },
     { "name": "Scribe of Lord Vetinari",            "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between the Patrician's office and the wizard's craft of design." },
-    { "name": "Senior Wizard of UU",                "canonical": "Salesforce Senior Developer - USA",     "description": "Master of advanced Apex thaumaturgy — works at the High Energy Magic Building on the deepest spells." },
-    { "name": "Lance-Constable of Code",            "canonical": "Junior Salesforce Consultant - India",  "description": "New recruit to the Watch — learns the badge, the helmet, and how not to confuse SOQL with SOSL on day one." }
+    { "name": "Senior Wizard of UU",                "canonical": "Salesforce Developer",     "description": "Master of advanced Apex thaumaturgy — works at the High Energy Magic Building on the deepest spells." },
+    { "name": "Lance-Constable of Code",            "canonical": "Salesforce Consultant - India",  "description": "New recruit to the Watch — learns the badge, the helmet, and how not to confuse SOQL with SOSL on day one." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

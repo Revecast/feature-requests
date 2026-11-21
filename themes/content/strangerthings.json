@@ -5,83 +5,47 @@
   "category": "Sci-Fi / Fantasy",
   "emailDomain": "hawkins-indiana.test",
   "tagline": "Compact starter dataset — fast to seed, easy to navigate",
-  "bestFor": [
-    "First-time wizard run",
-    "Brand-recognition demos",
-    "Quick reset / re-seed cycles",
-    "Billing variety on a smaller footprint"
-  ],
-  "capabilities": {
-    "forecasting": true,
-    "pipeline": true,
-    "billingVariety": true,
-    "timerDemos": true,
-    "setupWalkthroughs": true,
-    "brandRecognition": true
-  },
-  "account": {
-    "name": "Hawkins, Indiana (Test Data)",
-    "accountNumber": "PSA-TEST-STRANGERTHINGS"
-  },
-  "mailingAddress": {
-    "street": "4819 Mirkwood Drive",
-    "city": "Hawkins",
-    "state": "IN",
-    "postalCode": "47331",
-    "country": "USA"
-  },
-
+  "bestFor": ["First-time wizard run", "Brand-recognition demos", "Quick reset / re-seed cycles", "Billing variety on a smaller footprint"],
+  "capabilities": { "forecasting": true, "pipeline": true, "billingVariety": true, "timerDemos": true, "setupWalkthroughs": true, "brandRecognition": true },
+  "account": { "name": "Hawkins, Indiana (Test Data)", "accountNumber": "PSA-TEST-STRANGERTHINGS" },
+  "mailingAddress": { "street": "4819 Mirkwood Drive", "city": "Hawkins", "state": "IN", "postalCode": "47331", "country": "USA" },
   "serviceLines": [
-    { "name": "ST: Strategy & Advisory",   "description": "Stewardship-tier strategic engagements. Discovery, roadmaps, executive advisory." },
-    { "name": "ST: Implementation",        "description": "Build + delivery teams. Greenfield platforms, integrations, migrations." },
-    { "name": "ST: Managed Services",      "description": "Long-running operational engagements. Retainer-style ongoing support." },
-    { "name": "ST: Data & Analytics",      "description": "Insight engagements. BI, dashboards, model validation." },
-    { "name": "ST: Knowledge & Training",  "description": "Enablement engagements. Training delivery, knowledge transfer, documentation." }
+    { "name": "ST: Strategy & Advisory", "description": "Stewardship-tier strategic engagements. Discovery, roadmaps, executive advisory." },
+    { "name": "ST: Implementation", "description": "Build + delivery teams. Greenfield platforms, integrations, migrations." },
+    { "name": "ST: Managed Services", "description": "Long-running operational engagements. Retainer-style ongoing support." },
+    { "name": "ST: Data & Analytics", "description": "Insight engagements. BI, dashboards, model validation." },
+    { "name": "ST: Knowledge & Training", "description": "Enablement engagements. Training delivery, knowledge transfer, documentation." }
   ],
-
-  "realmServiceLineMap": {
-    "the-party":                "ST: Strategy & Advisory",
-    "byers-wheeler-family":     "ST: Implementation",
-    "hawkins-pd-and-government":"ST: Managed Services",
-    "upside-down-and-villains": "ST: Data & Analytics",
-    "starcourt-mall":           "ST: Managed Services",
-    "scoops-ahoy":              "ST: Implementation",
-    "hawkins-lab-archives":     "ST: Knowledge & Training"
-  },
-
+  "realmServiceLineMap": { "the-party": "ST: Strategy & Advisory", "byers-wheeler-family": "ST: Implementation", "hawkins-pd-and-government": "ST: Managed Services", "upside-down-and-villains": "ST: Data & Analytics", "starcourt-mall": "ST: Managed Services", "scoops-ahoy": "ST: Implementation", "hawkins-lab-archives": "ST: Knowledge & Training" },
   "pipelineAccounts": [
-    { "key": "hawkinslab",   "accountNumber": "PSA-PIPELINE-ST-HAWKINSLAB",   "name": "Hawkins National Laboratory" },
-    { "key": "starcourt",    "accountNumber": "PSA-PIPELINE-ST-STARCOURT",    "name": "Starcourt Property Management" },
-    { "key": "familyvideo",  "accountNumber": "PSA-PIPELINE-ST-FAMILYVIDEO",  "name": "Family Video Corporate" },
-    { "key": "powerlight",   "accountNumber": "PSA-PIPELINE-ST-POWERLIGHT",   "name": "Hawkins Power & Light" },
-    { "key": "surferboy",    "accountNumber": "PSA-PIPELINE-ST-SURFERBOY",    "name": "Surfer Boy Pizza Franchise" }
+    { "key": "hawkinslab", "accountNumber": "PSA-PIPELINE-ST-HAWKINSLAB", "name": "Hawkins National Laboratory" },
+    { "key": "starcourt", "accountNumber": "PSA-PIPELINE-ST-STARCOURT", "name": "Starcourt Property Management" },
+    { "key": "familyvideo", "accountNumber": "PSA-PIPELINE-ST-FAMILYVIDEO", "name": "Family Video Corporate" },
+    { "key": "powerlight", "accountNumber": "PSA-PIPELINE-ST-POWERLIGHT", "name": "Hawkins Power & Light" },
+    { "key": "surferboy", "accountNumber": "PSA-PIPELINE-ST-SURFERBOY", "name": "Surfer Boy Pizza Franchise" }
   ],
-
   "pipelineOpportunities": [
-    { "extIdSlug": "hawkinslab-research-platform",       "accountKey": "hawkinslab",   "name": "Hawkins Lab Research Records Platform",   "stage": "Negotiation/Review",   "amount": 2200000, "daysFromToday": 30,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "ST: Data & Analytics",     "startOffsetDays": 21 },
-    { "extIdSlug": "starcourt-tenant-portal",            "accountKey": "starcourt",    "name": "Starcourt Tenant Portal Rollout",         "stage": "Proposal/Price Quote", "amount": 1600000, "daysFromToday": 45,  "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "ST: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "familyvideo-loyalty-modernization",  "accountKey": "familyvideo",  "name": "Family Video Loyalty Modernization",      "stage": "Negotiation/Review",   "amount": 1350000, "daysFromToday": 60,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "ST: Strategy & Advisory",  "startOffsetDays": 21 },
-    { "extIdSlug": "powerlight-grid-records",            "accountKey": "powerlight",   "name": "Hawkins Power Grid Records Migration",    "stage": "Value Proposition",    "amount": 980000,  "daysFromToday": 90,  "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "ST: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "starcourt-security-mesh",            "accountKey": "starcourt",    "name": "Starcourt Security Mesh Implementation",  "stage": "Value Proposition",    "amount": 720000,  "daysFromToday": 120, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "ST: Managed Services",     "startOffsetDays": 21 },
-    { "extIdSlug": "hawkinslab-knowledge-transfer",      "accountKey": "hawkinslab",   "name": "Hawkins Lab Knowledge Transfer Program",  "stage": "Proposal/Price Quote", "amount": 580000,  "daysFromToday": 150, "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "ST: Knowledge & Training", "startOffsetDays": 21 },
-    { "extIdSlug": "familyvideo-pos-replacement",        "accountKey": "familyvideo",  "name": "Family Video POS Replacement",            "stage": "Value Proposition",    "amount": 480000,  "daysFromToday": 180, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "ST: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "surferboy-franchise-portal",         "accountKey": "surferboy",    "name": "Surfer Boy Franchise Portal Discovery",   "stage": "Value Proposition",    "amount": 420000,  "daysFromToday": 210, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "ST: Strategy & Advisory",  "startOffsetDays": 21 },
-    { "extIdSlug": "powerlight-outage-analytics",        "accountKey": "powerlight",   "name": "Hawkins Power Outage Analytics",          "stage": "Qualification",        "amount": 340000,  "daysFromToday": 240, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 17,                                    "serviceLineKey": "ST: Data & Analytics",     "startOffsetDays": 21 },
-    { "extIdSlug": "surferboy-mobile-ordering",          "accountKey": "surferboy",    "name": "Surfer Boy Mobile Ordering Engagement",   "stage": "Needs Analysis",       "amount": 280000,  "daysFromToday": 270, "forecastCategory": "Pipeline",  "probability": 60, "durationWeeks": 17,                                    "serviceLineKey": "ST: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "hawkinslab-archive-digitization",    "accountKey": "hawkinslab",   "name": "Hawkins Lab Archive Digitization",        "stage": "Qualification",        "amount": 260000,  "daysFromToday": 300, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 16,                                    "serviceLineKey": "ST: Knowledge & Training", "startOffsetDays": 21 }
+    { "extIdSlug": "hawkinslab-research-platform", "accountKey": "hawkinslab", "name": "Hawkins Lab Research Records Platform", "stage": "Negotiation/Review", "amount": 2200000, "daysFromToday": 30, "forecastCategory": "Commit", "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "ST: Data & Analytics", "startOffsetDays": 21 },
+    { "extIdSlug": "starcourt-tenant-portal", "accountKey": "starcourt", "name": "Starcourt Tenant Portal Rollout", "stage": "Proposal/Price Quote", "amount": 1600000, "daysFromToday": 45, "forecastCategory": "Commit", "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "ST: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "familyvideo-loyalty-modernization", "accountKey": "familyvideo", "name": "Family Video Loyalty Modernization", "stage": "Negotiation/Review", "amount": 1350000, "daysFromToday": 60, "forecastCategory": "Commit", "probability": 90, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "ST: Strategy & Advisory", "startOffsetDays": 21 },
+    { "extIdSlug": "powerlight-grid-records", "accountKey": "powerlight", "name": "Hawkins Power Grid Records Migration", "stage": "Value Proposition", "amount": 980000, "daysFromToday": 90, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "ST: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "starcourt-security-mesh", "accountKey": "starcourt", "name": "Starcourt Security Mesh Implementation", "stage": "Value Proposition", "amount": 720000, "daysFromToday": 120, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "ST: Managed Services", "startOffsetDays": 21 },
+    { "extIdSlug": "hawkinslab-knowledge-transfer", "accountKey": "hawkinslab", "name": "Hawkins Lab Knowledge Transfer Program", "stage": "Proposal/Price Quote", "amount": 580000, "daysFromToday": 150, "forecastCategory": "Commit", "probability": 85, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "ST: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "familyvideo-pos-replacement", "accountKey": "familyvideo", "name": "Family Video POS Replacement", "stage": "Value Proposition", "amount": 480000, "daysFromToday": 180, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "ST: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "surferboy-franchise-portal", "accountKey": "surferboy", "name": "Surfer Boy Franchise Portal Discovery", "stage": "Value Proposition", "amount": 420000, "daysFromToday": 210, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "ST: Strategy & Advisory", "startOffsetDays": 21 },
+    { "extIdSlug": "powerlight-outage-analytics", "accountKey": "powerlight", "name": "Hawkins Power Outage Analytics", "stage": "Qualification", "amount": 340000, "daysFromToday": 240, "forecastCategory": "Pipeline", "probability": 50, "durationWeeks": 17, "serviceLineKey": "ST: Data & Analytics", "startOffsetDays": 21 },
+    { "extIdSlug": "surferboy-mobile-ordering", "accountKey": "surferboy", "name": "Surfer Boy Mobile Ordering Engagement", "stage": "Needs Analysis", "amount": 280000, "daysFromToday": 270, "forecastCategory": "Pipeline", "probability": 60, "durationWeeks": 17, "serviceLineKey": "ST: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "hawkinslab-archive-digitization", "accountKey": "hawkinslab", "name": "Hawkins Lab Archive Digitization", "stage": "Qualification", "amount": 260000, "daysFromToday": 300, "forecastCategory": "Pipeline", "probability": 50, "durationWeeks": 16, "serviceLineKey": "ST: Knowledge & Training", "startOffsetDays": 21 }
   ],
-
   "roles": [
-    { "name": "Dungeon Master (SA)",                    "canonical": "Solution Architect",                   "description": "Sets the campaign — designs the over-arching solution and keeps the party on the rails." },
-    { "name": "Party Leader (PM)",                      "canonical": "Project Manager",                      "description": "Marshals the party of delivery, holds the timeline, and answers to the Mayor's office." },
-    { "name": "Senior Hawkins Lab Researcher (SCC)",    "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft — knows where the bodies are buried." },
-    { "name": "Hawkins Lab Researcher (CC)",            "canonical": "Salesforce Consultant - India",        "description": "Carries discovery and configuration across the realm under the senior researcher's eye." },
-    { "name": "Hawkins High Reporter (BA)",             "canonical": "Business Analyst",                     "description": "Records what is needed and what is promised — translates between mortal customer and the engineering basement." },
-    { "name": "Senior Family Video Promoter (SMCC)",    "canonical": "Marketing Senior Consultant - India",  "description": "Strategist of campaigns — sounds the call to gather and convert the rental crowd." }
+    { "name": "Dungeon Master (SA)", "canonical": "Solution Architect", "description": "Sets the campaign — designs the over-arching solution and keeps the party on the rails." },
+    { "name": "Party Leader (PM)", "canonical": "Project Manager", "description": "Marshals the party of delivery, holds the timeline, and answers to the Mayor's office." },
+    { "name": "Senior Hawkins Lab Researcher (SCC)", "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft — knows where the bodies are buried." },
+    { "name": "Hawkins Lab Researcher (CC)", "canonical": "Salesforce Consultant - India", "description": "Carries discovery and configuration across the realm under the senior researcher's eye." },
+    { "name": "Hawkins High Reporter (BA)", "canonical": "Business Analyst", "description": "Records what is needed and what is promised — translates between mortal customer and the engineering basement." },
+    { "name": "Senior Family Video Promoter (SMCC)", "canonical": "Marketing Senior Consultant - India", "description": "Strategist of campaigns — sounds the call to gather and convert the rental crowd." }
   ],
-
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
-
   "realms": [
     {
       "key": "the-party",
@@ -100,43 +64,73 @@
         "allocationProfile": {
           "name": "Party Ramp",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 40 },
-            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
+            { "order": 1, "startPct": 0, "endPct": 30, "revenuePct": 40 },
+            { "order": 2, "startPct": 30, "endPct": 70, "revenuePct": 40 },
             { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
           ]
         },
         "products": [
-          { "themedRole": "Party Leader (PM)",                   "quantity": 600,  "unitPrice": 200 },
-          { "themedRole": "Dungeon Master (SA)",                 "quantity": 200,  "unitPrice": 300 },
-          { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 900,  "unitPrice": 175 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 1200, "unitPrice": 100 },
-          { "themedRole": "Hawkins High Reporter (BA)",          "quantity": 500,  "unitPrice": 150 }
+          { "themedRole": "Party Leader (PM)", "quantity": 600, "unitPrice": 200 },
+          { "themedRole": "Dungeon Master (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 900, "unitPrice": 175 },
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 1200, "unitPrice": 100 },
+          { "themedRole": "Hawkins High Reporter (BA)", "quantity": 500, "unitPrice": 150 }
         ]
       },
       "workstreams": [
-        { "name": "Basement HQ Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Walkie Recon", "isDefault": false, "billable": true, "children": [
-          { "name": "Mirkwood Stakeout", "billable": true },
-          { "name": "Channel 6 Sweep", "billable": true },
-          { "name": "Quest Briefing", "billable": true }
-        ]},
-        { "name": "Build the Hellfire Toolkit", "isDefault": false, "billable": true, "children": [
-          { "name": "Character Sheet Forging", "billable": true },
-          { "name": "D20 Calibration", "billable": true },
-          { "name": "Module Assembly", "billable": true }
-        ]},
-        { "name": "Migrate the Campaign Notes", "isDefault": false, "billable": true, "children": [
-          { "name": "Notebook Inventory", "billable": true },
-          { "name": "Lore Translation", "billable": true }
-        ]},
-        { "name": "Testing the Demogorgon", "isDefault": false, "billable": true, "children": [
-          { "name": "Boss Battle Drill (UAT)", "billable": true },
-          { "name": "Initiative Stress Test", "billable": true }
-        ]},
-        { "name": "Training the New Recruits", "isDefault": false, "billable": true, "children": [
-          { "name": "Newbie Onboarding", "billable": true },
-          { "name": "DM's Workshop", "billable": true }
-        ]}
+        {
+          "name": "Basement HQ Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Walkie Recon",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Mirkwood Stakeout", "billable": true },
+            { "name": "Channel 6 Sweep", "billable": true },
+            { "name": "Quest Briefing", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Hellfire Toolkit",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Character Sheet Forging", "billable": true },
+            { "name": "D20 Calibration", "billable": true },
+            { "name": "Module Assembly", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Campaign Notes",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Notebook Inventory", "billable": true },
+            { "name": "Lore Translation", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Demogorgon",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Boss Battle Drill (UAT)", "billable": true },
+            { "name": "Initiative Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the New Recruits",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Newbie Onboarding", "billable": true },
+            { "name": "DM's Workshop", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -144,7 +138,7 @@
       "projectName": "Byers-Wheeler — Family Care Records Rollout",
       "shortName": "BW Family",
       "subAccountName": "Byers & Wheeler Households",
-      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-BYERS-WHEELER-FAMILY",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-BYERS-WF",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "projectType": "External Project",
@@ -156,42 +150,97 @@
         "allocationProfile": {
           "name": "BW Family Milestone Ramp",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 35,  "revenuePct": 30 },
-            { "order": 2, "startPct": 35, "endPct": 75,  "revenuePct": 50 },
+            { "order": 1, "startPct": 0, "endPct": 35, "revenuePct": 30 },
+            { "order": 2, "startPct": 35, "endPct": 75, "revenuePct": 50 },
             { "order": 3, "startPct": 75, "endPct": 100, "revenuePct": 20 }
           ]
         },
         "products": [
-          { "themedRole": "Party Leader (PM)",                   "quantity": 500,  "unitPrice": 200 },
-          { "themedRole": "Hawkins High Reporter (BA)",          "quantity": 700,  "unitPrice": 150 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 1000, "unitPrice": 100 },
-          { "themedRole": "Senior Family Video Promoter (SMCC)", "quantity": 300,  "unitPrice": 180 }
+          { "themedRole": "Party Leader (PM)", "quantity": 500, "unitPrice": 200 },
+          { "themedRole": "Hawkins High Reporter (BA)", "quantity": 700, "unitPrice": 150 },
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 1000, "unitPrice": 100 },
+          { "themedRole": "Senior Family Video Promoter (SMCC)", "quantity": 300, "unitPrice": 180 }
         ]
       },
       "workstreams": [
-        { "name": "Maple Street Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Kitchen Table", "isDefault": false, "billable": true, "children": [
-          { "name": "Living Room Interview", "billable": true },
-          { "name": "School Permission Slip Audit", "billable": true },
-          { "name": "Dinner Table Strategy", "billable": true }
-        ]},
-        { "name": "Build the Christmas Lights", "isDefault": false, "billable": true, "children": [
-          { "name": "Wall Stringing", "billable": true },
-          { "name": "Alphabet Calibration", "billable": true },
-          { "name": "Power Wiring", "billable": true }
-        ]},
-        { "name": "Migrate the Photo Albums", "isDefault": false, "billable": true, "children": [
-          { "name": "Polaroid Catalog", "billable": true },
-          { "name": "Yearbook Digitization", "billable": true }
-        ]},
-        { "name": "Testing at the New House", "isDefault": false, "billable": true, "children": [
-          { "name": "Move-in Day Drill", "billable": true },
-          { "name": "Long-Distance Call Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Babysitters", "isDefault": false, "billable": true, "children": [
-          { "name": "Holly's Bedtime Routine", "billable": true },
-          { "name": "Karen's Household Manual", "billable": true }
-        ]}
+        {
+          "name": "Maple Street Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Kitchen Table",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Living Room Interview", "billable": true },
+            { "name": "School Permission Slip Audit", "billable": true },
+            { "name": "Dinner Table Strategy", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Christmas Lights",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Wall Stringing", "billable": true },
+            { "name": "Alphabet Calibration", "billable": true },
+            { "name": "Power Wiring", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Photo Albums",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Polaroid Catalog", "billable": true },
+            { "name": "Yearbook Digitization", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing at the New House",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Move-in Day Drill", "billable": true },
+            { "name": "Long-Distance Call Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Babysitters",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Holly's Bedtime Routine", "billable": true },
+            { "name": "Karen's Household Manual", "billable": true }
+          ]
+        }
+      ],
+      "milestones": [
+        { "name": "Family Records Discovery", "offsetWeeks": 4, "amount": 90000, "status": "Completed" },
+        { "name": "Castle Byers Data Migrated", "offsetWeeks": 10, "amount": 130000, "status": "Completed" },
+        { "name": "Care Portal Tested", "offsetWeeks": 16, "amount": 110000, "status": "In Progress" },
+        { "name": "Wheeler Basement Training", "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
+        { "name": "Go-Live in Hawkins", "offsetWeeks": 26, "amount": 130000, "status": "Not Started" }
+      ],
+      "invoices": [
+        {
+          "issuedOffsetWeeks": 5,
+          "status": "Paid",
+          "number": "INV-BYERSWHEELER-001",
+          "lines": [
+            { "lineType": "Milestone", "amount": 90000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 10,
+          "status": "Invoiced",
+          "number": "INV-BYERSWHEELER-002",
+          "lines": [
+            { "lineType": "Milestone", "amount": 130000 }
+          ]
+        }
       ]
     },
     {
@@ -199,7 +248,7 @@
       "projectName": "Hawkins PD & Gov — Case Files Modernization",
       "shortName": "Hawkins PD CFM",
       "subAccountName": "Hawkins Police Department & US DoE",
-      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-HAWKINS-PD-AND-GOVERNMENT",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-HAWKINS-PAG",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "projectType": "Managed Services",
@@ -215,44 +264,74 @@
           ]
         },
         "products": [
-          { "themedRole": "Dungeon Master (SA)",                 "quantity": 300, "unitPrice": 300 },
+          { "themedRole": "Dungeon Master (SA)", "quantity": 300, "unitPrice": 300 },
           { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 600, "unitPrice": 175 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 800, "unitPrice": 100 },
-          { "themedRole": "Hawkins High Reporter (BA)",          "quantity": 400, "unitPrice": 150 }
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 800, "unitPrice": 100 },
+          { "themedRole": "Hawkins High Reporter (BA)", "quantity": 400, "unitPrice": 150 }
         ]
       },
       "forecastLines": [
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 70000 },
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 70000 },
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 70000 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0, "amount": 70000 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4, "amount": 70000 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9, "amount": 70000 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 70000 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 18, "amount": 70000 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 70000 }
       ],
       "workstreams": [
-        { "name": "Station House Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Stakeout", "isDefault": false, "billable": true, "children": [
-          { "name": "Quarry Site Survey", "billable": true },
-          { "name": "Witness Statement Intake", "billable": true },
-          { "name": "Chief's Briefing", "billable": true }
-        ]},
-        { "name": "Build the Case Board", "isDefault": false, "billable": true, "children": [
-          { "name": "Pin & Twine Mapping", "billable": true },
-          { "name": "Photo Evidence Tagging", "billable": true },
-          { "name": "Cold Case Reopening", "billable": true }
-        ]},
-        { "name": "Migrate the Cold Case Files", "isDefault": false, "billable": true, "children": [
-          { "name": "Filing Cabinet Audit", "billable": true },
-          { "name": "Microfiche Conversion", "billable": true }
-        ]},
-        { "name": "Testing the Lab Lockdown", "isDefault": false, "billable": true, "children": [
-          { "name": "Perimeter Drill", "billable": true },
-          { "name": "Containment Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Deputies", "isDefault": false, "billable": true, "children": [
-          { "name": "Rookie Onboarding", "billable": true },
-          { "name": "Hopper's Field Manual", "billable": true }
-        ]}
+        {
+          "name": "Station House Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Stakeout",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Quarry Site Survey", "billable": true },
+            { "name": "Witness Statement Intake", "billable": true },
+            { "name": "Chief's Briefing", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Case Board",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Pin & Twine Mapping", "billable": true },
+            { "name": "Photo Evidence Tagging", "billable": true },
+            { "name": "Cold Case Reopening", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Cold Case Files",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Filing Cabinet Audit", "billable": true },
+            { "name": "Microfiche Conversion", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Lab Lockdown",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Perimeter Drill", "billable": true },
+            { "name": "Containment Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Deputies",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Rookie Onboarding", "billable": true },
+            { "name": "Hopper's Field Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -260,7 +339,7 @@
       "projectName": "Upside Down — Threat Intelligence Platform",
       "shortName": "UD Threat",
       "subAccountName": "The Upside Down (Threat Actor Registry)",
-      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-UPSIDE-DOWN-AND-VILLAINS",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-UPSIDE-DAV",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "projectType": "Internal Project",
@@ -270,35 +349,65 @@
         "paymentTerms": "None",
         "prePaymentAmount": 0,
         "products": [
-          { "themedRole": "Dungeon Master (SA)",                 "quantity": 240, "unitPrice": 0 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 600, "unitPrice": 0 },
+          { "themedRole": "Dungeon Master (SA)", "quantity": 240, "unitPrice": 0 },
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 600, "unitPrice": 0 },
           { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 400, "unitPrice": 0 }
         ]
       },
       "workstreams": [
-        { "name": "Hive Mind Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Vine Tracing", "isDefault": false, "billable": true, "children": [
-          { "name": "Gate Reconnaissance", "billable": true },
-          { "name": "Particle Detection", "billable": true },
-          { "name": "Mind Flayer Strategy", "billable": true }
-        ]},
-        { "name": "Build the Gate Surveillance", "isDefault": false, "billable": true, "children": [
-          { "name": "Rift Sensor Forging", "billable": true },
-          { "name": "Shadow Map Calibration", "billable": true },
-          { "name": "Tendril Tracking Network", "billable": true }
-        ]},
-        { "name": "Migrate the Test Subjects", "isDefault": false, "billable": true, "children": [
-          { "name": "Subject Roster Audit", "billable": true },
-          { "name": "Lab Notebook Conversion", "billable": true }
-        ]},
-        { "name": "Testing Vecna's Curse", "isDefault": false, "billable": true, "children": [
-          { "name": "Mind Lair Pen-test", "billable": true },
-          { "name": "Music-Memory Stress Trial", "billable": true }
-        ]},
-        { "name": "Training the Russian Operatives", "isDefault": false, "billable": true, "children": [
-          { "name": "Cipher Onboarding", "billable": true },
-          { "name": "Demogorgon Handler Manual", "billable": true }
-        ]}
+        {
+          "name": "Hive Mind Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Vine Tracing",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Gate Reconnaissance", "billable": true },
+            { "name": "Particle Detection", "billable": true },
+            { "name": "Mind Flayer Strategy", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Gate Surveillance",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Rift Sensor Forging", "billable": true },
+            { "name": "Shadow Map Calibration", "billable": true },
+            { "name": "Tendril Tracking Network", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Test Subjects",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Subject Roster Audit", "billable": true },
+            { "name": "Lab Notebook Conversion", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing Vecna's Curse",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Mind Lair Pen-test", "billable": true },
+            { "name": "Music-Memory Stress Trial", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Russian Operatives",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Cipher Onboarding", "billable": true },
+            { "name": "Demogorgon Handler Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -318,37 +427,62 @@
         "allocationProfile": {
           "name": "Starcourt Drawdown Front-loaded",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 50,  "revenuePct": 70 },
+            { "order": 1, "startPct": 0, "endPct": 50, "revenuePct": 70 },
             { "order": 2, "startPct": 50, "endPct": 100, "revenuePct": 30 }
           ]
         },
         "products": [
-          { "themedRole": "Party Leader (PM)",                   "quantity": 400,  "unitPrice": 200 },
-          { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 700,  "unitPrice": 175 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 1000, "unitPrice": 100 },
-          { "themedRole": "Senior Family Video Promoter (SMCC)", "quantity": 200,  "unitPrice": 180 }
+          { "themedRole": "Party Leader (PM)", "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 700, "unitPrice": 175 },
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 1000, "unitPrice": 100 },
+          { "themedRole": "Senior Family Video Promoter (SMCC)", "quantity": 200, "unitPrice": 180 }
         ]
       },
       "workstreams": [
-        { "name": "Mall Office Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Storefront Walkthrough", "isDefault": false, "billable": true, "children": [
-          { "name": "Anchor Tenant Interviews", "billable": true },
-          { "name": "Food Court Survey", "billable": true },
-          { "name": "Mall Manager Strategy Session", "billable": true }
-        ]},
-        { "name": "Build the Tenant Portal", "isDefault": false, "billable": true, "children": [
-          { "name": "Lease Records Module", "billable": true },
-          { "name": "Maintenance Ticketing", "billable": true },
-          { "name": "Foot Traffic Dashboard", "billable": true }
-        ]},
-        { "name": "Migrate the Lease Archive", "isDefault": false, "billable": true, "children": [
-          { "name": "Paper Lease Scan-in", "billable": true },
-          { "name": "Rent Roll Reconciliation", "billable": true }
-        ]},
-        { "name": "Testing on Mall Hours", "isDefault": false, "billable": true, "children": [
-          { "name": "Black Friday Load Test", "billable": true },
-          { "name": "Closing Time Lockdown Drill", "billable": true }
-        ]}
+        {
+          "name": "Mall Office Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Storefront Walkthrough",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Anchor Tenant Interviews", "billable": true },
+            { "name": "Food Court Survey", "billable": true },
+            { "name": "Mall Manager Strategy Session", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Tenant Portal",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Lease Records Module", "billable": true },
+            { "name": "Maintenance Ticketing", "billable": true },
+            { "name": "Foot Traffic Dashboard", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Lease Archive",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Paper Lease Scan-in", "billable": true },
+            { "name": "Rent Roll Reconciliation", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing on Mall Hours",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Black Friday Load Test", "billable": true },
+            { "name": "Closing Time Lockdown Drill", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -369,27 +503,47 @@
         "paymentTerms": "Net 30",
         "prePaymentAmount": 0,
         "products": [
-          { "themedRole": "Party Leader (PM)",                   "quantity": 500, "unitPrice": 200 },
+          { "themedRole": "Party Leader (PM)", "quantity": 500, "unitPrice": 200 },
           { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 600, "unitPrice": 175 },
-          { "themedRole": "Hawkins High Reporter (BA)",          "quantity": 500, "unitPrice": 150 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 800, "unitPrice": 100 }
+          { "themedRole": "Hawkins High Reporter (BA)", "quantity": 500, "unitPrice": 150 },
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 800, "unitPrice": 100 }
         ]
       },
       "workstreams": [
-        { "name": "Scoops Counter Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Flavor Audit", "isDefault": false, "billable": true, "children": [
-          { "name": "Inventory Cataloguing", "billable": true },
-          { "name": "Customer Survey", "billable": true },
-          { "name": "Robin's Russian Decoding", "billable": true }
-        ]},
-        { "name": "Build the Loyalty Card", "isDefault": false, "billable": true, "children": [
-          { "name": "Card Issuance Flow", "billable": true },
-          { "name": "Punch-Card Calibration", "billable": true }
-        ]},
-        { "name": "Testing at the Mall Window", "isDefault": false, "billable": true, "children": [
-          { "name": "Walk-up Order Drill", "billable": true },
-          { "name": "USS Butterscotch Stress Test", "billable": true }
-        ]}
+        {
+          "name": "Scoops Counter Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Flavor Audit",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Inventory Cataloguing", "billable": true },
+            { "name": "Customer Survey", "billable": true },
+            { "name": "Robin's Russian Decoding", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Loyalty Card",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Card Issuance Flow", "billable": true },
+            { "name": "Punch-Card Calibration", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing at the Mall Window",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Walk-up Order Drill", "billable": true },
+            { "name": "USS Butterscotch Stress Test", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -397,7 +551,7 @@
       "projectName": "Hawkins Lab Archives — Historical Records Closeout",
       "shortName": "HLA Closeout",
       "subAccountName": "Hawkins Lab (Decommissioned Wing)",
-      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-HAWKINS-LAB-ARCHIVES",
+      "subAccountNumber": "PSA-TEST-STRANGERTHINGS-HAWKINS-LA",
       "windowOffsetWeeks": -52,
       "windowDurationWeeks": 40,
       "projectType": "External Project",
@@ -409,179 +563,239 @@
         "allocationProfile": {
           "name": "HLA Historical Ramp",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 40,  "revenuePct": 35 },
-            { "order": 2, "startPct": 40, "endPct": 85,  "revenuePct": 45 },
+            { "order": 1, "startPct": 0, "endPct": 40, "revenuePct": 35 },
+            { "order": 2, "startPct": 40, "endPct": 85, "revenuePct": 45 },
             { "order": 3, "startPct": 85, "endPct": 100, "revenuePct": 20 }
           ]
         },
         "products": [
-          { "themedRole": "Dungeon Master (SA)",                 "quantity": 400,  "unitPrice": 300 },
-          { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 900,  "unitPrice": 175 },
-          { "themedRole": "Hawkins Lab Researcher (CC)",         "quantity": 1500, "unitPrice": 100 },
-          { "themedRole": "Hawkins High Reporter (BA)",          "quantity": 400,  "unitPrice": 150 }
+          { "themedRole": "Dungeon Master (SA)", "quantity": 400, "unitPrice": 300 },
+          { "themedRole": "Senior Hawkins Lab Researcher (SCC)", "quantity": 900, "unitPrice": 175 },
+          { "themedRole": "Hawkins Lab Researcher (CC)", "quantity": 1500, "unitPrice": 100 },
+          { "themedRole": "Hawkins High Reporter (BA)", "quantity": 400, "unitPrice": 150 }
         ]
       },
       "workstreams": [
-        { "name": "Archive Vault Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Closet Inventory", "isDefault": false, "billable": true, "children": [
-          { "name": "Subject Folder Audit", "billable": true },
-          { "name": "Researcher Logbook Review", "billable": true },
-          { "name": "DoE Disclosure Drafting", "billable": true }
-        ]},
-        { "name": "Build the Knowledge Library", "isDefault": false, "billable": true, "children": [
-          { "name": "Searchable Index", "billable": true },
-          { "name": "Redaction Workflow", "billable": true },
-          { "name": "Access Control Matrix", "billable": true }
-        ]},
-        { "name": "Migrate the Subject Files", "isDefault": false, "billable": true, "children": [
-          { "name": "Microfiche to PDF", "billable": true },
-          { "name": "Magnetic Tape Recovery", "billable": true }
-        ]},
-        { "name": "Training the Custodians", "isDefault": false, "billable": true, "children": [
-          { "name": "Access Policy Onboarding", "billable": true },
-          { "name": "Vault Handler Manual", "billable": true }
-        ]}
+        {
+          "name": "Archive Vault Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Closet Inventory",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Subject Folder Audit", "billable": true },
+            { "name": "Researcher Logbook Review", "billable": true },
+            { "name": "DoE Disclosure Drafting", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Knowledge Library",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Searchable Index", "billable": true },
+            { "name": "Redaction Workflow", "billable": true },
+            { "name": "Access Control Matrix", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Subject Files",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Microfiche to PDF", "billable": true },
+            { "name": "Magnetic Tape Recovery", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Custodians",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Access Policy Onboarding", "billable": true },
+            { "name": "Vault Handler Manual", "billable": true }
+          ]
+        }
       ]
     }
   ],
-
   "casting": {
     "the-party": [
-      { "fullName": "Mike Wheeler",       "themedRole": "Party Leader (PM)" },
-      { "fullName": "Lucas Sinclair",     "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Dustin Henderson",   "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Will Byers",         "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Eleven Hopper",      "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Max Mayfield",       "themedRole": "Hawkins High Reporter (BA)" },
-      { "fullName": "Erica Sinclair",     "themedRole": "Hawkins Lab Researcher (CC)" }
+      { "fullName": "Mike Wheeler", "themedRole": "Party Leader (PM)" },
+      { "fullName": "Lucas Sinclair", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Dustin Henderson", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Will Byers", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Eleven Hopper", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Max Mayfield", "themedRole": "Hawkins High Reporter (BA)" },
+      { "fullName": "Erica Sinclair", "themedRole": "Hawkins Lab Researcher (CC)" }
     ],
     "byers-wheeler-family": [
-      { "fullName": "Joyce Byers",        "themedRole": "Party Leader (PM)" },
-      { "fullName": "Jonathan Byers",     "themedRole": "Senior Family Video Promoter (SMCC)" },
-      { "fullName": "Bob Newby",          "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Karen Wheeler",      "themedRole": "Senior Family Video Promoter (SMCC)" },
-      { "fullName": "Nancy Wheeler",      "themedRole": "Hawkins High Reporter (BA)" },
-      { "fullName": "Ted Wheeler",        "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Holly Wheeler",      "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Lonnie Byers",       "themedRole": "Hawkins Lab Researcher (CC)" }
+      { "fullName": "Joyce Byers", "themedRole": "Party Leader (PM)" },
+      { "fullName": "Jonathan Byers", "themedRole": "Senior Family Video Promoter (SMCC)" },
+      { "fullName": "Bob Newby", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Karen Wheeler", "themedRole": "Senior Family Video Promoter (SMCC)" },
+      { "fullName": "Nancy Wheeler", "themedRole": "Hawkins High Reporter (BA)" },
+      { "fullName": "Ted Wheeler", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Holly Wheeler", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Lonnie Byers", "themedRole": "Hawkins Lab Researcher (CC)" }
     ],
     "hawkins-pd-and-government": [
-      { "fullName": "Jim Hopper",         "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Officer Powell",     "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Officer Callahan",   "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Doctor Brenner",     "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Sam Owens",          "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Murray Bauman",      "themedRole": "Hawkins High Reporter (BA)" },
-      { "fullName": "Dr. Sullivan",       "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Sara Hopper",        "themedRole": "Hawkins Lab Researcher (CC)" }
+      { "fullName": "Jim Hopper", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Officer Powell", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Officer Callahan", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Doctor Brenner", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Sam Owens", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Murray Bauman", "themedRole": "Hawkins High Reporter (BA)" },
+      { "fullName": "Dr. Sullivan", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Sara Hopper", "themedRole": "Hawkins Lab Researcher (CC)" }
     ],
     "upside-down-and-villains": [
-      { "fullName": "Henry Creel",        "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Mind Flayer",        "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Demogorgon",         "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Demodogs",           "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Grigori",            "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Antonov",            "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Yuri Ismaylov",      "themedRole": "Senior Family Video Promoter (SMCC)" },
-      { "fullName": "Billy Hargrove",     "themedRole": "Party Leader (PM)" }
+      { "fullName": "Henry Creel", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Mind Flayer", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Demogorgon", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Demodogs", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Grigori", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Antonov", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Yuri Ismaylov", "themedRole": "Senior Family Video Promoter (SMCC)" },
+      { "fullName": "Billy Hargrove", "themedRole": "Party Leader (PM)" }
     ],
     "starcourt-mall": [
-      { "fullName": "Steve Harrington",   "themedRole": "Party Leader (PM)" },
-      { "fullName": "Robin Buckley",      "themedRole": "Hawkins High Reporter (BA)" },
-      { "fullName": "Erica Sinclair",     "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Heather Holloway",   "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Tom Holloway",       "themedRole": "Senior Hawkins Lab Researcher (SCC)" }
+      { "fullName": "Steve Harrington", "themedRole": "Party Leader (PM)" },
+      { "fullName": "Robin Buckley", "themedRole": "Hawkins High Reporter (BA)" },
+      { "fullName": "Erica Sinclair", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Heather Holloway", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Tom Holloway", "themedRole": "Senior Hawkins Lab Researcher (SCC)" }
     ],
     "scoops-ahoy": [
-      { "fullName": "Steve Harrington",   "themedRole": "Party Leader (PM)" },
-      { "fullName": "Robin Buckley",      "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Eddie Munson",       "themedRole": "Hawkins High Reporter (BA)" },
-      { "fullName": "Erica Sinclair",     "themedRole": "Hawkins Lab Researcher (CC)" }
+      { "fullName": "Steve Harrington", "themedRole": "Party Leader (PM)" },
+      { "fullName": "Robin Buckley", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Eddie Munson", "themedRole": "Hawkins High Reporter (BA)" },
+      { "fullName": "Erica Sinclair", "themedRole": "Hawkins Lab Researcher (CC)" }
     ],
     "hawkins-lab-archives": [
-      { "fullName": "Doctor Brenner",     "themedRole": "Dungeon Master (SA)" },
-      { "fullName": "Sam Owens",          "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Argyle",             "themedRole": "Hawkins Lab Researcher (CC)" },
-      { "fullName": "Suzie Bingham",      "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
-      { "fullName": "Mr. Clarke",         "themedRole": "Hawkins High Reporter (BA)" }
+      { "fullName": "Doctor Brenner", "themedRole": "Dungeon Master (SA)" },
+      { "fullName": "Sam Owens", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Argyle", "themedRole": "Hawkins Lab Researcher (CC)" },
+      { "fullName": "Suzie Bingham", "themedRole": "Senior Hawkins Lab Researcher (SCC)" },
+      { "fullName": "Mr. Clarke", "themedRole": "Hawkins High Reporter (BA)" }
     ]
   },
-
   "milestones": {
     "the-party": [
-      { "name": "Roll for Initiative",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — character sheets approved, dice rolled." },
-      { "name": "Forge the +1 Sword",         "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: weapons readied for the first encounter." },
-      { "name": "Audience at the Wheeler Basement", "type": "Gate",  "offsetPct": 50,  "description": "Mid-project gate: solution review with the full party." },
-      { "name": "Snow Ball Phase Invoice",    "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: Hawkins Middle dance fully provisioned." },
-      { "name": "Defeat the Demogorgon",      "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the boss is down and the campaign world saved." },
-      { "name": "Closing Credits Hand-off",   "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ownership passed to next session's DM." }
+      { "name": "Roll for Initiative", "type": "Gate", "offsetPct": 5, "description": "Discovery sign-off — character sheets approved, dice rolled." },
+      { "name": "Forge the +1 Sword", "type": "Operational", "offsetPct": 25, "description": "Build kickoff: weapons readied for the first encounter." },
+      { "name": "Audience at the Wheeler Basement", "type": "Gate", "offsetPct": 50, "description": "Mid-project gate: solution review with the full party." },
+      { "name": "Snow Ball Phase Invoice", "type": "Billing", "offsetPct": 70, "description": "Phase invoice trigger: Hawkins Middle dance fully provisioned." },
+      { "name": "Defeat the Demogorgon", "type": "Delivery", "offsetPct": 95, "description": "Go-Live: the boss is down and the campaign world saved." },
+      { "name": "Closing Credits Hand-off", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: ownership passed to next session's DM." }
     ],
     "byers-wheeler-family": [
-      { "name": "Move-in Day Kickoff",        "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: boxes unpacked, alphabet wall mounted." },
-      { "name": "Christmas Lights Strung",    "type": "Operational", "offsetPct": 30,  "description": "Build phase: alphabet wall fully wired and tested." },
-      { "name": "Parent-Teacher Conference",  "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: school records validated with Karen and Joyce." },
-      { "name": "Thanksgiving Dinner Live",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the family table seats everyone, no leftovers." },
-      { "name": "Holiday Card Mailing",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the family is back together, photos out." },
-      { "name": "Final Family Invoice",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: cost split between the Wheelers and the Byers." }
+      { "name": "Move-in Day Kickoff", "type": "Gate", "offsetPct": 5, "description": "Project kickoff: boxes unpacked, alphabet wall mounted." },
+      { "name": "Christmas Lights Strung", "type": "Operational", "offsetPct": 30, "description": "Build phase: alphabet wall fully wired and tested." },
+      { "name": "Parent-Teacher Conference", "type": "Gate", "offsetPct": 60, "description": "UAT gate: school records validated with Karen and Joyce." },
+      { "name": "Thanksgiving Dinner Live", "type": "Delivery", "offsetPct": 90, "description": "Go-Live: the family table seats everyone, no leftovers." },
+      { "name": "Holiday Card Mailing", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the family is back together, photos out." },
+      { "name": "Final Family Invoice", "type": "Billing", "offsetPct": 100, "description": "Final invoice: cost split between the Wheelers and the Byers." }
     ],
     "hawkins-pd-and-government": [
-      { "name": "First Missing Person Filed", "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Will's case opened, file system online." },
-      { "name": "Stake Out the Lab",          "type": "Operational", "offsetPct": 35,  "description": "Build: surveillance perimeter around Hawkins National Lab deployed." },
-      { "name": "Mayor's Audit",              "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Mayor's office and DoE liaison." },
-      { "name": "Lab Lockdown Live",          "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: case files migrated, station fully operational." },
-      { "name": "Cold Case Cleared",          "type": "Operational", "offsetPct": 100, "description": "Project close: backlog of unsolved cases reviewed and stamped." },
-      { "name": "Departmental Final Bill",    "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Hawkins PD and DoE." }
+      { "name": "First Missing Person Filed", "type": "Gate", "offsetPct": 10, "description": "Discovery: Will's case opened, file system online." },
+      { "name": "Stake Out the Lab", "type": "Operational", "offsetPct": 35, "description": "Build: surveillance perimeter around Hawkins National Lab deployed." },
+      { "name": "Mayor's Audit", "type": "Gate", "offsetPct": 60, "description": "Solution review with the Mayor's office and DoE liaison." },
+      { "name": "Lab Lockdown Live", "type": "Delivery", "offsetPct": 90, "description": "Go-Live: case files migrated, station fully operational." },
+      { "name": "Cold Case Cleared", "type": "Operational", "offsetPct": 100, "description": "Project close: backlog of unsolved cases reviewed and stamped." },
+      { "name": "Departmental Final Bill", "type": "Billing", "offsetPct": 100, "description": "Final invoice from the Hawkins PD and DoE." }
     ],
     "upside-down-and-villains": [
-      { "name": "First Gate Detected",        "type": "Gate",        "offsetPct": 10,  "description": "Kickoff: rift signature confirmed beneath Hawkins Lab." },
-      { "name": "Map the Hive Mind",          "type": "Operational", "offsetPct": 30,  "description": "Discovery: Mind Flayer's tendril network charted." },
-      { "name": "Containment Field Built",    "type": "Operational", "offsetPct": 55,  "description": "Build: gate surveillance and shadow tracking platform deployed." },
-      { "name": "Vecna Curse Diagnostic",     "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: music-memory countermeasure validated against Creel." },
-      { "name": "Gate Sealed",                "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: rift closed, Upside Down quarantined." },
-      { "name": "Russian Black-budget Settle","type": "Billing",     "offsetPct": 100, "description": "Final invoice routed via covert channels — payment in rubles or favors." }
+      { "name": "First Gate Detected", "type": "Gate", "offsetPct": 10, "description": "Kickoff: rift signature confirmed beneath Hawkins Lab." },
+      { "name": "Map the Hive Mind", "type": "Operational", "offsetPct": 30, "description": "Discovery: Mind Flayer's tendril network charted." },
+      { "name": "Containment Field Built", "type": "Operational", "offsetPct": 55, "description": "Build: gate surveillance and shadow tracking platform deployed." },
+      { "name": "Vecna Curse Diagnostic", "type": "Gate", "offsetPct": 80, "description": "UAT acceptance: music-memory countermeasure validated against Creel." },
+      { "name": "Gate Sealed", "type": "Delivery", "offsetPct": 100, "description": "Go-Live + handoff: rift closed, Upside Down quarantined." },
+      { "name": "Russian Black-budget Settle", "type": "Billing", "offsetPct": 100, "description": "Final invoice routed via covert channels — payment in rubles or favors." }
     ],
     "starcourt-mall": [
-      { "name": "Storefront Walkthrough",     "type": "Gate",        "offsetPct": 8,   "description": "Discovery: anchor tenants and food court mapped." },
-      { "name": "Mall Manager Sign-Off",      "type": "Gate",        "offsetPct": 30,  "description": "Build approval: portal architecture green-lit." },
-      { "name": "Tenant Portal Soft-Launch",  "type": "Operational", "offsetPct": 60,  "description": "Pilot tenants onboarded to leasing portal." },
-      { "name": "Black Friday Go-Live",       "type": "Delivery",    "offsetPct": 95,  "description": "Full launch ahead of peak shopping season." },
-      { "name": "Final Mall Reconciliation",  "type": "Billing",     "offsetPct": 100, "description": "Prepayment fully consumed; close-out invoice issued." }
+      { "name": "Storefront Walkthrough", "type": "Gate", "offsetPct": 8, "description": "Discovery: anchor tenants and food court mapped." },
+      { "name": "Mall Manager Sign-Off", "type": "Gate", "offsetPct": 30, "description": "Build approval: portal architecture green-lit." },
+      { "name": "Tenant Portal Soft-Launch", "type": "Operational", "offsetPct": 60, "description": "Pilot tenants onboarded to leasing portal." },
+      { "name": "Black Friday Go-Live", "type": "Delivery", "offsetPct": 95, "description": "Full launch ahead of peak shopping season." },
+      { "name": "Final Mall Reconciliation", "type": "Billing", "offsetPct": 100, "description": "Prepayment fully consumed; close-out invoice issued." }
     ],
     "scoops-ahoy": [
-      { "name": "Counter-Side Discovery",     "type": "Gate",        "offsetPct": 15,  "description": "Discovery sign-off: flavor catalog + loyalty card requirements." },
-      { "name": "Loyalty Card Prototype",     "type": "Operational", "offsetPct": 50,  "description": "Build milestone: prototype card issued to mall employees." },
-      { "name": "Russian Decoding Complete",  "type": "Gate",        "offsetPct": 75,  "description": "Side workstream: Robin's Russian intercept translated." },
-      { "name": "USS Butterscotch Launch",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live: ice cream shop fully on the loyalty platform." }
+      { "name": "Counter-Side Discovery", "type": "Gate", "offsetPct": 15, "description": "Discovery sign-off: flavor catalog + loyalty card requirements." },
+      { "name": "Loyalty Card Prototype", "type": "Operational", "offsetPct": 50, "description": "Build milestone: prototype card issued to mall employees." },
+      { "name": "Russian Decoding Complete", "type": "Gate", "offsetPct": 75, "description": "Side workstream: Robin's Russian intercept translated." },
+      { "name": "USS Butterscotch Launch", "type": "Delivery", "offsetPct": 100, "description": "Go-Live: ice cream shop fully on the loyalty platform." }
     ],
     "hawkins-lab-archives": [
-      { "name": "Vault Inventory Complete",   "type": "Gate",        "offsetPct": 12,  "description": "Discovery: every subject folder accounted for." },
-      { "name": "DoE Disclosure Approved",    "type": "Gate",        "offsetPct": 30,  "description": "Compliance: legal team approves redaction scheme." },
-      { "name": "Knowledge Library Beta",     "type": "Operational", "offsetPct": 55,  "description": "Build milestone: searchable index live for internal researchers." },
-      { "name": "Subject File Migration Done","type": "Operational", "offsetPct": 80,  "description": "Microfiche conversion completed." },
-      { "name": "Archive Hand-off",           "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: archives transferred to long-term custodians." },
-      { "name": "Final Closeout Invoice",     "type": "Billing",     "offsetPct": 100, "description": "Final invoice: project formally retired." }
+      { "name": "Vault Inventory Complete", "type": "Gate", "offsetPct": 12, "description": "Discovery: every subject folder accounted for." },
+      { "name": "DoE Disclosure Approved", "type": "Gate", "offsetPct": 30, "description": "Compliance: legal team approves redaction scheme." },
+      { "name": "Knowledge Library Beta", "type": "Operational", "offsetPct": 55, "description": "Build milestone: searchable index live for internal researchers." },
+      { "name": "Subject File Migration Done", "type": "Operational", "offsetPct": 80, "description": "Microfiche conversion completed." },
+      { "name": "Archive Hand-off", "type": "Delivery", "offsetPct": 95, "description": "Go-Live: archives transferred to long-term custodians." },
+      { "name": "Final Closeout Invoice", "type": "Billing", "offsetPct": 100, "description": "Final invoice: project formally retired." }
     ]
   },
-
   "daysOff": {
-    "Will Byers":         [ { "realm": "the-party",                 "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery week — recurring Upside Down flashbacks, doctor's orders." } ],
-    "Eleven Hopper":      [ { "realm": "the-party",                 "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Eggos and waffles run with Hop — overdue." } ],
-    "Mike Wheeler":       [ { "realm": "the-party",                 "offsetWeeks": 12, "numberOfDays": 2, "notes": "Family trip to Lenora Hills to see El." } ],
-    "Dustin Henderson":   [ { "realm": "the-party",                 "offsetWeeks": 16, "numberOfDays": 4, "notes": "Camp Know Where — annual radio camp." } ],
-    "Max Mayfield":       [ { "realm": "the-party",                 "offsetWeeks": 18, "numberOfDays": 3, "notes": "Cemetery visit and Walkman therapy session." } ],
-    "Joyce Byers":        [ { "realm": "byers-wheeler-family",      "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Encyclopedia sales conference — territory training." } ],
-    "Jonathan Byers":     [ { "realm": "byers-wheeler-family",      "offsetWeeks": 10, "numberOfDays": 2, "notes": "Photography assignment for the school paper." } ],
-    "Nancy Wheeler":      [ { "realm": "byers-wheeler-family",      "offsetWeeks": 14, "numberOfDays": 2, "notes": "Hawkins Post deadline week — investigative deep dive." } ],
-    "Bob Newby":          [ { "realm": "byers-wheeler-family",      "offsetWeeks": 6,  "numberOfDays": 1, "notes": "Radio Shack regional manager training." } ],
-    "Jim Hopper":         [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Cabin maintenance and a fishing trip — non-negotiable." } ],
-    "Officer Callahan":   [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Bowling league championship weekend." } ],
-    "Sam Owens":          [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 16, "numberOfDays": 3, "notes": "DC briefing — congressional oversight committee." } ],
-    "Murray Bauman":      [ { "realm": "hawkins-pd-and-government", "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Conspiracy research retreat at the Illinois bunker." } ],
-    "Henry Creel":        [ { "realm": "upside-down-and-villains",  "offsetWeeks": 10, "numberOfDays": 5, "notes": "Mind Lair recalibration — quarterly maintenance." } ],
-    "Billy Hargrove":     [ { "realm": "upside-down-and-villains",  "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Lifeguard shift at the Hawkins Community Pool." } ],
-    "Steve Harrington":   [ { "realm": "starcourt-mall",            "offsetWeeks": 10, "numberOfDays": 2, "notes": "Hair-product convention in Indianapolis." } ],
-    "Robin Buckley":      [ { "realm": "scoops-ahoy",               "offsetWeeks": 14, "numberOfDays": 3, "notes": "Russian language immersion weekend." } ],
-    "Eddie Munson":       [ { "realm": "scoops-ahoy",               "offsetWeeks": 18, "numberOfDays": 2, "notes": "Dungeons & Dragons regional tournament." } ],
-    "Argyle":             [ { "realm": "hawkins-lab-archives",      "offsetWeeks": 20, "numberOfDays": 4, "notes": "Surfer Boy Pizza delivery route training — Lenora Hills." } ]
+    "Will Byers": [
+      { "realm": "the-party", "offsetWeeks": 6, "numberOfDays": 3, "notes": "Recovery week — recurring Upside Down flashbacks, doctor's orders." }
+    ],
+    "Eleven Hopper": [
+      { "realm": "the-party", "offsetWeeks": 8, "numberOfDays": 2, "notes": "Eggos and waffles run with Hop — overdue." }
+    ],
+    "Mike Wheeler": [
+      { "realm": "the-party", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Family trip to Lenora Hills to see El." }
+    ],
+    "Dustin Henderson": [
+      { "realm": "the-party", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Camp Know Where — annual radio camp." }
+    ],
+    "Max Mayfield": [
+      { "realm": "the-party", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Cemetery visit and Walkman therapy session." }
+    ],
+    "Joyce Byers": [
+      { "realm": "byers-wheeler-family", "offsetWeeks": 4, "numberOfDays": 4, "notes": "Encyclopedia sales conference — territory training." }
+    ],
+    "Jonathan Byers": [
+      { "realm": "byers-wheeler-family", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Photography assignment for the school paper." }
+    ],
+    "Nancy Wheeler": [
+      { "realm": "byers-wheeler-family", "offsetWeeks": 14, "numberOfDays": 2, "notes": "Hawkins Post deadline week — investigative deep dive." }
+    ],
+    "Bob Newby": [
+      { "realm": "byers-wheeler-family", "offsetWeeks": 6, "numberOfDays": 1, "notes": "Radio Shack regional manager training." }
+    ],
+    "Jim Hopper": [
+      { "realm": "hawkins-pd-and-government", "offsetWeeks": 8, "numberOfDays": 5, "notes": "Cabin maintenance and a fishing trip — non-negotiable." }
+    ],
+    "Officer Callahan": [
+      { "realm": "hawkins-pd-and-government", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Bowling league championship weekend." }
+    ],
+    "Sam Owens": [
+      { "realm": "hawkins-pd-and-government", "offsetWeeks": 16, "numberOfDays": 3, "notes": "DC briefing — congressional oversight committee." }
+    ],
+    "Murray Bauman": [
+      { "realm": "hawkins-pd-and-government", "offsetWeeks": 6, "numberOfDays": 4, "notes": "Conspiracy research retreat at the Illinois bunker." }
+    ],
+    "Henry Creel": [
+      { "realm": "upside-down-and-villains", "offsetWeeks": 10, "numberOfDays": 5, "notes": "Mind Lair recalibration — quarterly maintenance." }
+    ],
+    "Billy Hargrove": [
+      { "realm": "upside-down-and-villains", "offsetWeeks": 4, "numberOfDays": 2, "notes": "Lifeguard shift at the Hawkins Community Pool." }
+    ],
+    "Steve Harrington": [
+      { "realm": "starcourt-mall", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Hair-product convention in Indianapolis." }
+    ],
+    "Robin Buckley": [
+      { "realm": "scoops-ahoy", "offsetWeeks": 14, "numberOfDays": 3, "notes": "Russian language immersion weekend." }
+    ],
+    "Eddie Munson": [
+      { "realm": "scoops-ahoy", "offsetWeeks": 18, "numberOfDays": 2, "notes": "Dungeons & Dragons regional tournament." }
+    ],
+    "Argyle": [
+      { "realm": "hawkins-lab-archives", "offsetWeeks": 20, "numberOfDays": 4, "notes": "Surfer Boy Pizza delivery route training — Lenora Hills." }
+    ]
   }
 }

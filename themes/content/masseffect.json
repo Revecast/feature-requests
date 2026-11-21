@@ -27,13 +27,13 @@
     { "name": "Mass Relay Architect",              "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — relay-class integrations." },
     { "name": "Senior Relay Engineer",             "canonical": "Integration Senior Consultant - India",   "description": "Lays the eezo lattice of API, middleware, and event flows under the Architect's plan." },
     { "name": "Relay Junior Engineer",             "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the salarian patterns of error handling." },
-    { "name": "Salarian STG Analyst",              "canonical": "QA Engineer",                             "description": "Tends the Special Tasks Group laboratory — finds the maladies in the build before they reach the Council." },
+    { "name": "Salarian STG Analyst",              "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the Special Tasks Group laboratory — finds the maladies in the build before they reach the Council." },
     { "name": "Asari Matriarch of Outreach",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner of message and product — leads all marketing craft across the galaxy." },
     { "name": "Senior Citadel Broadcaster",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call across Khalisah al-Jilani's news network." },
     { "name": "Westerlund News Correspondent",     "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily extranet feed." },
     { "name": "Council Auditor",                   "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between Council edict and squad execution." },
-    { "name": "N7 Senior Engineer",                "canonical": "Salesforce Senior Developer - USA",       "description": "Elite Alliance engineer — leads the deepest builds and mentors the Tech Specialists." },
-    { "name": "Junior Citadel Operative",          "canonical": "Junior Salesforce Consultant - India",    "description": "First-deployment consultant — learns the trade aboard the Normandy under senior crew." }
+    { "name": "N7 Senior Engineer",                "canonical": "Salesforce Developer",       "description": "Elite Alliance engineer — leads the deepest builds and mentors the Tech Specialists." },
+    { "name": "Junior Citadel Operative",          "canonical": "Salesforce Consultant - India",    "description": "First-deployment consultant — learns the trade aboard the Normandy under senior crew." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

@@ -27,13 +27,13 @@
     { "name": "Parks Integration Architect — USA",   "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce, ATN, Parks, and the realms beyond." },
     { "name": "Parks Senior Integration Eng — Mumbai","canonical": "Integration Senior Consultant - India",  "description": "Lays the stones of API, middleware, and event flows under the architect's plan." },
     { "name": "Parks Integration Engineer — Mumbai", "canonical": "Integration Consultant - India",          "description": "Learns the craft — webhooks, batch, callouts and the GoJo-style error handling." },
-    { "name": "Theme Park QA Inspector",             "canonical": "QA Engineer",                             "description": "Finds the broken rollercoaster bolts before the press tour — owner of the bug list." },
+    { "name": "Theme Park QA Inspector",             "canonical": "Quality Assurance (QA) Engineer",                             "description": "Finds the broken rollercoaster bolts before the press tour — owner of the bug list." },
     { "name": "ATN Marketing Practice Lead",         "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for the brand and the message — leads all marketing craft across the conglomerate." },
     { "name": "ATN Senior Brand Strategist",         "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather the audience and convert." },
     { "name": "ATN Brand Coordinator",               "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative, and the daily news cycle." },
     { "name": "M&A Analyst",                         "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the family and the build team." },
-    { "name": "Senior Studios Engineer — NYC",       "canonical": "Salesforce Senior Developer - USA",       "description": "Senior platform engineer in the Manhattan studios — owns the hardest Apex problems." },
-    { "name": "Junior Cruises Consultant — Mumbai",  "canonical": "Junior Salesforce Consultant - India",    "description": "First-rotation consultant on the Cruises programme — still learning where the bodies are." }
+    { "name": "Senior Studios Engineer — NYC",       "canonical": "Salesforce Developer",       "description": "Senior platform engineer in the Manhattan studios — owns the hardest Apex problems." },
+    { "name": "Junior Cruises Consultant — Mumbai",  "canonical": "Salesforce Consultant - India",    "description": "First-rotation consultant on the Cruises programme — still learning where the bodies are." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

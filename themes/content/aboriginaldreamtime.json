@@ -29,13 +29,13 @@
     { "name": "Bridge-builder of the River-Crossings", "canonical": "Integration Technical Architect - USA","description": "Designs the great crossings between Salesforce and the realms beyond — APIs, events and middleware." },
     { "name": "Senior Bark-Canoe Maker",            "canonical": "Integration Senior Consultant - India",   "description": "Lashes the integration canoes that ferry data between systems — middleware, batch and callouts." },
     { "name": "Apprentice Canoe Maker",             "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, retries and the patterns of error handling." },
-    { "name": "Healer of the Bora Ground",          "canonical": "QA Engineer",                             "description": "Tends the build before it meets the mob — finds the cracks and the spear-points before go-live." },
+    { "name": "Healer of the Bora Ground",          "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the build before it meets the mob — finds the cracks and the spear-points before go-live." },
     { "name": "Voice of the Corroboree",            "canonical": "Marketing Practice Lead",                 "description": "Calls the mob to gathering — leads all marketing craft, the painted message and the smoke-signal." },
     { "name": "Senior Storypainter",                "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — paints the stories on bark and stone that gather the people." },
     { "name": "Storypainter",                       "canonical": "Marketing Consultant",                    "description": "Carries the campaign across the country — content, dot-paintings and the daily walk." },
     { "name": "Listener at the Coolamon",           "canonical": "Business Analyst",                        "description": "Sits at the coolamon and listens — translates between the customer's need and the toolmaker's craft." },
-    { "name": "Senior Toolmaker of the Eastern Camps","canonical": "Salesforce Senior Developer - USA",     "description": "Master craftsman of the Eastern camps — shapes the most senior platform builds and mentors the apprentices." },
-    { "name": "Junior Tracker",                     "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh to the songline — learning to read the country, the data and the customer." }
+    { "name": "Senior Toolmaker of the Eastern Camps","canonical": "Salesforce Developer",     "description": "Master craftsman of the Eastern camps — shapes the most senior platform builds and mentors the apprentices." },
+    { "name": "Junior Tracker",                     "canonical": "Salesforce Consultant - India",    "description": "Fresh to the songline — learning to read the country, the data and the customer." }
   ],
 
   "_realmNotes": "The four realms here are not real Aboriginal nations — they are thematic groupings of publicly documented ancestral beings, organised by the role each plays in the Dreaming. They are presented with respect. Window offsets are negative so most of each project sits in the past for time-entry seeding.",
@@ -46,7 +46,7 @@
       "projectName": "Sky Country — Creator Beings CRM Rollout",
       "shortName": "Sky Country",
       "subAccountName": "Sky Country Council of Creator Beings",
-      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-CREATOR-ANCESTRAL-BEINGS",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-CREATOR-AB",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -78,7 +78,7 @@
       "projectName": "Rainbow Serpent — Waterways & Lifecycle Platform",
       "shortName": "Rainbow Serpent",
       "subAccountName": "Rainbow Serpent Waterways Authority",
-      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-RAINBOW-SERPENT-CYCLE",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-RAINBOW-SC",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -112,7 +112,7 @@
       "projectName": "Bushlands — Heroes & Tricksters Field Service",
       "shortName": "Bushlands",
       "subAccountName": "Bushlands Heroes' Lodge",
-      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-MORTAL-HEROES-TRICKSTERS",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-MORTAL-HT",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Country & Totem — Place-Spirit Analytics Implementation",
       "shortName": "Country & Totem",
       "subAccountName": "Country & Totem Custodians",
-      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-TOTEMIC-AND-PLACE-SPIRITS",
+      "subAccountNumber": "PSA-TEST-ABORIGINALDREAMTIME-TOTEMIC-APS",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

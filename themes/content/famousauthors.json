@@ -27,13 +27,13 @@
     { "name": "Translator-in-Residence",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — translates one tongue to another." },
     { "name": "Assistant Translator",         "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Translator's plan." },
     { "name": "Apprentice Translator",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the intricate patterns of error handling." },
-    { "name": "Proofreader",                  "canonical": "QA Engineer",                             "description": "Reads the galleys with a sharp pen — finds the errata in the build before it reaches the press." },
+    { "name": "Proofreader",                  "canonical": "Quality Assurance (QA) Engineer",                             "description": "Reads the galleys with a sharp pen — finds the errata in the build before it reaches the press." },
     { "name": "Publisher",                    "canonical": "Marketing Practice Lead",                 "description": "Lifts the imprint and the trumpet for the catalogue — leads all marketing craft." },
     { "name": "Literary Agent",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather readers and convert them." },
     { "name": "Pamphleteer",                  "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily print run." },
     { "name": "Critic",                       "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between Reader and the elegant craft of design." },
-    { "name": "Master Novelist",              "canonical": "Salesforce Senior Developer - USA",       "description": "Spins the long-form work — complex platform features and the architectural prose behind the facade." },
-    { "name": "Apprentice Scribe",            "canonical": "Junior Salesforce Consultant - India",    "description": "Copies fair, learns by doing, and grows into the full craft of the canon." }
+    { "name": "Master Novelist",              "canonical": "Salesforce Developer",       "description": "Spins the long-form work — complex platform features and the architectural prose behind the facade." },
+    { "name": "Apprentice Scribe",            "canonical": "Salesforce Consultant - India",    "description": "Copies fair, learns by doing, and grows into the full craft of the canon." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -76,7 +76,7 @@
       "projectName": "19th Century Novelists — Serial Publication Engine",
       "shortName": "Serials SPE",
       "subAccountName": "Guild of Victorian & Realist Novelists",
-      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-19THCENTURYNOVELISTS",
+      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-19THCENTURYNOVELI",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -108,7 +108,7 @@
       "projectName": "20th Century Modernists — Stream of Consciousness Platform",
       "shortName": "Modernist SCP",
       "subAccountName": "Bloomsbury & Lost Generation Atelier",
-      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-20THCENTURYMODERNISTS",
+      "subAccountNumber": "PSA-TEST-FAMOUSAUTHORS-20THCENTURYMODERN",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [

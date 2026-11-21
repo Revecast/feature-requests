@@ -27,13 +27,13 @@
     { "name": "Galactic Patrol Architect",       "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — across galaxies." },
     { "name": "Capsule Corp Engineer",           "canonical": "Integration Senior Consultant - India",   "description": "Lays the bolts of API, middleware, and event flows under the Galactic Patrol's plan." },
     { "name": "Apprentice Capsule Engineer",     "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the saiyan patterns of error handling." },
-    { "name": "Senzu Bean Quality Inspector",    "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the King of All." },
+    { "name": "Senzu Bean Quality Inspector",    "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the King of All." },
     { "name": "Tournament Announcer",            "canonical": "Marketing Practice Lead",                 "description": "Lifts the microphone for product and message — leads all marketing craft at the World Tournament." },
     { "name": "Bulma's Campaign Strategist",     "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — broadcasts the call across West City." },
     { "name": "Capsule Corp Brand Herald",       "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily broadcast." },
     { "name": "Kami's Lookout Scribe",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the divine craft of design." },
-    { "name": "Super Saiyan Senior Smith",       "canonical": "Salesforce Senior Developer - USA",       "description": "Ascended developer — the architect of the most demanding platform features." },
-    { "name": "Junior Turtle Pupil",             "canonical": "Junior Salesforce Consultant - India",    "description": "First lesson at the Kame House — learns config, flows, and the basics of the orange gi." }
+    { "name": "Super Saiyan Senior Smith",       "canonical": "Salesforce Developer",       "description": "Ascended developer — the architect of the most demanding platform features." },
+    { "name": "Junior Turtle Pupil",             "canonical": "Salesforce Consultant - India",    "description": "First lesson at the Kame House — learns config, flows, and the basics of the orange gi." }
   ],
 
   "_realmNotes": "Four sagas as realms — windowOffsetWeeks values are negative so every saga starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

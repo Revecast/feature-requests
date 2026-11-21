@@ -27,13 +27,13 @@
     { "name": "Plumbus Integration Architect",    "canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — knows the Schleem." },
     { "name": "Senior Plumbus Engineer — India",  "canonical": "Integration Senior Consultant - India", "description": "Lays the dinglebop and grumbos of API, middleware, and event flows under the Architect's plan." },
     { "name": "Plumbus Apprentice — India",       "canonical": "Integration Consultant - India",        "description": "Learns the craft of integration — webhooks, batch, callouts and the proper rubbing of fleeb juice." },
-    { "name": "Galactic Federation QA",           "canonical": "QA Engineer",                           "description": "Tends the wounded and the weary — finds the maladies in the build before the Federation audits." },
+    { "name": "Galactic Federation QA",           "canonical": "Quality Assurance (QA) Engineer",                           "description": "Tends the wounded and the weary — finds the maladies in the build before the Federation audits." },
     { "name": "Interdimensional Cable Producer",  "canonical": "Marketing Practice Lead",               "description": "Lifts the banner for product and message — leads all marketing craft across infinite channels." },
     { "name": "Ad Break Strategist",              "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — sounds the call to gather, convert, and watch Ball Fondlers." },
     { "name": "Jingle Writer of Squanch",         "canonical": "Marketing Consultant",                  "description": "Carries the campaign forward into the field — content, creative, and the daily squanch." },
     { "name": "Council Scribe of Smith Garage",   "canonical": "Business Analyst",                      "description": "Records what is needed and what is promised — translates between mortal Customer and Rick's gibberish." },
-    { "name": "Senior Garage Engineer — USA",     "canonical": "Salesforce Senior Developer - USA",     "description": "Numenorean of Apex — leads the deepest builds and mentors the apprentice tinkerers." },
-    { "name": "Apprentice Schwifty — India",      "canonical": "Junior Salesforce Consultant - India",  "description": "First-year portal traveller — shadows the Junior Portal Mechanic and learns the basics of clicks-not-code." }
+    { "name": "Senior Garage Engineer — USA",     "canonical": "Salesforce Developer",     "description": "Numenorean of Apex — leads the deepest builds and mentors the apprentice tinkerers." },
+    { "name": "Apprentice Schwifty — India",      "canonical": "Salesforce Consultant - India",  "description": "First-year portal traveller — shadows the Junior Portal Mechanic and learns the basics of clicks-not-code." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

@@ -27,13 +27,13 @@
     { "name": "Pneumatic Tube Architect",        "canonical": "Integration Technical Architect - USA", "description": "Designs the great pneumatic tubes between Krusty Krab POS and the realms beyond." },
     { "name": "Senior Tube Engineer",            "canonical": "Integration Senior Consultant - India", "description": "Lays the brass piping of APIs, middleware, and event flows under the Tube Architect's plan." },
     { "name": "Apprentice Tube Engineer",        "canonical": "Integration Consultant - India",        "description": "Learns the craft — webhooks, batch jobs, callouts, and the proper cleanup of leaky valves." },
-    { "name": "Health Inspector",                "canonical": "QA Engineer",                           "description": "Sniffs out bugs before they reach the customer — keeps the kitchen squeaky clean." },
+    { "name": "Health Inspector",                "canonical": "Quality Assurance (QA) Engineer",                           "description": "Sniffs out bugs before they reach the customer — keeps the kitchen squeaky clean." },
     { "name": "Bikini Bottom Crier",             "canonical": "Marketing Practice Lead",               "description": "Lifts the megaphone for product and message — leads all marketing voyages." },
     { "name": "Senior Billboard Strategist",     "canonical": "Marketing Senior Consultant",           "description": "Strategist of campaigns — plots the placement of every neon sign on Conch Street." },
     { "name": "Flyer Distribution Specialist",   "canonical": "Marketing Consultant",                  "description": "Carries the campaign to every mailbox and pineapple in town." },
     { "name": "Order-Taker Analyst",             "canonical": "Business Analyst",                      "description": "Takes the order, repeats it back, and writes it down so the cook gets it right the first time." },
-    { "name": "Senior Grill Foreman",            "canonical": "Salesforce Senior Developer - USA",     "description": "Veteran USA-side cook — owns the most complex Apex and the deep grill." },
-    { "name": "Junior Reef Cook",                "canonical": "Junior Salesforce Consultant - India",  "description": "Newest hand on deck — learns the menu, the platform, and the crew." }
+    { "name": "Senior Grill Foreman",            "canonical": "Salesforce Developer",     "description": "Veteran USA-side cook — owns the most complex Apex and the deep grill." },
+    { "name": "Junior Reef Cook",                "canonical": "Salesforce Consultant - India",  "description": "Newest hand on deck — learns the menu, the platform, and the crew." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -146,7 +146,7 @@
       "projectName": "Atlantis & Flying Dutchman — Legacy Realms Integration",
       "shortName": "AFD Legacy",
       "subAccountName": "Atlantis & the Flying Dutchman",
-      "subAccountNumber": "PSA-TEST-SPONGEBOB-ATLANTISFLYINGDUTCHMAN",
+      "subAccountNumber": "PSA-TEST-SPONGEBOB-ATLANTISFLYINGDUTCHMA",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

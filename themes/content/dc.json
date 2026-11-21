@@ -27,13 +27,13 @@
     { "name": "Boom Tube Architect — USA",       "canonical": "Integration Technical Architect - USA",   "description": "Designs the Boom Tubes between systems — the great spans that move data across the Multiverse." },
     { "name": "Senior Boom Tube Engineer",       "canonical": "Integration Senior Consultant - India",   "description": "Builds the stable Boom Tubes — APIs, middleware, event flows under the Architect's plan." },
     { "name": "Boom Tube Apprentice",            "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch jobs, callouts, and the rules of stable transit." },
-    { "name": "Crime Lab Tech",                  "canonical": "QA Engineer",                             "description": "Tests every piece of evidence and every build — finds the flaw before the villain does." },
+    { "name": "Crime Lab Tech",                  "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tests every piece of evidence and every build — finds the flaw before the villain does." },
     { "name": "Daily Planet Editor-in-Chief",    "canonical": "Marketing Practice Lead",                 "description": "Sets the front page — leads all marketing craft and sets the campaign tone." },
     { "name": "Senior Daily Planet Reporter",    "canonical": "Marketing Senior Consultant",             "description": "Veteran reporter — designs campaign strategy and hunts the lead story." },
     { "name": "Daily Planet Cub Reporter",       "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the field — content, creative, and chasing the daily scoop." },
     { "name": "Wayne Enterprises Analyst",       "canonical": "Business Analyst",                        "description": "Translates between the boardroom and the Batcave — captures requirements and stakeholder intent." },
-    { "name": "Senior Bat-Gadget Engineer — USA","canonical": "Salesforce Senior Developer - USA",       "description": "Master engineer of the Batcave workshop — leads complex builds and mentors the junior smiths." },
-    { "name": "Sidekick Consultant — Mumbai",    "canonical": "Junior Salesforce Consultant - India",    "description": "First mission rookie — shadows the Titans and learns the platform under close supervision." }
+    { "name": "Senior Bat-Gadget Engineer — USA","canonical": "Salesforce Developer",       "description": "Master engineer of the Batcave workshop — leads complex builds and mentors the junior smiths." },
+    { "name": "Sidekick Consultant — Mumbai",    "canonical": "Salesforce Consultant - India",    "description": "First mission rookie — shadows the Titans and learns the platform under close supervision." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes), each themed to the team's mission and base of operations.",

@@ -5,78 +5,46 @@
   "category": "Sci-Fi / Fantasy",
   "emailDomain": "seven-kingdoms.test",
   "tagline": "Seven-kingdoms operations — Iron Throne to the Wall",
-  "bestFor": [
-    "Forecasting walk-throughs",
-    "Pipeline depth (5 accounts / 11 opportunities)",
-    "Every billing model represented end-to-end",
-    "Multi-realm staffing + capacity demos"
-  ],
-  "capabilities": {
-    "forecasting": true,
-    "pipeline": true,
-    "billingVariety": true,
-    "timerDemos": true,
-    "setupWalkthroughs": true,
-    "brandRecognition": true
-  },
-  "account": {
-    "name": "Seven Kingdoms HQ (Test Data)",
-    "accountNumber": "PSA-TEST-GAMEOFTHRONES"
-  },
-
+  "bestFor": ["Forecasting walk-throughs", "Pipeline depth (5 accounts / 11 opportunities)", "Every billing model represented end-to-end", "Multi-realm staffing + capacity demos"],
+  "capabilities": { "forecasting": true, "pipeline": true, "billingVariety": true, "timerDemos": true, "setupWalkthroughs": true, "brandRecognition": true },
+  "account": { "name": "Seven Kingdoms HQ (Test Data)", "accountNumber": "PSA-TEST-GAMEOFTHRONES" },
   "serviceLines": [
-    { "name": "GoT: Strategy & Advisory",   "description": "Hand-of-the-King-tier strategic engagements. Discovery, roadmaps, executive advisory." },
-    { "name": "GoT: Implementation",        "description": "Build + delivery houses. Greenfield platforms, integrations, migrations." },
-    { "name": "GoT: Managed Services",      "description": "Long-running operational engagements. Retainer-style ongoing support." },
-    { "name": "GoT: Data & Analytics",      "description": "Insight engagements. BI, dashboards, Citadel records analysis." },
-    { "name": "GoT: Knowledge & Training",  "description": "Enablement engagements. Curriculum delivery, knowledge transfer, documentation." }
+    { "name": "GoT: Strategy & Advisory", "description": "Hand-of-the-King-tier strategic engagements. Discovery, roadmaps, executive advisory." },
+    { "name": "GoT: Implementation", "description": "Build + delivery houses. Greenfield platforms, integrations, migrations." },
+    { "name": "GoT: Managed Services", "description": "Long-running operational engagements. Retainer-style ongoing support." },
+    { "name": "GoT: Data & Analytics", "description": "Insight engagements. BI, dashboards, Citadel records analysis." },
+    { "name": "GoT: Knowledge & Training", "description": "Enablement engagements. Curriculum delivery, knowledge transfer, documentation." }
   ],
-
-  "realmServiceLineMap": {
-    "kings-landing":     "GoT: Strategy & Advisory",
-    "dorne-court":       "GoT: Strategy & Advisory",
-    "the-wall":          "GoT: Implementation",
-    "dragonstone-forge": "GoT: Implementation",
-    "winterfell":        "GoT: Managed Services",
-    "stormlands-march":  "GoT: Managed Services",
-    "valyrian-archives": "GoT: Data & Analytics",
-    "highgarden-trade":  "GoT: Data & Analytics",
-    "citadel-maesters":  "GoT: Knowledge & Training"
-  },
-
+  "realmServiceLineMap": { "kings-landing": "GoT: Strategy & Advisory", "dorne-court": "GoT: Strategy & Advisory", "the-wall": "GoT: Implementation", "dragonstone-forge": "GoT: Implementation", "winterfell": "GoT: Managed Services", "stormlands-march": "GoT: Managed Services", "valyrian-archives": "GoT: Data & Analytics", "highgarden-trade": "GoT: Data & Analytics", "citadel-maesters": "GoT: Knowledge & Training" },
   "pipelineAccounts": [
-    { "key": "braavos",     "accountNumber": "PSA-PIPELINE-GOT-BRAAVOS",     "name": "Iron Bank of Braavos" },
-    { "key": "pentos",      "accountNumber": "PSA-PIPELINE-GOT-PENTOS",      "name": "Pentos Magisterial Council" },
-    { "key": "essos",       "accountNumber": "PSA-PIPELINE-GOT-ESSOS",       "name": "Essos Free Cities Alliance" },
+    { "key": "braavos", "accountNumber": "PSA-PIPELINE-GOT-BRAAVOS", "name": "Iron Bank of Braavos" },
+    { "key": "pentos", "accountNumber": "PSA-PIPELINE-GOT-PENTOS", "name": "Pentos Magisterial Council" },
+    { "key": "essos", "accountNumber": "PSA-PIPELINE-GOT-ESSOS", "name": "Essos Free Cities Alliance" },
     { "key": "ironislands", "accountNumber": "PSA-PIPELINE-GOT-IRONISLANDS", "name": "Iron Islands Maritime Trading" },
-    { "key": "thereach",    "accountNumber": "PSA-PIPELINE-GOT-THEREACH",    "name": "The Reach Agricultural Co-op" }
+    { "key": "thereach", "accountNumber": "PSA-PIPELINE-GOT-THEREACH", "name": "The Reach Agricultural Co-op" }
   ],
-
   "pipelineOpportunities": [
-    { "extIdSlug": "braavos-iron-bank-ledger",          "accountKey": "braavos",     "name": "Iron Bank of Braavos Ledger Platform",     "stage": "Negotiation/Review",   "amount": 2200000, "daysFromToday": 30,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Data & Analytics",     "startOffsetDays": 21 },
-    { "extIdSlug": "pentos-trade-portal",               "accountKey": "pentos",      "name": "Pentos Magisterial Trade Portal",          "stage": "Proposal/Price Quote", "amount": 1800000, "daysFromToday": 45,  "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "essos-cities-modernization",        "accountKey": "essos",       "name": "Essos Free Cities CRM Modernization",      "stage": "Negotiation/Review",   "amount": 1360000, "daysFromToday": 60,  "forecastCategory": "Commit",    "probability": 90, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Strategy & Advisory",  "startOffsetDays": 21 },
-    { "extIdSlug": "ironislands-fleet-records",         "accountKey": "ironislands", "name": "Iron Islands Fleet Records Migration",     "stage": "Value Proposition",    "amount": 980000,  "daysFromToday": 90,  "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "pentos-security-mesh",              "accountKey": "pentos",      "name": "Pentos Magisterial Security Mesh",         "stage": "Value Proposition",    "amount": 745000,  "daysFromToday": 120, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Managed Services",     "startOffsetDays": 21 },
-    { "extIdSlug": "thereach-harvest-training",         "accountKey": "thereach",    "name": "The Reach Harvest Training Program",       "stage": "Proposal/Price Quote", "amount": 615000,  "daysFromToday": 150, "forecastCategory": "Commit",    "probability": 85, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Knowledge & Training", "startOffsetDays": 21 },
-    { "extIdSlug": "ironislands-pos-replacement",       "accountKey": "ironislands", "name": "Iron Islands Outpost POS Replacement",     "stage": "Value Proposition",    "amount": 505000,  "daysFromToday": 180, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Implementation",       "startOffsetDays": 21 },
-    { "extIdSlug": "braavos-merchant-portal",           "accountKey": "braavos",     "name": "Braavos Merchant Portal Discovery",        "stage": "Value Proposition",    "amount": 445000,  "daysFromToday": 210, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Strategy & Advisory",  "startOffsetDays": 21 },
-    { "extIdSlug": "essos-treasury-analytics",          "accountKey": "essos",       "name": "Essos Treasury Analytics",                 "stage": "Qualification",        "amount": 365000,  "daysFromToday": 240, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 17,                                    "serviceLineKey": "GoT: Data & Analytics",     "startOffsetDays": 21 },
-    { "extIdSlug": "thereach-mobile-archive",           "accountKey": "thereach",    "name": "The Reach Mobile Archive Engagement",      "stage": "Needs Analysis",       "amount": 295000,  "daysFromToday": 270, "forecastCategory": "Pipeline",  "probability": 60, "durationWeeks": 17,                                    "serviceLineKey": "GoT: Knowledge & Training", "startOffsetDays": 21 },
-    { "extIdSlug": "pentos-archive-digitization",       "accountKey": "pentos",      "name": "Pentos Council Archive Digitization",      "stage": "Qualification",        "amount": 280000,  "daysFromToday": 300, "forecastCategory": "Pipeline",  "probability": 50, "durationWeeks": 16,                                    "serviceLineKey": "GoT: Knowledge & Training", "startOffsetDays": 21 }
+    { "extIdSlug": "braavos-iron-bank-ledger", "accountKey": "braavos", "name": "Iron Bank of Braavos Ledger Platform", "stage": "Negotiation/Review", "amount": 2200000, "daysFromToday": 30, "forecastCategory": "Commit", "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Data & Analytics", "startOffsetDays": 21 },
+    { "extIdSlug": "pentos-trade-portal", "accountKey": "pentos", "name": "Pentos Magisterial Trade Portal", "stage": "Proposal/Price Quote", "amount": 1800000, "daysFromToday": 45, "forecastCategory": "Commit", "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "essos-cities-modernization", "accountKey": "essos", "name": "Essos Free Cities CRM Modernization", "stage": "Negotiation/Review", "amount": 1360000, "daysFromToday": 60, "forecastCategory": "Commit", "probability": 90, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Strategy & Advisory", "startOffsetDays": 21 },
+    { "extIdSlug": "ironislands-fleet-records", "accountKey": "ironislands", "name": "Iron Islands Fleet Records Migration", "stage": "Value Proposition", "amount": 980000, "daysFromToday": 90, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "pentos-security-mesh", "accountKey": "pentos", "name": "Pentos Magisterial Security Mesh", "stage": "Value Proposition", "amount": 745000, "daysFromToday": 120, "forecastCategory": "Best Case", "probability": 75, "durationWeeks": 39, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Managed Services", "startOffsetDays": 21 },
+    { "extIdSlug": "thereach-harvest-training", "accountKey": "thereach", "name": "The Reach Harvest Training Program", "stage": "Proposal/Price Quote", "amount": 615000, "daysFromToday": 150, "forecastCategory": "Commit", "probability": 85, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "ironislands-pos-replacement", "accountKey": "ironislands", "name": "Iron Islands Outpost POS Replacement", "stage": "Value Proposition", "amount": 505000, "daysFromToday": 180, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Implementation", "startOffsetDays": 21 },
+    { "extIdSlug": "braavos-merchant-portal", "accountKey": "braavos", "name": "Braavos Merchant Portal Discovery", "stage": "Value Proposition", "amount": 445000, "daysFromToday": 210, "forecastCategory": "Best Case", "probability": 70, "durationWeeks": 26, "billingModel": "Time and Materials", "serviceLineKey": "GoT: Strategy & Advisory", "startOffsetDays": 21 },
+    { "extIdSlug": "essos-treasury-analytics", "accountKey": "essos", "name": "Essos Treasury Analytics", "stage": "Qualification", "amount": 365000, "daysFromToday": 240, "forecastCategory": "Pipeline", "probability": 50, "durationWeeks": 17, "serviceLineKey": "GoT: Data & Analytics", "startOffsetDays": 21 },
+    { "extIdSlug": "thereach-mobile-archive", "accountKey": "thereach", "name": "The Reach Mobile Archive Engagement", "stage": "Needs Analysis", "amount": 295000, "daysFromToday": 270, "forecastCategory": "Pipeline", "probability": 60, "durationWeeks": 17, "serviceLineKey": "GoT: Knowledge & Training", "startOffsetDays": 21 },
+    { "extIdSlug": "pentos-archive-digitization", "accountKey": "pentos", "name": "Pentos Council Archive Digitization", "stage": "Qualification", "amount": 280000, "daysFromToday": 300, "forecastCategory": "Pipeline", "probability": 50, "durationWeeks": 16, "serviceLineKey": "GoT: Knowledge & Training", "startOffsetDays": 21 }
   ],
-
   "roles": [
-    { "name": "Hand of the King (SA)",                 "canonical": "Solution Architect",                   "description": "Bearer of the King's seal — designs the over-arching solution and watches over its integrity." },
-    { "name": "Lord of the House (PM)",                "canonical": "Project Manager",                      "description": "Marshals the bannermen of delivery, holds the timeline, and answers to the King." },
-    { "name": "Senior Knight (SCC)",                   "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft — leads the build phase." },
-    { "name": "Squire (CC)",                           "canonical": "Salesforce Consultant - India",        "description": "Carries discovery and configuration across the realm under the knight's eye." },
-    { "name": "Maester (BA)",                          "canonical": "Business Analyst",                     "description": "Records what is needed and what is promised — translates between mortal customer and the maester's craft." },
-    { "name": "Town Crier (SMCC)",                     "canonical": "Marketing Senior Consultant - India",  "description": "Strategist of campaigns — sounds the call to gather and convert across the seven kingdoms." }
+    { "name": "Hand of the King (SA)", "canonical": "Solution Architect", "description": "Bearer of the King's seal — designs the over-arching solution and watches over its integrity." },
+    { "name": "Lord of the House (PM)", "canonical": "Project Manager", "description": "Marshals the bannermen of delivery, holds the timeline, and answers to the King." },
+    { "name": "Senior Knight (SCC)", "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft — leads the build phase." },
+    { "name": "Squire (CC)", "canonical": "Salesforce Consultant - India", "description": "Carries discovery and configuration across the realm under the knight's eye." },
+    { "name": "Maester (BA)", "canonical": "Business Analyst", "description": "Records what is needed and what is promised — translates between mortal customer and the maester's craft." },
+    { "name": "Town Crier (SMCC)", "canonical": "Marketing Senior Consultant - India", "description": "Strategist of campaigns — sounds the call to gather and convert across the seven kingdoms." }
   ],
-
   "_realmNotes": "Game of Thrones realms span the major arcs: Iron Throne politics (kings-landing, dorne-court), Northern defense (winterfell, the-wall), trade + economy (highgarden-trade, dragonstone-forge), Stormlands ops (stormlands-march), Valyrian history (valyrian-archives), and Citadel training (citadel-maesters as pre-sales).",
-
   "realms": [
     {
       "key": "kings-landing",
@@ -95,48 +63,99 @@
         "allocationProfile": {
           "name": "King's Landing Ramp",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 40 },
-            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
+            { "order": 1, "startPct": 0, "endPct": 30, "revenuePct": 40 },
+            { "order": 2, "startPct": 30, "endPct": 70, "revenuePct": 40 },
             { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 600,  "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 1500, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 200,  "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 1200, "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 900,  "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 600, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 900, "unitPrice": 100 }
         ]
       },
       "invoices": [
-        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-KINGSLANDING-001", "lines": [ { "lineType": "Time and Materials", "amount": 98000 } ] },
-        { "issuedOffsetWeeks": 8,  "status": "Paid",     "number": "INV-KINGSLANDING-002", "lines": [ { "lineType": "Time and Materials", "amount": 114000 } ] },
-        { "issuedOffsetWeeks": 12, "status": "Invoiced", "number": "INV-KINGSLANDING-003", "lines": [ { "lineType": "Time and Materials", "amount": 91000 } ] }
+        {
+          "issuedOffsetWeeks": 4,
+          "status": "Paid",
+          "number": "INV-KINGSLANDING-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 98000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 8,
+          "status": "Paid",
+          "number": "INV-KINGSLANDING-002",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 114000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 12,
+          "status": "Invoiced",
+          "number": "INV-KINGSLANDING-003",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 91000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Red Keep Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Small Council", "isDefault": false, "billable": true, "children": [
-          { "name": "Small Council Briefing", "billable": true },
-          { "name": "Spy Network Survey", "billable": true },
-          { "name": "Strategy with the Hand", "billable": true }
-        ]},
-        { "name": "Build the Throne Room", "isDefault": false, "billable": true, "children": [
-          { "name": "Iron Throne Foundation", "billable": true },
-          { "name": "Throne Hall Outfitting", "billable": true },
-          { "name": "King's Guard Quarters", "billable": true }
-        ]},
-        { "name": "Migrate the Royal Records", "isDefault": false, "billable": true, "children": [
-          { "name": "Bannerman Roll Call", "billable": true },
-          { "name": "Tax Ledger Digitization", "billable": true }
-        ]},
-        { "name": "Testing the Defenses", "isDefault": false, "billable": true, "children": [
-          { "name": "King's Guard UAT", "billable": true },
-          { "name": "Wildfire Storage Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Court", "isDefault": false, "billable": true, "children": [
-          { "name": "Courtier Onboarding", "billable": true },
-          { "name": "Lord's Workshop", "billable": true }
-        ]}
+        {
+          "name": "Red Keep Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Small Council",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Small Council Briefing", "billable": true },
+            { "name": "Spy Network Survey", "billable": true },
+            { "name": "Strategy with the Hand", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Throne Room",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Iron Throne Foundation", "billable": true },
+            { "name": "Throne Hall Outfitting", "billable": true },
+            { "name": "King's Guard Quarters", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Royal Records",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Bannerman Roll Call", "billable": true },
+            { "name": "Tax Ledger Digitization", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Defenses",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "King's Guard UAT", "billable": true },
+            { "name": "Wildfire Storage Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Court",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Courtier Onboarding", "billable": true },
+            { "name": "Lord's Workshop", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -160,48 +179,92 @@
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 400,  "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 1000, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 100,  "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 600,  "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 1200, "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 1000, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 600, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 1200, "unitPrice": 100 }
         ]
       },
       "milestones": [
-        { "name": "Watch Tower Audit",        "offsetWeeks": 4,  "amount": 96000,  "status": "Completed" },
-        { "name": "Brothers Sworn",           "offsetWeeks": 10, "amount": 138000, "status": "Completed" },
-        { "name": "Wildling Treaty Signed",   "offsetWeeks": 16, "amount": 112000, "status": "In Progress" },
-        { "name": "Watch Reorganized",        "offsetWeeks": 22, "amount": 124000, "status": "Not Started" },
-        { "name": "Castle Black Live",        "offsetWeeks": 26, "amount": 95000,  "status": "Not Started" }
+        { "name": "Watch Tower Audit", "offsetWeeks": 4, "amount": 96000, "status": "Completed" },
+        { "name": "Brothers Sworn", "offsetWeeks": 10, "amount": 138000, "status": "Completed" },
+        { "name": "Wildling Treaty Signed", "offsetWeeks": 16, "amount": 112000, "status": "In Progress" },
+        { "name": "Watch Reorganized", "offsetWeeks": 22, "amount": 124000, "status": "Not Started" },
+        { "name": "Castle Black Live", "offsetWeeks": 26, "amount": 95000, "status": "Not Started" }
       ],
       "invoices": [
-        { "issuedOffsetWeeks": 5,  "status": "Paid", "number": "INV-WALL-001", "lines": [ { "lineType": "Milestone", "amount": 96000 } ] },
-        { "issuedOffsetWeeks": 10, "status": "Paid", "number": "INV-WALL-002", "lines": [ { "lineType": "Milestone", "amount": 138000 } ] }
+        {
+          "issuedOffsetWeeks": 5,
+          "status": "Paid",
+          "number": "INV-WALL-001",
+          "lines": [
+            { "lineType": "Milestone", "amount": 96000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 10,
+          "status": "Paid",
+          "number": "INV-WALL-002",
+          "lines": [
+            { "lineType": "Milestone", "amount": 138000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Castle Black Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Ranging", "isDefault": false, "billable": true, "children": [
-          { "name": "Beyond-the-Wall Survey", "billable": true },
-          { "name": "Wildling Council Mapping", "billable": true },
-          { "name": "Tactical Plan with the Lord Commander", "billable": true }
-        ]},
-        { "name": "Build the Watch", "isDefault": false, "billable": true, "children": [
-          { "name": "Watch Tower Foundation", "billable": true },
-          { "name": "Crow Cage Forging", "billable": true },
-          { "name": "Ice Wall Hardening", "billable": true }
-        ]},
-        { "name": "Migrate the Watch Records", "isDefault": false, "billable": true, "children": [
-          { "name": "Black Brother Roll", "billable": true },
-          { "name": "Wildling Inventory", "billable": true }
-        ]},
-        { "name": "Testing the Watch", "isDefault": false, "billable": true, "children": [
-          { "name": "Wight Defense Drill", "billable": true },
-          { "name": "Wall Patrol Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Watch", "isDefault": false, "billable": true, "children": [
-          { "name": "Recruit Foundations", "billable": true },
-          { "name": "Lord Commander's Manual", "billable": true }
-        ]}
+        {
+          "name": "Castle Black Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Ranging",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Beyond-the-Wall Survey", "billable": true },
+            { "name": "Wildling Council Mapping", "billable": true },
+            { "name": "Tactical Plan with the Lord Commander", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Watch",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Watch Tower Foundation", "billable": true },
+            { "name": "Crow Cage Forging", "billable": true },
+            { "name": "Ice Wall Hardening", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Watch Records",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Black Brother Roll", "billable": true },
+            { "name": "Wildling Inventory", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Watch",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Wight Defense Drill", "billable": true },
+            { "name": "Wall Patrol Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Watch",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Recruit Foundations", "billable": true },
+            { "name": "Lord Commander's Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -219,57 +282,101 @@
         "allocationProfile": {
           "name": "Winterfell Watch Back-loaded",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 33,  "revenuePct": 20 },
-            { "order": 2, "startPct": 33, "endPct": 66,  "revenuePct": 30 },
+            { "order": 1, "startPct": 0, "endPct": 33, "revenuePct": 20 },
+            { "order": 2, "startPct": 33, "endPct": 66, "revenuePct": 30 },
             { "order": 3, "startPct": 66, "endPct": 100, "revenuePct": 50 }
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 300, "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 700, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 100, "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 500, "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 750, "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 300, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 700, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 500, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 750, "unitPrice": 100 }
         ]
       },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "forecastLines": [
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 69166.66 },
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 69166.66 },
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 69166.66 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0, "amount": 69166.66 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4, "amount": 69166.66 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9, "amount": 69166.66 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 69166.67 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 69166.67 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 69166.68 }
       ],
       "invoices": [
-        { "issuedOffsetWeeks": 0, "status": "Paid", "number": "INV-WINTERFELL-001", "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 69166.66 } ] },
-        { "issuedOffsetWeeks": 4, "status": "Paid", "number": "INV-WINTERFELL-002", "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 69166.66 } ] }
+        {
+          "issuedOffsetWeeks": 0,
+          "status": "Paid",
+          "number": "INV-WINTERFELL-001",
+          "lines": [
+            { "lineType": "Fixed Monthly Retainer", "amount": 69166.66 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 4,
+          "status": "Paid",
+          "number": "INV-WINTERFELL-002",
+          "lines": [
+            { "lineType": "Fixed Monthly Retainer", "amount": 69166.66 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Great Hall Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
-          { "name": "Northern Lords Roll Call", "billable": true },
-          { "name": "Godswood Polling", "billable": true },
-          { "name": "Strategy with the Warden", "billable": true }
-        ]},
-        { "name": "Build the Defenses", "isDefault": false, "billable": true, "children": [
-          { "name": "Hot Spring Insulation", "billable": true },
-          { "name": "Outer Wall Reinforcement", "billable": true },
-          { "name": "Cryptkeeper Watch Setup", "billable": true }
-        ]},
-        { "name": "Migrate the Stark Records", "isDefault": false, "billable": true, "children": [
-          { "name": "Northern Tax Ledger Roll", "billable": true },
-          { "name": "Direwolf Pack Inventory", "billable": true }
-        ]},
-        { "name": "Testing the Watch", "isDefault": false, "billable": true, "children": [
-          { "name": "Iron-Born Raid Drill", "billable": true },
-          { "name": "Long Night Endurance Test", "billable": true }
-        ]},
-        { "name": "Training the Household", "isDefault": false, "billable": true, "children": [
-          { "name": "Bannerman Foundations", "billable": true },
-          { "name": "Castellan's Manual", "billable": true }
-        ]}
+        {
+          "name": "Great Hall Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Council",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Northern Lords Roll Call", "billable": true },
+            { "name": "Godswood Polling", "billable": true },
+            { "name": "Strategy with the Warden", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Defenses",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Hot Spring Insulation", "billable": true },
+            { "name": "Outer Wall Reinforcement", "billable": true },
+            { "name": "Cryptkeeper Watch Setup", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Stark Records",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Northern Tax Ledger Roll", "billable": true },
+            { "name": "Direwolf Pack Inventory", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Watch",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Iron-Born Raid Drill", "billable": true },
+            { "name": "Long Night Endurance Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Household",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Bannerman Foundations", "billable": true },
+            { "name": "Castellan's Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -283,46 +390,60 @@
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
-        { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Acolyte Survey", "isDefault": false, "billable": true, "children": [
-          { "name": "Acolyte Aptitude Calibration", "billable": true },
-          { "name": "Future-state Visioning", "billable": true },
-          { "name": "Archmaester's Council", "billable": true }
-        ]},
-        { "name": "Build the Reading Rooms", "isDefault": false, "billable": true, "children": [
-          { "name": "Vault Foundation", "billable": true },
-          { "name": "Astrolabe Setup", "billable": true },
-          { "name": "Raven Aviary Outfitting", "billable": true }
-        ]},
-        { "name": "Migrate the Citadel Archives", "isDefault": false, "billable": true, "children": [
-          { "name": "Ancient Tome Inventory", "billable": true },
-          { "name": "Maester Chain Records", "billable": true }
-        ]},
-        { "name": "Testing the Acolytes", "isDefault": false, "billable": true, "children": [
-          { "name": "Link-Forging Trial", "billable": true },
-          { "name": "Raven-Tracking UAT", "billable": true }
-        ]},
-        { "name": "Training the Maesters", "isDefault": false, "billable": true, "children": [
-          { "name": "Healing Arts Foundations", "billable": true },
-          { "name": "Archmaester's Manual", "billable": true }
-        ]}
-      ],
-      "openOpp": true,
-      "openOpportunity": {
-        "name": "Citadel — Maester Curriculum Revival Opportunity",
-        "stage": "Proposal/Price Quote",
-        "closeDateDaysFromToday": 30,
-        "amount": 545000,
-        "paymentTerms": "Net 30",
-        "prePaymentAmount": 0,
-        "products": [
-          { "themedRole": "Lord of the House",       "quantity": 500,  "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 1200, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 300,  "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 700,  "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 1000, "unitPrice": 100 }
-        ]
-      }
+        {
+          "name": "Citadel Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Acolyte Survey",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Acolyte Aptitude Calibration", "billable": true },
+            { "name": "Future-state Visioning", "billable": true },
+            { "name": "Archmaester's Council", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Reading Rooms",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Vault Foundation", "billable": true },
+            { "name": "Astrolabe Setup", "billable": true },
+            { "name": "Raven Aviary Outfitting", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Citadel Archives",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Ancient Tome Inventory", "billable": true },
+            { "name": "Maester Chain Records", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Acolytes",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Link-Forging Trial", "billable": true },
+            { "name": "Raven-Tracking UAT", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Maesters",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Healing Arts Foundations", "billable": true },
+            { "name": "Archmaester's Manual", "billable": true }
+          ]
+        }
+      ]
     },
     {
       "key": "highgarden-trade",
@@ -341,49 +462,108 @@
         "allocationProfile": {
           "name": "Highgarden Front-loaded",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 60 },
-            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 30 },
+            { "order": 1, "startPct": 0, "endPct": 30, "revenuePct": 60 },
+            { "order": 2, "startPct": 30, "endPct": 70, "revenuePct": 30 },
             { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 10 }
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 400, "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 800, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 150, "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 600, "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 900, "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 800, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 150, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 600, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 900, "unitPrice": 100 }
         ]
       },
       "prepayments": [
         { "amount": 270000, "appliedOffsetWeeks": 0, "notes": "Up-front gold dragon escrow on contract signature." }
       ],
       "invoices": [
-        { "issuedOffsetWeeks": 6,  "status": "Paid",     "number": "INV-HIGHGARDEN-001", "lines": [ { "lineType": "Prepayment Draw", "amount": 160000 } ] },
-        { "issuedOffsetWeeks": 14, "status": "Invoiced", "number": "INV-HIGHGARDEN-002", "lines": [ { "lineType": "Prepayment Draw", "amount": 110000 } ] }
+        {
+          "issuedOffsetWeeks": 0,
+          "status": "Paid",
+          "number": "INV-HIGHGARDEN-PREPAY",
+          "lines": [
+            { "lineType": "Prepayment", "amount": 270000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 6,
+          "status": "Paid",
+          "number": "INV-HIGHGARDEN-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 160000 },
+            { "lineType": "Drawdown", "amount": -160000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 14,
+          "status": "Invoiced",
+          "number": "INV-HIGHGARDEN-002",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 110000 },
+            { "lineType": "Drawdown", "amount": -110000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Tyrell Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Harvest Survey", "isDefault": false, "billable": true, "children": [
-          { "name": "Reach Crop Yield Audit", "billable": true },
-          { "name": "Trade Lane Mapping", "billable": true }
-        ]},
-        { "name": "Build the Trade Hub", "isDefault": false, "billable": true, "children": [
-          { "name": "Bumbleton Market Foundation", "billable": true },
-          { "name": "Caravan Routing Network", "billable": true },
-          { "name": "Trade Hall Outfitting", "billable": true }
-        ]},
-        { "name": "Migrate the Tyrell Ledgers", "isDefault": false, "billable": true, "children": [
-          { "name": "Gold Dragon Transaction Digitization", "billable": true },
-          { "name": "Vassal Lord Reconciliation", "billable": true }
-        ]},
-        { "name": "Testing the Market", "isDefault": false, "billable": true, "children": [
-          { "name": "Market Day Drill", "billable": true },
-          { "name": "Caravan Ambush UAT", "billable": true }
-        ]},
-        { "name": "Training the Stewards", "isDefault": false, "billable": true, "children": [
-          { "name": "Steward Onboarding", "billable": true },
-          { "name": "Lord Steward's Manual", "billable": true }
-        ]}
+        {
+          "name": "Tyrell Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Harvest Survey",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Reach Crop Yield Audit", "billable": true },
+            { "name": "Trade Lane Mapping", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Trade Hub",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Bumbleton Market Foundation", "billable": true },
+            { "name": "Caravan Routing Network", "billable": true },
+            { "name": "Trade Hall Outfitting", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Tyrell Ledgers",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Gold Dragon Transaction Digitization", "billable": true },
+            { "name": "Vassal Lord Reconciliation", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Market",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Market Day Drill", "billable": true },
+            { "name": "Caravan Ambush UAT", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Stewards",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Steward Onboarding", "billable": true },
+            { "name": "Lord Steward's Manual", "billable": true }
+          ]
+        }
+      ],
+      "forecastLines": [
+        { "lineType": "Prepayment", "plannedOffsetWeeks": 0, "amount": 270000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 6, "amount": -160000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 14, "amount": -110000 }
       ]
     },
     {
@@ -403,46 +583,98 @@
         "allocationProfile": {
           "name": "Stormlands Mixed Curve",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 40,  "revenuePct": 35 },
-            { "order": 2, "startPct": 40, "endPct": 80,  "revenuePct": 45 },
+            { "order": 1, "startPct": 0, "endPct": 40, "revenuePct": 35 },
+            { "order": 2, "startPct": 40, "endPct": 80, "revenuePct": 45 },
             { "order": 3, "startPct": 80, "endPct": 100, "revenuePct": 20 }
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 500,  "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 1100, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 150,  "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 800,  "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 1300, "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 500, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 1100, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 150, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 800, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 1300, "unitPrice": 100 }
         ]
       },
       "invoices": [
-        { "issuedOffsetWeeks": 5,  "status": "Paid",     "number": "INV-STORMLANDS-001", "lines": [ { "lineType": "Time and Materials", "amount": 73000 }, { "lineType": "Milestone", "amount": 33000 } ] },
-        { "issuedOffsetWeeks": 13, "status": "Paid",     "number": "INV-STORMLANDS-002", "lines": [ { "lineType": "Time and Materials", "amount": 88000 } ] },
-        { "issuedOffsetWeeks": 20, "status": "Invoiced", "number": "INV-STORMLANDS-003", "lines": [ { "lineType": "Milestone", "amount": 64000 } ] }
+        {
+          "issuedOffsetWeeks": 5,
+          "status": "Paid",
+          "number": "INV-STORMLANDS-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 73000 },
+            { "lineType": "Milestone", "amount": 33000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 13,
+          "status": "Paid",
+          "number": "INV-STORMLANDS-002",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 88000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 20,
+          "status": "Invoiced",
+          "number": "INV-STORMLANDS-003",
+          "lines": [
+            { "lineType": "Milestone", "amount": 64000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Storm's End Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Banner Census", "isDefault": false, "billable": true, "children": [
-          { "name": "Bannerman Headcount", "billable": true },
-          { "name": "Coastline Mapping Survey", "billable": true }
-        ]},
-        { "name": "Build the Census Network", "isDefault": false, "billable": true, "children": [
-          { "name": "Storm-Watch Tower Setup", "billable": true },
-          { "name": "Beacon Network Calibration", "billable": true }
-        ]},
-        { "name": "Migrate the Lord's Records", "isDefault": false, "billable": true, "children": [
-          { "name": "House Sworn-Sword Roll", "billable": true },
-          { "name": "Coastal Fortress Reconciliation", "billable": true }
-        ]},
-        { "name": "Testing the Census", "isDefault": false, "billable": true, "children": [
-          { "name": "Storm Drill", "billable": true },
-          { "name": "Bannerman UAT", "billable": true }
-        ]},
-        { "name": "Training the Stewards", "isDefault": false, "billable": true, "children": [
-          { "name": "Storm-Watch Onboarding", "billable": true },
-          { "name": "Castellan's Manual", "billable": true }
-        ]}
+        {
+          "name": "Storm's End Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Banner Census",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Bannerman Headcount", "billable": true },
+            { "name": "Coastline Mapping Survey", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Census Network",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Storm-Watch Tower Setup", "billable": true },
+            { "name": "Beacon Network Calibration", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Lord's Records",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "House Sworn-Sword Roll", "billable": true },
+            { "name": "Coastal Fortress Reconciliation", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Census",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Storm Drill", "billable": true },
+            { "name": "Bannerman UAT", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Stewards",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Storm-Watch Onboarding", "billable": true },
+            { "name": "Castellan's Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -462,46 +694,104 @@
         "allocationProfile": {
           "name": "Valyria Historical Even",
           "segments": [
-            { "order": 1, "startPct": 0,   "endPct": 50,  "revenuePct": 50 },
-            { "order": 2, "startPct": 50,  "endPct": 100, "revenuePct": 50 }
+            { "order": 1, "startPct": 0, "endPct": 50, "revenuePct": 50 },
+            { "order": 2, "startPct": 50, "endPct": 100, "revenuePct": 50 }
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 800,  "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 1700, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 250,  "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 1300, "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 1800, "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 800, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 1700, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 250, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 1300, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 1800, "unitPrice": 100 }
         ]
       },
       "invoices": [
-        { "issuedOffsetWeeks": -48, "status": "Paid", "number": "INV-VALYRIA-001", "lines": [ { "lineType": "Time and Materials", "amount": 125000 } ] },
-        { "issuedOffsetWeeks": -36, "status": "Paid", "number": "INV-VALYRIA-002", "lines": [ { "lineType": "Time and Materials", "amount": 140000 } ] },
-        { "issuedOffsetWeeks": -22, "status": "Paid", "number": "INV-VALYRIA-003", "lines": [ { "lineType": "Time and Materials", "amount": 150000 } ] },
-        { "issuedOffsetWeeks": -8,  "status": "Paid", "number": "INV-VALYRIA-004", "lines": [ { "lineType": "Time and Materials", "amount": 165000 } ] }
+        {
+          "issuedOffsetWeeks": 4,
+          "status": "Paid",
+          "number": "INV-VALYRIA-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 125000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 16,
+          "status": "Paid",
+          "number": "INV-VALYRIA-002",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 140000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 30,
+          "status": "Paid",
+          "number": "INV-VALYRIA-003",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 150000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 44,
+          "status": "Paid",
+          "number": "INV-VALYRIA-004",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 165000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Valyrian Vault Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Ruin Survey", "isDefault": false, "billable": true, "children": [
-          { "name": "Doom-Era Mapping", "billable": true },
-          { "name": "Dragon Bone Inventory", "billable": true }
-        ]},
-        { "name": "Build the Recovery Vaults", "isDefault": false, "billable": true, "children": [
-          { "name": "Vault Foundation Stone", "billable": true },
-          { "name": "Cleansing Chamber Setup", "billable": true }
-        ]},
-        { "name": "Migrate the Valyrian Records", "isDefault": false, "billable": true, "children": [
-          { "name": "High Valyrian Translation", "billable": true },
-          { "name": "Dragonlord Genealogy Cross-reference", "billable": true }
-        ]},
-        { "name": "Testing the Data Quality", "isDefault": false, "billable": true, "children": [
-          { "name": "Manuscript Drift Check", "billable": true },
-          { "name": "Dragon-Tongue Decryption UAT", "billable": true }
-        ]},
-        { "name": "Training the Archivists", "isDefault": false, "billable": true, "children": [
-          { "name": "Maester Archivist Foundations", "billable": true },
-          { "name": "Chief Archivist's Manual", "billable": true }
-        ]}
+        {
+          "name": "Valyrian Vault Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Ruin Survey",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Doom-Era Mapping", "billable": true },
+            { "name": "Dragon Bone Inventory", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Recovery Vaults",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Vault Foundation Stone", "billable": true },
+            { "name": "Cleansing Chamber Setup", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Valyrian Records",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "High Valyrian Translation", "billable": true },
+            { "name": "Dragonlord Genealogy Cross-reference", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Data Quality",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Manuscript Drift Check", "billable": true },
+            { "name": "Dragon-Tongue Decryption UAT", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Archivists",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Maester Archivist Foundations", "billable": true },
+            { "name": "Chief Archivist's Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -525,40 +815,84 @@
           ]
         },
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 400, "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 900, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 200, "unitPrice": 300 },
-          { "themedRole": "Maester",                 "quantity": 700, "unitPrice": 150 },
-          { "themedRole": "Squire",                  "quantity": 800, "unitPrice": 100 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 900, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Maester (BA)", "quantity": 700, "unitPrice": 150 },
+          { "themedRole": "Squire (CC)", "quantity": 800, "unitPrice": 100 }
         ]
       },
       "invoices": [
-        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-DORNE-001", "lines": [ { "lineType": "Time and Materials", "amount": 78000 } ] },
-        { "issuedOffsetWeeks": 9,  "status": "Invoiced", "number": "INV-DORNE-002", "lines": [ { "lineType": "Time and Materials", "amount": 83000 } ] }
+        {
+          "issuedOffsetWeeks": 4,
+          "status": "Paid",
+          "number": "INV-DORNE-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 78000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 9,
+          "status": "Invoiced",
+          "number": "INV-DORNE-002",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 83000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Sunspear Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Council Audit", "isDefault": false, "billable": true, "children": [
-          { "name": "Martell Bannermen Survey", "billable": true },
-          { "name": "Sand-Snake Roll Call", "billable": true },
-          { "name": "Council with the Prince", "billable": true }
-        ]},
-        { "name": "Build the Sunspear Platform", "isDefault": false, "billable": true, "children": [
-          { "name": "Water Gardens Calibration", "billable": true },
-          { "name": "Tower of the Sun Outfitting", "billable": true }
-        ]},
-        { "name": "Migrate the Martell Records", "isDefault": false, "billable": true, "children": [
-          { "name": "Vassal House Roll Call", "billable": true },
-          { "name": "Sandy Map Inventory", "billable": true }
-        ]},
-        { "name": "Testing the Court", "isDefault": false, "billable": true, "children": [
-          { "name": "Trial-by-Combat Drill", "billable": true },
-          { "name": "Spear Court Rehearsal", "billable": true }
-        ]},
-        { "name": "Training the Court", "isDefault": false, "billable": true, "children": [
-          { "name": "Courtier Foundations", "billable": true },
-          { "name": "Prince's Steward Manual", "billable": true }
-        ]}
+        {
+          "name": "Sunspear Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Council Audit",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Martell Bannermen Survey", "billable": true },
+            { "name": "Sand-Snake Roll Call", "billable": true },
+            { "name": "Council with the Prince", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Sunspear Platform",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Water Gardens Calibration", "billable": true },
+            { "name": "Tower of the Sun Outfitting", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Martell Records",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Vassal House Roll Call", "billable": true },
+            { "name": "Sandy Map Inventory", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Court",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Trial-by-Combat Drill", "billable": true },
+            { "name": "Spear Court Rehearsal", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Court",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Courtier Foundations", "billable": true },
+            { "name": "Prince's Steward Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -579,279 +913,184 @@
         "paymentTerms": "Net 45",
         "prePaymentAmount": 0,
         "products": [
-          { "themedRole": "Lord of the House",       "quantity": 800,  "unitPrice": 200 },
-          { "themedRole": "Senior Knight",           "quantity": 1500, "unitPrice": 200 },
-          { "themedRole": "Hand of the King",        "quantity": 400,  "unitPrice": 280 },
-          { "themedRole": "Maester",                 "quantity": 1200, "unitPrice": 140 },
-          { "themedRole": "Squire",                  "quantity": 600,  "unitPrice": 160 }
+          { "themedRole": "Lord of the House (PM)", "quantity": 800, "unitPrice": 200 },
+          { "themedRole": "Senior Knight (SCC)", "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Hand of the King (SA)", "quantity": 400, "unitPrice": 280 },
+          { "themedRole": "Maester (BA)", "quantity": 1200, "unitPrice": 140 },
+          { "themedRole": "Squire (CC)", "quantity": 600, "unitPrice": 160 }
         ]
       }
     }
   ],
-
   "casting": {
     "kings-landing": [
-      { "fullName": "Cersei Lannister",        "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Tyrion Lannister",        "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Jaime Lannister",         "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Sansa Stark",             "themedRole": "Squire (CC)" },
-      { "fullName": "Varys",                   "themedRole": "Maester (BA)" },
-      { "fullName": "Petyr Baelish",           "themedRole": "Town Crier (SMCC)" },
-      { "fullName": "Joffrey Baratheon",       "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Margaery Tyrell",         "themedRole": "Hand of the King (SA)" }
+      { "fullName": "Cersei Lannister", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Tyrion Lannister", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Jaime Lannister", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Sansa Stark", "themedRole": "Squire (CC)" },
+      { "fullName": "Varys", "themedRole": "Maester (BA)" },
+      { "fullName": "Petyr Baelish", "themedRole": "Town Crier (SMCC)" },
+      { "fullName": "Joffrey Baratheon", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Margaery Tyrell", "themedRole": "Hand of the King (SA)" }
     ],
     "the-wall": [
-      { "fullName": "Jon Snow",                "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Samwell Tarly",           "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Jeor Mormont",            "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Tormund Giantsbane",      "themedRole": "Squire (CC)" },
-      { "fullName": "Edd Tollett",             "themedRole": "Maester (BA)" },
-      { "fullName": "Alliser Thorne",          "themedRole": "Town Crier (SMCC)" },
-      { "fullName": "Ygritte",                 "themedRole": "Lord of the House (PM)" }
+      { "fullName": "Jon Snow", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Samwell Tarly", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Jeor Mormont", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Tormund Giantsbane", "themedRole": "Squire (CC)" },
+      { "fullName": "Edd Tollett", "themedRole": "Maester (BA)" },
+      { "fullName": "Alliser Thorne", "themedRole": "Town Crier (SMCC)" },
+      { "fullName": "Ygritte", "themedRole": "Lord of the House (PM)" }
     ],
     "winterfell": [
-      { "fullName": "Ned Stark",               "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Catelyn Stark",           "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Robb Stark",              "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Arya Stark",              "themedRole": "Squire (CC)" },
-      { "fullName": "Bran Stark",              "themedRole": "Maester (BA)" },
-      { "fullName": "Rickon Stark",            "themedRole": "Squire (CC)" },
-      { "fullName": "Theon Greyjoy",           "themedRole": "Town Crier (SMCC)" }
+      { "fullName": "Ned Stark", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Catelyn Stark", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Robb Stark", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Arya Stark", "themedRole": "Squire (CC)" },
+      { "fullName": "Bran Stark", "themedRole": "Maester (BA)" },
+      { "fullName": "Rickon Stark", "themedRole": "Squire (CC)" },
+      { "fullName": "Theon Greyjoy", "themedRole": "Town Crier (SMCC)" }
     ],
     "citadel-maesters": [
-      { "fullName": "Maester Aemon",           "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Samwell Tarly",           "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Archmaester Marwyn",      "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Pylos",                   "themedRole": "Squire (CC)" }
+      { "fullName": "Maester Aemon", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Samwell Tarly", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Archmaester Marwyn", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Pylos", "themedRole": "Squire (CC)" }
     ],
     "highgarden-trade": [
-      { "fullName": "Olenna Tyrell",           "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Mace Tyrell",             "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Margaery Tyrell",         "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Loras Tyrell",            "themedRole": "Squire (CC)" },
-      { "fullName": "Garlan Tyrell",           "themedRole": "Maester (BA)" },
-      { "fullName": "Willas Tyrell",           "themedRole": "Town Crier (SMCC)" },
-      { "fullName": "Brienne of Tarth",        "themedRole": "Lord of the House (PM)" }
+      { "fullName": "Olenna Tyrell", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Mace Tyrell", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Margaery Tyrell", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Loras Tyrell", "themedRole": "Squire (CC)" },
+      { "fullName": "Garlan Tyrell", "themedRole": "Maester (BA)" },
+      { "fullName": "Willas Tyrell", "themedRole": "Town Crier (SMCC)" },
+      { "fullName": "Brienne of Tarth", "themedRole": "Lord of the House (PM)" }
     ],
     "stormlands-march": [
-      { "fullName": "Stannis Baratheon",       "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Davos Seaworth",          "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Melisandre",              "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Shireen Baratheon",       "themedRole": "Squire (CC)" },
-      { "fullName": "Selyse Florent",          "themedRole": "Maester (BA)" },
-      { "fullName": "Renly Baratheon",         "themedRole": "Town Crier (SMCC)" },
-      { "fullName": "Cortnay Penrose",         "themedRole": "Lord of the House (PM)" }
+      { "fullName": "Stannis Baratheon", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Davos Seaworth", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Melisandre", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Shireen Baratheon", "themedRole": "Squire (CC)" },
+      { "fullName": "Selyse Florent", "themedRole": "Maester (BA)" },
+      { "fullName": "Renly Baratheon", "themedRole": "Town Crier (SMCC)" },
+      { "fullName": "Cortnay Penrose", "themedRole": "Lord of the House (PM)" }
     ],
     "valyrian-archives": [
-      { "fullName": "Daenerys Targaryen",      "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Viserys Targaryen",       "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Jorah Mormont",           "themedRole": "Squire (CC)" },
-      { "fullName": "Missandei",               "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Grey Worm",               "themedRole": "Maester (BA)" },
-      { "fullName": "Barristan Selmy",         "themedRole": "Town Crier (SMCC)" },
-      { "fullName": "Aegon the Conqueror",     "themedRole": "Lord of the House (PM)" }
+      { "fullName": "Daenerys Targaryen", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Viserys Targaryen", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Jorah Mormont", "themedRole": "Squire (CC)" },
+      { "fullName": "Missandei", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Grey Worm", "themedRole": "Maester (BA)" },
+      { "fullName": "Barristan Selmy", "themedRole": "Town Crier (SMCC)" },
+      { "fullName": "Aegon the Conqueror", "themedRole": "Lord of the House (PM)" }
     ],
     "dorne-court": [
-      { "fullName": "Doran Martell",           "themedRole": "Lord of the House (PM)" },
-      { "fullName": "Oberyn Martell",          "themedRole": "Hand of the King (SA)" },
-      { "fullName": "Ellaria Sand",            "themedRole": "Senior Knight (SCC)" },
-      { "fullName": "Trystane Martell",        "themedRole": "Squire (CC)" },
-      { "fullName": "Tyene Sand",              "themedRole": "Maester (BA)" },
-      { "fullName": "Areo Hotah",              "themedRole": "Town Crier (SMCC)" }
+      { "fullName": "Doran Martell", "themedRole": "Lord of the House (PM)" },
+      { "fullName": "Oberyn Martell", "themedRole": "Hand of the King (SA)" },
+      { "fullName": "Ellaria Sand", "themedRole": "Senior Knight (SCC)" },
+      { "fullName": "Trystane Martell", "themedRole": "Squire (CC)" },
+      { "fullName": "Tyene Sand", "themedRole": "Maester (BA)" },
+      { "fullName": "Areo Hotah", "themedRole": "Town Crier (SMCC)" }
     ]
   },
-
   "milestones": {
     "kings-landing": [
-      { "name": "Council Briefing",            "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — small council briefed in the Red Keep." },
-      { "name": "Iron Throne Refit",           "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: throne hall outfitted." },
-      { "name": "Audience with the King",      "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: ceremonial review with the King." },
-      { "name": "Tourney at the Keep",         "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: tournament held." },
-      { "name": "Coronation",                  "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: new monarch crowned." },
-      { "name": "Hand's Hand-off",             "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the Hand." }
+      { "name": "Council Briefing", "type": "Gate", "offsetPct": 5, "description": "Discovery sign-off — small council briefed in the Red Keep." },
+      { "name": "Iron Throne Refit", "type": "Operational", "offsetPct": 25, "description": "Build kickoff: throne hall outfitted." },
+      { "name": "Audience with the King", "type": "Gate", "offsetPct": 50, "description": "Mid-project gate: ceremonial review with the King." },
+      { "name": "Tourney at the Keep", "type": "Billing", "offsetPct": 70, "description": "Phase invoice trigger: tournament held." },
+      { "name": "Coronation", "type": "Delivery", "offsetPct": 95, "description": "Go-Live: new monarch crowned." },
+      { "name": "Hand's Hand-off", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to the Hand." }
     ],
     "the-wall": [
-      { "name": "Wall Audit Complete",         "type": "Gate",        "offsetPct": 5,   "description": "Kickoff: Wall towers inspected." },
-      { "name": "Brothers Sworn",              "type": "Operational", "offsetPct": 30,  "description": "Build phase: new recruits take the black." },
-      { "name": "Wildling Treaty",             "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: peace beyond the Wall." },
-      { "name": "Castle Black Defended",       "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Wall fully defended." },
-      { "name": "Watch Stand-down",            "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: watch suspended." },
-      { "name": "Final Billing",               "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Wall ops." }
+      { "name": "Wall Audit Complete", "type": "Gate", "offsetPct": 5, "description": "Kickoff: Wall towers inspected." },
+      { "name": "Brothers Sworn", "type": "Operational", "offsetPct": 30, "description": "Build phase: new recruits take the black." },
+      { "name": "Wildling Treaty", "type": "Gate", "offsetPct": 60, "description": "UAT gate: peace beyond the Wall." },
+      { "name": "Castle Black Defended", "type": "Delivery", "offsetPct": 90, "description": "Go-Live: Wall fully defended." },
+      { "name": "Watch Stand-down", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: watch suspended." },
+      { "name": "Final Billing", "type": "Billing", "offsetPct": 100, "description": "Final invoice from the Wall ops." }
     ],
     "winterfell": [
-      { "name": "Northern Lords Mustered",     "type": "Gate",        "offsetPct": 10,  "description": "Discovery: Northern lords gathered in the Great Hall." },
-      { "name": "Outer Walls Hardened",        "type": "Operational", "offsetPct": 35,  "description": "Build: castle fortifications reinforced." },
-      { "name": "Lord's Review",               "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Warden of the North." },
-      { "name": "Defenses Live",               "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Winterfell fully defended." },
-      { "name": "Watch Stand-down",            "type": "Operational", "offsetPct": 100, "description": "Project close: watch suspended." },
-      { "name": "Final Reckoning",             "type": "Billing",     "offsetPct": 100, "description": "Final invoice from House Stark." }
+      { "name": "Northern Lords Mustered", "type": "Gate", "offsetPct": 10, "description": "Discovery: Northern lords gathered in the Great Hall." },
+      { "name": "Outer Walls Hardened", "type": "Operational", "offsetPct": 35, "description": "Build: castle fortifications reinforced." },
+      { "name": "Lord's Review", "type": "Gate", "offsetPct": 60, "description": "Solution review with the Warden of the North." },
+      { "name": "Defenses Live", "type": "Delivery", "offsetPct": 90, "description": "Go-Live: Winterfell fully defended." },
+      { "name": "Watch Stand-down", "type": "Operational", "offsetPct": 100, "description": "Project close: watch suspended." },
+      { "name": "Final Reckoning", "type": "Billing", "offsetPct": 100, "description": "Final invoice from House Stark." }
     ],
     "highgarden-trade": [
-      { "name": "Council with Olenna",         "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council with the Queen of Thorns." },
-      { "name": "Harvest Audit Complete",      "type": "Operational", "offsetPct": 30,  "description": "Discovery: Reach harvest yields modelled." },
-      { "name": "Trade Hub Constructed",       "type": "Operational", "offsetPct": 55,  "description": "Build: cross-vassal trade operational." },
-      { "name": "Tyrell Acceptance",           "type": "Gate",        "offsetPct": 80,  "description": "UAT acceptance: bannerlords sign off." },
-      { "name": "Trade Network Live",          "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: network running." },
-      { "name": "Final Recompense",            "type": "Billing",     "offsetPct": 100, "description": "Final invoice from Highgarden." }
+      { "name": "Council with Olenna", "type": "Gate", "offsetPct": 10, "description": "Kickoff council with the Queen of Thorns." },
+      { "name": "Harvest Audit Complete", "type": "Operational", "offsetPct": 30, "description": "Discovery: Reach harvest yields modelled." },
+      { "name": "Trade Hub Constructed", "type": "Operational", "offsetPct": 55, "description": "Build: cross-vassal trade operational." },
+      { "name": "Tyrell Acceptance", "type": "Gate", "offsetPct": 80, "description": "UAT acceptance: bannerlords sign off." },
+      { "name": "Trade Network Live", "type": "Delivery", "offsetPct": 100, "description": "Go-Live + handoff: network running." },
+      { "name": "Final Recompense", "type": "Billing", "offsetPct": 100, "description": "Final invoice from Highgarden." }
     ]
   },
-
   "daysOff": {
-    "Cersei Lannister":   [ { "realm": "kings-landing",     "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Casterly Rock pilgrimage — pre-arranged." } ],
-    "Tyrion Lannister":   [ { "realm": "kings-landing",     "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Wine tasting tour — quarterly." } ],
-    "Jon Snow":           [ { "realm": "the-wall",          "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Ranging beyond the Wall." } ],
-    "Samwell Tarly":      [ { "realm": "the-wall",          "offsetWeeks": 12, "numberOfDays": 2, "notes": "Horn Hill family visit." } ],
-    "Ned Stark":          [ { "realm": "winterfell",        "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Northern lords mustering." } ],
-    "Catelyn Stark":      [ { "realm": "winterfell",        "offsetWeeks": 10, "numberOfDays": 2, "notes": "Riverlands diplomatic visit." } ],
-    "Arya Stark":         [ { "realm": "winterfell",        "offsetWeeks": 16, "numberOfDays": 3, "notes": "Dancing lessons in King's Landing." } ],
-    "Daenerys Targaryen": [ { "realm": "valyrian-archives", "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Dragon training at Meereen." } ],
-    "Olenna Tyrell":      [ { "realm": "highgarden-trade", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Highgarden rose gardens — quarterly." } ],
-    "Stannis Baratheon":  [ { "realm": "stormlands-march", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Dragonstone strategic retreat." } ],
-    "Davos Seaworth":     [ { "realm": "stormlands-march", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Sea-faring sabbatical." } ],
-    "Oberyn Martell":     [ { "realm": "dorne-court",      "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Sand snake training — Water Gardens." } ],
-    "Doran Martell":      [ { "realm": "dorne-court",      "offsetWeeks": 14, "numberOfDays": 5, "notes": "Sunspear royal duties." } ],
-    "Maester Aemon":      [ { "realm": "citadel-maesters", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Maester chain forging review — quarterly." } ]
+    "Cersei Lannister": [
+      { "realm": "kings-landing", "offsetWeeks": 4, "numberOfDays": 4, "notes": "Casterly Rock pilgrimage — pre-arranged." }
+    ],
+    "Tyrion Lannister": [
+      { "realm": "kings-landing", "offsetWeeks": 8, "numberOfDays": 2, "notes": "Wine tasting tour — quarterly." }
+    ],
+    "Jon Snow": [
+      { "realm": "the-wall", "offsetWeeks": 6, "numberOfDays": 3, "notes": "Ranging beyond the Wall." }
+    ],
+    "Samwell Tarly": [
+      { "realm": "the-wall", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Horn Hill family visit." }
+    ],
+    "Ned Stark": [
+      { "realm": "winterfell", "offsetWeeks": 4, "numberOfDays": 4, "notes": "Northern lords mustering." }
+    ],
+    "Catelyn Stark": [
+      { "realm": "winterfell", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Riverlands diplomatic visit." }
+    ],
+    "Arya Stark": [
+      { "realm": "winterfell", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Dancing lessons in King's Landing." }
+    ],
+    "Daenerys Targaryen": [
+      { "realm": "valyrian-archives", "offsetWeeks": 8, "numberOfDays": 5, "notes": "Dragon training at Meereen." }
+    ],
+    "Olenna Tyrell": [
+      { "realm": "highgarden-trade", "offsetWeeks": 14, "numberOfDays": 4, "notes": "Highgarden rose gardens — quarterly." }
+    ],
+    "Stannis Baratheon": [
+      { "realm": "stormlands-march", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Dragonstone strategic retreat." }
+    ],
+    "Davos Seaworth": [
+      { "realm": "stormlands-march", "offsetWeeks": 16, "numberOfDays": 3, "notes": "Sea-faring sabbatical." }
+    ],
+    "Oberyn Martell": [
+      { "realm": "dorne-court", "offsetWeeks": 6, "numberOfDays": 4, "notes": "Sand snake training — Water Gardens." }
+    ],
+    "Doran Martell": [
+      { "realm": "dorne-court", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Sunspear royal duties." }
+    ],
+    "Maester Aemon": [
+      { "realm": "citadel-maesters", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Maester chain forging review — quarterly." }
+    ]
   },
   "tasks": [
-    {
-      "name": "Convene the Small Council",
-      "type": "External Project",
-      "phase": "Kick-Off",
-      "dueOffset": 2,
-      "description": "Run the kickoff workshop and align on scope, roles, and timeline."
-    },
-    {
-      "name": "Ravens from the Realm",
-      "type": "External Project",
-      "phase": "Discovery",
-      "dueOffset": 5,
-      "description": "Gather and document requirements with the client stakeholders."
-    },
-    {
-      "name": "Plans in the War Room",
-      "type": "External Project",
-      "phase": "Design",
-      "dueOffset": 12,
-      "description": "Produce the solution design and review it with the client."
-    },
-    {
-      "name": "Forge the Alliance",
-      "type": "External Project",
-      "phase": "Build",
-      "dueOffset": 20,
-      "description": "Build and configure the solution per the approved design."
-    },
-    {
-      "name": "Trial by Combat",
-      "type": "External Project",
-      "phase": "UAT",
-      "dueOffset": 35,
-      "description": "Run user acceptance testing and triage the feedback."
-    },
-    {
-      "name": "Take the Iron Throne",
-      "type": "External Project",
-      "phase": "Go-Live",
-      "dueOffset": 45,
-      "description": "Execute the go-live cutover and confirm production readiness."
-    },
-    {
-      "name": "Hold the Watch",
-      "type": "Managed Services",
-      "phase": "Setup",
-      "dueOffset": 0,
-      "description": "Stand up the managed-service environment and runbooks."
-    },
-    {
-      "name": "Light the Beacons of the Wall",
-      "type": "Managed Services",
-      "phase": "Kick-Off",
-      "dueOffset": 2,
-      "description": "Hold the service kickoff and confirm SLAs and escalation paths."
-    },
-    {
-      "name": "Man the Ramparts",
-      "type": "Managed Services",
-      "phase": "Build",
-      "dueOffset": 14,
-      "description": "Implement monitoring, automation, and support processes."
-    },
-    {
-      "name": "Name the New Hand",
-      "type": "Managed Services",
-      "phase": "Go-Live",
-      "dueOffset": 25,
-      "description": "Transition the service into active management."
-    },
-    {
-      "name": "Small Council Review",
-      "type": "Managed Services",
-      "phase": "Hypercare",
-      "dueOffset": 30,
-      "description": "Stabilize the service and review the first support cycle."
-    },
-    {
-      "name": "Gather the Bannermen",
-      "type": "Internal Project",
-      "phase": "Kick-Off",
-      "dueOffset": 2,
-      "description": "Kick off the initiative and confirm goals and owners."
-    },
-    {
-      "name": "Counsel of the Maesters",
-      "type": "Internal Project",
-      "phase": "Discovery",
-      "dueOffset": 5,
-      "description": "Assess the current state and define success criteria."
-    },
-    {
-      "name": "Strategy at Winterfell",
-      "type": "Internal Project",
-      "phase": "Design",
-      "dueOffset": 10,
-      "description": "Draft the approach and circulate it for internal review."
-    },
-    {
-      "name": "The Campaign",
-      "type": "Internal Project",
-      "phase": "Build",
-      "dueOffset": 18,
-      "description": "Execute the work and track progress to plan."
-    },
-    {
-      "name": "Claim the North",
-      "type": "Internal Project",
-      "phase": "Go-Live",
-      "dueOffset": 30,
-      "description": "Roll out internally and communicate the change."
-    },
-    {
-      "name": "A Raven from the Hand",
-      "type": "Individual Project",
-      "phase": "Kick-Off",
-      "dueOffset": 1,
-      "description": "Align with the stakeholder on scope and deadline."
-    },
-    {
-      "name": "Words with the Maester",
-      "type": "Individual Project",
-      "phase": "Discovery",
-      "dueOffset": 3,
-      "description": "Capture the requirements for the deliverable."
-    },
-    {
-      "name": "Fulfill the Oath",
-      "type": "Individual Project",
-      "phase": "Build",
-      "dueOffset": 7,
-      "description": "Complete the deliverable."
-    },
-    {
-      "name": "Report to the King",
-      "type": "Individual Project",
-      "phase": "Go-Live",
-      "dueOffset": 12,
-      "description": "Deliver and review the work with the stakeholder."
-    }
+    { "name": "Convene the Small Council", "type": "External Project", "phase": "Kick-Off", "dueOffset": 2, "description": "Run the kickoff workshop and align on scope, roles, and timeline." },
+    { "name": "Ravens from the Realm", "type": "External Project", "phase": "Discovery", "dueOffset": 5, "description": "Gather and document requirements with the client stakeholders." },
+    { "name": "Plans in the War Room", "type": "External Project", "phase": "Design", "dueOffset": 12, "description": "Produce the solution design and review it with the client." },
+    { "name": "Forge the Alliance", "type": "External Project", "phase": "Build", "dueOffset": 20, "description": "Build and configure the solution per the approved design." },
+    { "name": "Trial by Combat", "type": "External Project", "phase": "UAT", "dueOffset": 35, "description": "Run user acceptance testing and triage the feedback." },
+    { "name": "Take the Iron Throne", "type": "External Project", "phase": "Go-Live", "dueOffset": 45, "description": "Execute the go-live cutover and confirm production readiness." },
+    { "name": "Hold the Watch", "type": "Managed Services", "phase": "Setup", "dueOffset": 0, "description": "Stand up the managed-service environment and runbooks." },
+    { "name": "Light the Beacons of the Wall", "type": "Managed Services", "phase": "Kick-Off", "dueOffset": 2, "description": "Hold the service kickoff and confirm SLAs and escalation paths." },
+    { "name": "Man the Ramparts", "type": "Managed Services", "phase": "Build", "dueOffset": 14, "description": "Implement monitoring, automation, and support processes." },
+    { "name": "Name the New Hand", "type": "Managed Services", "phase": "Go-Live", "dueOffset": 25, "description": "Transition the service into active management." },
+    { "name": "Small Council Review", "type": "Managed Services", "phase": "Hypercare", "dueOffset": 30, "description": "Stabilize the service and review the first support cycle." },
+    { "name": "Gather the Bannermen", "type": "Internal Project", "phase": "Kick-Off", "dueOffset": 2, "description": "Kick off the initiative and confirm goals and owners." },
+    { "name": "Counsel of the Maesters", "type": "Internal Project", "phase": "Discovery", "dueOffset": 5, "description": "Assess the current state and define success criteria." },
+    { "name": "Strategy at Winterfell", "type": "Internal Project", "phase": "Design", "dueOffset": 10, "description": "Draft the approach and circulate it for internal review." },
+    { "name": "The Campaign", "type": "Internal Project", "phase": "Build", "dueOffset": 18, "description": "Execute the work and track progress to plan." },
+    { "name": "Claim the North", "type": "Internal Project", "phase": "Go-Live", "dueOffset": 30, "description": "Roll out internally and communicate the change." },
+    { "name": "A Raven from the Hand", "type": "Individual Project", "phase": "Kick-Off", "dueOffset": 1, "description": "Align with the stakeholder on scope and deadline." },
+    { "name": "Words with the Maester", "type": "Individual Project", "phase": "Discovery", "dueOffset": 3, "description": "Capture the requirements for the deliverable." },
+    { "name": "Fulfill the Oath", "type": "Individual Project", "phase": "Build", "dueOffset": 7, "description": "Complete the deliverable." },
+    { "name": "Report to the King", "type": "Individual Project", "phase": "Go-Live", "dueOffset": 12, "description": "Deliver and review the work with the stakeholder." }
   ]
 }

@@ -27,13 +27,13 @@
     { "name": "Bridge Builder of Wan Shi Tong",     "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between the spirit library and the mortal realms." },
     { "name": "Wan Shi Tong's Knowledge Seeker",    "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Bridge Builder's plan." },
     { "name": "Knowledge Seeker Apprentice",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the patterns of error handling." },
-    { "name": "Healer of the Spirit Oasis",         "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the Avatar." },
+    { "name": "Healer of the Spirit Oasis",         "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded build — finds the maladies before they reach the Avatar." },
     { "name": "Town Crier of Omashu",               "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for the message — leads all marketing craft across the nations." },
     { "name": "Herald of the Earth King",           "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call across the walls of Ba Sing Se." },
     { "name": "Pamphleteer of the Lower Ring",      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the streets — content, creative, and the daily message." },
     { "name": "Council Scribe of the Air Temples",  "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the monks' design." },
-    { "name": "Master Mechanist of Caldera",        "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of war machines — leads the most senior platform builds at the capital forges." },
-    { "name": "Earth Rumble Apprentice",            "canonical": "Junior Salesforce Consultant - India",    "description": "Newcomer to the ring — learns configuration and discovery under the senior earthbenders." }
+    { "name": "Master Mechanist of Caldera",        "canonical": "Salesforce Developer",       "description": "Senior craftsman of war machines — leads the most senior platform builds at the capital forges." },
+    { "name": "Earth Rumble Apprentice",            "canonical": "Salesforce Consultant - India",    "description": "Newcomer to the ring — learns configuration and discovery under the senior earthbenders." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "Air Nomads & Southern Water Tribe — Avatar Awakening Platform",
       "shortName": "Aang AAP",
       "subAccountName": "Air Nomads & Southern Water Tribe Alliance",
-      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-AIR-NOMADS-SOUTHERN-WATER-TRIBE",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-AIR-NSWT",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -78,7 +78,7 @@
       "projectName": "Earth Kingdom — Ba Sing Se Stewardship CRM",
       "shortName": "EK BSS",
       "subAccountName": "Kingdom of Earth",
-      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-EARTH-KINGDOM",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-EARTH-K",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Northern Water Tribe & Spirit World — Mirror Analytics Implementation",
       "shortName": "NWT-SW MAI",
       "subAccountName": "Northern Water Tribe & Spirit World",
-      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-NORTHERN-WATER-TRIBE-SPIRIT-WORLD",
+      "subAccountNumber": "PSA-TEST-AVATARLASTAIRBENDER-NORTHE-WTSW",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

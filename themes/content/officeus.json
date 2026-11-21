@@ -27,13 +27,13 @@
     { "name": "IT Guy from Corporate",             "canonical": "Integration Technical Architect - USA",   "description": "Architect of every system that talks to Dunder Mifflin Infinity — including the printers." },
     { "name": "Website Architect",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the API and middleware between Dunder Mifflin Infinity 2.0 and the world." },
     { "name": "Tech Support Temp",                 "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batches, and resetting Creed's password again." },
-    { "name": "Quality Assurance Auditor",         "canonical": "QA Engineer",                             "description": "Roams the floor with a clipboard finding bugs before they reach the customer (or HR)." },
+    { "name": "Quality Assurance Auditor",         "canonical": "Quality Assurance (QA) Engineer",                             "description": "Roams the floor with a clipboard finding bugs before they reach the customer (or HR)." },
     { "name": "Director of First Impressions",     "canonical": "Marketing Practice Lead",                 "description": "Owns brand voice and front-of-house messaging for the entire company. Yes, the receptionist runs marketing now." },
     { "name": "Brand Strategist",                  "canonical": "Marketing Senior Consultant",             "description": "Plans campaigns — the office-Olympics-grade strategist of conversion and gather." },
     { "name": "Promotional Materials Lead",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the field — Dundies, brochures, and the daily commute mug." },
     { "name": "HR Representative",                 "canonical": "Business Analyst",                        "description": "Translates between Sales, Accounting, and Corporate — captures requirements without anyone crying. Usually." },
-    { "name": "Senior VP Director of Sales",       "canonical": "Salesforce Senior Developer - USA",       "description": "The most senior builder on staff — when Threat Level Midnight ships, he wrote it." },
-    { "name": "Sales Trainee",                     "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh out of Cornell — eager, untested, and one promotion away from running the place (badly)." }
+    { "name": "Senior VP Director of Sales",       "canonical": "Salesforce Developer",       "description": "The most senior builder on staff — when Threat Level Midnight ships, he wrote it." },
+    { "name": "Sales Trainee",                     "canonical": "Salesforce Consultant - India",    "description": "Fresh out of Cornell — eager, untested, and one promotion away from running the place (badly)." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -112,7 +112,7 @@
       "projectName": "Scranton Accounting & Warehouse — Operations Build",
       "shortName": "Acct & Whse",
       "subAccountName": "Dunder Mifflin Scranton — Accounting & Warehouse",
-      "subAccountNumber": "PSA-TEST-OFFICEUS-SCRANTONACCOUNTINGWAREHOUSE",
+      "subAccountNumber": "PSA-TEST-OFFICEUS-SCRANTONACCOUNTINGWARE",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [

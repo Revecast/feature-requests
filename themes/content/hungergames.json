@@ -27,13 +27,13 @@
     { "name": "Beetee's Wire Architect",         "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great wires between the arena and the world beyond — circuits, currents, and traps." },
     { "name": "Wire-runner of District 3",       "canonical": "Integration Senior Consultant - India",   "description": "Strings the cables of API, middleware, and event flows under Beetee's plan." },
     { "name": "Apprentice Wire-runner",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of wiring — webhooks, batch jobs, callouts and the District 3 patterns of error handling." },
-    { "name": "Avox Quality Inspector",          "canonical": "QA Engineer",                             "description": "Silent and watchful — finds the flaws in the build before the cameras start rolling." },
+    { "name": "Avox Quality Inspector",          "canonical": "Quality Assurance (QA) Engineer",                             "description": "Silent and watchful — finds the flaws in the build before the cameras start rolling." },
     { "name": "Capitol Stylist-in-Chief",        "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the brand for product and message — leads all stylist craft and Capitol broadcasts." },
     { "name": "Sponsor Strategist",              "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather sponsors and convert parachutes." },
     { "name": "Capitol Prep Team Member",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily styling ride." },
     { "name": "Tribute Mentor Scribe",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the District tribute and the Capitol design council." },
-    { "name": "Senior Forge Master",             "canonical": "Salesforce Senior Developer - USA",       "description": "Master craftsman of the Capitol's deep workshops — leads the most complex Apex and LWC builds." },
-    { "name": "Reaping Day Initiate",            "canonical": "Junior Salesforce Consultant - India",    "description": "Newly reaped — learning configuration, declarative tooling, and the ways of the platform." }
+    { "name": "Senior Forge Master",             "canonical": "Salesforce Developer",       "description": "Master craftsman of the Capitol's deep workshops — leads the most complex Apex and LWC builds." },
+    { "name": "Reaping Day Initiate",            "canonical": "Salesforce Consultant - India",    "description": "Newly reaped — learning configuration, declarative tooling, and the ways of the platform." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "District 12 — Seam Logistics & Tribute CRM",
       "shortName": "D12 Tributes",
       "subAccountName": "District 12 — The Seam",
-      "subAccountNumber": "PSA-TEST-HUNGERGAMES-DISTRICT-12-TRIBUTES",
+      "subAccountNumber": "PSA-TEST-HUNGERGAMES-DISTRICT-1T",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "District 13 — Rebellion Command & Control",
       "shortName": "D13 Rebellion",
       "subAccountName": "District 13 Resistance",
-      "subAccountNumber": "PSA-TEST-HUNGERGAMES-DISTRICT-13-REBELLION",
+      "subAccountNumber": "PSA-TEST-HUNGERGAMES-DISTRICT-1R",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

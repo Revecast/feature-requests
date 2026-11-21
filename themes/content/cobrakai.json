@@ -27,13 +27,13 @@
     { "name": "Tournament Bracket Architect",    "canonical": "Integration Technical Architect - USA",   "description": "Designs the tournament brackets and inter-dojo communication channels — every seed, every flow." },
     { "name": "Senior Tournament Coordinator",   "canonical": "Integration Senior Consultant - India",   "description": "Wires up dojo-to-dojo events under the Architect's plan — referees, scoring, and the registration pipeline." },
     { "name": "Tournament Coordinator",          "canonical": "Integration Consultant - India",          "description": "Learns the tournament craft — bracket entries, timing tables, and the paperwork between sanctioning bodies." },
-    { "name": "Sparring Match Inspector",        "canonical": "QA Engineer",                             "description": "Watches every match for fouls and weak technique — finds the flaws before the All-Valley judges do." },
+    { "name": "Sparring Match Inspector",        "canonical": "Quality Assurance (QA) Engineer",                             "description": "Watches every match for fouls and weak technique — finds the flaws before the All-Valley judges do." },
     { "name": "Banner Captain",                  "canonical": "Marketing Practice Lead",                 "description": "Owns the dojo's banner, branding, and recruitment campaign — leads all marketing craft." },
     { "name": "Senior Promoter",                 "canonical": "Marketing Senior Consultant",             "description": "Strategist of dojo demos and tournament hype — books the gyms, sells the seats." },
     { "name": "Flyer Crew",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign to the streets — flyers at the strip mall, posters at the high school, social posts before practice." },
     { "name": "Strategy Scribe",                 "canonical": "Business Analyst",                        "description": "Translates between sensei vision and student reality — documents what was promised and what must be drilled." },
-    { "name": "Master Black Belt - West Coast",  "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the West Coast circuit — owns the most demanding katas and reviews every black belt's code." },
-    { "name": "White Belt Recruit",              "canonical": "Junior Salesforce Consultant - India",    "description": "Newest member of the dojo — runs drills, takes notes, learns the way." }
+    { "name": "Master Black Belt - West Coast",  "canonical": "Salesforce Developer",       "description": "Senior smith of the West Coast circuit — owns the most demanding katas and reviews every black belt's code." },
+    { "name": "White Belt Recruit",              "canonical": "Salesforce Consultant - India",    "description": "Newest member of the dojo — runs drills, takes notes, learns the way." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every dojo's project starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

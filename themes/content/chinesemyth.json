@@ -27,13 +27,13 @@
     { "name": "Architect of the Magpie Bridge",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the Milky Way." },
     { "name": "Builder of the Magpie Bridge",        "canonical": "Integration Senior Consultant - India",   "description": "Lays the planks of API, middleware, and event flows under the Bridge Architect's plan." },
     { "name": "Apprentice Bridge Crow",              "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the celestial patterns of error handling." },
-    { "name": "Medicine Spirit of Penglai",          "canonical": "QA Engineer",                             "description": "Tends the wounded scripts and the weary stack — finds the maladies in the build before they reach the Emperor." },
+    { "name": "Medicine Spirit of Penglai",          "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded scripts and the weary stack — finds the maladies in the build before they reach the Emperor." },
     { "name": "Herald of the Phoenix Banner",        "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the bronze bell for product and message — leads all marketing craft." },
     { "name": "Strategist of the Bagua Drum",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the celestial drum to gather and convert." },
     { "name": "Banner-Bearer of the Vermilion Bird", "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the four cardinal kingdoms — content, creative, and daily ritual." },
     { "name": "Scribe of the Veritable Records",     "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the immortal craft of design." },
-    { "name": "Sage Daoshi of the Inner Alchemy",    "canonical": "Salesforce Senior Developer - USA",       "description": "Legendary cultivation-class developer — handles the deepest, most senior platform work." },
-    { "name": "Newly-Ascended Xian",                 "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh from mortal cultivation — picks up configuration and discovery work under senior guidance." }
+    { "name": "Sage Daoshi of the Inner Alchemy",    "canonical": "Salesforce Developer",       "description": "Legendary cultivation-class developer — handles the deepest, most senior platform work." },
+    { "name": "Newly-Ascended Xian",                 "canonical": "Salesforce Consultant - India",    "description": "Fresh from mortal cultivation — picks up configuration and discovery work under senior guidance." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

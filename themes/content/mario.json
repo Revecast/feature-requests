@@ -27,13 +27,13 @@
     { "name": "Warp Zone Architect",               "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great pipes between Salesforce and the realms beyond." },
     { "name": "Senior Warp Pipe Builder",          "canonical": "Integration Senior Consultant - India",   "description": "Lays the iron of API, middleware, and event flows under the Warp Zone Architect's plan." },
     { "name": "Warp Pipe Apprentice",              "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the Koopa patterns of error handling." },
-    { "name": "Lakitu Inspector",                  "canonical": "QA Engineer",                             "description": "Floats above the build with a camera and a clipboard — finds bugs before they reach the Princess." },
+    { "name": "Lakitu Inspector",                  "canonical": "Quality Assurance (QA) Engineer",                             "description": "Floats above the build with a camera and a clipboard — finds bugs before they reach the Princess." },
     { "name": "Trumpet of the Mushroom Herald",    "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and trumpet for product and message — leads all marketing craft." },
     { "name": "Senior Bandstand Conductor",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert across the kingdom." },
     { "name": "Toad Town Crier",                   "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily drumbeat." },
     { "name": "Royal Cartographer",                "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the toadly craft of design." },
-    { "name": "Master Builder of Yoshi's Island",  "canonical": "Salesforce Senior Developer - USA",       "description": "Senior platform craftsman — builds the load-bearing pillars and mentors the junior smashers." },
-    { "name": "Junior Pipe Apprentice",            "canonical": "Junior Salesforce Consultant - India",    "description": "Learns the craft from the ground up — clones flows, builds reports, gathers requirements under guidance." }
+    { "name": "Master Builder of Yoshi's Island",  "canonical": "Salesforce Developer",       "description": "Senior platform craftsman — builds the load-bearing pillars and mentors the junior smashers." },
+    { "name": "Junior Pipe Apprentice",            "canonical": "Salesforce Consultant - India",    "description": "Learns the craft from the ground up — clones flows, builds reports, gathers requirements under guidance." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

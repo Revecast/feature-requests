@@ -20,13 +20,13 @@
     { "name": "Cloud Plumbing Architect",        "canonical": "Integration Technical Architect - USA",   "description": "Designs the pipes between Pied Piper, Hooli, AWS, and the seventeen vendor APIs of doom." },
     { "name": "Senior Pipe-fitter — Bangalore",  "canonical": "Integration Senior Consultant - India",   "description": "Lays middleware, event flows, and webhooks under the architect's plan." },
     { "name": "Apprentice Pipe-fitter",          "canonical": "Integration Consultant - India",          "description": "Learns the dark arts of retries, idempotency, and dead-letter queues." },
-    { "name": "DevOps Wizard",                   "canonical": "QA Engineer",                             "description": "Breaks the build before customers can — owns regression, smoke, and the brutal Friday deploy review." },
+    { "name": "DevOps Wizard",                   "canonical": "Quality Assurance (QA) Engineer",                             "description": "Breaks the build before customers can — owns regression, smoke, and the brutal Friday deploy review." },
     { "name": "Growth Hacker-in-Chief",          "canonical": "Marketing Practice Lead",                 "description": "Heads brand, demand-gen, and the daily war on bounce rate." },
     { "name": "Brand Strategist",                "canonical": "Marketing Senior Consultant",             "description": "Architects campaigns and decides whether the new logo really needs to be lowercase." },
     { "name": "Content Ninja",                   "canonical": "Marketing Consultant",                    "description": "Cranks out blog posts, landing pages, and tweet-storms on a 24-hour cycle." },
     { "name": "Product Whisperer",               "canonical": "Business Analyst",                        "description": "Translates between the founder's hand-waving and the engineering team's eye-rolling." },
-    { "name": "Principal Engineer — USA",        "canonical": "Salesforce Senior Developer - USA",       "description": "Reviews every PR, owns the gnarliest legacy code, and gets paged when prod is on fire." },
-    { "name": "Bootcamp Grad",                   "canonical": "Junior Salesforce Consultant - India",    "description": "Six months out of a coding bootcamp and ready to scale anything to a billion users." }
+    { "name": "Principal Engineer — USA",        "canonical": "Salesforce Developer",       "description": "Reviews every PR, owns the gnarliest legacy code, and gets paged when prod is on fire." },
+    { "name": "Bootcamp Grad",                   "canonical": "Salesforce Consultant - India",    "description": "Six months out of a coding bootcamp and ready to scale anything to a billion users." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

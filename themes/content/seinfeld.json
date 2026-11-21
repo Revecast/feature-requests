@@ -27,13 +27,13 @@
     { "name": "Subway Conductor Architect",          "canonical": "Integration Technical Architect - USA",   "description": "Architect of the underground tunnels between Salesforce and the rest of NYC's systems." },
     { "name": "Mailman Senior Integrator",           "canonical": "Integration Senior Consultant - India",   "description": "Senior letter-carrier — delivers payloads through middleware come rain, sleet, or Newman." },
     { "name": "Bike Messenger Integrator",           "canonical": "Integration Consultant - India",          "description": "Apprentice carrier — webhooks, batches, and getting the package across town before the meter runs out." },
-    { "name": "Pretzel Tester",                      "canonical": "QA Engineer",                             "description": "These pretzels are making me thirsty — finds every defect that makes a release go stale." },
+    { "name": "Pretzel Tester",                      "canonical": "Quality Assurance (QA) Engineer",                             "description": "These pretzels are making me thirsty — finds every defect that makes a release go stale." },
     { "name": "J. Peterman Catalog Lead",            "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner of the brand — narrates every campaign with the gravitas of a man who's been to Burma." },
     { "name": "Catalog Senior Copywriter",           "canonical": "Marketing Senior Consultant",             "description": "Seasoned wordsmith for the catalog — turns a simple shirt into a tale of windswept adventure." },
     { "name": "Catalog Copywriter",                  "canonical": "Marketing Consultant",                    "description": "Junior copy — drafts campaigns and the daily catalog content under Peterman's eye." },
     { "name": "Importer/Exporter",                   "canonical": "Business Analyst",                        "description": "Importer AND exporter — translates between the customer's world and the engineering crew. Like Art Vandelay." },
-    { "name": "Master Cosmetologist",                "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman of the build — has the level (no longer an assistant)." },
-    { "name": "Kramerica Intern",                    "canonical": "Junior Salesforce Consultant - India",    "description": "Bright-eyed intern at Kramerica Industries — learns the trade on the oil-tanker bladder system project." }
+    { "name": "Master Cosmetologist",                "canonical": "Salesforce Developer",       "description": "Senior craftsman of the build — has the level (no longer an assistant)." },
+    { "name": "Kramerica Intern",                    "canonical": "Salesforce Consultant - India",    "description": "Bright-eyed intern at Kramerica Industries — learns the trade on the oil-tanker bladder system project." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
