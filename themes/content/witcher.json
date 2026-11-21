@@ -27,13 +27,13 @@
     { "name": "Portal Mage of Ban Ard",                 "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — bends the planar fabric." },
     { "name": "Senior Conduit Mage",                    "canonical": "Integration Senior Consultant - India",   "description": "Lays the runes of API, middleware, and event flows under the Portal Mage's plan." },
     { "name": "Apprentice Conduit Mage",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the dwarvish patterns of error handling." },
-    { "name": "Trial-Master of the Grasses",            "canonical": "QA Engineer",                             "description": "Subjects every build to the Trial — finds the maladies before they reach the contract board." },
+    { "name": "Trial-Master of the Grasses",            "canonical": "Quality Assurance (QA) Engineer",                             "description": "Subjects every build to the Trial — finds the maladies before they reach the contract board." },
     { "name": "Bardmaster of Oxenfurt",                 "canonical": "Marketing Practice Lead",                 "description": "Lifts the lute and the trumpet for product and message — leads all marketing craft across the Continent." },
     { "name": "Senior Bard",                            "canonical": "Marketing Senior Consultant",             "description": "Strategist of ballads — sounds the call to gather and convert audiences from Novigrad to Toussaint." },
     { "name": "Travelling Minstrel",                    "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily verse." },
     { "name": "Sage of Aretuza",                        "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the elven craft of design." },
-    { "name": "Master Witcher of the Wolf",             "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the Wolf School — the heaviest Apex and LWC lifts on the Path." },
-    { "name": "Novice of the Trials",                   "canonical": "Junior Salesforce Consultant - India",    "description": "Initiate learning the craft — paired with veterans on configuration and discovery." }
+    { "name": "Master Witcher of the Wolf",             "canonical": "Salesforce Developer",       "description": "Senior smith of the Wolf School — the heaviest Apex and LWC lifts on the Path." },
+    { "name": "Novice of the Trials",                   "canonical": "Salesforce Consultant - India",    "description": "Initiate learning the craft — paired with veterans on configuration and discovery." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -151,7 +151,7 @@
       "projectName": "Lodge of Sorceresses — Monster Hunt Coordination",
       "shortName": "Lodge MHC",
       "subAccountName": "Lodge of Sorceresses",
-      "subAccountNumber": "PSA-TEST-WITCHER-LODGE-OF-SORCERESSES-MONSTER-HUNTS",
+      "subAccountNumber": "PSA-TEST-WITCHER-LODGE-OSMH",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 24,
       "workstreams": [

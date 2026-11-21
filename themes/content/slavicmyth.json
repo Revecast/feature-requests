@@ -27,13 +27,13 @@
     { "name": "Bridge-Smith of Kalinov Most",      "canonical": "Integration Technical Architect - USA","description": "Architect of the great bridge of Kalinov — designer of every span between Salesforce and the world below." },
     { "name": "Wright of Kalinov Most",            "canonical": "Integration Senior Consultant - India","description": "Lays the planks of API, middleware, and event flows under the Bridge-Smith's plan." },
     { "name": "Apprentice of Kalinov Most",        "canonical": "Integration Consultant - India",       "description": "Learns the craft of integration — webhooks, batches, callouts and the careful charms of error handling." },
-    { "name": "Healer of the Rusalka Pools",       "canonical": "QA Engineer",                          "description": "Tends the wounded build — finds curses, broken charms and ill omens before the prince ever sees them." },
+    { "name": "Healer of the Rusalka Pools",       "canonical": "Quality Assurance (QA) Engineer",                          "description": "Tends the wounded build — finds curses, broken charms and ill omens before the prince ever sees them." },
     { "name": "Skomorokh-in-Chief",                "canonical": "Marketing Practice Lead",              "description": "Master of the wandering players — leads the heralds, the songs, and every banner of the brand." },
     { "name": "Bayan of the Princely Hall",        "canonical": "Marketing Senior Consultant",          "description": "Court bard — strategist of campaigns, weaver of byliny that summon customers to the gate." },
     { "name": "Skomorokh of the Marketplace",      "canonical": "Marketing Consultant",                 "description": "Carries the campaign into the squares and steppe — content, creative and the daily ride." },
     { "name": "Scribe of the Veche",               "canonical": "Business Analyst",                     "description": "Records the will of the people's assembly — translates between mortal Customer and the volkhv's design." },
-    { "name": "Master Smith of the Western Forge", "canonical": "Salesforce Senior Developer - USA",    "description": "Senior Numenorean smith of the west — forges the deepest customizations and mentors the apprentices." },
-    { "name": "Otrok of the Eastern Forge",        "canonical": "Junior Salesforce Consultant - India", "description": "Newest squire — learning the simple charms of declarative configuration before taking up Apex." }
+    { "name": "Master Smith of the Western Forge", "canonical": "Salesforce Developer",    "description": "Senior Numenorean smith of the west — forges the deepest customizations and mentors the apprentices." },
+    { "name": "Otrok of the Eastern Forge",        "canonical": "Salesforce Consultant - India", "description": "Newest squire — learning the simple charms of declarative configuration before taking up Apex." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

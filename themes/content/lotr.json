@@ -5,53 +5,24 @@
   "category": "Sci-Fi / Fantasy",
   "emailDomain": "middle-earth.test",
   "tagline": "The full finance stack — deep pipeline, every billing model",
-  "bestFor": [
-    "Forecasting walk-throughs",
-    "Pipeline depth (5 accounts / 11 opportunities)",
-    "Every billing model represented end-to-end",
-    "Multi-realm staffing + capacity demos"
-  ],
-  "capabilities": {
-    "forecasting": true,
-    "pipeline": true,
-    "billingVariety": true,
-    "timerDemos": true,
-    "setupWalkthroughs": true,
-    "brandRecognition": true
-  },
-  "account": {
-    "name": "Fellowship of the Ring (Test Data)",
-    "accountNumber": "PSA-TEST-LOTR"
-  },
-
+  "bestFor": ["Forecasting walk-throughs", "Pipeline depth (5 accounts / 11 opportunities)", "Every billing model represented end-to-end", "Multi-realm staffing + capacity demos"],
+  "capabilities": { "forecasting": true, "pipeline": true, "billingVariety": true, "timerDemos": true, "setupWalkthroughs": true, "brandRecognition": true },
+  "account": { "name": "Fellowship of the Ring (Test Data)", "accountNumber": "PSA-TEST-LOTR" },
   "serviceLines": [
-    { "name": "LOTR: Strategy & Advisory",   "description": "Stewardship-tier strategic engagements. Discovery, roadmaps, executive advisory." },
-    { "name": "LOTR: Implementation",        "description": "Build + delivery teams. Greenfield platforms, integrations, migrations." },
-    { "name": "LOTR: Managed Services",      "description": "Long-running operational engagements. Retainer-style ongoing support." },
-    { "name": "LOTR: Data & Analytics",      "description": "Insight engagements. BI, dashboards, model validation." },
-    { "name": "LOTR: Knowledge & Training",  "description": "Enablement engagements. Training delivery, knowledge transfer, documentation." }
+    { "name": "LOTR: Strategy & Advisory", "description": "Stewardship-tier strategic engagements. Discovery, roadmaps, executive advisory." },
+    { "name": "LOTR: Implementation", "description": "Build + delivery teams. Greenfield platforms, integrations, migrations." },
+    { "name": "LOTR: Managed Services", "description": "Long-running operational engagements. Retainer-style ongoing support." },
+    { "name": "LOTR: Data & Analytics", "description": "Insight engagements. BI, dashboards, model validation." },
+    { "name": "LOTR: Knowledge & Training", "description": "Enablement engagements. Training delivery, knowledge transfer, documentation." }
   ],
-
-  "realmServiceLineMap": {
-    "gondor":     "LOTR: Strategy & Advisory",
-    "rivendell":  "LOTR: Strategy & Advisory",
-    "rohan":      "LOTR: Implementation",
-    "helmsdeep":  "LOTR: Implementation",
-    "mordor":     "LOTR: Managed Services",
-    "isengard":   "LOTR: Managed Services",
-    "lothlorien": "LOTR: Data & Analytics",
-    "mirkwood":   "LOTR: Data & Analytics",
-    "erebor":     "LOTR: Knowledge & Training"
-  },
-
+  "realmServiceLineMap": { "gondor": "LOTR: Strategy & Advisory", "rivendell": "LOTR: Strategy & Advisory", "rohan": "LOTR: Implementation", "helmsdeep": "LOTR: Implementation", "mordor": "LOTR: Managed Services", "isengard": "LOTR: Managed Services", "lothlorien": "LOTR: Data & Analytics", "mirkwood": "LOTR: Data & Analytics", "erebor": "LOTR: Knowledge & Training" },
   "pipelineAccounts": [
-    { "key": "breeland",   "accountNumber": "PSA-PIPELINE-LOTR-BREELAND",   "name": "Bree-land Trading Co." },
-    { "key": "shire",      "accountNumber": "PSA-PIPELINE-LOTR-SHIRE",      "name": "Shire Confederation" },
-    { "key": "dale",       "accountNumber": "PSA-PIPELINE-LOTR-DALE",       "name": "Kingdom of Dale" },
-    { "key": "laketown",   "accountNumber": "PSA-PIPELINE-LOTR-LAKETOWN",   "name": "Lake-town Merchants Guild" },
-    { "key": "lothcouncil","accountNumber": "PSA-PIPELINE-LOTR-LOTHCOUNCIL","name": "Lothlórien Council Advisory" }
+    { "key": "breeland", "accountNumber": "PSA-PIPELINE-LOTR-BREELAND", "name": "Bree-land Trading Co." },
+    { "key": "shire", "accountNumber": "PSA-PIPELINE-LOTR-SHIRE", "name": "Shire Confederation" },
+    { "key": "dale", "accountNumber": "PSA-PIPELINE-LOTR-DALE", "name": "Kingdom of Dale" },
+    { "key": "laketown", "accountNumber": "PSA-PIPELINE-LOTR-LAKETOWN", "name": "Lake-town Merchants Guild" },
+    { "key": "lothcouncil", "accountNumber": "PSA-PIPELINE-LOTR-LOTHCOUNCIL", "name": "Lothlórien Council Advisory" }
   ],
-
   "pipelineOpportunities": [
     { "extIdSlug": "dale-trade-restoration-implementation", "accountKey": "dale", "name": "Dale Trade Restoration Implementation", "stage": "Proposal/Price Quote", "amount": 1800000, "daysFromToday": 30, "forecastCategory": "Commit", "probability": 85, "durationWeeks": 52, "billingModel": "Time and Materials", "serviceLineKey": "LOTR: Data & Analytics", "startOffsetDays": 21 },
     { "extIdSlug": "laketown-merchant-guild-operations", "accountKey": "laketown", "name": "Lake-town Merchant Guild Operations", "stage": "Negotiation/Review", "amount": 2500000, "daysFromToday": 60, "forecastCategory": "Commit", "probability": 90, "durationWeeks": 78, "billingModel": "Time and Materials", "serviceLineKey": "LOTR: Managed Services", "startOffsetDays": 21 },
@@ -65,18 +36,15 @@
     { "extIdSlug": "lothcouncil-advisory-engagement", "accountKey": "lothcouncil", "name": "Lothlórien Council Advisory Engagement", "stage": "Needs Analysis", "amount": 480000, "daysFromToday": 300, "forecastCategory": "Pipeline", "probability": 60, "durationWeeks": 26, "serviceLineKey": "LOTR: Knowledge & Training", "startOffsetDays": 21 },
     { "extIdSlug": "lothcouncil-mirror-galadriel", "accountKey": "lothcouncil", "name": "Lothlórien Mirror-of-Galadriel Insights", "stage": "Qualification", "amount": 290000, "daysFromToday": 330, "forecastCategory": "Pipeline", "probability": 50, "durationWeeks": 16, "serviceLineKey": "LOTR: Knowledge & Training", "startOffsetDays": 21 }
   ],
-
   "roles": [
-    { "name": "Loremaster (SA)",                    "canonical": "Solution Architect",                   "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
-    { "name": "Captain of the Guard (PM)",          "canonical": "Project Manager",                      "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
-    { "name": "Ranger of Ithilien (SCC)",           "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft." },
-    { "name": "Scout of the Northern Marches (CC)", "canonical": "Salesforce Consultant - India",        "description": "Carries discovery and configuration across the realm under the Ranger's eye." },
-    { "name": "Council Scribe of Rivendell (BA)",   "canonical": "Business Analyst",                     "description": "Records what is needed and what is promised — translates between mortal Customer and the elvish craft of design." },
-    { "name": "Trumpeter of the Citadel (SMCC)",    "canonical": "Marketing Senior Consultant - India",  "description": "Strategist of campaigns — sounds the call to gather and convert." }
+    { "name": "Loremaster (SA)", "canonical": "Solution Architect", "description": "Knower of ancient lore — designs the over-arching Salesforce solution and watches over its integrity." },
+    { "name": "Captain of the Guard (PM)", "canonical": "Project Manager", "description": "Marshals the warriors of delivery, holds the timeline, and answers to the Steward." },
+    { "name": "Ranger of Ithilien (SCC)", "canonical": "Salesforce Senior Consultant - India", "description": "Patrols the borders of customer requirements with practiced craft." },
+    { "name": "Scout of the Northern Marches (CC)", "canonical": "Salesforce Consultant - India", "description": "Carries discovery and configuration across the realm under the Ranger's eye." },
+    { "name": "Council Scribe of Rivendell (BA)", "canonical": "Business Analyst", "description": "Records what is needed and what is promised — translates between mortal Customer and the elvish craft of design." },
+    { "name": "Trumpeter of the Citadel (SMCC)", "canonical": "Marketing Senior Consultant - India", "description": "Strategist of campaigns — sounds the call to gather and convert." }
   ],
-
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
-
   "realms": [
     {
       "key": "gondor",
@@ -95,51 +63,99 @@
         "allocationProfile": {
           "name": "Gondor Stewardship Ramp",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 30,  "revenuePct": 40 },
-            { "order": 2, "startPct": 30, "endPct": 70,  "revenuePct": 40 },
+            { "order": 1, "startPct": 0, "endPct": 30, "revenuePct": 40 },
+            { "order": 2, "startPct": 30, "endPct": 70, "revenuePct": 40 },
             { "order": 3, "startPct": 70, "endPct": 100, "revenuePct": 20 }
           ]
         },
         "products": [
-          { "themedRole": "Captain of the Guard",        "quantity": 600,  "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",      "quantity": 1500, "unitPrice": 200 },
-          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 1200, "unitPrice": 150 },
-          { "themedRole": "Scout of the Northern Marches","quantity": 900, "unitPrice": 100 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 600, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 1500, "unitPrice": 200 },
+          { "themedRole": "Loremaster (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 900, "unitPrice": 100 }
         ]
       },
       "invoices": [
-        { "issuedOffsetWeeks": 4,  "status": "Paid",     "number": "INV-GONDOR-001",
-          "lines": [ { "lineType": "Time and Materials", "amount": 95000 } ] },
-        { "issuedOffsetWeeks": 8,  "status": "Paid",     "number": "INV-GONDOR-002",
-          "lines": [ { "lineType": "Time and Materials", "amount": 110000 } ] },
-        { "issuedOffsetWeeks": 12, "status": "Invoiced", "number": "INV-GONDOR-003",
-          "lines": [ { "lineType": "Time and Materials", "amount": 88000 } ] }
+        {
+          "issuedOffsetWeeks": 4,
+          "status": "Paid",
+          "number": "INV-GONDOR-001",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 95000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 8,
+          "status": "Paid",
+          "number": "INV-GONDOR-002",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 110000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 12,
+          "status": "Invoiced",
+          "number": "INV-GONDOR-003",
+          "lines": [
+            { "lineType": "Time and Materials", "amount": 88000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Citadel Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
-          { "name": "Council of Stewards", "billable": true },
-          { "name": "Field Reconnaissance — Pelargir", "billable": true },
-          { "name": "Strategy Drafting", "billable": true }
-        ]},
-        { "name": "Build the Beacons", "isDefault": false, "billable": true, "children": [
-          { "name": "Beacon Foundation Stones", "billable": true },
-          { "name": "Signal Fire Tooling", "billable": true },
-          { "name": "Watchtower Hardening", "billable": true }
-        ]},
-        { "name": "Migrate the Archives", "isDefault": false, "billable": true, "children": [
-          { "name": "Scroll Inventory", "billable": true },
-          { "name": "Manuscript Translation", "billable": true }
-        ]},
-        { "name": "Testing at Pelennor", "isDefault": false, "billable": true, "children": [
-          { "name": "Battle Drill (UAT)", "billable": true },
-          { "name": "Siege Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Guard", "isDefault": false, "billable": true, "children": [
-          { "name": "Recruit Onboarding", "billable": true },
-          { "name": "Captain's Workshop", "billable": true }
-        ]}
+        {
+          "name": "Citadel Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Council",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Council of Stewards", "billable": true },
+            { "name": "Field Reconnaissance — Pelargir", "billable": true },
+            { "name": "Strategy Drafting", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Beacons",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Beacon Foundation Stones", "billable": true },
+            { "name": "Signal Fire Tooling", "billable": true },
+            { "name": "Watchtower Hardening", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Archives",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Scroll Inventory", "billable": true },
+            { "name": "Manuscript Translation", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing at Pelennor",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Battle Drill (UAT)", "billable": true },
+            { "name": "Siege Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Guard",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Recruit Onboarding", "billable": true },
+            { "name": "Captain's Workshop", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -163,50 +179,92 @@
           ]
         },
         "products": [
-          { "themedRole": "Captain of the Guard",        "quantity": 400,  "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",      "quantity": 1000, "unitPrice": 200 },
-          { "themedRole": "Loremaster",                  "quantity": 100,  "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 600,  "unitPrice": 150 },
-          { "themedRole": "Scout of the Northern Marches","quantity": 1200,"unitPrice": 100 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 1000, "unitPrice": 200 },
+          { "themedRole": "Loremaster (SA)", "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 600, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 1200, "unitPrice": 100 }
         ]
       },
       "milestones": [
-        { "name": "Discovery Complete",   "offsetWeeks": 4,  "amount": 80000,  "status": "Completed" },
-        { "name": "Riders Mustered",      "offsetWeeks": 10, "amount": 120000, "status": "Completed" },
-        { "name": "Beacon Tested",        "offsetWeeks": 16, "amount": 100000, "status": "In Progress" },
-        { "name": "Cavalry Trained",      "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
-        { "name": "Go-Live at Edoras",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+        { "name": "Discovery Complete", "offsetWeeks": 4, "amount": 80000, "status": "Completed" },
+        { "name": "Riders Mustered", "offsetWeeks": 10, "amount": 120000, "status": "Completed" },
+        { "name": "Beacon Tested", "offsetWeeks": 16, "amount": 100000, "status": "In Progress" },
+        { "name": "Cavalry Trained", "offsetWeeks": 22, "amount": 120000, "status": "Not Started" },
+        { "name": "Go-Live at Edoras", "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
       ],
       "invoices": [
-        { "issuedOffsetWeeks": 5,  "status": "Paid", "number": "INV-ROHAN-001",
-          "lines": [ { "lineType": "Milestone", "amount": 80000 } ] },
-        { "issuedOffsetWeeks": 10, "status": "Paid", "number": "INV-ROHAN-002",
-          "lines": [ { "lineType": "Milestone", "amount": 120000 } ] }
+        {
+          "issuedOffsetWeeks": 5,
+          "status": "Paid",
+          "number": "INV-ROHAN-001",
+          "lines": [
+            { "lineType": "Milestone", "amount": 80000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 10,
+          "status": "Paid",
+          "number": "INV-ROHAN-002",
+          "lines": [
+            { "lineType": "Milestone", "amount": 120000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Edoras Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Muster", "isDefault": false, "billable": true, "children": [
-          { "name": "Riddermark Survey", "billable": true },
-          { "name": "Cavalry Headcount", "billable": true },
-          { "name": "Strategy with the King", "billable": true }
-        ]},
-        { "name": "Build the Cavalry", "isDefault": false, "billable": true, "children": [
-          { "name": "Stable Construction", "billable": true },
-          { "name": "Saddle & Tack Forging", "billable": true },
-          { "name": "Banner Workshop", "billable": true }
-        ]},
-        { "name": "Migrate the Hosts", "isDefault": false, "billable": true, "children": [
-          { "name": "Eored Roll Call", "billable": true },
-          { "name": "Provisioning Carts", "billable": true }
-        ]},
-        { "name": "Testing at Helm's Deep", "isDefault": false, "billable": true, "children": [
-          { "name": "Wall Defense Drill", "billable": true },
-          { "name": "Cavalry Charge Rehearsal", "billable": true }
-        ]},
-        { "name": "Training the Riders", "isDefault": false, "billable": true, "children": [
-          { "name": "Eored Foundations", "billable": true },
-          { "name": "Marshall's Manual", "billable": true }
-        ]}
+        {
+          "name": "Edoras Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Muster",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Riddermark Survey", "billable": true },
+            { "name": "Cavalry Headcount", "billable": true },
+            { "name": "Strategy with the King", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Cavalry",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Stable Construction", "billable": true },
+            { "name": "Saddle & Tack Forging", "billable": true },
+            { "name": "Banner Workshop", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Hosts",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Eored Roll Call", "billable": true },
+            { "name": "Provisioning Carts", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing at Helm's Deep",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Wall Defense Drill", "billable": true },
+            { "name": "Cavalry Charge Rehearsal", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Riders",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Eored Foundations", "billable": true },
+            { "name": "Marshall's Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -224,59 +282,101 @@
         "allocationProfile": {
           "name": "Mordor Surveillance Back-loaded",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 33,  "revenuePct": 20 },
-            { "order": 2, "startPct": 33, "endPct": 66,  "revenuePct": 30 },
+            { "order": 1, "startPct": 0, "endPct": 33, "revenuePct": 20 },
+            { "order": 2, "startPct": 33, "endPct": 66, "revenuePct": 30 },
             { "order": 3, "startPct": 66, "endPct": 100, "revenuePct": 50 }
           ]
         },
         "products": [
-          { "themedRole": "Captain of the Guard",        "quantity": 300, "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",      "quantity": 700, "unitPrice": 200 },
-          { "themedRole": "Loremaster",                  "quantity": 100, "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 500, "unitPrice": 150 },
-          { "themedRole": "Scout of the Northern Marches","quantity": 750,"unitPrice": 100 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 300, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 700, "unitPrice": 200 },
+          { "themedRole": "Loremaster (SA)", "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 500, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 750, "unitPrice": 100 }
         ]
       },
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "forecastLines": [
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0,  "amount": 63333.33 },
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4,  "amount": 63333.33 },
-        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9,  "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 0, "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 4, "amount": 63333.33 },
+        { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 9, "amount": 63333.33 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 13, "amount": 63333.33 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 17, "amount": 63333.33 },
         { "lineType": "Fixed Monthly Retainer", "plannedOffsetWeeks": 22, "amount": 63333.35 }
       ],
       "invoices": [
-        { "issuedOffsetWeeks": 0, "status": "Paid", "number": "INV-MORDOR-001",
-          "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 } ] },
-        { "issuedOffsetWeeks": 4, "status": "Paid", "number": "INV-MORDOR-002",
-          "lines": [ { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 } ] }
+        {
+          "issuedOffsetWeeks": 0,
+          "status": "Paid",
+          "number": "INV-MORDOR-001",
+          "lines": [
+            { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 4,
+          "status": "Paid",
+          "number": "INV-MORDOR-002",
+          "lines": [
+            { "lineType": "Fixed Monthly Retainer", "amount": 63333.33 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Barad-dûr Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Spies", "isDefault": false, "billable": true, "children": [
-          { "name": "Nazgûl Reconnaissance", "billable": true },
-          { "name": "Palantír Polling", "billable": true },
-          { "name": "Dark Council Strategy", "billable": true }
-        ]},
-        { "name": "Build the Watchful Eye", "isDefault": false, "billable": true, "children": [
-          { "name": "Tower Foundation Forging", "billable": true },
-          { "name": "Eye Lens Calibration", "billable": true },
-          { "name": "Beacon Signal Network", "billable": true }
-        ]},
-        { "name": "Migrate the Forces", "isDefault": false, "billable": true, "children": [
-          { "name": "Orc Legion Roll", "billable": true },
-          { "name": "Siege Engine Inventory", "billable": true }
-        ]},
-        { "name": "Testing the Wraiths", "isDefault": false, "billable": true, "children": [
-          { "name": "Black Gate Pen-test", "billable": true },
-          { "name": "Mount Doom Stress", "billable": true }
-        ]},
-        { "name": "Training the Orcs", "isDefault": false, "billable": true, "children": [
-          { "name": "Recruit Conscription", "billable": true },
-          { "name": "Captain's Battle Manual", "billable": true }
-        ]}
+        {
+          "name": "Barad-dûr Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Spies",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Nazgûl Reconnaissance", "billable": true },
+            { "name": "Palantír Polling", "billable": true },
+            { "name": "Dark Council Strategy", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Watchful Eye",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Tower Foundation Forging", "billable": true },
+            { "name": "Eye Lens Calibration", "billable": true },
+            { "name": "Beacon Signal Network", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Forces",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Orc Legion Roll", "billable": true },
+            { "name": "Siege Engine Inventory", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Wraiths",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Black Gate Pen-test", "billable": true },
+            { "name": "Mount Doom Stress", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Orcs",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Recruit Conscription", "billable": true },
+            { "name": "Captain's Battle Manual", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -290,29 +390,59 @@
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
-        { "name": "Caras Galadhon Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Mirror Gazing", "isDefault": false, "billable": true, "children": [
-          { "name": "Mirror Calibration", "billable": true },
-          { "name": "Future-state Vision", "billable": true },
-          { "name": "Lady's Council", "billable": true }
-        ]},
-        { "name": "Build the Talan", "isDefault": false, "billable": true, "children": [
-          { "name": "Mallorn Branch Selection", "billable": true },
-          { "name": "Platform Construction", "billable": true },
-          { "name": "Rope Bridge Threading", "billable": true }
-        ]},
-        { "name": "Migrate the Lore", "isDefault": false, "billable": true, "children": [
-          { "name": "Elvish Manuscript Catalog", "billable": true },
-          { "name": "Song Recording", "billable": true }
-        ]},
-        { "name": "Testing the Hithlain", "isDefault": false, "billable": true, "children": [
-          { "name": "Tensile Strength Trial", "billable": true },
-          { "name": "Weave Pattern Verification", "billable": true }
-        ]},
-        { "name": "Training the Galadhrim", "isDefault": false, "billable": true, "children": [
-          { "name": "Bow & Arrow Refresh", "billable": true },
-          { "name": "Cloak Weaving Workshop", "billable": true }
-        ]}
+        {
+          "name": "Caras Galadhon Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Mirror Gazing",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Mirror Calibration", "billable": true },
+            { "name": "Future-state Vision", "billable": true },
+            { "name": "Lady's Council", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Talan",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Mallorn Branch Selection", "billable": true },
+            { "name": "Platform Construction", "billable": true },
+            { "name": "Rope Bridge Threading", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Lore",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Elvish Manuscript Catalog", "billable": true },
+            { "name": "Song Recording", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Hithlain",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Tensile Strength Trial", "billable": true },
+            { "name": "Weave Pattern Verification", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Galadhrim",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Bow & Arrow Refresh", "billable": true },
+            { "name": "Cloak Weaving Workshop", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -332,45 +462,75 @@
         "allocationProfile": {
           "name": "Isengard Mixed Phased",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 40,  "revenuePct": 50 },
+            { "order": 1, "startPct": 0, "endPct": 40, "revenuePct": 50 },
             { "order": 2, "startPct": 40, "endPct": 100, "revenuePct": 50 }
           ]
         },
         "products": [
-          { "themedRole": "Captain of the Guard",        "quantity": 500,  "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",      "quantity": 1200, "unitPrice": 200 },
-          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 800,  "unitPrice": 150 },
-          { "themedRole": "Scout of the Northern Marches","quantity": 1000,"unitPrice": 100 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 500, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 1200, "unitPrice": 200 },
+          { "themedRole": "Loremaster (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 800, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 1000, "unitPrice": 100 }
         ]
       },
       "milestones": [
-        { "name": "Forge Built",         "offsetWeeks": 10, "amount": 100000, "status": "In Progress" },
-        { "name": "First Production",    "offsetWeeks": 18, "amount": 110000, "status": "Not Started" },
-        { "name": "Final Acceptance",    "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
+        { "name": "Forge Built", "offsetWeeks": 10, "amount": 100000, "status": "In Progress" },
+        { "name": "First Production", "offsetWeeks": 18, "amount": 110000, "status": "Not Started" },
+        { "name": "Final Acceptance", "offsetWeeks": 26, "amount": 100000, "status": "Not Started" }
       ],
       "workstreams": [
-        { "name": "Orthanc Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Surveying", "isDefault": false, "billable": true, "children": [
-          { "name": "Pit Excavation Survey", "billable": true },
-          { "name": "Forge Capacity Audit", "billable": true }
-        ]},
-        { "name": "Build the Forges", "isDefault": false, "billable": true, "children": [
-          { "name": "Furnace Construction", "billable": true },
-          { "name": "Bellows Engineering", "billable": true },
-          { "name": "Iron Stockpile Setup", "billable": true }
-        ]},
-        { "name": "Migrate the Workforce", "isDefault": false, "billable": true, "children": [
-          { "name": "Uruk Battalion Onboarding", "billable": true },
-          { "name": "Goblin Foreman Training", "billable": true }
-        ]},
-        { "name": "Testing the Output", "isDefault": false, "billable": true, "children": [
-          { "name": "Weapon Forge Drill", "billable": true },
-          { "name": "Quality Inspection", "billable": true }
-        ]},
-        { "name": "Training the Captains", "isDefault": false, "billable": true, "children": [
-          { "name": "Foreman Workshop", "billable": true }
-        ]}
+        {
+          "name": "Orthanc Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Surveying",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Pit Excavation Survey", "billable": true },
+            { "name": "Forge Capacity Audit", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Forges",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Furnace Construction", "billable": true },
+            { "name": "Bellows Engineering", "billable": true },
+            { "name": "Iron Stockpile Setup", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Workforce",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Uruk Battalion Onboarding", "billable": true },
+            { "name": "Goblin Foreman Training", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Output",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Weapon Forge Drill", "billable": true },
+            { "name": "Quality Inspection", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Captains",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Foreman Workshop", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -390,56 +550,96 @@
         "allocationProfile": {
           "name": "Mirkwood Drawdown Front-loaded",
           "segments": [
-            { "order": 1, "startPct": 0,  "endPct": 50,  "revenuePct": 70 },
+            { "order": 1, "startPct": 0, "endPct": 50, "revenuePct": 70 },
             { "order": 2, "startPct": 50, "endPct": 100, "revenuePct": 30 }
           ]
         },
         "products": [
-          { "themedRole": "Captain of the Guard",        "quantity": 400,  "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",      "quantity": 900,  "unitPrice": 200 },
-          { "themedRole": "Loremaster",                  "quantity": 100,  "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 600,  "unitPrice": 150 },
-          { "themedRole": "Scout of the Northern Marches","quantity": 1000,"unitPrice": 100 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 400, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 900, "unitPrice": 200 },
+          { "themedRole": "Loremaster (SA)", "quantity": 100, "unitPrice": 300 },
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 600, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 1000, "unitPrice": 100 }
         ]
       },
       "forecastLines": [
-        { "lineType": "Prepayment", "plannedOffsetWeeks": -10, "amount":  480000 },
-        { "lineType": "Drawdown",   "plannedOffsetWeeks":   0, "amount":  -80000 },
-        { "lineType": "Drawdown",   "plannedOffsetWeeks":   5, "amount":  -80000 },
-        { "lineType": "Drawdown",   "plannedOffsetWeeks":  10, "amount":  -80000 },
-        { "lineType": "Drawdown",   "plannedOffsetWeeks":  15, "amount":  -80000 },
-        { "lineType": "Drawdown",   "plannedOffsetWeeks":  20, "amount":  -80000 },
-        { "lineType": "Drawdown",   "plannedOffsetWeeks":  25, "amount":  -80000 }
+        { "lineType": "Prepayment", "plannedOffsetWeeks": -10, "amount": 480000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 0, "amount": -80000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 5, "amount": -80000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 10, "amount": -80000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 15, "amount": -80000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 20, "amount": -80000 },
+        { "lineType": "Drawdown", "plannedOffsetWeeks": 25, "amount": -80000 }
       ],
       "invoices": [
-        { "issuedOffsetWeeks": -10, "status": "Paid", "number": "INV-MIRKWOOD-PREPAY",
-          "lines": [ { "lineType": "Prepayment", "amount": 480000 } ] },
-        { "issuedOffsetWeeks":   0, "status": "Paid", "number": "INV-MIRKWOOD-DRAW-001",
+        {
+          "issuedOffsetWeeks": -10,
+          "status": "Paid",
+          "number": "INV-MIRKWOOD-PREPAY",
+          "lines": [
+            { "lineType": "Prepayment", "amount": 480000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 0,
+          "status": "Paid",
+          "number": "INV-MIRKWOOD-DRAW-001",
           "lines": [
             { "lineType": "Time and Materials", "amount": 80000 },
-            { "lineType": "Drawdown",           "amount": -80000 }
-          ] }
+            { "lineType": "Drawdown", "amount": -80000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Thranduil's Hall Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Council", "isDefault": false, "billable": true, "children": [
-          { "name": "Wood-Elf Requirements", "billable": true },
-          { "name": "Spider-Threat Assessment", "billable": true }
-        ]},
-        { "name": "Build the Portal", "isDefault": false, "billable": true, "children": [
-          { "name": "Enchanted Gate Construction", "billable": true },
-          { "name": "Forest Path Mapping", "billable": true }
-        ]},
-        { "name": "Migrate the Caverns", "isDefault": false, "billable": true, "children": [
-          { "name": "Wine Cellar Inventory", "billable": true },
-          { "name": "Treasure Vault Catalog", "billable": true }
-        ]},
-        { "name": "Testing the Wards", "isDefault": false, "billable": true, "children": [
-          { "name": "Enchantment Stress Test", "billable": true }
-        ]},
-        { "name": "Training the Sentinels", "isDefault": false, "billable": true, "children": [
-          { "name": "Bow Practice Workshop", "billable": true }
-        ]}
+        {
+          "name": "Thranduil's Hall Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Council",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Wood-Elf Requirements", "billable": true },
+            { "name": "Spider-Threat Assessment", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Portal",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Enchanted Gate Construction", "billable": true },
+            { "name": "Forest Path Mapping", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Caverns",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Wine Cellar Inventory", "billable": true },
+            { "name": "Treasure Vault Catalog", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Wards",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Enchantment Stress Test", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Sentinels",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Bow Practice Workshop", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -463,56 +663,116 @@
           ]
         },
         "products": [
-          { "themedRole": "Captain of the Guard",        "quantity": 700,  "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",      "quantity": 1800, "unitPrice": 200 },
-          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 1200, "unitPrice": 150 },
-          { "themedRole": "Scout of the Northern Marches","quantity": 1500,"unitPrice": 100 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 700, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 1800, "unitPrice": 200 },
+          { "themedRole": "Loremaster (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 1200, "unitPrice": 150 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 1500, "unitPrice": 100 }
         ]
       },
       "milestones": [
-        { "name": "Discovery (Historical)",   "offsetWeeks": 8,  "amount": 120000, "status": "Completed" },
-        { "name": "Design (Historical)",      "offsetWeeks": 16, "amount": 150000, "status": "Completed" },
-        { "name": "Build (Historical)",       "offsetWeeks": 24, "amount": 250000, "status": "Completed" },
-        { "name": "Test (Historical)",        "offsetWeeks": 32, "amount": 170000, "status": "Completed" },
-        { "name": "Go-Live at Erebor",        "offsetWeeks": 36, "amount": 200000, "status": "Completed" }
+        { "name": "Discovery (Historical)", "offsetWeeks": 8, "amount": 120000, "status": "Completed" },
+        { "name": "Design (Historical)", "offsetWeeks": 16, "amount": 150000, "status": "Completed" },
+        { "name": "Build (Historical)", "offsetWeeks": 24, "amount": 250000, "status": "Completed" },
+        { "name": "Test (Historical)", "offsetWeeks": 32, "amount": 170000, "status": "Completed" },
+        { "name": "Go-Live at Erebor", "offsetWeeks": 36, "amount": 200000, "status": "Completed" }
       ],
       "invoices": [
-        { "issuedOffsetWeeks":  9, "status": "Paid", "number": "INV-EREBOR-001",
-          "lines": [ { "lineType": "Milestone", "amount": 120000 } ] },
-        { "issuedOffsetWeeks": 17, "status": "Paid", "number": "INV-EREBOR-002",
-          "lines": [ { "lineType": "Milestone", "amount": 150000 } ] },
-        { "issuedOffsetWeeks": 25, "status": "Paid", "number": "INV-EREBOR-003",
-          "lines": [ { "lineType": "Milestone", "amount": 250000 } ] },
-        { "issuedOffsetWeeks": 33, "status": "Paid", "number": "INV-EREBOR-004",
-          "lines": [ { "lineType": "Milestone", "amount": 170000 } ] },
-        { "issuedOffsetWeeks": 37, "status": "Paid", "number": "INV-EREBOR-005",
-          "lines": [ { "lineType": "Milestone", "amount": 200000 } ] }
+        {
+          "issuedOffsetWeeks": 9,
+          "status": "Paid",
+          "number": "INV-EREBOR-001",
+          "lines": [
+            { "lineType": "Milestone", "amount": 120000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 17,
+          "status": "Paid",
+          "number": "INV-EREBOR-002",
+          "lines": [
+            { "lineType": "Milestone", "amount": 150000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 25,
+          "status": "Paid",
+          "number": "INV-EREBOR-003",
+          "lines": [
+            { "lineType": "Milestone", "amount": 250000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 33,
+          "status": "Paid",
+          "number": "INV-EREBOR-004",
+          "lines": [
+            { "lineType": "Milestone", "amount": 170000 }
+          ]
+        },
+        {
+          "issuedOffsetWeeks": 37,
+          "status": "Paid",
+          "number": "INV-EREBOR-005",
+          "lines": [
+            { "lineType": "Milestone", "amount": 200000 }
+          ]
+        }
       ],
       "workstreams": [
-        { "name": "Mountain Hall Default", "isDefault": true, "billable": false, "children": [] },
-        { "name": "Discovery & Reclamation", "isDefault": false, "billable": true, "children": [
-          { "name": "Dragon Damage Assessment", "billable": true },
-          { "name": "Treasure Hoard Inventory", "billable": true },
-          { "name": "Heir Lineage Verification", "billable": true }
-        ]},
-        { "name": "Build the Halls", "isDefault": false, "billable": true, "children": [
-          { "name": "Throne Room Reconstruction", "billable": true },
-          { "name": "Forge Restoration", "billable": true },
-          { "name": "Defense Gate Reinforcement", "billable": true }
-        ]},
-        { "name": "Migrate the Clans", "isDefault": false, "billable": true, "children": [
-          { "name": "Iron Hills Repatriation", "billable": true },
-          { "name": "Blue Mountains Outreach", "billable": true }
-        ]},
-        { "name": "Testing the Defenses", "isDefault": false, "billable": true, "children": [
-          { "name": "Battle of Five Armies Drill", "billable": true },
-          { "name": "Gate Siege Rehearsal", "billable": true }
-        ]},
-        { "name": "Training the Heirs", "isDefault": false, "billable": true, "children": [
-          { "name": "Royal Court Workshop", "billable": true },
-          { "name": "Negotiation with Men of Dale", "billable": true }
-        ]}
+        {
+          "name": "Mountain Hall Default",
+          "isDefault": true,
+          "billable": false,
+          "children": []
+        },
+        {
+          "name": "Discovery & Reclamation",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Dragon Damage Assessment", "billable": true },
+            { "name": "Treasure Hoard Inventory", "billable": true },
+            { "name": "Heir Lineage Verification", "billable": true }
+          ]
+        },
+        {
+          "name": "Build the Halls",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Throne Room Reconstruction", "billable": true },
+            { "name": "Forge Restoration", "billable": true },
+            { "name": "Defense Gate Reinforcement", "billable": true }
+          ]
+        },
+        {
+          "name": "Migrate the Clans",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Iron Hills Repatriation", "billable": true },
+            { "name": "Blue Mountains Outreach", "billable": true }
+          ]
+        },
+        {
+          "name": "Testing the Defenses",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Battle of Five Armies Drill", "billable": true },
+            { "name": "Gate Siege Rehearsal", "billable": true }
+          ]
+        },
+        {
+          "name": "Training the Heirs",
+          "isDefault": false,
+          "billable": true,
+          "children": [
+            { "name": "Royal Court Workshop", "billable": true },
+            { "name": "Negotiation with Men of Dale", "billable": true }
+          ]
+        }
       ]
     },
     {
@@ -533,10 +793,9 @@
         "paymentTerms": "Net 30",
         "prePaymentAmount": 0,
         "products": [
-          { "themedRole": "Council Scribe of Rivendell", "quantity": 800,  "unitPrice": 180 },
-          { "themedRole": "Loremaster",                  "quantity": 200,  "unitPrice": 300 },
-          { "themedRole": "Keeper of the Books",         "quantity": 1000, "unitPrice": 150 },
-          { "themedRole": "Healer of the Houses",        "quantity": 400,  "unitPrice": 120 }
+          { "themedRole": "Council Scribe of Rivendell (BA)", "quantity": 1800, "unitPrice": 163 },
+          { "themedRole": "Loremaster (SA)", "quantity": 200, "unitPrice": 300 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 400, "unitPrice": 120 }
         ]
       }
     },
@@ -558,283 +817,187 @@
         "paymentTerms": "Net 45",
         "prePaymentAmount": 0,
         "products": [
-          { "themedRole": "Captain of the Guard",          "quantity": 800,  "unitPrice": 200 },
-          { "themedRole": "Master Smith of Erebor",        "quantity": 1500, "unitPrice": 200 },
-          { "themedRole": "Bridge-Master of Khazad-dûm",   "quantity": 400,  "unitPrice": 280 },
-          { "themedRole": "Bridge-builder of Khazad-dûm",  "quantity": 1200, "unitPrice": 140 },
-          { "themedRole": "Ranger of Ithilien",            "quantity": 600,  "unitPrice": 160 }
+          { "themedRole": "Captain of the Guard (PM)", "quantity": 800, "unitPrice": 200 },
+          { "themedRole": "Ranger of Ithilien (SCC)", "quantity": 2100, "unitPrice": 189 },
+          { "themedRole": "Loremaster (SA)", "quantity": 400, "unitPrice": 280 },
+          { "themedRole": "Scout of the Northern Marches (CC)", "quantity": 1200, "unitPrice": 140 }
         ]
       }
     }
   ],
-
   "casting": {
     "gondor": [
-      { "fullName": "Aragorn",             "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Boromir",             "themedRole": "Loremaster (SA)" },
-      { "fullName": "Faramir",             "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Denethor",            "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Beregond",            "themedRole": "Council Scribe of Rivendell (BA)" },
-      { "fullName": "Peregrin Took",       "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Gandalf the Grey",    "themedRole": "Loremaster (SA)" },
-      { "fullName": "Findegil",            "themedRole": "Trumpeter of the Citadel (SMCC)" },
-      { "fullName": "Telchar",             "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Mablung",             "themedRole": "Loremaster (SA)" }
+      { "fullName": "Aragorn", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Boromir", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Faramir", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Denethor", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Beregond", "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Peregrin Took", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Gandalf the Grey", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Findegil", "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Telchar", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Mablung", "themedRole": "Loremaster (SA)" }
     ],
     "rohan": [
-      { "fullName": "Théoden",             "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Éomer",               "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Éowyn",               "themedRole": "Council Scribe of Rivendell (BA)" },
-      { "fullName": "Gríma Wormtongue",    "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Théoden", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Éomer", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Éowyn", "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Gríma Wormtongue", "themedRole": "Captain of the Guard (PM)" },
       { "fullName": "Meriadoc Brandybuck", "themedRole": "Loremaster (SA)" },
-      { "fullName": "Treebeard",           "themedRole": "Trumpeter of the Citadel (SMCC)" },
-      { "fullName": "Frodo Baggins",       "themedRole": "Loremaster (SA)" },
-      { "fullName": "Háma",                "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Narvi",               "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Halbarad",            "themedRole": "Captain of the Guard (PM)" }
+      { "fullName": "Treebeard", "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Frodo Baggins", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Háma", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Narvi", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Halbarad", "themedRole": "Captain of the Guard (PM)" }
     ],
     "mordor": [
-      { "fullName": "Sauron",              "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Saruman the White",   "themedRole": "Loremaster (SA)" },
-      { "fullName": "Sméagol Gollum",      "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Gríma Wormtongue",    "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Radagast",            "themedRole": "Council Scribe of Rivendell (BA)" },
-      { "fullName": "Samwise Gamgee",      "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Gothmog",             "themedRole": "Loremaster (SA)" },
-      { "fullName": "Mîm",                 "themedRole": "Trumpeter of the Citadel (SMCC)" }
+      { "fullName": "Sauron", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Saruman the White", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Sméagol Gollum", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Gríma Wormtongue", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Radagast", "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Samwise Gamgee", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Gothmog", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Mîm", "themedRole": "Trumpeter of the Citadel (SMCC)" }
     ],
     "lothlorien": [
-      { "fullName": "Galadriel",           "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Celeborn",            "themedRole": "Loremaster (SA)" },
-      { "fullName": "Elrond",              "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Arwen",               "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Legolas",             "themedRole": "Council Scribe of Rivendell (BA)" },
-      { "fullName": "Glorfindel",          "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Bilbo Baggins",       "themedRole": "Loremaster (SA)" }
+      { "fullName": "Galadriel", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Celeborn", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Elrond", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Arwen", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Legolas", "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Glorfindel", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Bilbo Baggins", "themedRole": "Loremaster (SA)" }
     ],
     "isengard": [
-      { "fullName": "Saruman the White",   "themedRole": "Trumpeter of the Citadel (SMCC)" },
-      { "fullName": "Lurtz",               "themedRole": "Loremaster (SA)" },
-      { "fullName": "Ugluk",               "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Sharku",              "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Mauhur",              "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Snaga",               "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Pengolodh",           "themedRole": "Loremaster (SA)" }
+      { "fullName": "Saruman the White", "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Lurtz", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Ugluk", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Sharku", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Mauhur", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Snaga", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Pengolodh", "themedRole": "Loremaster (SA)" }
     ],
     "mirkwood": [
-      { "fullName": "Thranduil",           "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Tauriel",             "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Beorn",               "themedRole": "Council Scribe of Rivendell (BA)" },
-      { "fullName": "Sylvebert",           "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Galion",              "themedRole": "Loremaster (SA)" },
-      { "fullName": "Daeron",              "themedRole": "Trumpeter of the Citadel (SMCC)" },
-      { "fullName": "Nori",                "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Anborn",              "themedRole": "Loremaster (SA)" }
+      { "fullName": "Thranduil", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Tauriel", "themedRole": "Scout of the Northern Marches (CC)" },
+      { "fullName": "Beorn", "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Sylvebert", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Galion", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Daeron", "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Nori", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Anborn", "themedRole": "Loremaster (SA)" }
     ],
     "erebor": [
-      { "fullName": "Thorin Oakenshield",  "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Thorin Oakenshield", "themedRole": "Ranger of Ithilien (SCC)" },
       { "fullName": "Balin son of Fundin", "themedRole": "Scout of the Northern Marches (CC)" },
-      { "fullName": "Dwalin",              "themedRole": "Council Scribe of Rivendell (BA)" },
-      { "fullName": "Gloin",               "themedRole": "Captain of the Guard (PM)" },
-      { "fullName": "Bifur",               "themedRole": "Loremaster (SA)" },
-      { "fullName": "Dori",                "themedRole": "Trumpeter of the Citadel (SMCC)" },
-      { "fullName": "Ori",                 "themedRole": "Loremaster (SA)" },
-      { "fullName": "Bombur",              "themedRole": "Ranger of Ithilien (SCC)" },
-      { "fullName": "Borondir",            "themedRole": "Scout of the Northern Marches (CC)" }
+      { "fullName": "Dwalin", "themedRole": "Council Scribe of Rivendell (BA)" },
+      { "fullName": "Gloin", "themedRole": "Captain of the Guard (PM)" },
+      { "fullName": "Bifur", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Dori", "themedRole": "Trumpeter of the Citadel (SMCC)" },
+      { "fullName": "Ori", "themedRole": "Loremaster (SA)" },
+      { "fullName": "Bombur", "themedRole": "Ranger of Ithilien (SCC)" },
+      { "fullName": "Borondir", "themedRole": "Scout of the Northern Marches (CC)" }
     ]
   },
-
   "milestones": {
     "gondor": [
-      { "name": "Light the Beacons",        "type": "Gate",        "offsetPct": 5,   "description": "Discovery sign-off — beacons lit from Amon Dîn to Edoras." },
-      { "name": "Reforging Andúril",        "type": "Operational", "offsetPct": 25,  "description": "Build kickoff: the king's blade reforged for the road south." },
-      { "name": "Audience at Minas Tirith", "type": "Gate",        "offsetPct": 50,  "description": "Mid-project gate: stewardship review with Denethor's council." },
-      { "name": "Black Gate Diversion",     "type": "Billing",     "offsetPct": 70,  "description": "Phase invoice trigger: feint at the Morannon to draw the eye." },
-      { "name": "Coronation of the King",   "type": "Delivery",    "offsetPct": 95,  "description": "Go-Live: the crown returns to Minas Tirith." },
-      { "name": "Steward's Hand-off",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Faramir." }
+      { "name": "Light the Beacons", "type": "Gate", "offsetPct": 5, "description": "Discovery sign-off — beacons lit from Amon Dîn to Edoras." },
+      { "name": "Reforging Andúril", "type": "Operational", "offsetPct": 25, "description": "Build kickoff: the king's blade reforged for the road south." },
+      { "name": "Audience at Minas Tirith", "type": "Gate", "offsetPct": 50, "description": "Mid-project gate: stewardship review with Denethor's council." },
+      { "name": "Black Gate Diversion", "type": "Billing", "offsetPct": 70, "description": "Phase invoice trigger: feint at the Morannon to draw the eye." },
+      { "name": "Coronation of the King", "type": "Delivery", "offsetPct": 95, "description": "Go-Live: the crown returns to Minas Tirith." },
+      { "name": "Steward's Hand-off", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: stewardship passed to Faramir." }
     ],
     "rohan": [
-      { "name": "Muster at Edoras",         "type": "Gate",        "offsetPct": 5,   "description": "Project kickoff: the éored ride out from the Golden Hall." },
-      { "name": "Ride to Helm's Deep",      "type": "Operational", "offsetPct": 30,  "description": "Build phase: cavalry deployed to the deep." },
-      { "name": "Hornburg Defended",        "type": "Gate",        "offsetPct": 60,  "description": "UAT gate: the deep holds." },
-      { "name": "Charge of the Rohirrim",   "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: the riders break the siege of Pelennor." },
-      { "name": "Return to Meduseld",       "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the king returns home." },
-      { "name": "Funeral of Théoden",       "type": "Billing",     "offsetPct": 100, "description": "Final invoice: the burial of the Horse-Lord." }
+      { "name": "Muster at Edoras", "type": "Gate", "offsetPct": 5, "description": "Project kickoff: the éored ride out from the Golden Hall." },
+      { "name": "Ride to Helm's Deep", "type": "Operational", "offsetPct": 30, "description": "Build phase: cavalry deployed to the deep." },
+      { "name": "Hornburg Defended", "type": "Gate", "offsetPct": 60, "description": "UAT gate: the deep holds." },
+      { "name": "Charge of the Rohirrim", "type": "Delivery", "offsetPct": 90, "description": "Go-Live: the riders break the siege of Pelennor." },
+      { "name": "Return to Meduseld", "type": "Operational", "offsetPct": 100, "description": "Hyper-care close: the king returns home." },
+      { "name": "Funeral of Théoden", "type": "Billing", "offsetPct": 100, "description": "Final invoice: the burial of the Horse-Lord." }
     ],
     "mordor": [
-      { "name": "The Eye Awakens",          "type": "Gate",        "offsetPct": 10,  "description": "Discovery: surveillance plane online." },
-      { "name": "Forge the Watchful Stones","type": "Operational", "offsetPct": 35,  "description": "Build: the Palantíri network deployed." },
-      { "name": "Sauron's Audit",           "type": "Gate",        "offsetPct": 60,  "description": "Solution review with the Dark Lord himself." },
-      { "name": "Tower Activation",         "type": "Delivery",    "offsetPct": 90,  "description": "Go-Live: Barad-dûr fully operational." },
-      { "name": "Eye Goes Dark",            "type": "Operational", "offsetPct": 100, "description": "Project close: surveillance suspended." },
-      { "name": "Final Reckoning",          "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Dark Tower." }
+      { "name": "The Eye Awakens", "type": "Gate", "offsetPct": 10, "description": "Discovery: surveillance plane online." },
+      { "name": "Forge the Watchful Stones", "type": "Operational", "offsetPct": 35, "description": "Build: the Palantíri network deployed." },
+      { "name": "Sauron's Audit", "type": "Gate", "offsetPct": 60, "description": "Solution review with the Dark Lord himself." },
+      { "name": "Tower Activation", "type": "Delivery", "offsetPct": 90, "description": "Go-Live: Barad-dûr fully operational." },
+      { "name": "Eye Goes Dark", "type": "Operational", "offsetPct": 100, "description": "Project close: surveillance suspended." },
+      { "name": "Final Reckoning", "type": "Billing", "offsetPct": 100, "description": "Final invoice from the Dark Tower." }
     ],
     "lothlorien": [
-      { "name": "Council of Galadriel",     "type": "Gate",        "offsetPct": 10,  "description": "Kickoff council in Caras Galadhon." },
-      { "name": "Gaze into the Mirror",     "type": "Operational", "offsetPct": 30,  "description": "Discovery: reports modelled from the Mirror's visions." },
-      { "name": "Weave the Hithlain Reports","type": "Operational","offsetPct": 55,  "description": "Build: dashboards woven of elven-cloak." },
-      { "name": "Gift-Giving at Caras Galadhon","type": "Gate",    "offsetPct": 80,  "description": "UAT acceptance: gifts of the Lady to each member." },
-      { "name": "Sailing into the West",    "type": "Delivery",    "offsetPct": 100, "description": "Go-Live + handoff: the elves depart for the Grey Havens." },
-      { "name": "Final Recompense",         "type": "Billing",     "offsetPct": 100, "description": "Final invoice from the Lord and Lady." }
+      { "name": "Council of Galadriel", "type": "Gate", "offsetPct": 10, "description": "Kickoff council in Caras Galadhon." },
+      { "name": "Gaze into the Mirror", "type": "Operational", "offsetPct": 30, "description": "Discovery: reports modelled from the Mirror's visions." },
+      { "name": "Weave the Hithlain Reports", "type": "Operational", "offsetPct": 55, "description": "Build: dashboards woven of elven-cloak." },
+      { "name": "Gift-Giving at Caras Galadhon", "type": "Gate", "offsetPct": 80, "description": "UAT acceptance: gifts of the Lady to each member." },
+      { "name": "Sailing into the West", "type": "Delivery", "offsetPct": 100, "description": "Go-Live + handoff: the elves depart for the Grey Havens." },
+      { "name": "Final Recompense", "type": "Billing", "offsetPct": 100, "description": "Final invoice from the Lord and Lady." }
     ]
   },
-
   "daysOff": {
-    "Frodo Baggins":      [ { "realm": "rohan",      "offsetWeeks": 6,  "numberOfDays": 3, "notes": "Recovery at Rivendell — Morgul-blade convalescence." } ],
-    "Samwise Gamgee":     [ { "realm": "mordor",     "offsetWeeks": 8,  "numberOfDays": 2, "notes": "Shire furlough — Rosie's birthday." } ],
-    "Aragorn":            [ { "realm": "gondor",     "offsetWeeks": 4,  "numberOfDays": 4, "notes": "Northern Rangers patrol — pre-arranged." } ],
-    "Boromir":            [ { "realm": "gondor",     "offsetWeeks": 12, "numberOfDays": 2, "notes": "Visiting Faramir at Osgiliath." } ],
-    "Faramir":            [ { "realm": "gondor",     "offsetWeeks": 18, "numberOfDays": 3, "notes": "Watch on the river — week of vigil." } ],
-    "Galadriel":          [ { "realm": "lothlorien", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Mirror maintenance — quarterly." } ],
-    "Saruman the White":  [ { "realm": "mordor",     "offsetWeeks": 6,  "numberOfDays": 4, "notes": "Orthanc strategy retreat." } ],
-    "Gandalf the Grey":   [ { "realm": "gondor",     "offsetWeeks": 14, "numberOfDays": 5, "notes": "Errand to Isengard." } ],
-    "Éomer":              [ { "realm": "rohan",      "offsetWeeks": 6,  "numberOfDays": 2, "notes": "Edoras muster ceremony." } ],
-    "Éowyn":              [ { "realm": "rohan",      "offsetWeeks": 16, "numberOfDays": 1, "notes": "Fencing tournament." } ],
-    "Treebeard":          [ { "realm": "rohan",      "offsetWeeks": 8,  "numberOfDays": 5, "notes": "Entmoot — quarterly forest assembly." } ],
-    "Legolas":            [ { "realm": "lothlorien", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Mirkwood family visit." } ],
-    "Elrond":             [ { "realm": "lothlorien", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Council of Imladris — semi-annual." } ],
-    "Bilbo Baggins":      [ { "realm": "lothlorien", "offsetWeeks": 4,  "numberOfDays": 2, "notes": "Birthday party preparations." } ]
+    "Frodo Baggins": [
+      { "realm": "rohan", "offsetWeeks": 6, "numberOfDays": 3, "notes": "Recovery at Rivendell — Morgul-blade convalescence." }
+    ],
+    "Samwise Gamgee": [
+      { "realm": "mordor", "offsetWeeks": 8, "numberOfDays": 2, "notes": "Shire furlough — Rosie's birthday." }
+    ],
+    "Aragorn": [
+      { "realm": "gondor", "offsetWeeks": 4, "numberOfDays": 4, "notes": "Northern Rangers patrol — pre-arranged." }
+    ],
+    "Boromir": [
+      { "realm": "gondor", "offsetWeeks": 12, "numberOfDays": 2, "notes": "Visiting Faramir at Osgiliath." }
+    ],
+    "Faramir": [
+      { "realm": "gondor", "offsetWeeks": 18, "numberOfDays": 3, "notes": "Watch on the river — week of vigil." }
+    ],
+    "Galadriel": [
+      { "realm": "lothlorien", "offsetWeeks": 10, "numberOfDays": 2, "notes": "Mirror maintenance — quarterly." }
+    ],
+    "Saruman the White": [
+      { "realm": "mordor", "offsetWeeks": 6, "numberOfDays": 4, "notes": "Orthanc strategy retreat." }
+    ],
+    "Gandalf the Grey": [
+      { "realm": "gondor", "offsetWeeks": 14, "numberOfDays": 5, "notes": "Errand to Isengard." }
+    ],
+    "Éomer": [
+      { "realm": "rohan", "offsetWeeks": 6, "numberOfDays": 2, "notes": "Edoras muster ceremony." }
+    ],
+    "Éowyn": [
+      { "realm": "rohan", "offsetWeeks": 16, "numberOfDays": 1, "notes": "Fencing tournament." }
+    ],
+    "Treebeard": [
+      { "realm": "rohan", "offsetWeeks": 8, "numberOfDays": 5, "notes": "Entmoot — quarterly forest assembly." }
+    ],
+    "Legolas": [
+      { "realm": "lothlorien", "offsetWeeks": 12, "numberOfDays": 3, "notes": "Mirkwood family visit." }
+    ],
+    "Elrond": [
+      { "realm": "lothlorien", "offsetWeeks": 16, "numberOfDays": 4, "notes": "Council of Imladris — semi-annual." }
+    ],
+    "Bilbo Baggins": [
+      { "realm": "lothlorien", "offsetWeeks": 4, "numberOfDays": 2, "notes": "Birthday party preparations." }
+    ]
   },
   "tasks": [
-    {
-      "name": "Convene the Council of Elrond",
-      "type": "External Project",
-      "phase": "Kick-Off",
-      "dueOffset": 2,
-      "description": "Run the kickoff workshop and align on scope, roles, and timeline."
-    },
-    {
-      "name": "Map the Road to Mordor",
-      "type": "External Project",
-      "phase": "Discovery",
-      "dueOffset": 5,
-      "description": "Gather and document requirements with the client stakeholders."
-    },
-    {
-      "name": "Forge the Plan at Rivendell",
-      "type": "External Project",
-      "phase": "Design",
-      "dueOffset": 12,
-      "description": "Produce the solution design and review it with the client."
-    },
-    {
-      "name": "The Long March East",
-      "type": "External Project",
-      "phase": "Build",
-      "dueOffset": 20,
-      "description": "Build and configure the solution per the approved design."
-    },
-    {
-      "name": "Trials at Helm's Deep",
-      "type": "External Project",
-      "phase": "UAT",
-      "dueOffset": 35,
-      "description": "Run user acceptance testing and triage the feedback."
-    },
-    {
-      "name": "March on the Black Gate",
-      "type": "External Project",
-      "phase": "Go-Live",
-      "dueOffset": 45,
-      "description": "Execute the go-live cutover and confirm production readiness."
-    },
-    {
-      "name": "Establish the Watch",
-      "type": "Managed Services",
-      "phase": "Setup",
-      "dueOffset": 0,
-      "description": "Stand up the managed-service environment and runbooks."
-    },
-    {
-      "name": "Light the Beacons of Gondor",
-      "type": "Managed Services",
-      "phase": "Kick-Off",
-      "dueOffset": 2,
-      "description": "Hold the service kickoff and confirm SLAs and escalation paths."
-    },
-    {
-      "name": "Set the Wards of the Citadel",
-      "type": "Managed Services",
-      "phase": "Build",
-      "dueOffset": 14,
-      "description": "Implement monitoring, automation, and support processes."
-    },
-    {
-      "name": "The Steward Takes the Reins",
-      "type": "Managed Services",
-      "phase": "Go-Live",
-      "dueOffset": 25,
-      "description": "Transition the service into active management."
-    },
-    {
-      "name": "Council in the White City",
-      "type": "Managed Services",
-      "phase": "Hypercare",
-      "dueOffset": 30,
-      "description": "Stabilize the service and review the first support cycle."
-    },
-    {
-      "name": "Gathering of the Fellowship",
-      "type": "Internal Project",
-      "phase": "Kick-Off",
-      "dueOffset": 2,
-      "description": "Kick off the initiative and confirm goals and owners."
-    },
-    {
-      "name": "Read the Maps of Middle-earth",
-      "type": "Internal Project",
-      "phase": "Discovery",
-      "dueOffset": 5,
-      "description": "Assess the current state and define success criteria."
-    },
-    {
-      "name": "Counsel of the Wise",
-      "type": "Internal Project",
-      "phase": "Design",
-      "dueOffset": 10,
-      "description": "Draft the approach and circulate it for internal review."
-    },
-    {
-      "name": "The Quest Underway",
-      "type": "Internal Project",
-      "phase": "Build",
-      "dueOffset": 18,
-      "description": "Execute the work and track progress to plan."
-    },
-    {
-      "name": "Return of the King",
-      "type": "Internal Project",
-      "phase": "Go-Live",
-      "dueOffset": 30,
-      "description": "Roll out internally and communicate the change."
-    },
-    {
-      "name": "Errand of the Lone Rider",
-      "type": "Individual Project",
-      "phase": "Kick-Off",
-      "dueOffset": 1,
-      "description": "Align with the stakeholder on scope and deadline."
-    },
-    {
-      "name": "Words with Gandalf",
-      "type": "Individual Project",
-      "phase": "Discovery",
-      "dueOffset": 3,
-      "description": "Capture the requirements for the deliverable."
-    },
-    {
-      "name": "Bear the Ring to the Mountain",
-      "type": "Individual Project",
-      "phase": "Build",
-      "dueOffset": 7,
-      "description": "Complete the deliverable."
-    },
-    {
-      "name": "Reckoning at the Grey Havens",
-      "type": "Individual Project",
-      "phase": "Go-Live",
-      "dueOffset": 12,
-      "description": "Deliver and review the work with the stakeholder."
-    }
+    { "name": "Convene the Council of Elrond", "type": "External Project", "phase": "Kick-Off", "dueOffset": 2, "description": "Run the kickoff workshop and align on scope, roles, and timeline." },
+    { "name": "Map the Road to Mordor", "type": "External Project", "phase": "Discovery", "dueOffset": 5, "description": "Gather and document requirements with the client stakeholders." },
+    { "name": "Forge the Plan at Rivendell", "type": "External Project", "phase": "Design", "dueOffset": 12, "description": "Produce the solution design and review it with the client." },
+    { "name": "The Long March East", "type": "External Project", "phase": "Build", "dueOffset": 20, "description": "Build and configure the solution per the approved design." },
+    { "name": "Trials at Helm's Deep", "type": "External Project", "phase": "UAT", "dueOffset": 35, "description": "Run user acceptance testing and triage the feedback." },
+    { "name": "March on the Black Gate", "type": "External Project", "phase": "Go-Live", "dueOffset": 45, "description": "Execute the go-live cutover and confirm production readiness." },
+    { "name": "Establish the Watch", "type": "Managed Services", "phase": "Setup", "dueOffset": 0, "description": "Stand up the managed-service environment and runbooks." },
+    { "name": "Light the Beacons of Gondor", "type": "Managed Services", "phase": "Kick-Off", "dueOffset": 2, "description": "Hold the service kickoff and confirm SLAs and escalation paths." },
+    { "name": "Set the Wards of the Citadel", "type": "Managed Services", "phase": "Build", "dueOffset": 14, "description": "Implement monitoring, automation, and support processes." },
+    { "name": "The Steward Takes the Reins", "type": "Managed Services", "phase": "Go-Live", "dueOffset": 25, "description": "Transition the service into active management." },
+    { "name": "Council in the White City", "type": "Managed Services", "phase": "Hypercare", "dueOffset": 30, "description": "Stabilize the service and review the first support cycle." },
+    { "name": "Gathering of the Fellowship", "type": "Internal Project", "phase": "Kick-Off", "dueOffset": 2, "description": "Kick off the initiative and confirm goals and owners." },
+    { "name": "Read the Maps of Middle-earth", "type": "Internal Project", "phase": "Discovery", "dueOffset": 5, "description": "Assess the current state and define success criteria." },
+    { "name": "Counsel of the Wise", "type": "Internal Project", "phase": "Design", "dueOffset": 10, "description": "Draft the approach and circulate it for internal review." },
+    { "name": "The Quest Underway", "type": "Internal Project", "phase": "Build", "dueOffset": 18, "description": "Execute the work and track progress to plan." },
+    { "name": "Return of the King", "type": "Internal Project", "phase": "Go-Live", "dueOffset": 30, "description": "Roll out internally and communicate the change." },
+    { "name": "Errand of the Lone Rider", "type": "Individual Project", "phase": "Kick-Off", "dueOffset": 1, "description": "Align with the stakeholder on scope and deadline." },
+    { "name": "Words with Gandalf", "type": "Individual Project", "phase": "Discovery", "dueOffset": 3, "description": "Capture the requirements for the deliverable." },
+    { "name": "Bear the Ring to the Mountain", "type": "Individual Project", "phase": "Build", "dueOffset": 7, "description": "Complete the deliverable." },
+    { "name": "Reckoning at the Grey Havens", "type": "Individual Project", "phase": "Go-Live", "dueOffset": 12, "description": "Deliver and review the work with the stakeholder." }
   ]
 }

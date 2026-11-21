@@ -27,13 +27,13 @@
     { "name": "Architect of the Cliffs",          "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the Cliffs of Insanity." },
     { "name": "Climber of the Cliffs",            "canonical": "Integration Senior Consultant - India",   "description": "Lays the rope of API, middleware, and event flows under the architect's plan." },
     { "name": "Apprentice Climber",               "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling on the rocks." },
-    { "name": "Royal Healer of the Houses",       "canonical": "QA Engineer",                             "description": "Tends the mostly-dead and the all-dead — finds the maladies in the build before they reach the prince." },
+    { "name": "Royal Healer of the Houses",       "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the mostly-dead and the all-dead — finds the maladies in the build before they reach the prince." },
     { "name": "Herald of the Crown",              "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for the royal wedding — leads all marketing craft." },
     { "name": "Trumpeter of the Royal Wedding",   "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert the kingdom." },
     { "name": "Banner-Bearer of Florin",          "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
     { "name": "Council Scribe of the Crown",      "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the prince's wishes and the alchemist's craft." },
-    { "name": "Master Smith of Andalusia",        "canonical": "Salesforce Senior Developer - USA",       "description": "Forges the most senior Apex and platform features in the great American foundries." },
-    { "name": "Stable Boy of the Farm",           "canonical": "Junior Salesforce Consultant - India",    "description": "As you wish — fetches, configures, and learns the craft from Westley himself." }
+    { "name": "Master Smith of Andalusia",        "canonical": "Salesforce Developer",       "description": "Forges the most senior Apex and platform features in the great American foundries." },
+    { "name": "Stable Boy of the Farm",           "canonical": "Salesforce Consultant - India",    "description": "As you wish — fetches, configures, and learns the craft from Westley himself." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "Westley & Buttercup — True Love Reunification CRM",
       "shortName": "True Love CRM",
       "subAccountName": "House of Westley & Buttercup",
-      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-WESTLEY-AND-BUTTERCUP",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-WESTLEY-AB",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -112,7 +112,7 @@
       "projectName": "Mountain Cottage — Miracle Pill Manufacturing System",
       "shortName": "Cottage MPM",
       "subAccountName": "Miracle Max & Co.",
-      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-MOUNTAIN-COTTAGE-CREW",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-MOUNTAIN-CC",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Wilds & Misadventures — Hazard Mitigation Implementation",
       "shortName": "Wilds HMI",
       "subAccountName": "Brute Squad & Wilds Cooperative",
-      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-WILDS-AND-MISADVENTURES",
+      "subAccountNumber": "PSA-TEST-PRINCESSBRIDE-WILDS-AM",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

@@ -27,13 +27,13 @@
     { "name": "Consigliere",                   "canonical": "Integration Technical Architect - USA",   "description": "Trusted advisor on all things between systems — architects the spans between Salesforce and the outside world." },
     { "name": "Wireman",                       "canonical": "Integration Senior Consultant - India",   "description": "Runs the lines — APIs, middleware, event flows under the Consigliere's plan." },
     { "name": "Apprentice Wireman",            "canonical": "Integration Consultant - India",          "description": "Learning the wires — webhooks, callouts, batch jobs, and the family patterns of error handling." },
-    { "name": "Cleaner",                       "canonical": "QA Engineer",                             "description": "Comes in after the job to make sure nothing's left behind — finds the problems before they reach the Boss." },
+    { "name": "Cleaner",                       "canonical": "Quality Assurance (QA) Engineer",                             "description": "Comes in after the job to make sure nothing's left behind — finds the problems before they reach the Boss." },
     { "name": "Front-of-House at Vesuvio",     "canonical": "Marketing Practice Lead",                 "description": "Runs the welcome and the message — leads all marketing craft for the family." },
     { "name": "Promoter at the Bing",          "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — knows how to fill the room every night." },
     { "name": "Flyer Crew",                    "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the street — content, creative, and the daily hustle." },
     { "name": "Numbers Guy",                   "canonical": "Business Analyst",                        "description": "Records what's owed and what's promised — translates between the customer and the earners." },
-    { "name": "Master Earner — Bloomfield",    "canonical": "Salesforce Senior Developer - USA",       "description": "Top earner stateside — builds the most complex Apex and LWC pieces, mentors the junior crew." },
-    { "name": "Bagman from the Esplanade",     "canonical": "Junior Salesforce Consultant - India",    "description": "First job in the family — runs basic config and learns the trade from the senior soldiers." }
+    { "name": "Master Earner — Bloomfield",    "canonical": "Salesforce Developer",       "description": "Top earner stateside — builds the most complex Apex and LWC pieces, mentors the junior crew." },
+    { "name": "Bagman from the Esplanade",     "canonical": "Salesforce Consultant - India",    "description": "First job in the family — runs basic config and learns the trade from the senior soldiers." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

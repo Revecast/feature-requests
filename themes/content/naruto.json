@@ -27,13 +27,13 @@
     { "name": "Master of the Rasengan Bridge",    "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the gates." },
     { "name": "Summoning Contract Signer",        "canonical": "Integration Senior Consultant - India",   "description": "Lays the seals of API, middleware, and event flows under the Bridge Master's plan." },
     { "name": "Apprentice Sealer",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the shinobi patterns of error handling." },
-    { "name": "Medic-Nin",                        "canonical": "QA Engineer",                             "description": "Tends the wounded mission and finds the maladies in the build before they reach the Kage." },
+    { "name": "Medic-Nin",                        "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded mission and finds the maladies in the build before they reach the Kage." },
     { "name": "Herald of the Hidden Village",     "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the trumpet for product and message — leads all marketing craft." },
     { "name": "Tactician of the Strategy Scroll", "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert across the nations." },
     { "name": "Banner-Bearer of the Village",     "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily mission." },
     { "name": "Mission Scribe of the Hokage",     "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the shinobi craft of design." },
-    { "name": "Elite Sannin Engineer",            "canonical": "Salesforce Senior Developer - USA",       "description": "Legendary developer-class shinobi — handles the deepest, most senior platform work." },
-    { "name": "Genin Recruit",                    "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh from the academy — picks up configuration and discovery work under senior guidance." }
+    { "name": "Elite Sannin Engineer",            "canonical": "Salesforce Developer",       "description": "Legendary developer-class shinobi — handles the deepest, most senior platform work." },
+    { "name": "Genin Recruit",                    "canonical": "Salesforce Consultant - India",    "description": "Fresh from the academy — picks up configuration and discovery work under senior guidance." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

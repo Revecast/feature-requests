@@ -27,13 +27,13 @@
     { "name": "Bridge-Builder of Mo'okini",        "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great causeways between Salesforce and the realms of Po and Ao." },
     { "name": "Senior Reef-Mason",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the coral stones of API, middleware, and event flows beneath the Bridge-Builder's plan." },
     { "name": "Apprentice Reef-Mason",             "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the fishhook patterns of error handling." },
-    { "name": "Healer of the Lapa'au",             "canonical": "QA Engineer",                             "description": "Walks the build with kahuna lapa'au herbs — finds the sickness before it reaches the chief." },
+    { "name": "Healer of the Lapa'au",             "canonical": "Quality Assurance (QA) Engineer",                             "description": "Walks the build with kahuna lapa'au herbs — finds the sickness before it reaches the chief." },
     { "name": "Herald of the Pu Conch",            "canonical": "Marketing Practice Lead",                 "description": "Sounds the great conch shell — leads all marketing craft and lifts the message to the wind." },
     { "name": "Chanter of the Mele",               "canonical": "Marketing Senior Consultant",             "description": "Composer of campaigns — weaves words and rhythm to gather and convert." },
     { "name": "Hula Performer of the Halau",       "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the village — content, creative, and the daily dance." },
     { "name": "Council Scribe of the Lua Pa'u",    "canonical": "Business Analyst",                        "description": "Records what the chiefs ask and what the kahuna promise — translates between Customer and craft." },
-    { "name": "Master Carver of the Ki'i",         "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the temple images — cuts the deepest Apex and LWC patterns from sacred wood." },
-    { "name": "Junior Wayfinder of Hokule'a",      "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh from the canoe school — assists with discovery, declarative builds, and learning the trade winds." }
+    { "name": "Master Carver of the Ki'i",         "canonical": "Salesforce Developer",       "description": "Senior smith of the temple images — cuts the deepest Apex and LWC patterns from sacred wood." },
+    { "name": "Junior Wayfinder of Hokule'a",      "canonical": "Salesforce Consultant - India",    "description": "Fresh from the canoe school — assists with discovery, declarative builds, and learning the trade winds." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "Sky Realm — Pantheon Genesis Platform",
       "shortName": "Sky Realm PGP",
       "subAccountName": "Wakea's Sky Court",
-      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-CREATOR-AND-SKY-GODS",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-CREATOR-ASG",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -76,7 +76,7 @@
       "projectName": "Pele's Realm — Volcanic Eruption Response System",
       "shortName": "Pele VERS",
       "subAccountName": "Halema'uma'u Court",
-      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-PELE-FIRE-AND-VOLCANO-DEITIES",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-PELE-FAVD",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -110,7 +110,7 @@
       "projectName": "Maui's Cycle — Hero Adventure Tracking Platform",
       "shortName": "Maui HATP",
       "subAccountName": "House of Hina",
-      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-MAUI-TRICKSTER-CYCLE",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-MAUI-TC",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -144,7 +144,7 @@
       "projectName": "Marine & Underworld — Po Realm Records System",
       "shortName": "Po Realm PRRS",
       "subAccountName": "Court of Milu",
-      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-MARINE-AND-UNDERWORLD",
+      "subAccountNumber": "PSA-TEST-POLYNESIANMYTH-MARINE-AU",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

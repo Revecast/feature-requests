@@ -27,13 +27,13 @@
     { "name": "Bifröst Bridgekeeper — USA",        "canonical": "Integration Technical Architect - USA",   "description": "Heimdall of the integration realm — architects the rainbow bridge between Salesforce and Asgard beyond." },
     { "name": "Bifröst Engineer — Mumbai",         "canonical": "Integration Senior Consultant - India",   "description": "Forges the runes of API, middleware, and event flows under the Bridgekeeper's plan." },
     { "name": "Bifröst Apprentice — Mumbai",       "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the mystical patterns of error handling." },
-    { "name": "Watcher of the Watchtower",         "canonical": "QA Engineer",                             "description": "Sees all that is broken — finds the bugs in the build before they reach the citizens." },
+    { "name": "Watcher of the Watchtower",         "canonical": "Quality Assurance (QA) Engineer",                             "description": "Sees all that is broken — finds the bugs in the build before they reach the citizens." },
     { "name": "Daily Bugle Editor-in-Chief",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the headline and the front page for product and message — leads all marketing craft." },
     { "name": "Senior Press Correspondent",        "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — knows which story to run on page one." },
     { "name": "Cub Reporter",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the streets — content, creative, and the daily beat." },
     { "name": "Council Strategist of the X",       "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the mutant craft of design." },
-    { "name": "Vibranium Forge Master — USA",      "canonical": "Salesforce Senior Developer - USA",       "description": "Senior smith of the Wakandan forge — builds the most intricate Apex, LWC and platform features." },
-    { "name": "Junior Web-Warrior — Mumbai",       "canonical": "Junior Salesforce Consultant - India",    "description": "Newest hire of the Mumbai chapter — pair-programs with the seniors, learns the ropes." }
+    { "name": "Vibranium Forge Master — USA",      "canonical": "Salesforce Developer",       "description": "Senior smith of the Wakandan forge — builds the most intricate Apex, LWC and platform features." },
+    { "name": "Junior Web-Warrior — Mumbai",       "canonical": "Salesforce Consultant - India",    "description": "Newest hire of the Mumbai chapter — pair-programs with the seniors, learns the ropes." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

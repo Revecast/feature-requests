@@ -27,13 +27,13 @@
     { "name": "Bridge-Master of the Tigris",      "canonical": "Integration Technical Architect - USA","description": "Architect of the great spans between Salesforce and the realms beyond the rivers." },
     { "name": "Canal-Builder of Lagash",          "canonical": "Integration Senior Consultant - India","description": "Lays the conduits of API, middleware, and event flows under the Bridge-Master's plan." },
     { "name": "Apprentice Canal-Digger",          "canonical": "Integration Consultant - India",      "description": "Learns the craft of integration — webhooks, batch, callouts, and the patterns of Mesopotamian water-flow." },
-    { "name": "Augur of the Bārû",                "canonical": "QA Engineer",                         "description": "Diviner who reads the omens — finds the maladies in the build before they reach the king." },
+    { "name": "Augur of the Bārû",                "canonical": "Quality Assurance (QA) Engineer",                         "description": "Diviner who reads the omens — finds the maladies in the build before they reach the king." },
     { "name": "Herald of the Ziggurat",           "canonical": "Marketing Practice Lead",             "description": "Lifts the banner and the trumpet from the temple summit — leads all marketing craft of the realm." },
     { "name": "Singer of the Hymns",              "canonical": "Marketing Senior Consultant",         "description": "Strategist of campaigns — composes the songs that gather and convert the faithful." },
     { "name": "Carrier of the Standard",          "canonical": "Marketing Consultant",                "description": "Carries the Standard of Ur into the field — content, creative, and the daily procession." },
     { "name": "Council Scribe of Nippur",         "canonical": "Business Analyst",                    "description": "Records what is needed and what is promised — translates between mortal customer and the divine craft of design." },
-    { "name": "Master Builder of Babylon",        "canonical": "Salesforce Senior Developer - USA",   "description": "Senior architect of the great walls — leads complex Apex and platform builds in the western capital." },
-    { "name": "Novice of the Tablet-House",       "canonical": "Junior Salesforce Consultant - India","description": "Newest student of the edubba — learns configuration, declarative craft, and the ways of the senior scribes." }
+    { "name": "Master Builder of Babylon",        "canonical": "Salesforce Developer",   "description": "Senior architect of the great walls — leads complex Apex and platform builds in the western capital." },
+    { "name": "Novice of the Tablet-House",       "canonical": "Salesforce Consultant - India","description": "Newest student of the edubba — learns configuration, declarative craft, and the ways of the senior scribes." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

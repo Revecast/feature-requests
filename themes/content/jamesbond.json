@@ -27,13 +27,13 @@
     { "name": "Cipher Bureau Chief",                "canonical": "Integration Technical Architect - USA",    "description": "Architect of the great signal lines between MI6 and the realms beyond — APIs, middleware, and event flows." },
     { "name": "Cryptographer — Senior",             "canonical": "Integration Senior Consultant - India",    "description": "Lays the cipher and the canal between systems under the Bureau Chief's plan." },
     { "name": "Cryptographer — Junior",             "canonical": "Integration Consultant - India",           "description": "Apprentice of the cipher — webhooks, callouts, and the patient art of error handling." },
-    { "name": "Internal Affairs Auditor",           "canonical": "QA Engineer",                              "description": "Sweeps every safehouse for bugs — finds the maladies in the build before they reach the Minister." },
+    { "name": "Internal Affairs Auditor",           "canonical": "Quality Assurance (QA) Engineer",                              "description": "Sweeps every safehouse for bugs — finds the maladies in the build before they reach the Minister." },
     { "name": "Director of Public Affairs",         "canonical": "Marketing Practice Lead",                  "description": "Lifts the banner for the Service to the world above — leads all marketing and cover-story craft." },
     { "name": "Press Liaison Officer",              "canonical": "Marketing Senior Consultant",              "description": "Strategist of the public face — campaigns, narratives, and the careful leak." },
     { "name": "Cover Story Specialist",             "canonical": "Marketing Consultant",                     "description": "Carries the campaign forward into the field — content, creative, and the daily brush-pass." },
     { "name": "Mission Briefing Analyst",           "canonical": "Business Analyst",                         "description": "Records what is needed and what is promised — translates between the Minister and the operatives." },
-    { "name": "Master Armourer",                    "canonical": "Salesforce Senior Developer - USA",        "description": "Senior smith of the Service's heavy ordnance — Apex frameworks, platform features, and the deepest delvings." },
-    { "name": "Trainee Operative",                  "canonical": "Junior Salesforce Consultant - India",     "description": "Fresh from the Fort — learns the ropes of configuration, declarative tradecraft, and not blowing one's cover." }
+    { "name": "Master Armourer",                    "canonical": "Salesforce Developer",        "description": "Senior smith of the Service's heavy ordnance — Apex frameworks, platform features, and the deepest delvings." },
+    { "name": "Trainee Operative",                  "canonical": "Salesforce Consultant - India",     "description": "Fresh from the Fort — learns the ropes of configuration, declarative tradecraft, and not blowing one's cover." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every era starts in the past — past weeks get Time Entries, future weeks get Schedules. Each Bond era becomes a realm with its own cast of villains, allies, and field officers.",

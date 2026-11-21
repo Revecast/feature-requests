@@ -28,13 +28,13 @@
     { "name": "Bridge-builder of the Nile",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond the cataracts." },
     { "name": "Boatwright of the Solar Barque",  "canonical": "Integration Senior Consultant - India",   "description": "Lays the cedar planks of API, middleware, and event flows under the Bridge-builder's plan." },
     { "name": "Apprentice Boatwright",           "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the Sobek patterns of error handling." },
-    { "name": "Healer of the Per-Ankh",          "canonical": "QA Engineer",                             "description": "Tends the wounded code and the weary build — finds the maladies before they reach the pharaoh." },
+    { "name": "Healer of the Per-Ankh",          "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded code and the weary build — finds the maladies before they reach the pharaoh." },
     { "name": "Herald of Thoth",                 "canonical": "Marketing Practice Lead",                 "description": "Lifts the standard and the trumpet for product and message — leads all marketing craft." },
     { "name": "Chanter of the Procession",       "canonical": "Marketing Senior Consultant",             "description": "Strategist of festivals — sounds the call to gather and convert the faithful." },
     { "name": "Standard-Bearer of the Festival", "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily procession." },
     { "name": "Lector Priest of Iunu",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the divine craft of design." },
-    { "name": "Master Embalmer of Anubis",       "canonical": "Salesforce Senior Developer - USA",       "description": "The most senior preserver of code — wraps complex platform features so they endure for eternity." },
-    { "name": "Novice Scribe of Khemenu",        "canonical": "Junior Salesforce Consultant - India",    "description": "Just past the apprenticeship — learns the hieroglyphs of declarative configuration." }
+    { "name": "Master Embalmer of Anubis",       "canonical": "Salesforce Developer",       "description": "The most senior preserver of code — wraps complex platform features so they endure for eternity." },
+    { "name": "Novice Scribe of Khemenu",        "canonical": "Salesforce Consultant - India",    "description": "Just past the apprenticeship — learns the hieroglyphs of declarative configuration." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every pantheon starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

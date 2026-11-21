@@ -27,13 +27,13 @@
     { "name": "Bridge Master of the Enchanted Realms","canonical": "Integration Technical Architect - USA",   "description": "Architect of the magical bridges between Salesforce and the kingdoms beyond." },
     { "name": "Senior Bridge Weaver",                 "canonical": "Integration Senior Consultant - India",    "description": "Lays the enchanted stones of API and middleware under the Bridge Master's plan." },
     { "name": "Junior Bridge Weaver",                 "canonical": "Integration Consultant - India",           "description": "Begins the apprenticeship of webhooks, batch jobs, and callout charms." },
-    { "name": "Royal Tester of Potions",              "canonical": "QA Engineer",                              "description": "Tastes every spell before it reaches the princess — finds the bitter notes early." },
+    { "name": "Royal Tester of Potions",              "canonical": "Quality Assurance (QA) Engineer",                              "description": "Tastes every spell before it reaches the princess — finds the bitter notes early." },
     { "name": "Royal Herald of the Kingdom",          "canonical": "Marketing Practice Lead",                  "description": "Lifts the banner and trumpet for the kingdom's message — leads all marketing craft." },
     { "name": "Senior Town Crier",                    "canonical": "Marketing Senior Consultant",              "description": "Strategist of campaigns — sounds the call across the village square." },
     { "name": "Junior Town Crier",                    "canonical": "Marketing Consultant",                     "description": "Carries the day's news through the streets — content, creative, and the daily call." },
     { "name": "Scribe of the Royal Council",          "canonical": "Business Analyst",                         "description": "Records the wishes of the court — translates royal dreams into design specs." },
-    { "name": "Master Royal Enchanter",               "canonical": "Salesforce Senior Developer - USA",        "description": "A wizard of the highest order — leads the deepest custom builds and platform craft." },
-    { "name": "Squire Sage in Training",              "canonical": "Junior Salesforce Consultant - India",     "description": "Newest of the apprentices — learning Flow, validation rules, and reports under the Sages." }
+    { "name": "Master Royal Enchanter",               "canonical": "Salesforce Developer",        "description": "A wizard of the highest order — leads the deepest custom builds and platform craft." },
+    { "name": "Squire Sage in Training",              "canonical": "Salesforce Consultant - India",     "description": "Newest of the apprentices — learning Flow, validation rules, and reports under the Sages." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -146,7 +146,7 @@
       "projectName": "Bayou Bayonne — Tiana's Place Restaurant Launch",
       "shortName": "Bayou TPR",
       "subAccountName": "Tiana's Place — French Quarter",
-      "subAccountNumber": "PSA-TEST-DISNEYPRINCESSES-THE-ISLE-OF-NAVEEN-TIANA",
+      "subAccountNumber": "PSA-TEST-DISNEYPRINCESSES-THE-IONT",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

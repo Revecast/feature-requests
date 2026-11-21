@@ -27,13 +27,13 @@
     { "name": "Tunnel Architect",              "canonical": "Integration Technical Architect - USA",   "description": "Designs the great spans between Salesforce and the outside world — the laundry-to-lab pipeline." },
     { "name": "Tunnel Senior Builder",         "canonical": "Integration Senior Consultant - India",   "description": "Lays the API plumbing, middleware and event flows under the Tunnel Architect's blueprint." },
     { "name": "Tunnel Apprentice",             "canonical": "Integration Consultant - India",          "description": "Learns the trade — webhooks, batch jobs, callouts and the Cartel patterns of error handling." },
-    { "name": "Quality Control Chemist",       "canonical": "QA Engineer",                             "description": "Tests every batch for purity — finds the impurities before they hit the street." },
+    { "name": "Quality Control Chemist",       "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tests every batch for purity — finds the impurities before they hit the street." },
     { "name": "Saul Goodman, Esq.",            "canonical": "Marketing Practice Lead",                 "description": "Better Call Saul — owns the brand, the billboards, the bus benches and every campaign that lands a client." },
     { "name": "Senior Public Relations Counsel","canonical": "Marketing Senior Consultant",            "description": "Strategist of campaigns — choreographs the message and the call to action." },
     { "name": "Junior PR Associate",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign into the field — content, creative, and the daily hustle." },
     { "name": "Cartel Negotiator",             "canonical": "Business Analyst",                        "description": "Sits at the table between client and crew — translates wants into specs without anyone getting shot." },
-    { "name": "Senior Superlab Engineer",      "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran chemist of the platform — owns the hardest builds, mentors the junior cooks." },
-    { "name": "Junior Madrigal Operative",     "canonical": "Junior Salesforce Consultant - India",    "description": "First days on the route — learns config, declarative tools, and how the family does business." }
+    { "name": "Senior Superlab Engineer",      "canonical": "Salesforce Developer",       "description": "Veteran chemist of the platform — owns the hardest builds, mentors the junior cooks." },
+    { "name": "Junior Madrigal Operative",     "canonical": "Salesforce Consultant - India",    "description": "First days on the route — learns config, declarative tools, and how the family does business." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -112,7 +112,7 @@
       "projectName": "Los Pollos / Fring Empire — Vertical Logistics Platform",
       "shortName": "Pollos VLP",
       "subAccountName": "Los Pollos Hermanos & Madrigal Electromotive",
-      "subAccountNumber": "PSA-TEST-BREAKINGBAD-LOSPOLLOSFRINGEMPIRE",
+      "subAccountNumber": "PSA-TEST-BREAKINGBAD-LOSPOLLOSFRINGEMPIR",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Goodman & Associates — Client Acquisition CRM",
       "shortName": "Saul CAC",
       "subAccountName": "Saul Goodman & Associates, LLC",
-      "subAccountNumber": "PSA-TEST-BREAKINGBAD-GOODMANSAULBETTERCALLSAUL",
+      "subAccountNumber": "PSA-TEST-BREAKINGBAD-GOODMANSAULBETTERCA",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

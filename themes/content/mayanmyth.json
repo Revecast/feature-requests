@@ -27,13 +27,13 @@
     { "name": "Sacbé Master Builder",              "canonical": "Integration Technical Architect - USA",   "description": "Architect of the white roads — the great causeways between Salesforce and the realms beyond." },
     { "name": "Sacbé Stone-layer",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the limestone of API, middleware, and event flows along the Master Builder's road." },
     { "name": "Apprentice Causeway-builder",       "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the Mayan patterns of error handling." },
-    { "name": "Healer of the Temple",              "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds maladies in the offering before it reaches the altar." },
+    { "name": "Healer of the Temple",              "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded build — finds maladies in the offering before it reaches the altar." },
     { "name": "Voice of the Conch",                "canonical": "Marketing Practice Lead",                 "description": "Sounds the great shell trumpet for product and message — leads all marketing craft." },
     { "name": "Drummer of the Plaza",              "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — beats the rhythm that gathers the people to the temple steps." },
     { "name": "Banner-Painter of Bonampak",        "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative, and the daily mural." },
     { "name": "Scribe of the Popol Vuh",           "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the divine craft of design." },
-    { "name": "Master Stelae Carver of Copán",     "canonical": "Salesforce Senior Developer - USA",       "description": "Eldest of the western carvers — the most intricate Apex glyphs are her work." },
-    { "name": "Novice of the Cenote",              "canonical": "Junior Salesforce Consultant - India",    "description": "Apprentice drawn from the sacred well — learns the ways of declarative craft." }
+    { "name": "Master Stelae Carver of Copán",     "canonical": "Salesforce Developer",       "description": "Eldest of the western carvers — the most intricate Apex glyphs are her work." },
+    { "name": "Novice of the Cenote",              "canonical": "Salesforce Consultant - India",    "description": "Apprentice drawn from the sacred well — learns the ways of declarative craft." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -112,7 +112,7 @@
       "projectName": "Xibalba — Place of Fright Surveillance Build",
       "shortName": "Xibalba PFS",
       "subAccountName": "Lords of Xibalba",
-      "subAccountNumber": "PSA-TEST-MAYANMYTH-XIBALBAUNDERWORLDLORDS",
+      "subAccountNumber": "PSA-TEST-MAYANMYTH-XIBALBAUNDERWORLDLORD",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Mayan Rulers — Royal Court Analytics Implementation",
       "shortName": "Rulers RCA",
       "subAccountName": "League of the Royal Houses",
-      "subAccountNumber": "PSA-TEST-MAYANMYTH-MAYANRULERSANDWARRIORS",
+      "subAccountNumber": "PSA-TEST-MAYANMYTH-MAYANRULERSANDWARRIOR",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

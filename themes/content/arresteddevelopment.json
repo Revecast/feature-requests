@@ -27,13 +27,13 @@
     { "name": "Frozen Banana Integration Architect","canonical": "Integration Technical Architect - USA", "description": "Architect of the great spans between Salesforce and the realms beyond — there's always an API in the banana stand." },
     { "name": "Senior Banana Bag Engineer",       "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware and event flows — bag the bananas, not the budget." },
     { "name": "Banana Bag Apprentice",            "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the occasional dropped chocolate dipper." },
-    { "name": "Hot Cops Quality Inspector",       "canonical": "QA Engineer",                             "description": "Tends the wounded build — finds maladies before they reach production. Steve Holt!" },
+    { "name": "Hot Cops Quality Inspector",       "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the wounded build — finds maladies before they reach production. Steve Holt!" },
     { "name": "Bluth Marketing Czar",             "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for product and message — leads all marketing craft. (Mr. F, optional.)" },
     { "name": "Senior Pitchperson",               "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert. Like a magician, but with leads." },
     { "name": "Pitchperson",                      "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward — content, creative and the daily dance moves." },
     { "name": "Bluth Family Analyst",             "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the family's chaos and the dev team's clean slate." },
-    { "name": "US Senior Magician-Builder",       "canonical": "Salesforce Senior Developer - USA",       "description": "Senior US-side builder — Apex, LWC, escalations. Don't call them an illusionist." },
-    { "name": "Junior Sudden Valley Consultant",  "canonical": "Junior Salesforce Consultant - India",    "description": "First-year talent — clicks before code, learns the ropes on the Bluth model home tour." }
+    { "name": "US Senior Magician-Builder",       "canonical": "Salesforce Developer",       "description": "Senior US-side builder — Apex, LWC, escalations. Don't call them an illusionist." },
+    { "name": "Junior Sudden Valley Consultant",  "canonical": "Salesforce Consultant - India",    "description": "First-year talent — clicks before code, learns the ropes on the Bluth model home tour." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "Bluth Family Core — Banana Stand CRM Rollout",
       "shortName": "Bluth Core",
       "subAccountName": "Bluth Family Holdings",
-      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-BLUTHFAMILYCORE",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-BLUTHFAMILY",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -76,7 +76,7 @@
       "projectName": "Bluth Co. Staff — Operational Sales Platform",
       "shortName": "Bluth Ops",
       "subAccountName": "The Bluth Company Operations",
-      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-BLUTHCOSTAFF",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-BLUTHCOSTAF",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -109,7 +109,7 @@
       "projectName": "Legal & Medical Orbit — Compliance Platform Build",
       "shortName": "Legal/Med",
       "subAccountName": "Bluth Legal & Medical Orbit",
-      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-LEGALMEDICALORBIT",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-LEGALMEDICA",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -143,7 +143,7 @@
       "projectName": "Extended Cast — Narrator-Led Ecosystem Project",
       "shortName": "Ext. Cast",
       "subAccountName": "Bluth Extended Network",
-      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-EXTENDEDCAST",
+      "subAccountNumber": "PSA-TEST-ARRESTEDDEVELOPMENT-EXTENDEDCAS",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

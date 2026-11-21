@@ -27,13 +27,13 @@
     { "name": "Pontifex of the Bridges",          "canonical": "Integration Technical Architect - USA",   "description": "Builder of the great bridges — architect of the spans between Salesforce and the realms beyond." },
     { "name": "Bridge-Builder of the Tiber",      "canonical": "Integration Senior Consultant - India",   "description": "Lays the stones of API, middleware, and event flows under the Pontifex's design." },
     { "name": "Apprentice Mason of the Aqueduct", "canonical": "Integration Consultant - India",          "description": "Learns the craft of channels and conduits — webhooks, batch, callouts and the patterns of Roman engineering." },
-    { "name": "Haruspex of the Build",            "canonical": "QA Engineer",                             "description": "Reads the entrails of the test run — divines defects from the omens before the build reaches the Forum." },
+    { "name": "Haruspex of the Build",            "canonical": "Quality Assurance (QA) Engineer",                             "description": "Reads the entrails of the test run — divines defects from the omens before the build reaches the Forum." },
     { "name": "Herald of the Forum",              "canonical": "Marketing Practice Lead",                 "description": "Lifts the standard and the cornu for the message — leads all marketing craft from the Rostra." },
     { "name": "Orator of the Rostra",             "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call from the speaker's platform to gather and convert." },
     { "name": "Crier of the Provinces",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride of the cursus publicus." },
     { "name": "Scribe of the Senate",             "canonical": "Business Analyst",                        "description": "Records what the Senate decrees — translates between the Patrician customer and the artisans of the build." },
-    { "name": "Master Smith of the Forum",        "canonical": "Salesforce Senior Developer - USA",       "description": "Most senior of the Vulcan's smiths in the West — designs the deepest Apex and platform architectures." },
-    { "name": "Tiro of the Eastern Cohort",       "canonical": "Junior Salesforce Consultant - India",    "description": "Newly enlisted — apprentice in the legion learning configuration, flows, and the discipline of delivery." }
+    { "name": "Master Smith of the Forum",        "canonical": "Salesforce Developer",       "description": "Most senior of the Vulcan's smiths in the West — designs the deepest Apex and platform architectures." },
+    { "name": "Tiro of the Eastern Cohort",       "canonical": "Salesforce Consultant - India",    "description": "Newly enlisted — apprentice in the legion learning configuration, flows, and the discipline of delivery." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

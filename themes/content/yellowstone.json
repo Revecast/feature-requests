@@ -27,13 +27,13 @@
     { "name": "Master of the Bridges",            "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — pipelines, callouts, and event grids." },
     { "name": "Bridge Crew Lead",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the timber of API, middleware, and event flows under the Master's plan." },
     { "name": "Bridge Apprentice",                "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling." },
-    { "name": "Livestock Inspector",              "canonical": "QA Engineer",                             "description": "Walks the pens before market — finds the lameness in the build before it reaches the buyer." },
+    { "name": "Livestock Inspector",              "canonical": "Quality Assurance (QA) Engineer",                             "description": "Walks the pens before market — finds the lameness in the build before it reaches the buyer." },
     { "name": "Brand Marketer",                   "canonical": "Marketing Practice Lead",                 "description": "Lifts the Yellowstone brand high — leads all marketing craft from Bozeman to the coasts." },
     { "name": "Auctioneer",                       "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather buyers and convert them at ring side." },
     { "name": "Rodeo Promoter",                   "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ride." },
     { "name": "Ranch Bookkeeper",                 "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the Patriarch and the saddle shop." },
-    { "name": "Senior Ranch Hand Smith",          "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran builder — owns the toughest forge work and mentors the apprentices." },
-    { "name": "Greenhorn Drover",                 "canonical": "Junior Salesforce Consultant - India",    "description": "First saddle on the trail — learns configuration and discovery under the Drover's wing." }
+    { "name": "Senior Ranch Hand Smith",          "canonical": "Salesforce Developer",       "description": "Veteran builder — owns the toughest forge work and mentors the apprentices." },
+    { "name": "Greenhorn Drover",                 "canonical": "Salesforce Consultant - India",    "description": "First saddle on the trail — learns configuration and discovery under the Drover's wing." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every faction starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

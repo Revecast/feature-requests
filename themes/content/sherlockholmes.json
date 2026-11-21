@@ -27,13 +27,13 @@
     { "name": "Telegraph-Master of Whitehall",        "canonical": "Integration Technical Architect - USA",   "description": "Architect of the wires between Baker Street and the realms beyond — Whitehall, the Diogenes, the Continent." },
     { "name": "Telegraph Operator",                   "canonical": "Integration Senior Consultant - India",   "description": "Lays the cables of API, middleware and event flows under the Telegraph-Master's plan." },
     { "name": "Apprentice Telegraphist",              "canonical": "Integration Consultant - India",          "description": "Learns the dits and dahs of webhooks, batch and callouts — the patient craft of integration." },
-    { "name": "Police Surgeon",                       "canonical": "QA Engineer",                             "description": "Tends to the post-mortem of every release — finds the wound before the case reaches the magistrate." },
+    { "name": "Police Surgeon",                       "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends to the post-mortem of every release — finds the wound before the case reaches the magistrate." },
     { "name": "Editor of The Strand",                 "canonical": "Marketing Practice Lead",                 "description": "Lifts the headline and the broadsheet for product and message — leads all marketing craft." },
     { "name": "Senior Correspondent",                 "canonical": "Marketing Senior Consultant",             "description": "Strategist of the column inches — sounds the call to gather and convert." },
     { "name": "Fleet Street Reporter",                "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — copy, broadsides, and the daily edition." },
     { "name": "Doctor & Chronicler",                  "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal client and the detective's deductions." },
-    { "name": "Senior Cipher-Smith of London",        "canonical": "Salesforce Senior Developer - USA",       "description": "The most seasoned forger of code — when the cipher is impossible, the call goes to her." },
-    { "name": "Junior Investigator",                  "canonical": "Junior Salesforce Consultant - India",    "description": "First-year on the beat — earns the magnifying glass through patient apprenticeship." }
+    { "name": "Senior Cipher-Smith of London",        "canonical": "Salesforce Developer",       "description": "The most seasoned forger of code — when the cipher is impossible, the call goes to her." },
+    { "name": "Junior Investigator",                  "canonical": "Salesforce Consultant - India",    "description": "First-year on the beat — earns the magnifying glass through patient apprenticeship." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "Baker Street — Consulting Detective Practice CRM",
       "shortName": "Baker St CRM",
       "subAccountName": "Baker Street Irregulars Agency",
-      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-BAKER-STREET-IRREGULARS",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-BAKER-SI",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -112,7 +112,7 @@
       "projectName": "Moriarty Syndicate — Criminal Operations Network",
       "shortName": "Moriarty CON",
       "subAccountName": "Professor Moriarty's Network",
-      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-MORIARTY-SYNDICATE",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-MORIARTY-S",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Diogenes Club — Whitehall Intelligence Implementation",
       "shortName": "Diogenes WII",
       "subAccountName": "The Diogenes Club & Whitehall",
-      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-DIOGENES-CLUB-MYCROFT",
+      "subAccountNumber": "PSA-TEST-SHERLOCKHOLMES-DIOGENES-CM",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

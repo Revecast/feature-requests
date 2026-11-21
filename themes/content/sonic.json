@@ -27,13 +27,13 @@
     { "name": "Bridge-Master of Sky Sanctuary",   "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the systems beyond." },
     { "name": "Capsule Engineer",                 "canonical": "Integration Senior Consultant - India",   "description": "Lays the cables of API, middleware, and event flow under the Bridge-Master's plan." },
     { "name": "Badnik Wrangler",                  "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the dark arts of error handling." },
-    { "name": "Chao Garden Tester",               "canonical": "QA Engineer",                             "description": "Tends the build like a Chao — finds the bugs before they hatch into production." },
+    { "name": "Chao Garden Tester",               "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the build like a Chao — finds the bugs before they hatch into production." },
     { "name": "Sonic Boom Herald",                "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner for product and message — leads all marketing craft with sonic flair." },
     { "name": "Spin Dash Strategist",             "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — coils up the plan and releases at full velocity." },
     { "name": "Ring Collector",                   "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward across zones — content, creative, and the daily run." },
     { "name": "Tails' Workshop Analyst",          "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between the customer and the workshop crew." },
-    { "name": "Master Roboticist",                "canonical": "Salesforce Senior Developer - USA",       "description": "Senior craftsman — builds and reviews the most ambitious platform mechanisms." },
-    { "name": "Apprentice Spin Engineer",         "canonical": "Junior Salesforce Consultant - India",    "description": "Earliest career — learns the platform under the watch of the seniors." }
+    { "name": "Master Roboticist",                "canonical": "Salesforce Developer",       "description": "Senior craftsman — builds and reviews the most ambitious platform mechanisms." },
+    { "name": "Apprentice Spin Engineer",         "canonical": "Salesforce Consultant - India",    "description": "Earliest career — learns the platform under the watch of the seniors." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every faction starts in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

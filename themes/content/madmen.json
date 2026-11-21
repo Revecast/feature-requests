@@ -27,13 +27,13 @@
     { "name": "Media Director",               "canonical": "Integration Technical Architect - USA",   "description": "Architect of the buys — wires together print, radio, and television placements into one machine." },
     { "name": "Media Planner",                "canonical": "Integration Senior Consultant - India",   "description": "Lays out the schedule, negotiates rates, builds the connective tissue between agency and outlets." },
     { "name": "Junior Media Buyer",           "canonical": "Integration Consultant - India",          "description": "Books the spots, cuts the orders, learns the back-channels of the media trade." },
-    { "name": "Traffic Manager",              "canonical": "QA Engineer",                             "description": "Inspects every piece of work in and out of production — catches the typo before it hits the printer." },
+    { "name": "Traffic Manager",              "canonical": "Quality Assurance (QA) Engineer",                             "description": "Inspects every piece of work in and out of production — catches the typo before it hits the printer." },
     { "name": "Head of Account Services",     "canonical": "Marketing Practice Lead",                 "description": "Senior steward of every client relationship — leads the agency's go-to-market story." },
     { "name": "Account Executive",            "canonical": "Marketing Senior Consultant",             "description": "Day-to-day owner of the client — shepherds campaigns, status reports, and three-martini lunches." },
     { "name": "Junior Account Executive",     "canonical": "Marketing Consultant",                    "description": "Shadows the AE, takes notes at every meeting, runs the deck back to the office." },
     { "name": "Strategic Planner",            "canonical": "Business Analyst",                        "description": "Sits in the conference room and translates what the client said into what the client meant." },
-    { "name": "Head Copywriter",              "canonical": "Salesforce Senior Developer - USA",       "description": "Senior wordsmith — owns the brand voice and mentors the junior copy bench." },
-    { "name": "Junior Copywriter",            "canonical": "Junior Salesforce Consultant - India",    "description": "Pitches taglines into the wastebasket until one survives the Creative Director's pencil." }
+    { "name": "Head Copywriter",              "canonical": "Salesforce Developer",       "description": "Senior wordsmith — owns the brand voice and mentors the junior copy bench." },
+    { "name": "Junior Copywriter",            "canonical": "Salesforce Consultant - India",    "description": "Pitches taglines into the wastebasket until one survives the Creative Director's pencil." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set. Realms map to the four agency eras across the show's run.",

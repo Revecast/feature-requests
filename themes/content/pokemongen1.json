@@ -27,13 +27,13 @@
     { "name": "Master of the Pokémon Tower",      "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great links between Lavender Tower, Silph Co., and Saffron — designs every integration." },
     { "name": "Senior Silph Co. Engineer",        "canonical": "Integration Senior Consultant - India",   "description": "Builds the API, middleware, and event flows under the Tower Master's blueprint." },
     { "name": "Silph Co. Engineer",               "canonical": "Integration Consultant - India",          "description": "Apprentice of the Master Ball — learns webhooks, batch jobs, and Silph Scope diagnostics." },
-    { "name": "Pokédex QA Researcher",            "canonical": "QA Engineer",                             "description": "Tests every entry against canon — finds the bugs (Bug-types and otherwise) before release." },
+    { "name": "Pokédex QA Researcher",            "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tests every entry against canon — finds the bugs (Bug-types and otherwise) before release." },
     { "name": "Game Corner Promoter",             "canonical": "Marketing Practice Lead",                 "description": "Lights up the marquees of Celadon — leads all marketing craft for the region." },
     { "name": "Senior Contest Coordinator",       "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — runs the Contest Hall and drives top-of-funnel reach." },
     { "name": "Cerulean Cape Promoter",           "canonical": "Marketing Consultant",                    "description": "Carries the campaign on the road — content, creative, and the daily ride between cities." },
     { "name": "Pokémon League Scribe",            "canonical": "Business Analyst",                        "description": "Records what trainers need and what coaches promise — translates between Customer and design." },
-    { "name": "Master Move Tutor",                "canonical": "Salesforce Senior Developer - USA",       "description": "Teacher of the legendary moves — owns the hardest Apex and architectural code." },
-    { "name": "Junior Pokémon Trainer",           "canonical": "Junior Salesforce Consultant - India",    "description": "Just left Pallet Town with a starter — learns the craft on real config tickets." }
+    { "name": "Master Move Tutor",                "canonical": "Salesforce Developer",       "description": "Teacher of the legendary moves — owns the hardest Apex and architectural code." },
+    { "name": "Junior Pokémon Trainer",           "canonical": "Salesforce Consultant - India",    "description": "Just left Pallet Town with a starter — learns the craft on real config tickets." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -44,7 +44,7 @@
       "projectName": "Pallet Town — Trainer Onboarding Platform",
       "shortName": "Pallet TOP",
       "subAccountName": "Pallet Town Trainers",
-      "subAccountNumber": "PSA-TEST-POKEMONGEN1-PALLET-TOWN-TRAINERS",
+      "subAccountNumber": "PSA-TEST-POKEMONGEN1-PALLET-TT",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Indigo Plateau — Elite Four Tournament Platform",
       "shortName": "Elite ETP",
       "subAccountName": "Indigo Plateau Elite Four",
-      "subAccountNumber": "PSA-TEST-POKEMONGEN1-ELITE-FOUR-AND-RIVALS",
+      "subAccountNumber": "PSA-TEST-POKEMONGEN1-ELITE-FAR",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

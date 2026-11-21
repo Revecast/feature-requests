@@ -27,13 +27,13 @@
     { "name": "Bridge-Master of Eshu",          "canonical": "Integration Technical Architect - USA","description": "Architect of the crossroads — designs the spans where messages pass between worlds." },
     { "name": "Senior Crossroads Builder",      "canonical": "Integration Senior Consultant - India","description": "Lays the stones of API, middleware, and event flows along Eshu's roads." },
     { "name": "Apprentice of the Crossroads",   "canonical": "Integration Consultant - India",     "description": "Learns the craft of integration at the crossroads — webhooks, batch and the patterns of error handling." },
-    { "name": "Healer of Osanyin's Grove",      "canonical": "QA Engineer",                         "description": "Herbalist of the leafy realm — finds the maladies in the build before they reach the Oba." },
+    { "name": "Healer of Osanyin's Grove",      "canonical": "Quality Assurance (QA) Engineer",                         "description": "Herbalist of the leafy realm — finds the maladies in the build before they reach the Oba." },
     { "name": "Griot of the Pantheon",          "canonical": "Marketing Practice Lead",             "description": "Chief storyteller — keeps the praise-songs of brand and product alive across all the markets." },
     { "name": "Drummer of the Bata",            "canonical": "Marketing Senior Consultant",         "description": "Senior drummer of Shango's bata — strategist of campaigns that summon and convert." },
     { "name": "Praise-Singer of Oshun",         "canonical": "Marketing Consultant",                "description": "Singer of the river-goddess's beauty — content, creative, and the daily call to the marketplace." },
     { "name": "Scribe of the Odu",              "canonical": "Business Analyst",                    "description": "Records the verses of the Odu Ifa — translates client need into the language of design." },
-    { "name": "Master Forger of Ogun",          "canonical": "Salesforce Senior Developer - USA",   "description": "Eldest of the smithy — forges the deepest, most senior Apex and platform work in iron and fire." },
-    { "name": "Acolyte of the Grove",           "canonical": "Junior Salesforce Consultant - India","description": "First-year initiate carrying the elders' tools and learning the simplest verses of the Odu." }
+    { "name": "Master Forger of Ogun",          "canonical": "Salesforce Developer",   "description": "Eldest of the smithy — forges the deepest, most senior Apex and platform work in iron and fire." },
+    { "name": "Acolyte of the Grove",           "canonical": "Salesforce Consultant - India","description": "First-year initiate carrying the elders' tools and learning the simplest verses of the Odu." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every sphere starts at least one month in the past — past weeks get Time Entries, future weeks get Schedules. The four spheres represent distinct currents within the Orisha pantheon.",
@@ -44,7 +44,7 @@
       "projectName": "Olodumare's Sphere — Cosmogony Records Platform",
       "shortName": "Olodumare CRP",
       "subAccountName": "House of the Supreme Creator Orishas",
-      "subAccountNumber": "PSA-TEST-YORUBAMYTH-SUPREMECREATORORISHAS",
+      "subAccountNumber": "PSA-TEST-YORUBAMYTH-SUPREMECREATORORISHA",
       "windowOffsetWeeks": -16,
       "windowDurationWeeks": 25,
       "workstreams": [
@@ -144,7 +144,7 @@
       "projectName": "Oduduwa's Sphere — Founding Lineage Ledger",
       "shortName": "Oduduwa FLL",
       "subAccountName": "College of the Ifa Priesthood and Mortal Heroes",
-      "subAccountNumber": "PSA-TEST-YORUBAMYTH-IFAPRIESTHOODANDMORTALHEROES",
+      "subAccountNumber": "PSA-TEST-YORUBAMYTH-IFAPRIESTHOODANDMORT",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

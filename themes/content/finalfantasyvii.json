@@ -27,13 +27,13 @@
     { "name": "Highwind Bridge-Master",              "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans — designs the API and event flows linking Gaia's systems." },
     { "name": "Highwind Engineer",                   "canonical": "Integration Senior Consultant - India",   "description": "Lays the rails of API, middleware, and event flows under the Bridge-Master's plan." },
     { "name": "Apprentice Airship Mechanic",         "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts, and the careful art of error handling." },
-    { "name": "Wutai Shuriken QA",                   "canonical": "QA Engineer",                             "description": "Throws sharp stars at the build — finds defects and weak seams before launch." },
+    { "name": "Wutai Shuriken QA",                   "canonical": "Quality Assurance (QA) Engineer",                             "description": "Throws sharp stars at the build — finds defects and weak seams before launch." },
     { "name": "Shinra PR Director",                  "canonical": "Marketing Practice Lead",                 "description": "Lifts the corporate banner for product and message — leads all marketing craft." },
     { "name": "Midgar Campaign Strategist",          "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — sounds the call to gather and convert across the sectors." },
     { "name": "Sector 7 Flyer Crew",                 "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the streets — content, creative, and the daily distribution." },
     { "name": "Turks Intelligence Analyst",          "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between Customer and the engineering crew." },
-    { "name": "SOLDIER Veteran Smith",               "canonical": "Salesforce Senior Developer - USA",       "description": "Veteran builder — owns the most demanding Apex and LWC work and mentors the materia smiths." },
-    { "name": "Cadet Recruit",                       "canonical": "Junior Salesforce Consultant - India",    "description": "Fresh recruit from the academy — learning configuration, validation rules, and the basics of admin work." }
+    { "name": "SOLDIER Veteran Smith",               "canonical": "Salesforce Developer",       "description": "Veteran builder — owns the most demanding Apex and LWC work and mentors the materia smiths." },
+    { "name": "Cadet Recruit",                       "canonical": "Salesforce Consultant - India",    "description": "Fresh recruit from the academy — learning configuration, validation rules, and the basics of admin work." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -78,7 +78,7 @@
       "projectName": "Shinra Electric Power — Mako Operations Platform",
       "shortName": "Shinra MOP",
       "subAccountName": "Shinra Electric Power Company",
-      "subAccountNumber": "PSA-TEST-FINALFANTASYVII-SHINRA-ELECTRIC-POWER",
+      "subAccountNumber": "PSA-TEST-FINALFANTASYVII-SHINRA-EP",
       "windowOffsetWeeks": -10,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -112,7 +112,7 @@
       "projectName": "Turks & SOLDIER — Covert Operations Build",
       "shortName": "Turks COB",
       "subAccountName": "Turks & SOLDIER Division",
-      "subAccountNumber": "PSA-TEST-FINALFANTASYVII-THE-TURKS-SOLDIER",
+      "subAccountNumber": "PSA-TEST-FINALFANTASYVII-THE-TS",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Cetra Meteor Orbit — Lifestream Analytics Implementation",
       "shortName": "Cetra MOA",
       "subAccountName": "Cetra Heritage & Lifestream Watch",
-      "subAccountNumber": "PSA-TEST-FINALFANTASYVII-CETRA-METEOR-ORBIT",
+      "subAccountNumber": "PSA-TEST-FINALFANTASYVII-CETRA-MO",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [

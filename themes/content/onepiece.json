@@ -27,13 +27,13 @@
     { "name": "Den Den Mushi Architect",          "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great snail networks between Salesforce and the realms beyond." },
     { "name": "Senior Snail Operator",            "canonical": "Integration Senior Consultant - India",   "description": "Lays the wires of API, middleware, and event flows under the Architect's plan." },
     { "name": "Apprentice Snail Operator",        "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, callouts and the patterns of error handling." },
-    { "name": "Marine Inspector",                 "canonical": "QA Engineer",                             "description": "Hunts the bugs and bounties in the build before they reach the Captain." },
+    { "name": "Marine Inspector",                 "canonical": "Quality Assurance (QA) Engineer",                             "description": "Hunts the bugs and bounties in the build before they reach the Captain." },
     { "name": "Town Crier of Loguetown",          "canonical": "Marketing Practice Lead",                 "description": "Lifts the banner and the Jolly Roger for product and message — leads all marketing craft." },
     { "name": "Senior News Coo",                  "canonical": "Marketing Senior Consultant",             "description": "Strategist of campaigns — flies the headlines across the seas." },
     { "name": "News Coo Apprentice",              "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily delivery." },
     { "name": "Cipher Pol Analyst",               "canonical": "Business Analyst",                        "description": "Decodes what is needed and what is promised — translates between the customer and the crew." },
-    { "name": "Vice Admiral Shipwright",          "canonical": "Salesforce Senior Developer - USA",       "description": "Master craftsman of the West Blue dockyards — builds the most complex Apex and platform features." },
-    { "name": "Cabin Boy Consultant",             "canonical": "Junior Salesforce Consultant - India",    "description": "First voyage on the Grand Line — supports configuration, learns the trade winds." }
+    { "name": "Vice Admiral Shipwright",          "canonical": "Salesforce Developer",       "description": "Master craftsman of the West Blue dockyards — builds the most complex Apex and platform features." },
+    { "name": "Cabin Boy Consultant",             "canonical": "Salesforce Consultant - India",    "description": "First voyage on the Grand Line — supports configuration, learns the trade winds." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts in the past — past weeks get Time Entries, future weeks get Schedules. Workstreams are organised as parent scope items (each with 2 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

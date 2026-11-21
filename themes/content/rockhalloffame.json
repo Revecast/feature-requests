@@ -20,13 +20,13 @@
     { "name": "A&R Rep",                     "canonical": "Integration Technical Architect - USA",   "description": "Scouts and signs the right combinations — architects the deals (and APIs) between systems and labels." },
     { "name": "Session Musician",            "canonical": "Integration Senior Consultant - India",   "description": "Hired gun on the date — lays down API tracks, middleware fills, and event-driven solos under the A&R's plan." },
     { "name": "Roadie",                      "canonical": "Integration Consultant - India",          "description": "Loads in, loads out — learns the rig: webhooks, batch jobs, callouts, and the dark art of error handling." },
-    { "name": "Drummer",                     "canonical": "QA Engineer",                             "description": "Keeps perfect time — finds the dropped beats and broken patterns before the show goes live." },
+    { "name": "Drummer",                     "canonical": "Quality Assurance (QA) Engineer",                             "description": "Keeps perfect time — finds the dropped beats and broken patterns before the show goes live." },
     { "name": "Label Boss",                  "canonical": "Marketing Practice Lead",                 "description": "Runs the imprint — sets the brand, picks the singles, and leads all marketing craft." },
     { "name": "Promoter",                    "canonical": "Marketing Senior Consultant",             "description": "Books the tour and papers the town — strategist for campaigns and audience growth." },
     { "name": "Street Team Lead",            "canonical": "Marketing Consultant",                    "description": "Wheat-pastes the posters and works the merch table — daily campaign execution in the field." },
     { "name": "Liner-Notes Writer",          "canonical": "Business Analyst",                        "description": "Translates between the artist and the audience — captures requirements, credits, and the story behind the songs." },
-    { "name": "Mastering Engineer",          "canonical": "Salesforce Senior Developer - USA",       "description": "Final polish before the lacquer — senior craft on Apex and the platform's most exacting work." },
-    { "name": "Intern",                      "canonical": "Junior Salesforce Consultant - India",    "description": "Coffee runs and tape splicing — learns the studio under the engineer's eye." }
+    { "name": "Mastering Engineer",          "canonical": "Salesforce Developer",       "description": "Final polish before the lacquer — senior craft on Apex and the platform's most exacting work." },
+    { "name": "Intern",                      "canonical": "Salesforce Consultant - India",    "description": "Coffee runs and tape splicing — learns the studio under the engineer's eye." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",

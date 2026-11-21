@@ -27,13 +27,13 @@
     { "name": "Bridge-Master of Uji",               "canonical": "Integration Technical Architect - USA",   "description": "Architect of the great spans between Salesforce and the realms beyond — APIs, events, callouts." },
     { "name": "Senior Bridge-Builder of Uji",       "canonical": "Integration Senior Consultant - India",   "description": "Lays the cypress beams of middleware and message flow under the Bridge-Master's plan." },
     { "name": "Apprentice Bridge-Builder",          "canonical": "Integration Consultant - India",          "description": "Learns the craft of integration — webhooks, batch, and the careful patterns of error handling." },
-    { "name": "Tea Master of Quality",              "canonical": "QA Engineer",                             "description": "Tends the cha-no-yu of the build — finds the bitterness in the brew before it reaches the Emperor." },
+    { "name": "Tea Master of Quality",              "canonical": "Quality Assurance (QA) Engineer",                             "description": "Tends the cha-no-yu of the build — finds the bitterness in the brew before it reaches the Emperor." },
     { "name": "Herald of the Imperial Court",       "canonical": "Marketing Practice Lead",                 "description": "Lifts the Imperial banner for product and message — leads all marketing craft." },
     { "name": "Senior Court Poet",                  "canonical": "Marketing Senior Consultant",             "description": "Composes waka and campaign strategy — sounds the call across the provinces." },
     { "name": "Court Poet",                         "canonical": "Marketing Consultant",                    "description": "Carries the campaign forward into the field — content, creative, and the daily ink." },
     { "name": "Council Scribe of Heian-kyō",        "canonical": "Business Analyst",                        "description": "Records what is needed and what is promised — translates between mortal Customer and the courtly craft of design." },
-    { "name": "Master Swordsmith of Yamato",        "canonical": "Salesforce Senior Developer - USA",       "description": "Elder smith of the western forge — reviews every blade before it leaves the anvil." },
-    { "name": "Junior Onmyōji",                     "canonical": "Junior Salesforce Consultant - India",    "description": "Newest student of divination — first year on the path of the platform." }
+    { "name": "Master Swordsmith of Yamato",        "canonical": "Salesforce Developer",       "description": "Elder smith of the western forge — reviews every blade before it leaves the anvil." },
+    { "name": "Junior Onmyōji",                     "canonical": "Salesforce Consultant - India",    "description": "Newest student of divination — first year on the path of the platform." }
   ],
 
   "_realmNotes": "windowOffsetWeeks values are negative so every realm starts at least one month in the past — past weeks get Time Entries (Step 6), future weeks get Schedules. Workstreams are organised as parent scope items (each with 2-3 child sub-scopes) — the wizard inserts parents first, then children with Parent_WorkStream__c set.",
@@ -112,7 +112,7 @@
       "projectName": "Yamato Court — Imperial Logistics Platform",
       "shortName": "Yamato ILP",
       "subAccountName": "Imperial House of Yamato",
-      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-IMPERIALLINEANDHEROES",
+      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-IMPERIALLINEANDHER",
       "windowOffsetWeeks": -6,
       "windowDurationWeeks": 26,
       "workstreams": [
@@ -146,7 +146,7 @@
       "projectName": "Takarabune — Treasure Ship Mirror Analytics",
       "shortName": "Takarabune MAI",
       "subAccountName": "Guild of the Seven Lucky Gods",
-      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-SEVENLUCKYGODSANDFOLKDEITIES",
+      "subAccountNumber": "PSA-TEST-JAPANESEMYTH-SEVENLUCKYGODSANDF",
       "windowOffsetWeeks": -4,
       "windowDurationWeeks": 25,
       "workstreams": [
