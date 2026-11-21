@@ -11,6 +11,7 @@
     { "key": "HarryPotter",    "displayName": "Harry Potter",          "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": false, "body": "themes/content/harry_potter.json" },
     { "key": "LOTR",           "displayName": "Lord of the Rings",     "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": true,  "body": "themes/content/lotr.json" },
     { "key": "GameOfThrones",  "displayName": "Game of Thrones",       "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": false, "body": "themes/content/game_of_thrones.json" },
+    { "key": "DungeonCrawlerCarl", "displayName": "Dungeon Crawler Carl", "category": "Sci-Fi / Fantasy", "implemented": true,  "featured": false, "body": "themes/content/dungeoncrawlercarl.json" },
     { "key": "DoctorWho",      "displayName": "Doctor Who",            "category": "Sci-Fi / Fantasy", "implemented": true , "featured": false, "body": "themes/content/doctorwho.json" },
     { "key": "Witcher",        "displayName": "The Witcher",           "category": "Sci-Fi / Fantasy", "implemented": true , "featured": false, "body": "themes/content/witcher.json" },
     { "key": "MassEffect",     "displayName": "Mass Effect",           "category": "Sci-Fi / Fantasy", "implemented": true , "featured": false, "body": "themes/content/masseffect.json" },
